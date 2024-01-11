@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderModifyRequestAdditionalAttributesInner
+# ResellerApiDocumentation.OrderModifyRequestAdditionalAttributesInner
 
 ## Properties
 

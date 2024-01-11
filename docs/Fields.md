@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.Fields
+# ResellerApiDocumentation.Fields
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.QuoteListResponseQuoteSearchResponseResponsePreamble
+# ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseResponsePreamble
 
 ## Properties
 

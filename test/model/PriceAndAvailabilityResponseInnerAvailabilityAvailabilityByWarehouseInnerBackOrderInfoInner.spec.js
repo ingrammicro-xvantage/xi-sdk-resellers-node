@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner();
+    instance = new ResellerApiDocumentation.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner', function() {
     it('should create an instance of PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner', function() {
       // uncomment below and update the code to test PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner);
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner);
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner();
       //expect(instance).to.be();
     });
 
     it('should have the property etaDate (base name: "etaDate")', function() {
       // uncomment below and update the code to test the property etaDate
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner();
       //expect(instance).to.be();
     });
 

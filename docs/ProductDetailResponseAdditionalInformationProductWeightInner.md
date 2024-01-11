@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformationProductWeightInner
+# ResellerApiDocumentation.ProductDetailResponseAdditionalInformationProductWeightInner
 
 ## Properties
 

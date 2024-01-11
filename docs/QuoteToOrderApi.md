@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.QuoteToOrderApi
+# ResellerApiDocumentation.QuoteToOrderApi
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -19,13 +19,13 @@ The “Quote to Order” (QTO) endpoint allows a customer to create an order usi
 ### Example
 
 ```javascript
-import ResellerApiDocumentationUnitedStates from 'reseller_api_documentation_united_states';
-let defaultClient = ResellerApiDocumentationUnitedStates.ApiClient.instance;
+import ResellerApiDocumentation from 'reseller_api_documentation';
+let defaultClient = ResellerApiDocumentation.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentationUnitedStates.QuoteToOrderApi();
+let apiInstance = new ResellerApiDocumentation.QuoteToOrderApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems.

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BMiscellaneousChargesInner();
+    instance = new ResellerApiDocumentation.OrderDetailB2BMiscellaneousChargesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('OrderDetailB2BMiscellaneousChargesInner', function() {
     it('should create an instance of OrderDetailB2BMiscellaneousChargesInner', function() {
       // uncomment below and update the code to test OrderDetailB2BMiscellaneousChargesInner
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BMiscellaneousChargesInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderDetailB2BMiscellaneousChargesInner);
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BMiscellaneousChargesInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailB2BMiscellaneousChargesInner);
     });
 
     it('should have the property subOrderNumber (base name: "subOrderNumber")', function() {
       // uncomment below and update the code to test the property subOrderNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BMiscellaneousChargesInner();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BMiscellaneousChargesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property chargeLineReference (base name: "chargeLineReference")', function() {
       // uncomment below and update the code to test the property chargeLineReference
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BMiscellaneousChargesInner();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BMiscellaneousChargesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property chargeDescription (base name: "chargeDescription")', function() {
       // uncomment below and update the code to test the property chargeDescription
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BMiscellaneousChargesInner();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BMiscellaneousChargesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property chargeAmount (base name: "chargeAmount")', function() {
       // uncomment below and update the code to test the property chargeAmount
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BMiscellaneousChargesInner();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BMiscellaneousChargesInner();
       //expect(instance).to.be();
     });
 

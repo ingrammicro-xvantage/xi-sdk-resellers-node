@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
+    instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo', function() {
     it('should create an instance of QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo', function() {
       // uncomment below and update the code to test QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo);
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
+      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo);
     });
 
     it('should have the property contactEmail (base name: "contactEmail")', function() {
       // uncomment below and update the code to test the property contactEmail
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property contactName (base name: "contactName")', function() {
       // uncomment below and update the code to test the property contactName
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
       //expect(instance).to.be();
     });
 

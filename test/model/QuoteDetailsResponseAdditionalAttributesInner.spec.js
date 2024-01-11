@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsResponseAdditionalAttributesInner();
+    instance = new ResellerApiDocumentation.QuoteDetailsResponseAdditionalAttributesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('QuoteDetailsResponseAdditionalAttributesInner', function() {
     it('should create an instance of QuoteDetailsResponseAdditionalAttributesInner', function() {
       // uncomment below and update the code to test QuoteDetailsResponseAdditionalAttributesInner
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsResponseAdditionalAttributesInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.QuoteDetailsResponseAdditionalAttributesInner);
+      //var instance = new ResellerApiDocumentation.QuoteDetailsResponseAdditionalAttributesInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteDetailsResponseAdditionalAttributesInner);
     });
 
     it('should have the property attributeName (base name: "attributeName")', function() {
       // uncomment below and update the code to test the property attributeName
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsResponseAdditionalAttributesInner();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsResponseAdditionalAttributesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property attributeValue (base name: "attributeValue")', function() {
       // uncomment below and update the code to test the property attributeValue
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsResponseAdditionalAttributesInner();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsResponseAdditionalAttributesInner();
       //expect(instance).to.be();
     });
 

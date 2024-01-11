@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ValidateQuoteResponse
+# ResellerApiDocumentation.ValidateQuoteResponse
 
 ## Properties
 

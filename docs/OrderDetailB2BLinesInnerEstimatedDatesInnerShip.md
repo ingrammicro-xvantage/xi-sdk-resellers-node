@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerEstimatedDatesInnerShip
+# ResellerApiDocumentation.OrderDetailB2BLinesInnerEstimatedDatesInnerShip
 
 ## Properties
 

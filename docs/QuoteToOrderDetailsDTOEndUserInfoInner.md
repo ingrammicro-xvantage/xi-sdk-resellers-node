@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.QuoteToOrderDetailsDTOEndUserInfoInner
+# ResellerApiDocumentation.QuoteToOrderDetailsDTOEndUserInfoInner
 
 ## Properties
 

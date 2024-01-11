@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ProductDetailResponseIndicatorsInner
+# ResellerApiDocumentation.ProductDetailResponseIndicatorsInner
 
 ## Properties
 

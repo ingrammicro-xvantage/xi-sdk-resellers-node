@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.QuoteProductListPrice
+# ResellerApiDocumentation.QuoteProductListPrice
 
 ## Properties
 

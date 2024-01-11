@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.ValidateQuoteResponseLinesInner();
+    instance = new ResellerApiDocumentation.ValidateQuoteResponseLinesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ValidateQuoteResponseLinesInner', function() {
     it('should create an instance of ValidateQuoteResponseLinesInner', function() {
       // uncomment below and update the code to test ValidateQuoteResponseLinesInner
-      //var instance = new ResellerApiDocumentationUnitedStates.ValidateQuoteResponseLinesInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.ValidateQuoteResponseLinesInner);
+      //var instance = new ResellerApiDocumentation.ValidateQuoteResponseLinesInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.ValidateQuoteResponseLinesInner);
     });
 
     it('should have the property customerLineNumber (base name: "customerLineNumber")', function() {
       // uncomment below and update the code to test the property customerLineNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.ValidateQuoteResponseLinesInner();
+      //var instance = new ResellerApiDocumentation.ValidateQuoteResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramPartNumber (base name: "ingramPartNumber")', function() {
       // uncomment below and update the code to test the property ingramPartNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.ValidateQuoteResponseLinesInner();
+      //var instance = new ResellerApiDocumentation.ValidateQuoteResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new ResellerApiDocumentationUnitedStates.ValidateQuoteResponseLinesInner();
+      //var instance = new ResellerApiDocumentation.ValidateQuoteResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vmfAdditionalAttributesLines (base name: "vmfAdditionalAttributesLines")', function() {
       // uncomment below and update the code to test the property vmfAdditionalAttributesLines
-      //var instance = new ResellerApiDocumentationUnitedStates.ValidateQuoteResponseLinesInner();
+      //var instance = new ResellerApiDocumentation.ValidateQuoteResponseLinesInner();
       //expect(instance).to.be();
     });
 

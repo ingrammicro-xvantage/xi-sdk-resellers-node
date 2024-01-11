@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner
+# ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.InvoiceDetailsv61ResponseSummaryMiscChargesInner
+# ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryMiscChargesInner
 
 ## Properties
 

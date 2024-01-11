@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailResponseLinesInnerLinksInner
+# ResellerApiDocumentation.OrderDetailResponseLinesInnerLinksInner
 
 ## Properties
 

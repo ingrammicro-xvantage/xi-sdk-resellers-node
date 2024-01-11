@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.QuoteToOrderDetailsDTOVmfadditionalAttributesInner
+# ResellerApiDocumentation.QuoteToOrderDetailsDTOVmfadditionalAttributesInner
 
 ## Properties
 

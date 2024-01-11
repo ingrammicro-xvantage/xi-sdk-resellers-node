@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInner
+# ResellerApiDocumentation.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInner
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+    instance = new ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('ProductSearchRequestServicerequestProductsearchrequestSearchcriteria', function() {
     it('should create an instance of ProductSearchRequestServicerequestProductsearchrequestSearchcriteria', function() {
       // uncomment below and update the code to test ProductSearchRequestServicerequestProductsearchrequestSearchcriteria
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria);
+      //var instance = new ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //expect(instance).to.be.a(ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria);
     });
 
     it('should have the property vendor (base name: "vendor")', function() {
       // uncomment below and update the code to test the property vendor
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //var instance = new ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorpartnumber (base name: "vendorpartnumber")', function() {
       // uncomment below and update the code to test the property vendorpartnumber
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //var instance = new ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
       //expect(instance).to.be();
     });
 
     it('should have the property partdescription (base name: "partdescription")', function() {
       // uncomment below and update the code to test the property partdescription
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //var instance = new ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
       //expect(instance).to.be();
     });
 
     it('should have the property UPC (base name: "UPC")', function() {
       // uncomment below and update the code to test the property UPC
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //var instance = new ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
       //expect(instance).to.be();
     });
 
     it('should have the property customerpartnumber (base name: "customerpartnumber")', function() {
       // uncomment below and update the code to test the property customerpartnumber
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //var instance = new ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
       //expect(instance).to.be();
     });
 

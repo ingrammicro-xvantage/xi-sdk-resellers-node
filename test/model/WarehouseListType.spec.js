@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.WarehouseListType();
+    instance = new ResellerApiDocumentation.WarehouseListType();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('WarehouseListType', function() {
     it('should create an instance of WarehouseListType', function() {
       // uncomment below and update the code to test WarehouseListType
-      //var instance = new ResellerApiDocumentationUnitedStates.WarehouseListType();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.WarehouseListType);
+      //var instance = new ResellerApiDocumentation.WarehouseListType();
+      //expect(instance).to.be.a(ResellerApiDocumentation.WarehouseListType);
     });
 
     it('should have the property warehouseid (base name: "warehouseid")', function() {
       // uncomment below and update the code to test the property warehouseid
-      //var instance = new ResellerApiDocumentationUnitedStates.WarehouseListType();
+      //var instance = new ResellerApiDocumentation.WarehouseListType();
       //expect(instance).to.be();
     });
 
     it('should have the property warehousedescription (base name: "warehousedescription")', function() {
       // uncomment below and update the code to test the property warehousedescription
-      //var instance = new ResellerApiDocumentationUnitedStates.WarehouseListType();
+      //var instance = new ResellerApiDocumentation.WarehouseListType();
       //expect(instance).to.be();
     });
 
     it('should have the property availablequantity (base name: "availablequantity")', function() {
       // uncomment below and update the code to test the property availablequantity
-      //var instance = new ResellerApiDocumentationUnitedStates.WarehouseListType();
+      //var instance = new ResellerApiDocumentation.WarehouseListType();
       //expect(instance).to.be();
     });
 
     it('should have the property onorderquantity (base name: "onorderquantity")', function() {
       // uncomment below and update the code to test the property onorderquantity
-      //var instance = new ResellerApiDocumentationUnitedStates.WarehouseListType();
+      //var instance = new ResellerApiDocumentation.WarehouseListType();
       //expect(instance).to.be();
     });
 
     it('should have the property onholdquantity (base name: "onholdquantity")', function() {
       // uncomment below and update the code to test the property onholdquantity
-      //var instance = new ResellerApiDocumentationUnitedStates.WarehouseListType();
+      //var instance = new ResellerApiDocumentation.WarehouseListType();
       //expect(instance).to.be();
     });
 
     it('should have the property etadate (base name: "etadate")', function() {
       // uncomment below and update the code to test the property etadate
-      //var instance = new ResellerApiDocumentationUnitedStates.WarehouseListType();
+      //var instance = new ResellerApiDocumentation.WarehouseListType();
       //expect(instance).to.be();
     });
 

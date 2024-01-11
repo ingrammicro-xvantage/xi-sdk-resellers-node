@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfo();
+    instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('OrderDetailB2BLinesInnerServiceContractInfo', function() {
     it('should create an instance of OrderDetailB2BLinesInnerServiceContractInfo', function() {
       // uncomment below and update the code to test OrderDetailB2BLinesInnerServiceContractInfo
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfo();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfo);
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfo();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfo);
     });
 
     it('should have the property contractInfo (base name: "contractInfo")', function() {
       // uncomment below and update the code to test the property contractInfo
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfo();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property subscriptions (base name: "subscriptions")', function() {
       // uncomment below and update the code to test the property subscriptions
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfo();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property licenseInfo (base name: "licenseInfo")', function() {
       // uncomment below and update the code to test the property licenseInfo
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfo();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfo();
       //expect(instance).to.be();
     });
 

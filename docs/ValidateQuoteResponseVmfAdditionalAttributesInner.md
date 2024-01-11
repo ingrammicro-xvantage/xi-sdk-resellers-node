@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ValidateQuoteResponseVmfAdditionalAttributesInner
+# ResellerApiDocumentation.ValidateQuoteResponseVmfAdditionalAttributesInner
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+    instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,133 +50,133 @@
   describe('InvoiceDetailResponseServiceresponseInvoicedetailresponse', function() {
     it('should create an instance of InvoiceDetailResponseServiceresponseInvoicedetailresponse', function() {
       // uncomment below and update the code to test InvoiceDetailResponseServiceresponseInvoicedetailresponse
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse);
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //expect(instance).to.be.a(ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse);
     });
 
     it('should have the property customernumber (base name: "customernumber")', function() {
       // uncomment below and update the code to test the property customernumber
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property invoicenumber (base name: "invoicenumber")', function() {
       // uncomment below and update the code to test the property invoicenumber
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property invoicedate (base name: "invoicedate")', function() {
       // uncomment below and update the code to test the property invoicedate
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property invoicetype (base name: "invoicetype")', function() {
       // uncomment below and update the code to test the property invoicetype
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property customerordernumber (base name: "customerordernumber")', function() {
       // uncomment below and update the code to test the property customerordernumber
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property customerfreightamount (base name: "customerfreightamount")', function() {
       // uncomment below and update the code to test the property customerfreightamount
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property customerforeignfrightamt (base name: "customerforeignfrightamt")', function() {
       // uncomment below and update the code to test the property customerforeignfrightamt
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property totaltaxamount (base name: "totaltaxamount")', function() {
       // uncomment below and update the code to test the property totaltaxamount
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property totalamount (base name: "totalamount")', function() {
       // uncomment below and update the code to test the property totalamount
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property shiptosuffix (base name: "shiptosuffix")', function() {
       // uncomment below and update the code to test the property shiptosuffix
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property billtosuffix (base name: "billtosuffix")', function() {
       // uncomment below and update the code to test the property billtosuffix
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property freightamount (base name: "freightamount")', function() {
       // uncomment below and update the code to test the property freightamount
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property paymentterms (base name: "paymentterms")', function() {
       // uncomment below and update the code to test the property paymentterms
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property orderdate (base name: "orderdate")', function() {
       // uncomment below and update the code to test the property orderdate
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property carrier (base name: "carrier")', function() {
       // uncomment below and update the code to test the property carrier
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property carrierdescription (base name: "carrierdescription")', function() {
       // uncomment below and update the code to test the property carrierdescription
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property discountamount (base name: "discountamount")', function() {
       // uncomment below and update the code to test the property discountamount
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property taxtype (base name: "taxtype")', function() {
       // uncomment below and update the code to test the property taxtype
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property enduserponumber (base name: "enduserponumber")', function() {
       // uncomment below and update the code to test the property enduserponumber
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property freightforwardercode (base name: "freightforwardercode")', function() {
       // uncomment below and update the code to test the property freightforwardercode
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property creditmemoreasoncode (base name: "creditmemoreasoncode")', function() {
       // uncomment below and update the code to test the property creditmemoreasoncode
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse();
       //expect(instance).to.be();
     });
 

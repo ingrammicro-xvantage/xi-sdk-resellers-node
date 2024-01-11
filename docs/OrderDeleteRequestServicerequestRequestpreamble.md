@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDeleteRequestServicerequestRequestpreamble
+# ResellerApiDocumentation.OrderDeleteRequestServicerequestRequestpreamble
 
 ## Properties
 

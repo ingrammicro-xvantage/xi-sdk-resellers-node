@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataTypeEndDate();
+    instance = new ResellerApiDocumentation.RenewalsSearchRequestDataTypeEndDate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('RenewalsSearchRequestDataTypeEndDate', function() {
     it('should create an instance of RenewalsSearchRequestDataTypeEndDate', function() {
       // uncomment below and update the code to test RenewalsSearchRequestDataTypeEndDate
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataTypeEndDate();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataTypeEndDate);
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataTypeEndDate();
+      //expect(instance).to.be.a(ResellerApiDocumentation.RenewalsSearchRequestDataTypeEndDate);
     });
 
     it('should have the property customStartDate (base name: "customStartDate")', function() {
       // uncomment below and update the code to test the property customStartDate
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataTypeEndDate();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataTypeEndDate();
       //expect(instance).to.be();
     });
 
     it('should have the property customEndDate (base name: "customEndDate")', function() {
       // uncomment below and update the code to test the property customEndDate
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataTypeEndDate();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataTypeEndDate();
       //expect(instance).to.be();
     });
 

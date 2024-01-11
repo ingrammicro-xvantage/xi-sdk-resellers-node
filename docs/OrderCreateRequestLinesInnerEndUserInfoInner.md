@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderCreateRequestLinesInnerEndUserInfoInner
+# ResellerApiDocumentation.OrderCreateRequestLinesInnerEndUserInfoInner
 
 ## Properties
 

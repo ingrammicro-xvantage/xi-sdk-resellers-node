@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponse();
+    instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('InvoiceDetailResponseServiceresponse', function() {
     it('should create an instance of InvoiceDetailResponseServiceresponse', function() {
       // uncomment below and update the code to test InvoiceDetailResponseServiceresponse
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponse();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponse);
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponse();
+      //expect(instance).to.be.a(ResellerApiDocumentation.InvoiceDetailResponseServiceresponse);
     });
 
     it('should have the property responsepreamble (base name: "responsepreamble")', function() {
       // uncomment below and update the code to test the property responsepreamble
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property invoicedetailresponse (base name: "invoicedetailresponse")', function() {
       // uncomment below and update the code to test the property invoicedetailresponse
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponse();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponse();
       //expect(instance).to.be();
     });
 

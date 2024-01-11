@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformation();
+    instance = new ResellerApiDocumentation.ProductDetailResponseAdditionalInformation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('ProductDetailResponseAdditionalInformation', function() {
     it('should create an instance of ProductDetailResponseAdditionalInformation', function() {
       // uncomment below and update the code to test ProductDetailResponseAdditionalInformation
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformation();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformation);
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseAdditionalInformation();
+      //expect(instance).to.be.a(ResellerApiDocumentation.ProductDetailResponseAdditionalInformation);
     });
 
     it('should have the property productWeight (base name: "productWeight")', function() {
       // uncomment below and update the code to test the property productWeight
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformation();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseAdditionalInformation();
       //expect(instance).to.be();
     });
 
     it('should have the property isBulkFreight (base name: "isBulkFreight")', function() {
       // uncomment below and update the code to test the property isBulkFreight
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformation();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseAdditionalInformation();
       //expect(instance).to.be();
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformation();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseAdditionalInformation();
       //expect(instance).to.be();
     });
 
     it('should have the property width (base name: "width")', function() {
       // uncomment below and update the code to test the property width
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformation();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseAdditionalInformation();
       //expect(instance).to.be();
     });
 
     it('should have the property length (base name: "length")', function() {
       // uncomment below and update the code to test the property length
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformation();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseAdditionalInformation();
       //expect(instance).to.be();
     });
 
     it('should have the property netWeight (base name: "netWeight")', function() {
       // uncomment below and update the code to test the property netWeight
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformation();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseAdditionalInformation();
       //expect(instance).to.be();
     });
 
     it('should have the property dimensionUnit (base name: "dimensionUnit")', function() {
       // uncomment below and update the code to test the property dimensionUnit
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseAdditionalInformation();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseAdditionalInformation();
       //expect(instance).to.be();
     });
 

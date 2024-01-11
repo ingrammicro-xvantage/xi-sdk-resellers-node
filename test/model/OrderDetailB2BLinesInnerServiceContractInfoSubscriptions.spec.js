@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
+    instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('OrderDetailB2BLinesInnerServiceContractInfoSubscriptions', function() {
     it('should create an instance of OrderDetailB2BLinesInnerServiceContractInfoSubscriptions', function() {
       // uncomment below and update the code to test OrderDetailB2BLinesInnerServiceContractInfoSubscriptions
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions);
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions);
     });
 
     it('should have the property subscriptionId (base name: "subscriptionId")', function() {
       // uncomment below and update the code to test the property subscriptionId
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
       //expect(instance).to.be();
     });
 
     it('should have the property subscriptionTerm (base name: "subscriptionTerm")', function() {
       // uncomment below and update the code to test the property subscriptionTerm
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
       //expect(instance).to.be();
     });
 
     it('should have the property renewalTerm (base name: "renewalTerm")', function() {
       // uncomment below and update the code to test the property renewalTerm
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
       //expect(instance).to.be();
     });
 
     it('should have the property billingModel (base name: "billingModel")', function() {
       // uncomment below and update the code to test the property billingModel
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
       //expect(instance).to.be();
     });
 
     it('should have the property subcriptionStartDate (base name: "subcriptionStartDate")', function() {
       // uncomment below and update the code to test the property subcriptionStartDate
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
       //expect(instance).to.be();
     });
 
     it('should have the property subcriptionEndDate (base name: "subcriptionEndDate")', function() {
       // uncomment below and update the code to test the property subcriptionEndDate
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailResponseServiceresponseOrderdetailresponseBilltoaddress
+# ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseBilltoaddress
 
 ## Properties
 

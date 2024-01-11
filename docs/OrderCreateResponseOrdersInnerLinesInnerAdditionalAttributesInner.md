@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner
+# ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerAdditionalAttributesInner
 
 ## Properties
 

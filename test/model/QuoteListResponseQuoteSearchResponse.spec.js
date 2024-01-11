@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.QuoteListResponseQuoteSearchResponse();
+    instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('QuoteListResponseQuoteSearchResponse', function() {
     it('should create an instance of QuoteListResponseQuoteSearchResponse', function() {
       // uncomment below and update the code to test QuoteListResponseQuoteSearchResponse
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteListResponseQuoteSearchResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.QuoteListResponseQuoteSearchResponse);
+      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponse();
+      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteListResponseQuoteSearchResponse);
     });
 
     it('should have the property responsePreamble (base name: "responsePreamble")', function() {
       // uncomment below and update the code to test the property responsePreamble
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteListResponseQuoteSearchResponse();
+      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property quoteList (base name: "quoteList")', function() {
       // uncomment below and update the code to test the property quoteList
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteListResponseQuoteSearchResponse();
+      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property totalCount (base name: "totalCount")', function() {
       // uncomment below and update the code to test the property totalCount
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteListResponseQuoteSearchResponse();
+      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponse();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress
+# ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress
 
 ## Properties
 

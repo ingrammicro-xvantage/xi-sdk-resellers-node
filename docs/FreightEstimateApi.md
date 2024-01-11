@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.FreightEstimateApi
+# ResellerApiDocumentation.FreightEstimateApi
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -19,13 +19,13 @@ The freight estimator endpoint will allow customers to understand the freight co
 ### Example
 
 ```javascript
-import ResellerApiDocumentationUnitedStates from 'reseller_api_documentation_united_states';
-let defaultClient = ResellerApiDocumentationUnitedStates.ApiClient.instance;
+import ResellerApiDocumentation from 'reseller_api_documentation';
+let defaultClient = ResellerApiDocumentation.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentationUnitedStates.FreightEstimateApi();
+let apiInstance = new ResellerApiDocumentation.FreightEstimateApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.

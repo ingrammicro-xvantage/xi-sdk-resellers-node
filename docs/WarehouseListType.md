@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.WarehouseListType
+# ResellerApiDocumentation.WarehouseListType
 
 ## Properties
 

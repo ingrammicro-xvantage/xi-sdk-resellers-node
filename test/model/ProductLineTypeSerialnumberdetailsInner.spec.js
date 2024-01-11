@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.ProductLineTypeSerialnumberdetailsInner();
+    instance = new ResellerApiDocumentation.ProductLineTypeSerialnumberdetailsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ProductLineTypeSerialnumberdetailsInner', function() {
     it('should create an instance of ProductLineTypeSerialnumberdetailsInner', function() {
       // uncomment below and update the code to test ProductLineTypeSerialnumberdetailsInner
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductLineTypeSerialnumberdetailsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.ProductLineTypeSerialnumberdetailsInner);
+      //var instance = new ResellerApiDocumentation.ProductLineTypeSerialnumberdetailsInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.ProductLineTypeSerialnumberdetailsInner);
     });
 
     it('should have the property serialnumber (base name: "serialnumber")', function() {
       // uncomment below and update the code to test the property serialnumber
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductLineTypeSerialnumberdetailsInner();
+      //var instance = new ResellerApiDocumentation.ProductLineTypeSerialnumberdetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property deliverynumber (base name: "deliverynumber")', function() {
       // uncomment below and update the code to test the property deliverynumber
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductLineTypeSerialnumberdetailsInner();
+      //var instance = new ResellerApiDocumentation.ProductLineTypeSerialnumberdetailsInner();
       //expect(instance).to.be();
     });
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.FreightResponseFreightEstimateResponseLinesInner();
+    instance = new ResellerApiDocumentation.FreightResponseFreightEstimateResponseLinesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('FreightResponseFreightEstimateResponseLinesInner', function() {
     it('should create an instance of FreightResponseFreightEstimateResponseLinesInner', function() {
       // uncomment below and update the code to test FreightResponseFreightEstimateResponseLinesInner
-      //var instance = new ResellerApiDocumentationUnitedStates.FreightResponseFreightEstimateResponseLinesInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.FreightResponseFreightEstimateResponseLinesInner);
+      //var instance = new ResellerApiDocumentation.FreightResponseFreightEstimateResponseLinesInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.FreightResponseFreightEstimateResponseLinesInner);
     });
 
     it('should have the property ingramPartNumber (base name: "ingramPartNumber")', function() {
       // uncomment below and update the code to test the property ingramPartNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.FreightResponseFreightEstimateResponseLinesInner();
+      //var instance = new ResellerApiDocumentation.FreightResponseFreightEstimateResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorPartNumber (base name: "vendorPartNumber")', function() {
       // uncomment below and update the code to test the property vendorPartNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.FreightResponseFreightEstimateResponseLinesInner();
+      //var instance = new ResellerApiDocumentation.FreightResponseFreightEstimateResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property warehouseId (base name: "warehouseId")', function() {
       // uncomment below and update the code to test the property warehouseId
-      //var instance = new ResellerApiDocumentationUnitedStates.FreightResponseFreightEstimateResponseLinesInner();
+      //var instance = new ResellerApiDocumentation.FreightResponseFreightEstimateResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new ResellerApiDocumentationUnitedStates.FreightResponseFreightEstimateResponseLinesInner();
+      //var instance = new ResellerApiDocumentation.FreightResponseFreightEstimateResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property unitPrice (base name: "unitPrice")', function() {
       // uncomment below and update the code to test the property unitPrice
-      //var instance = new ResellerApiDocumentationUnitedStates.FreightResponseFreightEstimateResponseLinesInner();
+      //var instance = new ResellerApiDocumentation.FreightResponseFreightEstimateResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property netAmount (base name: "netAmount")', function() {
       // uncomment below and update the code to test the property netAmount
-      //var instance = new ResellerApiDocumentationUnitedStates.FreightResponseFreightEstimateResponseLinesInner();
+      //var instance = new ResellerApiDocumentation.FreightResponseFreightEstimateResponseLinesInner();
       //expect(instance).to.be();
     });
 

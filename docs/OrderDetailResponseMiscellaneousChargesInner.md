@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailResponseMiscellaneousChargesInner
+# ResellerApiDocumentation.OrderDetailResponseMiscellaneousChargesInner
 
 ## Properties
 

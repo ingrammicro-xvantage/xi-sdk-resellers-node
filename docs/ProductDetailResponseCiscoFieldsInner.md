@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ProductDetailResponseCiscoFieldsInner
+# ResellerApiDocumentation.ProductDetailResponseCiscoFieldsInner
 
 ## Properties
 

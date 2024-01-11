@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+    instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner', function() {
     it('should create an instance of OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner', function() {
       // uncomment below and update the code to test OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner);
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner);
     });
 
     it('should have the property carrierCode (base name: "carrierCode")', function() {
       // uncomment below and update the code to test the property carrierCode
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property carrierName (base name: "carrierName")', function() {
       // uncomment below and update the code to test the property carrierName
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shipFromWarehouseId (base name: "shipFromWarehouseId")', function() {
       // uncomment below and update the code to test the property shipFromWarehouseId
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shipFromLocation (base name: "shipFromLocation")', function() {
       // uncomment below and update the code to test the property shipFromLocation
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property freightAccountNumber (base name: "freightAccountNumber")', function() {
       // uncomment below and update the code to test the property freightAccountNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property signatureRequired (base name: "signatureRequired")', function() {
       // uncomment below and update the code to test the property signatureRequired
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shippingInstructions (base name: "shippingInstructions")', function() {
       // uncomment below and update the code to test the property shippingInstructions
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 

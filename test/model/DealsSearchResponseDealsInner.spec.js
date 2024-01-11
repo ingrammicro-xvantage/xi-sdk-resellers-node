@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.DealsSearchResponseDealsInner();
+    instance = new ResellerApiDocumentation.DealsSearchResponseDealsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('DealsSearchResponseDealsInner', function() {
     it('should create an instance of DealsSearchResponseDealsInner', function() {
       // uncomment below and update the code to test DealsSearchResponseDealsInner
-      //var instance = new ResellerApiDocumentationUnitedStates.DealsSearchResponseDealsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.DealsSearchResponseDealsInner);
+      //var instance = new ResellerApiDocumentation.DealsSearchResponseDealsInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.DealsSearchResponseDealsInner);
     });
 
     it('should have the property dealId (base name: "dealId")', function() {
       // uncomment below and update the code to test the property dealId
-      //var instance = new ResellerApiDocumentationUnitedStates.DealsSearchResponseDealsInner();
+      //var instance = new ResellerApiDocumentation.DealsSearchResponseDealsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new ResellerApiDocumentationUnitedStates.DealsSearchResponseDealsInner();
+      //var instance = new ResellerApiDocumentation.DealsSearchResponseDealsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property endUser (base name: "endUser")', function() {
       // uncomment below and update the code to test the property endUser
-      //var instance = new ResellerApiDocumentationUnitedStates.DealsSearchResponseDealsInner();
+      //var instance = new ResellerApiDocumentation.DealsSearchResponseDealsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendor (base name: "vendor")', function() {
       // uncomment below and update the code to test the property vendor
-      //var instance = new ResellerApiDocumentationUnitedStates.DealsSearchResponseDealsInner();
+      //var instance = new ResellerApiDocumentation.DealsSearchResponseDealsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property dealExpiryDate (base name: "dealExpiryDate")', function() {
       // uncomment below and update the code to test the property dealExpiryDate
-      //var instance = new ResellerApiDocumentationUnitedStates.DealsSearchResponseDealsInner();
+      //var instance = new ResellerApiDocumentation.DealsSearchResponseDealsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new ResellerApiDocumentationUnitedStates.DealsSearchResponseDealsInner();
+      //var instance = new ResellerApiDocumentation.DealsSearchResponseDealsInner();
       //expect(instance).to.be();
     });
 

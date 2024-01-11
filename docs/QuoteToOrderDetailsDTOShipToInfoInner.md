@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.QuoteToOrderDetailsDTOShipToInfoInner
+# ResellerApiDocumentation.QuoteToOrderDetailsDTOShipToInfoInner
 
 ## Properties
 

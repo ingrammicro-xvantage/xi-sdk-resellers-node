@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderCancelResponse
+# ResellerApiDocumentation.OrderCancelResponse
 
 ## Properties
 

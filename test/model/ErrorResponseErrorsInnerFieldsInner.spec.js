@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.ErrorResponseErrorsInnerFieldsInner();
+    instance = new ResellerApiDocumentation.ErrorResponseErrorsInnerFieldsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ErrorResponseErrorsInnerFieldsInner', function() {
     it('should create an instance of ErrorResponseErrorsInnerFieldsInner', function() {
       // uncomment below and update the code to test ErrorResponseErrorsInnerFieldsInner
-      //var instance = new ResellerApiDocumentationUnitedStates.ErrorResponseErrorsInnerFieldsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.ErrorResponseErrorsInnerFieldsInner);
+      //var instance = new ResellerApiDocumentation.ErrorResponseErrorsInnerFieldsInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.ErrorResponseErrorsInnerFieldsInner);
     });
 
     it('should have the property field (base name: "field")', function() {
       // uncomment below and update the code to test the property field
-      //var instance = new ResellerApiDocumentationUnitedStates.ErrorResponseErrorsInnerFieldsInner();
+      //var instance = new ResellerApiDocumentation.ErrorResponseErrorsInnerFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new ResellerApiDocumentationUnitedStates.ErrorResponseErrorsInnerFieldsInner();
+      //var instance = new ResellerApiDocumentation.ErrorResponseErrorsInnerFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new ResellerApiDocumentationUnitedStates.ErrorResponseErrorsInnerFieldsInner();
+      //var instance = new ResellerApiDocumentation.ErrorResponseErrorsInnerFieldsInner();
       //expect(instance).to.be();
     });
 

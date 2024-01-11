@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.InvoicesV5Api
+# ResellerApiDocumentation.InvoicesV5Api
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -19,13 +19,13 @@ View invoice details. This is a request to query invoice details for a specific 
 ### Example
 
 ```javascript
-import ResellerApiDocumentationUnitedStates from 'reseller_api_documentation_united_states';
-let defaultClient = ResellerApiDocumentationUnitedStates.ApiClient.instance;
+import ResellerApiDocumentation from 'reseller_api_documentation';
+let defaultClient = ResellerApiDocumentation.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentationUnitedStates.InvoicesV5Api();
+let apiInstance = new ResellerApiDocumentation.InvoicesV5Api();
 let invoiceNumber = "'20-RCW67-11'"; // String | Ingram Micro Invoice Number
 let customerNumber = "'20-222222'"; // String | Your unique Ingram Micro customer number
 let isoCountryCode = "'US'"; // String | ISO 2 char country code

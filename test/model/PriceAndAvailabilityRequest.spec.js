@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequest();
+    instance = new ResellerApiDocumentation.PriceAndAvailabilityRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('PriceAndAvailabilityRequest', function() {
     it('should create an instance of PriceAndAvailabilityRequest', function() {
       // uncomment below and update the code to test PriceAndAvailabilityRequest
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequest();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequest);
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequest();
+      //expect(instance).to.be.a(ResellerApiDocumentation.PriceAndAvailabilityRequest);
     });
 
     it('should have the property servicerequest (base name: "servicerequest")', function() {
       // uncomment below and update the code to test the property servicerequest
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequest();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequest();
       //expect(instance).to.be();
     });
 

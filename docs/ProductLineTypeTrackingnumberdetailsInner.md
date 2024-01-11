@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ProductLineTypeTrackingnumberdetailsInner
+# ResellerApiDocumentation.ProductLineTypeTrackingnumberdetailsInner
 
 ## Properties
 

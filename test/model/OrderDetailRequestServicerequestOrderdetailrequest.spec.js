@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderDetailRequestServicerequestOrderdetailrequest();
+    instance = new ResellerApiDocumentation.OrderDetailRequestServicerequestOrderdetailrequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('OrderDetailRequestServicerequestOrderdetailrequest', function() {
     it('should create an instance of OrderDetailRequestServicerequestOrderdetailrequest', function() {
       // uncomment below and update the code to test OrderDetailRequestServicerequestOrderdetailrequest
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailRequestServicerequestOrderdetailrequest();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderDetailRequestServicerequestOrderdetailrequest);
+      //var instance = new ResellerApiDocumentation.OrderDetailRequestServicerequestOrderdetailrequest();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailRequestServicerequestOrderdetailrequest);
     });
 
     it('should have the property ordernumber (base name: "ordernumber")', function() {
       // uncomment below and update the code to test the property ordernumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailRequestServicerequestOrderdetailrequest();
+      //var instance = new ResellerApiDocumentation.OrderDetailRequestServicerequestOrderdetailrequest();
       //expect(instance).to.be();
     });
 
     it('should have the property customerponumber (base name: "customerponumber")', function() {
       // uncomment below and update the code to test the property customerponumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailRequestServicerequestOrderdetailrequest();
+      //var instance = new ResellerApiDocumentation.OrderDetailRequestServicerequestOrderdetailrequest();
       //expect(instance).to.be();
     });
 
     it('should have the property orderdate (base name: "orderdate")', function() {
       // uncomment below and update the code to test the property orderdate
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailRequestServicerequestOrderdetailrequest();
+      //var instance = new ResellerApiDocumentation.OrderDetailRequestServicerequestOrderdetailrequest();
       //expect(instance).to.be();
     });
 
     it('should have the property systemid (base name: "systemid")', function() {
       // uncomment below and update the code to test the property systemid
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailRequestServicerequestOrderdetailrequest();
+      //var instance = new ResellerApiDocumentation.OrderDetailRequestServicerequestOrderdetailrequest();
       //expect(instance).to.be();
     });
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseTechnicalSpecificationsInner();
+    instance = new ResellerApiDocumentation.ProductDetailResponseTechnicalSpecificationsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('ProductDetailResponseTechnicalSpecificationsInner', function() {
     it('should create an instance of ProductDetailResponseTechnicalSpecificationsInner', function() {
       // uncomment below and update the code to test ProductDetailResponseTechnicalSpecificationsInner
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseTechnicalSpecificationsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.ProductDetailResponseTechnicalSpecificationsInner);
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseTechnicalSpecificationsInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.ProductDetailResponseTechnicalSpecificationsInner);
     });
 
     it('should have the property headername (base name: "headername")', function() {
       // uncomment below and update the code to test the property headername
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseTechnicalSpecificationsInner();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseTechnicalSpecificationsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property attributevalue (base name: "attributevalue")', function() {
       // uncomment below and update the code to test the property attributevalue
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseTechnicalSpecificationsInner();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseTechnicalSpecificationsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property attributedisplay (base name: "attributedisplay")', function() {
       // uncomment below and update the code to test the property attributedisplay
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseTechnicalSpecificationsInner();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseTechnicalSpecificationsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property attributename (base name: "attributename")', function() {
       // uncomment below and update the code to test the property attributename
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductDetailResponseTechnicalSpecificationsInner();
+      //var instance = new ResellerApiDocumentation.ProductDetailResponseTechnicalSpecificationsInner();
       //expect(instance).to.be();
     });
 

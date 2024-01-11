@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseAccountInfo
+# ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseAccountInfo
 
 ## Properties
 

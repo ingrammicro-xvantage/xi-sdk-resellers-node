@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInnerLinksInner
+# ResellerApiDocumentation.ProductSearchResponseCatalogInnerLinksInner
 
 ## Properties
 

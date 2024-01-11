@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.InvoicesApi
+# ResellerApiDocumentation.InvoicesApi
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -20,13 +20,13 @@ Use your Ingram Micro invoice number to search for existing invoices or retrieve
 ### Example
 
 ```javascript
-import ResellerApiDocumentationUnitedStates from 'reseller_api_documentation_united_states';
-let defaultClient = ResellerApiDocumentationUnitedStates.ApiClient.instance;
+import ResellerApiDocumentation from 'reseller_api_documentation';
+let defaultClient = ResellerApiDocumentation.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentationUnitedStates.InvoicesApi();
+let apiInstance = new ResellerApiDocumentation.InvoicesApi();
 let invoiceNumber = 335238411; // String | The Ingram Micro invoice number.
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
@@ -83,13 +83,13 @@ Search your Ingram Micro invoices. This endpoint searches by multiple invoice pa
 ### Example
 
 ```javascript
-import ResellerApiDocumentationUnitedStates from 'reseller_api_documentation_united_states';
-let defaultClient = ResellerApiDocumentationUnitedStates.ApiClient.instance;
+import ResellerApiDocumentation from 'reseller_api_documentation';
+let defaultClient = ResellerApiDocumentation.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentationUnitedStates.InvoicesApi();
+let apiInstance = new ResellerApiDocumentation.InvoicesApi();
 let iMApplicationID = MyCompany; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
+    instance = new ResellerApiDocumentation.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner', function() {
     it('should create an instance of OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner', function() {
       // uncomment below and update the code to test OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner);
+      //var instance = new ResellerApiDocumentation.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner);
     });
 
     it('should have the property ordernumber (base name: "ordernumber")', function() {
       // uncomment below and update the code to test the property ordernumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property entrytimestamp (base name: "entrytimestamp")', function() {
       // uncomment below and update the code to test the property entrytimestamp
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerordernumber (base name: "customerordernumber")', function() {
       // uncomment below and update the code to test the property customerordernumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property suborders (base name: "suborders")', function() {
       // uncomment below and update the code to test the property suborders
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner();
       //expect(instance).to.be();
     });
 

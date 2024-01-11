@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.FreightRequestLinesInner
+# ResellerApiDocumentation.FreightRequestLinesInner
 
 ## Properties
 

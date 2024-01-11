@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner
+# ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderDeleteRequestServicerequest();
+    instance = new ResellerApiDocumentation.OrderDeleteRequestServicerequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderDeleteRequestServicerequest', function() {
     it('should create an instance of OrderDeleteRequestServicerequest', function() {
       // uncomment below and update the code to test OrderDeleteRequestServicerequest
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDeleteRequestServicerequest();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderDeleteRequestServicerequest);
+      //var instance = new ResellerApiDocumentation.OrderDeleteRequestServicerequest();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDeleteRequestServicerequest);
     });
 
     it('should have the property requestpreamble (base name: "requestpreamble")', function() {
       // uncomment below and update the code to test the property requestpreamble
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDeleteRequestServicerequest();
+      //var instance = new ResellerApiDocumentation.OrderDeleteRequestServicerequest();
       //expect(instance).to.be();
     });
 
     it('should have the property orderDeleteRequestDetails (base name: "OrderDeleteRequestDetails")', function() {
       // uncomment below and update the code to test the property orderDeleteRequestDetails
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDeleteRequestServicerequest();
+      //var instance = new ResellerApiDocumentation.OrderDeleteRequestServicerequest();
       //expect(instance).to.be();
     });
 

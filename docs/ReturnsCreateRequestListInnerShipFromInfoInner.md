@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ReturnsCreateRequestListInnerShipFromInfoInner
+# ResellerApiDocumentation.ReturnsCreateRequestListInnerShipFromInfoInner
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataType();
+    instance = new ResellerApiDocumentation.RenewalsSearchRequestDataType();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('RenewalsSearchRequestDataType', function() {
     it('should create an instance of RenewalsSearchRequestDataType', function() {
       // uncomment below and update the code to test RenewalsSearchRequestDataType
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataType();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataType);
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataType();
+      //expect(instance).to.be.a(ResellerApiDocumentation.RenewalsSearchRequestDataType);
     });
 
     it('should have the property startDate (base name: "startDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataType();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataType();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "endDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataType();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataType();
       //expect(instance).to.be();
     });
 
     it('should have the property invoiceDate (base name: "invoiceDate")', function() {
       // uncomment below and update the code to test the property invoiceDate
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataType();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataType();
       //expect(instance).to.be();
     });
 
     it('should have the property expirationDate (base name: "expirationDate")', function() {
       // uncomment below and update the code to test the property expirationDate
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataType();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataType();
       //expect(instance).to.be();
     });
 

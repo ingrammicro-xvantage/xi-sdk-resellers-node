@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderCreateResponseShipToInfo
+# ResellerApiDocumentation.OrderCreateResponseShipToInfo
 
 ## Properties
 

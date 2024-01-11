@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.RenewalsSearchRequestDataTypeExpirationDate
+# ResellerApiDocumentation.RenewalsSearchRequestDataTypeExpirationDate
 
 ## Properties
 

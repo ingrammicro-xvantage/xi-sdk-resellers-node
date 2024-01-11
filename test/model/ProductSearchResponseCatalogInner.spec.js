@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+    instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,121 +50,121 @@
   describe('ProductSearchResponseCatalogInner', function() {
     it('should create an instance of ProductSearchResponseCatalogInner', function() {
       // uncomment below and update the code to test ProductSearchResponseCatalogInner
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner);
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.ProductSearchResponseCatalogInner);
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property category (base name: "category")', function() {
       // uncomment below and update the code to test the property category
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property subCategory (base name: "subCategory")', function() {
       // uncomment below and update the code to test the property subCategory
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property productType (base name: "productType")', function() {
       // uncomment below and update the code to test the property productType
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramPartNumber (base name: "ingramPartNumber")', function() {
       // uncomment below and update the code to test the property ingramPartNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorPartNumber (base name: "vendorPartNumber")', function() {
       // uncomment below and update the code to test the property vendorPartNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property upcCode (base name: "upcCode")', function() {
       // uncomment below and update the code to test the property upcCode
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorName (base name: "vendorName")', function() {
       // uncomment below and update the code to test the property vendorName
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserRequired (base name: "endUserRequired")', function() {
       // uncomment below and update the code to test the property endUserRequired
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property hasDiscounts (base name: "hasDiscounts")', function() {
       // uncomment below and update the code to test the property hasDiscounts
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property discontinued (base name: "discontinued")', function() {
       // uncomment below and update the code to test the property discontinued
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property newProduct (base name: "newProduct")', function() {
       // uncomment below and update the code to test the property newProduct
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property directShip (base name: "directShip")', function() {
       // uncomment below and update the code to test the property directShip
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property hasWarranty (base name: "hasWarranty")', function() {
       // uncomment below and update the code to test the property hasWarranty
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property extraDescription (base name: "extraDescription")', function() {
       // uncomment below and update the code to test the property extraDescription
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property replacementSku (base name: "replacementSku")', function() {
       // uncomment below and update the code to test the property replacementSku
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 
     it('should have the property authorizedToPurchase (base name: "authorizedToPurchase")', function() {
       // uncomment below and update the code to test the property authorizedToPurchase
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseCatalogInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });
 

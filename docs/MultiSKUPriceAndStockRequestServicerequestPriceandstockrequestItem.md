@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.MultiSKUPriceAndStockRequestServicerequestPriceandstockrequestItem
+# ResellerApiDocumentation.MultiSKUPriceAndStockRequestServicerequestPriceandstockrequestItem
 
 ## Properties
 

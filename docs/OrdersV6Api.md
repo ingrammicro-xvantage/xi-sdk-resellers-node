@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrdersV6Api
+# ResellerApiDocumentation.OrdersV6Api
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -19,13 +19,13 @@ Use your Ingram Micro sales order number to search for existing orders or retrie
 ### Example
 
 ```javascript
-import ResellerApiDocumentationUnitedStates from 'reseller_api_documentation_united_states';
-let defaultClient = ResellerApiDocumentationUnitedStates.ApiClient.instance;
+import ResellerApiDocumentation from 'reseller_api_documentation';
+let defaultClient = ResellerApiDocumentation.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentationUnitedStates.OrdersV6Api();
+let apiInstance = new ResellerApiDocumentation.OrdersV6Api();
 let ordernumber = 20-RD3QV; // String | The Ingram Micro sales order number.
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.

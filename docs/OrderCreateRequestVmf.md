@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderCreateRequestVmf
+# ResellerApiDocumentation.OrderCreateRequestVmf
 
 ## Properties
 

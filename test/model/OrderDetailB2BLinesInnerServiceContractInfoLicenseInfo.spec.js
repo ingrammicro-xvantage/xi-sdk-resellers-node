@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
+    instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo', function() {
     it('should create an instance of OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo', function() {
       // uncomment below and update the code to test OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo);
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo);
     });
 
     it('should have the property licenseNumber (base name: "licenseNumber")', function() {
       // uncomment below and update the code to test the property licenseNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property licenseStartDate (base name: "licenseStartDate")', function() {
       // uncomment below and update the code to test the property licenseStartDate
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property licenseEndDate (base name: "licenseEndDate")', function() {
       // uncomment below and update the code to test the property licenseEndDate
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
+      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo();
       //expect(instance).to.be();
     });
 

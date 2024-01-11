@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner();
+    instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner', function() {
     it('should create an instance of OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner', function() {
       // uncomment below and update the code to test OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner);
+      //var instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner);
     });
 
     it('should have the property attributename (base name: "attributename")', function() {
       // uncomment below and update the code to test the property attributename
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner();
+      //var instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property attributevalue (base name: "attributevalue")', function() {
       // uncomment below and update the code to test the property attributevalue
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner();
+      //var instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner();
       //expect(instance).to.be();
     });
 

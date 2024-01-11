@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailResponseServiceresponseOrderdetailresponseShiptoaddress
+# ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseShiptoaddress
 
 ## Properties
 

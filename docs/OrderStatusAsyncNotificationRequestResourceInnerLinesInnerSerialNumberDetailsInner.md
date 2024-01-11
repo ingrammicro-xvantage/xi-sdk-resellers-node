@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerSerialNumberDetailsInner
+# ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerSerialNumberDetailsInner
 
 ## Properties
 

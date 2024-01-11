@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.MultiSKUPriceAndStockRequestServicerequest();
+    instance = new ResellerApiDocumentation.MultiSKUPriceAndStockRequestServicerequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('MultiSKUPriceAndStockRequestServicerequest', function() {
     it('should create an instance of MultiSKUPriceAndStockRequestServicerequest', function() {
       // uncomment below and update the code to test MultiSKUPriceAndStockRequestServicerequest
-      //var instance = new ResellerApiDocumentationUnitedStates.MultiSKUPriceAndStockRequestServicerequest();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.MultiSKUPriceAndStockRequestServicerequest);
+      //var instance = new ResellerApiDocumentation.MultiSKUPriceAndStockRequestServicerequest();
+      //expect(instance).to.be.a(ResellerApiDocumentation.MultiSKUPriceAndStockRequestServicerequest);
     });
 
     it('should have the property requestpreamble (base name: "requestpreamble")', function() {
       // uncomment below and update the code to test the property requestpreamble
-      //var instance = new ResellerApiDocumentationUnitedStates.MultiSKUPriceAndStockRequestServicerequest();
+      //var instance = new ResellerApiDocumentation.MultiSKUPriceAndStockRequestServicerequest();
       //expect(instance).to.be();
     });
 
     it('should have the property priceandstockrequest (base name: "priceandstockrequest")', function() {
       // uncomment below and update the code to test the property priceandstockrequest
-      //var instance = new ResellerApiDocumentationUnitedStates.MultiSKUPriceAndStockRequestServicerequest();
+      //var instance = new ResellerApiDocumentation.MultiSKUPriceAndStockRequestServicerequest();
       //expect(instance).to.be();
     });
 

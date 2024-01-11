@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+    instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,79 +50,79 @@
   describe('PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner', function() {
     it('should create an instance of PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner', function() {
       // uncomment below and update the code to test PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner);
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner);
     });
 
     it('should have the property index (base name: "index")', function() {
       // uncomment below and update the code to test the property index
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingrampartnumber (base name: "ingrampartnumber")', function() {
       // uncomment below and update the code to test the property ingrampartnumber
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorpartnumber (base name: "vendorpartnumber")', function() {
       // uncomment below and update the code to test the property vendorpartnumber
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property upc (base name: "upc")', function() {
       // uncomment below and update the code to test the property upc
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerpartnumber (base name: "customerpartnumber")', function() {
       // uncomment below and update the code to test the property customerpartnumber
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property warehouseidlist (base name: "warehouseidlist")', function() {
       // uncomment below and update the code to test the property warehouseidlist
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property extendedvendorpartnumber (base name: "extendedvendorpartnumber")', function() {
       // uncomment below and update the code to test the property extendedvendorpartnumber
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property enduserid (base name: "enduserid")', function() {
       // uncomment below and update the code to test the property enduserid
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property govtprogramtype (base name: "govtprogramtype")', function() {
       // uncomment below and update the code to test the property govtprogramtype
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property govtendusertype (base name: "govtendusertype")', function() {
       // uncomment below and update the code to test the property govtendusertype
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 
     it('should have the property specialbidnumber (base name: "specialbidnumber")', function() {
       // uncomment below and update the code to test the property specialbidnumber
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerScheduleLinesInner
+# ResellerApiDocumentation.OrderDetailB2BLinesInnerScheduleLinesInner
 
 ## Properties
 

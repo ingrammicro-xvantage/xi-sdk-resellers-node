@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+    instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,73 +50,73 @@
   describe('QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser', function() {
     it('should create an instance of QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser', function() {
       // uncomment below and update the code to test QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser);
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser);
     });
 
     it('should have the property endUserName (base name: "endUserName")', function() {
       // uncomment below and update the code to test the property endUserName
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserAddress (base name: "endUserAddress")', function() {
       // uncomment below and update the code to test the property endUserAddress
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserAddress2 (base name: "endUserAddress2")', function() {
       // uncomment below and update the code to test the property endUserAddress2
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserAddress3 (base name: "endUserAddress3")', function() {
       // uncomment below and update the code to test the property endUserAddress3
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserCity (base name: "endUserCity")', function() {
       // uncomment below and update the code to test the property endUserCity
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserState (base name: "endUserState")', function() {
       // uncomment below and update the code to test the property endUserState
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserEmail (base name: "endUserEmail")', function() {
       // uncomment below and update the code to test the property endUserEmail
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserPhone (base name: "endUserPhone")', function() {
       // uncomment below and update the code to test the property endUserPhone
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserZipCode (base name: "endUserZipCode")', function() {
       // uncomment below and update the code to test the property endUserZipCode
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserContactName (base name: "endUserContactName")', function() {
       // uncomment below and update the code to test the property endUserContactName
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserMarketSegment (base name: "endUserMarketSegment")', function() {
       // uncomment below and update the code to test the property endUserMarketSegment
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser();
       //expect(instance).to.be();
     });
 

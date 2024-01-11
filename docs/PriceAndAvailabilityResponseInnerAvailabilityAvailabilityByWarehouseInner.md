@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner
+# ResellerApiDocumentation.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner
 
 ## Properties
 

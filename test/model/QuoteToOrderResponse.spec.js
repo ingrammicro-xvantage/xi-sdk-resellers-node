@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.QuoteToOrderResponse();
+    instance = new ResellerApiDocumentation.QuoteToOrderResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('QuoteToOrderResponse', function() {
     it('should create an instance of QuoteToOrderResponse', function() {
       // uncomment below and update the code to test QuoteToOrderResponse
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteToOrderResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.QuoteToOrderResponse);
+      //var instance = new ResellerApiDocumentation.QuoteToOrderResponse();
+      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteToOrderResponse);
     });
 
     it('should have the property quoteNumber (base name: "quoteNumber")', function() {
       // uncomment below and update the code to test the property quoteNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteToOrderResponse();
+      //var instance = new ResellerApiDocumentation.QuoteToOrderResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property confirmationNumber (base name: "confirmationNumber")', function() {
       // uncomment below and update the code to test the property confirmationNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteToOrderResponse();
+      //var instance = new ResellerApiDocumentation.QuoteToOrderResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteToOrderResponse();
+      //var instance = new ResellerApiDocumentation.QuoteToOrderResponse();
       //expect(instance).to.be();
     });
 

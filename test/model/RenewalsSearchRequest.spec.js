@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequest();
+    instance = new ResellerApiDocumentation.RenewalsSearchRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('RenewalsSearchRequest', function() {
     it('should create an instance of RenewalsSearchRequest', function() {
       // uncomment below and update the code to test RenewalsSearchRequest
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequest();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.RenewalsSearchRequest);
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequest();
+      //expect(instance).to.be.a(ResellerApiDocumentation.RenewalsSearchRequest);
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequest();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property dataType (base name: "dataType")', function() {
       // uncomment below and update the code to test the property dataType
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequest();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property vendor (base name: "vendor")', function() {
       // uncomment below and update the code to test the property vendor
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequest();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property endUser (base name: "endUser")', function() {
       // uncomment below and update the code to test the property endUser
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchRequest();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchRequest();
       //expect(instance).to.be();
     });
 

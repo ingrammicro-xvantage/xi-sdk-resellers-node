@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.InvoiceDetailsv61ResponseLinesInner
+# ResellerApiDocumentation.InvoiceDetailsv61ResponseLinesInner
 
 ## Properties
 

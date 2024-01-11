@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderCreateResponseEndUserInfo
+# ResellerApiDocumentation.OrderCreateResponseEndUserInfo
 
 ## Properties
 

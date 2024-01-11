@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+    instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,79 +50,79 @@
   describe('QuoteSearchResponseQuotesInner', function() {
     it('should create an instance of QuoteSearchResponseQuotesInner', function() {
       // uncomment below and update the code to test QuoteSearchResponseQuotesInner
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner);
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteSearchResponseQuotesInner);
     });
 
     it('should have the property quoteName (base name: "quoteName")', function() {
       // uncomment below and update the code to test the property quoteName
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quoteNumber (base name: "quoteNumber")', function() {
       // uncomment below and update the code to test the property quoteNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property revision (base name: "revision")', function() {
       // uncomment below and update the code to test the property revision
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserContact (base name: "endUserContact")', function() {
       // uncomment below and update the code to test the property endUserContact
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property specialBidNumber (base name: "specialBidNumber")', function() {
       // uncomment below and update the code to test the property specialBidNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quoteTotal (base name: "quoteTotal")', function() {
       // uncomment below and update the code to test the property quoteTotal
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quoteStatus (base name: "quoteStatus")', function() {
       // uncomment below and update the code to test the property quoteStatus
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramQuoteDate (base name: "ingramQuoteDate")', function() {
       // uncomment below and update the code to test the property ingramQuoteDate
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModifiedDate (base name: "lastModifiedDate")', function() {
       // uncomment below and update the code to test the property lastModifiedDate
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramQuoteExpiryDate (base name: "ingramQuoteExpiryDate")', function() {
       // uncomment below and update the code to test the property ingramQuoteExpiryDate
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendor (base name: "vendor")', function() {
       // uncomment below and update the code to test the property vendor
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property createdBy (base name: "createdBy")', function() {
       // uncomment below and update the code to test the property createdBy
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteSearchResponseQuotesInner();
+      //var instance = new ResellerApiDocumentation.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });
 

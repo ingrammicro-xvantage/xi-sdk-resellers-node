@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailB2BEndUserInfo
+# ResellerApiDocumentation.OrderDetailB2BEndUserInfo
 
 ## Properties
 

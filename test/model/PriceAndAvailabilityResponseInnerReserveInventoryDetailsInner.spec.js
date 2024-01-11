@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
+    instance = new ResellerApiDocumentation.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner', function() {
     it('should create an instance of PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner', function() {
       // uncomment below and update the code to test PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner);
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner);
     });
 
     it('should have the property quantityReserved (base name: "quantityReserved")', function() {
       // uncomment below and update the code to test the property quantityReserved
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityAvailable (base name: "quantityAvailable")', function() {
       // uncomment below and update the code to test the property quantityAvailable
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property effectivedate (base name: "effectivedate")', function() {
       // uncomment below and update the code to test the property effectivedate
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property expirydate (base name: "expirydate")', function() {
       // uncomment below and update the code to test the property expirydate
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner();
       //expect(instance).to.be();
     });
 

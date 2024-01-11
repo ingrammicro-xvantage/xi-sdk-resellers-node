@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.Fields();
+    instance = new ResellerApiDocumentation.Fields();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('Fields', function() {
     it('should create an instance of Fields', function() {
       // uncomment below and update the code to test Fields
-      //var instance = new ResellerApiDocumentationUnitedStates.Fields();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.Fields);
+      //var instance = new ResellerApiDocumentation.Fields();
+      //expect(instance).to.be.a(ResellerApiDocumentation.Fields);
     });
 
     it('should have the property field (base name: "field")', function() {
       // uncomment below and update the code to test the property field
-      //var instance = new ResellerApiDocumentationUnitedStates.Fields();
+      //var instance = new ResellerApiDocumentation.Fields();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new ResellerApiDocumentationUnitedStates.Fields();
+      //var instance = new ResellerApiDocumentation.Fields();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new ResellerApiDocumentationUnitedStates.Fields();
+      //var instance = new ResellerApiDocumentation.Fields();
       //expect(instance).to.be();
     });
 

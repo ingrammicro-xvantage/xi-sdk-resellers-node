@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseProductsearchresponseInner();
+    instance = new ResellerApiDocumentation.ProductSearchResponseServiceresponseProductsearchresponseInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ProductSearchResponseServiceresponseProductsearchresponseInner', function() {
     it('should create an instance of ProductSearchResponseServiceresponseProductsearchresponseInner', function() {
       // uncomment below and update the code to test ProductSearchResponseServiceresponseProductsearchresponseInner
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseProductsearchresponseInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseProductsearchresponseInner);
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseServiceresponseProductsearchresponseInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.ProductSearchResponseServiceresponseProductsearchresponseInner);
     });
 
     it('should have the property responseflag (base name: "responseflag")', function() {
       // uncomment below and update the code to test the property responseflag
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseProductsearchresponseInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseServiceresponseProductsearchresponseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property partnumbers (base name: "partnumbers")', function() {
       // uncomment below and update the code to test the property partnumbers
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseProductsearchresponseInner();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseServiceresponseProductsearchresponseInner();
       //expect(instance).to.be();
     });
 

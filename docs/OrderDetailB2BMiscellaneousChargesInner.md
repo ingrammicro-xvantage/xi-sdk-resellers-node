@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailB2BMiscellaneousChargesInner
+# ResellerApiDocumentation.OrderDetailB2BMiscellaneousChargesInner
 
 ## Properties
 

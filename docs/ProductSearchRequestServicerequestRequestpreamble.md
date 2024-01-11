@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ProductSearchRequestServicerequestRequestpreamble
+# ResellerApiDocumentation.ProductSearchRequestServicerequestRequestpreamble
 
 ## Properties
 

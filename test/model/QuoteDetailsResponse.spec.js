@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsResponse();
+    instance = new ResellerApiDocumentation.QuoteDetailsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('QuoteDetailsResponse', function() {
     it('should create an instance of QuoteDetailsResponse', function() {
       // uncomment below and update the code to test QuoteDetailsResponse
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.QuoteDetailsResponse);
+      //var instance = new ResellerApiDocumentation.QuoteDetailsResponse();
+      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteDetailsResponse);
     });
 
     it('should have the property quoteDetailResponse (base name: "quoteDetailResponse")', function() {
       // uncomment below and update the code to test the property quoteDetailResponse
-      //var instance = new ResellerApiDocumentationUnitedStates.QuoteDetailsResponse();
+      //var instance = new ResellerApiDocumentation.QuoteDetailsResponse();
       //expect(instance).to.be();
     });
 

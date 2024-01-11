@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestProductsInner();
+    instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestProductsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('PriceAndAvailabilityRequestProductsInner', function() {
     it('should create an instance of PriceAndAvailabilityRequestProductsInner', function() {
       // uncomment below and update the code to test PriceAndAvailabilityRequestProductsInner
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestProductsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestProductsInner);
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestProductsInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.PriceAndAvailabilityRequestProductsInner);
     });
 
     it('should have the property ingramPartNumber (base name: "ingramPartNumber")', function() {
       // uncomment below and update the code to test the property ingramPartNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorPartNumber (base name: "vendorPartNumber")', function() {
       // uncomment below and update the code to test the property vendorPartNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerPartNumber (base name: "customerPartNumber")', function() {
       // uncomment below and update the code to test the property customerPartNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property upc (base name: "upc")', function() {
       // uncomment below and update the code to test the property upc
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityRequested (base name: "quantityRequested")', function() {
       // uncomment below and update the code to test the property quantityRequested
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
       // uncomment below and update the code to test the property additionalAttributes
-      //var instance = new ResellerApiDocumentationUnitedStates.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ProductLineType
+# ResellerApiDocumentation.ProductLineType
 
 ## Properties
 

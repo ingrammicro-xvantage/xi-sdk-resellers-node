@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.Error
+# ResellerApiDocumentation.Error
 
 ## Properties
 

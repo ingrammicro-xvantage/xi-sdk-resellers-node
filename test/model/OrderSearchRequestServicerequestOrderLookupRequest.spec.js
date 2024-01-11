@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequest();
+    instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderSearchRequestServicerequestOrderLookupRequest', function() {
     it('should create an instance of OrderSearchRequestServicerequestOrderLookupRequest', function() {
       // uncomment below and update the code to test OrderSearchRequestServicerequestOrderLookupRequest
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequest();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequest);
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequest();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequest);
     });
 
     it('should have the property orderNumber (base name: "orderNumber")', function() {
       // uncomment below and update the code to test the property orderNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequest();
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property customerOrderNumber (base name: "customerOrderNumber")', function() {
       // uncomment below and update the code to test the property customerOrderNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequest();
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequest();
       //expect(instance).to.be();
     });
 

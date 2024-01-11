@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+    instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,103 +50,103 @@
   describe('OrderCreateResponseOrdersInner', function() {
     it('should create an instance of OrderCreateResponseOrdersInner', function() {
       // uncomment below and update the code to test OrderCreateResponseOrdersInner
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner);
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderCreateResponseOrdersInner);
     });
 
     it('should have the property numberOfLinesWithSuccess (base name: "numberOfLinesWithSuccess")', function() {
       // uncomment below and update the code to test the property numberOfLinesWithSuccess
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property numberOfLinesWithError (base name: "numberOfLinesWithError")', function() {
       // uncomment below and update the code to test the property numberOfLinesWithError
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property numberOfLinesWithWarning (base name: "numberOfLinesWithWarning")', function() {
       // uncomment below and update the code to test the property numberOfLinesWithWarning
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramOrderNumber (base name: "ingramOrderNumber")', function() {
       // uncomment below and update the code to test the property ingramOrderNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramOrderDate (base name: "ingramOrderDate")', function() {
       // uncomment below and update the code to test the property ingramOrderDate
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property notes (base name: "notes")', function() {
       // uncomment below and update the code to test the property notes
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property orderType (base name: "orderType")', function() {
       // uncomment below and update the code to test the property orderType
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property orderTotal (base name: "orderTotal")', function() {
       // uncomment below and update the code to test the property orderTotal
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property freightCharges (base name: "freightCharges")', function() {
       // uncomment below and update the code to test the property freightCharges
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property totalTax (base name: "totalTax")', function() {
       // uncomment below and update the code to test the property totalTax
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property currencyCode (base name: "currencyCode")', function() {
       // uncomment below and update the code to test the property currencyCode
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property lines (base name: "lines")', function() {
       // uncomment below and update the code to test the property lines
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property miscellaneousCharges (base name: "miscellaneousCharges")', function() {
       // uncomment below and update the code to test the property miscellaneousCharges
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property rejectedLineItems (base name: "rejectedLineItems")', function() {
       // uncomment below and update the code to test the property rejectedLineItems
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
       // uncomment below and update the code to test the property additionalAttributes
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInner();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponseOrdersInner();
       //expect(instance).to.be();
     });
 

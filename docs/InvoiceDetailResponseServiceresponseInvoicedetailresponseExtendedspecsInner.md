@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner
+# ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner
 
 ## Properties
 

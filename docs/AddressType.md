@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.AddressType
+# ResellerApiDocumentation.AddressType
 
 ## Properties
 

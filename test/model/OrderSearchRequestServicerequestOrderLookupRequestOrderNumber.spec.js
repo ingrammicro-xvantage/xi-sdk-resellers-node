@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
+    instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('OrderSearchRequestServicerequestOrderLookupRequestOrderNumber', function() {
     it('should create an instance of OrderSearchRequestServicerequestOrderLookupRequestOrderNumber', function() {
       // uncomment below and update the code to test OrderSearchRequestServicerequestOrderLookupRequestOrderNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber);
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber);
     });
 
     it('should have the property entryDate (base name: "entryDate")', function() {
       // uncomment below and update the code to test the property entryDate
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
       //expect(instance).to.be();
     });
 
     it('should have the property orderBranch (base name: "orderBranch")', function() {
       // uncomment below and update the code to test the property orderBranch
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
       //expect(instance).to.be();
     });
 
     it('should have the property orderNumber (base name: "orderNumber")', function() {
       // uncomment below and update the code to test the property orderNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
       //expect(instance).to.be();
     });
 
     it('should have the property distributionNumber (base name: "distributionNumber")', function() {
       // uncomment below and update the code to test the property distributionNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
       //expect(instance).to.be();
     });
 
     it('should have the property shipmentNumber (base name: "shipmentNumber")', function() {
       // uncomment below and update the code to test the property shipmentNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber();
       //expect(instance).to.be();
     });
 

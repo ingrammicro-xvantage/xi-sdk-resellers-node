@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions
+# ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoSubscriptions
 
 ## Properties
 

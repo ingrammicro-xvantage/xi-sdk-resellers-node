@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderCreateResponseOrdersInnerMiscellaneousChargesInner
+# ResellerApiDocumentation.OrderCreateResponseOrdersInnerMiscellaneousChargesInner
 
 ## Properties
 

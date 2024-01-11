@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.InvoiceSearchResponse();
+    instance = new ResellerApiDocumentation.InvoiceSearchResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('InvoiceSearchResponse', function() {
     it('should create an instance of InvoiceSearchResponse', function() {
       // uncomment below and update the code to test InvoiceSearchResponse
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceSearchResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.InvoiceSearchResponse);
+      //var instance = new ResellerApiDocumentation.InvoiceSearchResponse();
+      //expect(instance).to.be.a(ResellerApiDocumentation.InvoiceSearchResponse);
     });
 
     it('should have the property recordsFound (base name: "recordsFound")', function() {
       // uncomment below and update the code to test the property recordsFound
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceSearchResponse();
+      //var instance = new ResellerApiDocumentation.InvoiceSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property pageSize (base name: "pageSize")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceSearchResponse();
+      //var instance = new ResellerApiDocumentation.InvoiceSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property pageNumber (base name: "pageNumber")', function() {
       // uncomment below and update the code to test the property pageNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceSearchResponse();
+      //var instance = new ResellerApiDocumentation.InvoiceSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property invoices (base name: "invoices")', function() {
       // uncomment below and update the code to test the property invoices
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceSearchResponse();
+      //var instance = new ResellerApiDocumentation.InvoiceSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property nextPage (base name: "nextPage")', function() {
       // uncomment below and update the code to test the property nextPage
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceSearchResponse();
+      //var instance = new ResellerApiDocumentation.InvoiceSearchResponse();
       //expect(instance).to.be();
     });
 

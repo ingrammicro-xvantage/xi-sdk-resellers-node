@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestRequestpreamble();
+    instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestRequestpreamble();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderSearchRequestServicerequestRequestpreamble', function() {
     it('should create an instance of OrderSearchRequestServicerequestRequestpreamble', function() {
       // uncomment below and update the code to test OrderSearchRequestServicerequestRequestpreamble
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestRequestpreamble();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestRequestpreamble);
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestRequestpreamble();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderSearchRequestServicerequestRequestpreamble);
     });
 
     it('should have the property isoCountryCode (base name: "isoCountryCode")', function() {
       // uncomment below and update the code to test the property isoCountryCode
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestRequestpreamble();
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestRequestpreamble();
       //expect(instance).to.be();
     });
 
     it('should have the property customerNumber (base name: "customerNumber")', function() {
       // uncomment below and update the code to test the property customerNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderSearchRequestServicerequestRequestpreamble();
+      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequestRequestpreamble();
       //expect(instance).to.be();
     });
 

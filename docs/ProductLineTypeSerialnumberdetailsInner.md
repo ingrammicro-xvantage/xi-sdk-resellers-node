@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ProductLineTypeSerialnumberdetailsInner
+# ResellerApiDocumentation.ProductLineTypeSerialnumberdetailsInner
 
 ## Properties
 

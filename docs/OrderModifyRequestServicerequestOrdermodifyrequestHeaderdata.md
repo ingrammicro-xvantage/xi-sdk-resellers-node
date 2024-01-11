@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata
+# ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata
 
 ## Properties
 

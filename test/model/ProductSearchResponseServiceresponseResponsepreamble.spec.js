@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseResponsepreamble();
+    instance = new ResellerApiDocumentation.ProductSearchResponseServiceresponseResponsepreamble();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ProductSearchResponseServiceresponseResponsepreamble', function() {
     it('should create an instance of ProductSearchResponseServiceresponseResponsepreamble', function() {
       // uncomment below and update the code to test ProductSearchResponseServiceresponseResponsepreamble
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseResponsepreamble();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseResponsepreamble);
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseServiceresponseResponsepreamble();
+      //expect(instance).to.be.a(ResellerApiDocumentation.ProductSearchResponseServiceresponseResponsepreamble);
     });
 
     it('should have the property requeststatus (base name: "requeststatus")', function() {
       // uncomment below and update the code to test the property requeststatus
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseResponsepreamble();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseServiceresponseResponsepreamble();
       //expect(instance).to.be();
     });
 
     it('should have the property returncode (base name: "returncode")', function() {
       // uncomment below and update the code to test the property returncode
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseResponsepreamble();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseServiceresponseResponsepreamble();
       //expect(instance).to.be();
     });
 
     it('should have the property returnmessage (base name: "returnmessage")', function() {
       // uncomment below and update the code to test the property returnmessage
-      //var instance = new ResellerApiDocumentationUnitedStates.ProductSearchResponseServiceresponseResponsepreamble();
+      //var instance = new ResellerApiDocumentation.ProductSearchResponseServiceresponseResponsepreamble();
       //expect(instance).to.be();
     });
 

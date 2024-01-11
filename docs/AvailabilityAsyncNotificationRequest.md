@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.AvailabilityAsyncNotificationRequest
+# ResellerApiDocumentation.AvailabilityAsyncNotificationRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailB2B
+# ResellerApiDocumentation.OrderDetailB2B
 
 ## Properties
 

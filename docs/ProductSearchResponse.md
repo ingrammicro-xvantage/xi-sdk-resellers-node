@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ProductSearchResponse
+# ResellerApiDocumentation.ProductSearchResponse
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
+    instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,61 +50,61 @@
   describe('RenewalsSearchResponseRenewalsInner', function() {
     it('should create an instance of RenewalsSearchResponseRenewalsInner', function() {
       // uncomment below and update the code to test RenewalsSearchResponseRenewalsInner
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner);
+      //var instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner);
     });
 
     it('should have the property renewalId (base name: "renewalId")', function() {
       // uncomment below and update the code to test the property renewalId
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerOrderNumber (base name: "customerOrderNumber")', function() {
       // uncomment below and update the code to test the property customerOrderNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property referenceNumber (base name: "referenceNumber")', function() {
       // uncomment below and update the code to test the property referenceNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property endUser (base name: "endUser")', function() {
       // uncomment below and update the code to test the property endUser
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendor (base name: "vendor")', function() {
       // uncomment below and update the code to test the property vendor
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property expirationDate (base name: "expirationDate")', function() {
       // uncomment below and update the code to test the property expirationDate
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property renewalValue (base name: "renewalValue")', function() {
       // uncomment below and update the code to test the property renewalValue
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner();
+      //var instance = new ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner();
       //expect(instance).to.be();
     });
 

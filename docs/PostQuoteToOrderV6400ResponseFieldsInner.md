@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.PostQuoteToOrderV6400ResponseFieldsInner
+# ResellerApiDocumentation.PostQuoteToOrderV6400ResponseFieldsInner
 
 ## Properties
 

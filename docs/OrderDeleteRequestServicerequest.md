@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDeleteRequestServicerequest
+# ResellerApiDocumentation.OrderDeleteRequestServicerequest
 
 ## Properties
 

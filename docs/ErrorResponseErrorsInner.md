@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.ErrorResponseErrorsInner
+# ResellerApiDocumentation.ErrorResponseErrorsInner
 
 ## Properties
 

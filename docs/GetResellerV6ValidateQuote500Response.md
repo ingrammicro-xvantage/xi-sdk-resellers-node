@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.GetResellerV6ValidateQuote500Response
+# ResellerApiDocumentation.GetResellerV6ValidateQuote500Response
 
 ## Properties
 

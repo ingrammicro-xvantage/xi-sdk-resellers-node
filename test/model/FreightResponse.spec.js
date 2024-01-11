@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.FreightResponse();
+    instance = new ResellerApiDocumentation.FreightResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('FreightResponse', function() {
     it('should create an instance of FreightResponse', function() {
       // uncomment below and update the code to test FreightResponse
-      //var instance = new ResellerApiDocumentationUnitedStates.FreightResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.FreightResponse);
+      //var instance = new ResellerApiDocumentation.FreightResponse();
+      //expect(instance).to.be.a(ResellerApiDocumentation.FreightResponse);
     });
 
     it('should have the property freightEstimateResponse (base name: "freightEstimateResponse")', function() {
       // uncomment below and update the code to test the property freightEstimateResponse
-      //var instance = new ResellerApiDocumentationUnitedStates.FreightResponse();
+      //var instance = new ResellerApiDocumentation.FreightResponse();
       //expect(instance).to.be();
     });
 

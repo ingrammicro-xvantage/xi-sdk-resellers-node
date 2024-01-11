@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailRequestServicerequestInvoicedetailrequest();
+    instance = new ResellerApiDocumentation.InvoiceDetailRequestServicerequestInvoicedetailrequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('InvoiceDetailRequestServicerequestInvoicedetailrequest', function() {
     it('should create an instance of InvoiceDetailRequestServicerequestInvoicedetailrequest', function() {
       // uncomment below and update the code to test InvoiceDetailRequestServicerequestInvoicedetailrequest
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailRequestServicerequestInvoicedetailrequest();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.InvoiceDetailRequestServicerequestInvoicedetailrequest);
+      //var instance = new ResellerApiDocumentation.InvoiceDetailRequestServicerequestInvoicedetailrequest();
+      //expect(instance).to.be.a(ResellerApiDocumentation.InvoiceDetailRequestServicerequestInvoicedetailrequest);
     });
 
     it('should have the property invoicenumber (base name: "invoicenumber")', function() {
       // uncomment below and update the code to test the property invoicenumber
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailRequestServicerequestInvoicedetailrequest();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailRequestServicerequestInvoicedetailrequest();
       //expect(instance).to.be();
     });
 

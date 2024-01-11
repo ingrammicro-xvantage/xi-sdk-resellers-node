@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderSearchResponseServiceResponseResponsepreamble
+# ResellerApiDocumentation.OrderSearchResponseServiceResponseResponsepreamble
 
 ## Properties
 

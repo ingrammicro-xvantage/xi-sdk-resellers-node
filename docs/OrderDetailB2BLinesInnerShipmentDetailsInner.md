@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderDetailB2BLinesInnerShipmentDetailsInner
+# ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner
 
 ## Properties
 

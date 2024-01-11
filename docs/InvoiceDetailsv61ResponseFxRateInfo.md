@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.InvoiceDetailsv61ResponseFxRateInfo
+# ResellerApiDocumentation.InvoiceDetailsv61ResponseFxRateInfo
 
 ## Properties
 

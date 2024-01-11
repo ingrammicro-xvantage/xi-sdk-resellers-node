@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.RenewalsSearchResponseRenewalsInner
+# ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner
 
 ## Properties
 

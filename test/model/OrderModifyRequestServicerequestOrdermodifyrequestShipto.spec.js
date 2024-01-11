@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
+    instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('OrderModifyRequestServicerequestOrdermodifyrequestShipto', function() {
     it('should create an instance of OrderModifyRequestServicerequestOrdermodifyrequestShipto', function() {
       // uncomment below and update the code to test OrderModifyRequestServicerequestOrdermodifyrequestShipto
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestShipto);
+      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestShipto);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
+      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
+      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
       //expect(instance).to.be();
     });
 
     it('should have the property addressline (base name: "addressline")', function() {
       // uncomment below and update the code to test the property addressline
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
+      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
+      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
       //expect(instance).to.be();
     });
 
     it('should have the property state (base name: "state")', function() {
       // uncomment below and update the code to test the property state
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
+      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
       //expect(instance).to.be();
     });
 
     it('should have the property postalcode (base name: "postalcode")', function() {
       // uncomment below and update the code to test the property postalcode
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
+      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
       //expect(instance).to.be();
     });
 
     it('should have the property countrycode (base name: "countrycode")', function() {
       // uncomment below and update the code to test the property countrycode
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
+      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestShipto();
       //expect(instance).to.be();
     });
 

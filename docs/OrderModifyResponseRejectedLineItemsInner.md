@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderModifyResponseRejectedLineItemsInner
+# ResellerApiDocumentation.OrderModifyResponseRejectedLineItemsInner
 
 ## Properties
 

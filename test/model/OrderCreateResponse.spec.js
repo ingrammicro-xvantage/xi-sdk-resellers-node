@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponse();
+    instance = new ResellerApiDocumentation.OrderCreateResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('OrderCreateResponse', function() {
     it('should create an instance of OrderCreateResponse', function() {
       // uncomment below and update the code to test OrderCreateResponse
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.OrderCreateResponse);
+      //var instance = new ResellerApiDocumentation.OrderCreateResponse();
+      //expect(instance).to.be.a(ResellerApiDocumentation.OrderCreateResponse);
     });
 
     it('should have the property serviceresponse (base name: "serviceresponse")', function() {
       // uncomment below and update the code to test the property serviceresponse
-      //var instance = new ResellerApiDocumentationUnitedStates.OrderCreateResponse();
+      //var instance = new ResellerApiDocumentation.OrderCreateResponse();
       //expect(instance).to.be();
     });
 

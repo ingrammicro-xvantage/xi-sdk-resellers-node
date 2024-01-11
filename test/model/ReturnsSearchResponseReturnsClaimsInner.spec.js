@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+    instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,73 +50,73 @@
   describe('ReturnsSearchResponseReturnsClaimsInner', function() {
     it('should create an instance of ReturnsSearchResponseReturnsClaimsInner', function() {
       // uncomment below and update the code to test ReturnsSearchResponseReturnsClaimsInner
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner);
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
+      //expect(instance).to.be.a(ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner);
     });
 
     it('should have the property returnClaimId (base name: "returnClaimId")', function() {
       // uncomment below and update the code to test the property returnClaimId
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property caseRequestNumber (base name: "caseRequestNumber")', function() {
       // uncomment below and update the code to test the property caseRequestNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property createdOn (base name: "createdOn")', function() {
       // uncomment below and update the code to test the property createdOn
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property returnReason (base name: "returnReason")', function() {
       // uncomment below and update the code to test the property returnReason
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property referenceNumber (base name: "referenceNumber")', function() {
       // uncomment below and update the code to test the property referenceNumber
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property estimatedTotalValue (base name: "estimatedTotalValue")', function() {
       // uncomment below and update the code to test the property estimatedTotalValue
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property credit (base name: "credit")', function() {
       // uncomment below and update the code to test the property credit
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property modifiedOn (base name: "modifiedOn")', function() {
       // uncomment below and update the code to test the property modifiedOn
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new ResellerApiDocumentationUnitedStates.ReturnsSearchResponseReturnsClaimsInner();
+      //var instance = new ResellerApiDocumentation.ReturnsSearchResponseReturnsClaimsInner();
       //expect(instance).to.be();
     });
 

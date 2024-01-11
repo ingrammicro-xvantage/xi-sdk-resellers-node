@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.RenewalsSearchRequestStatusOpporutinyStatus
+# ResellerApiDocumentation.RenewalsSearchRequestStatusOpporutinyStatus
 
 ## Properties
 

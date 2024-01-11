@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.InvoiceDetailsv61ResponseSummaryForeignFxTotals
+# ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryForeignFxTotals
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation - United States
+ * Reseller API Documentation
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentationUnitedStates);
+    factory(root.expect, root.ResellerApiDocumentation);
   }
-}(this, function(expect, ResellerApiDocumentationUnitedStates) {
+}(this, function(expect, ResellerApiDocumentation) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseResponsepreamble();
+    instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseResponsepreamble();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InvoiceDetailResponseServiceresponseResponsepreamble', function() {
     it('should create an instance of InvoiceDetailResponseServiceresponseResponsepreamble', function() {
       // uncomment below and update the code to test InvoiceDetailResponseServiceresponseResponsepreamble
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseResponsepreamble();
-      //expect(instance).to.be.a(ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseResponsepreamble);
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseResponsepreamble();
+      //expect(instance).to.be.a(ResellerApiDocumentation.InvoiceDetailResponseServiceresponseResponsepreamble);
     });
 
     it('should have the property responsestatus (base name: "responsestatus")', function() {
       // uncomment below and update the code to test the property responsestatus
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseResponsepreamble();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseResponsepreamble();
       //expect(instance).to.be();
     });
 
     it('should have the property statuscode (base name: "statuscode")', function() {
       // uncomment below and update the code to test the property statuscode
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseResponsepreamble();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseResponsepreamble();
       //expect(instance).to.be();
     });
 
     it('should have the property responsemessage (base name: "responsemessage")', function() {
       // uncomment below and update the code to test the property responsemessage
-      //var instance = new ResellerApiDocumentationUnitedStates.InvoiceDetailResponseServiceresponseResponsepreamble();
+      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseResponsepreamble();
       //expect(instance).to.be();
     });
 

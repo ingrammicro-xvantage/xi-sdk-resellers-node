@@ -1,4 +1,4 @@
-# ResellerApiDocumentationUnitedStates.OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerEnduser
+# ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerEnduser
 
 ## Properties
 
