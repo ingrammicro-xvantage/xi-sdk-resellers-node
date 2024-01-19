@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+    instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,85 +50,85 @@
   describe('OrderDetailResponseBillToInfo', function() {
     it('should create an instance of OrderDetailResponseBillToInfo', function() {
       // uncomment below and update the code to test OrderDetailResponseBillToInfo
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailResponseBillToInfo);
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
+      //expect(instance).to.be.a(XiSdkResellers.OrderDetailResponseBillToInfo);
     });
 
     it('should have the property contact (base name: "contact")', function() {
       // uncomment below and update the code to test the property contact
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property companyName (base name: "companyName")', function() {
       // uncomment below and update the code to test the property companyName
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property name1 (base name: "name1")', function() {
       // uncomment below and update the code to test the property name1
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property name2 (base name: "name2")', function() {
       // uncomment below and update the code to test the property name2
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property addressLine1 (base name: "addressLine1")', function() {
       // uncomment below and update the code to test the property addressLine1
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property addressLine2 (base name: "addressLine2")', function() {
       // uncomment below and update the code to test the property addressLine2
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property addressLine3 (base name: "addressLine3")', function() {
       // uncomment below and update the code to test the property addressLine3
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property state (base name: "state")', function() {
       // uncomment below and update the code to test the property state
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property postalCode (base name: "postalCode")', function() {
       // uncomment below and update the code to test the property postalCode
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property countryCode (base name: "countryCode")', function() {
       // uncomment below and update the code to test the property countryCode
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property phoneNumber (base name: "phoneNumber")', function() {
       // uncomment below and update the code to test the property phoneNumber
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseBillToInfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseBillToInfo();
       //expect(instance).to.be();
     });
 

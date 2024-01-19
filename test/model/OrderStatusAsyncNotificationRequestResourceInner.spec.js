@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInner();
+    instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('OrderStatusAsyncNotificationRequestResourceInner', function() {
     it('should create an instance of OrderStatusAsyncNotificationRequestResourceInner', function() {
       // uncomment below and update the code to test OrderStatusAsyncNotificationRequestResourceInner
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInner);
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInner();
+      //expect(instance).to.be.a(XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInner);
     });
 
     it('should have the property eventType (base name: "eventType")', function() {
       // uncomment below and update the code to test the property eventType
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInner();
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property orderNumber (base name: "orderNumber")', function() {
       // uncomment below and update the code to test the property orderNumber
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInner();
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerOrderNumber (base name: "customerOrderNumber")', function() {
       // uncomment below and update the code to test the property customerOrderNumber
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInner();
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property orderEntryTimeStamp (base name: "orderEntryTimeStamp")', function() {
       // uncomment below and update the code to test the property orderEntryTimeStamp
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInner();
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property lines (base name: "lines")', function() {
       // uncomment below and update the code to test the property lines
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInner();
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInner();
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.RenewalsSearchRequestDataTypeStartDate();
+    instance = new XiSdkResellers.RenewalsSearchRequestDataTypeStartDate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('RenewalsSearchRequestDataTypeStartDate', function() {
     it('should create an instance of RenewalsSearchRequestDataTypeStartDate', function() {
       // uncomment below and update the code to test RenewalsSearchRequestDataTypeStartDate
-      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataTypeStartDate();
-      //expect(instance).to.be.a(ResellerApiDocumentation.RenewalsSearchRequestDataTypeStartDate);
+      //var instance = new XiSdkResellers.RenewalsSearchRequestDataTypeStartDate();
+      //expect(instance).to.be.a(XiSdkResellers.RenewalsSearchRequestDataTypeStartDate);
     });
 
     it('should have the property customStartDate (base name: "customStartDate")', function() {
       // uncomment below and update the code to test the property customStartDate
-      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataTypeStartDate();
+      //var instance = new XiSdkResellers.RenewalsSearchRequestDataTypeStartDate();
       //expect(instance).to.be();
     });
 
     it('should have the property customEndDate (base name: "customEndDate")', function() {
       // uncomment below and update the code to test the property customEndDate
-      //var instance = new ResellerApiDocumentation.RenewalsSearchRequestDataTypeStartDate();
+      //var instance = new XiSdkResellers.RenewalsSearchRequestDataTypeStartDate();
       //expect(instance).to.be();
     });
 

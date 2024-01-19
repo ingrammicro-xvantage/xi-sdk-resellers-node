@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInner
+# XiSdkResellers.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInner
 
 ## Properties
 

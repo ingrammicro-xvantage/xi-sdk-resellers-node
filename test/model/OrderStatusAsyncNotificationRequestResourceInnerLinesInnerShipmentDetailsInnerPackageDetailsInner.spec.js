@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner();
+    instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner', function() {
     it('should create an instance of OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner', function() {
       // uncomment below and update the code to test OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner);
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner();
+      //expect(instance).to.be.a(XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner);
     });
 
     it('should have the property cartonNumber (base name: "cartonNumber")', function() {
       // uncomment below and update the code to test the property cartonNumber
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner();
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityInbox (base name: "quantityInbox")', function() {
       // uncomment below and update the code to test the property quantityInbox
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner();
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property trackingNumber (base name: "trackingNumber")', function() {
       // uncomment below and update the code to test the property trackingNumber
-      //var instance = new ResellerApiDocumentation.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner();
+      //var instance = new XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner();
       //expect(instance).to.be();
     });
 

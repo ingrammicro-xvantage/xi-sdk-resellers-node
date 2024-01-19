@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderDetailResponseEndUserInfo
+# XiSdkResellers.OrderDetailResponseEndUserInfo
 
 ## Properties
 

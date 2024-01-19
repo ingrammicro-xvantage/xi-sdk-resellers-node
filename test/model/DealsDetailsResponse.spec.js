@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.DealsDetailsResponse();
+    instance = new XiSdkResellers.DealsDetailsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,73 +50,73 @@
   describe('DealsDetailsResponse', function() {
     it('should create an instance of DealsDetailsResponse', function() {
       // uncomment below and update the code to test DealsDetailsResponse
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentation.DealsDetailsResponse);
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
+      //expect(instance).to.be.a(XiSdkResellers.DealsDetailsResponse);
     });
 
     it('should have the property dealId (base name: "dealId")', function() {
       // uncomment below and update the code to test the property dealId
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property version (base name: "version")', function() {
       // uncomment below and update the code to test the property version
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property endUser (base name: "endUser")', function() {
       // uncomment below and update the code to test the property endUser
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property extendedMsrp (base name: "extendedMsrp")', function() {
       // uncomment below and update the code to test the property extendedMsrp
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property vendor (base name: "vendor")', function() {
       // uncomment below and update the code to test the property vendor
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property dealReceivedOn (base name: "dealReceivedOn")', function() {
       // uncomment below and update the code to test the property dealReceivedOn
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property dealExpiryDate (base name: "dealExpiryDate")', function() {
       // uncomment below and update the code to test the property dealExpiryDate
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property priceProtectionEndDate (base name: "priceProtectionEndDate")', function() {
       // uncomment below and update the code to test the property priceProtectionEndDate
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property currencyCode (base name: "currencyCode")', function() {
       // uncomment below and update the code to test the property currencyCode
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserInfo (base name: "endUserInfo")', function() {
       // uncomment below and update the code to test the property endUserInfo
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property products (base name: "products")', function() {
       // uncomment below and update the code to test the property products
-      //var instance = new ResellerApiDocumentation.DealsDetailsResponse();
+      //var instance = new XiSdkResellers.DealsDetailsResponse();
       //expect(instance).to.be();
     });
 

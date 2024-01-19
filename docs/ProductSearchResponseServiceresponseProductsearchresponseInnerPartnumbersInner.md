@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.ProductSearchResponseServiceresponseProductsearchresponseInnerPartnumbersInner
+# XiSdkResellers.ProductSearchResponseServiceresponseProductsearchresponseInnerPartnumbersInner
 
 ## Properties
 

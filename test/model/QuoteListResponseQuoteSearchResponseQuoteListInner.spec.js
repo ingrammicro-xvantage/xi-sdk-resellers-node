@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+    instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,67 +50,67 @@
   describe('QuoteListResponseQuoteSearchResponseQuoteListInner', function() {
     it('should create an instance of QuoteListResponseQuoteSearchResponseQuoteListInner', function() {
       // uncomment below and update the code to test QuoteListResponseQuoteSearchResponseQuoteListInner
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner);
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner);
     });
 
     it('should have the property quoteName (base name: "quoteName")', function() {
       // uncomment below and update the code to test the property quoteName
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quoteNumber (base name: "quoteNumber")', function() {
       // uncomment below and update the code to test the property quoteNumber
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property revisionNumber (base name: "revisionNumber")', function() {
       // uncomment below and update the code to test the property revisionNumber
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserName (base name: "endUserName")', function() {
       // uncomment below and update the code to test the property endUserName
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property bidNumber (base name: "bidNumber")', function() {
       // uncomment below and update the code to test the property bidNumber
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property totalAmount (base name: "totalAmount")', function() {
       // uncomment below and update the code to test the property totalAmount
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quoteStatus (base name: "quoteStatus")', function() {
       // uncomment below and update the code to test the property quoteStatus
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property createdDate (base name: "createdDate")', function() {
       // uncomment below and update the code to test the property createdDate
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property lastModifiedDate (base name: "lastModifiedDate")', function() {
       // uncomment below and update the code to test the property lastModifiedDate
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quoteExpiryDate (base name: "quoteExpiryDate")', function() {
       // uncomment below and update the code to test the property quoteExpiryDate
-      //var instance = new ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseQuoteListInner();
+      //var instance = new XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderCreateResponseServiceresponse
+# XiSdkResellers.OrderCreateResponseServiceresponse
 
 ## Properties
 

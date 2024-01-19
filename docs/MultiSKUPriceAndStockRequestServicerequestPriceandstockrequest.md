@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.MultiSKUPriceAndStockRequestServicerequestPriceandstockrequest
+# XiSdkResellers.MultiSKUPriceAndStockRequestServicerequestPriceandstockrequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestRequestpreamble
+# XiSdkResellers.OrderCreateRequestOrdercreaterequestRequestpreamble
 
 ## Properties
 

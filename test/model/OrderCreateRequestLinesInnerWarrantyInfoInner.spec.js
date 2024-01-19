@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInner();
+    instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('OrderCreateRequestLinesInnerWarrantyInfoInner', function() {
     it('should create an instance of OrderCreateRequestLinesInnerWarrantyInfoInner', function() {
       // uncomment below and update the code to test OrderCreateRequestLinesInnerWarrantyInfoInner
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInner);
+      //var instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInner();
+      //expect(instance).to.be.a(XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInner);
     });
 
     it('should have the property directLineLink (base name: "directLineLink")', function() {
       // uncomment below and update the code to test the property directLineLink
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInner();
+      //var instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInner();
       //expect(instance).to.be();
     });
 
     it('should have the property warrantyLineLink (base name: "warrantyLineLink")', function() {
       // uncomment below and update the code to test the property warrantyLineLink
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInner();
+      //var instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInner();
       //expect(instance).to.be();
     });
 
     it('should have the property hardwareLineLink (base name: "hardwareLineLink")', function() {
       // uncomment below and update the code to test the property hardwareLineLink
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInner();
+      //var instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInner();
       //expect(instance).to.be();
     });
 
     it('should have the property serialInfo (base name: "serialInfo")', function() {
       // uncomment below and update the code to test the property serialInfo
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInner();
+      //var instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInner();
       //expect(instance).to.be();
     });
 

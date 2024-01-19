@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummary();
+    instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummary();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('InvoiceDetailsv61ResponseSummary', function() {
     it('should create an instance of InvoiceDetailsv61ResponseSummary', function() {
       // uncomment below and update the code to test InvoiceDetailsv61ResponseSummary
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummary();
-      //expect(instance).to.be.a(ResellerApiDocumentation.InvoiceDetailsv61ResponseSummary);
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummary();
+      //expect(instance).to.be.a(XiSdkResellers.InvoiceDetailsv61ResponseSummary);
     });
 
     it('should have the property lines (base name: "lines")', function() {
       // uncomment below and update the code to test the property lines
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummary();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummary();
       //expect(instance).to.be();
     });
 
     it('should have the property miscCharges (base name: "miscCharges")', function() {
       // uncomment below and update the code to test the property miscCharges
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummary();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummary();
       //expect(instance).to.be();
     });
 
     it('should have the property totals (base name: "totals")', function() {
       // uncomment below and update the code to test the property totals
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummary();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummary();
       //expect(instance).to.be();
     });
 
     it('should have the property foreignFxTotals (base name: "foreignFxTotals")', function() {
       // uncomment below and update the code to test the property foreignFxTotals
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummary();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummary();
       //expect(instance).to.be();
     });
 

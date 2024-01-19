@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner();
+    instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('OrderDetailB2BLinesInnerShipmentDetailsInner', function() {
     it('should create an instance of OrderDetailB2BLinesInnerShipmentDetailsInner', function() {
       // uncomment below and update the code to test OrderDetailB2BLinesInnerShipmentDetailsInner
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner);
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //expect(instance).to.be.a(XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner);
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property deliveryNumber (base name: "deliveryNumber")', function() {
       // uncomment below and update the code to test the property deliveryNumber
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property estimatedShipDate (base name: "estimatedShipDate")', function() {
       // uncomment below and update the code to test the property estimatedShipDate
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shipFromWarehouseId (base name: "shipFromWarehouseId")', function() {
       // uncomment below and update the code to test the property shipFromWarehouseId
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shipFromLocation (base name: "shipFromLocation")', function() {
       // uncomment below and update the code to test the property shipFromLocation
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property invoiceNumber (base name: "invoiceNumber")', function() {
       // uncomment below and update the code to test the property invoiceNumber
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property invoiceDate (base name: "invoiceDate")', function() {
       // uncomment below and update the code to test the property invoiceDate
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property carrierDetails (base name: "carrierDetails")', function() {
       // uncomment below and update the code to test the property carrierDetails
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 

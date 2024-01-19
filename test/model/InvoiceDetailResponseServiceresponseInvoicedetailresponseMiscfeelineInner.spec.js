@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner();
+    instance = new XiSdkResellers.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner', function() {
     it('should create an instance of InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner', function() {
       // uncomment below and update the code to test InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner
-      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner);
+      //var instance = new XiSdkResellers.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner();
+      //expect(instance).to.be.a(XiSdkResellers.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner();
+      //var instance = new XiSdkResellers.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner();
+      //var instance = new XiSdkResellers.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner();
       //expect(instance).to.be();
     });
 
     it('should have the property chargeamount (base name: "chargeamount")', function() {
       // uncomment below and update the code to test the property chargeamount
-      //var instance = new ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner();
+      //var instance = new XiSdkResellers.InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.RenewalsSearchResponseRenewalsInner
+# XiSdkResellers.RenewalsSearchResponseRenewalsInner
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponsePaymentTermsInfo();
+    instance = new XiSdkResellers.InvoiceDetailsv61ResponsePaymentTermsInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InvoiceDetailsv61ResponsePaymentTermsInfo', function() {
     it('should create an instance of InvoiceDetailsv61ResponsePaymentTermsInfo', function() {
       // uncomment below and update the code to test InvoiceDetailsv61ResponsePaymentTermsInfo
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponsePaymentTermsInfo();
-      //expect(instance).to.be.a(ResellerApiDocumentation.InvoiceDetailsv61ResponsePaymentTermsInfo);
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponsePaymentTermsInfo();
+      //expect(instance).to.be.a(XiSdkResellers.InvoiceDetailsv61ResponsePaymentTermsInfo);
     });
 
     it('should have the property paymentTermsCode (base name: "paymentTermsCode")', function() {
       // uncomment below and update the code to test the property paymentTermsCode
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponsePaymentTermsInfo();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponsePaymentTermsInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property paymentTermsDescription (base name: "paymentTermsDescription")', function() {
       // uncomment below and update the code to test the property paymentTermsDescription
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponsePaymentTermsInfo();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponsePaymentTermsInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property paymentTermsDueDate (base name: "paymentTermsDueDate")', function() {
       // uncomment below and update the code to test the property paymentTermsDueDate
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponsePaymentTermsInfo();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponsePaymentTermsInfo();
       //expect(instance).to.be();
     });
 

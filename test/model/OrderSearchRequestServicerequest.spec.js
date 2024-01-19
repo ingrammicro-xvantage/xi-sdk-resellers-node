@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderSearchRequestServicerequest();
+    instance = new XiSdkResellers.OrderSearchRequestServicerequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderSearchRequestServicerequest', function() {
     it('should create an instance of OrderSearchRequestServicerequest', function() {
       // uncomment below and update the code to test OrderSearchRequestServicerequest
-      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequest();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderSearchRequestServicerequest);
+      //var instance = new XiSdkResellers.OrderSearchRequestServicerequest();
+      //expect(instance).to.be.a(XiSdkResellers.OrderSearchRequestServicerequest);
     });
 
     it('should have the property requestpreamble (base name: "requestpreamble")', function() {
       // uncomment below and update the code to test the property requestpreamble
-      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequest();
+      //var instance = new XiSdkResellers.OrderSearchRequestServicerequest();
       //expect(instance).to.be();
     });
 
     it('should have the property orderLookupRequest (base name: "orderLookupRequest")', function() {
       // uncomment below and update the code to test the property orderLookupRequest
-      //var instance = new ResellerApiDocumentation.OrderSearchRequestServicerequest();
+      //var instance = new XiSdkResellers.OrderSearchRequestServicerequest();
       //expect(instance).to.be();
     });
 

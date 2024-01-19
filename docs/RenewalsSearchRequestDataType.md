@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.RenewalsSearchRequestDataType
+# XiSdkResellers.RenewalsSearchRequestDataType
 
 ## Properties
 

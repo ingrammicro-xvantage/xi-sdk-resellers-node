@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange
+# XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerDeliveryDeliveryDateRange
 
 ## Properties
 

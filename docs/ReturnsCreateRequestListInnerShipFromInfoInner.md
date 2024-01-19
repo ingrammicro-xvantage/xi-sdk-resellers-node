@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.ReturnsCreateRequestListInnerShipFromInfoInner
+# XiSdkResellers.ReturnsCreateRequestListInnerShipFromInfoInner
 
 ## Properties
 

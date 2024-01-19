@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.QuoteDetailsRequestQuoteProductsRequestRequestpreamble();
+    instance = new XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRequestpreamble();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('QuoteDetailsRequestQuoteProductsRequestRequestpreamble', function() {
     it('should create an instance of QuoteDetailsRequestQuoteProductsRequestRequestpreamble', function() {
       // uncomment below and update the code to test QuoteDetailsRequestQuoteProductsRequestRequestpreamble
-      //var instance = new ResellerApiDocumentation.QuoteDetailsRequestQuoteProductsRequestRequestpreamble();
-      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteDetailsRequestQuoteProductsRequestRequestpreamble);
+      //var instance = new XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRequestpreamble();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRequestpreamble);
     });
 
     it('should have the property customerNumber (base name: "customerNumber")', function() {
       // uncomment below and update the code to test the property customerNumber
-      //var instance = new ResellerApiDocumentation.QuoteDetailsRequestQuoteProductsRequestRequestpreamble();
+      //var instance = new XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRequestpreamble();
       //expect(instance).to.be();
     });
 
     it('should have the property isoCountryCode (base name: "isoCountryCode")', function() {
       // uncomment below and update the code to test the property isoCountryCode
-      //var instance = new ResellerApiDocumentation.QuoteDetailsRequestQuoteProductsRequestRequestpreamble();
+      //var instance = new XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRequestpreamble();
       //expect(instance).to.be();
     });
 

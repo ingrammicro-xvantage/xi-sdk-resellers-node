@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderStatusAsyncNotificationRequest
+# XiSdkResellers.OrderStatusAsyncNotificationRequest
 
 ## Properties
 

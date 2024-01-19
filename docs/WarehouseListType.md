@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.WarehouseListType
+# XiSdkResellers.WarehouseListType
 
 ## Properties
 

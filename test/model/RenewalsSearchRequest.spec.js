@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.RenewalsSearchRequest();
+    instance = new XiSdkResellers.RenewalsSearchRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('RenewalsSearchRequest', function() {
     it('should create an instance of RenewalsSearchRequest', function() {
       // uncomment below and update the code to test RenewalsSearchRequest
-      //var instance = new ResellerApiDocumentation.RenewalsSearchRequest();
-      //expect(instance).to.be.a(ResellerApiDocumentation.RenewalsSearchRequest);
+      //var instance = new XiSdkResellers.RenewalsSearchRequest();
+      //expect(instance).to.be.a(XiSdkResellers.RenewalsSearchRequest);
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new ResellerApiDocumentation.RenewalsSearchRequest();
+      //var instance = new XiSdkResellers.RenewalsSearchRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property dataType (base name: "dataType")', function() {
       // uncomment below and update the code to test the property dataType
-      //var instance = new ResellerApiDocumentation.RenewalsSearchRequest();
+      //var instance = new XiSdkResellers.RenewalsSearchRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property vendor (base name: "vendor")', function() {
       // uncomment below and update the code to test the property vendor
-      //var instance = new ResellerApiDocumentation.RenewalsSearchRequest();
+      //var instance = new XiSdkResellers.RenewalsSearchRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property endUser (base name: "endUser")', function() {
       // uncomment below and update the code to test the property endUser
-      //var instance = new ResellerApiDocumentation.RenewalsSearchRequest();
+      //var instance = new XiSdkResellers.RenewalsSearchRequest();
       //expect(instance).to.be();
     });
 

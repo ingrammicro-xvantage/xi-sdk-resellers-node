@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner();
+    instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner', function() {
     it('should create an instance of OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner', function() {
       // uncomment below and update the code to test OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner);
+      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner();
+      //expect(instance).to.be.a(XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner);
     });
 
     it('should have the property commenttext1 (base name: "commenttext1")', function() {
       // uncomment below and update the code to test the property commenttext1
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner();
+      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property commenttext2 (base name: "commenttext2")', function() {
       // uncomment below and update the code to test the property commenttext2
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner();
+      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner();
       //expect(instance).to.be();
     });
 

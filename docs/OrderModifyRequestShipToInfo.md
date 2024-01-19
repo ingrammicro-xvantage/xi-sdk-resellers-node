@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderModifyRequestShipToInfo
+# XiSdkResellers.OrderModifyRequestShipToInfo
 
 ## Properties
 

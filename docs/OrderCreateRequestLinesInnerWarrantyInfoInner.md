@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInner
+# XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInner
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.QuotesV4Api
+# XiSdkResellers.QuotesV4Api
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -20,13 +20,13 @@ A real-time request to delete a previously accepted order must be submitted befo
 ### Example
 
 ```javascript
-import ResellerApiDocumentation from 'reseller_api_documentation';
-let defaultClient = ResellerApiDocumentation.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentation.QuotesV4Api();
+let apiInstance = new XiSdkResellers.QuotesV4Api();
 let opts = {
   'quoteDetailsRequest': {"servicerequest":{"requestpreamble":{"isocountrycode":"US","customerumber":"20-222222"},"OrderDeleteRequestDetails":{"entryDate":"2019-01-22","orderBranch":"20","orderNumber":"RC62Z"}}} // QuoteDetailsRequest | 
 };
@@ -71,13 +71,13 @@ A real-time request that allows the customer to query Ingram Micro for detailed 
 ### Example
 
 ```javascript
-import ResellerApiDocumentation from 'reseller_api_documentation';
-let defaultClient = ResellerApiDocumentation.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentation.QuotesV4Api();
+let apiInstance = new XiSdkResellers.QuotesV4Api();
 let opts = {
   'quoteListRequest': {"servicerequest":{"requestpreamble":{"isocountrycode":"US","customernumber":"20-222222"},"orderdetailrequest":{"ordernumber":"20-B2V9H"}}} // QuoteListRequest | 
 };

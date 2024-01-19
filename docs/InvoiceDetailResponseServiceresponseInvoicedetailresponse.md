@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.InvoiceDetailResponseServiceresponseInvoicedetailresponse
+# XiSdkResellers.InvoiceDetailResponseServiceresponseInvoicedetailresponse
 
 ## Properties
 

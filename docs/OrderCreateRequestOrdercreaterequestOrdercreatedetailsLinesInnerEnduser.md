@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerEnduser
+# XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerEnduser
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.ProductDetailResponse();
+    instance = new XiSdkResellers.ProductDetailResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,115 +50,115 @@
   describe('ProductDetailResponse', function() {
     it('should create an instance of ProductDetailResponse', function() {
       // uncomment below and update the code to test ProductDetailResponse
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentation.ProductDetailResponse);
+      //var instance = new XiSdkResellers.ProductDetailResponse();
+      //expect(instance).to.be.a(XiSdkResellers.ProductDetailResponse);
     });
 
     it('should have the property ingramPartNumber (base name: "ingramPartNumber")', function() {
       // uncomment below and update the code to test the property ingramPartNumber
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorPartNumber (base name: "vendorPartNumber")', function() {
       // uncomment below and update the code to test the property vendorPartNumber
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property productAuthorized (base name: "productAuthorized")', function() {
       // uncomment below and update the code to test the property productAuthorized
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property productDetailDescription (base name: "productDetailDescription")', function() {
       // uncomment below and update the code to test the property productDetailDescription
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property upc (base name: "upc")', function() {
       // uncomment below and update the code to test the property upc
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property productCategory (base name: "productCategory")', function() {
       // uncomment below and update the code to test the property productCategory
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property productSubcategory (base name: "productSubcategory")', function() {
       // uncomment below and update the code to test the property productSubcategory
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorName (base name: "vendorName")', function() {
       // uncomment below and update the code to test the property vendorName
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorNumber (base name: "vendorNumber")', function() {
       // uncomment below and update the code to test the property vendorNumber
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property productStatusCode (base name: "productStatusCode")', function() {
       // uncomment below and update the code to test the property productStatusCode
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property productClass (base name: "productClass")', function() {
       // uncomment below and update the code to test the property productClass
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property customerPartNumber (base name: "customerPartNumber")', function() {
       // uncomment below and update the code to test the property customerPartNumber
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property indicators (base name: "indicators")', function() {
       // uncomment below and update the code to test the property indicators
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property ciscoFields (base name: "ciscoFields")', function() {
       // uncomment below and update the code to test the property ciscoFields
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property technicalSpecifications (base name: "technicalSpecifications")', function() {
       // uncomment below and update the code to test the property technicalSpecifications
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property warrantyInformation (base name: "warrantyInformation")', function() {
       // uncomment below and update the code to test the property warrantyInformation
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property additionalInformation (base name: "additionalInformation")', function() {
       // uncomment below and update the code to test the property additionalInformation
-      //var instance = new ResellerApiDocumentation.ProductDetailResponse();
+      //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
 

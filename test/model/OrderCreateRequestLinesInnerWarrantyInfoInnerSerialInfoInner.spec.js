@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
+    instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner', function() {
     it('should create an instance of OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner', function() {
       // uncomment below and update the code to test OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner);
+      //var instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
+      //expect(instance).to.be.a(XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner);
     });
 
     it('should have the property dateofPurchase (base name: "dateofPurchase")', function() {
       // uncomment below and update the code to test the property dateofPurchase
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
+      //var instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shipDate (base name: "shipDate")', function() {
       // uncomment below and update the code to test the property shipDate
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
+      //var instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
       //expect(instance).to.be();
     });
 
     it('should have the property primarySerialNumber (base name: "primarySerialNumber")', function() {
       // uncomment below and update the code to test the property primarySerialNumber
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
+      //var instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
       //expect(instance).to.be();
     });
 
     it('should have the property secondarySerialNumber (base name: "secondarySerialNumber")', function() {
       // uncomment below and update the code to test the property secondarySerialNumber
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
+      //var instance = new XiSdkResellers.OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner();
       //expect(instance).to.be();
     });
 

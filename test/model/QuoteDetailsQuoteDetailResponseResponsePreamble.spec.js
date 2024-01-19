@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseResponsePreamble();
+    instance = new XiSdkResellers.QuoteDetailsQuoteDetailResponseResponsePreamble();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('QuoteDetailsQuoteDetailResponseResponsePreamble', function() {
     it('should create an instance of QuoteDetailsQuoteDetailResponseResponsePreamble', function() {
       // uncomment below and update the code to test QuoteDetailsQuoteDetailResponseResponsePreamble
-      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseResponsePreamble();
-      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseResponsePreamble);
+      //var instance = new XiSdkResellers.QuoteDetailsQuoteDetailResponseResponsePreamble();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteDetailsQuoteDetailResponseResponsePreamble);
     });
 
     it('should have the property responseStatus (base name: "responseStatus")', function() {
       // uncomment below and update the code to test the property responseStatus
-      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseResponsePreamble();
+      //var instance = new XiSdkResellers.QuoteDetailsQuoteDetailResponseResponsePreamble();
       //expect(instance).to.be();
     });
 
     it('should have the property statusCode (base name: "statusCode")', function() {
       // uncomment below and update the code to test the property statusCode
-      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseResponsePreamble();
+      //var instance = new XiSdkResellers.QuoteDetailsQuoteDetailResponseResponsePreamble();
       //expect(instance).to.be();
     });
 
     it('should have the property responseMessage (base name: "responseMessage")', function() {
       // uncomment below and update the code to test the property responseMessage
-      //var instance = new ResellerApiDocumentation.QuoteDetailsQuoteDetailResponseResponsePreamble();
+      //var instance = new XiSdkResellers.QuoteDetailsQuoteDetailResponseResponsePreamble();
       //expect(instance).to.be();
     });
 

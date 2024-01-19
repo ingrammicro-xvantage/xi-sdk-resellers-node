@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.QuoteSearchResponse();
+    instance = new XiSdkResellers.QuoteSearchResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('QuoteSearchResponse', function() {
     it('should create an instance of QuoteSearchResponse', function() {
       // uncomment below and update the code to test QuoteSearchResponse
-      //var instance = new ResellerApiDocumentation.QuoteSearchResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteSearchResponse);
+      //var instance = new XiSdkResellers.QuoteSearchResponse();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteSearchResponse);
     });
 
     it('should have the property recordsFound (base name: "recordsFound")', function() {
       // uncomment below and update the code to test the property recordsFound
-      //var instance = new ResellerApiDocumentation.QuoteSearchResponse();
+      //var instance = new XiSdkResellers.QuoteSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property pageSize (base name: "pageSize")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instance = new ResellerApiDocumentation.QuoteSearchResponse();
+      //var instance = new XiSdkResellers.QuoteSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property pageNumber (base name: "pageNumber")', function() {
       // uncomment below and update the code to test the property pageNumber
-      //var instance = new ResellerApiDocumentation.QuoteSearchResponse();
+      //var instance = new XiSdkResellers.QuoteSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property quotes (base name: "quotes")', function() {
       // uncomment below and update the code to test the property quotes
-      //var instance = new ResellerApiDocumentation.QuoteSearchResponse();
+      //var instance = new XiSdkResellers.QuoteSearchResponse();
       //expect(instance).to.be();
     });
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.ReturnsSearchResponse();
+    instance = new XiSdkResellers.ReturnsSearchResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('ReturnsSearchResponse', function() {
     it('should create an instance of ReturnsSearchResponse', function() {
       // uncomment below and update the code to test ReturnsSearchResponse
-      //var instance = new ResellerApiDocumentation.ReturnsSearchResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentation.ReturnsSearchResponse);
+      //var instance = new XiSdkResellers.ReturnsSearchResponse();
+      //expect(instance).to.be.a(XiSdkResellers.ReturnsSearchResponse);
     });
 
     it('should have the property recordsFound (base name: "recordsFound")', function() {
       // uncomment below and update the code to test the property recordsFound
-      //var instance = new ResellerApiDocumentation.ReturnsSearchResponse();
+      //var instance = new XiSdkResellers.ReturnsSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property pageSize (base name: "pageSize")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instance = new ResellerApiDocumentation.ReturnsSearchResponse();
+      //var instance = new XiSdkResellers.ReturnsSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property pageNumber (base name: "pageNumber")', function() {
       // uncomment below and update the code to test the property pageNumber
-      //var instance = new ResellerApiDocumentation.ReturnsSearchResponse();
+      //var instance = new XiSdkResellers.ReturnsSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property returnsClaims (base name: "returnsClaims")', function() {
       // uncomment below and update the code to test the property returnsClaims
-      //var instance = new ResellerApiDocumentation.ReturnsSearchResponse();
+      //var instance = new XiSdkResellers.ReturnsSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property nextPage (base name: "nextPage")', function() {
       // uncomment below and update the code to test the property nextPage
-      //var instance = new ResellerApiDocumentation.ReturnsSearchResponse();
+      //var instance = new XiSdkResellers.ReturnsSearchResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property previousPage (base name: "previousPage")', function() {
       // uncomment below and update the code to test the property previousPage
-      //var instance = new ResellerApiDocumentation.ReturnsSearchResponse();
+      //var instance = new XiSdkResellers.ReturnsSearchResponse();
       //expect(instance).to.be();
     });
 

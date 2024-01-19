@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.ProductSearchResponseServiceresponseResponsepreamble
+# XiSdkResellers.ProductSearchResponseServiceresponseResponsepreamble
 
 ## Properties
 

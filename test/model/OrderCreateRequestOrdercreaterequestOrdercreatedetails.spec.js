@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+    instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,73 +50,73 @@
   describe('OrderCreateRequestOrdercreaterequestOrdercreatedetails', function() {
     it('should create an instance of OrderCreateRequestOrdercreaterequestOrdercreatedetails', function() {
       // uncomment below and update the code to test OrderCreateRequestOrdercreaterequestOrdercreatedetails
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails);
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //expect(instance).to.be.a(XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails);
     });
 
     it('should have the property customerponumber (base name: "customerponumber")', function() {
       // uncomment below and update the code to test the property customerponumber
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 
     it('should have the property ordertype (base name: "ordertype")', function() {
       // uncomment below and update the code to test the property ordertype
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 
     it('should have the property enduserordernumber (base name: "enduserordernumber")', function() {
       // uncomment below and update the code to test the property enduserordernumber
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 
     it('should have the property billtosuffix (base name: "billtosuffix")', function() {
       // uncomment below and update the code to test the property billtosuffix
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 
     it('should have the property shiptosuffix (base name: "shiptosuffix")', function() {
       // uncomment below and update the code to test the property shiptosuffix
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 
     it('should have the property shiptoaddress (base name: "shiptoaddress")', function() {
       // uncomment below and update the code to test the property shiptoaddress
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 
     it('should have the property carriercode (base name: "carriercode")', function() {
       // uncomment below and update the code to test the property carriercode
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 
     it('should have the property thirdpartyfreightaccountnumber (base name: "thirdpartyfreightaccountnumber")', function() {
       // uncomment below and update the code to test the property thirdpartyfreightaccountnumber
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 
     it('should have the property specialbidnumber (base name: "specialbidnumber")', function() {
       // uncomment below and update the code to test the property specialbidnumber
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 
     it('should have the property lines (base name: "lines")', function() {
       // uncomment below and update the code to test the property lines
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 
     it('should have the property extendedspecs (base name: "extendedspecs")', function() {
       // uncomment below and update the code to test the property extendedspecs
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetails();
       //expect(instance).to.be();
     });
 

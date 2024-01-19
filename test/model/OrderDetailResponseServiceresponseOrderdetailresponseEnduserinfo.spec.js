@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo();
+    instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo', function() {
     it('should create an instance of OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo', function() {
       // uncomment below and update the code to test OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo);
+      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo();
+      //expect(instance).to.be.a(XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo);
     });
 
     it('should have the property enduserid (base name: "enduserid")', function() {
       // uncomment below and update the code to test the property enduserid
-      //var instance = new ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo();
+      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo();
       //expect(instance).to.be();
     });
 

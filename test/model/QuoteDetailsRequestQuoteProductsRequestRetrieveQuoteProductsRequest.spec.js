@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest();
+    instance = new XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest', function() {
     it('should create an instance of QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest', function() {
       // uncomment below and update the code to test QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest
-      //var instance = new ResellerApiDocumentation.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest();
-      //expect(instance).to.be.a(ResellerApiDocumentation.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest);
+      //var instance = new XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest);
     });
 
     it('should have the property quoteNumber (base name: "quoteNumber")', function() {
       // uncomment below and update the code to test the property quoteNumber
-      //var instance = new ResellerApiDocumentation.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest();
+      //var instance = new XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property thirdPartySource (base name: "thirdPartySource")', function() {
       // uncomment below and update the code to test the property thirdPartySource
-      //var instance = new ResellerApiDocumentation.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest();
+      //var instance = new XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest();
       //expect(instance).to.be();
     });
 

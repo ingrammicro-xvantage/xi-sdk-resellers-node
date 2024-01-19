@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner
+# XiSdkResellers.PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner
 
 ## Properties
 

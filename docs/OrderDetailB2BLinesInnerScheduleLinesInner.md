@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderDetailB2BLinesInnerScheduleLinesInner
+# XiSdkResellers.OrderDetailB2BLinesInnerScheduleLinesInner
 
 ## Properties
 

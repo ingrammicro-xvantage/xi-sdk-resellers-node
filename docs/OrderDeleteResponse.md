@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderDeleteResponse
+# XiSdkResellers.OrderDeleteResponse
 
 ## Properties
 

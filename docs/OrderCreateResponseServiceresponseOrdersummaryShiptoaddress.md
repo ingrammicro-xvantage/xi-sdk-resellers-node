@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderCreateResponseServiceresponseOrdersummaryShiptoaddress
+# XiSdkResellers.OrderCreateResponseServiceresponseOrdersummaryShiptoaddress
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
+    instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress', function() {
     it('should create an instance of OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress', function() {
       // uncomment below and update the code to test OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress);
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
+      //expect(instance).to.be.a(XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress);
     });
 
     it('should have the property attention (base name: "attention")', function() {
       // uncomment below and update the code to test the property attention
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
       //expect(instance).to.be();
     });
 
     it('should have the property addressline1 (base name: "addressline1")', function() {
       // uncomment below and update the code to test the property addressline1
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
       //expect(instance).to.be();
     });
 
     it('should have the property addressline2 (base name: "addressline2")', function() {
       // uncomment below and update the code to test the property addressline2
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
       //expect(instance).to.be();
     });
 
     it('should have the property addressline3 (base name: "addressline3")', function() {
       // uncomment below and update the code to test the property addressline3
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
       //expect(instance).to.be();
     });
 
     it('should have the property state (base name: "state")', function() {
       // uncomment below and update the code to test the property state
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
       //expect(instance).to.be();
     });
 
     it('should have the property postalcode (base name: "postalcode")', function() {
       // uncomment below and update the code to test the property postalcode
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
       //expect(instance).to.be();
     });
 
     it('should have the property countrycode (base name: "countrycode")', function() {
       // uncomment below and update the code to test the property countrycode
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress();
       //expect(instance).to.be();
     });
 

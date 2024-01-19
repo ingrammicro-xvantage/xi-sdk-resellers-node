@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse();
+    instance = new XiSdkResellers.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse', function() {
     it('should create an instance of MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse', function() {
       // uncomment below and update the code to test MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse
-      //var instance = new ResellerApiDocumentation.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse();
-      //expect(instance).to.be.a(ResellerApiDocumentation.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse);
+      //var instance = new XiSdkResellers.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse();
+      //expect(instance).to.be.a(XiSdkResellers.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse);
     });
 
     it('should have the property details (base name: "details")', function() {
       // uncomment below and update the code to test the property details
-      //var instance = new ResellerApiDocumentation.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse();
+      //var instance = new XiSdkResellers.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse();
       //expect(instance).to.be();
     });
 

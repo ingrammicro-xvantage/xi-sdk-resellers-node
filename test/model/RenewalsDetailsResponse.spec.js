@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+    instance = new XiSdkResellers.RenewalsDetailsResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,97 +50,97 @@
   describe('RenewalsDetailsResponse', function() {
     it('should create an instance of RenewalsDetailsResponse', function() {
       // uncomment below and update the code to test RenewalsDetailsResponse
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
-      //expect(instance).to.be.a(ResellerApiDocumentation.RenewalsDetailsResponse);
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
+      //expect(instance).to.be.a(XiSdkResellers.RenewalsDetailsResponse);
     });
 
     it('should have the property renewalId (base name: "renewalId")', function() {
       // uncomment below and update the code to test the property renewalId
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramOrderNumber (base name: "ingramOrderNumber")', function() {
       // uncomment below and update the code to test the property ingramOrderNumber
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramOrderDate (base name: "ingramOrderDate")', function() {
       // uncomment below and update the code to test the property ingramOrderDate
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property expirationDate (base name: "expirationDate")', function() {
       // uncomment below and update the code to test the property expirationDate
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramPurchaseOrderNumber (base name: "ingramPurchaseOrderNumber")', function() {
       // uncomment below and update the code to test the property ingramPurchaseOrderNumber
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property customerOrderNumber (base name: "customerOrderNumber")', function() {
       // uncomment below and update the code to test the property customerOrderNumber
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property endCustomerOrderNumber (base name: "endCustomerOrderNumber")', function() {
       // uncomment below and update the code to test the property endCustomerOrderNumber
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property renewalValue (base name: "renewalValue")', function() {
       // uncomment below and update the code to test the property renewalValue
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property endUser (base name: "endUser")', function() {
       // uncomment below and update the code to test the property endUser
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property vendor (base name: "vendor")', function() {
       // uncomment below and update the code to test the property vendor
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property endUserInfo (base name: "endUserInfo")', function() {
       // uncomment below and update the code to test the property endUserInfo
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property referenceNumber (base name: "referenceNumber")', function() {
       // uncomment below and update the code to test the property referenceNumber
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property products (base name: "products")', function() {
       // uncomment below and update the code to test the property products
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
       // uncomment below and update the code to test the property additionalAttributes
-      //var instance = new ResellerApiDocumentation.RenewalsDetailsResponse();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponse();
       //expect(instance).to.be();
     });
 

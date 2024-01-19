@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata();
+    instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata', function() {
     it('should create an instance of OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata', function() {
       // uncomment below and update the code to test OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata);
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata();
+      //expect(instance).to.be.a(XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata);
     });
 
     it('should have the property actioncode (base name: "actioncode")', function() {
       // uncomment below and update the code to test the property actioncode
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata();
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata();
       //expect(instance).to.be();
     });
 
     it('should have the property shipviacode (base name: "shipviacode")', function() {
       // uncomment below and update the code to test the property shipviacode
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata();
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata();
       //expect(instance).to.be();
     });
 

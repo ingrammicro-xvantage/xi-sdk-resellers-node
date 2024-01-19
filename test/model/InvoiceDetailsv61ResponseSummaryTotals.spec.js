@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryTotals();
+    instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('InvoiceDetailsv61ResponseSummaryTotals', function() {
     it('should create an instance of InvoiceDetailsv61ResponseSummaryTotals', function() {
       // uncomment below and update the code to test InvoiceDetailsv61ResponseSummaryTotals
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryTotals();
-      //expect(instance).to.be.a(ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryTotals);
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals();
+      //expect(instance).to.be.a(XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals);
     });
 
     it('should have the property netInvoiceAmount (base name: "netInvoiceAmount")', function() {
       // uncomment below and update the code to test the property netInvoiceAmount
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryTotals();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals();
       //expect(instance).to.be();
     });
 
     it('should have the property discountAmount (base name: "discountAmount")', function() {
       // uncomment below and update the code to test the property discountAmount
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryTotals();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals();
       //expect(instance).to.be();
     });
 
     it('should have the property discountType (base name: "discountType")', function() {
       // uncomment below and update the code to test the property discountType
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryTotals();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals();
       //expect(instance).to.be();
     });
 
     it('should have the property totalTaxAmount (base name: "totalTaxAmount")', function() {
       // uncomment below and update the code to test the property totalTaxAmount
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryTotals();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals();
       //expect(instance).to.be();
     });
 
     it('should have the property invoicedAmountDue (base name: "invoicedAmountDue")', function() {
       // uncomment below and update the code to test the property invoicedAmountDue
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryTotals();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals();
       //expect(instance).to.be();
     });
 
     it('should have the property freightAmount (base name: "freightAmount")', function() {
       // uncomment below and update the code to test the property freightAmount
-      //var instance = new ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryTotals();
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals();
       //expect(instance).to.be();
     });
 

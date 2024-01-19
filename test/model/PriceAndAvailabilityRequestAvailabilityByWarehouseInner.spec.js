@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestAvailabilityByWarehouseInner();
+    instance = new XiSdkResellers.PriceAndAvailabilityRequestAvailabilityByWarehouseInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('PriceAndAvailabilityRequestAvailabilityByWarehouseInner', function() {
     it('should create an instance of PriceAndAvailabilityRequestAvailabilityByWarehouseInner', function() {
       // uncomment below and update the code to test PriceAndAvailabilityRequestAvailabilityByWarehouseInner
-      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestAvailabilityByWarehouseInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.PriceAndAvailabilityRequestAvailabilityByWarehouseInner);
+      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestAvailabilityByWarehouseInner();
+      //expect(instance).to.be.a(XiSdkResellers.PriceAndAvailabilityRequestAvailabilityByWarehouseInner);
     });
 
     it('should have the property availabilityByWarehouseId (base name: "availabilityByWarehouseId")', function() {
       // uncomment below and update the code to test the property availabilityByWarehouseId
-      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestAvailabilityByWarehouseInner();
+      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestAvailabilityByWarehouseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property availabilityForAllLocation (base name: "availabilityForAllLocation")', function() {
       // uncomment below and update the code to test the property availabilityForAllLocation
-      //var instance = new ResellerApiDocumentation.PriceAndAvailabilityRequestAvailabilityByWarehouseInner();
+      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestAvailabilityByWarehouseInner();
       //expect(instance).to.be();
     });
 

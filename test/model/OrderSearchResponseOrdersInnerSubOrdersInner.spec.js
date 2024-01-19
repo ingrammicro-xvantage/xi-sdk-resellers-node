@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderSearchResponseOrdersInnerSubOrdersInner();
+    instance = new XiSdkResellers.OrderSearchResponseOrdersInnerSubOrdersInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('OrderSearchResponseOrdersInnerSubOrdersInner', function() {
     it('should create an instance of OrderSearchResponseOrdersInnerSubOrdersInner', function() {
       // uncomment below and update the code to test OrderSearchResponseOrdersInnerSubOrdersInner
-      //var instance = new ResellerApiDocumentation.OrderSearchResponseOrdersInnerSubOrdersInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderSearchResponseOrdersInnerSubOrdersInner);
+      //var instance = new XiSdkResellers.OrderSearchResponseOrdersInnerSubOrdersInner();
+      //expect(instance).to.be.a(XiSdkResellers.OrderSearchResponseOrdersInnerSubOrdersInner);
     });
 
     it('should have the property subOrderNumber (base name: "subOrderNumber")', function() {
       // uncomment below and update the code to test the property subOrderNumber
-      //var instance = new ResellerApiDocumentation.OrderSearchResponseOrdersInnerSubOrdersInner();
+      //var instance = new XiSdkResellers.OrderSearchResponseOrdersInnerSubOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property subOrderTotal (base name: "subOrderTotal")', function() {
       // uncomment below and update the code to test the property subOrderTotal
-      //var instance = new ResellerApiDocumentation.OrderSearchResponseOrdersInnerSubOrdersInner();
+      //var instance = new XiSdkResellers.OrderSearchResponseOrdersInnerSubOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property subOrderStatus (base name: "subOrderStatus")', function() {
       // uncomment below and update the code to test the property subOrderStatus
-      //var instance = new ResellerApiDocumentation.OrderSearchResponseOrdersInnerSubOrdersInner();
+      //var instance = new XiSdkResellers.OrderSearchResponseOrdersInnerSubOrdersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new ResellerApiDocumentation.OrderSearchResponseOrdersInnerSubOrdersInner();
+      //var instance = new XiSdkResellers.OrderSearchResponseOrdersInnerSubOrdersInner();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.ProductLineTypeTrackingnumberdetailsInner
+# XiSdkResellers.ProductLineTypeTrackingnumberdetailsInner
 
 ## Properties
 

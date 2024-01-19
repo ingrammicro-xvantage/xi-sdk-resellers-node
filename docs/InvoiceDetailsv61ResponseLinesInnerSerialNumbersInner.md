@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner
+# XiSdkResellers.InvoiceDetailsv61ResponseLinesInnerSerialNumbersInner
 
 ## Properties
 

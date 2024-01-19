@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderCreateRequestVmf
+# XiSdkResellers.OrderCreateRequestVmf
 
 ## Properties
 

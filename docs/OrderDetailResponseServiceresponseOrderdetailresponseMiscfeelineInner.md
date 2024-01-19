@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderDetailResponseServiceresponseOrderdetailresponseMiscfeelineInner
+# XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseMiscfeelineInner
 
 ## Properties
 

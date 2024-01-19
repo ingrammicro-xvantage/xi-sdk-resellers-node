@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequest();
+    instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderCreateRequestOrdercreaterequest', function() {
     it('should create an instance of OrderCreateRequestOrdercreaterequest', function() {
       // uncomment below and update the code to test OrderCreateRequestOrdercreaterequest
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequest();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderCreateRequestOrdercreaterequest);
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequest();
+      //expect(instance).to.be.a(XiSdkResellers.OrderCreateRequestOrdercreaterequest);
     });
 
     it('should have the property requestpreamble (base name: "requestpreamble")', function() {
       // uncomment below and update the code to test the property requestpreamble
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequest();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequest();
       //expect(instance).to.be();
     });
 
     it('should have the property ordercreatedetails (base name: "ordercreatedetails")', function() {
       // uncomment below and update the code to test the property ordercreatedetails
-      //var instance = new ResellerApiDocumentation.OrderCreateRequestOrdercreaterequest();
+      //var instance = new XiSdkResellers.OrderCreateRequestOrdercreaterequest();
       //expect(instance).to.be();
     });
 

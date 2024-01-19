@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.InvoiceDetailsv61ResponseSummaryMiscChargesInner
+# XiSdkResellers.InvoiceDetailsv61ResponseSummaryMiscChargesInner
 
 ## Properties
 

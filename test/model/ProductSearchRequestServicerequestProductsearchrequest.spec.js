@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequest();
+    instance = new XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('ProductSearchRequestServicerequestProductsearchrequest', function() {
     it('should create an instance of ProductSearchRequestServicerequestProductsearchrequest', function() {
       // uncomment below and update the code to test ProductSearchRequestServicerequestProductsearchrequest
-      //var instance = new ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequest();
-      //expect(instance).to.be.a(ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequest);
+      //var instance = new XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequest();
+      //expect(instance).to.be.a(XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequest);
     });
 
     it('should have the property searchcriteria (base name: "searchcriteria")', function() {
       // uncomment below and update the code to test the property searchcriteria
-      //var instance = new ResellerApiDocumentation.ProductSearchRequestServicerequestProductsearchrequest();
+      //var instance = new XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequest();
       //expect(instance).to.be();
     });
 

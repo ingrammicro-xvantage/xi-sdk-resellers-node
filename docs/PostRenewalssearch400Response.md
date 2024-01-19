@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.PostRenewalssearch400Response
+# XiSdkResellers.PostRenewalssearch400Response
 
 ## Properties
 

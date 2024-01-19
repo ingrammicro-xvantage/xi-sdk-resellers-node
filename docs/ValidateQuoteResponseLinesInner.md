@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.ValidateQuoteResponseLinesInner
+# XiSdkResellers.ValidateQuoteResponseLinesInner
 
 ## Properties
 

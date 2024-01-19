@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
+    instance = new XiSdkResellers.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('OrderDetailB2BLinesInnerServiceContractInfoContractInfo', function() {
     it('should create an instance of OrderDetailB2BLinesInnerServiceContractInfoContractInfo', function() {
       // uncomment below and update the code to test OrderDetailB2BLinesInnerServiceContractInfoContractInfo
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoContractInfo);
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
+      //expect(instance).to.be.a(XiSdkResellers.OrderDetailB2BLinesInnerServiceContractInfoContractInfo);
     });
 
     it('should have the property contractDescription (base name: "contractDescription")', function() {
       // uncomment below and update the code to test the property contractDescription
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property contractNumber (base name: "contractNumber")', function() {
       // uncomment below and update the code to test the property contractNumber
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property contractStatus (base name: "contractStatus")', function() {
       // uncomment below and update the code to test the property contractStatus
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property contractStartDate (base name: "contractStartDate")', function() {
       // uncomment below and update the code to test the property contractStartDate
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property contractEndDate (base name: "contractEndDate")', function() {
       // uncomment below and update the code to test the property contractEndDate
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property contractDuration (base name: "contractDuration")', function() {
       // uncomment below and update the code to test the property contractDuration
-      //var instance = new ResellerApiDocumentation.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerServiceContractInfoContractInfo();
       //expect(instance).to.be();
     });
 

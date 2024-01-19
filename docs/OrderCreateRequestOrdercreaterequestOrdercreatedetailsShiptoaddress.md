@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress
+# XiSdkResellers.OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.QuoteListResponseQuoteSearchResponseResponsePreamble
+# XiSdkResellers.QuoteListResponseQuoteSearchResponseResponsePreamble
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderModifyResponseServiceresponseOrdermodifyresponse();
+    instance = new XiSdkResellers.OrderModifyResponseServiceresponseOrdermodifyresponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('OrderModifyResponseServiceresponseOrdermodifyresponse', function() {
     it('should create an instance of OrderModifyResponseServiceresponseOrdermodifyresponse', function() {
       // uncomment below and update the code to test OrderModifyResponseServiceresponseOrdermodifyresponse
-      //var instance = new ResellerApiDocumentation.OrderModifyResponseServiceresponseOrdermodifyresponse();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderModifyResponseServiceresponseOrdermodifyresponse);
+      //var instance = new XiSdkResellers.OrderModifyResponseServiceresponseOrdermodifyresponse();
+      //expect(instance).to.be.a(XiSdkResellers.OrderModifyResponseServiceresponseOrdermodifyresponse);
     });
 
     it('should have the property responseflag (base name: "responseflag")', function() {
       // uncomment below and update the code to test the property responseflag
-      //var instance = new ResellerApiDocumentation.OrderModifyResponseServiceresponseOrdermodifyresponse();
+      //var instance = new XiSdkResellers.OrderModifyResponseServiceresponseOrdermodifyresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property errortype (base name: "errortype")', function() {
       // uncomment below and update the code to test the property errortype
-      //var instance = new ResellerApiDocumentation.OrderModifyResponseServiceresponseOrdermodifyresponse();
+      //var instance = new XiSdkResellers.OrderModifyResponseServiceresponseOrdermodifyresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property acktriggered (base name: "acktriggered")', function() {
       // uncomment below and update the code to test the property acktriggered
-      //var instance = new ResellerApiDocumentation.OrderModifyResponseServiceresponseOrdermodifyresponse();
+      //var instance = new XiSdkResellers.OrderModifyResponseServiceresponseOrdermodifyresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property warncode (base name: "warncode")', function() {
       // uncomment below and update the code to test the property warncode
-      //var instance = new ResellerApiDocumentation.OrderModifyResponseServiceresponseOrdermodifyresponse();
+      //var instance = new XiSdkResellers.OrderModifyResponseServiceresponseOrdermodifyresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property headerresponse (base name: "headerresponse")', function() {
       // uncomment below and update the code to test the property headerresponse
-      //var instance = new ResellerApiDocumentation.OrderModifyResponseServiceresponseOrdermodifyresponse();
+      //var instance = new XiSdkResellers.OrderModifyResponseServiceresponseOrdermodifyresponse();
       //expect(instance).to.be();
     });
 

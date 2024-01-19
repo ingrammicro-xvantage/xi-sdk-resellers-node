@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.FreightResponseFreightEstimateResponse
+# XiSdkResellers.FreightResponseFreightEstimateResponse
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.GetResellerV6ValidateQuote400ResponseFieldsInner();
+    instance = new XiSdkResellers.GetResellerV6ValidateQuote400ResponseFieldsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('GetResellerV6ValidateQuote400ResponseFieldsInner', function() {
     it('should create an instance of GetResellerV6ValidateQuote400ResponseFieldsInner', function() {
       // uncomment below and update the code to test GetResellerV6ValidateQuote400ResponseFieldsInner
-      //var instance = new ResellerApiDocumentation.GetResellerV6ValidateQuote400ResponseFieldsInner();
-      //expect(instance).to.be.a(ResellerApiDocumentation.GetResellerV6ValidateQuote400ResponseFieldsInner);
+      //var instance = new XiSdkResellers.GetResellerV6ValidateQuote400ResponseFieldsInner();
+      //expect(instance).to.be.a(XiSdkResellers.GetResellerV6ValidateQuote400ResponseFieldsInner);
     });
 
     it('should have the property field (base name: "field")', function() {
       // uncomment below and update the code to test the property field
-      //var instance = new ResellerApiDocumentation.GetResellerV6ValidateQuote400ResponseFieldsInner();
+      //var instance = new XiSdkResellers.GetResellerV6ValidateQuote400ResponseFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new ResellerApiDocumentation.GetResellerV6ValidateQuote400ResponseFieldsInner();
+      //var instance = new XiSdkResellers.GetResellerV6ValidateQuote400ResponseFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new ResellerApiDocumentation.GetResellerV6ValidateQuote400ResponseFieldsInner();
+      //var instance = new XiSdkResellers.GetResellerV6ValidateQuote400ResponseFieldsInner();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.FreightRequestLinesInner
+# XiSdkResellers.FreightRequestLinesInner
 
 ## Properties
 

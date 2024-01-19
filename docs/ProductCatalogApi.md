@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.ProductCatalogApi
+# XiSdkResellers.ProductCatalogApi
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -21,13 +21,13 @@ Search all the product-related details using a unique Ingram Part Number. Curren
 ### Example
 
 ```javascript
-import ResellerApiDocumentation from 'reseller_api_documentation';
-let defaultClient = ResellerApiDocumentation.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentation.ProductCatalogApi();
+let apiInstance = new XiSdkResellers.ProductCatalogApi();
 let ingramPartNumber = 6YE881; // String | Ingram Micro unique part number for the product
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number
 let iMCountryCode = US; // String | Two-character ISO country code.
@@ -80,13 +80,13 @@ Search the Ingram Micro product catalog by providing any of the information in t
 ### Example
 
 ```javascript
-import ResellerApiDocumentation from 'reseller_api_documentation';
-let defaultClient = ResellerApiDocumentation.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentation.ProductCatalogApi();
+let apiInstance = new XiSdkResellers.ProductCatalogApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems
 let iMCountryCode = US; // String | Two-character ISO country code.
@@ -159,13 +159,13 @@ The PriceAndAvailability API, will retrieve Pricing, Availability, discounts, In
 ### Example
 
 ```javascript
-import ResellerApiDocumentation from 'reseller_api_documentation';
-let defaultClient = ResellerApiDocumentation.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApiDocumentation.ProductCatalogApi();
+let apiInstance = new XiSdkResellers.ProductCatalogApi();
 let includeAvailability = [null]; // [Boolean] | Pass boolean value as input, if true the response will contain warehouse availability details, if false the response will not hold warehouse availability details
 let includePricing = true; // Boolean | Pass boolean value as input, if true the response will contain Pricing details of the Product, if false the response will not hold Pricing details.
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.

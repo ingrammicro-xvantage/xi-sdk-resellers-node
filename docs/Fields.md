@@ -1,4 +1,4 @@
-# ResellerApiDocumentation.Fields
+# XiSdkResellers.Fields
 
 ## Properties
 

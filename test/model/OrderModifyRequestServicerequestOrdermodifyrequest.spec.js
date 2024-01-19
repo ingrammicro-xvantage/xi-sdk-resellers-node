@@ -1,5 +1,5 @@
 /**
- * Reseller API Documentation
+ * XI SDK Resellers
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ResellerApiDocumentation);
+    factory(root.expect, root.XiSdkResellers);
   }
-}(this, function(expect, ResellerApiDocumentation) {
+}(this, function(expect, XiSdkResellers) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest();
+    instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('OrderModifyRequestServicerequestOrdermodifyrequest', function() {
     it('should create an instance of OrderModifyRequestServicerequestOrdermodifyrequest', function() {
       // uncomment below and update the code to test OrderModifyRequestServicerequestOrdermodifyrequest
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest();
-      //expect(instance).to.be.a(ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest);
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest();
+      //expect(instance).to.be.a(XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest);
     });
 
     it('should have the property ingramorderbranch (base name: "ingramorderbranch")', function() {
       // uncomment below and update the code to test the property ingramorderbranch
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest();
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramordernumber (base name: "ingramordernumber")', function() {
       // uncomment below and update the code to test the property ingramordernumber
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest();
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramorderdist (base name: "ingramorderdist")', function() {
       // uncomment below and update the code to test the property ingramorderdist
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest();
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramordership (base name: "ingramordership")', function() {
       // uncomment below and update the code to test the property ingramordership
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest();
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest();
       //expect(instance).to.be();
     });
 
     it('should have the property customerponumber (base name: "customerponumber")', function() {
       // uncomment below and update the code to test the property customerponumber
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest();
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest();
       //expect(instance).to.be();
     });
 
     it('should have the property shipto (base name: "shipto")', function() {
       // uncomment below and update the code to test the property shipto
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest();
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest();
       //expect(instance).to.be();
     });
 
     it('should have the property headerdata (base name: "headerdata")', function() {
       // uncomment below and update the code to test the property headerdata
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest();
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest();
       //expect(instance).to.be();
     });
 
     it('should have the property linedata (base name: "linedata")', function() {
       // uncomment below and update the code to test the property linedata
-      //var instance = new ResellerApiDocumentation.OrderModifyRequestServicerequestOrdermodifyrequest();
+      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest();
       //expect(instance).to.be();
     });
 
