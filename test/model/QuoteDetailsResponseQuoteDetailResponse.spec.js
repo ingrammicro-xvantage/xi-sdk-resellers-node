@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.QuoteDetailsResponseQuoteDetailResponse();
+    instance = new ResellerApi.QuoteDetailsResponseQuoteDetailResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('QuoteDetailsResponseQuoteDetailResponse', function() {
     it('should create an instance of QuoteDetailsResponseQuoteDetailResponse', function() {
       // uncomment below and update the code to test QuoteDetailsResponseQuoteDetailResponse
-      //var instance = new XiSdkResellers.QuoteDetailsResponseQuoteDetailResponse();
-      //expect(instance).to.be.a(XiSdkResellers.QuoteDetailsResponseQuoteDetailResponse);
+      //var instance = new ResellerApi.QuoteDetailsResponseQuoteDetailResponse();
+      //expect(instance).to.be.a(ResellerApi.QuoteDetailsResponseQuoteDetailResponse);
     });
 
     it('should have the property responsePreamble (base name: "responsePreamble")', function() {
       // uncomment below and update the code to test the property responsePreamble
-      //var instance = new XiSdkResellers.QuoteDetailsResponseQuoteDetailResponse();
+      //var instance = new ResellerApi.QuoteDetailsResponseQuoteDetailResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property retrieveQuoteResponse (base name: "retrieveQuoteResponse")', function() {
       // uncomment below and update the code to test the property retrieveQuoteResponse
-      //var instance = new XiSdkResellers.QuoteDetailsResponseQuoteDetailResponse();
+      //var instance = new ResellerApi.QuoteDetailsResponseQuoteDetailResponse();
       //expect(instance).to.be();
     });
 

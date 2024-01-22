@@ -1,4 +1,4 @@
-# XiSdkResellers.QuoteToOrderDetailsDTOLinesInner
+# ResellerApi.QuoteToOrderDetailsDTOLinesInner
 
 ## Properties
 

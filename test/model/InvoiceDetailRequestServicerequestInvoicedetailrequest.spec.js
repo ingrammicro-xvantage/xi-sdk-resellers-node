@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.InvoiceDetailRequestServicerequestInvoicedetailrequest();
+    instance = new ResellerApi.InvoiceDetailRequestServicerequestInvoicedetailrequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('InvoiceDetailRequestServicerequestInvoicedetailrequest', function() {
     it('should create an instance of InvoiceDetailRequestServicerequestInvoicedetailrequest', function() {
       // uncomment below and update the code to test InvoiceDetailRequestServicerequestInvoicedetailrequest
-      //var instance = new XiSdkResellers.InvoiceDetailRequestServicerequestInvoicedetailrequest();
-      //expect(instance).to.be.a(XiSdkResellers.InvoiceDetailRequestServicerequestInvoicedetailrequest);
+      //var instance = new ResellerApi.InvoiceDetailRequestServicerequestInvoicedetailrequest();
+      //expect(instance).to.be.a(ResellerApi.InvoiceDetailRequestServicerequestInvoicedetailrequest);
     });
 
     it('should have the property invoicenumber (base name: "invoicenumber")', function() {
       // uncomment below and update the code to test the property invoicenumber
-      //var instance = new XiSdkResellers.InvoiceDetailRequestServicerequestInvoicedetailrequest();
+      //var instance = new ResellerApi.InvoiceDetailRequestServicerequestInvoicedetailrequest();
       //expect(instance).to.be();
     });
 

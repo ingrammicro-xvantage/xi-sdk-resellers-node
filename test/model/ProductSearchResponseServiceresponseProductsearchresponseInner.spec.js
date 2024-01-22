@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.ProductSearchResponseServiceresponseProductsearchresponseInner();
+    instance = new ResellerApi.ProductSearchResponseServiceresponseProductsearchresponseInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ProductSearchResponseServiceresponseProductsearchresponseInner', function() {
     it('should create an instance of ProductSearchResponseServiceresponseProductsearchresponseInner', function() {
       // uncomment below and update the code to test ProductSearchResponseServiceresponseProductsearchresponseInner
-      //var instance = new XiSdkResellers.ProductSearchResponseServiceresponseProductsearchresponseInner();
-      //expect(instance).to.be.a(XiSdkResellers.ProductSearchResponseServiceresponseProductsearchresponseInner);
+      //var instance = new ResellerApi.ProductSearchResponseServiceresponseProductsearchresponseInner();
+      //expect(instance).to.be.a(ResellerApi.ProductSearchResponseServiceresponseProductsearchresponseInner);
     });
 
     it('should have the property responseflag (base name: "responseflag")', function() {
       // uncomment below and update the code to test the property responseflag
-      //var instance = new XiSdkResellers.ProductSearchResponseServiceresponseProductsearchresponseInner();
+      //var instance = new ResellerApi.ProductSearchResponseServiceresponseProductsearchresponseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property partnumbers (base name: "partnumbers")', function() {
       // uncomment below and update the code to test the property partnumbers
-      //var instance = new XiSdkResellers.ProductSearchResponseServiceresponseProductsearchresponseInner();
+      //var instance = new ResellerApi.ProductSearchResponseServiceresponseProductsearchresponseInner();
       //expect(instance).to.be();
     });
 

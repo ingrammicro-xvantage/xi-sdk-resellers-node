@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
+    instance = new ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner', function() {
     it('should create an instance of OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner', function() {
       // uncomment below and update the code to test OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner
-      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
-      //expect(instance).to.be.a(XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner);
+      //var instance = new ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
+      //expect(instance).to.be.a(ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner);
     });
 
     it('should have the property addlineorupdateline (base name: "addlineorupdateline")', function() {
       // uncomment below and update the code to test the property addlineorupdateline
-      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
+      //var instance = new ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
       //expect(instance).to.be();
     });
 
     it('should have the property linenumber (base name: "linenumber")', function() {
       // uncomment below and update the code to test the property linenumber
-      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
+      //var instance = new ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerlinenumber (base name: "customerlinenumber")', function() {
       // uncomment below and update the code to test the property customerlinenumber
-      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
+      //var instance = new ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingrampartnumber (base name: "ingrampartnumber")', function() {
       // uncomment below and update the code to test the property ingrampartnumber
-      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
+      //var instance = new ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityordered (base name: "quantityordered")', function() {
       // uncomment below and update the code to test the property quantityordered
-      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
+      //var instance = new ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerpartnumber (base name: "customerpartnumber")', function() {
       // uncomment below and update the code to test the property customerpartnumber
-      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
+      //var instance = new ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
       //expect(instance).to.be();
     });
 
     it('should have the property linetype (base name: "linetype")', function() {
       // uncomment below and update the code to test the property linetype
-      //var instance = new XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
+      //var instance = new ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner();
       //expect(instance).to.be();
     });
 

@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderModifyResponseRejectedLineItemsInner();
+    instance = new ResellerApi.OrderModifyResponseRejectedLineItemsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('OrderModifyResponseRejectedLineItemsInner', function() {
     it('should create an instance of OrderModifyResponseRejectedLineItemsInner', function() {
       // uncomment below and update the code to test OrderModifyResponseRejectedLineItemsInner
-      //var instance = new XiSdkResellers.OrderModifyResponseRejectedLineItemsInner();
-      //expect(instance).to.be.a(XiSdkResellers.OrderModifyResponseRejectedLineItemsInner);
+      //var instance = new ResellerApi.OrderModifyResponseRejectedLineItemsInner();
+      //expect(instance).to.be.a(ResellerApi.OrderModifyResponseRejectedLineItemsInner);
     });
 
     it('should have the property ingramLineNumber (base name: "ingramLineNumber")', function() {
       // uncomment below and update the code to test the property ingramLineNumber
-      //var instance = new XiSdkResellers.OrderModifyResponseRejectedLineItemsInner();
+      //var instance = new ResellerApi.OrderModifyResponseRejectedLineItemsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerLineNumber (base name: "customerLineNumber")', function() {
       // uncomment below and update the code to test the property customerLineNumber
-      //var instance = new XiSdkResellers.OrderModifyResponseRejectedLineItemsInner();
+      //var instance = new ResellerApi.OrderModifyResponseRejectedLineItemsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramPartNumber (base name: "ingramPartNumber")', function() {
       // uncomment below and update the code to test the property ingramPartNumber
-      //var instance = new XiSdkResellers.OrderModifyResponseRejectedLineItemsInner();
+      //var instance = new ResellerApi.OrderModifyResponseRejectedLineItemsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorPartNumber (base name: "vendorPartNumber")', function() {
       // uncomment below and update the code to test the property vendorPartNumber
-      //var instance = new XiSdkResellers.OrderModifyResponseRejectedLineItemsInner();
+      //var instance = new ResellerApi.OrderModifyResponseRejectedLineItemsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityOrdered (base name: "quantityOrdered")', function() {
       // uncomment below and update the code to test the property quantityOrdered
-      //var instance = new XiSdkResellers.OrderModifyResponseRejectedLineItemsInner();
+      //var instance = new ResellerApi.OrderModifyResponseRejectedLineItemsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property rejectCode (base name: "rejectCode")', function() {
       // uncomment below and update the code to test the property rejectCode
-      //var instance = new XiSdkResellers.OrderModifyResponseRejectedLineItemsInner();
+      //var instance = new ResellerApi.OrderModifyResponseRejectedLineItemsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property rejectReason (base name: "rejectReason")', function() {
       // uncomment below and update the code to test the property rejectReason
-      //var instance = new XiSdkResellers.OrderModifyResponseRejectedLineItemsInner();
+      //var instance = new ResellerApi.OrderModifyResponseRejectedLineItemsInner();
       //expect(instance).to.be();
     });
 

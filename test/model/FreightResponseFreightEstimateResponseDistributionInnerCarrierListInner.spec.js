@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
+    instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner', function() {
     it('should create an instance of FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner', function() {
       // uncomment below and update the code to test FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
-      //expect(instance).to.be.a(XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner);
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
+      //expect(instance).to.be.a(ResellerApi.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner);
     });
 
     it('should have the property carrierCode (base name: "carrierCode")', function() {
       // uncomment below and update the code to test the property carrierCode
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shipVia (base name: "shipVia")', function() {
       // uncomment below and update the code to test the property shipVia
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property carrierMode (base name: "carrierMode")', function() {
       // uncomment below and update the code to test the property carrierMode
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property estimatedFreightCharge (base name: "estimatedFreightCharge")', function() {
       // uncomment below and update the code to test the property estimatedFreightCharge
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
       //expect(instance).to.be();
     });
 
     it('should have the property daysInTransit (base name: "daysInTransit")', function() {
       // uncomment below and update the code to test the property daysInTransit
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner();
       //expect(instance).to.be();
     });
 

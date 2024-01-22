@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
+    instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery', function() {
     it('should create an instance of OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery', function() {
       // uncomment below and update the code to test OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
-      //expect(instance).to.be.a(XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery);
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
+      //expect(instance).to.be.a(ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery);
     });
 
     it('should have the property deliveryDateType (base name: "deliveryDateType")', function() {
       // uncomment below and update the code to test the property deliveryDateType
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
       //expect(instance).to.be();
     });
 
     it('should have the property deliveryDateRange (base name: "deliveryDateRange")', function() {
       // uncomment below and update the code to test the property deliveryDateRange
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
       //expect(instance).to.be();
     });
 
     it('should have the property deliverySource (base name: "deliverySource")', function() {
       // uncomment below and update the code to test the property deliverySource
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
       //expect(instance).to.be();
     });
 
     it('should have the property deliveryDescription (base name: "deliveryDescription")', function() {
       // uncomment below and update the code to test the property deliveryDescription
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
       //expect(instance).to.be();
     });
 
     it('should have the property deliveredDate (base name: "deliveredDate")', function() {
       // uncomment below and update the code to test the property deliveredDate
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery();
       //expect(instance).to.be();
     });
 

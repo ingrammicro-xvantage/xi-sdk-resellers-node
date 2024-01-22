@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerServiceFeesInner();
+    instance = new ResellerApi.PriceAndAvailabilityResponseInnerServiceFeesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('PriceAndAvailabilityResponseInnerServiceFeesInner', function() {
     it('should create an instance of PriceAndAvailabilityResponseInnerServiceFeesInner', function() {
       // uncomment below and update the code to test PriceAndAvailabilityResponseInnerServiceFeesInner
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerServiceFeesInner();
-      //expect(instance).to.be.a(XiSdkResellers.PriceAndAvailabilityResponseInnerServiceFeesInner);
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerServiceFeesInner();
+      //expect(instance).to.be.a(ResellerApi.PriceAndAvailabilityResponseInnerServiceFeesInner);
     });
 
     it('should have the property conditionType (base name: "conditionType")', function() {
       // uncomment below and update the code to test the property conditionType
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerServiceFeesInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerServiceFeesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerServiceFeesInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerServiceFeesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerServiceFeesInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerServiceFeesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "endDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerServiceFeesInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerServiceFeesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property currencyCode (base name: "currencyCode")', function() {
       // uncomment below and update the code to test the property currencyCode
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerServiceFeesInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerServiceFeesInner();
       //expect(instance).to.be();
     });
 

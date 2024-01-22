@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+    instance = new ResellerApi.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner', function() {
     it('should create an instance of OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner', function() {
       // uncomment below and update the code to test OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
-      //expect(instance).to.be.a(XiSdkResellers.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner);
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //expect(instance).to.be.a(ResellerApi.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner);
     });
 
     it('should have the property carrierCode (base name: "carrierCode")', function() {
       // uncomment below and update the code to test the property carrierCode
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property carrierName (base name: "carrierName")', function() {
       // uncomment below and update the code to test the property carrierName
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shipFromWarehouseId (base name: "shipFromWarehouseId")', function() {
       // uncomment below and update the code to test the property shipFromWarehouseId
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shipFromLocation (base name: "shipFromLocation")', function() {
       // uncomment below and update the code to test the property shipFromLocation
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property freightAccountNumber (base name: "freightAccountNumber")', function() {
       // uncomment below and update the code to test the property freightAccountNumber
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property signatureRequired (base name: "signatureRequired")', function() {
       // uncomment below and update the code to test the property signatureRequired
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shippingInstructions (base name: "shippingInstructions")', function() {
       // uncomment below and update the code to test the property shippingInstructions
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner();
       //expect(instance).to.be();
     });
 

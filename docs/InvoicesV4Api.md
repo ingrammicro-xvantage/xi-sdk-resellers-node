@@ -1,4 +1,4 @@
-# XiSdkResellers.InvoicesV4Api
+# ResellerApi.InvoicesV4Api
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -19,13 +19,13 @@ A real-time request that allows the customer to query Ingram Micro for Invoice i
 ### Example
 
 ```javascript
-import XiSdkResellers from 'xi_sdk_resellers';
-let defaultClient = XiSdkResellers.ApiClient.instance;
+import ResellerApi from 'reseller_api';
+let defaultClient = ResellerApi.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new XiSdkResellers.InvoicesV4Api();
+let apiInstance = new ResellerApi.InvoicesV4Api();
 let opts = {
   'invoiceDetailRequest': {"servicerequest":{"requestpreamble":{"isocountrycode":"US","customernumber":"20-222222"},"invoicedetailrequest":{"invoicenumber":"30-13649-13","customerponumber":"DH-200732"}}} // InvoiceDetailRequest | 
 };

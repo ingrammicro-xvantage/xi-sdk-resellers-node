@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.RenewalsSearchRequestStatusOpporutinyStatus();
+    instance = new ResellerApi.RenewalsSearchRequestStatusOpporutinyStatus();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('RenewalsSearchRequestStatusOpporutinyStatus', function() {
     it('should create an instance of RenewalsSearchRequestStatusOpporutinyStatus', function() {
       // uncomment below and update the code to test RenewalsSearchRequestStatusOpporutinyStatus
-      //var instance = new XiSdkResellers.RenewalsSearchRequestStatusOpporutinyStatus();
-      //expect(instance).to.be.a(XiSdkResellers.RenewalsSearchRequestStatusOpporutinyStatus);
+      //var instance = new ResellerApi.RenewalsSearchRequestStatusOpporutinyStatus();
+      //expect(instance).to.be.a(ResellerApi.RenewalsSearchRequestStatusOpporutinyStatus);
     });
 
     it('should have the property value (base name: "value")', function() {
       // uncomment below and update the code to test the property value
-      //var instance = new XiSdkResellers.RenewalsSearchRequestStatusOpporutinyStatus();
+      //var instance = new ResellerApi.RenewalsSearchRequestStatusOpporutinyStatus();
       //expect(instance).to.be();
     });
 
     it('should have the property subStatus (base name: "subStatus")', function() {
       // uncomment below and update the code to test the property subStatus
-      //var instance = new XiSdkResellers.RenewalsSearchRequestStatusOpporutinyStatus();
+      //var instance = new ResellerApi.RenewalsSearchRequestStatusOpporutinyStatus();
       //expect(instance).to.be();
     });
 

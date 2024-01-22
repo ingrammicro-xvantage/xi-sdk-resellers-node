@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+    instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,121 +50,121 @@
   describe('InvoiceDetailsv61ResponseLinesInner', function() {
     it('should create an instance of InvoiceDetailsv61ResponseLinesInner', function() {
       // uncomment below and update the code to test InvoiceDetailsv61ResponseLinesInner
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
-      //expect(instance).to.be.a(XiSdkResellers.InvoiceDetailsv61ResponseLinesInner);
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
+      //expect(instance).to.be.a(ResellerApi.InvoiceDetailsv61ResponseLinesInner);
     });
 
     it('should have the property ingramLineNumber (base name: "ingramLineNumber")', function() {
       // uncomment below and update the code to test the property ingramLineNumber
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerLineNumber (base name: "customerLineNumber")', function() {
       // uncomment below and update the code to test the property customerLineNumber
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramPartNumber (base name: "ingramPartNumber")', function() {
       // uncomment below and update the code to test the property ingramPartNumber
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorPartNumber (base name: "vendorPartNumber")', function() {
       // uncomment below and update the code to test the property vendorPartNumber
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerPartNumber (base name: "customerPartNumber")', function() {
       // uncomment below and update the code to test the property customerPartNumber
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorName (base name: "vendorName")', function() {
       // uncomment below and update the code to test the property vendorName
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property productDescription (base name: "productDescription")', function() {
       // uncomment below and update the code to test the property productDescription
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property unitWeight (base name: "unitWeight")', function() {
       // uncomment below and update the code to test the property unitWeight
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property unitPrice (base name: "unitPrice")', function() {
       // uncomment below and update the code to test the property unitPrice
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property unitOfMeasure (base name: "unitOfMeasure")', function() {
       // uncomment below and update the code to test the property unitOfMeasure
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property currencyCode (base name: "currencyCode")', function() {
       // uncomment below and update the code to test the property currencyCode
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property extendedPrice (base name: "extendedPrice")', function() {
       // uncomment below and update the code to test the property extendedPrice
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property taxPercentage (base name: "taxPercentage")', function() {
       // uncomment below and update the code to test the property taxPercentage
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property taxRate (base name: "taxRate")', function() {
       // uncomment below and update the code to test the property taxRate
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property taxAmount (base name: "taxAmount")', function() {
       // uncomment below and update the code to test the property taxAmount
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property serialNumbers (base name: "serialNumbers")', function() {
       // uncomment below and update the code to test the property serialNumbers
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityOrdered (base name: "quantityOrdered")', function() {
       // uncomment below and update the code to test the property quantityOrdered
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityShipped (base name: "quantityShipped")', function() {
       // uncomment below and update the code to test the property quantityShipped
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseLinesInner();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# XiSdkResellers.OrderDetailB2BMiscellaneousChargesInner
+# ResellerApi.OrderDetailB2BMiscellaneousChargesInner
 
 ## Properties
 

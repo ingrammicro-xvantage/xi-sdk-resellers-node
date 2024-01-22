@@ -1,4 +1,4 @@
-# XiSdkResellers.RenewalsSearchRequestStatus
+# ResellerApi.RenewalsSearchRequestStatus
 
 ## Properties
 

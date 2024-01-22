@@ -1,4 +1,4 @@
-# XiSdkResellers.ProductSearchResponse
+# ResellerApi.ProductSearchResponse
 
 ## Properties
 

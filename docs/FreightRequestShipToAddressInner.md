@@ -1,4 +1,4 @@
-# XiSdkResellers.FreightRequestShipToAddressInner
+# ResellerApi.FreightRequestShipToAddressInner
 
 ## Properties
 

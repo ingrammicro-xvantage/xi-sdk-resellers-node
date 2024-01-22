@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderCreateResponseOrdersInnerAdditionalAttributesInner();
+    instance = new ResellerApi.OrderCreateResponseOrdersInnerAdditionalAttributesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderCreateResponseOrdersInnerAdditionalAttributesInner', function() {
     it('should create an instance of OrderCreateResponseOrdersInnerAdditionalAttributesInner', function() {
       // uncomment below and update the code to test OrderCreateResponseOrdersInnerAdditionalAttributesInner
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerAdditionalAttributesInner();
-      //expect(instance).to.be.a(XiSdkResellers.OrderCreateResponseOrdersInnerAdditionalAttributesInner);
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerAdditionalAttributesInner();
+      //expect(instance).to.be.a(ResellerApi.OrderCreateResponseOrdersInnerAdditionalAttributesInner);
     });
 
     it('should have the property attributeName (base name: "attributeName")', function() {
       // uncomment below and update the code to test the property attributeName
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerAdditionalAttributesInner();
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerAdditionalAttributesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property attributeValue (base name: "attributeValue")', function() {
       // uncomment below and update the code to test the property attributeValue
-      //var instance = new XiSdkResellers.OrderCreateResponseOrdersInnerAdditionalAttributesInner();
+      //var instance = new ResellerApi.OrderCreateResponseOrdersInnerAdditionalAttributesInner();
       //expect(instance).to.be();
     });
 

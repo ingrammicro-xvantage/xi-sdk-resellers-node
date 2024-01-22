@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
+    instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner', function() {
     it('should create an instance of OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner', function() {
       // uncomment below and update the code to test OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
-      //expect(instance).to.be.a(XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner);
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
+      //expect(instance).to.be.a(ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner);
     });
 
     it('should have the property subordernumber (base name: "subordernumber")', function() {
       // uncomment below and update the code to test the property subordernumber
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property statuscode (base name: "statuscode")', function() {
       // uncomment below and update the code to test the property statuscode
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property holdreasoncode (base name: "holdreasoncode")', function() {
       // uncomment below and update the code to test the property holdreasoncode
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property holdreason (base name: "holdreason")', function() {
       // uncomment below and update the code to test the property holdreason
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner();
       //expect(instance).to.be();
     });
 

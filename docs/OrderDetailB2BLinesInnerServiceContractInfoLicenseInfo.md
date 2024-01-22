@@ -1,4 +1,4 @@
-# XiSdkResellers.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo
+# ResellerApi.OrderDetailB2BLinesInnerServiceContractInfoLicenseInfo
 
 ## Properties
 

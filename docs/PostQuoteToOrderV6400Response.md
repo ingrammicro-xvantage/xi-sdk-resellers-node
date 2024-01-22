@@ -1,4 +1,4 @@
-# XiSdkResellers.PostQuoteToOrderV6400Response
+# ResellerApi.PostQuoteToOrderV6400Response
 
 ## Properties
 

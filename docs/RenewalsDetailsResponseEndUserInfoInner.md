@@ -1,4 +1,4 @@
-# XiSdkResellers.RenewalsDetailsResponseEndUserInfoInner
+# ResellerApi.RenewalsDetailsResponseEndUserInfoInner
 
 ## Properties
 

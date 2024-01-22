@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.FreightRequest();
+    instance = new ResellerApi.FreightRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('FreightRequest', function() {
     it('should create an instance of FreightRequest', function() {
       // uncomment below and update the code to test FreightRequest
-      //var instance = new XiSdkResellers.FreightRequest();
-      //expect(instance).to.be.a(XiSdkResellers.FreightRequest);
+      //var instance = new ResellerApi.FreightRequest();
+      //expect(instance).to.be.a(ResellerApi.FreightRequest);
     });
 
     it('should have the property billToAddressId (base name: "billToAddressId")', function() {
       // uncomment below and update the code to test the property billToAddressId
-      //var instance = new XiSdkResellers.FreightRequest();
+      //var instance = new ResellerApi.FreightRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property shipToAddressId (base name: "shipToAddressId")', function() {
       // uncomment below and update the code to test the property shipToAddressId
-      //var instance = new XiSdkResellers.FreightRequest();
+      //var instance = new ResellerApi.FreightRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property shipToAddress (base name: "shipToAddress")', function() {
       // uncomment below and update the code to test the property shipToAddress
-      //var instance = new XiSdkResellers.FreightRequest();
+      //var instance = new ResellerApi.FreightRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property lines (base name: "lines")', function() {
       // uncomment below and update the code to test the property lines
-      //var instance = new XiSdkResellers.FreightRequest();
+      //var instance = new ResellerApi.FreightRequest();
       //expect(instance).to.be();
     });
 

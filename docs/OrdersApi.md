@@ -1,4 +1,4 @@
-# XiSdkResellers.OrdersApi
+# ResellerApi.OrdersApi
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -23,13 +23,13 @@ This call must be submitted before the order is released to Ingram Micro’s war
 ### Example
 
 ```javascript
-import XiSdkResellers from 'xi_sdk_resellers';
-let defaultClient = XiSdkResellers.ApiClient.instance;
+import ResellerApi from 'reseller_api';
+let defaultClient = ResellerApi.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new XiSdkResellers.OrdersApi();
+let apiInstance = new ResellerApi.OrdersApi();
 let orderNumber = 20-RD128; // String | Ingram Micro sales order number.
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
@@ -84,13 +84,13 @@ The Orders details API endpoint allows a customer to retrieve their Ingram Micro
 ### Example
 
 ```javascript
-import XiSdkResellers from 'xi_sdk_resellers';
-let defaultClient = XiSdkResellers.ApiClient.instance;
+import ResellerApi from 'reseller_api';
+let defaultClient = ResellerApi.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new XiSdkResellers.OrdersApi();
+let apiInstance = new ResellerApi.OrdersApi();
 let ordernumber = 20-RD3QV; // String | The Ingram Micro sales order number.
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
@@ -153,13 +153,13 @@ The Orders Search API endpoint allows a customer to search their Ingram Micro or
 ### Example
 
 ```javascript
-import XiSdkResellers from 'xi_sdk_resellers';
-let defaultClient = XiSdkResellers.ApiClient.instance;
+import ResellerApi from 'reseller_api';
+let defaultClient = ResellerApi.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new XiSdkResellers.OrdersApi();
+let apiInstance = new ResellerApi.OrdersApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems.
@@ -246,13 +246,13 @@ Instantly create and place orders. The POST API supports stocked SKUs as well as
 ### Example
 
 ```javascript
-import XiSdkResellers from 'xi_sdk_resellers';
-let defaultClient = XiSdkResellers.ApiClient.instance;
+import ResellerApi from 'reseller_api';
+let defaultClient = ResellerApi.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new XiSdkResellers.OrdersApi();
+let apiInstance = new ResellerApi.OrdersApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems.
@@ -305,13 +305,13 @@ The Order Modify API endpoint allows for changes to be made to an order after th
 ### Example
 
 ```javascript
-import XiSdkResellers from 'xi_sdk_resellers';
-let defaultClient = XiSdkResellers.ApiClient.instance;
+import ResellerApi from 'reseller_api';
+let defaultClient = ResellerApi.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new XiSdkResellers.OrdersApi();
+let apiInstance = new ResellerApi.OrdersApi();
 let orderNumber = 20-RC1RD; // String | Ingram sales order number.
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.

@@ -1,4 +1,4 @@
-# XiSdkResellers.ReturnsCreateRequestListInner
+# ResellerApi.ReturnsCreateRequestListInner
 
 ## Properties
 

@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+    instance = new ResellerApi.ProductDetailResponseCiscoFieldsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('ProductDetailResponseCiscoFieldsInner', function() {
     it('should create an instance of ProductDetailResponseCiscoFieldsInner', function() {
       // uncomment below and update the code to test ProductDetailResponseCiscoFieldsInner
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
-      //expect(instance).to.be.a(XiSdkResellers.ProductDetailResponseCiscoFieldsInner);
+      //var instance = new ResellerApi.ProductDetailResponseCiscoFieldsInner();
+      //expect(instance).to.be.a(ResellerApi.ProductDetailResponseCiscoFieldsInner);
     });
 
     it('should have the property productSubGroup (base name: "productSubGroup")', function() {
       // uncomment below and update the code to test the property productSubGroup
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new ResellerApi.ProductDetailResponseCiscoFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property serviceProgramName (base name: "serviceProgramName")', function() {
       // uncomment below and update the code to test the property serviceProgramName
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new ResellerApi.ProductDetailResponseCiscoFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property itemCatalogCategory (base name: "itemCatalogCategory")', function() {
       // uncomment below and update the code to test the property itemCatalogCategory
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new ResellerApi.ProductDetailResponseCiscoFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property configurationIndicator (base name: "configurationIndicator")', function() {
       // uncomment below and update the code to test the property configurationIndicator
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new ResellerApi.ProductDetailResponseCiscoFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property internalBusinessEntity (base name: "internalBusinessEntity")', function() {
       // uncomment below and update the code to test the property internalBusinessEntity
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new ResellerApi.ProductDetailResponseCiscoFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property itemType (base name: "itemType")', function() {
       // uncomment below and update the code to test the property itemType
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new ResellerApi.ProductDetailResponseCiscoFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property globalListPrice (base name: "globalListPrice")', function() {
       // uncomment below and update the code to test the property globalListPrice
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new ResellerApi.ProductDetailResponseCiscoFieldsInner();
       //expect(instance).to.be();
     });
 

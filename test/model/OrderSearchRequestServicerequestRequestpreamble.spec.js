@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderSearchRequestServicerequestRequestpreamble();
+    instance = new ResellerApi.OrderSearchRequestServicerequestRequestpreamble();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderSearchRequestServicerequestRequestpreamble', function() {
     it('should create an instance of OrderSearchRequestServicerequestRequestpreamble', function() {
       // uncomment below and update the code to test OrderSearchRequestServicerequestRequestpreamble
-      //var instance = new XiSdkResellers.OrderSearchRequestServicerequestRequestpreamble();
-      //expect(instance).to.be.a(XiSdkResellers.OrderSearchRequestServicerequestRequestpreamble);
+      //var instance = new ResellerApi.OrderSearchRequestServicerequestRequestpreamble();
+      //expect(instance).to.be.a(ResellerApi.OrderSearchRequestServicerequestRequestpreamble);
     });
 
     it('should have the property isoCountryCode (base name: "isoCountryCode")', function() {
       // uncomment below and update the code to test the property isoCountryCode
-      //var instance = new XiSdkResellers.OrderSearchRequestServicerequestRequestpreamble();
+      //var instance = new ResellerApi.OrderSearchRequestServicerequestRequestpreamble();
       //expect(instance).to.be();
     });
 
     it('should have the property customerNumber (base name: "customerNumber")', function() {
       // uncomment below and update the code to test the property customerNumber
-      //var instance = new XiSdkResellers.OrderSearchRequestServicerequestRequestpreamble();
+      //var instance = new ResellerApi.OrderSearchRequestServicerequestRequestpreamble();
       //expect(instance).to.be();
     });
 

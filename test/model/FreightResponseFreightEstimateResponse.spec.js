@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.FreightResponseFreightEstimateResponse();
+    instance = new ResellerApi.FreightResponseFreightEstimateResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('FreightResponseFreightEstimateResponse', function() {
     it('should create an instance of FreightResponseFreightEstimateResponse', function() {
       // uncomment below and update the code to test FreightResponseFreightEstimateResponse
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponse();
-      //expect(instance).to.be.a(XiSdkResellers.FreightResponseFreightEstimateResponse);
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponse();
+      //expect(instance).to.be.a(ResellerApi.FreightResponseFreightEstimateResponse);
     });
 
     it('should have the property currencyCode (base name: "currencyCode")', function() {
       // uncomment below and update the code to test the property currencyCode
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponse();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property totalFreightAmount (base name: "totalFreightAmount")', function() {
       // uncomment below and update the code to test the property totalFreightAmount
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponse();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property totalTaxAmount (base name: "totalTaxAmount")', function() {
       // uncomment below and update the code to test the property totalTaxAmount
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponse();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property totalFees (base name: "totalFees")', function() {
       // uncomment below and update the code to test the property totalFees
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponse();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property totalNetAmount (base name: "totalNetAmount")', function() {
       // uncomment below and update the code to test the property totalNetAmount
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponse();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property grossAmount (base name: "grossAmount")', function() {
       // uncomment below and update the code to test the property grossAmount
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponse();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property distribution (base name: "distribution")', function() {
       // uncomment below and update the code to test the property distribution
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponse();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property lines (base name: "lines")', function() {
       // uncomment below and update the code to test the property lines
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponse();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponse();
       //expect(instance).to.be();
     });
 

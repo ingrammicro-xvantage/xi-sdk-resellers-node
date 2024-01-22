@@ -1,4 +1,4 @@
-# XiSdkResellers.ErrorResponse
+# ResellerApi.ErrorResponse
 
 ## Properties
 

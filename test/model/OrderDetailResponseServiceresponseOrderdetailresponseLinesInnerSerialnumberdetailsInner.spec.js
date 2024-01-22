@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner();
+    instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner', function() {
     it('should create an instance of OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner', function() {
       // uncomment below and update the code to test OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner();
-      //expect(instance).to.be.a(XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner);
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner();
+      //expect(instance).to.be.a(ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner);
     });
 
     it('should have the property serialnumber (base name: "serialnumber")', function() {
       // uncomment below and update the code to test the property serialnumber
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner();
       //expect(instance).to.be();
     });
 

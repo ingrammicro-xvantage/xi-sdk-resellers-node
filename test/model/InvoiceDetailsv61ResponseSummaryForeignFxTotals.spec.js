@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
+    instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('InvoiceDetailsv61ResponseSummaryForeignFxTotals', function() {
     it('should create an instance of InvoiceDetailsv61ResponseSummaryForeignFxTotals', function() {
       // uncomment below and update the code to test InvoiceDetailsv61ResponseSummaryForeignFxTotals
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
-      //expect(instance).to.be.a(XiSdkResellers.InvoiceDetailsv61ResponseSummaryForeignFxTotals);
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
+      //expect(instance).to.be.a(ResellerApi.InvoiceDetailsv61ResponseSummaryForeignFxTotals);
     });
 
     it('should have the property foreignCurrencyCode (base name: "foreignCurrencyCode")', function() {
       // uncomment below and update the code to test the property foreignCurrencyCode
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
       //expect(instance).to.be();
     });
 
     it('should have the property foreignCurrencyFxRate (base name: "foreignCurrencyFxRate")', function() {
       // uncomment below and update the code to test the property foreignCurrencyFxRate
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
       //expect(instance).to.be();
     });
 
     it('should have the property foreignTotalTaxableAmount (base name: "foreignTotalTaxableAmount")', function() {
       // uncomment below and update the code to test the property foreignTotalTaxableAmount
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
       //expect(instance).to.be();
     });
 
     it('should have the property foreignTotalTaxAmount (base name: "foreignTotalTaxAmount")', function() {
       // uncomment below and update the code to test the property foreignTotalTaxAmount
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
       //expect(instance).to.be();
     });
 
     it('should have the property foreignInvoiceAmountDue (base name: "foreignInvoiceAmountDue")', function() {
       // uncomment below and update the code to test the property foreignInvoiceAmountDue
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryForeignFxTotals();
       //expect(instance).to.be();
     });
 

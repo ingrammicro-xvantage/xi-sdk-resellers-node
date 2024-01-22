@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
+    instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('InvoiceDetailsv61ResponseSummaryMiscChargesInner', function() {
     it('should create an instance of InvoiceDetailsv61ResponseSummaryMiscChargesInner', function() {
       // uncomment below and update the code to test InvoiceDetailsv61ResponseSummaryMiscChargesInner
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
-      //expect(instance).to.be.a(XiSdkResellers.InvoiceDetailsv61ResponseSummaryMiscChargesInner);
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
+      //expect(instance).to.be.a(ResellerApi.InvoiceDetailsv61ResponseSummaryMiscChargesInner);
     });
 
     it('should have the property chargeDescription (base name: "chargeDescription")', function() {
       // uncomment below and update the code to test the property chargeDescription
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property miscChargeLineCount (base name: "miscChargeLineCount")', function() {
       // uncomment below and update the code to test the property miscChargeLineCount
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property miscChargeLineTotal (base name: "miscChargeLineTotal")', function() {
       // uncomment below and update the code to test the property miscChargeLineTotal
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property chargeLineReference (base name: "chargeLineReference")', function() {
       // uncomment below and update the code to test the property chargeLineReference
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property isNonMisc (base name: "isNonMisc")', function() {
       // uncomment below and update the code to test the property isNonMisc
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseSummaryMiscChargesInner();
       //expect(instance).to.be();
     });
 

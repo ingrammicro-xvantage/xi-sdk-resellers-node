@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
+    instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('OrderDetailB2BLinesInnerEstimatedDatesInnerShip', function() {
     it('should create an instance of OrderDetailB2BLinesInnerEstimatedDatesInnerShip', function() {
       // uncomment below and update the code to test OrderDetailB2BLinesInnerEstimatedDatesInnerShip
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
-      //expect(instance).to.be.a(XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerShip);
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
+      //expect(instance).to.be.a(ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerShip);
     });
 
     it('should have the property shipDateType (base name: "shipDateType")', function() {
       // uncomment below and update the code to test the property shipDateType
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
       //expect(instance).to.be();
     });
 
     it('should have the property shipDateRange (base name: "shipDateRange")', function() {
       // uncomment below and update the code to test the property shipDateRange
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
       //expect(instance).to.be();
     });
 
     it('should have the property shipSource (base name: "shipSource")', function() {
       // uncomment below and update the code to test the property shipSource
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
       //expect(instance).to.be();
     });
 
     it('should have the property shipDescription (base name: "shipDescription")', function() {
       // uncomment below and update the code to test the property shipDescription
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
       //expect(instance).to.be();
     });
 
     it('should have the property shipDate (base name: "shipDate")', function() {
       // uncomment below and update the code to test the property shipDate
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerShip();
       //expect(instance).to.be();
     });
 

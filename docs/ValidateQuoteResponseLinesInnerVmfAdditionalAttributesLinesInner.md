@@ -1,4 +1,4 @@
-# XiSdkResellers.ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner
+# ResellerApi.ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner
 
 ## Properties
 

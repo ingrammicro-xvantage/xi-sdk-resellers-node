@@ -1,4 +1,4 @@
-# XiSdkResellers.OrderCreateResponseOrdersInnerMiscellaneousChargesInner
+# ResellerApi.OrderCreateResponseOrdersInnerMiscellaneousChargesInner
 
 ## Properties
 

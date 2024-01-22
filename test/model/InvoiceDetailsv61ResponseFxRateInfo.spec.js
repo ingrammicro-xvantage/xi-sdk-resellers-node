@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.InvoiceDetailsv61ResponseFxRateInfo();
+    instance = new ResellerApi.InvoiceDetailsv61ResponseFxRateInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('InvoiceDetailsv61ResponseFxRateInfo', function() {
     it('should create an instance of InvoiceDetailsv61ResponseFxRateInfo', function() {
       // uncomment below and update the code to test InvoiceDetailsv61ResponseFxRateInfo
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseFxRateInfo();
-      //expect(instance).to.be.a(XiSdkResellers.InvoiceDetailsv61ResponseFxRateInfo);
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseFxRateInfo();
+      //expect(instance).to.be.a(ResellerApi.InvoiceDetailsv61ResponseFxRateInfo);
     });
 
     it('should have the property currencyCode (base name: "currencyCode")', function() {
       // uncomment below and update the code to test the property currencyCode
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseFxRateInfo();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseFxRateInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property companyCurrency (base name: "companyCurrency")', function() {
       // uncomment below and update the code to test the property companyCurrency
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseFxRateInfo();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseFxRateInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property invoiceCurrency (base name: "invoiceCurrency")', function() {
       // uncomment below and update the code to test the property invoiceCurrency
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseFxRateInfo();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseFxRateInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property currencyFxRate (base name: "currencyFxRate")', function() {
       // uncomment below and update the code to test the property currencyFxRate
-      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseFxRateInfo();
+      //var instance = new ResellerApi.InvoiceDetailsv61ResponseFxRateInfo();
       //expect(instance).to.be();
     });
 
