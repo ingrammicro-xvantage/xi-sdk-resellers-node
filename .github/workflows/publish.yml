@@ -32,15 +32,22 @@ jobs:
         git config --global user.email ${{secrets.ADMIN_EMAIL}}
         git config --global user.name ${{secrets.ORG_NAME}}
         git add .
-        git commit -am "Bump version to ${{ github.event.inputs.version }}"
-        git pull origin main
-        git push https://${{secrets.WORKFLOW_TOKEN}}@github.com/ingrammicro-xvantage/xi-sdk-resellers-node.git main
+        if git diff --exit-code; then
+            echo "No changes to commit."
+        else
+            git add .
+            git commit -am "Bump version to ${{ github.event.inputs.version }}"
+            git pull origin main
+            git push https://${{secrets.WORKFLOW_TOKEN}}@github.com/ingrammicro-xvantage/xi-sdk-resellers-node.git main
+        fi
+        
 
     - name: Build SDK
       run: npm run build
 
     - name: Authenticate with npm
       run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+    
     - name: Publish to npm
       run: npm publish
       env:
