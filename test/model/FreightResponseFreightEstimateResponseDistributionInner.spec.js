@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner();
+    instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('FreightResponseFreightEstimateResponseDistributionInner', function() {
     it('should create an instance of FreightResponseFreightEstimateResponseDistributionInner', function() {
       // uncomment below and update the code to test FreightResponseFreightEstimateResponseDistributionInner
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner();
-      //expect(instance).to.be.a(XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner);
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInner();
+      //expect(instance).to.be.a(ResellerApi.FreightResponseFreightEstimateResponseDistributionInner);
     });
 
     it('should have the property shipFromBranchNumber (base name: "shipFromBranchNumber")', function() {
       // uncomment below and update the code to test the property shipFromBranchNumber
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInner();
       //expect(instance).to.be();
     });
 
     it('should have the property carrierCode (base name: "carrierCode")', function() {
       // uncomment below and update the code to test the property carrierCode
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shipVia (base name: "shipVia")', function() {
       // uncomment below and update the code to test the property shipVia
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInner();
       //expect(instance).to.be();
     });
 
     it('should have the property freightRate (base name: "freightRate")', function() {
       // uncomment below and update the code to test the property freightRate
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInner();
       //expect(instance).to.be();
     });
 
     it('should have the property totalWeight (base name: "totalWeight")', function() {
       // uncomment below and update the code to test the property totalWeight
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInner();
       //expect(instance).to.be();
     });
 
     it('should have the property transitDays (base name: "transitDays")', function() {
       // uncomment below and update the code to test the property transitDays
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInner();
       //expect(instance).to.be();
     });
 
     it('should have the property carrierList (base name: "carrierList")', function() {
       // uncomment below and update the code to test the property carrierList
-      //var instance = new XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner();
+      //var instance = new ResellerApi.FreightResponseFreightEstimateResponseDistributionInner();
       //expect(instance).to.be();
     });
 

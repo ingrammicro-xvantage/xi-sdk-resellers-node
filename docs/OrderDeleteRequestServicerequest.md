@@ -1,4 +1,4 @@
-# XiSdkResellers.OrderDeleteRequestServicerequest
+# ResellerApi.OrderDeleteRequestServicerequest
 
 ## Properties
 

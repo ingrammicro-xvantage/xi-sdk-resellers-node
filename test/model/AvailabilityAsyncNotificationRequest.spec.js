@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.AvailabilityAsyncNotificationRequest();
+    instance = new ResellerApi.AvailabilityAsyncNotificationRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('AvailabilityAsyncNotificationRequest', function() {
     it('should create an instance of AvailabilityAsyncNotificationRequest', function() {
       // uncomment below and update the code to test AvailabilityAsyncNotificationRequest
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequest();
-      //expect(instance).to.be.a(XiSdkResellers.AvailabilityAsyncNotificationRequest);
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequest();
+      //expect(instance).to.be.a(ResellerApi.AvailabilityAsyncNotificationRequest);
     });
 
     it('should have the property topic (base name: "topic")', function() {
       // uncomment below and update the code to test the property topic
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequest();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property event (base name: "event")', function() {
       // uncomment below and update the code to test the property event
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequest();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property eventTimeStamp (base name: "eventTimeStamp")', function() {
       // uncomment below and update the code to test the property eventTimeStamp
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequest();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property eventId (base name: "eventId")', function() {
       // uncomment below and update the code to test the property eventId
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequest();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property resource (base name: "resource")', function() {
       // uncomment below and update the code to test the property resource
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequest();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequest();
       //expect(instance).to.be();
     });
 

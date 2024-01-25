@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+    instance = new ResellerApi.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('ProductSearchRequestServicerequestProductsearchrequestSearchcriteria', function() {
     it('should create an instance of ProductSearchRequestServicerequestProductsearchrequestSearchcriteria', function() {
       // uncomment below and update the code to test ProductSearchRequestServicerequestProductsearchrequestSearchcriteria
-      //var instance = new XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
-      //expect(instance).to.be.a(XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria);
+      //var instance = new ResellerApi.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //expect(instance).to.be.a(ResellerApi.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria);
     });
 
     it('should have the property vendor (base name: "vendor")', function() {
       // uncomment below and update the code to test the property vendor
-      //var instance = new XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //var instance = new ResellerApi.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorpartnumber (base name: "vendorpartnumber")', function() {
       // uncomment below and update the code to test the property vendorpartnumber
-      //var instance = new XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //var instance = new ResellerApi.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
       //expect(instance).to.be();
     });
 
     it('should have the property partdescription (base name: "partdescription")', function() {
       // uncomment below and update the code to test the property partdescription
-      //var instance = new XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //var instance = new ResellerApi.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
       //expect(instance).to.be();
     });
 
     it('should have the property UPC (base name: "UPC")', function() {
       // uncomment below and update the code to test the property UPC
-      //var instance = new XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //var instance = new ResellerApi.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
       //expect(instance).to.be();
     });
 
     it('should have the property customerpartnumber (base name: "customerpartnumber")', function() {
       // uncomment below and update the code to test the property customerpartnumber
-      //var instance = new XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
+      //var instance = new ResellerApi.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria();
       //expect(instance).to.be();
     });
 

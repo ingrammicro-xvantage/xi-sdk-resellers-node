@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
+    instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,61 +50,61 @@
   describe('AvailabilityAsyncNotificationRequestResourceInner', function() {
     it('should create an instance of AvailabilityAsyncNotificationRequestResourceInner', function() {
       // uncomment below and update the code to test AvailabilityAsyncNotificationRequestResourceInner
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
-      //expect(instance).to.be.a(XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner);
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
+      //expect(instance).to.be.a(ResellerApi.AvailabilityAsyncNotificationRequestResourceInner);
     });
 
     it('should have the property eventType (base name: "eventType")', function() {
       // uncomment below and update the code to test the property eventType
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramPartNumber (base name: "ingramPartNumber")', function() {
       // uncomment below and update the code to test the property ingramPartNumber
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorPartNumber (base name: "vendorPartNumber")', function() {
       // uncomment below and update the code to test the property vendorPartNumber
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorName (base name: "vendorName")', function() {
       // uncomment below and update the code to test the property vendorName
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property upcCode (base name: "upcCode")', function() {
       // uncomment below and update the code to test the property upcCode
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property skuStatus (base name: "skuStatus")', function() {
       // uncomment below and update the code to test the property skuStatus
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property backOrderFlag (base name: "backOrderFlag")', function() {
       // uncomment below and update the code to test the property backOrderFlag
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property totalAvailability (base name: "totalAvailability")', function() {
       // uncomment below and update the code to test the property totalAvailability
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 
     it('should have the property links (base name: "links")', function() {
       // uncomment below and update the code to test the property links
-      //var instance = new XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner();
+      //var instance = new ResellerApi.AvailabilityAsyncNotificationRequestResourceInner();
       //expect(instance).to.be();
     });
 

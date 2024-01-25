@@ -1,4 +1,4 @@
-# XiSdkResellers.OrderCreateRequestShipmentDetails
+# ResellerApi.OrderCreateRequestShipmentDetails
 
 ## Properties
 

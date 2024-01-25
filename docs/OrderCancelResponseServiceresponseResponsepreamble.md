@@ -1,4 +1,4 @@
-# XiSdkResellers.OrderCancelResponseServiceresponseResponsepreamble
+# ResellerApi.OrderCancelResponseServiceresponseResponsepreamble
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner
+# ResellerApi.AvailabilityAsyncNotificationRequestResourceInner
 
 ## Properties
 

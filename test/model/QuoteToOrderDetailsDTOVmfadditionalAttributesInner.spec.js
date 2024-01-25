@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.QuoteToOrderDetailsDTOVmfadditionalAttributesInner();
+    instance = new ResellerApi.QuoteToOrderDetailsDTOVmfadditionalAttributesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('QuoteToOrderDetailsDTOVmfadditionalAttributesInner', function() {
     it('should create an instance of QuoteToOrderDetailsDTOVmfadditionalAttributesInner', function() {
       // uncomment below and update the code to test QuoteToOrderDetailsDTOVmfadditionalAttributesInner
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOVmfadditionalAttributesInner();
-      //expect(instance).to.be.a(XiSdkResellers.QuoteToOrderDetailsDTOVmfadditionalAttributesInner);
+      //var instance = new ResellerApi.QuoteToOrderDetailsDTOVmfadditionalAttributesInner();
+      //expect(instance).to.be.a(ResellerApi.QuoteToOrderDetailsDTOVmfadditionalAttributesInner);
     });
 
     it('should have the property attributeName (base name: "attributeName")', function() {
       // uncomment below and update the code to test the property attributeName
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOVmfadditionalAttributesInner();
+      //var instance = new ResellerApi.QuoteToOrderDetailsDTOVmfadditionalAttributesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property attributeValue (base name: "attributeValue")', function() {
       // uncomment below and update the code to test the property attributeValue
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOVmfadditionalAttributesInner();
+      //var instance = new ResellerApi.QuoteToOrderDetailsDTOVmfadditionalAttributesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property attributeDescription (base name: "attributeDescription")', function() {
       // uncomment below and update the code to test the property attributeDescription
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOVmfadditionalAttributesInner();
+      //var instance = new ResellerApi.QuoteToOrderDetailsDTOVmfadditionalAttributesInner();
       //expect(instance).to.be();
     });
 

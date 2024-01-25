@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderSearchResponseServiceResponseResponsepreamble();
+    instance = new ResellerApi.OrderSearchResponseServiceResponseResponsepreamble();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('OrderSearchResponseServiceResponseResponsepreamble', function() {
     it('should create an instance of OrderSearchResponseServiceResponseResponsepreamble', function() {
       // uncomment below and update the code to test OrderSearchResponseServiceResponseResponsepreamble
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseResponsepreamble();
-      //expect(instance).to.be.a(XiSdkResellers.OrderSearchResponseServiceResponseResponsepreamble);
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseResponsepreamble();
+      //expect(instance).to.be.a(ResellerApi.OrderSearchResponseServiceResponseResponsepreamble);
     });
 
     it('should have the property requeststatus (base name: "requeststatus")', function() {
       // uncomment below and update the code to test the property requeststatus
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseResponsepreamble();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseResponsepreamble();
       //expect(instance).to.be();
     });
 
     it('should have the property returnmessage (base name: "returnmessage")', function() {
       // uncomment below and update the code to test the property returnmessage
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseResponsepreamble();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseResponsepreamble();
       //expect(instance).to.be();
     });
 

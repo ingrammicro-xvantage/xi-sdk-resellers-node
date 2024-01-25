@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
+    instance = new ResellerApi.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner', function() {
     it('should create an instance of PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner', function() {
       // uncomment below and update the code to test PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
-      //expect(instance).to.be.a(XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner);
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
+      //expect(instance).to.be.a(ResellerApi.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner);
     });
 
     it('should have the property location (base name: "location")', function() {
       // uncomment below and update the code to test the property location
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property warehouseId (base name: "warehouseId")', function() {
       // uncomment below and update the code to test the property warehouseId
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityAvailable (base name: "quantityAvailable")', function() {
       // uncomment below and update the code to test the property quantityAvailable
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityBackordered (base name: "quantityBackordered")', function() {
       // uncomment below and update the code to test the property quantityBackordered
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityBackorderedEta (base name: "quantityBackorderedEta")', function() {
       // uncomment below and update the code to test the property quantityBackorderedEta
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property backOrderInfo (base name: "backOrderInfo")', function() {
       // uncomment below and update the code to test the property backOrderInfo
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
       //expect(instance).to.be();
     });
 

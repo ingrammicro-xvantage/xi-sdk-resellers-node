@@ -1,4 +1,4 @@
-# XiSdkResellers.OrderDetailB2BLinesInner
+# ResellerApi.OrderDetailB2BLinesInner
 
 ## Properties
 

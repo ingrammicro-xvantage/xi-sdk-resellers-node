@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+    instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,127 +50,127 @@
   describe('OrderDetailResponseServiceresponseOrderdetailresponse', function() {
     it('should create an instance of OrderDetailResponseServiceresponseOrderdetailresponse', function() {
       // uncomment below and update the code to test OrderDetailResponseServiceresponseOrderdetailresponse
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
-      //expect(instance).to.be.a(XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse);
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //expect(instance).to.be.a(ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse);
     });
 
     it('should have the property ordernumber (base name: "ordernumber")', function() {
       // uncomment below and update the code to test the property ordernumber
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property ordertype (base name: "ordertype")', function() {
       // uncomment below and update the code to test the property ordertype
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property customerordernumber (base name: "customerordernumber")', function() {
       // uncomment below and update the code to test the property customerordernumber
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property enduserponumber (base name: "enduserponumber")', function() {
       // uncomment below and update the code to test the property enduserponumber
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property orderstatus (base name: "orderstatus")', function() {
       // uncomment below and update the code to test the property orderstatus
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property entrytimestamp (base name: "entrytimestamp")', function() {
       // uncomment below and update the code to test the property entrytimestamp
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property entrymethoddescription (base name: "entrymethoddescription")', function() {
       // uncomment below and update the code to test the property entrymethoddescription
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property ordertotalvalue (base name: "ordertotalvalue")', function() {
       // uncomment below and update the code to test the property ordertotalvalue
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property ordersubtotal (base name: "ordersubtotal")', function() {
       // uncomment below and update the code to test the property ordersubtotal
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property freightamount (base name: "freightamount")', function() {
       // uncomment below and update the code to test the property freightamount
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property currencycode (base name: "currencycode")', function() {
       // uncomment below and update the code to test the property currencycode
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property totalweight (base name: "totalweight")', function() {
       // uncomment below and update the code to test the property totalweight
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property totaltax (base name: "totaltax")', function() {
       // uncomment below and update the code to test the property totaltax
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property billtoaddress (base name: "billtoaddress")', function() {
       // uncomment below and update the code to test the property billtoaddress
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property shiptoaddress (base name: "shiptoaddress")', function() {
       // uncomment below and update the code to test the property shiptoaddress
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property enduserinfo (base name: "enduserinfo")', function() {
       // uncomment below and update the code to test the property enduserinfo
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property lines (base name: "lines")', function() {
       // uncomment below and update the code to test the property lines
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property commentlines (base name: "commentlines")', function() {
       // uncomment below and update the code to test the property commentlines
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property miscfeeline (base name: "miscfeeline")', function() {
       // uncomment below and update the code to test the property miscfeeline
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property extendedspecs (base name: "extendedspecs")', function() {
       // uncomment below and update the code to test the property extendedspecs
-      //var instance = new XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponse();
+      //var instance = new ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponse();
       //expect(instance).to.be();
     });
 

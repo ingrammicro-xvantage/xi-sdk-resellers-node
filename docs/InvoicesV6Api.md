@@ -1,4 +1,4 @@
-# XiSdkResellers.InvoicesV6Api
+# ResellerApi.InvoicesV6Api
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -19,13 +19,13 @@ Use your Ingram Micro invoice number to search for existing invoices or retrieve
 ### Example
 
 ```javascript
-import XiSdkResellers from 'xi_sdk_resellers';
-let defaultClient = XiSdkResellers.ApiClient.instance;
+import ResellerApi from 'reseller_api';
+let defaultClient = ResellerApi.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new XiSdkResellers.InvoicesV6Api();
+let apiInstance = new ResellerApi.InvoicesV6Api();
 let invoicenumber = 335238411; // String | The Ingram Micro invoice number.
 let version = 20-222222; // String | Version of codebase.
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.

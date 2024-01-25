@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
+    instance = new ResellerApi.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo', function() {
     it('should create an instance of QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo', function() {
       // uncomment below and update the code to test QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo
-      //var instance = new XiSdkResellers.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
-      //expect(instance).to.be.a(XiSdkResellers.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo);
+      //var instance = new ResellerApi.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
+      //expect(instance).to.be.a(ResellerApi.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo);
     });
 
     it('should have the property contactEmail (base name: "contactEmail")', function() {
       // uncomment below and update the code to test the property contactEmail
-      //var instance = new XiSdkResellers.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
+      //var instance = new ResellerApi.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property contactName (base name: "contactName")', function() {
       // uncomment below and update the code to test the property contactName
-      //var instance = new XiSdkResellers.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
+      //var instance = new ResellerApi.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo();
       //expect(instance).to.be();
     });
 

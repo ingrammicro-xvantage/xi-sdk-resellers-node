@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
+    instance = new ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner', function() {
     it('should create an instance of OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner', function() {
       // uncomment below and update the code to test OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
-      //expect(instance).to.be.a(XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner);
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
+      //expect(instance).to.be.a(ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner);
     });
 
     it('should have the property carrierCode (base name: "carrierCode")', function() {
       // uncomment below and update the code to test the property carrierCode
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property carrierName (base name: "carrierName")', function() {
       // uncomment below and update the code to test the property carrierName
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property shippedDate (base name: "shippedDate")', function() {
       // uncomment below and update the code to test the property shippedDate
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property estimatedDeliveryDate (base name: "estimatedDeliveryDate")', function() {
       // uncomment below and update the code to test the property estimatedDeliveryDate
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property deliveredDate (base name: "deliveredDate")', function() {
       // uncomment below and update the code to test the property deliveredDate
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property carrierPickupDate (base name: "carrierPickupDate")', function() {
       // uncomment below and update the code to test the property carrierPickupDate
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property trackingDetails (base name: "trackingDetails")', function() {
       // uncomment below and update the code to test the property trackingDetails
-      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
+      //var instance = new ResellerApi.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInner();
       //expect(instance).to.be();
     });
 

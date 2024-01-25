@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.PriceAndAvailabilityRequestProductsInner();
+    instance = new ResellerApi.PriceAndAvailabilityRequestProductsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,43 +50,43 @@
   describe('PriceAndAvailabilityRequestProductsInner', function() {
     it('should create an instance of PriceAndAvailabilityRequestProductsInner', function() {
       // uncomment below and update the code to test PriceAndAvailabilityRequestProductsInner
-      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestProductsInner();
-      //expect(instance).to.be.a(XiSdkResellers.PriceAndAvailabilityRequestProductsInner);
+      //var instance = new ResellerApi.PriceAndAvailabilityRequestProductsInner();
+      //expect(instance).to.be.a(ResellerApi.PriceAndAvailabilityRequestProductsInner);
     });
 
     it('should have the property ingramPartNumber (base name: "ingramPartNumber")', function() {
       // uncomment below and update the code to test the property ingramPartNumber
-      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorPartNumber (base name: "vendorPartNumber")', function() {
       // uncomment below and update the code to test the property vendorPartNumber
-      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property customerPartNumber (base name: "customerPartNumber")', function() {
       // uncomment below and update the code to test the property customerPartNumber
-      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property upc (base name: "upc")', function() {
       // uncomment below and update the code to test the property upc
-      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property quantityRequested (base name: "quantityRequested")', function() {
       // uncomment below and update the code to test the property quantityRequested
-      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
       // uncomment below and update the code to test the property additionalAttributes
-      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestProductsInner();
+      //var instance = new ResellerApi.PriceAndAvailabilityRequestProductsInner();
       //expect(instance).to.be();
     });
 

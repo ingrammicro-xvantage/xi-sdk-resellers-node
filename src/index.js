@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -359,9 +359,9 @@ import StockUpdateApi from './api/StockUpdateApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var XiSdkResellers = require('index'); // See note below*.
-* var xxxSvc = new XiSdkResellers.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new XiSdkResellers.Yyy(); // Construct a model instance.
+* var ResellerApi = require('index'); // See note below*.
+* var xxxSvc = new ResellerApi.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new ResellerApi.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -373,8 +373,8 @@ import StockUpdateApi from './api/StockUpdateApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new XiSdkResellers.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new XiSdkResellers.Yyy(); // Construct a model instance.
+* var xxxSvc = new ResellerApi.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new ResellerApi.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

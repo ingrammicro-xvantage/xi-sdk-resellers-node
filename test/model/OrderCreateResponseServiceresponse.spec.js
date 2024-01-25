@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderCreateResponseServiceresponse();
+    instance = new ResellerApi.OrderCreateResponseServiceresponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('OrderCreateResponseServiceresponse', function() {
     it('should create an instance of OrderCreateResponseServiceresponse', function() {
       // uncomment below and update the code to test OrderCreateResponseServiceresponse
-      //var instance = new XiSdkResellers.OrderCreateResponseServiceresponse();
-      //expect(instance).to.be.a(XiSdkResellers.OrderCreateResponseServiceresponse);
+      //var instance = new ResellerApi.OrderCreateResponseServiceresponse();
+      //expect(instance).to.be.a(ResellerApi.OrderCreateResponseServiceresponse);
     });
 
     it('should have the property responsepreamble (base name: "responsepreamble")', function() {
       // uncomment below and update the code to test the property responsepreamble
-      //var instance = new XiSdkResellers.OrderCreateResponseServiceresponse();
+      //var instance = new ResellerApi.OrderCreateResponseServiceresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property ordersummary (base name: "ordersummary")', function() {
       // uncomment below and update the code to test the property ordersummary
-      //var instance = new XiSdkResellers.OrderCreateResponseServiceresponse();
+      //var instance = new ResellerApi.OrderCreateResponseServiceresponse();
       //expect(instance).to.be();
     });
 
     it('should have the property ordercreateresponse (base name: "ordercreateresponse")', function() {
       // uncomment below and update the code to test the property ordercreateresponse
-      //var instance = new XiSdkResellers.OrderCreateResponseServiceresponse();
+      //var instance = new ResellerApi.OrderCreateResponseServiceresponse();
       //expect(instance).to.be();
     });
 

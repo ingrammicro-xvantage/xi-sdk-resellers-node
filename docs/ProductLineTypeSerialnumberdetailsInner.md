@@ -1,4 +1,4 @@
-# XiSdkResellers.ProductLineTypeSerialnumberdetailsInner
+# ResellerApi.ProductLineTypeSerialnumberdetailsInner
 
 ## Properties
 

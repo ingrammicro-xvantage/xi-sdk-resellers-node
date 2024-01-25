@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+    instance = new ResellerApi.QuoteDetailsResponseProductsInnerPrice();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('QuoteDetailsResponseProductsInnerPrice', function() {
     it('should create an instance of QuoteDetailsResponseProductsInnerPrice', function() {
       // uncomment below and update the code to test QuoteDetailsResponseProductsInnerPrice
-      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
-      //expect(instance).to.be.a(XiSdkResellers.QuoteDetailsResponseProductsInnerPrice);
+      //var instance = new ResellerApi.QuoteDetailsResponseProductsInnerPrice();
+      //expect(instance).to.be.a(ResellerApi.QuoteDetailsResponseProductsInnerPrice);
     });
 
     it('should have the property quotePrice (base name: "quotePrice")', function() {
       // uncomment below and update the code to test the property quotePrice
-      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //var instance = new ResellerApi.QuoteDetailsResponseProductsInnerPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property msrp (base name: "msrp")', function() {
       // uncomment below and update the code to test the property msrp
-      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //var instance = new ResellerApi.QuoteDetailsResponseProductsInnerPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property extendedMsrp (base name: "extendedMsrp")', function() {
       // uncomment below and update the code to test the property extendedMsrp
-      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //var instance = new ResellerApi.QuoteDetailsResponseProductsInnerPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property extendedQuotePrice (base name: "extendedQuotePrice")', function() {
       // uncomment below and update the code to test the property extendedQuotePrice
-      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //var instance = new ResellerApi.QuoteDetailsResponseProductsInnerPrice();
       //expect(instance).to.be();
     });
 
     it('should have the property discountOffList (base name: "discountOffList")', function() {
       // uncomment below and update the code to test the property discountOffList
-      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //var instance = new ResellerApi.QuoteDetailsResponseProductsInnerPrice();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# XiSdkResellers.InvoiceDetailsv61ResponsePaymentTermsInfo
+# ResellerApi.InvoiceDetailsv61ResponsePaymentTermsInfo
 
 ## Properties
 

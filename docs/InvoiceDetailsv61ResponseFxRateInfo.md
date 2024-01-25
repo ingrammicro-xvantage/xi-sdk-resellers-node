@@ -1,4 +1,4 @@
-# XiSdkResellers.InvoiceDetailsv61ResponseFxRateInfo
+# ResellerApi.InvoiceDetailsv61ResponseFxRateInfo
 
 ## Properties
 

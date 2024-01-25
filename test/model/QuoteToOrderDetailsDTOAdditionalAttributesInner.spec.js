@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.QuoteToOrderDetailsDTOAdditionalAttributesInner();
+    instance = new ResellerApi.QuoteToOrderDetailsDTOAdditionalAttributesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('QuoteToOrderDetailsDTOAdditionalAttributesInner', function() {
     it('should create an instance of QuoteToOrderDetailsDTOAdditionalAttributesInner', function() {
       // uncomment below and update the code to test QuoteToOrderDetailsDTOAdditionalAttributesInner
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOAdditionalAttributesInner();
-      //expect(instance).to.be.a(XiSdkResellers.QuoteToOrderDetailsDTOAdditionalAttributesInner);
+      //var instance = new ResellerApi.QuoteToOrderDetailsDTOAdditionalAttributesInner();
+      //expect(instance).to.be.a(ResellerApi.QuoteToOrderDetailsDTOAdditionalAttributesInner);
     });
 
     it('should have the property attributeName (base name: "attributeName")', function() {
       // uncomment below and update the code to test the property attributeName
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOAdditionalAttributesInner();
+      //var instance = new ResellerApi.QuoteToOrderDetailsDTOAdditionalAttributesInner();
       //expect(instance).to.be();
     });
 
     it('should have the property attributeValue (base name: "attributeValue")', function() {
       // uncomment below and update the code to test the property attributeValue
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOAdditionalAttributesInner();
+      //var instance = new ResellerApi.QuoteToOrderDetailsDTOAdditionalAttributesInner();
       //expect(instance).to.be();
     });
 

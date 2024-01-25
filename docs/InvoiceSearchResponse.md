@@ -1,4 +1,4 @@
-# XiSdkResellers.InvoiceSearchResponse
+# ResellerApi.InvoiceSearchResponse
 
 ## Properties
 

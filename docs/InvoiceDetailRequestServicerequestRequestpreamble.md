@@ -1,4 +1,4 @@
-# XiSdkResellers.InvoiceDetailRequestServicerequestRequestpreamble
+# ResellerApi.InvoiceDetailRequestServicerequestRequestpreamble
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# XiSdkResellers.OrderCreateRequestOrdercreaterequest
+# ResellerApi.OrderCreateRequestOrdercreaterequest
 
 ## Properties
 

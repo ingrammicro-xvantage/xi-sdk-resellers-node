@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderSearchResponse();
+    instance = new ResellerApi.OrderSearchResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('OrderSearchResponse', function() {
     it('should create an instance of OrderSearchResponse', function() {
       // uncomment below and update the code to test OrderSearchResponse
-      //var instance = new XiSdkResellers.OrderSearchResponse();
-      //expect(instance).to.be.a(XiSdkResellers.OrderSearchResponse);
+      //var instance = new ResellerApi.OrderSearchResponse();
+      //expect(instance).to.be.a(ResellerApi.OrderSearchResponse);
     });
 
     it('should have the property serviceResponse (base name: "serviceResponse")', function() {
       // uncomment below and update the code to test the property serviceResponse
-      //var instance = new XiSdkResellers.OrderSearchResponse();
+      //var instance = new ResellerApi.OrderSearchResponse();
       //expect(instance).to.be();
     });
 

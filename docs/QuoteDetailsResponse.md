@@ -1,4 +1,4 @@
-# XiSdkResellers.QuoteDetailsResponse
+# ResellerApi.QuoteDetailsResponse
 
 ## Properties
 

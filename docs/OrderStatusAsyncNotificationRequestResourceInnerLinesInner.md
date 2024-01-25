@@ -1,4 +1,4 @@
-# XiSdkResellers.OrderStatusAsyncNotificationRequestResourceInnerLinesInner
+# ResellerApi.OrderStatusAsyncNotificationRequestResourceInnerLinesInner
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# XiSdkResellers.ProductCatalogV5Api
+# ResellerApi.ProductCatalogV5Api
 
 All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
 
@@ -20,13 +20,13 @@ Search the Ingram Micro product catalog using customerNumber, isoCountryCode and
 ### Example
 
 ```javascript
-import XiSdkResellers from 'xi_sdk_resellers';
-let defaultClient = XiSdkResellers.ApiClient.instance;
+import ResellerApi from 'reseller_api';
+let defaultClient = ResellerApi.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new XiSdkResellers.ProductCatalogV5Api();
+let apiInstance = new ResellerApi.ProductCatalogV5Api();
 let customerNumber = "'20-222222'"; // String | Your unique Ingram Micro customer number
 let isoCountryCode = "'US'"; // String | 2 chars country code
 let partNumber = "'1AQ821'"; // String | Part Number can be ingram part number or vendor part number or customer part number or UPC
@@ -73,13 +73,13 @@ Search the product catalog for the price and availability for up to 50 SKUs at o
 ### Example
 
 ```javascript
-import XiSdkResellers from 'xi_sdk_resellers';
-let defaultClient = XiSdkResellers.ApiClient.instance;
+import ResellerApi from 'reseller_api';
+let defaultClient = ResellerApi.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new XiSdkResellers.ProductCatalogV5Api();
+let apiInstance = new ResellerApi.ProductCatalogV5Api();
 let opts = {
   'priceAndAvailabilityRequest': {"servicerequest":{"requestpreamble":{"customernumber":"20-222223","isocountrycode":"US"},"priceandstockrequest":{"showwarehouseavailability":"True","extravailabilityflag":"Y","item":[{"ingrampartnumber":"TB6489","quantity":1},{"ingrampartnumber":"1AQ821","quantity":1}],"includeallsystems":false}}} // PriceAndAvailabilityRequest | 
 };

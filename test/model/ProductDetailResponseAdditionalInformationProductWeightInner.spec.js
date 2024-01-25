@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.ProductDetailResponseAdditionalInformationProductWeightInner();
+    instance = new ResellerApi.ProductDetailResponseAdditionalInformationProductWeightInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ProductDetailResponseAdditionalInformationProductWeightInner', function() {
     it('should create an instance of ProductDetailResponseAdditionalInformationProductWeightInner', function() {
       // uncomment below and update the code to test ProductDetailResponseAdditionalInformationProductWeightInner
-      //var instance = new XiSdkResellers.ProductDetailResponseAdditionalInformationProductWeightInner();
-      //expect(instance).to.be.a(XiSdkResellers.ProductDetailResponseAdditionalInformationProductWeightInner);
+      //var instance = new ResellerApi.ProductDetailResponseAdditionalInformationProductWeightInner();
+      //expect(instance).to.be.a(ResellerApi.ProductDetailResponseAdditionalInformationProductWeightInner);
     });
 
     it('should have the property plantId (base name: "plantId")', function() {
       // uncomment below and update the code to test the property plantId
-      //var instance = new XiSdkResellers.ProductDetailResponseAdditionalInformationProductWeightInner();
+      //var instance = new ResellerApi.ProductDetailResponseAdditionalInformationProductWeightInner();
       //expect(instance).to.be();
     });
 
     it('should have the property weight (base name: "weight")', function() {
       // uncomment below and update the code to test the property weight
-      //var instance = new XiSdkResellers.ProductDetailResponseAdditionalInformationProductWeightInner();
+      //var instance = new ResellerApi.ProductDetailResponseAdditionalInformationProductWeightInner();
       //expect(instance).to.be();
     });
 
     it('should have the property weightUnit (base name: "weightUnit")', function() {
       // uncomment below and update the code to test the property weightUnit
-      //var instance = new XiSdkResellers.ProductDetailResponseAdditionalInformationProductWeightInner();
+      //var instance = new ResellerApi.ProductDetailResponseAdditionalInformationProductWeightInner();
       //expect(instance).to.be();
     });
 

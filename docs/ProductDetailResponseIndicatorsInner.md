@@ -1,4 +1,4 @@
-# XiSdkResellers.ProductDetailResponseIndicatorsInner
+# ResellerApi.ProductDetailResponseIndicatorsInner
 
 ## Properties
 

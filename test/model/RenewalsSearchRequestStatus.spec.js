@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.RenewalsSearchRequestStatus();
+    instance = new ResellerApi.RenewalsSearchRequestStatus();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('RenewalsSearchRequestStatus', function() {
     it('should create an instance of RenewalsSearchRequestStatus', function() {
       // uncomment below and update the code to test RenewalsSearchRequestStatus
-      //var instance = new XiSdkResellers.RenewalsSearchRequestStatus();
-      //expect(instance).to.be.a(XiSdkResellers.RenewalsSearchRequestStatus);
+      //var instance = new ResellerApi.RenewalsSearchRequestStatus();
+      //expect(instance).to.be.a(ResellerApi.RenewalsSearchRequestStatus);
     });
 
     it('should have the property opporutinyStatus (base name: "OpporutinyStatus")', function() {
       // uncomment below and update the code to test the property opporutinyStatus
-      //var instance = new XiSdkResellers.RenewalsSearchRequestStatus();
+      //var instance = new ResellerApi.RenewalsSearchRequestStatus();
       //expect(instance).to.be();
     });
 

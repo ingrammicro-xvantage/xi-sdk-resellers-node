@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * Reseller API
  * For Resellers. <br> Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 6.0
@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.XiSdkResellers);
+    factory(root.expect, root.ResellerApi);
   }
-}(this, function(expect, XiSdkResellers) {
+}(this, function(expect, ResellerApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks();
+    instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks', function() {
     it('should create an instance of OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks', function() {
       // uncomment below and update the code to test OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks();
-      //expect(instance).to.be.a(XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks);
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks();
+      //expect(instance).to.be.a(ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks);
     });
 
     it('should have the property topic (base name: "topic")', function() {
       // uncomment below and update the code to test the property topic
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks();
       //expect(instance).to.be();
     });
 
     it('should have the property href (base name: "href")', function() {
       // uncomment below and update the code to test the property href
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new XiSdkResellers.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks();
+      //var instance = new ResellerApi.OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks();
       //expect(instance).to.be();
     });
 
