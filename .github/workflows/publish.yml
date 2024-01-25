@@ -10,7 +10,9 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-
+    permissions:                # Job-level permissions configuration starts here
+      contents: write           # 'write' access to repository contents
+      pull-requests: write
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2

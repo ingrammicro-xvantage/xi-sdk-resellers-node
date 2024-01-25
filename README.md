@@ -57,7 +57,7 @@ npm run build
 
 #### git
 
-The library is hosted at a git repository, https://github.com/ingrammicro-xvantage/xi-sdk-resellers-node then install it via:
+The library is hosted at a git repository, https://github.com/ingrammicro-xvantage/xi-sdk-resellers-node install it via:
 
 ```shell
     npm install ingrammicro-xvantage/xi-sdk-resellers-node --save
