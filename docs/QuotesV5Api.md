@@ -1,6 +1,6 @@
-# ResellerApi.QuotesV5Api
+# XiSdkResellers.QuotesV5Api
 
-All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
+All URIs are relative to *https://api.ingrammicro.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,13 +20,13 @@ The quote details API provides all quote details associated with the quote numbe
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.QuotesV5Api();
+let apiInstance = new XiSdkResellers.QuotesV5Api();
 let quoteNumber = "'QUO-25576-C8S2W7'"; // String | Ingram Micro Quote Number
 let customerNumber = "'20-222222'"; // String | Your Ingram Micro unique customer number
 let isoCountryCode = "'US'"; // String | 
@@ -77,13 +77,13 @@ This endpoint enables the retrieval and filtering of relevant quote list key cri
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.QuotesV5Api();
+let apiInstance = new XiSdkResellers.QuotesV5Api();
 let opts = {
   'quoteListRequest': {"quoteSearchRequest":{"requestPreamble":{"customerNumber":"20-222222","customerContact":"customer@im.com","isoCountryCode":"US"},"retrieveQuoteRequest":{"fromDate":"2019-08-01","toDate":"2019-11-01","pageIndex":1,"recordsPerPage":5,"sorting":"desc","sortingColumnName":"createdon","thirdPartySource":"3RDPIDCONWISE"}}} // QuoteListRequest | 
 };

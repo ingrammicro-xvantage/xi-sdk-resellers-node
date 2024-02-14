@@ -1,4 +1,4 @@
-# ResellerApi.OrderDetailB2BLinesInnerEstimatedDatesInnerShip
+# XiSdkResellers.OrderDetailB2BLinesInnerEstimatedDatesInnerShip
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApi.OrderDetailB2BEndUserInfo
+# XiSdkResellers.OrderDetailB2BEndUserInfo
 
 ## Properties
 

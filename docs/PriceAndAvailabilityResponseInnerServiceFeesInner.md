@@ -1,4 +1,4 @@
-# ResellerApi.PriceAndAvailabilityResponseInnerServiceFeesInner
+# XiSdkResellers.PriceAndAvailabilityResponseInnerServiceFeesInner
 
 ## Properties
 

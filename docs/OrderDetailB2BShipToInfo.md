@@ -1,4 +1,4 @@
-# ResellerApi.OrderDetailB2BShipToInfo
+# XiSdkResellers.OrderDetailB2BShipToInfo
 
 ## Properties
 

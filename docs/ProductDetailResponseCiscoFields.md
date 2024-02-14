@@ -1,4 +1,4 @@
-# ResellerApi.ProductDetailResponseCiscoFieldsInner
+# XiSdkResellers.ProductDetailResponseCiscoFields
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApi.InvoiceDetailsv61ResponseSummaryForeignFxTotals
+# XiSdkResellers.InvoiceDetailsv61ResponseSummaryForeignFxTotals
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApi.OrderSearchRequestServicerequestOrderLookupRequest
+# XiSdkResellers.OrderSearchRequestServicerequestOrderLookupRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApi.OrderModifyResponseRejectedLineItemsInner
+# XiSdkResellers.OrderModifyResponseRejectedLineItemsInner
 
 ## Properties
 

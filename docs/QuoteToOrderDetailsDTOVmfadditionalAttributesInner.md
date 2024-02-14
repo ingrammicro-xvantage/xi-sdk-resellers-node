@@ -1,4 +1,4 @@
-# ResellerApi.QuoteToOrderDetailsDTOVmfadditionalAttributesInner
+# XiSdkResellers.QuoteToOrderDetailsDTOVmfadditionalAttributesInner
 
 ## Properties
 

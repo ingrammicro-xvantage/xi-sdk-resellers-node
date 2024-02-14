@@ -57,6 +57,7 @@
   "files": [
     "LICENSE",
     "Readme.md",
-    "docs/"
+    "docs/",
+    "src/"
   ]
 }

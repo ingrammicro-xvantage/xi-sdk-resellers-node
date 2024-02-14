@@ -1,4 +1,4 @@
-# ResellerApi.ReturnsDetailsResponseProductsInner
+# XiSdkResellers.ReturnsDetailsResponseProductsInner
 
 ## Properties
 
@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **upc** | **String** | The UPC code of a product. | [optional] 
 **invoiceDate** | **Date** | The date of the invoice. | [optional] 
 **invoiceNumber** | **String** | Ingram micro Invoice number. | [optional] 
-**customerOrderNumber** | **Number** | The reseller&#39;s order number for reference in their system. | [optional] 
-**requestDetails** | **Number** | Request details. | [optional] 
+**customerOrderNumber** | **String** | The reseller&#39;s order number for reference in their system. | [optional] 
+**requestDetails** | **String** | Request details. | [optional] 
 **quantity** | **Number** | The quantity of the line item. | [optional] 
 **unitPrice** | **Number** | The unit price of the line item. | [optional] 
 **extendedPrice** | **Number** | Unit price X quantity for the line item. | [optional] 

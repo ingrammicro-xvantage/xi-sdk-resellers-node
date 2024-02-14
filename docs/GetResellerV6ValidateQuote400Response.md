@@ -1,4 +1,4 @@
-# ResellerApi.GetResellerV6ValidateQuote400Response
+# XiSdkResellers.GetResellerV6ValidateQuote400Response
 
 ## Properties
 

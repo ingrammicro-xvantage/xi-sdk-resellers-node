@@ -1,4 +1,4 @@
-# ResellerApi.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner
+# XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner
 
 ## Properties
 

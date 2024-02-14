@@ -1,6 +1,6 @@
-# ResellerApi.OrdersV4Api
+# XiSdkResellers.OrdersV4Api
 
-All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
+All URIs are relative to *https://api.ingrammicro.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,13 +23,13 @@ The order create transaction is a real-time transaction that allows customers to
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.OrdersV4Api();
+let apiInstance = new XiSdkResellers.OrdersV4Api();
 let opts = {
   'orderCreateRequest': {"ordercreaterequest":{"requestpreamble":{"isocountrycode":"US","customernumber":"20-222222"},"ordercreatedetails":{"systemid":"","customerponumber":"TESTAPI10156","billtosuffix":"000","shiptoaddress":{"attention":"HARRY WELLS","addressline1":"THE COMPUTER STORE","addressline2":"754 LAS PALMAS DR","city":"IRVINE","state":"CA","postalcode":"926022004","countrycode":"US"},"lines":[{"linetype":"P","linenumber":"001","globalskuid":"","quantity":"1","ingrampartnumber":"NE7872"}],"extendedspecs":[{"attributename":"entrymethod","attributevalue":"WEBS"}]}}} // OrderCreateRequest | 
 };
@@ -74,13 +74,13 @@ A real-time request to delete a previously accepted order must be submitted befo
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.OrdersV4Api();
+let apiInstance = new XiSdkResellers.OrdersV4Api();
 let opts = {
   'orderDeleteRequest': {"servicerequest":{"requestpreamble":{"isocountrycode":"US","customerumber":"20-222222"},"OrderDeleteRequestDetails":{"entryDate":"2019-01-22","orderBranch":"20","orderNumber":"RC62Z"}}} // OrderDeleteRequest | 
 };
@@ -125,13 +125,13 @@ A real-time request that allows the customer to query Ingram Micro for detailed 
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.OrdersV4Api();
+let apiInstance = new XiSdkResellers.OrdersV4Api();
 let opts = {
   'orderDetailRequest': {"servicerequest":{"requestpreamble":{"isocountrycode":"US","customernumber":"20-222222"},"orderdetailrequest":{"ordernumber":"20-B2V9H"}}} // OrderDetailRequest | 
 };
@@ -176,15 +176,15 @@ The order modify transaction allows for changes to be made after the order creat
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.OrdersV4Api();
+let apiInstance = new XiSdkResellers.OrdersV4Api();
 let opts = {
-  'orderModifyRequest': new ResellerApi.OrderModifyRequest() // OrderModifyRequest | 
+  'orderModifyRequest': new XiSdkResellers.OrderModifyRequest() // OrderModifyRequest | 
 };
 apiInstance.postV4Ordermodify(opts, (error, data, response) => {
   if (error) {
@@ -227,15 +227,15 @@ Search your orders using various search parameters
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.OrdersV4Api();
+let apiInstance = new XiSdkResellers.OrdersV4Api();
 let opts = {
-  'orderSearchRequest': new ResellerApi.OrderSearchRequest() // OrderSearchRequest | 
+  'orderSearchRequest': new XiSdkResellers.OrderSearchRequest() // OrderSearchRequest | 
 };
 apiInstance.postV4Ordersearch(opts, (error, data, response) => {
   if (error) {

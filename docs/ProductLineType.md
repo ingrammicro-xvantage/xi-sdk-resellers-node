@@ -1,4 +1,4 @@
-# ResellerApi.ProductLineType
+# XiSdkResellers.ProductLineType
 
 ## Properties
 

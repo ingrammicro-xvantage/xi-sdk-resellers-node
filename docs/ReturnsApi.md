@@ -1,6 +1,6 @@
-# ResellerApi.ReturnsApi
+# XiSdkResellers.ReturnsApi
 
-All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
+All URIs are relative to *https://api.ingrammicro.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,13 +21,13 @@ The Returns Details API will retrieve all the details related to the specific ca
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.ReturnsApi();
+let apiInstance = new XiSdkResellers.ReturnsApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
@@ -80,13 +80,13 @@ The Returns Search API, by default, will retrieve all the returns that are assoc
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.ReturnsApi();
+let apiInstance = new XiSdkResellers.ReturnsApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
@@ -167,13 +167,13 @@ Return create endpoint will allow customers to create a return request. In order
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.ReturnsApi();
+let apiInstance = new XiSdkResellers.ReturnsApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.

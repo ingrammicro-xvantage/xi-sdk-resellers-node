@@ -1,6 +1,6 @@
-# ResellerApi.ProductCatalogV4Api
+# XiSdkResellers.ProductCatalogV4Api
 
-All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
+All URIs are relative to *https://api.ingrammicro.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,13 +20,13 @@ Find price and availability of up to 50 SKUs in a single request. As you increas
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.ProductCatalogV4Api();
+let apiInstance = new XiSdkResellers.ProductCatalogV4Api();
 let opts = {
   'multiSKUPriceAndStockRequest': {  
    "servicerequest":{
@@ -86,13 +86,13 @@ A real time search that provides the Ingram Micro part number using the manufact
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.ProductCatalogV4Api();
+let apiInstance = new XiSdkResellers.ProductCatalogV4Api();
 let opts = {
   'productSearchRequest': {"servicerequest":{"requestpreamble":{"customernumber":"20-222222","isocountrycode":"US"},"productsearchrequest":{"searchcriteria":{"ingrampartnumber":"TSXML3"}}}} // ProductSearchRequest | 
 };

@@ -1,4 +1,4 @@
-# ResellerApi.OrderDetailResponseServiceresponseOrderdetailresponseBilltoaddress
+# XiSdkResellers.OrderDetailResponseServiceresponseOrderdetailresponseBilltoaddress
 
 ## Properties
 

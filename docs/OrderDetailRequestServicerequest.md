@@ -1,4 +1,4 @@
-# ResellerApi.OrderDetailRequestServicerequest
+# XiSdkResellers.OrderDetailRequestServicerequest
 
 ## Properties
 
