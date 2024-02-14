@@ -17,10 +17,10 @@
     "resellers api",
     "resellersapi"
   ],
-  "main": "src/index.js", 
+  "main": "dist/index.js", 
   "scripts": {
+    "build": "npm run build"
     
-    "prepare": "echo 'No build step needed'"
   },
   "dependencies": {
     "@babel/cli": "^7.0.0",
@@ -37,6 +37,7 @@
     "LICENSE",
     "Readme.md",
     "docs/",
-    "src/" 
+    "src/",
+    "dist/"
   ]
 }
