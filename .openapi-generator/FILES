@@ -246,8 +246,8 @@ docs/ProductCatalogV5Api.md
 docs/ProductDetailResponse.md
 docs/ProductDetailResponseAdditionalInformation.md
 docs/ProductDetailResponseAdditionalInformationProductWeightInner.md
-docs/ProductDetailResponseCiscoFieldsInner.md
-docs/ProductDetailResponseIndicatorsInner.md
+docs/ProductDetailResponseCiscoFields.md
+docs/ProductDetailResponseIndicators.md
 docs/ProductDetailResponseTechnicalSpecificationsInner.md
 docs/ProductLineType.md
 docs/ProductLineTypeSerialnumberdetailsInner.md
@@ -596,8 +596,8 @@ src/model/PriceAndAvailabilityResponseServiceresponseResponsepreamble.js
 src/model/ProductDetailResponse.js
 src/model/ProductDetailResponseAdditionalInformation.js
 src/model/ProductDetailResponseAdditionalInformationProductWeightInner.js
-src/model/ProductDetailResponseCiscoFieldsInner.js
-src/model/ProductDetailResponseIndicatorsInner.js
+src/model/ProductDetailResponseCiscoFields.js
+src/model/ProductDetailResponseIndicators.js
 src/model/ProductDetailResponseTechnicalSpecificationsInner.js
 src/model/ProductLineType.js
 src/model/ProductLineTypeSerialnumberdetailsInner.js
@@ -934,8 +934,8 @@ test/model/PriceAndAvailabilityResponseServiceresponseResponsepreamble.spec.js
 test/model/ProductDetailResponse.spec.js
 test/model/ProductDetailResponseAdditionalInformation.spec.js
 test/model/ProductDetailResponseAdditionalInformationProductWeightInner.spec.js
-test/model/ProductDetailResponseCiscoFieldsInner.spec.js
-test/model/ProductDetailResponseIndicatorsInner.spec.js
+test/model/ProductDetailResponseCiscoFields.spec.js
+test/model/ProductDetailResponseIndicators.spec.js
 test/model/ProductDetailResponseTechnicalSpecificationsInner.spec.js
 test/model/ProductLineType.spec.js
 test/model/ProductLineTypeSerialnumberdetailsInner.spec.js

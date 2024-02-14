@@ -1,4 +1,4 @@
-# ResellerApi.OrderModifyRequestServicerequestOrdermodifyrequestShipto
+# XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestShipto
 
 ## Properties
 

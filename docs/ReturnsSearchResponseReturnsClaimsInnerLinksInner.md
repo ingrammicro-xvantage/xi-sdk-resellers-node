@@ -1,4 +1,4 @@
-# ResellerApi.ReturnsSearchResponseReturnsClaimsInnerLinksInner
+# XiSdkResellers.ReturnsSearchResponseReturnsClaimsInnerLinksInner
 
 ## Properties
 

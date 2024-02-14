@@ -1,4 +1,4 @@
-# ResellerApi.ReturnsCreateResponse
+# XiSdkResellers.ReturnsCreateResponse
 
 ## Properties
 

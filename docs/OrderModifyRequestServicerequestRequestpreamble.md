@@ -1,4 +1,4 @@
-# ResellerApi.OrderModifyRequestServicerequestRequestpreamble
+# XiSdkResellers.OrderModifyRequestServicerequestRequestpreamble
 
 ## Properties
 

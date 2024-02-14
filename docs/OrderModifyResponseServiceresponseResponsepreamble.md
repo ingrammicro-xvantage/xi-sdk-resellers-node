@@ -1,4 +1,4 @@
-# ResellerApi.OrderModifyResponseServiceresponseResponsepreamble
+# XiSdkResellers.OrderModifyResponseServiceresponseResponsepreamble
 
 ## Properties
 

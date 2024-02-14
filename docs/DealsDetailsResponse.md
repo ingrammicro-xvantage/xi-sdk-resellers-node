@@ -1,4 +1,4 @@
-# ResellerApi.DealsDetailsResponse
+# XiSdkResellers.DealsDetailsResponse
 
 ## Properties
 
@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **dealExpiryDate** | **Date** | Expiration date of the deal/Special bid. | [optional] 
 **priceProtectionEndDate** | **Date** | The date on which the price protection will end. | [optional] 
 **currencyCode** | **String** | Country specific currency code. | [optional] 
-**endUserInfo** | [**[RenewalsDetailsResponseEndUserInfoInner]**](RenewalsDetailsResponseEndUserInfoInner.md) |  | [optional] 
+**endUserInfo** | [**RenewalsDetailsResponseEndUserInfoInner**](RenewalsDetailsResponseEndUserInfoInner.md) |  | [optional] 
 **products** | [**[DealsDetailsResponseProductsInner]**](DealsDetailsResponseProductsInner.md) |  | [optional] 
 
 

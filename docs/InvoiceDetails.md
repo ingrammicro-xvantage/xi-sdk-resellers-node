@@ -1,4 +1,4 @@
-# ResellerApi.InvoiceDetails
+# XiSdkResellers.InvoiceDetails
 
 ## Properties
 

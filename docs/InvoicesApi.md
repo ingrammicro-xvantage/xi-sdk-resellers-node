@@ -1,11 +1,11 @@
-# ResellerApi.InvoicesApi
+# XiSdkResellers.InvoicesApi
 
-All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
+All URIs are relative to *https://api.ingrammicro.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getInvoicedetailsV61**](InvoicesApi.md#getInvoicedetailsV61) | **GET** /resellers/v6.1/invoices/{invoiceNumber} | Get Invoice Details v6.1
-[**getResellersV6Invoicesearch**](InvoicesApi.md#getResellersV6Invoicesearch) | **GET** /resellers/v6/invoices/ | Search your invoice
+[**getResellersV6Invoicesearch**](InvoicesApi.md#getResellersV6Invoicesearch) | **GET** /resellers/v6/invoices | Search your invoice
 
 
 
@@ -20,13 +20,13 @@ Use your Ingram Micro invoice number to search for existing invoices or retrieve
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.InvoicesApi();
+let apiInstance = new XiSdkResellers.InvoicesApi();
 let invoiceNumber = 335238411; // String | The Ingram Micro invoice number.
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
@@ -83,13 +83,13 @@ Search your Ingram Micro invoices. This endpoint searches by multiple invoice pa
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.InvoicesApi();
+let apiInstance = new XiSdkResellers.InvoicesApi();
 let iMApplicationID = MyCompany; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.

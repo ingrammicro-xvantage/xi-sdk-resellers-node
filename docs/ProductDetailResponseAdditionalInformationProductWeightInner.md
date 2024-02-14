@@ -1,4 +1,4 @@
-# ResellerApi.ProductDetailResponseAdditionalInformationProductWeightInner
+# XiSdkResellers.ProductDetailResponseAdditionalInformationProductWeightInner
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# ResellerApi.PriceAndAvailabilityRequestAdditionalAttributesInner
+# XiSdkResellers.PriceAndAvailabilityRequestAdditionalAttributesInner
 
 ## Properties
 

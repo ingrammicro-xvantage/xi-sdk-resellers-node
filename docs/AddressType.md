@@ -1,4 +1,4 @@
-# ResellerApi.AddressType
+# XiSdkResellers.AddressType
 
 ## Properties
 

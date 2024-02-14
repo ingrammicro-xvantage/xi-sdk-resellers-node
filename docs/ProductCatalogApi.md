@@ -1,6 +1,6 @@
-# ResellerApi.ProductCatalogApi
+# XiSdkResellers.ProductCatalogApi
 
-All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
+All URIs are relative to *https://api.ingrammicro.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,13 +21,13 @@ Search all the product-related details using a unique Ingram Part Number. Curren
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.ProductCatalogApi();
+let apiInstance = new XiSdkResellers.ProductCatalogApi();
 let ingramPartNumber = 6YE881; // String | Ingram Micro unique part number for the product
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number
 let iMCountryCode = US; // String | Two-character ISO country code.
@@ -80,13 +80,13 @@ Search the Ingram Micro product catalog by providing any of the information in t
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.ProductCatalogApi();
+let apiInstance = new XiSdkResellers.ProductCatalogApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems
 let iMCountryCode = US; // String | Two-character ISO country code.
@@ -159,14 +159,14 @@ The PriceAndAvailability API, will retrieve Pricing, Availability, discounts, In
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.ProductCatalogApi();
-let includeAvailability = [null]; // [Boolean] | Pass boolean value as input, if true the response will contain warehouse availability details, if false the response will not hold warehouse availability details
+let apiInstance = new XiSdkResellers.ProductCatalogApi();
+let includeAvailability = true; // Boolean | Pass boolean value as input, if true the response will contain warehouse availability details, if false the response will not hold warehouse availability details
 let includePricing = true; // Boolean | Pass boolean value as input, if true the response will contain Pricing details of the Product, if false the response will not hold Pricing details.
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
@@ -190,7 +190,7 @@ apiInstance.postPriceandavailability(includeAvailability, includePricing, iMCust
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **includeAvailability** | [**[Boolean]**](Boolean.md)| Pass boolean value as input, if true the response will contain warehouse availability details, if false the response will not hold warehouse availability details | 
+ **includeAvailability** | **Boolean**| Pass boolean value as input, if true the response will contain warehouse availability details, if false the response will not hold warehouse availability details | 
  **includePricing** | **Boolean**| Pass boolean value as input, if true the response will contain Pricing details of the Product, if false the response will not hold Pricing details. | 
  **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number. | 
  **iMCountryCode** | **String**| Two-character ISO country code. | 

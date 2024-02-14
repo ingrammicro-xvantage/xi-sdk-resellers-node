@@ -1,6 +1,6 @@
-# ResellerApi.DealsApi
+# XiSdkResellers.DealsApi
 
-All URIs are relative to *https://api.ingrammicro.com:443/sandbox*
+All URIs are relative to *https://api.ingrammicro.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## getResellersV6Dealsdetails
 
-> DealsDetailsResponse getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, dealId, opts)
+> DealsDetailsResponse getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, iMEnvironment, dealId)
 
 Deals Details
 
@@ -20,21 +20,20 @@ The Deals Details API will retrieve all the details related to the specific deal
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.DealsApi();
+let apiInstance = new XiSdkResellers.DealsApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
+let iMApplicationId = MyCompany; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+let iMEnvironment = prodChicago; // String | Environment name.
 let dealId = 12345678; // String | Unique deal ID.
-let opts = {
-  'iMSenderID': MyCompany // String | Unique value used to identify the sender of the transaction. Example: MyCompany
-};
-apiInstance.getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, dealId, opts, (error, data, response) => {
+apiInstance.getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, iMEnvironment, dealId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -51,8 +50,9 @@ Name | Type | Description  | Notes
  **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number. | 
  **iMCountryCode** | **String**| Two-character ISO country code. | 
  **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | 
+ **iMApplicationId** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | 
+ **iMEnvironment** | **String**| Environment name. | 
  **dealId** | **String**| Unique deal ID. | 
- **iMSenderID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | [optional] 
 
 ### Return type
 
@@ -79,13 +79,13 @@ The Deals Search API, by default, will retrieve all the deals that are associate
 ### Example
 
 ```javascript
-import ResellerApi from 'reseller_api';
-let defaultClient = ResellerApi.ApiClient.instance;
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
 // Configure OAuth2 access token for authorization: application
 let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ResellerApi.DealsApi();
+let apiInstance = new XiSdkResellers.DealsApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
