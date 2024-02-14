@@ -45,7 +45,9 @@ jobs:
         
 
     - name: Build SDK
-      run: npm run build
+      run: |
+        npm ci
+        npm run build
 
     - name: Authenticate with npm
       run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
