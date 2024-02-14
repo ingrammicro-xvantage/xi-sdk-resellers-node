@@ -511,3 +511,10 @@ Authentication schemes defined for the API:
   - write: allows modifying resources
   - read: allows reading resources
 
+## Author
+-Ingram Micro Xvantage
+
+## Contact
+For any inquiries or support, please feel free to contact us at:
+
+Email: xi_support@ingrammicro.com
