@@ -46,7 +46,8 @@ jobs:
 
     - name: Build SDK
       run: |
-        npm ci
+        npm i
+        npm run build
   
 
     - name: Authenticate with npm
