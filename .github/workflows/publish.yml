@@ -20,7 +20,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 14
+        node-version: 20
 
     - name: Install dependencies
       run: npm install
@@ -33,7 +33,7 @@ jobs:
       run: |
         git config --global user.email ${{secrets.ADMIN_EMAIL}}
         git config --global user.name ${{secrets.ORG_NAME}}
-        git add package.json
+        git add .
         if git diff --exit-code; then
             echo "No changes to commit."
         else
@@ -44,11 +44,10 @@ jobs:
         fi
         
 
+    - name: Run Npm install
+      run: npm install
     - name: Build SDK
-      run: |
-        npm i
-        npm run build
-  
+      run: npm run build
 
     - name: Authenticate with npm
       run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
