@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,7 +12,9 @@
  */
 
 import ApiClient from '../ApiClient';
-import OrderModifyRequestServicerequest from './OrderModifyRequestServicerequest';
+import OrderModifyRequestAdditionalAttributesInner from './OrderModifyRequestAdditionalAttributesInner';
+import OrderModifyRequestLinesInner from './OrderModifyRequestLinesInner';
+import OrderModifyRequestShipToInfo from './OrderModifyRequestShipToInfo';
 
 /**
  * The OrderModifyRequest model module.
@@ -22,7 +24,6 @@ import OrderModifyRequestServicerequest from './OrderModifyRequestServicerequest
 class OrderModifyRequest {
     /**
      * Constructs a new <code>OrderModifyRequest</code>.
-     * Request schema for order modify endpoint
      * @alias module:model/OrderModifyRequest
      */
     constructor() { 
@@ -49,8 +50,17 @@ class OrderModifyRequest {
         if (data) {
             obj = obj || new OrderModifyRequest();
 
-            if (data.hasOwnProperty('servicerequest')) {
-                obj['servicerequest'] = OrderModifyRequestServicerequest.constructFromObject(data['servicerequest']);
+            if (data.hasOwnProperty('notes')) {
+                obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
+            }
+            if (data.hasOwnProperty('shipToInfo')) {
+                obj['shipToInfo'] = OrderModifyRequestShipToInfo.constructFromObject(data['shipToInfo']);
+            }
+            if (data.hasOwnProperty('lines')) {
+                obj['lines'] = ApiClient.convertToType(data['lines'], [OrderModifyRequestLinesInner]);
+            }
+            if (data.hasOwnProperty('additionalAttributes')) {
+                obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [OrderModifyRequestAdditionalAttributesInner]);
             }
         }
         return obj;
@@ -62,9 +72,33 @@ class OrderModifyRequest {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>OrderModifyRequest</code>.
      */
     static validateJSON(data) {
-        // validate the optional field `servicerequest`
-        if (data['servicerequest']) { // data not null
-          OrderModifyRequestServicerequest.validateJSON(data['servicerequest']);
+        // ensure the json data is a string
+        if (data['notes'] && !(typeof data['notes'] === 'string' || data['notes'] instanceof String)) {
+            throw new Error("Expected the field `notes` to be a primitive type in the JSON string but got " + data['notes']);
+        }
+        // validate the optional field `shipToInfo`
+        if (data['shipToInfo']) { // data not null
+          OrderModifyRequestShipToInfo.validateJSON(data['shipToInfo']);
+        }
+        if (data['lines']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['lines'])) {
+                throw new Error("Expected the field `lines` to be an array in the JSON data but got " + data['lines']);
+            }
+            // validate the optional field `lines` (array)
+            for (const item of data['lines']) {
+                OrderModifyRequestLinesInner.validateJSON(item);
+            };
+        }
+        if (data['additionalAttributes']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['additionalAttributes'])) {
+                throw new Error("Expected the field `additionalAttributes` to be an array in the JSON data but got " + data['additionalAttributes']);
+            }
+            // validate the optional field `additionalAttributes` (array)
+            for (const item of data['additionalAttributes']) {
+                OrderModifyRequestAdditionalAttributesInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -76,9 +110,27 @@ class OrderModifyRequest {
 
 
 /**
- * @member {module:model/OrderModifyRequestServicerequest} servicerequest
+ * Shipment-level notes.
+ * @member {String} notes
  */
-OrderModifyRequest.prototype['servicerequest'] = undefined;
+OrderModifyRequest.prototype['notes'] = undefined;
+
+/**
+ * @member {module:model/OrderModifyRequestShipToInfo} shipToInfo
+ */
+OrderModifyRequest.prototype['shipToInfo'] = undefined;
+
+/**
+ * The order line items.
+ * @member {Array.<module:model/OrderModifyRequestLinesInner>} lines
+ */
+OrderModifyRequest.prototype['lines'] = undefined;
+
+/**
+ * Header-level additional attributes.
+ * @member {Array.<module:model/OrderModifyRequestAdditionalAttributesInner>} additionalAttributes
+ */
+OrderModifyRequest.prototype['additionalAttributes'] = undefined;
 
 
 

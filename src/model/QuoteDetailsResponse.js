@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,7 +12,10 @@
  */
 
 import ApiClient from '../ApiClient';
-import QuoteDetailsResponseQuoteDetailResponse from './QuoteDetailsResponseQuoteDetailResponse';
+import QuoteDetailsResponseAdditionalAttributesInner from './QuoteDetailsResponseAdditionalAttributesInner';
+import QuoteDetailsResponseEndUserInfo from './QuoteDetailsResponseEndUserInfo';
+import QuoteDetailsResponseProductsInner from './QuoteDetailsResponseProductsInner';
+import QuoteDetailsResponseResellerInfo from './QuoteDetailsResponseResellerInfo';
 
 /**
  * The QuoteDetailsResponse model module.
@@ -48,8 +51,83 @@ class QuoteDetailsResponse {
         if (data) {
             obj = obj || new QuoteDetailsResponse();
 
-            if (data.hasOwnProperty('quoteDetailResponse')) {
-                obj['quoteDetailResponse'] = QuoteDetailsResponseQuoteDetailResponse.constructFromObject(data['quoteDetailResponse']);
+            if (data.hasOwnProperty('quoteName')) {
+                obj['quoteName'] = ApiClient.convertToType(data['quoteName'], 'String');
+            }
+            if (data.hasOwnProperty('quoteNumber')) {
+                obj['quoteNumber'] = ApiClient.convertToType(data['quoteNumber'], 'String');
+            }
+            if (data.hasOwnProperty('revision')) {
+                obj['revision'] = ApiClient.convertToType(data['revision'], 'String');
+            }
+            if (data.hasOwnProperty('ingramQuoteDate')) {
+                obj['ingramQuoteDate'] = ApiClient.convertToType(data['ingramQuoteDate'], 'String');
+            }
+            if (data.hasOwnProperty('lastModifiedDate')) {
+                obj['lastModifiedDate'] = ApiClient.convertToType(data['lastModifiedDate'], 'String');
+            }
+            if (data.hasOwnProperty('ingramQuoteExpiryDate')) {
+                obj['ingramQuoteExpiryDate'] = ApiClient.convertToType(data['ingramQuoteExpiryDate'], 'String');
+            }
+            if (data.hasOwnProperty('currencyCode')) {
+                obj['currencyCode'] = ApiClient.convertToType(data['currencyCode'], 'String');
+            }
+            if (data.hasOwnProperty('specialBidId')) {
+                obj['specialBidId'] = ApiClient.convertToType(data['specialBidId'], 'String');
+            }
+            if (data.hasOwnProperty('specialBidEffectiveDate')) {
+                obj['specialBidEffectiveDate'] = ApiClient.convertToType(data['specialBidEffectiveDate'], 'String');
+            }
+            if (data.hasOwnProperty('specialBidExpirationDate')) {
+                obj['specialBidExpirationDate'] = ApiClient.convertToType(data['specialBidExpirationDate'], 'String');
+            }
+            if (data.hasOwnProperty('status')) {
+                obj['status'] = ApiClient.convertToType(data['status'], 'String');
+            }
+            if (data.hasOwnProperty('customerNeed')) {
+                obj['customerNeed'] = ApiClient.convertToType(data['customerNeed'], 'String');
+            }
+            if (data.hasOwnProperty('proposedSolution')) {
+                obj['proposedSolution'] = ApiClient.convertToType(data['proposedSolution'], 'String');
+            }
+            if (data.hasOwnProperty('introPreamble')) {
+                obj['introPreamble'] = ApiClient.convertToType(data['introPreamble'], 'String');
+            }
+            if (data.hasOwnProperty('purchaseInstructions')) {
+                obj['purchaseInstructions'] = ApiClient.convertToType(data['purchaseInstructions'], 'String');
+            }
+            if (data.hasOwnProperty('legalTerms')) {
+                obj['legalTerms'] = ApiClient.convertToType(data['legalTerms'], 'String');
+            }
+            if (data.hasOwnProperty('leaseInfo')) {
+                obj['leaseInfo'] = ApiClient.convertToType(data['leaseInfo'], 'String');
+            }
+            if (data.hasOwnProperty('leasingInstructions')) {
+                obj['leasingInstructions'] = ApiClient.convertToType(data['leasingInstructions'], 'String');
+            }
+            if (data.hasOwnProperty('resellerInfo')) {
+                obj['resellerInfo'] = QuoteDetailsResponseResellerInfo.constructFromObject(data['resellerInfo']);
+            }
+            if (data.hasOwnProperty('endUserInfo')) {
+                obj['endUserInfo'] = QuoteDetailsResponseEndUserInfo.constructFromObject(data['endUserInfo']);
+            }
+            if (data.hasOwnProperty('products')) {
+                obj['products'] = ApiClient.convertToType(data['products'], [QuoteDetailsResponseProductsInner]);
+            }
+            if (data.hasOwnProperty('productsCount')) {
+                obj['productsCount'] = ApiClient.convertToType(data['productsCount'], 'Number');
+            }
+            if (data.hasOwnProperty('extendedMsrpTotal')) {
+                obj['extendedMsrpTotal'] = ApiClient.convertToType(data['extendedMsrpTotal'], 'Number');
+            }
+            if (data.hasOwnProperty('quantityTotal')) {
+                obj['quantityTotal'] = ApiClient.convertToType(data['quantityTotal'], 'Number');
+            }
+            if (data.hasOwnProperty('extendedQuotePriceTotal')) {
+                obj['extendedQuotePriceTotal'] = ApiClient.convertToType(data['extendedQuotePriceTotal'], 'Number');
+            }
+            if (data.hasOwnProperty('additionalAttributes')) {
+                obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [QuoteDetailsResponseAdditionalAttributesInner]);
             }
         }
         return obj;
@@ -61,9 +139,105 @@ class QuoteDetailsResponse {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>QuoteDetailsResponse</code>.
      */
     static validateJSON(data) {
-        // validate the optional field `quoteDetailResponse`
-        if (data['quoteDetailResponse']) { // data not null
-          QuoteDetailsResponseQuoteDetailResponse.validateJSON(data['quoteDetailResponse']);
+        // ensure the json data is a string
+        if (data['quoteName'] && !(typeof data['quoteName'] === 'string' || data['quoteName'] instanceof String)) {
+            throw new Error("Expected the field `quoteName` to be a primitive type in the JSON string but got " + data['quoteName']);
+        }
+        // ensure the json data is a string
+        if (data['quoteNumber'] && !(typeof data['quoteNumber'] === 'string' || data['quoteNumber'] instanceof String)) {
+            throw new Error("Expected the field `quoteNumber` to be a primitive type in the JSON string but got " + data['quoteNumber']);
+        }
+        // ensure the json data is a string
+        if (data['revision'] && !(typeof data['revision'] === 'string' || data['revision'] instanceof String)) {
+            throw new Error("Expected the field `revision` to be a primitive type in the JSON string but got " + data['revision']);
+        }
+        // ensure the json data is a string
+        if (data['ingramQuoteDate'] && !(typeof data['ingramQuoteDate'] === 'string' || data['ingramQuoteDate'] instanceof String)) {
+            throw new Error("Expected the field `ingramQuoteDate` to be a primitive type in the JSON string but got " + data['ingramQuoteDate']);
+        }
+        // ensure the json data is a string
+        if (data['lastModifiedDate'] && !(typeof data['lastModifiedDate'] === 'string' || data['lastModifiedDate'] instanceof String)) {
+            throw new Error("Expected the field `lastModifiedDate` to be a primitive type in the JSON string but got " + data['lastModifiedDate']);
+        }
+        // ensure the json data is a string
+        if (data['ingramQuoteExpiryDate'] && !(typeof data['ingramQuoteExpiryDate'] === 'string' || data['ingramQuoteExpiryDate'] instanceof String)) {
+            throw new Error("Expected the field `ingramQuoteExpiryDate` to be a primitive type in the JSON string but got " + data['ingramQuoteExpiryDate']);
+        }
+        // ensure the json data is a string
+        if (data['currencyCode'] && !(typeof data['currencyCode'] === 'string' || data['currencyCode'] instanceof String)) {
+            throw new Error("Expected the field `currencyCode` to be a primitive type in the JSON string but got " + data['currencyCode']);
+        }
+        // ensure the json data is a string
+        if (data['specialBidId'] && !(typeof data['specialBidId'] === 'string' || data['specialBidId'] instanceof String)) {
+            throw new Error("Expected the field `specialBidId` to be a primitive type in the JSON string but got " + data['specialBidId']);
+        }
+        // ensure the json data is a string
+        if (data['specialBidEffectiveDate'] && !(typeof data['specialBidEffectiveDate'] === 'string' || data['specialBidEffectiveDate'] instanceof String)) {
+            throw new Error("Expected the field `specialBidEffectiveDate` to be a primitive type in the JSON string but got " + data['specialBidEffectiveDate']);
+        }
+        // ensure the json data is a string
+        if (data['specialBidExpirationDate'] && !(typeof data['specialBidExpirationDate'] === 'string' || data['specialBidExpirationDate'] instanceof String)) {
+            throw new Error("Expected the field `specialBidExpirationDate` to be a primitive type in the JSON string but got " + data['specialBidExpirationDate']);
+        }
+        // ensure the json data is a string
+        if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
+            throw new Error("Expected the field `status` to be a primitive type in the JSON string but got " + data['status']);
+        }
+        // ensure the json data is a string
+        if (data['customerNeed'] && !(typeof data['customerNeed'] === 'string' || data['customerNeed'] instanceof String)) {
+            throw new Error("Expected the field `customerNeed` to be a primitive type in the JSON string but got " + data['customerNeed']);
+        }
+        // ensure the json data is a string
+        if (data['proposedSolution'] && !(typeof data['proposedSolution'] === 'string' || data['proposedSolution'] instanceof String)) {
+            throw new Error("Expected the field `proposedSolution` to be a primitive type in the JSON string but got " + data['proposedSolution']);
+        }
+        // ensure the json data is a string
+        if (data['introPreamble'] && !(typeof data['introPreamble'] === 'string' || data['introPreamble'] instanceof String)) {
+            throw new Error("Expected the field `introPreamble` to be a primitive type in the JSON string but got " + data['introPreamble']);
+        }
+        // ensure the json data is a string
+        if (data['purchaseInstructions'] && !(typeof data['purchaseInstructions'] === 'string' || data['purchaseInstructions'] instanceof String)) {
+            throw new Error("Expected the field `purchaseInstructions` to be a primitive type in the JSON string but got " + data['purchaseInstructions']);
+        }
+        // ensure the json data is a string
+        if (data['legalTerms'] && !(typeof data['legalTerms'] === 'string' || data['legalTerms'] instanceof String)) {
+            throw new Error("Expected the field `legalTerms` to be a primitive type in the JSON string but got " + data['legalTerms']);
+        }
+        // ensure the json data is a string
+        if (data['leaseInfo'] && !(typeof data['leaseInfo'] === 'string' || data['leaseInfo'] instanceof String)) {
+            throw new Error("Expected the field `leaseInfo` to be a primitive type in the JSON string but got " + data['leaseInfo']);
+        }
+        // ensure the json data is a string
+        if (data['leasingInstructions'] && !(typeof data['leasingInstructions'] === 'string' || data['leasingInstructions'] instanceof String)) {
+            throw new Error("Expected the field `leasingInstructions` to be a primitive type in the JSON string but got " + data['leasingInstructions']);
+        }
+        // validate the optional field `resellerInfo`
+        if (data['resellerInfo']) { // data not null
+          QuoteDetailsResponseResellerInfo.validateJSON(data['resellerInfo']);
+        }
+        // validate the optional field `endUserInfo`
+        if (data['endUserInfo']) { // data not null
+          QuoteDetailsResponseEndUserInfo.validateJSON(data['endUserInfo']);
+        }
+        if (data['products']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['products'])) {
+                throw new Error("Expected the field `products` to be an array in the JSON data but got " + data['products']);
+            }
+            // validate the optional field `products` (array)
+            for (const item of data['products']) {
+                QuoteDetailsResponseProductsInner.validateJSON(item);
+            };
+        }
+        if (data['additionalAttributes']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['additionalAttributes'])) {
+                throw new Error("Expected the field `additionalAttributes` to be an array in the JSON data but got " + data['additionalAttributes']);
+            }
+            // validate the optional field `additionalAttributes` (array)
+            for (const item of data['additionalAttributes']) {
+                QuoteDetailsResponseAdditionalAttributesInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -75,9 +249,156 @@ class QuoteDetailsResponse {
 
 
 /**
- * @member {module:model/QuoteDetailsResponseQuoteDetailResponse} quoteDetailResponse
+ * Quote Name given to quote by sales team or system generated.  Generally used as a reference to identify the quote.
+ * @member {String} quoteName
  */
-QuoteDetailsResponse.prototype['quoteDetailResponse'] = undefined;
+QuoteDetailsResponse.prototype['quoteName'] = undefined;
+
+/**
+ * Unique identifier generated by Ingram Micro's CRM specific to each quote.  When applying a filter to the quoteNumber and including a partial quote number in the filter, all quotes containing any information included in the filter can be retrieved as a subset of all available customer quotes.
+ * @member {String} quoteNumber
+ */
+QuoteDetailsResponse.prototype['quoteNumber'] = undefined;
+
+/**
+ * When a quote has been revised and updated, the quote number remains the same throughout the lifecycle of the quote, however, a Revision number is updated for each revision of the quote.  The revision numbers is associated with the Unique Quote Number.
+ * @member {String} revision
+ */
+QuoteDetailsResponse.prototype['revision'] = undefined;
+
+/**
+ * Date the Quote was initially Created.
+ * @member {String} ingramQuoteDate
+ */
+QuoteDetailsResponse.prototype['ingramQuoteDate'] = undefined;
+
+/**
+ * Date the Quote was last updated or modified.
+ * @member {String} lastModifiedDate
+ */
+QuoteDetailsResponse.prototype['lastModifiedDate'] = undefined;
+
+/**
+ * Quote expiration date.
+ * @member {String} ingramQuoteExpiryDate
+ */
+QuoteDetailsResponse.prototype['ingramQuoteExpiryDate'] = undefined;
+
+/**
+ * Three letter currency code.
+ * @member {String} currencyCode
+ */
+QuoteDetailsResponse.prototype['currencyCode'] = undefined;
+
+/**
+ * Price discount identifyer to specify  a pricing discount that has been applied to the quote. If present - the priceDeviationStartDate and priceDeviationExpiryDate must be presented. Cisco refers to this as a Dart
+ * @member {String} specialBidId
+ */
+QuoteDetailsResponse.prototype['specialBidId'] = undefined;
+
+/**
+ * If price discount has been applied to the quote - the starting date the discount begins.
+ * @member {String} specialBidEffectiveDate
+ */
+QuoteDetailsResponse.prototype['specialBidEffectiveDate'] = undefined;
+
+/**
+ * If a price discount has been applied to the quote - The date the discount expires and will no longer be applicable.
+ * @member {String} specialBidExpirationDate
+ */
+QuoteDetailsResponse.prototype['specialBidExpirationDate'] = undefined;
+
+/**
+ * This refers to the primary status of the quote.  API responses will return
+ * @member {String} status
+ */
+QuoteDetailsResponse.prototype['status'] = undefined;
+
+/**
+ * Details related to the customer's request for the quote entered by the sales representative or system generated.
+ * @member {String} customerNeed
+ */
+QuoteDetailsResponse.prototype['customerNeed'] = undefined;
+
+/**
+ * Ingram Micro proposed solution and summary of quote.
+ * @member {String} proposedSolution
+ */
+QuoteDetailsResponse.prototype['proposedSolution'] = undefined;
+
+/**
+ * Introductory paragraph included in each quote.  Legally required - must be included when presenting the quote details.
+ * @member {String} introPreamble
+ */
+QuoteDetailsResponse.prototype['introPreamble'] = undefined;
+
+/**
+ * Purchase instructions.  Legally required - must be included when presenting the quote details.
+ * @member {String} purchaseInstructions
+ */
+QuoteDetailsResponse.prototype['purchaseInstructions'] = undefined;
+
+/**
+ * Legal terms -  Legally required - must be included when presenting the quote details.
+ * @member {String} legalTerms
+ */
+QuoteDetailsResponse.prototype['legalTerms'] = undefined;
+
+/**
+ * Lease information.
+ * @member {String} leaseInfo
+ */
+QuoteDetailsResponse.prototype['leaseInfo'] = undefined;
+
+/**
+ * Leasing information
+ * @member {String} leasingInstructions
+ */
+QuoteDetailsResponse.prototype['leasingInstructions'] = undefined;
+
+/**
+ * @member {module:model/QuoteDetailsResponseResellerInfo} resellerInfo
+ */
+QuoteDetailsResponse.prototype['resellerInfo'] = undefined;
+
+/**
+ * @member {module:model/QuoteDetailsResponseEndUserInfo} endUserInfo
+ */
+QuoteDetailsResponse.prototype['endUserInfo'] = undefined;
+
+/**
+ * @member {Array.<module:model/QuoteDetailsResponseProductsInner>} products
+ */
+QuoteDetailsResponse.prototype['products'] = undefined;
+
+/**
+ * Total number of products included in the quote
+ * @member {Number} productsCount
+ */
+QuoteDetailsResponse.prototype['productsCount'] = undefined;
+
+/**
+ * Total extended MSRP for all products included in the quote
+ * @member {Number} extendedMsrpTotal
+ */
+QuoteDetailsResponse.prototype['extendedMsrpTotal'] = undefined;
+
+/**
+ * Total quantity of all items in the quote.
+ * @member {Number} quantityTotal
+ */
+QuoteDetailsResponse.prototype['quantityTotal'] = undefined;
+
+/**
+ * Total amount of quoted price for all products in the quote including both solution products and suggested products.
+ * @member {Number} extendedQuotePriceTotal
+ */
+QuoteDetailsResponse.prototype['extendedQuotePriceTotal'] = undefined;
+
+/**
+ * @member {Array.<module:model/QuoteDetailsResponseAdditionalAttributesInner>} additionalAttributes
+ */
+QuoteDetailsResponse.prototype['additionalAttributes'] = undefined;
 
 
 

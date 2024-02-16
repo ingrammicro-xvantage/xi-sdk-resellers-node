@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,6 +12,10 @@
  */
 
 import ApiClient from '../ApiClient';
+import AddressType from './AddressType';
+import InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner from './InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner';
+import InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner from './InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner';
+import ProductLineType from './ProductLineType';
 
 /**
  * The InvoiceDetailResponseServiceresponseInvoicedetailresponse model module.
@@ -87,7 +91,7 @@ class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
                 obj['paymentterms'] = ApiClient.convertToType(data['paymentterms'], 'String');
             }
             if (data.hasOwnProperty('orderdate')) {
-                obj['orderdate'] = ApiClient.convertToType(data['orderdate'], 'String');
+                obj['orderdate'] = ApiClient.convertToType(data['orderdate'], 'Date');
             }
             if (data.hasOwnProperty('carrier')) {
                 obj['carrier'] = ApiClient.convertToType(data['carrier'], 'String');
@@ -109,6 +113,69 @@ class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
             }
             if (data.hasOwnProperty('creditmemoreasoncode')) {
                 obj['creditmemoreasoncode'] = ApiClient.convertToType(data['creditmemoreasoncode'], 'String');
+            }
+            if (data.hasOwnProperty('fulfillmentflag')) {
+                obj['fulfillmentflag'] = ApiClient.convertToType(data['fulfillmentflag'], 'String');
+            }
+            if (data.hasOwnProperty('holdreason')) {
+                obj['holdreason'] = ApiClient.convertToType(data['holdreason'], 'String');
+            }
+            if (data.hasOwnProperty('shipcomplete')) {
+                obj['shipcomplete'] = ApiClient.convertToType(data['shipcomplete'], 'String');
+            }
+            if (data.hasOwnProperty('shipdate')) {
+                obj['shipdate'] = ApiClient.convertToType(data['shipdate'], 'Date');
+            }
+            if (data.hasOwnProperty('companycurrency')) {
+                obj['companycurrency'] = ApiClient.convertToType(data['companycurrency'], 'String');
+            }
+            if (data.hasOwnProperty('currencycode')) {
+                obj['currencycode'] = ApiClient.convertToType(data['currencycode'], 'String');
+            }
+            if (data.hasOwnProperty('currencyrate')) {
+                obj['currencyrate'] = ApiClient.convertToType(data['currencyrate'], 'String');
+            }
+            if (data.hasOwnProperty('globalorderid')) {
+                obj['globalorderid'] = ApiClient.convertToType(data['globalorderid'], 'String');
+            }
+            if (data.hasOwnProperty('originalshipcode')) {
+                obj['originalshipcode'] = ApiClient.convertToType(data['originalshipcode'], 'String');
+            }
+            if (data.hasOwnProperty('ordertype')) {
+                obj['ordertype'] = ApiClient.convertToType(data['ordertype'], 'String');
+            }
+            if (data.hasOwnProperty('orderstatus')) {
+                obj['orderstatus'] = ApiClient.convertToType(data['orderstatus'], 'String');
+            }
+            if (data.hasOwnProperty('totalotherfees')) {
+                obj['totalotherfees'] = ApiClient.convertToType(data['totalotherfees'], 'Number');
+            }
+            if (data.hasOwnProperty('totalsales')) {
+                obj['totalsales'] = ApiClient.convertToType(data['totalsales'], 'String');
+            }
+            if (data.hasOwnProperty('weight')) {
+                obj['weight'] = ApiClient.convertToType(data['weight'], 'String');
+            }
+            if (data.hasOwnProperty('shippableswitch')) {
+                obj['shippableswitch'] = ApiClient.convertToType(data['shippableswitch'], 'String');
+            }
+            if (data.hasOwnProperty('soldto')) {
+                obj['soldto'] = AddressType.constructFromObject(data['soldto']);
+            }
+            if (data.hasOwnProperty('billto')) {
+                obj['billto'] = AddressType.constructFromObject(data['billto']);
+            }
+            if (data.hasOwnProperty('shoptoaddress')) {
+                obj['shoptoaddress'] = AddressType.constructFromObject(data['shoptoaddress']);
+            }
+            if (data.hasOwnProperty('lines')) {
+                obj['lines'] = ApiClient.convertToType(data['lines'], [ProductLineType]);
+            }
+            if (data.hasOwnProperty('extendedspecs')) {
+                obj['extendedspecs'] = ApiClient.convertToType(data['extendedspecs'], [InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner]);
+            }
+            if (data.hasOwnProperty('miscfeeline')) {
+                obj['miscfeeline'] = ApiClient.convertToType(data['miscfeeline'], [InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner]);
             }
         }
         return obj;
@@ -137,6 +204,22 @@ class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
             throw new Error("Expected the field `customerordernumber` to be a primitive type in the JSON string but got " + data['customerordernumber']);
         }
         // ensure the json data is a string
+        if (data['customerfreightamount'] && !(typeof data['customerfreightamount'] === 'string' || data['customerfreightamount'] instanceof String)) {
+            throw new Error("Expected the field `customerfreightamount` to be a primitive type in the JSON string but got " + data['customerfreightamount']);
+        }
+        // ensure the json data is a string
+        if (data['customerforeignfrightamt'] && !(typeof data['customerforeignfrightamt'] === 'string' || data['customerforeignfrightamt'] instanceof String)) {
+            throw new Error("Expected the field `customerforeignfrightamt` to be a primitive type in the JSON string but got " + data['customerforeignfrightamt']);
+        }
+        // ensure the json data is a string
+        if (data['totaltaxamount'] && !(typeof data['totaltaxamount'] === 'string' || data['totaltaxamount'] instanceof String)) {
+            throw new Error("Expected the field `totaltaxamount` to be a primitive type in the JSON string but got " + data['totaltaxamount']);
+        }
+        // ensure the json data is a string
+        if (data['totalamount'] && !(typeof data['totalamount'] === 'string' || data['totalamount'] instanceof String)) {
+            throw new Error("Expected the field `totalamount` to be a primitive type in the JSON string but got " + data['totalamount']);
+        }
+        // ensure the json data is a string
         if (data['shiptosuffix'] && !(typeof data['shiptosuffix'] === 'string' || data['shiptosuffix'] instanceof String)) {
             throw new Error("Expected the field `shiptosuffix` to be a primitive type in the JSON string but got " + data['shiptosuffix']);
         }
@@ -145,12 +228,12 @@ class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
             throw new Error("Expected the field `billtosuffix` to be a primitive type in the JSON string but got " + data['billtosuffix']);
         }
         // ensure the json data is a string
-        if (data['paymentterms'] && !(typeof data['paymentterms'] === 'string' || data['paymentterms'] instanceof String)) {
-            throw new Error("Expected the field `paymentterms` to be a primitive type in the JSON string but got " + data['paymentterms']);
+        if (data['freightamount'] && !(typeof data['freightamount'] === 'string' || data['freightamount'] instanceof String)) {
+            throw new Error("Expected the field `freightamount` to be a primitive type in the JSON string but got " + data['freightamount']);
         }
         // ensure the json data is a string
-        if (data['orderdate'] && !(typeof data['orderdate'] === 'string' || data['orderdate'] instanceof String)) {
-            throw new Error("Expected the field `orderdate` to be a primitive type in the JSON string but got " + data['orderdate']);
+        if (data['paymentterms'] && !(typeof data['paymentterms'] === 'string' || data['paymentterms'] instanceof String)) {
+            throw new Error("Expected the field `paymentterms` to be a primitive type in the JSON string but got " + data['paymentterms']);
         }
         // ensure the json data is a string
         if (data['carrier'] && !(typeof data['carrier'] === 'string' || data['carrier'] instanceof String)) {
@@ -175,6 +258,100 @@ class InvoiceDetailResponseServiceresponseInvoicedetailresponse {
         // ensure the json data is a string
         if (data['creditmemoreasoncode'] && !(typeof data['creditmemoreasoncode'] === 'string' || data['creditmemoreasoncode'] instanceof String)) {
             throw new Error("Expected the field `creditmemoreasoncode` to be a primitive type in the JSON string but got " + data['creditmemoreasoncode']);
+        }
+        // ensure the json data is a string
+        if (data['fulfillmentflag'] && !(typeof data['fulfillmentflag'] === 'string' || data['fulfillmentflag'] instanceof String)) {
+            throw new Error("Expected the field `fulfillmentflag` to be a primitive type in the JSON string but got " + data['fulfillmentflag']);
+        }
+        // ensure the json data is a string
+        if (data['holdreason'] && !(typeof data['holdreason'] === 'string' || data['holdreason'] instanceof String)) {
+            throw new Error("Expected the field `holdreason` to be a primitive type in the JSON string but got " + data['holdreason']);
+        }
+        // ensure the json data is a string
+        if (data['shipcomplete'] && !(typeof data['shipcomplete'] === 'string' || data['shipcomplete'] instanceof String)) {
+            throw new Error("Expected the field `shipcomplete` to be a primitive type in the JSON string but got " + data['shipcomplete']);
+        }
+        // ensure the json data is a string
+        if (data['companycurrency'] && !(typeof data['companycurrency'] === 'string' || data['companycurrency'] instanceof String)) {
+            throw new Error("Expected the field `companycurrency` to be a primitive type in the JSON string but got " + data['companycurrency']);
+        }
+        // ensure the json data is a string
+        if (data['currencycode'] && !(typeof data['currencycode'] === 'string' || data['currencycode'] instanceof String)) {
+            throw new Error("Expected the field `currencycode` to be a primitive type in the JSON string but got " + data['currencycode']);
+        }
+        // ensure the json data is a string
+        if (data['currencyrate'] && !(typeof data['currencyrate'] === 'string' || data['currencyrate'] instanceof String)) {
+            throw new Error("Expected the field `currencyrate` to be a primitive type in the JSON string but got " + data['currencyrate']);
+        }
+        // ensure the json data is a string
+        if (data['globalorderid'] && !(typeof data['globalorderid'] === 'string' || data['globalorderid'] instanceof String)) {
+            throw new Error("Expected the field `globalorderid` to be a primitive type in the JSON string but got " + data['globalorderid']);
+        }
+        // ensure the json data is a string
+        if (data['originalshipcode'] && !(typeof data['originalshipcode'] === 'string' || data['originalshipcode'] instanceof String)) {
+            throw new Error("Expected the field `originalshipcode` to be a primitive type in the JSON string but got " + data['originalshipcode']);
+        }
+        // ensure the json data is a string
+        if (data['ordertype'] && !(typeof data['ordertype'] === 'string' || data['ordertype'] instanceof String)) {
+            throw new Error("Expected the field `ordertype` to be a primitive type in the JSON string but got " + data['ordertype']);
+        }
+        // ensure the json data is a string
+        if (data['orderstatus'] && !(typeof data['orderstatus'] === 'string' || data['orderstatus'] instanceof String)) {
+            throw new Error("Expected the field `orderstatus` to be a primitive type in the JSON string but got " + data['orderstatus']);
+        }
+        // ensure the json data is a string
+        if (data['totalsales'] && !(typeof data['totalsales'] === 'string' || data['totalsales'] instanceof String)) {
+            throw new Error("Expected the field `totalsales` to be a primitive type in the JSON string but got " + data['totalsales']);
+        }
+        // ensure the json data is a string
+        if (data['weight'] && !(typeof data['weight'] === 'string' || data['weight'] instanceof String)) {
+            throw new Error("Expected the field `weight` to be a primitive type in the JSON string but got " + data['weight']);
+        }
+        // ensure the json data is a string
+        if (data['shippableswitch'] && !(typeof data['shippableswitch'] === 'string' || data['shippableswitch'] instanceof String)) {
+            throw new Error("Expected the field `shippableswitch` to be a primitive type in the JSON string but got " + data['shippableswitch']);
+        }
+        // validate the optional field `soldto`
+        if (data['soldto']) { // data not null
+          AddressType.validateJSON(data['soldto']);
+        }
+        // validate the optional field `billto`
+        if (data['billto']) { // data not null
+          AddressType.validateJSON(data['billto']);
+        }
+        // validate the optional field `shoptoaddress`
+        if (data['shoptoaddress']) { // data not null
+          AddressType.validateJSON(data['shoptoaddress']);
+        }
+        if (data['lines']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['lines'])) {
+                throw new Error("Expected the field `lines` to be an array in the JSON data but got " + data['lines']);
+            }
+            // validate the optional field `lines` (array)
+            for (const item of data['lines']) {
+                ProductLineType.validateJSON(item);
+            };
+        }
+        if (data['extendedspecs']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['extendedspecs'])) {
+                throw new Error("Expected the field `extendedspecs` to be an array in the JSON data but got " + data['extendedspecs']);
+            }
+            // validate the optional field `extendedspecs` (array)
+            for (const item of data['extendedspecs']) {
+                InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner.validateJSON(item);
+            };
+        }
+        if (data['miscfeeline']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['miscfeeline'])) {
+                throw new Error("Expected the field `miscfeeline` to be an array in the JSON data but got " + data['miscfeeline']);
+            }
+            // validate the optional field `miscfeeline` (array)
+            for (const item of data['miscfeeline']) {
+                InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -241,6 +418,7 @@ InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['shiptosuffi
 InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['billtosuffix'] = undefined;
 
 /**
+ * May not be available in all countries
  * @member {Number} freightamount
  */
 InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['freightamount'] = undefined;
@@ -251,7 +429,7 @@ InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['freightamou
 InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['paymentterms'] = undefined;
 
 /**
- * @member {String} orderdate
+ * @member {Date} orderdate
  */
 InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['orderdate'] = undefined;
 
@@ -289,6 +467,111 @@ InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['freightforw
  * @member {String} creditmemoreasoncode
  */
 InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['creditmemoreasoncode'] = undefined;
+
+/**
+ * @member {String} fulfillmentflag
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['fulfillmentflag'] = undefined;
+
+/**
+ * @member {String} holdreason
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['holdreason'] = undefined;
+
+/**
+ * @member {String} shipcomplete
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['shipcomplete'] = undefined;
+
+/**
+ * @member {Date} shipdate
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['shipdate'] = undefined;
+
+/**
+ * @member {String} companycurrency
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['companycurrency'] = undefined;
+
+/**
+ * @member {String} currencycode
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['currencycode'] = undefined;
+
+/**
+ * @member {String} currencyrate
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['currencyrate'] = undefined;
+
+/**
+ * @member {String} globalorderid
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['globalorderid'] = undefined;
+
+/**
+ * @member {String} originalshipcode
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['originalshipcode'] = undefined;
+
+/**
+ * @member {String} ordertype
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['ordertype'] = undefined;
+
+/**
+ * @member {String} orderstatus
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['orderstatus'] = undefined;
+
+/**
+ * @member {Number} totalotherfees
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['totalotherfees'] = undefined;
+
+/**
+ * @member {String} totalsales
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['totalsales'] = undefined;
+
+/**
+ * @member {String} weight
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['weight'] = undefined;
+
+/**
+ * @member {String} shippableswitch
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['shippableswitch'] = undefined;
+
+/**
+ * @member {module:model/AddressType} soldto
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['soldto'] = undefined;
+
+/**
+ * @member {module:model/AddressType} billto
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['billto'] = undefined;
+
+/**
+ * @member {module:model/AddressType} shoptoaddress
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['shoptoaddress'] = undefined;
+
+/**
+ * @member {Array.<module:model/ProductLineType>} lines
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['lines'] = undefined;
+
+/**
+ * @member {Array.<module:model/InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner>} extendedspecs
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['extendedspecs'] = undefined;
+
+/**
+ * @member {Array.<module:model/InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner>} miscfeeline
+ */
+InvoiceDetailResponseServiceresponseInvoicedetailresponse.prototype['miscfeeline'] = undefined;
 
 
 

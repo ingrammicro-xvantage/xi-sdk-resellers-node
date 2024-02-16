@@ -56,11 +56,11 @@ npm run build
 
 #### git
 
-If the library is hosted at a git repository, e.g.https://github.com/ingrammicro-xvantage/xi-sdk-resellers-node
+If the library is hosted at a git repository, e.g.https://github.com/GIT_USER_ID/GIT_REPO_ID
 then install it via:
 
 ```shell
-    npm install ingrammicro-xvantage/xi-sdk-resellers-node
+    npm install GIT_USER_ID/GIT_REPO_ID --save
 ```
 
 ### For browser
@@ -184,10 +184,6 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.GetResellerV6ValidateQuote400Response](docs/GetResellerV6ValidateQuote400Response.md)
  - [XiSdkResellers.GetResellerV6ValidateQuote400ResponseFieldsInner](docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md)
  - [XiSdkResellers.GetResellerV6ValidateQuote500Response](docs/GetResellerV6ValidateQuote500Response.md)
- - [XiSdkResellers.InvoiceDetailRequest](docs/InvoiceDetailRequest.md)
- - [XiSdkResellers.InvoiceDetailRequestServicerequest](docs/InvoiceDetailRequestServicerequest.md)
- - [XiSdkResellers.InvoiceDetailRequestServicerequestInvoicedetailrequest](docs/InvoiceDetailRequestServicerequestInvoicedetailrequest.md)
- - [XiSdkResellers.InvoiceDetailRequestServicerequestRequestpreamble](docs/InvoiceDetailRequestServicerequestRequestpreamble.md)
  - [XiSdkResellers.InvoiceDetailResponse](docs/InvoiceDetailResponse.md)
  - [XiSdkResellers.InvoiceDetailResponseServiceresponse](docs/InvoiceDetailResponseServiceresponse.md)
  - [XiSdkResellers.InvoiceDetailResponseServiceresponseInvoicedetailresponse](docs/InvoiceDetailResponseServiceresponseInvoicedetailresponse.md)
@@ -208,17 +204,6 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals](docs/InvoiceDetailsv61ResponseSummaryTotals.md)
  - [XiSdkResellers.InvoiceSearchResponse](docs/InvoiceSearchResponse.md)
  - [XiSdkResellers.InvoiceSearchResponseInvoicesInner](docs/InvoiceSearchResponseInvoicesInner.md)
- - [XiSdkResellers.MultiSKUPriceAndStockRequest](docs/MultiSKUPriceAndStockRequest.md)
- - [XiSdkResellers.MultiSKUPriceAndStockRequestServicerequest](docs/MultiSKUPriceAndStockRequestServicerequest.md)
- - [XiSdkResellers.MultiSKUPriceAndStockRequestServicerequestPriceandstockrequest](docs/MultiSKUPriceAndStockRequestServicerequestPriceandstockrequest.md)
- - [XiSdkResellers.MultiSKUPriceAndStockRequestServicerequestPriceandstockrequestItem](docs/MultiSKUPriceAndStockRequestServicerequestPriceandstockrequestItem.md)
- - [XiSdkResellers.MultiSKUPriceAndStockRequestServicerequestRequestpreamble](docs/MultiSKUPriceAndStockRequestServicerequestRequestpreamble.md)
- - [XiSdkResellers.MultiSKUPriceAndStockResponse](docs/MultiSKUPriceAndStockResponse.md)
- - [XiSdkResellers.MultiSKUPriceAndStockResponseServiceresponse](docs/MultiSKUPriceAndStockResponseServiceresponse.md)
- - [XiSdkResellers.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse](docs/MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse.md)
- - [XiSdkResellers.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInner](docs/MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInner.md)
- - [XiSdkResellers.MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInnerWarehousedetailsInner](docs/MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInnerWarehousedetailsInner.md)
- - [XiSdkResellers.MultiSKUPriceAndStockResponseServiceresponseResponsepreamble](docs/MultiSKUPriceAndStockResponseServiceresponseResponsepreamble.md)
  - [XiSdkResellers.OrderCreateRequest](docs/OrderCreateRequest.md)
  - [XiSdkResellers.OrderCreateRequestAdditionalAttributesInner](docs/OrderCreateRequestAdditionalAttributesInner.md)
  - [XiSdkResellers.OrderCreateRequestEndUserInfo](docs/OrderCreateRequestEndUserInfo.md)
@@ -242,13 +227,6 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.OrderCreateResponseOrdersInnerMiscellaneousChargesInner](docs/OrderCreateResponseOrdersInnerMiscellaneousChargesInner.md)
  - [XiSdkResellers.OrderCreateResponseOrdersInnerRejectedLineItemsInner](docs/OrderCreateResponseOrdersInnerRejectedLineItemsInner.md)
  - [XiSdkResellers.OrderCreateResponseShipToInfo](docs/OrderCreateResponseShipToInfo.md)
- - [XiSdkResellers.OrderDeleteRequest](docs/OrderDeleteRequest.md)
- - [XiSdkResellers.OrderDeleteRequestServicerequest](docs/OrderDeleteRequestServicerequest.md)
- - [XiSdkResellers.OrderDeleteRequestServicerequestOrderDeleteRequestDetails](docs/OrderDeleteRequestServicerequestOrderDeleteRequestDetails.md)
- - [XiSdkResellers.OrderDeleteRequestServicerequestRequestpreamble](docs/OrderDeleteRequestServicerequestRequestpreamble.md)
- - [XiSdkResellers.OrderDeleteResponse](docs/OrderDeleteResponse.md)
- - [XiSdkResellers.OrderDeleteResponseServiceresponse](docs/OrderDeleteResponseServiceresponse.md)
- - [XiSdkResellers.OrderDeleteResponseServiceresponseResponsepreamble](docs/OrderDeleteResponseServiceresponseResponsepreamble.md)
  - [XiSdkResellers.OrderDetailB2B](docs/OrderDetailB2B.md)
  - [XiSdkResellers.OrderDetailB2BAdditionalAttributesInner](docs/OrderDetailB2BAdditionalAttributesInner.md)
  - [XiSdkResellers.OrderDetailB2BBillToInfo](docs/OrderDetailB2BBillToInfo.md)
@@ -273,9 +251,6 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner](docs/OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner.md)
  - [XiSdkResellers.OrderDetailB2BMiscellaneousChargesInner](docs/OrderDetailB2BMiscellaneousChargesInner.md)
  - [XiSdkResellers.OrderDetailB2BShipToInfo](docs/OrderDetailB2BShipToInfo.md)
- - [XiSdkResellers.OrderDetailRequest](docs/OrderDetailRequest.md)
- - [XiSdkResellers.OrderDetailRequestServicerequest](docs/OrderDetailRequestServicerequest.md)
- - [XiSdkResellers.OrderDetailRequestServicerequestOrderdetailrequest](docs/OrderDetailRequestServicerequestOrderdetailrequest.md)
  - [XiSdkResellers.OrderDetailResponse](docs/OrderDetailResponse.md)
  - [XiSdkResellers.OrderDetailResponseBillToInfo](docs/OrderDetailResponseBillToInfo.md)
  - [XiSdkResellers.OrderDetailResponseEndUserInfo](docs/OrderDetailResponseEndUserInfo.md)
@@ -291,28 +266,13 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.OrderModifyRequest](docs/OrderModifyRequest.md)
  - [XiSdkResellers.OrderModifyRequestAdditionalAttributesInner](docs/OrderModifyRequestAdditionalAttributesInner.md)
  - [XiSdkResellers.OrderModifyRequestLinesInner](docs/OrderModifyRequestLinesInner.md)
- - [XiSdkResellers.OrderModifyRequestServicerequest](docs/OrderModifyRequestServicerequest.md)
- - [XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequest](docs/OrderModifyRequestServicerequestOrdermodifyrequest.md)
- - [XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata](docs/OrderModifyRequestServicerequestOrdermodifyrequestHeaderdata.md)
- - [XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner](docs/OrderModifyRequestServicerequestOrdermodifyrequestLinedataInner.md)
- - [XiSdkResellers.OrderModifyRequestServicerequestOrdermodifyrequestShipto](docs/OrderModifyRequestServicerequestOrdermodifyrequestShipto.md)
- - [XiSdkResellers.OrderModifyRequestServicerequestRequestpreamble](docs/OrderModifyRequestServicerequestRequestpreamble.md)
  - [XiSdkResellers.OrderModifyRequestShipToInfo](docs/OrderModifyRequestShipToInfo.md)
  - [XiSdkResellers.OrderModifyResponse](docs/OrderModifyResponse.md)
  - [XiSdkResellers.OrderModifyResponseLinesInner](docs/OrderModifyResponseLinesInner.md)
  - [XiSdkResellers.OrderModifyResponseLinesInnerAdditionalAttributesInner](docs/OrderModifyResponseLinesInnerAdditionalAttributesInner.md)
  - [XiSdkResellers.OrderModifyResponseLinesInnerShipmentDetails](docs/OrderModifyResponseLinesInnerShipmentDetails.md)
  - [XiSdkResellers.OrderModifyResponseRejectedLineItemsInner](docs/OrderModifyResponseRejectedLineItemsInner.md)
- - [XiSdkResellers.OrderModifyResponseServiceresponse](docs/OrderModifyResponseServiceresponse.md)
- - [XiSdkResellers.OrderModifyResponseServiceresponseOrdermodifyresponse](docs/OrderModifyResponseServiceresponseOrdermodifyresponse.md)
- - [XiSdkResellers.OrderModifyResponseServiceresponseResponsepreamble](docs/OrderModifyResponseServiceresponseResponsepreamble.md)
  - [XiSdkResellers.OrderModifyResponseShipToInfo](docs/OrderModifyResponseShipToInfo.md)
- - [XiSdkResellers.OrderSearchRequest](docs/OrderSearchRequest.md)
- - [XiSdkResellers.OrderSearchRequestServicerequest](docs/OrderSearchRequestServicerequest.md)
- - [XiSdkResellers.OrderSearchRequestServicerequestOrderLookupRequest](docs/OrderSearchRequestServicerequestOrderLookupRequest.md)
- - [XiSdkResellers.OrderSearchRequestServicerequestOrderLookupRequestCustomerOrderNumber](docs/OrderSearchRequestServicerequestOrderLookupRequestCustomerOrderNumber.md)
- - [XiSdkResellers.OrderSearchRequestServicerequestOrderLookupRequestOrderNumber](docs/OrderSearchRequestServicerequestOrderLookupRequestOrderNumber.md)
- - [XiSdkResellers.OrderSearchRequestServicerequestRequestpreamble](docs/OrderSearchRequestServicerequestRequestpreamble.md)
  - [XiSdkResellers.OrderSearchResponse](docs/OrderSearchResponse.md)
  - [XiSdkResellers.OrderSearchResponseOrdersInner](docs/OrderSearchResponseOrdersInner.md)
  - [XiSdkResellers.OrderSearchResponseOrdersInnerLinks](docs/OrderSearchResponseOrdersInnerLinks.md)
@@ -352,46 +312,22 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.ProductLineType](docs/ProductLineType.md)
  - [XiSdkResellers.ProductLineTypeSerialnumberdetailsInner](docs/ProductLineTypeSerialnumberdetailsInner.md)
  - [XiSdkResellers.ProductLineTypeTrackingnumberdetailsInner](docs/ProductLineTypeTrackingnumberdetailsInner.md)
- - [XiSdkResellers.ProductSearchRequest](docs/ProductSearchRequest.md)
- - [XiSdkResellers.ProductSearchRequestServicerequest](docs/ProductSearchRequestServicerequest.md)
- - [XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequest](docs/ProductSearchRequestServicerequestProductsearchrequest.md)
- - [XiSdkResellers.ProductSearchRequestServicerequestProductsearchrequestSearchcriteria](docs/ProductSearchRequestServicerequestProductsearchrequestSearchcriteria.md)
- - [XiSdkResellers.ProductSearchRequestServicerequestRequestpreamble](docs/ProductSearchRequestServicerequestRequestpreamble.md)
  - [XiSdkResellers.ProductSearchResponse](docs/ProductSearchResponse.md)
  - [XiSdkResellers.ProductSearchResponseCatalogInner](docs/ProductSearchResponseCatalogInner.md)
  - [XiSdkResellers.ProductSearchResponseCatalogInnerLinksInner](docs/ProductSearchResponseCatalogInnerLinksInner.md)
- - [XiSdkResellers.QuoteDetails](docs/QuoteDetails.md)
- - [XiSdkResellers.QuoteDetailsQuoteDetailResponse](docs/QuoteDetailsQuoteDetailResponse.md)
- - [XiSdkResellers.QuoteDetailsQuoteDetailResponseResponsePreamble](docs/QuoteDetailsQuoteDetailResponseResponsePreamble.md)
- - [XiSdkResellers.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponse](docs/QuoteDetailsQuoteDetailResponseRetrieveQuoteResponse.md)
- - [XiSdkResellers.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseAccountInfo](docs/QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseAccountInfo.md)
- - [XiSdkResellers.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo](docs/QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseContactInfo.md)
- - [XiSdkResellers.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser](docs/QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseEndUser.md)
- - [XiSdkResellers.QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseVendorAttributes](docs/QuoteDetailsQuoteDetailResponseRetrieveQuoteResponseVendorAttributes.md)
- - [XiSdkResellers.QuoteDetailsRequest](docs/QuoteDetailsRequest.md)
- - [XiSdkResellers.QuoteDetailsRequestQuoteProductsRequest](docs/QuoteDetailsRequestQuoteProductsRequest.md)
- - [XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRequestpreamble](docs/QuoteDetailsRequestQuoteProductsRequestRequestpreamble.md)
- - [XiSdkResellers.QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest](docs/QuoteDetailsRequestQuoteProductsRequestRetrieveQuoteProductsRequest.md)
  - [XiSdkResellers.QuoteDetailsResponse](docs/QuoteDetailsResponse.md)
  - [XiSdkResellers.QuoteDetailsResponseAdditionalAttributesInner](docs/QuoteDetailsResponseAdditionalAttributesInner.md)
  - [XiSdkResellers.QuoteDetailsResponseEndUserInfo](docs/QuoteDetailsResponseEndUserInfo.md)
  - [XiSdkResellers.QuoteDetailsResponseProductsInner](docs/QuoteDetailsResponseProductsInner.md)
  - [XiSdkResellers.QuoteDetailsResponseProductsInnerPrice](docs/QuoteDetailsResponseProductsInnerPrice.md)
- - [XiSdkResellers.QuoteDetailsResponseQuoteDetailResponse](docs/QuoteDetailsResponseQuoteDetailResponse.md)
- - [XiSdkResellers.QuoteDetailsResponseQuoteDetailResponseRetrieveQuoteResponse](docs/QuoteDetailsResponseQuoteDetailResponseRetrieveQuoteResponse.md)
  - [XiSdkResellers.QuoteDetailsResponseResellerInfo](docs/QuoteDetailsResponseResellerInfo.md)
- - [XiSdkResellers.QuoteListResponse](docs/QuoteListResponse.md)
- - [XiSdkResellers.QuoteListResponseQuoteSearchResponse](docs/QuoteListResponseQuoteSearchResponse.md)
- - [XiSdkResellers.QuoteListResponseQuoteSearchResponseQuoteListInner](docs/QuoteListResponseQuoteSearchResponseQuoteListInner.md)
- - [XiSdkResellers.QuoteListResponseQuoteSearchResponseResponsePreamble](docs/QuoteListResponseQuoteSearchResponseResponsePreamble.md)
- - [XiSdkResellers.QuoteProductList](docs/QuoteProductList.md)
- - [XiSdkResellers.QuoteProductListPrice](docs/QuoteProductListPrice.md)
  - [XiSdkResellers.QuoteSearchResponse](docs/QuoteSearchResponse.md)
  - [XiSdkResellers.QuoteSearchResponseQuotesInner](docs/QuoteSearchResponseQuotesInner.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTO](docs/QuoteToOrderDetailsDTO.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOAdditionalAttributesInner](docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOEndUserInfoInner](docs/QuoteToOrderDetailsDTOEndUserInfoInner.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOLinesInner](docs/QuoteToOrderDetailsDTOLinesInner.md)
+ - [XiSdkResellers.QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner](docs/QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner](docs/QuoteToOrderDetailsDTOShipToInfoInner.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOVmfadditionalAttributesInner](docs/QuoteToOrderDetailsDTOVmfadditionalAttributesInner.md)
  - [XiSdkResellers.QuoteToOrderResponse](docs/QuoteToOrderResponse.md)
@@ -423,7 +359,6 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.ReturnsSearchResponseReturnsClaimsInnerLinksInner](docs/ReturnsSearchResponseReturnsClaimsInnerLinksInner.md)
  - [XiSdkResellers.ValidateQuoteResponse](docs/ValidateQuoteResponse.md)
  - [XiSdkResellers.ValidateQuoteResponseLinesInner](docs/ValidateQuoteResponseLinesInner.md)
- - [XiSdkResellers.ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner](docs/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.md)
  - [XiSdkResellers.ValidateQuoteResponseVmfAdditionalAttributesInner](docs/ValidateQuoteResponseVmfAdditionalAttributesInner.md)
 
 
@@ -441,11 +376,3 @@ Authentication schemes defined for the API:
   - write: allows modifying resources
   - read: allows reading resources
 
-## Author
--[Ingram Micro Xvantage](https://github.com/ingrammicro-xvantage)
-
-## Contact
-
-For any inquiries or support, please feel free to contact us at:
-
-- Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)

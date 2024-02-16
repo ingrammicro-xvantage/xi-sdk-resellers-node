@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,7 +12,10 @@
  */
 
 import ApiClient from '../ApiClient';
-import OrderModifyResponseServiceresponse from './OrderModifyResponseServiceresponse';
+import OrderModifyResponseLinesInner from './OrderModifyResponseLinesInner';
+import OrderModifyResponseLinesInnerAdditionalAttributesInner from './OrderModifyResponseLinesInnerAdditionalAttributesInner';
+import OrderModifyResponseRejectedLineItemsInner from './OrderModifyResponseRejectedLineItemsInner';
+import OrderModifyResponseShipToInfo from './OrderModifyResponseShipToInfo';
 
 /**
  * The OrderModifyResponse model module.
@@ -22,7 +25,6 @@ import OrderModifyResponseServiceresponse from './OrderModifyResponseServiceresp
 class OrderModifyResponse {
     /**
      * Constructs a new <code>OrderModifyResponse</code>.
-     * Response schema for order modify endpoint
      * @alias module:model/OrderModifyResponse
      */
     constructor() { 
@@ -49,8 +51,53 @@ class OrderModifyResponse {
         if (data) {
             obj = obj || new OrderModifyResponse();
 
-            if (data.hasOwnProperty('serviceresponse')) {
-                obj['serviceresponse'] = OrderModifyResponseServiceresponse.constructFromObject(data['serviceresponse']);
+            if (data.hasOwnProperty('ingramOrderNumber')) {
+                obj['ingramOrderNumber'] = ApiClient.convertToType(data['ingramOrderNumber'], 'String');
+            }
+            if (data.hasOwnProperty('changeDescription')) {
+                obj['changeDescription'] = ApiClient.convertToType(data['changeDescription'], 'String');
+            }
+            if (data.hasOwnProperty('orderModifiedDate')) {
+                obj['orderModifiedDate'] = ApiClient.convertToType(data['orderModifiedDate'], 'String');
+            }
+            if (data.hasOwnProperty('customerOrderNumber')) {
+                obj['customerOrderNumber'] = ApiClient.convertToType(data['customerOrderNumber'], 'String');
+            }
+            if (data.hasOwnProperty('endCustomerOrderNumber')) {
+                obj['endCustomerOrderNumber'] = ApiClient.convertToType(data['endCustomerOrderNumber'], 'String');
+            }
+            if (data.hasOwnProperty('orderTotal')) {
+                obj['orderTotal'] = ApiClient.convertToType(data['orderTotal'], 'Number');
+            }
+            if (data.hasOwnProperty('notes')) {
+                obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
+            }
+            if (data.hasOwnProperty('orderSubTotal')) {
+                obj['orderSubTotal'] = ApiClient.convertToType(data['orderSubTotal'], 'Number');
+            }
+            if (data.hasOwnProperty('freightCharges')) {
+                obj['freightCharges'] = ApiClient.convertToType(data['freightCharges'], 'Number');
+            }
+            if (data.hasOwnProperty('totalTax')) {
+                obj['totalTax'] = ApiClient.convertToType(data['totalTax'], 'Number');
+            }
+            if (data.hasOwnProperty('orderStatus')) {
+                obj['orderStatus'] = ApiClient.convertToType(data['orderStatus'], 'String');
+            }
+            if (data.hasOwnProperty('billToAddressId')) {
+                obj['billToAddressId'] = ApiClient.convertToType(data['billToAddressId'], 'String');
+            }
+            if (data.hasOwnProperty('shipToInfo')) {
+                obj['shipToInfo'] = OrderModifyResponseShipToInfo.constructFromObject(data['shipToInfo']);
+            }
+            if (data.hasOwnProperty('lines')) {
+                obj['lines'] = ApiClient.convertToType(data['lines'], [OrderModifyResponseLinesInner]);
+            }
+            if (data.hasOwnProperty('rejectedLineItems')) {
+                obj['rejectedLineItems'] = ApiClient.convertToType(data['rejectedLineItems'], [OrderModifyResponseRejectedLineItemsInner]);
+            }
+            if (data.hasOwnProperty('additionalAttributes')) {
+                obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [OrderModifyResponseLinesInnerAdditionalAttributesInner]);
             }
         }
         return obj;
@@ -62,9 +109,71 @@ class OrderModifyResponse {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>OrderModifyResponse</code>.
      */
     static validateJSON(data) {
-        // validate the optional field `serviceresponse`
-        if (data['serviceresponse']) { // data not null
-          OrderModifyResponseServiceresponse.validateJSON(data['serviceresponse']);
+        // ensure the json data is a string
+        if (data['ingramOrderNumber'] && !(typeof data['ingramOrderNumber'] === 'string' || data['ingramOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `ingramOrderNumber` to be a primitive type in the JSON string but got " + data['ingramOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['changeDescription'] && !(typeof data['changeDescription'] === 'string' || data['changeDescription'] instanceof String)) {
+            throw new Error("Expected the field `changeDescription` to be a primitive type in the JSON string but got " + data['changeDescription']);
+        }
+        // ensure the json data is a string
+        if (data['orderModifiedDate'] && !(typeof data['orderModifiedDate'] === 'string' || data['orderModifiedDate'] instanceof String)) {
+            throw new Error("Expected the field `orderModifiedDate` to be a primitive type in the JSON string but got " + data['orderModifiedDate']);
+        }
+        // ensure the json data is a string
+        if (data['customerOrderNumber'] && !(typeof data['customerOrderNumber'] === 'string' || data['customerOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got " + data['customerOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['endCustomerOrderNumber'] && !(typeof data['endCustomerOrderNumber'] === 'string' || data['endCustomerOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got " + data['endCustomerOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['notes'] && !(typeof data['notes'] === 'string' || data['notes'] instanceof String)) {
+            throw new Error("Expected the field `notes` to be a primitive type in the JSON string but got " + data['notes']);
+        }
+        // ensure the json data is a string
+        if (data['orderStatus'] && !(typeof data['orderStatus'] === 'string' || data['orderStatus'] instanceof String)) {
+            throw new Error("Expected the field `orderStatus` to be a primitive type in the JSON string but got " + data['orderStatus']);
+        }
+        // ensure the json data is a string
+        if (data['billToAddressId'] && !(typeof data['billToAddressId'] === 'string' || data['billToAddressId'] instanceof String)) {
+            throw new Error("Expected the field `billToAddressId` to be a primitive type in the JSON string but got " + data['billToAddressId']);
+        }
+        // validate the optional field `shipToInfo`
+        if (data['shipToInfo']) { // data not null
+          OrderModifyResponseShipToInfo.validateJSON(data['shipToInfo']);
+        }
+        if (data['lines']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['lines'])) {
+                throw new Error("Expected the field `lines` to be an array in the JSON data but got " + data['lines']);
+            }
+            // validate the optional field `lines` (array)
+            for (const item of data['lines']) {
+                OrderModifyResponseLinesInner.validateJSON(item);
+            };
+        }
+        if (data['rejectedLineItems']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['rejectedLineItems'])) {
+                throw new Error("Expected the field `rejectedLineItems` to be an array in the JSON data but got " + data['rejectedLineItems']);
+            }
+            // validate the optional field `rejectedLineItems` (array)
+            for (const item of data['rejectedLineItems']) {
+                OrderModifyResponseRejectedLineItemsInner.validateJSON(item);
+            };
+        }
+        if (data['additionalAttributes']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['additionalAttributes'])) {
+                throw new Error("Expected the field `additionalAttributes` to be an array in the JSON data but got " + data['additionalAttributes']);
+            }
+            // validate the optional field `additionalAttributes` (array)
+            for (const item of data['additionalAttributes']) {
+                OrderModifyResponseLinesInnerAdditionalAttributesInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -76,9 +185,99 @@ class OrderModifyResponse {
 
 
 /**
- * @member {module:model/OrderModifyResponseServiceresponse} serviceresponse
+ * The IngramMicro order number.
+ * @member {String} ingramOrderNumber
  */
-OrderModifyResponse.prototype['serviceresponse'] = undefined;
+OrderModifyResponse.prototype['ingramOrderNumber'] = undefined;
+
+/**
+ * The description of the change.
+ * @member {String} changeDescription
+ */
+OrderModifyResponse.prototype['changeDescription'] = undefined;
+
+/**
+ * The date the order was modified.
+ * @member {String} orderModifiedDate
+ */
+OrderModifyResponse.prototype['orderModifiedDate'] = undefined;
+
+/**
+ * The reseller's order number for reference in their system.
+ * @member {String} customerOrderNumber
+ */
+OrderModifyResponse.prototype['customerOrderNumber'] = undefined;
+
+/**
+ * The end user/customer's order number for reference in their system.
+ * @member {String} endCustomerOrderNumber
+ */
+OrderModifyResponse.prototype['endCustomerOrderNumber'] = undefined;
+
+/**
+ * The total for the order.
+ * @member {Number} orderTotal
+ */
+OrderModifyResponse.prototype['orderTotal'] = undefined;
+
+/**
+ * Order-level notes.
+ * @member {String} notes
+ */
+OrderModifyResponse.prototype['notes'] = undefined;
+
+/**
+ * The sub total for the order.
+ * @member {Number} orderSubTotal
+ */
+OrderModifyResponse.prototype['orderSubTotal'] = undefined;
+
+/**
+ * The freight charges for the order.
+ * @member {Number} freightCharges
+ */
+OrderModifyResponse.prototype['freightCharges'] = undefined;
+
+/**
+ * The total tax for the order.
+ * @member {Number} totalTax
+ */
+OrderModifyResponse.prototype['totalTax'] = undefined;
+
+/**
+ * The status of the order. One of the following. Backordered, In Progress, Shipped, Delivered, Canceled, On Hold
+ * @member {String} orderStatus
+ */
+OrderModifyResponse.prototype['orderStatus'] = undefined;
+
+/**
+ * Suffix used to identify billing address. Created during onboarding. Resellers are provided with one or more address IDs depending on how many bill to addresses they need for various flooring companies they are using for credit.
+ * @member {String} billToAddressId
+ */
+OrderModifyResponse.prototype['billToAddressId'] = undefined;
+
+/**
+ * @member {module:model/OrderModifyResponseShipToInfo} shipToInfo
+ */
+OrderModifyResponse.prototype['shipToInfo'] = undefined;
+
+/**
+ * The line-level details for the order.
+ * @member {Array.<module:model/OrderModifyResponseLinesInner>} lines
+ */
+OrderModifyResponse.prototype['lines'] = undefined;
+
+/**
+ * Details for failed lines in the order.
+ * @member {Array.<module:model/OrderModifyResponseRejectedLineItemsInner>} rejectedLineItems
+ */
+OrderModifyResponse.prototype['rejectedLineItems'] = undefined;
+
+/**
+ * Header-level additional attributes.
+ * @member {Array.<module:model/OrderModifyResponseLinesInnerAdditionalAttributesInner>} additionalAttributes
+ */
+OrderModifyResponse.prototype['additionalAttributes'] = undefined;
 
 
 
