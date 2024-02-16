@@ -48,7 +48,7 @@ class ReturnsDetailsResponseProductsInner {
             obj = obj || new ReturnsDetailsResponseProductsInner();
 
             if (data.hasOwnProperty('ingramLineNumber')) {
-                obj['ingramLineNumber'] = ApiClient.convertToType(data['ingramLineNumber'], 'String');
+                obj['ingramLineNumber'] = ApiClient.convertToType(data['ingramLineNumber'], 'Number');
             }
             if (data.hasOwnProperty('description')) {
                 obj['description'] = ApiClient.convertToType(data['description'], 'String');
@@ -87,10 +87,10 @@ class ReturnsDetailsResponseProductsInner {
                 obj['status'] = ApiClient.convertToType(data['status'], 'String');
             }
             if (data.hasOwnProperty('returnBranch')) {
-                obj['returnBranch'] = ApiClient.convertToType(data['returnBranch'], 'Number');
+                obj['returnBranch'] = ApiClient.convertToType(data['returnBranch'], 'String');
             }
             if (data.hasOwnProperty('shipFromBranch')) {
-                obj['shipFromBranch'] = ApiClient.convertToType(data['shipFromBranch'], 'Number');
+                obj['shipFromBranch'] = ApiClient.convertToType(data['shipFromBranch'], 'String');
             }
         }
         return obj;
@@ -102,10 +102,6 @@ class ReturnsDetailsResponseProductsInner {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ReturnsDetailsResponseProductsInner</code>.
      */
     static validateJSON(data) {
-        // ensure the json data is a string
-        if (data['ingramLineNumber'] && !(typeof data['ingramLineNumber'] === 'string' || data['ingramLineNumber'] instanceof String)) {
-            throw new Error("Expected the field `ingramLineNumber` to be a primitive type in the JSON string but got " + data['ingramLineNumber']);
-        }
         // ensure the json data is a string
         if (data['description'] && !(typeof data['description'] === 'string' || data['description'] instanceof String)) {
             throw new Error("Expected the field `description` to be a primitive type in the JSON string but got " + data['description']);
@@ -138,6 +134,14 @@ class ReturnsDetailsResponseProductsInner {
         if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
             throw new Error("Expected the field `status` to be a primitive type in the JSON string but got " + data['status']);
         }
+        // ensure the json data is a string
+        if (data['returnBranch'] && !(typeof data['returnBranch'] === 'string' || data['returnBranch'] instanceof String)) {
+            throw new Error("Expected the field `returnBranch` to be a primitive type in the JSON string but got " + data['returnBranch']);
+        }
+        // ensure the json data is a string
+        if (data['shipFromBranch'] && !(typeof data['shipFromBranch'] === 'string' || data['shipFromBranch'] instanceof String)) {
+            throw new Error("Expected the field `shipFromBranch` to be a primitive type in the JSON string but got " + data['shipFromBranch']);
+        }
 
         return true;
     }
@@ -149,7 +153,7 @@ class ReturnsDetailsResponseProductsInner {
 
 /**
  * Unique Ingram Micro line number.
- * @member {String} ingramLineNumber
+ * @member {Number} ingramLineNumber
  */
 ReturnsDetailsResponseProductsInner.prototype['ingramLineNumber'] = undefined;
 
@@ -227,13 +231,13 @@ ReturnsDetailsResponseProductsInner.prototype['status'] = undefined;
 
 /**
  * The code of the return branch.
- * @member {Number} returnBranch
+ * @member {String} returnBranch
  */
 ReturnsDetailsResponseProductsInner.prototype['returnBranch'] = undefined;
 
 /**
  * The code of the ship from branch.
- * @member {Number} shipFromBranch
+ * @member {String} shipFromBranch
  */
 ReturnsDetailsResponseProductsInner.prototype['shipFromBranch'] = undefined;
 

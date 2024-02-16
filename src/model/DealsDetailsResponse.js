@@ -68,10 +68,10 @@ class DealsDetailsResponse {
                 obj['dealReceivedOn'] = ApiClient.convertToType(data['dealReceivedOn'], 'Date');
             }
             if (data.hasOwnProperty('dealExpiryDate')) {
-                obj['dealExpiryDate'] = ApiClient.convertToType(data['dealExpiryDate'], 'Date');
+                obj['dealExpiryDate'] = ApiClient.convertToType(data['dealExpiryDate'], 'String');
             }
             if (data.hasOwnProperty('priceProtectionEndDate')) {
-                obj['priceProtectionEndDate'] = ApiClient.convertToType(data['priceProtectionEndDate'], 'Date');
+                obj['priceProtectionEndDate'] = ApiClient.convertToType(data['priceProtectionEndDate'], 'String');
             }
             if (data.hasOwnProperty('currencyCode')) {
                 obj['currencyCode'] = ApiClient.convertToType(data['currencyCode'], 'String');
@@ -107,6 +107,14 @@ class DealsDetailsResponse {
         // ensure the json data is a string
         if (data['vendor'] && !(typeof data['vendor'] === 'string' || data['vendor'] instanceof String)) {
             throw new Error("Expected the field `vendor` to be a primitive type in the JSON string but got " + data['vendor']);
+        }
+        // ensure the json data is a string
+        if (data['dealExpiryDate'] && !(typeof data['dealExpiryDate'] === 'string' || data['dealExpiryDate'] instanceof String)) {
+            throw new Error("Expected the field `dealExpiryDate` to be a primitive type in the JSON string but got " + data['dealExpiryDate']);
+        }
+        // ensure the json data is a string
+        if (data['priceProtectionEndDate'] && !(typeof data['priceProtectionEndDate'] === 'string' || data['priceProtectionEndDate'] instanceof String)) {
+            throw new Error("Expected the field `priceProtectionEndDate` to be a primitive type in the JSON string but got " + data['priceProtectionEndDate']);
         }
         // ensure the json data is a string
         if (data['currencyCode'] && !(typeof data['currencyCode'] === 'string' || data['currencyCode'] instanceof String)) {
@@ -173,13 +181,13 @@ DealsDetailsResponse.prototype['dealReceivedOn'] = undefined;
 
 /**
  * Expiration date of the deal/Special bid.
- * @member {Date} dealExpiryDate
+ * @member {String} dealExpiryDate
  */
 DealsDetailsResponse.prototype['dealExpiryDate'] = undefined;
 
 /**
  * The date on which the price protection will end.
- * @member {Date} priceProtectionEndDate
+ * @member {String} priceProtectionEndDate
  */
 DealsDetailsResponse.prototype['priceProtectionEndDate'] = undefined;
 

@@ -66,7 +66,7 @@ class InvoiceSearchResponseInvoicesInner {
                 obj['invoiceDueDate'] = ApiClient.convertToType(data['invoiceDueDate'], 'String');
             }
             if (data.hasOwnProperty('invoicedAmountDue')) {
-                obj['invoicedAmountDue'] = ApiClient.convertToType(data['invoicedAmountDue'], 'String');
+                obj['invoicedAmountDue'] = ApiClient.convertToType(data['invoicedAmountDue'], 'Number');
             }
             if (data.hasOwnProperty('customerOrderNumber')) {
                 obj['customerOrderNumber'] = ApiClient.convertToType(data['customerOrderNumber'], 'String');
@@ -78,7 +78,7 @@ class InvoiceSearchResponseInvoicesInner {
                 obj['endCustomerOrderNumber'] = ApiClient.convertToType(data['endCustomerOrderNumber'], 'String');
             }
             if (data.hasOwnProperty('invoiceAmountInclTax')) {
-                obj['invoiceAmountInclTax'] = ApiClient.convertToType(data['invoiceAmountInclTax'], 'String');
+                obj['invoiceAmountInclTax'] = ApiClient.convertToType(data['invoiceAmountInclTax'], 'Number');
             }
         }
         return obj;
@@ -115,10 +115,6 @@ class InvoiceSearchResponseInvoicesInner {
             throw new Error("Expected the field `invoiceDueDate` to be a primitive type in the JSON string but got " + data['invoiceDueDate']);
         }
         // ensure the json data is a string
-        if (data['invoicedAmountDue'] && !(typeof data['invoicedAmountDue'] === 'string' || data['invoicedAmountDue'] instanceof String)) {
-            throw new Error("Expected the field `invoicedAmountDue` to be a primitive type in the JSON string but got " + data['invoicedAmountDue']);
-        }
-        // ensure the json data is a string
         if (data['customerOrderNumber'] && !(typeof data['customerOrderNumber'] === 'string' || data['customerOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got " + data['customerOrderNumber']);
         }
@@ -129,10 +125,6 @@ class InvoiceSearchResponseInvoicesInner {
         // ensure the json data is a string
         if (data['endCustomerOrderNumber'] && !(typeof data['endCustomerOrderNumber'] === 'string' || data['endCustomerOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got " + data['endCustomerOrderNumber']);
-        }
-        // ensure the json data is a string
-        if (data['invoiceAmountInclTax'] && !(typeof data['invoiceAmountInclTax'] === 'string' || data['invoiceAmountInclTax'] instanceof String)) {
-            throw new Error("Expected the field `invoiceAmountInclTax` to be a primitive type in the JSON string but got " + data['invoiceAmountInclTax']);
         }
 
         return true;
@@ -181,7 +173,7 @@ InvoiceSearchResponseInvoicesInner.prototype['invoiceDueDate'] = undefined;
 
 /**
  * Invoice Amount.
- * @member {String} invoicedAmountDue
+ * @member {Number} invoicedAmountDue
  */
 InvoiceSearchResponseInvoicesInner.prototype['invoicedAmountDue'] = undefined;
 
@@ -205,7 +197,7 @@ InvoiceSearchResponseInvoicesInner.prototype['endCustomerOrderNumber'] = undefin
 
 /**
  * Invoice Amount Inclusive of Taxes
- * @member {String} invoiceAmountInclTax
+ * @member {Number} invoiceAmountInclTax
  */
 InvoiceSearchResponseInvoicesInner.prototype['invoiceAmountInclTax'] = undefined;
 

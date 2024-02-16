@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **customerPartNumber** | **String** | Part number from customer&#39;s system. | [optional] 
 **vendorName** | **String** | Name of the vendor. | [optional] 
 **productDescription** | **String** | Description of the product. | [optional] 
-**unitWeight** | **String** | Weight of the product. | [optional] 
+**unitWeight** | **Number** | Weight of the product. | [optional] 
 **quantity** | **Number** | Quantity of the product. | [optional] 
 **unitPrice** | **Number** | Unit price of the product. | [optional] 
 **unitOfMeasure** | **String** | Unit of measure of the product. | [optional] 
