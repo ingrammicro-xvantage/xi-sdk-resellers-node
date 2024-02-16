@@ -56,7 +56,7 @@ npm run build
 
 #### git
 
-If the library is hosted at a git repository, e.g.https://github.com/GIT_USER_ID/GIT_REPO_ID
+If the library is hosted at a git repository, e.g.https://github.com/ingrammicro-xvantage/xi-sdk-resellers-node
 then install it via:
 
 ```shell
