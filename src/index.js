@@ -13,7 +13,6 @@
 
 
 import ApiClient from './ApiClient';
-import AddressType from './model/AddressType';
 import AvailabilityAsyncNotificationRequest from './model/AvailabilityAsyncNotificationRequest';
 import AvailabilityAsyncNotificationRequestResourceInner from './model/AvailabilityAsyncNotificationRequestResourceInner';
 import AvailabilityAsyncNotificationRequestResourceInnerLinksInner from './model/AvailabilityAsyncNotificationRequestResourceInnerLinksInner';
@@ -38,12 +37,6 @@ import FreightResponseFreightEstimateResponseLinesInner from './model/FreightRes
 import GetResellerV6ValidateQuote400Response from './model/GetResellerV6ValidateQuote400Response';
 import GetResellerV6ValidateQuote400ResponseFieldsInner from './model/GetResellerV6ValidateQuote400ResponseFieldsInner';
 import GetResellerV6ValidateQuote500Response from './model/GetResellerV6ValidateQuote500Response';
-import InvoiceDetailResponse from './model/InvoiceDetailResponse';
-import InvoiceDetailResponseServiceresponse from './model/InvoiceDetailResponseServiceresponse';
-import InvoiceDetailResponseServiceresponseInvoicedetailresponse from './model/InvoiceDetailResponseServiceresponseInvoicedetailresponse';
-import InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner from './model/InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner';
-import InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner from './model/InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner';
-import InvoiceDetailResponseServiceresponseResponsepreamble from './model/InvoiceDetailResponseServiceresponseResponsepreamble';
 import InvoiceDetailsv61Response from './model/InvoiceDetailsv61Response';
 import InvoiceDetailsv61ResponseBillToInfo from './model/InvoiceDetailsv61ResponseBillToInfo';
 import InvoiceDetailsv61ResponseFxRateInfo from './model/InvoiceDetailsv61ResponseFxRateInfo';
@@ -105,18 +98,6 @@ import OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDe
 import OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner from './model/OrderDetailB2BLinesInnerShipmentDetailsInnerCarrierDetailsInnerTrackingDetailsInnerSerialNumbersInner';
 import OrderDetailB2BMiscellaneousChargesInner from './model/OrderDetailB2BMiscellaneousChargesInner';
 import OrderDetailB2BShipToInfo from './model/OrderDetailB2BShipToInfo';
-import OrderDetailResponse from './model/OrderDetailResponse';
-import OrderDetailResponseBillToInfo from './model/OrderDetailResponseBillToInfo';
-import OrderDetailResponseEndUserInfo from './model/OrderDetailResponseEndUserInfo';
-import OrderDetailResponseLinesInner from './model/OrderDetailResponseLinesInner';
-import OrderDetailResponseLinesInnerAdditionalAttributesInner from './model/OrderDetailResponseLinesInnerAdditionalAttributesInner';
-import OrderDetailResponseLinesInnerLinksInner from './model/OrderDetailResponseLinesInnerLinksInner';
-import OrderDetailResponseLinesInnerShipmentDetailsInner from './model/OrderDetailResponseLinesInnerShipmentDetailsInner';
-import OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetails from './model/OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetails';
-import OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInner from './model/OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInner';
-import OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInnerSerialNumbersInner from './model/OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInnerSerialNumbersInner';
-import OrderDetailResponseMiscellaneousChargesInner from './model/OrderDetailResponseMiscellaneousChargesInner';
-import OrderDetailResponseShipToInfo from './model/OrderDetailResponseShipToInfo';
 import OrderModifyRequest from './model/OrderModifyRequest';
 import OrderModifyRequestAdditionalAttributesInner from './model/OrderModifyRequestAdditionalAttributesInner';
 import OrderModifyRequestLinesInner from './model/OrderModifyRequestLinesInner';
@@ -163,9 +144,6 @@ import ProductDetailResponseAdditionalInformationProductWeightInner from './mode
 import ProductDetailResponseCiscoFields from './model/ProductDetailResponseCiscoFields';
 import ProductDetailResponseIndicators from './model/ProductDetailResponseIndicators';
 import ProductDetailResponseTechnicalSpecificationsInner from './model/ProductDetailResponseTechnicalSpecificationsInner';
-import ProductLineType from './model/ProductLineType';
-import ProductLineTypeSerialnumberdetailsInner from './model/ProductLineTypeSerialnumberdetailsInner';
-import ProductLineTypeTrackingnumberdetailsInner from './model/ProductLineTypeTrackingnumberdetailsInner';
 import ProductSearchResponse from './model/ProductSearchResponse';
 import ProductSearchResponseCatalogInner from './model/ProductSearchResponseCatalogInner';
 import ProductSearchResponseCatalogInnerLinksInner from './model/ProductSearchResponseCatalogInnerLinksInner';
@@ -217,10 +195,8 @@ import ValidateQuoteResponseVmfAdditionalAttributesInner from './model/ValidateQ
 import DealsApi from './api/DealsApi';
 import FreightEstimateApi from './api/FreightEstimateApi';
 import InvoicesApi from './api/InvoicesApi';
-import InvoicesV6Api from './api/InvoicesV6Api';
 import OrderStatusApi from './api/OrderStatusApi';
 import OrdersApi from './api/OrdersApi';
-import OrdersV6Api from './api/OrdersV6Api';
 import ProductCatalogApi from './api/ProductCatalogApi';
 import QuoteToOrderApi from './api/QuoteToOrderApi';
 import QuotesApi from './api/QuotesApi';
@@ -266,12 +242,6 @@ export {
      * @property {module:ApiClient}
      */
     ApiClient,
-
-    /**
-     * The AddressType model constructor.
-     * @property {module:model/AddressType}
-     */
-    AddressType,
 
     /**
      * The AvailabilityAsyncNotificationRequest model constructor.
@@ -416,42 +386,6 @@ export {
      * @property {module:model/GetResellerV6ValidateQuote500Response}
      */
     GetResellerV6ValidateQuote500Response,
-
-    /**
-     * The InvoiceDetailResponse model constructor.
-     * @property {module:model/InvoiceDetailResponse}
-     */
-    InvoiceDetailResponse,
-
-    /**
-     * The InvoiceDetailResponseServiceresponse model constructor.
-     * @property {module:model/InvoiceDetailResponseServiceresponse}
-     */
-    InvoiceDetailResponseServiceresponse,
-
-    /**
-     * The InvoiceDetailResponseServiceresponseInvoicedetailresponse model constructor.
-     * @property {module:model/InvoiceDetailResponseServiceresponseInvoicedetailresponse}
-     */
-    InvoiceDetailResponseServiceresponseInvoicedetailresponse,
-
-    /**
-     * The InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner model constructor.
-     * @property {module:model/InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner}
-     */
-    InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner,
-
-    /**
-     * The InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner model constructor.
-     * @property {module:model/InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner}
-     */
-    InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner,
-
-    /**
-     * The InvoiceDetailResponseServiceresponseResponsepreamble model constructor.
-     * @property {module:model/InvoiceDetailResponseServiceresponseResponsepreamble}
-     */
-    InvoiceDetailResponseServiceresponseResponsepreamble,
 
     /**
      * The InvoiceDetailsv61Response model constructor.
@@ -820,78 +754,6 @@ export {
     OrderDetailB2BShipToInfo,
 
     /**
-     * The OrderDetailResponse model constructor.
-     * @property {module:model/OrderDetailResponse}
-     */
-    OrderDetailResponse,
-
-    /**
-     * The OrderDetailResponseBillToInfo model constructor.
-     * @property {module:model/OrderDetailResponseBillToInfo}
-     */
-    OrderDetailResponseBillToInfo,
-
-    /**
-     * The OrderDetailResponseEndUserInfo model constructor.
-     * @property {module:model/OrderDetailResponseEndUserInfo}
-     */
-    OrderDetailResponseEndUserInfo,
-
-    /**
-     * The OrderDetailResponseLinesInner model constructor.
-     * @property {module:model/OrderDetailResponseLinesInner}
-     */
-    OrderDetailResponseLinesInner,
-
-    /**
-     * The OrderDetailResponseLinesInnerAdditionalAttributesInner model constructor.
-     * @property {module:model/OrderDetailResponseLinesInnerAdditionalAttributesInner}
-     */
-    OrderDetailResponseLinesInnerAdditionalAttributesInner,
-
-    /**
-     * The OrderDetailResponseLinesInnerLinksInner model constructor.
-     * @property {module:model/OrderDetailResponseLinesInnerLinksInner}
-     */
-    OrderDetailResponseLinesInnerLinksInner,
-
-    /**
-     * The OrderDetailResponseLinesInnerShipmentDetailsInner model constructor.
-     * @property {module:model/OrderDetailResponseLinesInnerShipmentDetailsInner}
-     */
-    OrderDetailResponseLinesInnerShipmentDetailsInner,
-
-    /**
-     * The OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetails model constructor.
-     * @property {module:model/OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetails}
-     */
-    OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetails,
-
-    /**
-     * The OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInner model constructor.
-     * @property {module:model/OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInner}
-     */
-    OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInner,
-
-    /**
-     * The OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInnerSerialNumbersInner model constructor.
-     * @property {module:model/OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInnerSerialNumbersInner}
-     */
-    OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInnerSerialNumbersInner,
-
-    /**
-     * The OrderDetailResponseMiscellaneousChargesInner model constructor.
-     * @property {module:model/OrderDetailResponseMiscellaneousChargesInner}
-     */
-    OrderDetailResponseMiscellaneousChargesInner,
-
-    /**
-     * The OrderDetailResponseShipToInfo model constructor.
-     * @property {module:model/OrderDetailResponseShipToInfo}
-     */
-    OrderDetailResponseShipToInfo,
-
-    /**
      * The OrderModifyRequest model constructor.
      * @property {module:model/OrderModifyRequest}
      */
@@ -1166,24 +1028,6 @@ export {
      * @property {module:model/ProductDetailResponseTechnicalSpecificationsInner}
      */
     ProductDetailResponseTechnicalSpecificationsInner,
-
-    /**
-     * The ProductLineType model constructor.
-     * @property {module:model/ProductLineType}
-     */
-    ProductLineType,
-
-    /**
-     * The ProductLineTypeSerialnumberdetailsInner model constructor.
-     * @property {module:model/ProductLineTypeSerialnumberdetailsInner}
-     */
-    ProductLineTypeSerialnumberdetailsInner,
-
-    /**
-     * The ProductLineTypeTrackingnumberdetailsInner model constructor.
-     * @property {module:model/ProductLineTypeTrackingnumberdetailsInner}
-     */
-    ProductLineTypeTrackingnumberdetailsInner,
 
     /**
      * The ProductSearchResponse model constructor.
@@ -1492,12 +1336,6 @@ export {
     InvoicesApi,
 
     /**
-    * The InvoicesV6Api service constructor.
-    * @property {module:api/InvoicesV6Api}
-    */
-    InvoicesV6Api,
-
-    /**
     * The OrderStatusApi service constructor.
     * @property {module:api/OrderStatusApi}
     */
@@ -1508,12 +1346,6 @@ export {
     * @property {module:api/OrdersApi}
     */
     OrdersApi,
-
-    /**
-    * The OrdersV6Api service constructor.
-    * @property {module:api/OrdersV6Api}
-    */
-    OrdersV6Api,
 
     /**
     * The ProductCatalogApi service constructor.
