@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -54,8 +54,38 @@
       //expect(instance).to.be.a(XiSdkResellers.OrderSearchResponse);
     });
 
-    it('should have the property serviceResponse (base name: "serviceResponse")', function() {
-      // uncomment below and update the code to test the property serviceResponse
+    it('should have the property recordsFound (base name: "recordsFound")', function() {
+      // uncomment below and update the code to test the property recordsFound
+      //var instance = new XiSdkResellers.OrderSearchResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property pageSize (base name: "pageSize")', function() {
+      // uncomment below and update the code to test the property pageSize
+      //var instance = new XiSdkResellers.OrderSearchResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property pageNumber (base name: "pageNumber")', function() {
+      // uncomment below and update the code to test the property pageNumber
+      //var instance = new XiSdkResellers.OrderSearchResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property orders (base name: "orders")', function() {
+      // uncomment below and update the code to test the property orders
+      //var instance = new XiSdkResellers.OrderSearchResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property nextPage (base name: "nextPage")', function() {
+      // uncomment below and update the code to test the property nextPage
+      //var instance = new XiSdkResellers.OrderSearchResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property previousPage (base name: "previousPage")', function() {
+      // uncomment below and update the code to test the property previousPage
       //var instance = new XiSdkResellers.OrderSearchResponse();
       //expect(instance).to.be();
     });

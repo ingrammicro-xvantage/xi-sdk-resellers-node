@@ -231,12 +231,6 @@ Object.defineProperty(exports, "InvoiceDetailResponseServiceresponseResponseprea
     return _InvoiceDetailResponseServiceresponseResponsepreamble["default"];
   }
 });
-Object.defineProperty(exports, "InvoiceDetails", {
-  enumerable: true,
-  get: function get() {
-    return _InvoiceDetails["default"];
-  }
-});
 Object.defineProperty(exports, "InvoiceDetailsv61Response", {
   enumerable: true,
   get: function get() {
@@ -327,18 +321,6 @@ Object.defineProperty(exports, "InvoicesApi", {
     return _InvoicesApi["default"];
   }
 });
-Object.defineProperty(exports, "InvoicesV4Api", {
-  enumerable: true,
-  get: function get() {
-    return _InvoicesV4Api["default"];
-  }
-});
-Object.defineProperty(exports, "InvoicesV5Api", {
-  enumerable: true,
-  get: function get() {
-    return _InvoicesV5Api["default"];
-  }
-});
 Object.defineProperty(exports, "InvoicesV6Api", {
   enumerable: true,
   get: function get() {
@@ -405,22 +387,10 @@ Object.defineProperty(exports, "MultiSKUPriceAndStockResponseServiceresponsePric
     return _MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInnerWarehousedetailsInner["default"];
   }
 });
-Object.defineProperty(exports, "OrderCancelResponse", {
+Object.defineProperty(exports, "MultiSKUPriceAndStockResponseServiceresponseResponsepreamble", {
   enumerable: true,
   get: function get() {
-    return _OrderCancelResponse["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCancelResponseServiceresponse", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCancelResponseServiceresponse["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCancelResponseServiceresponseResponsepreamble", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCancelResponseServiceresponseResponsepreamble["default"];
+    return _MultiSKUPriceAndStockResponseServiceresponseResponsepreamble["default"];
   }
 });
 Object.defineProperty(exports, "OrderCreateRequest", {
@@ -469,54 +439,6 @@ Object.defineProperty(exports, "OrderCreateRequestLinesInnerWarrantyInfoInnerSer
   enumerable: true,
   get: function get() {
     return _OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateRequestOrdercreaterequest", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateRequestOrdercreaterequest["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateRequestOrdercreaterequestOrdercreatedetails", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateRequestOrdercreaterequestOrdercreatedetails["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateRequestOrdercreaterequestOrdercreatedetailsExtendedspecsInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateRequestOrdercreaterequestOrdercreatedetailsExtendedspecsInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerEnduser", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerEnduser["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerProductextendedspecsInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerProductextendedspecsInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateRequestOrdercreaterequestRequestpreamble", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateRequestOrdercreaterequestRequestpreamble["default"];
   }
 });
 Object.defineProperty(exports, "OrderCreateRequestResellerInfo", {
@@ -603,36 +525,6 @@ Object.defineProperty(exports, "OrderCreateResponseOrdersInnerRejectedLineItemsI
     return _OrderCreateResponseOrdersInnerRejectedLineItemsInner["default"];
   }
 });
-Object.defineProperty(exports, "OrderCreateResponseServiceresponse", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateResponseServiceresponse["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateResponseServiceresponseOrdercreateresponseInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateResponseServiceresponseOrdercreateresponseInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateResponseServiceresponseOrdercreateresponseInnerLinesInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateResponseServiceresponseOrdercreateresponseInnerLinesInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateResponseServiceresponseOrdersummary", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateResponseServiceresponseOrdersummary["default"];
-  }
-});
-Object.defineProperty(exports, "OrderCreateResponseServiceresponseOrdersummaryShiptoaddress", {
-  enumerable: true,
-  get: function get() {
-    return _OrderCreateResponseServiceresponseOrdersummaryShiptoaddress["default"];
-  }
-});
 Object.defineProperty(exports, "OrderCreateResponseShipToInfo", {
   enumerable: true,
   get: function get() {
@@ -667,6 +559,18 @@ Object.defineProperty(exports, "OrderDeleteResponse", {
   enumerable: true,
   get: function get() {
     return _OrderDeleteResponse["default"];
+  }
+});
+Object.defineProperty(exports, "OrderDeleteResponseServiceresponse", {
+  enumerable: true,
+  get: function get() {
+    return _OrderDeleteResponseServiceresponse["default"];
+  }
+});
+Object.defineProperty(exports, "OrderDeleteResponseServiceresponseResponsepreamble", {
+  enumerable: true,
+  get: function get() {
+    return _OrderDeleteResponseServiceresponseResponsepreamble["default"];
   }
 });
 Object.defineProperty(exports, "OrderDetailB2B", {
@@ -897,78 +801,6 @@ Object.defineProperty(exports, "OrderDetailResponseMiscellaneousChargesInner", {
     return _OrderDetailResponseMiscellaneousChargesInner["default"];
   }
 });
-Object.defineProperty(exports, "OrderDetailResponseServiceresponse", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponse["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponse", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponse["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponseBilltoaddress", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponseBilltoaddress["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponseLinesInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponseLinesInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerShipmentdetailsInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerShipmentdetailsInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerShipmentdetailsInnerPackagedetails", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerShipmentdetailsInnerPackagedetails["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponseMiscfeelineInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponseMiscfeelineInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderDetailResponseServiceresponseOrderdetailresponseShiptoaddress", {
-  enumerable: true,
-  get: function get() {
-    return _OrderDetailResponseServiceresponseOrderdetailresponseShiptoaddress["default"];
-  }
-});
 Object.defineProperty(exports, "OrderDetailResponseShipToInfo", {
   enumerable: true,
   get: function get() {
@@ -1155,48 +987,6 @@ Object.defineProperty(exports, "OrderSearchResponseOrdersInnerSubOrdersInnerLink
     return _OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner["default"];
   }
 });
-Object.defineProperty(exports, "OrderSearchResponseServiceResponse", {
-  enumerable: true,
-  get: function get() {
-    return _OrderSearchResponseServiceResponse["default"];
-  }
-});
-Object.defineProperty(exports, "OrderSearchResponseServiceResponseOrdersearchresponse", {
-  enumerable: true,
-  get: function get() {
-    return _OrderSearchResponseServiceResponseOrdersearchresponse["default"];
-  }
-});
-Object.defineProperty(exports, "OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks", {
-  enumerable: true,
-  get: function get() {
-    return _OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks["default"];
-  }
-});
-Object.defineProperty(exports, "OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInnerLinksInner", {
-  enumerable: true,
-  get: function get() {
-    return _OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInnerLinksInner["default"];
-  }
-});
-Object.defineProperty(exports, "OrderSearchResponseServiceResponseResponsepreamble", {
-  enumerable: true,
-  get: function get() {
-    return _OrderSearchResponseServiceResponseResponsepreamble["default"];
-  }
-});
 Object.defineProperty(exports, "OrderStatusApi", {
   enumerable: true,
   get: function get() {
@@ -1251,18 +1041,6 @@ Object.defineProperty(exports, "OrdersApi", {
     return _OrdersApi["default"];
   }
 });
-Object.defineProperty(exports, "OrdersV4Api", {
-  enumerable: true,
-  get: function get() {
-    return _OrdersV4Api["default"];
-  }
-});
-Object.defineProperty(exports, "OrdersV5Api", {
-  enumerable: true,
-  get: function get() {
-    return _OrdersV5Api["default"];
-  }
-});
 Object.defineProperty(exports, "OrdersV6Api", {
   enumerable: true,
   get: function get() {
@@ -1315,36 +1093,6 @@ Object.defineProperty(exports, "PriceAndAvailabilityRequestProductsInnerAddition
   enumerable: true,
   get: function get() {
     return _PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner["default"];
-  }
-});
-Object.defineProperty(exports, "PriceAndAvailabilityRequestServicerequest", {
-  enumerable: true,
-  get: function get() {
-    return _PriceAndAvailabilityRequestServicerequest["default"];
-  }
-});
-Object.defineProperty(exports, "PriceAndAvailabilityRequestServicerequestPriceandstockrequest", {
-  enumerable: true,
-  get: function get() {
-    return _PriceAndAvailabilityRequestServicerequestPriceandstockrequest["default"];
-  }
-});
-Object.defineProperty(exports, "PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner", {
-  enumerable: true,
-  get: function get() {
-    return _PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner["default"];
-  }
-});
-Object.defineProperty(exports, "PriceAndAvailabilityRequestServicerequestRequestpreamble", {
-  enumerable: true,
-  get: function get() {
-    return _PriceAndAvailabilityRequestServicerequestRequestpreamble["default"];
-  }
-});
-Object.defineProperty(exports, "PriceAndAvailabilityResponse", {
-  enumerable: true,
-  get: function get() {
-    return _PriceAndAvailabilityResponse["default"];
   }
 });
 Object.defineProperty(exports, "PriceAndAvailabilityResponseInner", {
@@ -1407,46 +1155,10 @@ Object.defineProperty(exports, "PriceAndAvailabilityResponseInnerServiceFeesInne
     return _PriceAndAvailabilityResponseInnerServiceFeesInner["default"];
   }
 });
-Object.defineProperty(exports, "PriceAndAvailabilityResponseServiceresponse", {
-  enumerable: true,
-  get: function get() {
-    return _PriceAndAvailabilityResponseServiceresponse["default"];
-  }
-});
-Object.defineProperty(exports, "PriceAndAvailabilityResponseServiceresponsePriceandstockresponse", {
-  enumerable: true,
-  get: function get() {
-    return _PriceAndAvailabilityResponseServiceresponsePriceandstockresponse["default"];
-  }
-});
-Object.defineProperty(exports, "PriceAndAvailabilityResponseServiceresponsePriceandstockresponseDetailsInner", {
-  enumerable: true,
-  get: function get() {
-    return _PriceAndAvailabilityResponseServiceresponsePriceandstockresponseDetailsInner["default"];
-  }
-});
-Object.defineProperty(exports, "PriceAndAvailabilityResponseServiceresponseResponsepreamble", {
-  enumerable: true,
-  get: function get() {
-    return _PriceAndAvailabilityResponseServiceresponseResponsepreamble["default"];
-  }
-});
 Object.defineProperty(exports, "ProductCatalogApi", {
   enumerable: true,
   get: function get() {
     return _ProductCatalogApi["default"];
-  }
-});
-Object.defineProperty(exports, "ProductCatalogV4Api", {
-  enumerable: true,
-  get: function get() {
-    return _ProductCatalogV4Api["default"];
-  }
-});
-Object.defineProperty(exports, "ProductCatalogV5Api", {
-  enumerable: true,
-  get: function get() {
-    return _ProductCatalogV5Api["default"];
   }
 });
 Object.defineProperty(exports, "ProductDetailResponse", {
@@ -1549,30 +1261,6 @@ Object.defineProperty(exports, "ProductSearchResponseCatalogInnerLinksInner", {
   enumerable: true,
   get: function get() {
     return _ProductSearchResponseCatalogInnerLinksInner["default"];
-  }
-});
-Object.defineProperty(exports, "ProductSearchResponseServiceresponse", {
-  enumerable: true,
-  get: function get() {
-    return _ProductSearchResponseServiceresponse["default"];
-  }
-});
-Object.defineProperty(exports, "ProductSearchResponseServiceresponseProductsearchresponseInner", {
-  enumerable: true,
-  get: function get() {
-    return _ProductSearchResponseServiceresponseProductsearchresponseInner["default"];
-  }
-});
-Object.defineProperty(exports, "ProductSearchResponseServiceresponseProductsearchresponseInnerPartnumbersInner", {
-  enumerable: true,
-  get: function get() {
-    return _ProductSearchResponseServiceresponseProductsearchresponseInnerPartnumbersInner["default"];
-  }
-});
-Object.defineProperty(exports, "ProductSearchResponseServiceresponseResponsepreamble", {
-  enumerable: true,
-  get: function get() {
-    return _ProductSearchResponseServiceresponseResponsepreamble["default"];
   }
 });
 Object.defineProperty(exports, "QuoteDetails", {
@@ -1695,30 +1383,6 @@ Object.defineProperty(exports, "QuoteDetailsResponseResellerInfo", {
     return _QuoteDetailsResponseResellerInfo["default"];
   }
 });
-Object.defineProperty(exports, "QuoteListRequest", {
-  enumerable: true,
-  get: function get() {
-    return _QuoteListRequest["default"];
-  }
-});
-Object.defineProperty(exports, "QuoteListRequestQuoteSearchRequest", {
-  enumerable: true,
-  get: function get() {
-    return _QuoteListRequestQuoteSearchRequest["default"];
-  }
-});
-Object.defineProperty(exports, "QuoteListRequestQuoteSearchRequestRequestPreamble", {
-  enumerable: true,
-  get: function get() {
-    return _QuoteListRequestQuoteSearchRequestRequestPreamble["default"];
-  }
-});
-Object.defineProperty(exports, "QuoteListRequestQuoteSearchRequestRetrieveQuoteRequest", {
-  enumerable: true,
-  get: function get() {
-    return _QuoteListRequestQuoteSearchRequestRetrieveQuoteRequest["default"];
-  }
-});
 Object.defineProperty(exports, "QuoteListResponse", {
   enumerable: true,
   get: function get() {
@@ -1819,18 +1483,6 @@ Object.defineProperty(exports, "QuotesApi", {
   enumerable: true,
   get: function get() {
     return _QuotesApi["default"];
-  }
-});
-Object.defineProperty(exports, "QuotesV4Api", {
-  enumerable: true,
-  get: function get() {
-    return _QuotesV4Api["default"];
-  }
-});
-Object.defineProperty(exports, "QuotesV5Api", {
-  enumerable: true,
-  get: function get() {
-    return _QuotesV5Api["default"];
   }
 });
 Object.defineProperty(exports, "RenewalsApi", {
@@ -2031,12 +1683,6 @@ Object.defineProperty(exports, "ValidateQuoteResponseVmfAdditionalAttributesInne
     return _ValidateQuoteResponseVmfAdditionalAttributesInner["default"];
   }
 });
-Object.defineProperty(exports, "WarehouseListType", {
-  enumerable: true,
-  get: function get() {
-    return _WarehouseListType["default"];
-  }
-});
 var _ApiClient = _interopRequireDefault(require("./ApiClient"));
 var _AddressType = _interopRequireDefault(require("./model/AddressType"));
 var _AvailabilityAsyncNotificationRequest = _interopRequireDefault(require("./model/AvailabilityAsyncNotificationRequest"));
@@ -2073,7 +1719,6 @@ var _InvoiceDetailResponseServiceresponseInvoicedetailresponse = _interopRequire
 var _InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner = _interopRequireDefault(require("./model/InvoiceDetailResponseServiceresponseInvoicedetailresponseExtendedspecsInner"));
 var _InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner = _interopRequireDefault(require("./model/InvoiceDetailResponseServiceresponseInvoicedetailresponseMiscfeelineInner"));
 var _InvoiceDetailResponseServiceresponseResponsepreamble = _interopRequireDefault(require("./model/InvoiceDetailResponseServiceresponseResponsepreamble"));
-var _InvoiceDetails = _interopRequireDefault(require("./model/InvoiceDetails"));
 var _InvoiceDetailsv61Response = _interopRequireDefault(require("./model/InvoiceDetailsv61Response"));
 var _InvoiceDetailsv61ResponseBillToInfo = _interopRequireDefault(require("./model/InvoiceDetailsv61ResponseBillToInfo"));
 var _InvoiceDetailsv61ResponseFxRateInfo = _interopRequireDefault(require("./model/InvoiceDetailsv61ResponseFxRateInfo"));
@@ -2098,9 +1743,7 @@ var _MultiSKUPriceAndStockResponseServiceresponse = _interopRequireDefault(requi
 var _MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse = _interopRequireDefault(require("./model/MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse"));
 var _MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInner = _interopRequireDefault(require("./model/MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInner"));
 var _MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInnerWarehousedetailsInner = _interopRequireDefault(require("./model/MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponseDetailsInnerWarehousedetailsInner"));
-var _OrderCancelResponse = _interopRequireDefault(require("./model/OrderCancelResponse"));
-var _OrderCancelResponseServiceresponse = _interopRequireDefault(require("./model/OrderCancelResponseServiceresponse"));
-var _OrderCancelResponseServiceresponseResponsepreamble = _interopRequireDefault(require("./model/OrderCancelResponseServiceresponseResponsepreamble"));
+var _MultiSKUPriceAndStockResponseServiceresponseResponsepreamble = _interopRequireDefault(require("./model/MultiSKUPriceAndStockResponseServiceresponseResponsepreamble"));
 var _OrderCreateRequest = _interopRequireDefault(require("./model/OrderCreateRequest"));
 var _OrderCreateRequestAdditionalAttributesInner = _interopRequireDefault(require("./model/OrderCreateRequestAdditionalAttributesInner"));
 var _OrderCreateRequestEndUserInfo = _interopRequireDefault(require("./model/OrderCreateRequestEndUserInfo"));
@@ -2109,14 +1752,6 @@ var _OrderCreateRequestLinesInnerAdditionalAttributesInner = _interopRequireDefa
 var _OrderCreateRequestLinesInnerEndUserInfoInner = _interopRequireDefault(require("./model/OrderCreateRequestLinesInnerEndUserInfoInner"));
 var _OrderCreateRequestLinesInnerWarrantyInfoInner = _interopRequireDefault(require("./model/OrderCreateRequestLinesInnerWarrantyInfoInner"));
 var _OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner = _interopRequireDefault(require("./model/OrderCreateRequestLinesInnerWarrantyInfoInnerSerialInfoInner"));
-var _OrderCreateRequestOrdercreaterequest = _interopRequireDefault(require("./model/OrderCreateRequestOrdercreaterequest"));
-var _OrderCreateRequestOrdercreaterequestOrdercreatedetails = _interopRequireDefault(require("./model/OrderCreateRequestOrdercreaterequestOrdercreatedetails"));
-var _OrderCreateRequestOrdercreaterequestOrdercreatedetailsExtendedspecsInner = _interopRequireDefault(require("./model/OrderCreateRequestOrdercreaterequestOrdercreatedetailsExtendedspecsInner"));
-var _OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInner = _interopRequireDefault(require("./model/OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInner"));
-var _OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerEnduser = _interopRequireDefault(require("./model/OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerEnduser"));
-var _OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerProductextendedspecsInner = _interopRequireDefault(require("./model/OrderCreateRequestOrdercreaterequestOrdercreatedetailsLinesInnerProductextendedspecsInner"));
-var _OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress = _interopRequireDefault(require("./model/OrderCreateRequestOrdercreaterequestOrdercreatedetailsShiptoaddress"));
-var _OrderCreateRequestOrdercreaterequestRequestpreamble = _interopRequireDefault(require("./model/OrderCreateRequestOrdercreaterequestRequestpreamble"));
 var _OrderCreateRequestResellerInfo = _interopRequireDefault(require("./model/OrderCreateRequestResellerInfo"));
 var _OrderCreateRequestShipToInfo = _interopRequireDefault(require("./model/OrderCreateRequestShipToInfo"));
 var _OrderCreateRequestShipmentDetails = _interopRequireDefault(require("./model/OrderCreateRequestShipmentDetails"));
@@ -2131,17 +1766,14 @@ var _OrderCreateResponseOrdersInnerLinesInnerShipmentDetailsInner = _interopRequ
 var _OrderCreateResponseOrdersInnerLinksInner = _interopRequireDefault(require("./model/OrderCreateResponseOrdersInnerLinksInner"));
 var _OrderCreateResponseOrdersInnerMiscellaneousChargesInner = _interopRequireDefault(require("./model/OrderCreateResponseOrdersInnerMiscellaneousChargesInner"));
 var _OrderCreateResponseOrdersInnerRejectedLineItemsInner = _interopRequireDefault(require("./model/OrderCreateResponseOrdersInnerRejectedLineItemsInner"));
-var _OrderCreateResponseServiceresponse = _interopRequireDefault(require("./model/OrderCreateResponseServiceresponse"));
-var _OrderCreateResponseServiceresponseOrdercreateresponseInner = _interopRequireDefault(require("./model/OrderCreateResponseServiceresponseOrdercreateresponseInner"));
-var _OrderCreateResponseServiceresponseOrdercreateresponseInnerLinesInner = _interopRequireDefault(require("./model/OrderCreateResponseServiceresponseOrdercreateresponseInnerLinesInner"));
-var _OrderCreateResponseServiceresponseOrdersummary = _interopRequireDefault(require("./model/OrderCreateResponseServiceresponseOrdersummary"));
-var _OrderCreateResponseServiceresponseOrdersummaryShiptoaddress = _interopRequireDefault(require("./model/OrderCreateResponseServiceresponseOrdersummaryShiptoaddress"));
 var _OrderCreateResponseShipToInfo = _interopRequireDefault(require("./model/OrderCreateResponseShipToInfo"));
 var _OrderDeleteRequest = _interopRequireDefault(require("./model/OrderDeleteRequest"));
 var _OrderDeleteRequestServicerequest = _interopRequireDefault(require("./model/OrderDeleteRequestServicerequest"));
 var _OrderDeleteRequestServicerequestOrderDeleteRequestDetails = _interopRequireDefault(require("./model/OrderDeleteRequestServicerequestOrderDeleteRequestDetails"));
 var _OrderDeleteRequestServicerequestRequestpreamble = _interopRequireDefault(require("./model/OrderDeleteRequestServicerequestRequestpreamble"));
 var _OrderDeleteResponse = _interopRequireDefault(require("./model/OrderDeleteResponse"));
+var _OrderDeleteResponseServiceresponse = _interopRequireDefault(require("./model/OrderDeleteResponseServiceresponse"));
+var _OrderDeleteResponseServiceresponseResponsepreamble = _interopRequireDefault(require("./model/OrderDeleteResponseServiceresponseResponsepreamble"));
 var _OrderDetailB2B = _interopRequireDefault(require("./model/OrderDetailB2B"));
 var _OrderDetailB2BAdditionalAttributesInner = _interopRequireDefault(require("./model/OrderDetailB2BAdditionalAttributesInner"));
 var _OrderDetailB2BBillToInfo = _interopRequireDefault(require("./model/OrderDetailB2BBillToInfo"));
@@ -2180,18 +1812,6 @@ var _OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetails = _interopR
 var _OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInner = _interopRequireDefault(require("./model/OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInner"));
 var _OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInnerSerialNumbersInner = _interopRequireDefault(require("./model/OrderDetailResponseLinesInnerShipmentDetailsInnerCarrierDetailsTrackingDetailsInnerSerialNumbersInner"));
 var _OrderDetailResponseMiscellaneousChargesInner = _interopRequireDefault(require("./model/OrderDetailResponseMiscellaneousChargesInner"));
-var _OrderDetailResponseServiceresponse = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponse"));
-var _OrderDetailResponseServiceresponseOrderdetailresponse = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponse"));
-var _OrderDetailResponseServiceresponseOrderdetailresponseBilltoaddress = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponseBilltoaddress"));
-var _OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponseCommentlinesInner"));
-var _OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponseEnduserinfo"));
-var _OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponseExtendedspecsInner"));
-var _OrderDetailResponseServiceresponseOrderdetailresponseLinesInner = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponseLinesInner"));
-var _OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerSerialnumberdetailsInner"));
-var _OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerShipmentdetailsInner = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerShipmentdetailsInner"));
-var _OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerShipmentdetailsInnerPackagedetails = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponseLinesInnerShipmentdetailsInnerPackagedetails"));
-var _OrderDetailResponseServiceresponseOrderdetailresponseMiscfeelineInner = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponseMiscfeelineInner"));
-var _OrderDetailResponseServiceresponseOrderdetailresponseShiptoaddress = _interopRequireDefault(require("./model/OrderDetailResponseServiceresponseOrderdetailresponseShiptoaddress"));
 var _OrderDetailResponseShipToInfo = _interopRequireDefault(require("./model/OrderDetailResponseShipToInfo"));
 var _OrderModifyRequest = _interopRequireDefault(require("./model/OrderModifyRequest"));
 var _OrderModifyRequestAdditionalAttributesInner = _interopRequireDefault(require("./model/OrderModifyRequestAdditionalAttributesInner"));
@@ -2223,13 +1843,6 @@ var _OrderSearchResponseOrdersInner = _interopRequireDefault(require("./model/Or
 var _OrderSearchResponseOrdersInnerLinks = _interopRequireDefault(require("./model/OrderSearchResponseOrdersInnerLinks"));
 var _OrderSearchResponseOrdersInnerSubOrdersInner = _interopRequireDefault(require("./model/OrderSearchResponseOrdersInnerSubOrdersInner"));
 var _OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner = _interopRequireDefault(require("./model/OrderSearchResponseOrdersInnerSubOrdersInnerLinksInner"));
-var _OrderSearchResponseServiceResponse = _interopRequireDefault(require("./model/OrderSearchResponseServiceResponse"));
-var _OrderSearchResponseServiceResponseOrdersearchresponse = _interopRequireDefault(require("./model/OrderSearchResponseServiceResponseOrdersearchresponse"));
-var _OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner = _interopRequireDefault(require("./model/OrderSearchResponseServiceResponseOrdersearchresponseOrdersInner"));
-var _OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks = _interopRequireDefault(require("./model/OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerLinks"));
-var _OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner = _interopRequireDefault(require("./model/OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInner"));
-var _OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInnerLinksInner = _interopRequireDefault(require("./model/OrderSearchResponseServiceResponseOrdersearchresponseOrdersInnerSubordersInnerLinksInner"));
-var _OrderSearchResponseServiceResponseResponsepreamble = _interopRequireDefault(require("./model/OrderSearchResponseServiceResponseResponsepreamble"));
 var _OrderStatusAsyncNotificationRequest = _interopRequireDefault(require("./model/OrderStatusAsyncNotificationRequest"));
 var _OrderStatusAsyncNotificationRequestResourceInner = _interopRequireDefault(require("./model/OrderStatusAsyncNotificationRequestResourceInner"));
 var _OrderStatusAsyncNotificationRequestResourceInnerLinesInner = _interopRequireDefault(require("./model/OrderStatusAsyncNotificationRequestResourceInnerLinesInner"));
@@ -2245,11 +1858,6 @@ var _PriceAndAvailabilityRequestAdditionalAttributesInner = _interopRequireDefau
 var _PriceAndAvailabilityRequestAvailabilityByWarehouseInner = _interopRequireDefault(require("./model/PriceAndAvailabilityRequestAvailabilityByWarehouseInner"));
 var _PriceAndAvailabilityRequestProductsInner = _interopRequireDefault(require("./model/PriceAndAvailabilityRequestProductsInner"));
 var _PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner = _interopRequireDefault(require("./model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner"));
-var _PriceAndAvailabilityRequestServicerequest = _interopRequireDefault(require("./model/PriceAndAvailabilityRequestServicerequest"));
-var _PriceAndAvailabilityRequestServicerequestPriceandstockrequest = _interopRequireDefault(require("./model/PriceAndAvailabilityRequestServicerequestPriceandstockrequest"));
-var _PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner = _interopRequireDefault(require("./model/PriceAndAvailabilityRequestServicerequestPriceandstockrequestItemInner"));
-var _PriceAndAvailabilityRequestServicerequestRequestpreamble = _interopRequireDefault(require("./model/PriceAndAvailabilityRequestServicerequestRequestpreamble"));
-var _PriceAndAvailabilityResponse = _interopRequireDefault(require("./model/PriceAndAvailabilityResponse"));
 var _PriceAndAvailabilityResponseInner = _interopRequireDefault(require("./model/PriceAndAvailabilityResponseInner"));
 var _PriceAndAvailabilityResponseInnerAvailability = _interopRequireDefault(require("./model/PriceAndAvailabilityResponseInnerAvailability"));
 var _PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner = _interopRequireDefault(require("./model/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner"));
@@ -2260,10 +1868,6 @@ var _PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner = _inter
 var _PriceAndAvailabilityResponseInnerPricing = _interopRequireDefault(require("./model/PriceAndAvailabilityResponseInnerPricing"));
 var _PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner = _interopRequireDefault(require("./model/PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner"));
 var _PriceAndAvailabilityResponseInnerServiceFeesInner = _interopRequireDefault(require("./model/PriceAndAvailabilityResponseInnerServiceFeesInner"));
-var _PriceAndAvailabilityResponseServiceresponse = _interopRequireDefault(require("./model/PriceAndAvailabilityResponseServiceresponse"));
-var _PriceAndAvailabilityResponseServiceresponsePriceandstockresponse = _interopRequireDefault(require("./model/PriceAndAvailabilityResponseServiceresponsePriceandstockresponse"));
-var _PriceAndAvailabilityResponseServiceresponsePriceandstockresponseDetailsInner = _interopRequireDefault(require("./model/PriceAndAvailabilityResponseServiceresponsePriceandstockresponseDetailsInner"));
-var _PriceAndAvailabilityResponseServiceresponseResponsepreamble = _interopRequireDefault(require("./model/PriceAndAvailabilityResponseServiceresponseResponsepreamble"));
 var _ProductDetailResponse = _interopRequireDefault(require("./model/ProductDetailResponse"));
 var _ProductDetailResponseAdditionalInformation = _interopRequireDefault(require("./model/ProductDetailResponseAdditionalInformation"));
 var _ProductDetailResponseAdditionalInformationProductWeightInner = _interopRequireDefault(require("./model/ProductDetailResponseAdditionalInformationProductWeightInner"));
@@ -2281,10 +1885,6 @@ var _ProductSearchRequestServicerequestRequestpreamble = _interopRequireDefault(
 var _ProductSearchResponse = _interopRequireDefault(require("./model/ProductSearchResponse"));
 var _ProductSearchResponseCatalogInner = _interopRequireDefault(require("./model/ProductSearchResponseCatalogInner"));
 var _ProductSearchResponseCatalogInnerLinksInner = _interopRequireDefault(require("./model/ProductSearchResponseCatalogInnerLinksInner"));
-var _ProductSearchResponseServiceresponse = _interopRequireDefault(require("./model/ProductSearchResponseServiceresponse"));
-var _ProductSearchResponseServiceresponseProductsearchresponseInner = _interopRequireDefault(require("./model/ProductSearchResponseServiceresponseProductsearchresponseInner"));
-var _ProductSearchResponseServiceresponseProductsearchresponseInnerPartnumbersInner = _interopRequireDefault(require("./model/ProductSearchResponseServiceresponseProductsearchresponseInnerPartnumbersInner"));
-var _ProductSearchResponseServiceresponseResponsepreamble = _interopRequireDefault(require("./model/ProductSearchResponseServiceresponseResponsepreamble"));
 var _QuoteDetails = _interopRequireDefault(require("./model/QuoteDetails"));
 var _QuoteDetailsQuoteDetailResponse = _interopRequireDefault(require("./model/QuoteDetailsQuoteDetailResponse"));
 var _QuoteDetailsQuoteDetailResponseResponsePreamble = _interopRequireDefault(require("./model/QuoteDetailsQuoteDetailResponseResponsePreamble"));
@@ -2305,10 +1905,6 @@ var _QuoteDetailsResponseProductsInnerPrice = _interopRequireDefault(require("./
 var _QuoteDetailsResponseQuoteDetailResponse = _interopRequireDefault(require("./model/QuoteDetailsResponseQuoteDetailResponse"));
 var _QuoteDetailsResponseQuoteDetailResponseRetrieveQuoteResponse = _interopRequireDefault(require("./model/QuoteDetailsResponseQuoteDetailResponseRetrieveQuoteResponse"));
 var _QuoteDetailsResponseResellerInfo = _interopRequireDefault(require("./model/QuoteDetailsResponseResellerInfo"));
-var _QuoteListRequest = _interopRequireDefault(require("./model/QuoteListRequest"));
-var _QuoteListRequestQuoteSearchRequest = _interopRequireDefault(require("./model/QuoteListRequestQuoteSearchRequest"));
-var _QuoteListRequestQuoteSearchRequestRequestPreamble = _interopRequireDefault(require("./model/QuoteListRequestQuoteSearchRequestRequestPreamble"));
-var _QuoteListRequestQuoteSearchRequestRetrieveQuoteRequest = _interopRequireDefault(require("./model/QuoteListRequestQuoteSearchRequestRetrieveQuoteRequest"));
 var _QuoteListResponse = _interopRequireDefault(require("./model/QuoteListResponse"));
 var _QuoteListResponseQuoteSearchResponse = _interopRequireDefault(require("./model/QuoteListResponseQuoteSearchResponse"));
 var _QuoteListResponseQuoteSearchResponseQuoteListInner = _interopRequireDefault(require("./model/QuoteListResponseQuoteSearchResponseQuoteListInner"));
@@ -2354,25 +1950,16 @@ var _ValidateQuoteResponse = _interopRequireDefault(require("./model/ValidateQuo
 var _ValidateQuoteResponseLinesInner = _interopRequireDefault(require("./model/ValidateQuoteResponseLinesInner"));
 var _ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner = _interopRequireDefault(require("./model/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner"));
 var _ValidateQuoteResponseVmfAdditionalAttributesInner = _interopRequireDefault(require("./model/ValidateQuoteResponseVmfAdditionalAttributesInner"));
-var _WarehouseListType = _interopRequireDefault(require("./model/WarehouseListType"));
 var _DealsApi = _interopRequireDefault(require("./api/DealsApi"));
 var _FreightEstimateApi = _interopRequireDefault(require("./api/FreightEstimateApi"));
 var _InvoicesApi = _interopRequireDefault(require("./api/InvoicesApi"));
-var _InvoicesV4Api = _interopRequireDefault(require("./api/InvoicesV4Api"));
-var _InvoicesV5Api = _interopRequireDefault(require("./api/InvoicesV5Api"));
 var _InvoicesV6Api = _interopRequireDefault(require("./api/InvoicesV6Api"));
 var _OrderStatusApi = _interopRequireDefault(require("./api/OrderStatusApi"));
 var _OrdersApi = _interopRequireDefault(require("./api/OrdersApi"));
-var _OrdersV4Api = _interopRequireDefault(require("./api/OrdersV4Api"));
-var _OrdersV5Api = _interopRequireDefault(require("./api/OrdersV5Api"));
 var _OrdersV6Api = _interopRequireDefault(require("./api/OrdersV6Api"));
 var _ProductCatalogApi = _interopRequireDefault(require("./api/ProductCatalogApi"));
-var _ProductCatalogV4Api = _interopRequireDefault(require("./api/ProductCatalogV4Api"));
-var _ProductCatalogV5Api = _interopRequireDefault(require("./api/ProductCatalogV5Api"));
 var _QuoteToOrderApi = _interopRequireDefault(require("./api/QuoteToOrderApi"));
 var _QuotesApi = _interopRequireDefault(require("./api/QuotesApi"));
-var _QuotesV4Api = _interopRequireDefault(require("./api/QuotesV4Api"));
-var _QuotesV5Api = _interopRequireDefault(require("./api/QuotesV5Api"));
 var _RenewalsApi = _interopRequireDefault(require("./api/RenewalsApi"));
 var _ReturnsApi = _interopRequireDefault(require("./api/ReturnsApi"));
 var _StockUpdateApi = _interopRequireDefault(require("./api/StockUpdateApi"));

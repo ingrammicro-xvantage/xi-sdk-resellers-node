@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports["default"] = void 0;
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 var _MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse = _interopRequireDefault(require("./MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse"));
-var _PriceAndAvailabilityResponseServiceresponseResponsepreamble = _interopRequireDefault(require("./PriceAndAvailabilityResponseServiceresponseResponsepreamble"));
+var _MultiSKUPriceAndStockResponseServiceresponseResponsepreamble = _interopRequireDefault(require("./MultiSKUPriceAndStockResponseServiceresponseResponsepreamble"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -14,7 +14,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); } /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -62,7 +62,7 @@ var MultiSKUPriceAndStockResponseServiceresponse = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new MultiSKUPriceAndStockResponseServiceresponse();
         if (data.hasOwnProperty('responsepreamble')) {
-          obj['responsepreamble'] = _PriceAndAvailabilityResponseServiceresponseResponsepreamble["default"].constructFromObject(data['responsepreamble']);
+          obj['responsepreamble'] = _MultiSKUPriceAndStockResponseServiceresponseResponsepreamble["default"].constructFromObject(data['responsepreamble']);
         }
         if (data.hasOwnProperty('priceandstockresponse')) {
           obj['priceandstockresponse'] = _MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse["default"].constructFromObject(data['priceandstockresponse']);
@@ -82,7 +82,7 @@ var MultiSKUPriceAndStockResponseServiceresponse = /*#__PURE__*/function () {
       // validate the optional field `responsepreamble`
       if (data['responsepreamble']) {
         // data not null
-        _PriceAndAvailabilityResponseServiceresponseResponsepreamble["default"].validateJSON(data['responsepreamble']);
+        _MultiSKUPriceAndStockResponseServiceresponseResponsepreamble["default"].validateJSON(data['responsepreamble']);
       }
       // validate the optional field `priceandstockresponse`
       if (data['priceandstockresponse']) {
@@ -95,7 +95,7 @@ var MultiSKUPriceAndStockResponseServiceresponse = /*#__PURE__*/function () {
   return MultiSKUPriceAndStockResponseServiceresponse;
 }();
 /**
- * @member {module:model/PriceAndAvailabilityResponseServiceresponseResponsepreamble} responsepreamble
+ * @member {module:model/MultiSKUPriceAndStockResponseServiceresponseResponsepreamble} responsepreamble
  */
 MultiSKUPriceAndStockResponseServiceresponse.prototype['responsepreamble'] = undefined;
 

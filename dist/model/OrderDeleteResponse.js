@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
-var _OrderCancelResponseServiceresponse = _interopRequireDefault(require("./OrderCancelResponseServiceresponse"));
+var _OrderDeleteResponseServiceresponse = _interopRequireDefault(require("./OrderDeleteResponseServiceresponse"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -13,7 +13,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); } /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -62,7 +62,7 @@ var OrderDeleteResponse = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new OrderDeleteResponse();
         if (data.hasOwnProperty('serviceresponse')) {
-          obj['serviceresponse'] = _OrderCancelResponseServiceresponse["default"].constructFromObject(data['serviceresponse']);
+          obj['serviceresponse'] = _OrderDeleteResponseServiceresponse["default"].constructFromObject(data['serviceresponse']);
         }
       }
       return obj;
@@ -79,7 +79,7 @@ var OrderDeleteResponse = /*#__PURE__*/function () {
       // validate the optional field `serviceresponse`
       if (data['serviceresponse']) {
         // data not null
-        _OrderCancelResponseServiceresponse["default"].validateJSON(data['serviceresponse']);
+        _OrderDeleteResponseServiceresponse["default"].validateJSON(data['serviceresponse']);
       }
       return true;
     }
@@ -87,7 +87,7 @@ var OrderDeleteResponse = /*#__PURE__*/function () {
   return OrderDeleteResponse;
 }();
 /**
- * @member {module:model/OrderCancelResponseServiceresponse} serviceresponse
+ * @member {module:model/OrderDeleteResponseServiceresponse} serviceresponse
  */
 OrderDeleteResponse.prototype['serviceresponse'] = undefined;
 var _default = exports["default"] = OrderDeleteResponse;

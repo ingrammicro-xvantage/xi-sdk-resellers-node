@@ -5,15 +5,20 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
-var _PriceAndAvailabilityRequestServicerequest = _interopRequireDefault(require("./PriceAndAvailabilityRequestServicerequest"));
+var _PriceAndAvailabilityRequestAdditionalAttributesInner = _interopRequireDefault(require("./PriceAndAvailabilityRequestAdditionalAttributesInner"));
+var _PriceAndAvailabilityRequestAvailabilityByWarehouseInner = _interopRequireDefault(require("./PriceAndAvailabilityRequestAvailabilityByWarehouseInner"));
+var _PriceAndAvailabilityRequestProductsInner = _interopRequireDefault(require("./PriceAndAvailabilityRequestProductsInner"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); } /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -32,7 +37,6 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 var PriceAndAvailabilityRequest = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PriceAndAvailabilityRequest</code>.
-   * Request object model for the multi sku price and stock API endpoint
    * @alias module:model/PriceAndAvailabilityRequest
    */
   function PriceAndAvailabilityRequest() {
@@ -61,8 +65,23 @@ var PriceAndAvailabilityRequest = /*#__PURE__*/function () {
     value: function constructFromObject(data, obj) {
       if (data) {
         obj = obj || new PriceAndAvailabilityRequest();
-        if (data.hasOwnProperty('servicerequest')) {
-          obj['servicerequest'] = _PriceAndAvailabilityRequestServicerequest["default"].constructFromObject(data['servicerequest']);
+        if (data.hasOwnProperty('showAvailableDiscounts')) {
+          obj['showAvailableDiscounts'] = _ApiClient["default"].convertToType(data['showAvailableDiscounts'], 'Boolean');
+        }
+        if (data.hasOwnProperty('showReserveInventoryDetails')) {
+          obj['showReserveInventoryDetails'] = _ApiClient["default"].convertToType(data['showReserveInventoryDetails'], 'Boolean');
+        }
+        if (data.hasOwnProperty('specialBidNumber')) {
+          obj['specialBidNumber'] = _ApiClient["default"].convertToType(data['specialBidNumber'], 'String');
+        }
+        if (data.hasOwnProperty('availabilityByWarehouse')) {
+          obj['availabilityByWarehouse'] = _ApiClient["default"].convertToType(data['availabilityByWarehouse'], [_PriceAndAvailabilityRequestAvailabilityByWarehouseInner["default"]]);
+        }
+        if (data.hasOwnProperty('products')) {
+          obj['products'] = _ApiClient["default"].convertToType(data['products'], [_PriceAndAvailabilityRequestProductsInner["default"]]);
+        }
+        if (data.hasOwnProperty('additionalAttributes')) {
+          obj['additionalAttributes'] = _ApiClient["default"].convertToType(data['additionalAttributes'], [_PriceAndAvailabilityRequestAdditionalAttributesInner["default"]]);
         }
       }
       return obj;
@@ -76,10 +95,72 @@ var PriceAndAvailabilityRequest = /*#__PURE__*/function () {
   }, {
     key: "validateJSON",
     value: function validateJSON(data) {
-      // validate the optional field `servicerequest`
-      if (data['servicerequest']) {
+      // ensure the json data is a string
+      if (data['specialBidNumber'] && !(typeof data['specialBidNumber'] === 'string' || data['specialBidNumber'] instanceof String)) {
+        throw new Error("Expected the field `specialBidNumber` to be a primitive type in the JSON string but got " + data['specialBidNumber']);
+      }
+      if (data['availabilityByWarehouse']) {
         // data not null
-        _PriceAndAvailabilityRequestServicerequest["default"].validateJSON(data['servicerequest']);
+        // ensure the json data is an array
+        if (!Array.isArray(data['availabilityByWarehouse'])) {
+          throw new Error("Expected the field `availabilityByWarehouse` to be an array in the JSON data but got " + data['availabilityByWarehouse']);
+        }
+        // validate the optional field `availabilityByWarehouse` (array)
+        var _iterator = _createForOfIteratorHelper(data['availabilityByWarehouse']),
+          _step;
+        try {
+          for (_iterator.s(); !(_step = _iterator.n()).done;) {
+            var item = _step.value;
+            _PriceAndAvailabilityRequestAvailabilityByWarehouseInner["default"].validateJSON(item);
+          }
+        } catch (err) {
+          _iterator.e(err);
+        } finally {
+          _iterator.f();
+        }
+        ;
+      }
+      if (data['products']) {
+        // data not null
+        // ensure the json data is an array
+        if (!Array.isArray(data['products'])) {
+          throw new Error("Expected the field `products` to be an array in the JSON data but got " + data['products']);
+        }
+        // validate the optional field `products` (array)
+        var _iterator2 = _createForOfIteratorHelper(data['products']),
+          _step2;
+        try {
+          for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+            var _item = _step2.value;
+            _PriceAndAvailabilityRequestProductsInner["default"].validateJSON(_item);
+          }
+        } catch (err) {
+          _iterator2.e(err);
+        } finally {
+          _iterator2.f();
+        }
+        ;
+      }
+      if (data['additionalAttributes']) {
+        // data not null
+        // ensure the json data is an array
+        if (!Array.isArray(data['additionalAttributes'])) {
+          throw new Error("Expected the field `additionalAttributes` to be an array in the JSON data but got " + data['additionalAttributes']);
+        }
+        // validate the optional field `additionalAttributes` (array)
+        var _iterator3 = _createForOfIteratorHelper(data['additionalAttributes']),
+          _step3;
+        try {
+          for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+            var _item2 = _step3.value;
+            _PriceAndAvailabilityRequestAdditionalAttributesInner["default"].validateJSON(_item2);
+          }
+        } catch (err) {
+          _iterator3.e(err);
+        } finally {
+          _iterator3.f();
+        }
+        ;
       }
       return true;
     }
@@ -87,7 +168,35 @@ var PriceAndAvailabilityRequest = /*#__PURE__*/function () {
   return PriceAndAvailabilityRequest;
 }();
 /**
- * @member {module:model/PriceAndAvailabilityRequestServicerequest} servicerequest
+ * Boolean value that will display Discount details in the response when true.
+ * @member {Boolean} showAvailableDiscounts
  */
-PriceAndAvailabilityRequest.prototype['servicerequest'] = undefined;
+PriceAndAvailabilityRequest.prototype['showAvailableDiscounts'] = undefined;
+
+/**
+ * Boolean value that will display reserve inventory details in the response when true.
+ * @member {Boolean} showReserveInventoryDetails
+ */
+PriceAndAvailabilityRequest.prototype['showReserveInventoryDetails'] = undefined;
+
+/**
+ * Pre-approved special pricing/bid number provided to the reseller by the vendor for special pricing and discounts. Used to track the bid number where different line items have different bid numbers.
+ * @member {String} specialBidNumber
+ */
+PriceAndAvailabilityRequest.prototype['specialBidNumber'] = undefined;
+
+/**
+ * @member {Array.<module:model/PriceAndAvailabilityRequestAvailabilityByWarehouseInner>} availabilityByWarehouse
+ */
+PriceAndAvailabilityRequest.prototype['availabilityByWarehouse'] = undefined;
+
+/**
+ * @member {Array.<module:model/PriceAndAvailabilityRequestProductsInner>} products
+ */
+PriceAndAvailabilityRequest.prototype['products'] = undefined;
+
+/**
+ * @member {Array.<module:model/PriceAndAvailabilityRequestAdditionalAttributesInner>} additionalAttributes
+ */
+PriceAndAvailabilityRequest.prototype['additionalAttributes'] = undefined;
 var _default = exports["default"] = PriceAndAvailabilityRequest;

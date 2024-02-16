@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,7 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import OrderDetailResponseServiceresponse from './OrderDetailResponseServiceresponse';
+import OrderDetailResponseBillToInfo from './OrderDetailResponseBillToInfo';
+import OrderDetailResponseEndUserInfo from './OrderDetailResponseEndUserInfo';
+import OrderDetailResponseLinesInner from './OrderDetailResponseLinesInner';
+import OrderDetailResponseLinesInnerAdditionalAttributesInner from './OrderDetailResponseLinesInnerAdditionalAttributesInner';
+import OrderDetailResponseMiscellaneousChargesInner from './OrderDetailResponseMiscellaneousChargesInner';
+import OrderDetailResponseShipToInfo from './OrderDetailResponseShipToInfo';
 
 /**
  * The OrderDetailResponse model module.
@@ -22,7 +27,6 @@ import OrderDetailResponseServiceresponse from './OrderDetailResponseServiceresp
 class OrderDetailResponse {
     /**
      * Constructs a new <code>OrderDetailResponse</code>.
-     * Response schema for order details endpoint
      * @alias module:model/OrderDetailResponse
      */
     constructor() { 
@@ -49,8 +53,68 @@ class OrderDetailResponse {
         if (data) {
             obj = obj || new OrderDetailResponse();
 
-            if (data.hasOwnProperty('serviceresponse')) {
-                obj['serviceresponse'] = OrderDetailResponseServiceresponse.constructFromObject(data['serviceresponse']);
+            if (data.hasOwnProperty('ingramOrderNumber')) {
+                obj['ingramOrderNumber'] = ApiClient.convertToType(data['ingramOrderNumber'], 'String');
+            }
+            if (data.hasOwnProperty('ingramOrderDate')) {
+                obj['ingramOrderDate'] = ApiClient.convertToType(data['ingramOrderDate'], 'String');
+            }
+            if (data.hasOwnProperty('orderType')) {
+                obj['orderType'] = ApiClient.convertToType(data['orderType'], 'String');
+            }
+            if (data.hasOwnProperty('customerOrderNumber')) {
+                obj['customerOrderNumber'] = ApiClient.convertToType(data['customerOrderNumber'], 'String');
+            }
+            if (data.hasOwnProperty('endCustomerOrderNumber')) {
+                obj['endCustomerOrderNumber'] = ApiClient.convertToType(data['endCustomerOrderNumber'], 'String');
+            }
+            if (data.hasOwnProperty('vendorSalesOrderNumber')) {
+                obj['vendorSalesOrderNumber'] = ApiClient.convertToType(data['vendorSalesOrderNumber'], 'String');
+            }
+            if (data.hasOwnProperty('orderStatus')) {
+                obj['orderStatus'] = ApiClient.convertToType(data['orderStatus'], 'String');
+            }
+            if (data.hasOwnProperty('orderTotal')) {
+                obj['orderTotal'] = ApiClient.convertToType(data['orderTotal'], 'Number');
+            }
+            if (data.hasOwnProperty('orderSubTotal')) {
+                obj['orderSubTotal'] = ApiClient.convertToType(data['orderSubTotal'], 'Number');
+            }
+            if (data.hasOwnProperty('freightCharges')) {
+                obj['freightCharges'] = ApiClient.convertToType(data['freightCharges'], 'Number');
+            }
+            if (data.hasOwnProperty('currencyCode')) {
+                obj['currencyCode'] = ApiClient.convertToType(data['currencyCode'], 'String');
+            }
+            if (data.hasOwnProperty('totalWeight')) {
+                obj['totalWeight'] = ApiClient.convertToType(data['totalWeight'], 'Number');
+            }
+            if (data.hasOwnProperty('totalTax')) {
+                obj['totalTax'] = ApiClient.convertToType(data['totalTax'], 'Number');
+            }
+            if (data.hasOwnProperty('paymentTerms')) {
+                obj['paymentTerms'] = ApiClient.convertToType(data['paymentTerms'], 'String');
+            }
+            if (data.hasOwnProperty('notes')) {
+                obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
+            }
+            if (data.hasOwnProperty('billToInfo')) {
+                obj['billToInfo'] = OrderDetailResponseBillToInfo.constructFromObject(data['billToInfo']);
+            }
+            if (data.hasOwnProperty('shipToInfo')) {
+                obj['shipToInfo'] = OrderDetailResponseShipToInfo.constructFromObject(data['shipToInfo']);
+            }
+            if (data.hasOwnProperty('endUserInfo')) {
+                obj['endUserInfo'] = OrderDetailResponseEndUserInfo.constructFromObject(data['endUserInfo']);
+            }
+            if (data.hasOwnProperty('lines')) {
+                obj['lines'] = ApiClient.convertToType(data['lines'], [OrderDetailResponseLinesInner]);
+            }
+            if (data.hasOwnProperty('miscellaneousCharges')) {
+                obj['miscellaneousCharges'] = ApiClient.convertToType(data['miscellaneousCharges'], [OrderDetailResponseMiscellaneousChargesInner]);
+            }
+            if (data.hasOwnProperty('additionalAttributes')) {
+                obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [OrderDetailResponseLinesInnerAdditionalAttributesInner]);
             }
         }
         return obj;
@@ -62,9 +126,87 @@ class OrderDetailResponse {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>OrderDetailResponse</code>.
      */
     static validateJSON(data) {
-        // validate the optional field `serviceresponse`
-        if (data['serviceresponse']) { // data not null
-          OrderDetailResponseServiceresponse.validateJSON(data['serviceresponse']);
+        // ensure the json data is a string
+        if (data['ingramOrderNumber'] && !(typeof data['ingramOrderNumber'] === 'string' || data['ingramOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `ingramOrderNumber` to be a primitive type in the JSON string but got " + data['ingramOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['ingramOrderDate'] && !(typeof data['ingramOrderDate'] === 'string' || data['ingramOrderDate'] instanceof String)) {
+            throw new Error("Expected the field `ingramOrderDate` to be a primitive type in the JSON string but got " + data['ingramOrderDate']);
+        }
+        // ensure the json data is a string
+        if (data['orderType'] && !(typeof data['orderType'] === 'string' || data['orderType'] instanceof String)) {
+            throw new Error("Expected the field `orderType` to be a primitive type in the JSON string but got " + data['orderType']);
+        }
+        // ensure the json data is a string
+        if (data['customerOrderNumber'] && !(typeof data['customerOrderNumber'] === 'string' || data['customerOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got " + data['customerOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['endCustomerOrderNumber'] && !(typeof data['endCustomerOrderNumber'] === 'string' || data['endCustomerOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got " + data['endCustomerOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['vendorSalesOrderNumber'] && !(typeof data['vendorSalesOrderNumber'] === 'string' || data['vendorSalesOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `vendorSalesOrderNumber` to be a primitive type in the JSON string but got " + data['vendorSalesOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['orderStatus'] && !(typeof data['orderStatus'] === 'string' || data['orderStatus'] instanceof String)) {
+            throw new Error("Expected the field `orderStatus` to be a primitive type in the JSON string but got " + data['orderStatus']);
+        }
+        // ensure the json data is a string
+        if (data['currencyCode'] && !(typeof data['currencyCode'] === 'string' || data['currencyCode'] instanceof String)) {
+            throw new Error("Expected the field `currencyCode` to be a primitive type in the JSON string but got " + data['currencyCode']);
+        }
+        // ensure the json data is a string
+        if (data['paymentTerms'] && !(typeof data['paymentTerms'] === 'string' || data['paymentTerms'] instanceof String)) {
+            throw new Error("Expected the field `paymentTerms` to be a primitive type in the JSON string but got " + data['paymentTerms']);
+        }
+        // ensure the json data is a string
+        if (data['notes'] && !(typeof data['notes'] === 'string' || data['notes'] instanceof String)) {
+            throw new Error("Expected the field `notes` to be a primitive type in the JSON string but got " + data['notes']);
+        }
+        // validate the optional field `billToInfo`
+        if (data['billToInfo']) { // data not null
+          OrderDetailResponseBillToInfo.validateJSON(data['billToInfo']);
+        }
+        // validate the optional field `shipToInfo`
+        if (data['shipToInfo']) { // data not null
+          OrderDetailResponseShipToInfo.validateJSON(data['shipToInfo']);
+        }
+        // validate the optional field `endUserInfo`
+        if (data['endUserInfo']) { // data not null
+          OrderDetailResponseEndUserInfo.validateJSON(data['endUserInfo']);
+        }
+        if (data['lines']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['lines'])) {
+                throw new Error("Expected the field `lines` to be an array in the JSON data but got " + data['lines']);
+            }
+            // validate the optional field `lines` (array)
+            for (const item of data['lines']) {
+                OrderDetailResponseLinesInner.validateJSON(item);
+            };
+        }
+        if (data['miscellaneousCharges']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['miscellaneousCharges'])) {
+                throw new Error("Expected the field `miscellaneousCharges` to be an array in the JSON data but got " + data['miscellaneousCharges']);
+            }
+            // validate the optional field `miscellaneousCharges` (array)
+            for (const item of data['miscellaneousCharges']) {
+                OrderDetailResponseMiscellaneousChargesInner.validateJSON(item);
+            };
+        }
+        if (data['additionalAttributes']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['additionalAttributes'])) {
+                throw new Error("Expected the field `additionalAttributes` to be an array in the JSON data but got " + data['additionalAttributes']);
+            }
+            // validate the optional field `additionalAttributes` (array)
+            for (const item of data['additionalAttributes']) {
+                OrderDetailResponseLinesInnerAdditionalAttributesInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -76,9 +218,124 @@ class OrderDetailResponse {
 
 
 /**
- * @member {module:model/OrderDetailResponseServiceresponse} serviceresponse
+ * The IngramMicro sales order number.
+ * @member {String} ingramOrderNumber
  */
-OrderDetailResponse.prototype['serviceresponse'] = undefined;
+OrderDetailResponse.prototype['ingramOrderNumber'] = undefined;
+
+/**
+ * The date and time in UTC format that the order was created.
+ * @member {String} ingramOrderDate
+ */
+OrderDetailResponse.prototype['ingramOrderDate'] = undefined;
+
+/**
+ * The order type. One of B = Branch Transfer, C = COD, D = Direct Ship, F = Future Order, P = Special Order, M = Memo, Q = Quote, S = Sales Order.
+ * @member {String} orderType
+ */
+OrderDetailResponse.prototype['orderType'] = undefined;
+
+/**
+ * The reseller's order number for reference in their system.
+ * @member {String} customerOrderNumber
+ */
+OrderDetailResponse.prototype['customerOrderNumber'] = undefined;
+
+/**
+ * The end user/customer's order number for reference in their system.
+ * @member {String} endCustomerOrderNumber
+ */
+OrderDetailResponse.prototype['endCustomerOrderNumber'] = undefined;
+
+/**
+ * The vendor's order number for reference in their system.
+ * @member {String} vendorSalesOrderNumber
+ */
+OrderDetailResponse.prototype['vendorSalesOrderNumber'] = undefined;
+
+/**
+ * The header-level status of the order. One of- Shipped, Canceled, Backordered, Processing, On Hold, Delivered.
+ * @member {String} orderStatus
+ */
+OrderDetailResponse.prototype['orderStatus'] = undefined;
+
+/**
+ * The total cost for the order, includes subtotal, freight charges, and tax.
+ * @member {Number} orderTotal
+ */
+OrderDetailResponse.prototype['orderTotal'] = undefined;
+
+/**
+ * The sub total cost for the order, not including tax and freight.
+ * @member {Number} orderSubTotal
+ */
+OrderDetailResponse.prototype['orderSubTotal'] = undefined;
+
+/**
+ * The freight charges for the order.
+ * @member {Number} freightCharges
+ */
+OrderDetailResponse.prototype['freightCharges'] = undefined;
+
+/**
+ * The country-specific three digit ISO 4217 currency code for the order.
+ * @member {String} currencyCode
+ */
+OrderDetailResponse.prototype['currencyCode'] = undefined;
+
+/**
+ * The total weight of the order. Pounds in North America, KG in all other countries.
+ * @member {Number} totalWeight
+ */
+OrderDetailResponse.prototype['totalWeight'] = undefined;
+
+/**
+ * The total tax for the order.
+ * @member {Number} totalTax
+ */
+OrderDetailResponse.prototype['totalTax'] = undefined;
+
+/**
+ * The payment terms of the order. (Ex- Net 30 days).
+ * @member {String} paymentTerms
+ */
+OrderDetailResponse.prototype['paymentTerms'] = undefined;
+
+/**
+ * The header-level notes for the order.
+ * @member {String} notes
+ */
+OrderDetailResponse.prototype['notes'] = undefined;
+
+/**
+ * @member {module:model/OrderDetailResponseBillToInfo} billToInfo
+ */
+OrderDetailResponse.prototype['billToInfo'] = undefined;
+
+/**
+ * @member {module:model/OrderDetailResponseShipToInfo} shipToInfo
+ */
+OrderDetailResponse.prototype['shipToInfo'] = undefined;
+
+/**
+ * @member {module:model/OrderDetailResponseEndUserInfo} endUserInfo
+ */
+OrderDetailResponse.prototype['endUserInfo'] = undefined;
+
+/**
+ * @member {Array.<module:model/OrderDetailResponseLinesInner>} lines
+ */
+OrderDetailResponse.prototype['lines'] = undefined;
+
+/**
+ * @member {Array.<module:model/OrderDetailResponseMiscellaneousChargesInner>} miscellaneousCharges
+ */
+OrderDetailResponse.prototype['miscellaneousCharges'] = undefined;
+
+/**
+ * @member {Array.<module:model/OrderDetailResponseLinesInnerAdditionalAttributesInner>} additionalAttributes
+ */
+OrderDetailResponse.prototype['additionalAttributes'] = undefined;
 
 
 

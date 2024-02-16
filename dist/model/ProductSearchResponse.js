@@ -5,15 +5,18 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
-var _ProductSearchResponseServiceresponse = _interopRequireDefault(require("./ProductSearchResponseServiceresponse"));
+var _ProductSearchResponseCatalogInner = _interopRequireDefault(require("./ProductSearchResponseCatalogInner"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); } /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -32,7 +35,6 @@ function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e 
 var ProductSearchResponse = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ProductSearchResponse</code>.
-   * Response object model for the product search endpoint
    * @alias module:model/ProductSearchResponse
    */
   function ProductSearchResponse() {
@@ -61,8 +63,23 @@ var ProductSearchResponse = /*#__PURE__*/function () {
     value: function constructFromObject(data, obj) {
       if (data) {
         obj = obj || new ProductSearchResponse();
-        if (data.hasOwnProperty('serviceresponse')) {
-          obj['serviceresponse'] = _ProductSearchResponseServiceresponse["default"].constructFromObject(data['serviceresponse']);
+        if (data.hasOwnProperty('recordsFound')) {
+          obj['recordsFound'] = _ApiClient["default"].convertToType(data['recordsFound'], 'Number');
+        }
+        if (data.hasOwnProperty('pageSize')) {
+          obj['pageSize'] = _ApiClient["default"].convertToType(data['pageSize'], 'Number');
+        }
+        if (data.hasOwnProperty('pageNumber')) {
+          obj['pageNumber'] = _ApiClient["default"].convertToType(data['pageNumber'], 'Number');
+        }
+        if (data.hasOwnProperty('catalog')) {
+          obj['catalog'] = _ApiClient["default"].convertToType(data['catalog'], [_ProductSearchResponseCatalogInner["default"]]);
+        }
+        if (data.hasOwnProperty('nextPage')) {
+          obj['nextPage'] = _ApiClient["default"].convertToType(data['nextPage'], 'String');
+        }
+        if (data.hasOwnProperty('previousPage')) {
+          obj['previousPage'] = _ApiClient["default"].convertToType(data['previousPage'], 'String');
         }
       }
       return obj;
@@ -76,10 +93,34 @@ var ProductSearchResponse = /*#__PURE__*/function () {
   }, {
     key: "validateJSON",
     value: function validateJSON(data) {
-      // validate the optional field `serviceresponse`
-      if (data['serviceresponse']) {
+      if (data['catalog']) {
         // data not null
-        _ProductSearchResponseServiceresponse["default"].validateJSON(data['serviceresponse']);
+        // ensure the json data is an array
+        if (!Array.isArray(data['catalog'])) {
+          throw new Error("Expected the field `catalog` to be an array in the JSON data but got " + data['catalog']);
+        }
+        // validate the optional field `catalog` (array)
+        var _iterator = _createForOfIteratorHelper(data['catalog']),
+          _step;
+        try {
+          for (_iterator.s(); !(_step = _iterator.n()).done;) {
+            var item = _step.value;
+            _ProductSearchResponseCatalogInner["default"].validateJSON(item);
+          }
+        } catch (err) {
+          _iterator.e(err);
+        } finally {
+          _iterator.f();
+        }
+        ;
+      }
+      // ensure the json data is a string
+      if (data['nextPage'] && !(typeof data['nextPage'] === 'string' || data['nextPage'] instanceof String)) {
+        throw new Error("Expected the field `nextPage` to be a primitive type in the JSON string but got " + data['nextPage']);
+      }
+      // ensure the json data is a string
+      if (data['previousPage'] && !(typeof data['previousPage'] === 'string' || data['previousPage'] instanceof String)) {
+        throw new Error("Expected the field `previousPage` to be a primitive type in the JSON string but got " + data['previousPage']);
       }
       return true;
     }
@@ -87,7 +128,37 @@ var ProductSearchResponse = /*#__PURE__*/function () {
   return ProductSearchResponse;
 }();
 /**
- * @member {module:model/ProductSearchResponseServiceresponse} serviceresponse
+ * The number of recourds found for the search.
+ * @member {Number} recordsFound
  */
-ProductSearchResponse.prototype['serviceresponse'] = undefined;
+ProductSearchResponse.prototype['recordsFound'] = undefined;
+
+/**
+ * The number of results per page. Default is 25.
+ * @member {Number} pageSize
+ */
+ProductSearchResponse.prototype['pageSize'] = undefined;
+
+/**
+ * current page number default is 1
+ * @member {Number} pageNumber
+ */
+ProductSearchResponse.prototype['pageNumber'] = undefined;
+
+/**
+ * @member {Array.<module:model/ProductSearchResponseCatalogInner>} catalog
+ */
+ProductSearchResponse.prototype['catalog'] = undefined;
+
+/**
+ * link/URL for accessing next page.
+ * @member {String} nextPage
+ */
+ProductSearchResponse.prototype['nextPage'] = undefined;
+
+/**
+ * link/URL for accessing previous page.
+ * @member {String} previousPage
+ */
+ProductSearchResponse.prototype['previousPage'] = undefined;
 var _default = exports["default"] = ProductSearchResponse;

@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import OrderCancelResponseServiceresponse from './OrderCancelResponseServiceresponse';
+import OrderDeleteResponseServiceresponse from './OrderDeleteResponseServiceresponse';
 
 /**
  * The OrderDeleteResponse model module.
@@ -50,7 +50,7 @@ class OrderDeleteResponse {
             obj = obj || new OrderDeleteResponse();
 
             if (data.hasOwnProperty('serviceresponse')) {
-                obj['serviceresponse'] = OrderCancelResponseServiceresponse.constructFromObject(data['serviceresponse']);
+                obj['serviceresponse'] = OrderDeleteResponseServiceresponse.constructFromObject(data['serviceresponse']);
             }
         }
         return obj;
@@ -64,7 +64,7 @@ class OrderDeleteResponse {
     static validateJSON(data) {
         // validate the optional field `serviceresponse`
         if (data['serviceresponse']) { // data not null
-          OrderCancelResponseServiceresponse.validateJSON(data['serviceresponse']);
+          OrderDeleteResponseServiceresponse.validateJSON(data['serviceresponse']);
         }
 
         return true;
@@ -76,7 +76,7 @@ class OrderDeleteResponse {
 
 
 /**
- * @member {module:model/OrderCancelResponseServiceresponse} serviceresponse
+ * @member {module:model/OrderDeleteResponseServiceresponse} serviceresponse
  */
 OrderDeleteResponse.prototype['serviceresponse'] = undefined;
 

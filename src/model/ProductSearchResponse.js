@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import ProductSearchResponseServiceresponse from './ProductSearchResponseServiceresponse';
+import ProductSearchResponseCatalogInner from './ProductSearchResponseCatalogInner';
 
 /**
  * The ProductSearchResponse model module.
@@ -22,7 +22,6 @@ import ProductSearchResponseServiceresponse from './ProductSearchResponseService
 class ProductSearchResponse {
     /**
      * Constructs a new <code>ProductSearchResponse</code>.
-     * Response object model for the product search endpoint
      * @alias module:model/ProductSearchResponse
      */
     constructor() { 
@@ -49,8 +48,23 @@ class ProductSearchResponse {
         if (data) {
             obj = obj || new ProductSearchResponse();
 
-            if (data.hasOwnProperty('serviceresponse')) {
-                obj['serviceresponse'] = ProductSearchResponseServiceresponse.constructFromObject(data['serviceresponse']);
+            if (data.hasOwnProperty('recordsFound')) {
+                obj['recordsFound'] = ApiClient.convertToType(data['recordsFound'], 'Number');
+            }
+            if (data.hasOwnProperty('pageSize')) {
+                obj['pageSize'] = ApiClient.convertToType(data['pageSize'], 'Number');
+            }
+            if (data.hasOwnProperty('pageNumber')) {
+                obj['pageNumber'] = ApiClient.convertToType(data['pageNumber'], 'Number');
+            }
+            if (data.hasOwnProperty('catalog')) {
+                obj['catalog'] = ApiClient.convertToType(data['catalog'], [ProductSearchResponseCatalogInner]);
+            }
+            if (data.hasOwnProperty('nextPage')) {
+                obj['nextPage'] = ApiClient.convertToType(data['nextPage'], 'String');
+            }
+            if (data.hasOwnProperty('previousPage')) {
+                obj['previousPage'] = ApiClient.convertToType(data['previousPage'], 'String');
             }
         }
         return obj;
@@ -62,9 +76,23 @@ class ProductSearchResponse {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ProductSearchResponse</code>.
      */
     static validateJSON(data) {
-        // validate the optional field `serviceresponse`
-        if (data['serviceresponse']) { // data not null
-          ProductSearchResponseServiceresponse.validateJSON(data['serviceresponse']);
+        if (data['catalog']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['catalog'])) {
+                throw new Error("Expected the field `catalog` to be an array in the JSON data but got " + data['catalog']);
+            }
+            // validate the optional field `catalog` (array)
+            for (const item of data['catalog']) {
+                ProductSearchResponseCatalogInner.validateJSON(item);
+            };
+        }
+        // ensure the json data is a string
+        if (data['nextPage'] && !(typeof data['nextPage'] === 'string' || data['nextPage'] instanceof String)) {
+            throw new Error("Expected the field `nextPage` to be a primitive type in the JSON string but got " + data['nextPage']);
+        }
+        // ensure the json data is a string
+        if (data['previousPage'] && !(typeof data['previousPage'] === 'string' || data['previousPage'] instanceof String)) {
+            throw new Error("Expected the field `previousPage` to be a primitive type in the JSON string but got " + data['previousPage']);
         }
 
         return true;
@@ -76,9 +104,39 @@ class ProductSearchResponse {
 
 
 /**
- * @member {module:model/ProductSearchResponseServiceresponse} serviceresponse
+ * The number of recourds found for the search.
+ * @member {Number} recordsFound
  */
-ProductSearchResponse.prototype['serviceresponse'] = undefined;
+ProductSearchResponse.prototype['recordsFound'] = undefined;
+
+/**
+ * The number of results per page. Default is 25.
+ * @member {Number} pageSize
+ */
+ProductSearchResponse.prototype['pageSize'] = undefined;
+
+/**
+ * current page number default is 1
+ * @member {Number} pageNumber
+ */
+ProductSearchResponse.prototype['pageNumber'] = undefined;
+
+/**
+ * @member {Array.<module:model/ProductSearchResponseCatalogInner>} catalog
+ */
+ProductSearchResponse.prototype['catalog'] = undefined;
+
+/**
+ * link/URL for accessing next page.
+ * @member {String} nextPage
+ */
+ProductSearchResponse.prototype['nextPage'] = undefined;
+
+/**
+ * link/URL for accessing previous page.
+ * @member {String} previousPage
+ */
+ProductSearchResponse.prototype['previousPage'] = undefined;
 
 
 

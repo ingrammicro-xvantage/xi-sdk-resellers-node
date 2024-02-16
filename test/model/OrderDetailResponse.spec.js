@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -54,8 +54,128 @@
       //expect(instance).to.be.a(XiSdkResellers.OrderDetailResponse);
     });
 
-    it('should have the property serviceresponse (base name: "serviceresponse")', function() {
-      // uncomment below and update the code to test the property serviceresponse
+    it('should have the property ingramOrderNumber (base name: "ingramOrderNumber")', function() {
+      // uncomment below and update the code to test the property ingramOrderNumber
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property ingramOrderDate (base name: "ingramOrderDate")', function() {
+      // uncomment below and update the code to test the property ingramOrderDate
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property orderType (base name: "orderType")', function() {
+      // uncomment below and update the code to test the property orderType
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property customerOrderNumber (base name: "customerOrderNumber")', function() {
+      // uncomment below and update the code to test the property customerOrderNumber
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property endCustomerOrderNumber (base name: "endCustomerOrderNumber")', function() {
+      // uncomment below and update the code to test the property endCustomerOrderNumber
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vendorSalesOrderNumber (base name: "vendorSalesOrderNumber")', function() {
+      // uncomment below and update the code to test the property vendorSalesOrderNumber
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property orderStatus (base name: "orderStatus")', function() {
+      // uncomment below and update the code to test the property orderStatus
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property orderTotal (base name: "orderTotal")', function() {
+      // uncomment below and update the code to test the property orderTotal
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property orderSubTotal (base name: "orderSubTotal")', function() {
+      // uncomment below and update the code to test the property orderSubTotal
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property freightCharges (base name: "freightCharges")', function() {
+      // uncomment below and update the code to test the property freightCharges
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property currencyCode (base name: "currencyCode")', function() {
+      // uncomment below and update the code to test the property currencyCode
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property totalWeight (base name: "totalWeight")', function() {
+      // uncomment below and update the code to test the property totalWeight
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property totalTax (base name: "totalTax")', function() {
+      // uncomment below and update the code to test the property totalTax
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property paymentTerms (base name: "paymentTerms")', function() {
+      // uncomment below and update the code to test the property paymentTerms
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property notes (base name: "notes")', function() {
+      // uncomment below and update the code to test the property notes
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property billToInfo (base name: "billToInfo")', function() {
+      // uncomment below and update the code to test the property billToInfo
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property shipToInfo (base name: "shipToInfo")', function() {
+      // uncomment below and update the code to test the property shipToInfo
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property endUserInfo (base name: "endUserInfo")', function() {
+      // uncomment below and update the code to test the property endUserInfo
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property lines (base name: "lines")', function() {
+      // uncomment below and update the code to test the property lines
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property miscellaneousCharges (base name: "miscellaneousCharges")', function() {
+      // uncomment below and update the code to test the property miscellaneousCharges
+      //var instance = new XiSdkResellers.OrderDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
+      // uncomment below and update the code to test the property additionalAttributes
       //var instance = new XiSdkResellers.OrderDetailResponse();
       //expect(instance).to.be();
     });

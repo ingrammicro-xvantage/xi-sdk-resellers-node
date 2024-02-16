@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -54,8 +54,38 @@
       //expect(instance).to.be.a(XiSdkResellers.PriceAndAvailabilityRequest);
     });
 
-    it('should have the property servicerequest (base name: "servicerequest")', function() {
-      // uncomment below and update the code to test the property servicerequest
+    it('should have the property showAvailableDiscounts (base name: "showAvailableDiscounts")', function() {
+      // uncomment below and update the code to test the property showAvailableDiscounts
+      //var instance = new XiSdkResellers.PriceAndAvailabilityRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property showReserveInventoryDetails (base name: "showReserveInventoryDetails")', function() {
+      // uncomment below and update the code to test the property showReserveInventoryDetails
+      //var instance = new XiSdkResellers.PriceAndAvailabilityRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property specialBidNumber (base name: "specialBidNumber")', function() {
+      // uncomment below and update the code to test the property specialBidNumber
+      //var instance = new XiSdkResellers.PriceAndAvailabilityRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property availabilityByWarehouse (base name: "availabilityByWarehouse")', function() {
+      // uncomment below and update the code to test the property availabilityByWarehouse
+      //var instance = new XiSdkResellers.PriceAndAvailabilityRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property products (base name: "products")', function() {
+      // uncomment below and update the code to test the property products
+      //var instance = new XiSdkResellers.PriceAndAvailabilityRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
+      // uncomment below and update the code to test the property additionalAttributes
       //var instance = new XiSdkResellers.PriceAndAvailabilityRequest();
       //expect(instance).to.be();
     });
