@@ -60,7 +60,7 @@ If the library is hosted at a git repository, e.g.https://github.com/GIT_USER_ID
 then install it via:
 
 ```shell
-    npm install GIT_USER_ID/GIT_REPO_ID --save
+    npm install ingrammicro-xvantage/xi-sdk-resellers-node
 ```
 
 ### For browser
@@ -441,3 +441,11 @@ Authentication schemes defined for the API:
   - write: allows modifying resources
   - read: allows reading resources
 
+## Author
+-[Ingram Micro Xvantage](https://github.com/ingrammicro-xvantage)
+
+## Contact
+
+For any inquiries or support, please feel free to contact us at:
+
+- Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)
