@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import OrderSearchResponseServiceResponse from './OrderSearchResponseServiceResponse';
+import OrderSearchResponseOrdersInner from './OrderSearchResponseOrdersInner';
 
 /**
  * The OrderSearchResponse model module.
@@ -22,7 +22,6 @@ import OrderSearchResponseServiceResponse from './OrderSearchResponseServiceResp
 class OrderSearchResponse {
     /**
      * Constructs a new <code>OrderSearchResponse</code>.
-     * Response schema for order search endpoint
      * @alias module:model/OrderSearchResponse
      */
     constructor() { 
@@ -49,8 +48,23 @@ class OrderSearchResponse {
         if (data) {
             obj = obj || new OrderSearchResponse();
 
-            if (data.hasOwnProperty('serviceResponse')) {
-                obj['serviceResponse'] = OrderSearchResponseServiceResponse.constructFromObject(data['serviceResponse']);
+            if (data.hasOwnProperty('recordsFound')) {
+                obj['recordsFound'] = ApiClient.convertToType(data['recordsFound'], 'Number');
+            }
+            if (data.hasOwnProperty('pageSize')) {
+                obj['pageSize'] = ApiClient.convertToType(data['pageSize'], 'Number');
+            }
+            if (data.hasOwnProperty('pageNumber')) {
+                obj['pageNumber'] = ApiClient.convertToType(data['pageNumber'], 'Number');
+            }
+            if (data.hasOwnProperty('orders')) {
+                obj['orders'] = ApiClient.convertToType(data['orders'], [OrderSearchResponseOrdersInner]);
+            }
+            if (data.hasOwnProperty('nextPage')) {
+                obj['nextPage'] = ApiClient.convertToType(data['nextPage'], 'String');
+            }
+            if (data.hasOwnProperty('previousPage')) {
+                obj['previousPage'] = ApiClient.convertToType(data['previousPage'], 'String');
             }
         }
         return obj;
@@ -62,9 +76,23 @@ class OrderSearchResponse {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>OrderSearchResponse</code>.
      */
     static validateJSON(data) {
-        // validate the optional field `serviceResponse`
-        if (data['serviceResponse']) { // data not null
-          OrderSearchResponseServiceResponse.validateJSON(data['serviceResponse']);
+        if (data['orders']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['orders'])) {
+                throw new Error("Expected the field `orders` to be an array in the JSON data but got " + data['orders']);
+            }
+            // validate the optional field `orders` (array)
+            for (const item of data['orders']) {
+                OrderSearchResponseOrdersInner.validateJSON(item);
+            };
+        }
+        // ensure the json data is a string
+        if (data['nextPage'] && !(typeof data['nextPage'] === 'string' || data['nextPage'] instanceof String)) {
+            throw new Error("Expected the field `nextPage` to be a primitive type in the JSON string but got " + data['nextPage']);
+        }
+        // ensure the json data is a string
+        if (data['previousPage'] && !(typeof data['previousPage'] === 'string' || data['previousPage'] instanceof String)) {
+            throw new Error("Expected the field `previousPage` to be a primitive type in the JSON string but got " + data['previousPage']);
         }
 
         return true;
@@ -76,9 +104,40 @@ class OrderSearchResponse {
 
 
 /**
- * @member {module:model/OrderSearchResponseServiceResponse} serviceResponse
+ * No of recourds found for the search.
+ * @member {Number} recordsFound
  */
-OrderSearchResponse.prototype['serviceResponse'] = undefined;
+OrderSearchResponse.prototype['recordsFound'] = undefined;
+
+/**
+ * No of results per page.(default is 25)
+ * @member {Number} pageSize
+ */
+OrderSearchResponse.prototype['pageSize'] = undefined;
+
+/**
+ * Current page number.(default is 1)
+ * @member {Number} pageNumber
+ */
+OrderSearchResponse.prototype['pageNumber'] = undefined;
+
+/**
+ * The details for the order.
+ * @member {Array.<module:model/OrderSearchResponseOrdersInner>} orders
+ */
+OrderSearchResponse.prototype['orders'] = undefined;
+
+/**
+ * link/URL for accessing next page.
+ * @member {String} nextPage
+ */
+OrderSearchResponse.prototype['nextPage'] = undefined;
+
+/**
+ * link/URL for accessing previous page.
+ * @member {String} previousPage
+ */
+OrderSearchResponse.prototype['previousPage'] = undefined;
 
 
 

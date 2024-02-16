@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -13,7 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse from './MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse';
-import PriceAndAvailabilityResponseServiceresponseResponsepreamble from './PriceAndAvailabilityResponseServiceresponseResponsepreamble';
+import MultiSKUPriceAndStockResponseServiceresponseResponsepreamble from './MultiSKUPriceAndStockResponseServiceresponseResponsepreamble';
 
 /**
  * The MultiSKUPriceAndStockResponseServiceresponse model module.
@@ -50,7 +50,7 @@ class MultiSKUPriceAndStockResponseServiceresponse {
             obj = obj || new MultiSKUPriceAndStockResponseServiceresponse();
 
             if (data.hasOwnProperty('responsepreamble')) {
-                obj['responsepreamble'] = PriceAndAvailabilityResponseServiceresponseResponsepreamble.constructFromObject(data['responsepreamble']);
+                obj['responsepreamble'] = MultiSKUPriceAndStockResponseServiceresponseResponsepreamble.constructFromObject(data['responsepreamble']);
             }
             if (data.hasOwnProperty('priceandstockresponse')) {
                 obj['priceandstockresponse'] = MultiSKUPriceAndStockResponseServiceresponsePriceandstockresponse.constructFromObject(data['priceandstockresponse']);
@@ -67,7 +67,7 @@ class MultiSKUPriceAndStockResponseServiceresponse {
     static validateJSON(data) {
         // validate the optional field `responsepreamble`
         if (data['responsepreamble']) { // data not null
-          PriceAndAvailabilityResponseServiceresponseResponsepreamble.validateJSON(data['responsepreamble']);
+          MultiSKUPriceAndStockResponseServiceresponseResponsepreamble.validateJSON(data['responsepreamble']);
         }
         // validate the optional field `priceandstockresponse`
         if (data['priceandstockresponse']) { // data not null
@@ -83,7 +83,7 @@ class MultiSKUPriceAndStockResponseServiceresponse {
 
 
 /**
- * @member {module:model/PriceAndAvailabilityResponseServiceresponseResponsepreamble} responsepreamble
+ * @member {module:model/MultiSKUPriceAndStockResponseServiceresponseResponsepreamble} responsepreamble
  */
 MultiSKUPriceAndStockResponseServiceresponse.prototype['responsepreamble'] = undefined;
 

@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,7 +12,9 @@
  */
 
 import ApiClient from '../ApiClient';
-import PriceAndAvailabilityRequestServicerequest from './PriceAndAvailabilityRequestServicerequest';
+import PriceAndAvailabilityRequestAdditionalAttributesInner from './PriceAndAvailabilityRequestAdditionalAttributesInner';
+import PriceAndAvailabilityRequestAvailabilityByWarehouseInner from './PriceAndAvailabilityRequestAvailabilityByWarehouseInner';
+import PriceAndAvailabilityRequestProductsInner from './PriceAndAvailabilityRequestProductsInner';
 
 /**
  * The PriceAndAvailabilityRequest model module.
@@ -22,7 +24,6 @@ import PriceAndAvailabilityRequestServicerequest from './PriceAndAvailabilityReq
 class PriceAndAvailabilityRequest {
     /**
      * Constructs a new <code>PriceAndAvailabilityRequest</code>.
-     * Request object model for the multi sku price and stock API endpoint
      * @alias module:model/PriceAndAvailabilityRequest
      */
     constructor() { 
@@ -49,8 +50,23 @@ class PriceAndAvailabilityRequest {
         if (data) {
             obj = obj || new PriceAndAvailabilityRequest();
 
-            if (data.hasOwnProperty('servicerequest')) {
-                obj['servicerequest'] = PriceAndAvailabilityRequestServicerequest.constructFromObject(data['servicerequest']);
+            if (data.hasOwnProperty('showAvailableDiscounts')) {
+                obj['showAvailableDiscounts'] = ApiClient.convertToType(data['showAvailableDiscounts'], 'Boolean');
+            }
+            if (data.hasOwnProperty('showReserveInventoryDetails')) {
+                obj['showReserveInventoryDetails'] = ApiClient.convertToType(data['showReserveInventoryDetails'], 'Boolean');
+            }
+            if (data.hasOwnProperty('specialBidNumber')) {
+                obj['specialBidNumber'] = ApiClient.convertToType(data['specialBidNumber'], 'String');
+            }
+            if (data.hasOwnProperty('availabilityByWarehouse')) {
+                obj['availabilityByWarehouse'] = ApiClient.convertToType(data['availabilityByWarehouse'], [PriceAndAvailabilityRequestAvailabilityByWarehouseInner]);
+            }
+            if (data.hasOwnProperty('products')) {
+                obj['products'] = ApiClient.convertToType(data['products'], [PriceAndAvailabilityRequestProductsInner]);
+            }
+            if (data.hasOwnProperty('additionalAttributes')) {
+                obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [PriceAndAvailabilityRequestAdditionalAttributesInner]);
             }
         }
         return obj;
@@ -62,9 +78,39 @@ class PriceAndAvailabilityRequest {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PriceAndAvailabilityRequest</code>.
      */
     static validateJSON(data) {
-        // validate the optional field `servicerequest`
-        if (data['servicerequest']) { // data not null
-          PriceAndAvailabilityRequestServicerequest.validateJSON(data['servicerequest']);
+        // ensure the json data is a string
+        if (data['specialBidNumber'] && !(typeof data['specialBidNumber'] === 'string' || data['specialBidNumber'] instanceof String)) {
+            throw new Error("Expected the field `specialBidNumber` to be a primitive type in the JSON string but got " + data['specialBidNumber']);
+        }
+        if (data['availabilityByWarehouse']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['availabilityByWarehouse'])) {
+                throw new Error("Expected the field `availabilityByWarehouse` to be an array in the JSON data but got " + data['availabilityByWarehouse']);
+            }
+            // validate the optional field `availabilityByWarehouse` (array)
+            for (const item of data['availabilityByWarehouse']) {
+                PriceAndAvailabilityRequestAvailabilityByWarehouseInner.validateJSON(item);
+            };
+        }
+        if (data['products']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['products'])) {
+                throw new Error("Expected the field `products` to be an array in the JSON data but got " + data['products']);
+            }
+            // validate the optional field `products` (array)
+            for (const item of data['products']) {
+                PriceAndAvailabilityRequestProductsInner.validateJSON(item);
+            };
+        }
+        if (data['additionalAttributes']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['additionalAttributes'])) {
+                throw new Error("Expected the field `additionalAttributes` to be an array in the JSON data but got " + data['additionalAttributes']);
+            }
+            // validate the optional field `additionalAttributes` (array)
+            for (const item of data['additionalAttributes']) {
+                PriceAndAvailabilityRequestAdditionalAttributesInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -76,9 +122,37 @@ class PriceAndAvailabilityRequest {
 
 
 /**
- * @member {module:model/PriceAndAvailabilityRequestServicerequest} servicerequest
+ * Boolean value that will display Discount details in the response when true.
+ * @member {Boolean} showAvailableDiscounts
  */
-PriceAndAvailabilityRequest.prototype['servicerequest'] = undefined;
+PriceAndAvailabilityRequest.prototype['showAvailableDiscounts'] = undefined;
+
+/**
+ * Boolean value that will display reserve inventory details in the response when true.
+ * @member {Boolean} showReserveInventoryDetails
+ */
+PriceAndAvailabilityRequest.prototype['showReserveInventoryDetails'] = undefined;
+
+/**
+ * Pre-approved special pricing/bid number provided to the reseller by the vendor for special pricing and discounts. Used to track the bid number where different line items have different bid numbers.
+ * @member {String} specialBidNumber
+ */
+PriceAndAvailabilityRequest.prototype['specialBidNumber'] = undefined;
+
+/**
+ * @member {Array.<module:model/PriceAndAvailabilityRequestAvailabilityByWarehouseInner>} availabilityByWarehouse
+ */
+PriceAndAvailabilityRequest.prototype['availabilityByWarehouse'] = undefined;
+
+/**
+ * @member {Array.<module:model/PriceAndAvailabilityRequestProductsInner>} products
+ */
+PriceAndAvailabilityRequest.prototype['products'] = undefined;
+
+/**
+ * @member {Array.<module:model/PriceAndAvailabilityRequestAdditionalAttributesInner>} additionalAttributes
+ */
+PriceAndAvailabilityRequest.prototype['additionalAttributes'] = undefined;
 
 
 

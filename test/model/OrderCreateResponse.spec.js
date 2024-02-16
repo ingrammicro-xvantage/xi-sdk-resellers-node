@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -54,8 +54,62 @@
       //expect(instance).to.be.a(XiSdkResellers.OrderCreateResponse);
     });
 
-    it('should have the property serviceresponse (base name: "serviceresponse")', function() {
-      // uncomment below and update the code to test the property serviceresponse
+    it('should have the property customerOrderNumber (base name: "customerOrderNumber")', function() {
+      // uncomment below and update the code to test the property customerOrderNumber
+      //var instance = new XiSdkResellers.OrderCreateResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property endCustomerOrderNumber (base name: "endCustomerOrderNumber")', function() {
+      // uncomment below and update the code to test the property endCustomerOrderNumber
+      //var instance = new XiSdkResellers.OrderCreateResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property billToAddressId (base name: "billToAddressId")', function() {
+      // uncomment below and update the code to test the property billToAddressId
+      //var instance = new XiSdkResellers.OrderCreateResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property specialBidNumber (base name: "specialBidNumber")', function() {
+      // uncomment below and update the code to test the property specialBidNumber
+      //var instance = new XiSdkResellers.OrderCreateResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property orderSplit (base name: "orderSplit")', function() {
+      // uncomment below and update the code to test the property orderSplit
+      //var instance = new XiSdkResellers.OrderCreateResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property processedPartially (base name: "processedPartially")', function() {
+      // uncomment below and update the code to test the property processedPartially
+      //var instance = new XiSdkResellers.OrderCreateResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property purchaseOrderTotal (base name: "purchaseOrderTotal")', function() {
+      // uncomment below and update the code to test the property purchaseOrderTotal
+      //var instance = new XiSdkResellers.OrderCreateResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property shipToInfo (base name: "shipToInfo")', function() {
+      // uncomment below and update the code to test the property shipToInfo
+      //var instance = new XiSdkResellers.OrderCreateResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property endUserInfo (base name: "endUserInfo")', function() {
+      // uncomment below and update the code to test the property endUserInfo
+      //var instance = new XiSdkResellers.OrderCreateResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property orders (base name: "orders")', function() {
+      // uncomment below and update the code to test the property orders
       //var instance = new XiSdkResellers.OrderCreateResponse();
       //expect(instance).to.be();
     });

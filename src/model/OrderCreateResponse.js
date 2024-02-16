@@ -1,5 +1,5 @@
 /**
- * XI Sdk Resellers
+ * XI SDK Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,7 +12,9 @@
  */
 
 import ApiClient from '../ApiClient';
-import OrderCreateResponseServiceresponse from './OrderCreateResponseServiceresponse';
+import OrderCreateResponseEndUserInfo from './OrderCreateResponseEndUserInfo';
+import OrderCreateResponseOrdersInner from './OrderCreateResponseOrdersInner';
+import OrderCreateResponseShipToInfo from './OrderCreateResponseShipToInfo';
 
 /**
  * The OrderCreateResponse model module.
@@ -22,7 +24,6 @@ import OrderCreateResponseServiceresponse from './OrderCreateResponseServiceresp
 class OrderCreateResponse {
     /**
      * Constructs a new <code>OrderCreateResponse</code>.
-     * Response schema for order create endpoint
      * @alias module:model/OrderCreateResponse
      */
     constructor() { 
@@ -49,8 +50,35 @@ class OrderCreateResponse {
         if (data) {
             obj = obj || new OrderCreateResponse();
 
-            if (data.hasOwnProperty('serviceresponse')) {
-                obj['serviceresponse'] = OrderCreateResponseServiceresponse.constructFromObject(data['serviceresponse']);
+            if (data.hasOwnProperty('customerOrderNumber')) {
+                obj['customerOrderNumber'] = ApiClient.convertToType(data['customerOrderNumber'], 'String');
+            }
+            if (data.hasOwnProperty('endCustomerOrderNumber')) {
+                obj['endCustomerOrderNumber'] = ApiClient.convertToType(data['endCustomerOrderNumber'], 'String');
+            }
+            if (data.hasOwnProperty('billToAddressId')) {
+                obj['billToAddressId'] = ApiClient.convertToType(data['billToAddressId'], 'String');
+            }
+            if (data.hasOwnProperty('specialBidNumber')) {
+                obj['specialBidNumber'] = ApiClient.convertToType(data['specialBidNumber'], 'String');
+            }
+            if (data.hasOwnProperty('orderSplit')) {
+                obj['orderSplit'] = ApiClient.convertToType(data['orderSplit'], 'Boolean');
+            }
+            if (data.hasOwnProperty('processedPartially')) {
+                obj['processedPartially'] = ApiClient.convertToType(data['processedPartially'], 'Boolean');
+            }
+            if (data.hasOwnProperty('purchaseOrderTotal')) {
+                obj['purchaseOrderTotal'] = ApiClient.convertToType(data['purchaseOrderTotal'], 'Number');
+            }
+            if (data.hasOwnProperty('shipToInfo')) {
+                obj['shipToInfo'] = OrderCreateResponseShipToInfo.constructFromObject(data['shipToInfo']);
+            }
+            if (data.hasOwnProperty('endUserInfo')) {
+                obj['endUserInfo'] = OrderCreateResponseEndUserInfo.constructFromObject(data['endUserInfo']);
+            }
+            if (data.hasOwnProperty('orders')) {
+                obj['orders'] = ApiClient.convertToType(data['orders'], [OrderCreateResponseOrdersInner]);
             }
         }
         return obj;
@@ -62,9 +90,39 @@ class OrderCreateResponse {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>OrderCreateResponse</code>.
      */
     static validateJSON(data) {
-        // validate the optional field `serviceresponse`
-        if (data['serviceresponse']) { // data not null
-          OrderCreateResponseServiceresponse.validateJSON(data['serviceresponse']);
+        // ensure the json data is a string
+        if (data['customerOrderNumber'] && !(typeof data['customerOrderNumber'] === 'string' || data['customerOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got " + data['customerOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['endCustomerOrderNumber'] && !(typeof data['endCustomerOrderNumber'] === 'string' || data['endCustomerOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got " + data['endCustomerOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['billToAddressId'] && !(typeof data['billToAddressId'] === 'string' || data['billToAddressId'] instanceof String)) {
+            throw new Error("Expected the field `billToAddressId` to be a primitive type in the JSON string but got " + data['billToAddressId']);
+        }
+        // ensure the json data is a string
+        if (data['specialBidNumber'] && !(typeof data['specialBidNumber'] === 'string' || data['specialBidNumber'] instanceof String)) {
+            throw new Error("Expected the field `specialBidNumber` to be a primitive type in the JSON string but got " + data['specialBidNumber']);
+        }
+        // validate the optional field `shipToInfo`
+        if (data['shipToInfo']) { // data not null
+          OrderCreateResponseShipToInfo.validateJSON(data['shipToInfo']);
+        }
+        // validate the optional field `endUserInfo`
+        if (data['endUserInfo']) { // data not null
+          OrderCreateResponseEndUserInfo.validateJSON(data['endUserInfo']);
+        }
+        if (data['orders']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['orders'])) {
+                throw new Error("Expected the field `orders` to be an array in the JSON data but got " + data['orders']);
+            }
+            // validate the optional field `orders` (array)
+            for (const item of data['orders']) {
+                OrderCreateResponseOrdersInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -76,9 +134,62 @@ class OrderCreateResponse {
 
 
 /**
- * @member {module:model/OrderCreateResponseServiceresponse} serviceresponse
+ * The reseller's unique PO/Order number.
+ * @member {String} customerOrderNumber
  */
-OrderCreateResponse.prototype['serviceresponse'] = undefined;
+OrderCreateResponse.prototype['customerOrderNumber'] = undefined;
+
+/**
+ * The end user/customer's Purchase Order number.
+ * @member {String} endCustomerOrderNumber
+ */
+OrderCreateResponse.prototype['endCustomerOrderNumber'] = undefined;
+
+/**
+ * Suffix used to identify billing address. Created during onboarding. Resellers are provided with one or more address IDs depending on how many bill to addresses they need for various flooring companies they are using for credit
+ * @member {String} billToAddressId
+ */
+OrderCreateResponse.prototype['billToAddressId'] = undefined;
+
+/**
+ * The bid number provided to the reseller by the vendor for special pricing and discounts. Line-level bid numbers take precedence over header-level bid numbers.
+ * @member {String} specialBidNumber
+ */
+OrderCreateResponse.prototype['specialBidNumber'] = undefined;
+
+/**
+ * true for multiple orders
+ * @member {Boolean} orderSplit
+ */
+OrderCreateResponse.prototype['orderSplit'] = undefined;
+
+/**
+ * true for partial order succesfully placed
+ * @member {Boolean} processedPartially
+ */
+OrderCreateResponse.prototype['processedPartially'] = undefined;
+
+/**
+ * Total of all the orders including taxes and fees.
+ * @member {Number} purchaseOrderTotal
+ */
+OrderCreateResponse.prototype['purchaseOrderTotal'] = undefined;
+
+/**
+ * @member {module:model/OrderCreateResponseShipToInfo} shipToInfo
+ */
+OrderCreateResponse.prototype['shipToInfo'] = undefined;
+
+/**
+ * @member {module:model/OrderCreateResponseEndUserInfo} endUserInfo
+ */
+OrderCreateResponse.prototype['endUserInfo'] = undefined;
+
+/**
+ * Order-level details.
+ * @member {Array.<module:model/OrderCreateResponseOrdersInner>} orders
+ */
+OrderCreateResponse.prototype['orders'] = undefined;
 
 
 
