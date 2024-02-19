@@ -144,6 +144,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property totalFees (base name: "totalFees")', function() {
+      // uncomment below and update the code to test the property totalFees
+      //var instance = new XiSdkResellers.OrderDetailB2B();
+      //expect(instance).to.be();
+    });
+
     it('should have the property paymentTerms (base name: "paymentTerms")', function() {
       // uncomment below and update the code to test the property paymentTerms
       //var instance = new XiSdkResellers.OrderDetailB2B();

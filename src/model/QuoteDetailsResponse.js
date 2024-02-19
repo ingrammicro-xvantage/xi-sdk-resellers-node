@@ -72,6 +72,9 @@ class QuoteDetailsResponse {
             if (data.hasOwnProperty('currencyCode')) {
                 obj['currencyCode'] = ApiClient.convertToType(data['currencyCode'], 'String');
             }
+            if (data.hasOwnProperty('closingReason')) {
+                obj['closingReason'] = ApiClient.convertToType(data['closingReason'], 'String');
+            }
             if (data.hasOwnProperty('specialBidId')) {
                 obj['specialBidId'] = ApiClient.convertToType(data['specialBidId'], 'String');
             }
@@ -166,6 +169,10 @@ class QuoteDetailsResponse {
         // ensure the json data is a string
         if (data['currencyCode'] && !(typeof data['currencyCode'] === 'string' || data['currencyCode'] instanceof String)) {
             throw new Error("Expected the field `currencyCode` to be a primitive type in the JSON string but got " + data['currencyCode']);
+        }
+        // ensure the json data is a string
+        if (data['closingReason'] && !(typeof data['closingReason'] === 'string' || data['closingReason'] instanceof String)) {
+            throw new Error("Expected the field `closingReason` to be a primitive type in the JSON string but got " + data['closingReason']);
         }
         // ensure the json data is a string
         if (data['specialBidId'] && !(typeof data['specialBidId'] === 'string' || data['specialBidId'] instanceof String)) {
@@ -289,6 +296,12 @@ QuoteDetailsResponse.prototype['ingramQuoteExpiryDate'] = undefined;
  * @member {String} currencyCode
  */
 QuoteDetailsResponse.prototype['currencyCode'] = undefined;
+
+/**
+ * Closing Reason for quote.
+ * @member {String} closingReason
+ */
+QuoteDetailsResponse.prototype['closingReason'] = undefined;
 
 /**
  * Price discount identifyer to specify  a pricing discount that has been applied to the quote. If present - the priceDeviationStartDate and priceDeviationExpiryDate must be presented. Cisco refers to this as a Dart

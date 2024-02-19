@@ -299,6 +299,7 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.QuoteDetailsResponseResellerInfo](docs/QuoteDetailsResponseResellerInfo.md)
  - [XiSdkResellers.QuoteSearchResponse](docs/QuoteSearchResponse.md)
  - [XiSdkResellers.QuoteSearchResponseQuotesInner](docs/QuoteSearchResponseQuotesInner.md)
+ - [XiSdkResellers.QuoteSearchResponseQuotesInnerLinksInner](docs/QuoteSearchResponseQuotesInnerLinksInner.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTO](docs/QuoteToOrderDetailsDTO.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOAdditionalAttributesInner](docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOEndUserInfoInner](docs/QuoteToOrderDetailsDTOEndUserInfoInner.md)

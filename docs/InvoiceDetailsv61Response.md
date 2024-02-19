@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **invoiceDate** | **Date** | Date of an Invoice. | [optional] 
 **customerOrderNumber** | **String** | The reseller&#39;s order number for reference in their system. | [optional] 
 **endCustomerOrderNumber** | **String** | The end customer&#39;s order number for reference in their system. | [optional] 
+**orderNumber** | **String** | The end customer&#39;s order number for reference in their system. | [optional] 
 **orderDate** | **Date** | The date and time in UTC format that the order was created. | [optional] 
 **billToID** | **String** | Bill to party | [optional] 
 **invoiceType** | **String** | Type of the Invoice | [optional] 

@@ -155,6 +155,7 @@ import QuoteDetailsResponseProductsInnerPrice from './model/QuoteDetailsResponse
 import QuoteDetailsResponseResellerInfo from './model/QuoteDetailsResponseResellerInfo';
 import QuoteSearchResponse from './model/QuoteSearchResponse';
 import QuoteSearchResponseQuotesInner from './model/QuoteSearchResponseQuotesInner';
+import QuoteSearchResponseQuotesInnerLinksInner from './model/QuoteSearchResponseQuotesInnerLinksInner';
 import QuoteToOrderDetailsDTO from './model/QuoteToOrderDetailsDTO';
 import QuoteToOrderDetailsDTOAdditionalAttributesInner from './model/QuoteToOrderDetailsDTOAdditionalAttributesInner';
 import QuoteToOrderDetailsDTOEndUserInfoInner from './model/QuoteToOrderDetailsDTOEndUserInfoInner';
@@ -1094,6 +1095,12 @@ export {
      * @property {module:model/QuoteSearchResponseQuotesInner}
      */
     QuoteSearchResponseQuotesInner,
+
+    /**
+     * The QuoteSearchResponseQuotesInnerLinksInner model constructor.
+     * @property {module:model/QuoteSearchResponseQuotesInnerLinksInner}
+     */
+    QuoteSearchResponseQuotesInnerLinksInner,
 
     /**
      * The QuoteToOrderDetailsDTO model constructor.

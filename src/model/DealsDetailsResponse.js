@@ -65,7 +65,7 @@ class DealsDetailsResponse {
                 obj['vendor'] = ApiClient.convertToType(data['vendor'], 'String');
             }
             if (data.hasOwnProperty('dealReceivedOn')) {
-                obj['dealReceivedOn'] = ApiClient.convertToType(data['dealReceivedOn'], 'Date');
+                obj['dealReceivedOn'] = ApiClient.convertToType(data['dealReceivedOn'], 'String');
             }
             if (data.hasOwnProperty('dealExpiryDate')) {
                 obj['dealExpiryDate'] = ApiClient.convertToType(data['dealExpiryDate'], 'String');
@@ -107,6 +107,10 @@ class DealsDetailsResponse {
         // ensure the json data is a string
         if (data['vendor'] && !(typeof data['vendor'] === 'string' || data['vendor'] instanceof String)) {
             throw new Error("Expected the field `vendor` to be a primitive type in the JSON string but got " + data['vendor']);
+        }
+        // ensure the json data is a string
+        if (data['dealReceivedOn'] && !(typeof data['dealReceivedOn'] === 'string' || data['dealReceivedOn'] instanceof String)) {
+            throw new Error("Expected the field `dealReceivedOn` to be a primitive type in the JSON string but got " + data['dealReceivedOn']);
         }
         // ensure the json data is a string
         if (data['dealExpiryDate'] && !(typeof data['dealExpiryDate'] === 'string' || data['dealExpiryDate'] instanceof String)) {
@@ -175,7 +179,7 @@ DealsDetailsResponse.prototype['vendor'] = undefined;
 
 /**
  * The date on which the deal starts.
- * @member {Date} dealReceivedOn
+ * @member {String} dealReceivedOn
  */
 DealsDetailsResponse.prototype['dealReceivedOn'] = undefined;
 

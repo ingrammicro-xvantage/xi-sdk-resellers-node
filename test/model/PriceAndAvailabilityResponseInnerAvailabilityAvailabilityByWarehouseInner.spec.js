@@ -84,6 +84,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property quantityOnOrder (base name: "quantityOnOrder")', function() {
+      // uncomment below and update the code to test the property quantityOnOrder
+      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property backOrderInfo (base name: "backOrderInfo")', function() {
       // uncomment below and update the code to test the property backOrderInfo
       //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner();

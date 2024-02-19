@@ -84,7 +84,13 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property orderDate (base name: "OrderDate")', function() {
+    it('should have the property orderNumber (base name: "orderNumber")', function() {
+      // uncomment below and update the code to test the property orderNumber
+      //var instance = new XiSdkResellers.InvoiceDetailsv61Response();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property orderDate (base name: "orderDate")', function() {
       // uncomment below and update the code to test the property orderDate
       //var instance = new XiSdkResellers.InvoiceDetailsv61Response();
       //expect(instance).to.be();

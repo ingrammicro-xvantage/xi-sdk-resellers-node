@@ -151,6 +151,7 @@ docs/QuoteDetailsResponseProductsInnerPrice.md
 docs/QuoteDetailsResponseResellerInfo.md
 docs/QuoteSearchResponse.md
 docs/QuoteSearchResponseQuotesInner.md
+docs/QuoteSearchResponseQuotesInnerLinksInner.md
 docs/QuoteToOrderApi.md
 docs/QuoteToOrderDetailsDTO.md
 docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md
@@ -351,6 +352,7 @@ src/model/QuoteDetailsResponseProductsInnerPrice.js
 src/model/QuoteDetailsResponseResellerInfo.js
 src/model/QuoteSearchResponse.js
 src/model/QuoteSearchResponseQuotesInner.js
+src/model/QuoteSearchResponseQuotesInnerLinksInner.js
 src/model/QuoteToOrderDetailsDTO.js
 src/model/QuoteToOrderDetailsDTOAdditionalAttributesInner.js
 src/model/QuoteToOrderDetailsDTOEndUserInfoInner.js
@@ -541,6 +543,7 @@ test/model/QuoteDetailsResponseProductsInnerPrice.spec.js
 test/model/QuoteDetailsResponseResellerInfo.spec.js
 test/model/QuoteSearchResponse.spec.js
 test/model/QuoteSearchResponseQuotesInner.spec.js
+test/model/QuoteSearchResponseQuotesInnerLinksInner.spec.js
 test/model/QuoteToOrderDetailsDTO.spec.js
 test/model/QuoteToOrderDetailsDTOAdditionalAttributesInner.spec.js
 test/model/QuoteToOrderDetailsDTOEndUserInfoInner.spec.js

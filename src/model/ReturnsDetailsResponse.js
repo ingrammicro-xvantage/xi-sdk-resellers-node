@@ -58,7 +58,7 @@ class ReturnsDetailsResponse {
                 obj['caseRequestNumber'] = ApiClient.convertToType(data['caseRequestNumber'], 'String');
             }
             if (data.hasOwnProperty('createdOn')) {
-                obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'Date');
+                obj['createdOn'] = ApiClient.convertToType(data['createdOn'], 'String');
             }
             if (data.hasOwnProperty('returnReason')) {
                 obj['returnReason'] = ApiClient.convertToType(data['returnReason'], 'String');
@@ -108,6 +108,10 @@ class ReturnsDetailsResponse {
         // ensure the json data is a string
         if (data['caseRequestNumber'] && !(typeof data['caseRequestNumber'] === 'string' || data['caseRequestNumber'] instanceof String)) {
             throw new Error("Expected the field `caseRequestNumber` to be a primitive type in the JSON string but got " + data['caseRequestNumber']);
+        }
+        // ensure the json data is a string
+        if (data['createdOn'] && !(typeof data['createdOn'] === 'string' || data['createdOn'] instanceof String)) {
+            throw new Error("Expected the field `createdOn` to be a primitive type in the JSON string but got " + data['createdOn']);
         }
         // ensure the json data is a string
         if (data['returnReason'] && !(typeof data['returnReason'] === 'string' || data['returnReason'] instanceof String)) {
@@ -164,7 +168,7 @@ ReturnsDetailsResponse.prototype['caseRequestNumber'] = undefined;
 
 /**
  * The date on which the return request was created.
- * @member {Date} createdOn
+ * @member {String} createdOn
  */
 ReturnsDetailsResponse.prototype['createdOn'] = undefined;
 

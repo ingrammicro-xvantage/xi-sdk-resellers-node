@@ -96,6 +96,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property closingReason (base name: "closingReason")', function() {
+      // uncomment below and update the code to test the property closingReason
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property specialBidId (base name: "specialBidId")', function() {
       // uncomment below and update the code to test the property specialBidId
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
