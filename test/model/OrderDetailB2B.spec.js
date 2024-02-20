@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -140,6 +140,12 @@
 
     it('should have the property totalTax (base name: "totalTax")', function() {
       // uncomment below and update the code to test the property totalTax
+      //var instance = new XiSdkResellers.OrderDetailB2B();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property totalFees (base name: "totalFees")', function() {
+      // uncomment below and update the code to test the property totalFees
       //var instance = new XiSdkResellers.OrderDetailB2B();
       //expect(instance).to.be();
     });

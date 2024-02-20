@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner from './ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner';
+import QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner from './QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner';
 
 /**
  * The QuoteToOrderDetailsDTOLinesInner model module.
@@ -58,7 +58,7 @@ class QuoteToOrderDetailsDTOLinesInner {
                 obj['quantity'] = ApiClient.convertToType(data['quantity'], 'String');
             }
             if (data.hasOwnProperty('vmfAdditionalAttributesLines')) {
-                obj['vmfAdditionalAttributesLines'] = ApiClient.convertToType(data['vmfAdditionalAttributesLines'], [ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner]);
+                obj['vmfAdditionalAttributesLines'] = ApiClient.convertToType(data['vmfAdditionalAttributesLines'], [QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner]);
             }
         }
         return obj;
@@ -89,7 +89,7 @@ class QuoteToOrderDetailsDTOLinesInner {
             }
             // validate the optional field `vmfAdditionalAttributesLines` (array)
             for (const item of data['vmfAdditionalAttributesLines']) {
-                ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.validateJSON(item);
+                QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.validateJSON(item);
             };
         }
 
@@ -121,7 +121,7 @@ QuoteToOrderDetailsDTOLinesInner.prototype['quantity'] = undefined;
 
 /**
  * The object containing the list of fields required at a line level by the vendor.
- * @member {Array.<module:model/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner>} vmfAdditionalAttributesLines
+ * @member {Array.<module:model/QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner>} vmfAdditionalAttributesLines
  */
 QuoteToOrderDetailsDTOLinesInner.prototype['vmfAdditionalAttributesLines'] = undefined;
 

@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import QuoteSearchResponseQuotesInnerLinksInner from './QuoteSearchResponseQuotesInnerLinksInner';
 
 /**
  * The QuoteSearchResponseQuotesInner model module.
@@ -47,6 +48,9 @@ class QuoteSearchResponseQuotesInner {
         if (data) {
             obj = obj || new QuoteSearchResponseQuotesInner();
 
+            if (data.hasOwnProperty('quoteGuid')) {
+                obj['quoteGuid'] = ApiClient.convertToType(data['quoteGuid'], 'String');
+            }
             if (data.hasOwnProperty('quoteName')) {
                 obj['quoteName'] = ApiClient.convertToType(data['quoteName'], 'String');
             }
@@ -77,11 +81,20 @@ class QuoteSearchResponseQuotesInner {
             if (data.hasOwnProperty('ingramQuoteExpiryDate')) {
                 obj['ingramQuoteExpiryDate'] = ApiClient.convertToType(data['ingramQuoteExpiryDate'], 'String');
             }
+            if (data.hasOwnProperty('endUserName')) {
+                obj['endUserName'] = ApiClient.convertToType(data['endUserName'], 'String');
+            }
             if (data.hasOwnProperty('vendor')) {
                 obj['vendor'] = ApiClient.convertToType(data['vendor'], 'String');
             }
             if (data.hasOwnProperty('createdBy')) {
                 obj['createdBy'] = ApiClient.convertToType(data['createdBy'], 'String');
+            }
+            if (data.hasOwnProperty('quoteType')) {
+                obj['quoteType'] = ApiClient.convertToType(data['quoteType'], 'String');
+            }
+            if (data.hasOwnProperty('links')) {
+                obj['links'] = ApiClient.convertToType(data['links'], [QuoteSearchResponseQuotesInnerLinksInner]);
             }
         }
         return obj;
@@ -93,6 +106,10 @@ class QuoteSearchResponseQuotesInner {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>QuoteSearchResponseQuotesInner</code>.
      */
     static validateJSON(data) {
+        // ensure the json data is a string
+        if (data['quoteGuid'] && !(typeof data['quoteGuid'] === 'string' || data['quoteGuid'] instanceof String)) {
+            throw new Error("Expected the field `quoteGuid` to be a primitive type in the JSON string but got " + data['quoteGuid']);
+        }
         // ensure the json data is a string
         if (data['quoteName'] && !(typeof data['quoteName'] === 'string' || data['quoteName'] instanceof String)) {
             throw new Error("Expected the field `quoteName` to be a primitive type in the JSON string but got " + data['quoteName']);
@@ -130,12 +147,30 @@ class QuoteSearchResponseQuotesInner {
             throw new Error("Expected the field `ingramQuoteExpiryDate` to be a primitive type in the JSON string but got " + data['ingramQuoteExpiryDate']);
         }
         // ensure the json data is a string
+        if (data['endUserName'] && !(typeof data['endUserName'] === 'string' || data['endUserName'] instanceof String)) {
+            throw new Error("Expected the field `endUserName` to be a primitive type in the JSON string but got " + data['endUserName']);
+        }
+        // ensure the json data is a string
         if (data['vendor'] && !(typeof data['vendor'] === 'string' || data['vendor'] instanceof String)) {
             throw new Error("Expected the field `vendor` to be a primitive type in the JSON string but got " + data['vendor']);
         }
         // ensure the json data is a string
         if (data['createdBy'] && !(typeof data['createdBy'] === 'string' || data['createdBy'] instanceof String)) {
             throw new Error("Expected the field `createdBy` to be a primitive type in the JSON string but got " + data['createdBy']);
+        }
+        // ensure the json data is a string
+        if (data['quoteType'] && !(typeof data['quoteType'] === 'string' || data['quoteType'] instanceof String)) {
+            throw new Error("Expected the field `quoteType` to be a primitive type in the JSON string but got " + data['quoteType']);
+        }
+        if (data['links']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['links'])) {
+                throw new Error("Expected the field `links` to be an array in the JSON data but got " + data['links']);
+            }
+            // validate the optional field `links` (array)
+            for (const item of data['links']) {
+                QuoteSearchResponseQuotesInnerLinksInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -145,6 +180,11 @@ class QuoteSearchResponseQuotesInner {
 }
 
 
+
+/**
+ * @member {String} quoteGuid
+ */
+QuoteSearchResponseQuotesInner.prototype['quoteGuid'] = undefined;
 
 /**
  * Quote Name given to quote by sales team or system generated.  Generally used as a reference to identify the quote.
@@ -207,6 +247,12 @@ QuoteSearchResponseQuotesInner.prototype['lastModifiedDate'] = undefined;
 QuoteSearchResponseQuotesInner.prototype['ingramQuoteExpiryDate'] = undefined;
 
 /**
+ * End User Name
+ * @member {String} endUserName
+ */
+QuoteSearchResponseQuotesInner.prototype['endUserName'] = undefined;
+
+/**
  * Name of the vendor.
  * @member {String} vendor
  */
@@ -217,6 +263,17 @@ QuoteSearchResponseQuotesInner.prototype['vendor'] = undefined;
  * @member {String} createdBy
  */
 QuoteSearchResponseQuotesInner.prototype['createdBy'] = undefined;
+
+/**
+ * Type of quote
+ * @member {String} quoteType
+ */
+QuoteSearchResponseQuotesInner.prototype['quoteType'] = undefined;
+
+/**
+ * @member {Array.<module:model/QuoteSearchResponseQuotesInnerLinksInner>} links
+ */
+QuoteSearchResponseQuotesInner.prototype['links'] = undefined;
 
 
 

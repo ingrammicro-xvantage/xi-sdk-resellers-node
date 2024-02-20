@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -62,6 +62,9 @@ class PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner 
             }
             if (data.hasOwnProperty('quantityBackorderedEta')) {
                 obj['quantityBackorderedEta'] = ApiClient.convertToType(data['quantityBackorderedEta'], 'String');
+            }
+            if (data.hasOwnProperty('quantityOnOrder')) {
+                obj['quantityOnOrder'] = ApiClient.convertToType(data['quantityOnOrder'], 'Number');
             }
             if (data.hasOwnProperty('backOrderInfo')) {
                 obj['backOrderInfo'] = ApiClient.convertToType(data['backOrderInfo'], [PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInnerBackOrderInfoInner]);
@@ -136,6 +139,12 @@ PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.protot
  * @member {String} quantityBackorderedEta
  */
 PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.prototype['quantityBackorderedEta'] = undefined;
+
+/**
+ * The quantity of the product on order.
+ * @member {Number} quantityOnOrder
+ */
+PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.prototype['quantityOnOrder'] = undefined;
 
 /**
  * *Currently, this feature is not available in these countries (Mexico, Turkey, New Zealand, Colombia, Chile, Brazil, Peru, Western Sahara).

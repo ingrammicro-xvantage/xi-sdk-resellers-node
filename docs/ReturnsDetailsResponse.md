@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **typeOfDetails** | **String** | The type of the details. Return or Claim. | [optional] 
 **rmaClaimId** | **String** | The rmaClaimId claim id. | [optional] 
 **caseRequestNumber** | **String** | A unique return request number. | [optional] 
-**createdOn** | **Date** | The date on which the return request was created. | [optional] 
+**createdOn** | **String** | The date on which the return request was created. | [optional] 
 **returnReason** | **String** | The reason for the return. | [optional] 
 **referenceNumber** | **String** | The reference number for the return. | [optional] 
 **status** | **String** | The status of the request. | [optional] 

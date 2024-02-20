@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -52,6 +52,12 @@
       // uncomment below and update the code to test QuoteSearchResponseQuotesInner
       //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be.a(XiSdkResellers.QuoteSearchResponseQuotesInner);
+    });
+
+    it('should have the property quoteGuid (base name: "quoteGuid")', function() {
+      // uncomment below and update the code to test the property quoteGuid
+      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInner();
+      //expect(instance).to.be();
     });
 
     it('should have the property quoteName (base name: "quoteName")', function() {
@@ -114,6 +120,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property endUserName (base name: "endUserName")', function() {
+      // uncomment below and update the code to test the property endUserName
+      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property vendor (base name: "vendor")', function() {
       // uncomment below and update the code to test the property vendor
       //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInner();
@@ -122,6 +134,18 @@
 
     it('should have the property createdBy (base name: "createdBy")', function() {
       // uncomment below and update the code to test the property createdBy
+      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property quoteType (base name: "quoteType")', function() {
+      // uncomment below and update the code to test the property quoteType
+      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property links (base name: "links")', function() {
+      // uncomment below and update the code to test the property links
       //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInner();
       //expect(instance).to.be();
     });

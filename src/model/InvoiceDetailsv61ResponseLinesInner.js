@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -70,7 +70,7 @@ class InvoiceDetailsv61ResponseLinesInner {
                 obj['productDescription'] = ApiClient.convertToType(data['productDescription'], 'String');
             }
             if (data.hasOwnProperty('unitWeight')) {
-                obj['unitWeight'] = ApiClient.convertToType(data['unitWeight'], 'String');
+                obj['unitWeight'] = ApiClient.convertToType(data['unitWeight'], 'Number');
             }
             if (data.hasOwnProperty('quantity')) {
                 obj['quantity'] = ApiClient.convertToType(data['quantity'], 'Number');
@@ -144,10 +144,6 @@ class InvoiceDetailsv61ResponseLinesInner {
             throw new Error("Expected the field `productDescription` to be a primitive type in the JSON string but got " + data['productDescription']);
         }
         // ensure the json data is a string
-        if (data['unitWeight'] && !(typeof data['unitWeight'] === 'string' || data['unitWeight'] instanceof String)) {
-            throw new Error("Expected the field `unitWeight` to be a primitive type in the JSON string but got " + data['unitWeight']);
-        }
-        // ensure the json data is a string
         if (data['unitOfMeasure'] && !(typeof data['unitOfMeasure'] === 'string' || data['unitOfMeasure'] instanceof String)) {
             throw new Error("Expected the field `unitOfMeasure` to be a primitive type in the JSON string but got " + data['unitOfMeasure']);
         }
@@ -219,7 +215,7 @@ InvoiceDetailsv61ResponseLinesInner.prototype['productDescription'] = undefined;
 
 /**
  * Weight of the product.
- * @member {String} unitWeight
+ * @member {Number} unitWeight
  */
 InvoiceDetailsv61ResponseLinesInner.prototype['unitWeight'] = undefined;
 

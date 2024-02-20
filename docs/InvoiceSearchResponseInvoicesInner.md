@@ -10,10 +10,10 @@ Name | Type | Description | Notes
 **invoiceStatus** | **String** | Invoice Status. | [optional] 
 **invoiceDate** | **String** | Invoice Date. | [optional] 
 **invoiceDueDate** | **String** | Invoice Due Date. | [optional] 
-**invoicedAmountDue** | **String** | Invoice Amount. | [optional] 
+**invoicedAmountDue** | **Number** | Invoice Amount. | [optional] 
 **customerOrderNumber** | **String** | Customer Order No. | [optional] 
 **orderCreateDate** | **String** | Order Create Date. | [optional] 
 **endCustomerOrderNumber** | **String** | End Customer Order number. | [optional] 
-**invoiceAmountInclTax** | **String** | Invoice Amount Inclusive of Taxes | [optional] 
+**invoiceAmountInclTax** | **Number** | Invoice Amount Inclusive of Taxes | [optional] 
 
 

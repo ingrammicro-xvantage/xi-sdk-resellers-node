@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -97,6 +97,9 @@ class OrderDetailB2B {
             }
             if (data.hasOwnProperty('totalTax')) {
                 obj['totalTax'] = ApiClient.convertToType(data['totalTax'], 'Number');
+            }
+            if (data.hasOwnProperty('totalFees')) {
+                obj['totalFees'] = ApiClient.convertToType(data['totalFees'], 'Number');
             }
             if (data.hasOwnProperty('paymentTerms')) {
                 obj['paymentTerms'] = ApiClient.convertToType(data['paymentTerms'], 'String');
@@ -316,6 +319,12 @@ OrderDetailB2B.prototype['totalWeight'] = undefined;
  * @member {Number} totalTax
  */
 OrderDetailB2B.prototype['totalTax'] = undefined;
+
+/**
+ * Total fees on the orders placed.
+ * @member {Number} totalFees
+ */
+OrderDetailB2B.prototype['totalFees'] = undefined;
 
 /**
  * The payment terms of the order. (Ex- Net 30 days).

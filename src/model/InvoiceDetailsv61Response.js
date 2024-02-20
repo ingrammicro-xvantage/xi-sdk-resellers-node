@@ -1,5 +1,5 @@
 /**
- * XI SDK Resellers
+ * XI Sdk Resellers
  * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
@@ -68,8 +68,11 @@ class InvoiceDetailsv61Response {
             if (data.hasOwnProperty('endCustomerOrderNumber')) {
                 obj['endCustomerOrderNumber'] = ApiClient.convertToType(data['endCustomerOrderNumber'], 'String');
             }
-            if (data.hasOwnProperty('OrderDate')) {
-                obj['OrderDate'] = ApiClient.convertToType(data['OrderDate'], 'Date');
+            if (data.hasOwnProperty('orderNumber')) {
+                obj['orderNumber'] = ApiClient.convertToType(data['orderNumber'], 'String');
+            }
+            if (data.hasOwnProperty('orderDate')) {
+                obj['orderDate'] = ApiClient.convertToType(data['orderDate'], 'Date');
             }
             if (data.hasOwnProperty('billToID')) {
                 obj['billToID'] = ApiClient.convertToType(data['billToID'], 'String');
@@ -135,6 +138,10 @@ class InvoiceDetailsv61Response {
         // ensure the json data is a string
         if (data['endCustomerOrderNumber'] && !(typeof data['endCustomerOrderNumber'] === 'string' || data['endCustomerOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got " + data['endCustomerOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['orderNumber'] && !(typeof data['orderNumber'] === 'string' || data['orderNumber'] instanceof String)) {
+            throw new Error("Expected the field `orderNumber` to be a primitive type in the JSON string but got " + data['orderNumber']);
         }
         // ensure the json data is a string
         if (data['billToID'] && !(typeof data['billToID'] === 'string' || data['billToID'] instanceof String)) {
@@ -234,10 +241,16 @@ InvoiceDetailsv61Response.prototype['customerOrderNumber'] = undefined;
 InvoiceDetailsv61Response.prototype['endCustomerOrderNumber'] = undefined;
 
 /**
- * The date and time in UTC format that the order was created.
- * @member {Date} OrderDate
+ * The end customer's order number for reference in their system.
+ * @member {String} orderNumber
  */
-InvoiceDetailsv61Response.prototype['OrderDate'] = undefined;
+InvoiceDetailsv61Response.prototype['orderNumber'] = undefined;
+
+/**
+ * The date and time in UTC format that the order was created.
+ * @member {Date} orderDate
+ */
+InvoiceDetailsv61Response.prototype['orderDate'] = undefined;
 
 /**
  * Bill to party

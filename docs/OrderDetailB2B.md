@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **currencyCode** | **String** | The country-specific three digit ISO 4217 currency code for the order. | [optional] 
 **totalWeight** | **Number** | Total order weight. unit -- North america - Pounds , other countries will be KG. | [optional] 
 **totalTax** | **Number** | Total tax on the orders placed. | [optional] 
+**totalFees** | **Number** | Total fees on the orders placed. | [optional] 
 **paymentTerms** | **String** | The payment terms of the order. (Ex- Net 30 days). | [optional] 
 **notes** | **String** | The header-level notes for the order. | [optional] 
 **billToInfo** | [**OrderDetailB2BBillToInfo**](OrderDetailB2BBillToInfo.md) |  | [optional] 
