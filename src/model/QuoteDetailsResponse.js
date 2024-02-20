@@ -102,6 +102,9 @@ class QuoteDetailsResponse {
             if (data.hasOwnProperty('legalTerms')) {
                 obj['legalTerms'] = ApiClient.convertToType(data['legalTerms'], 'String');
             }
+            if (data.hasOwnProperty('quoteType')) {
+                obj['quoteType'] = ApiClient.convertToType(data['quoteType'], 'String');
+            }
             if (data.hasOwnProperty('leaseInfo')) {
                 obj['leaseInfo'] = ApiClient.convertToType(data['leaseInfo'], 'String');
             }
@@ -209,6 +212,10 @@ class QuoteDetailsResponse {
         // ensure the json data is a string
         if (data['legalTerms'] && !(typeof data['legalTerms'] === 'string' || data['legalTerms'] instanceof String)) {
             throw new Error("Expected the field `legalTerms` to be a primitive type in the JSON string but got " + data['legalTerms']);
+        }
+        // ensure the json data is a string
+        if (data['quoteType'] && !(typeof data['quoteType'] === 'string' || data['quoteType'] instanceof String)) {
+            throw new Error("Expected the field `quoteType` to be a primitive type in the JSON string but got " + data['quoteType']);
         }
         // ensure the json data is a string
         if (data['leaseInfo'] && !(typeof data['leaseInfo'] === 'string' || data['leaseInfo'] instanceof String)) {
@@ -356,6 +363,11 @@ QuoteDetailsResponse.prototype['purchaseInstructions'] = undefined;
  * @member {String} legalTerms
  */
 QuoteDetailsResponse.prototype['legalTerms'] = undefined;
+
+/**
+ * @member {String} quoteType
+ */
+QuoteDetailsResponse.prototype['quoteType'] = undefined;
 
 /**
  * Lease information.

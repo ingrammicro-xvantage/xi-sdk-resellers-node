@@ -120,6 +120,9 @@ class OrderDetailB2BLinesInner {
             if (data.hasOwnProperty('promisedDeliveryDate')) {
                 obj['promisedDeliveryDate'] = ApiClient.convertToType(data['promisedDeliveryDate'], 'String');
             }
+            if (data.hasOwnProperty('backOrderETAData')) {
+                obj['backOrderETAData'] = ApiClient.convertToType(data['backOrderETAData'], 'String');
+            }
             if (data.hasOwnProperty('lineNotes')) {
                 obj['lineNotes'] = ApiClient.convertToType(data['lineNotes'], 'String');
             }
@@ -213,6 +216,10 @@ class OrderDetailB2BLinesInner {
         // ensure the json data is a string
         if (data['promisedDeliveryDate'] && !(typeof data['promisedDeliveryDate'] === 'string' || data['promisedDeliveryDate'] instanceof String)) {
             throw new Error("Expected the field `promisedDeliveryDate` to be a primitive type in the JSON string but got " + data['promisedDeliveryDate']);
+        }
+        // ensure the json data is a string
+        if (data['backOrderETAData'] && !(typeof data['backOrderETAData'] === 'string' || data['backOrderETAData'] instanceof String)) {
+            throw new Error("Expected the field `backOrderETAData` to be a primitive type in the JSON string but got " + data['backOrderETAData']);
         }
         // ensure the json data is a string
         if (data['lineNotes'] && !(typeof data['lineNotes'] === 'string' || data['lineNotes'] instanceof String)) {
@@ -422,6 +429,12 @@ OrderDetailB2BLinesInner.prototype['requestedDeliverydate'] = undefined;
  * @member {String} promisedDeliveryDate
  */
 OrderDetailB2BLinesInner.prototype['promisedDeliveryDate'] = undefined;
+
+/**
+ * Backorder ETA date
+ * @member {String} backOrderETAData
+ */
+OrderDetailB2BLinesInner.prototype['backOrderETAData'] = undefined;
 
 /**
  * Line-level notes for the order.

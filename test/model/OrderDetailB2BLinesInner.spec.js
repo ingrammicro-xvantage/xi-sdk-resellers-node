@@ -186,6 +186,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property backOrderETAData (base name: "backOrderETAData")', function() {
+      // uncomment below and update the code to test the property backOrderETAData
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property lineNotes (base name: "lineNotes")', function() {
       // uncomment below and update the code to test the property lineNotes
       //var instance = new XiSdkResellers.OrderDetailB2BLinesInner();

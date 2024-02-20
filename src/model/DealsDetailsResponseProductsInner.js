@@ -81,10 +81,10 @@ class DealsDetailsResponseProductsInner {
                 obj['specialConditions'] = ApiClient.convertToType(data['specialConditions'], 'String');
             }
             if (data.hasOwnProperty('startDate')) {
-                obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Date');
+                obj['startDate'] = ApiClient.convertToType(data['startDate'], 'String');
             }
             if (data.hasOwnProperty('expirationDate')) {
-                obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'Date');
+                obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'String');
             }
             if (data.hasOwnProperty('daysRemaining')) {
                 obj['daysRemaining'] = ApiClient.convertToType(data['daysRemaining'], 'Number');
@@ -122,6 +122,14 @@ class DealsDetailsResponseProductsInner {
         // ensure the json data is a string
         if (data['specialConditions'] && !(typeof data['specialConditions'] === 'string' || data['specialConditions'] instanceof String)) {
             throw new Error("Expected the field `specialConditions` to be a primitive type in the JSON string but got " + data['specialConditions']);
+        }
+        // ensure the json data is a string
+        if (data['startDate'] && !(typeof data['startDate'] === 'string' || data['startDate'] instanceof String)) {
+            throw new Error("Expected the field `startDate` to be a primitive type in the JSON string but got " + data['startDate']);
+        }
+        // ensure the json data is a string
+        if (data['expirationDate'] && !(typeof data['expirationDate'] === 'string' || data['expirationDate'] instanceof String)) {
+            throw new Error("Expected the field `expirationDate` to be a primitive type in the JSON string but got " + data['expirationDate']);
         }
 
         return true;
@@ -200,13 +208,13 @@ DealsDetailsResponseProductsInner.prototype['specialConditions'] = undefined;
 
 /**
  * Start Date.
- * @member {Date} startDate
+ * @member {String} startDate
  */
 DealsDetailsResponseProductsInner.prototype['startDate'] = undefined;
 
 /**
  * Expiration date.
- * @member {Date} expirationDate
+ * @member {String} expirationDate
  */
 DealsDetailsResponseProductsInner.prototype['expirationDate'] = undefined;
 
