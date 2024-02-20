@@ -56,11 +56,11 @@ npm run build
 
 #### git
 
-If the library is hosted at a git repository, e.g.https://github.com/ingrammicro-xvantage/xi-sdk-resellers-node
+If the library is hosted at a git repository, e.g.https://github.com/GIT_USER_ID/GIT_REPO_ID
 then install it via:
 
 ```shell
-    npm install ingrammicro-xvantage/xi-sdk-resellers-node
+    npm install GIT_USER_ID/GIT_REPO_ID --save
 ```
 
 ### For browser
@@ -314,11 +314,11 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.RenewalsDetailsResponseProductsInner](docs/RenewalsDetailsResponseProductsInner.md)
  - [XiSdkResellers.RenewalsDetailsResponseReferenceNumberInner](docs/RenewalsDetailsResponseReferenceNumberInner.md)
  - [XiSdkResellers.RenewalsSearchRequest](docs/RenewalsSearchRequest.md)
- - [XiSdkResellers.RenewalsSearchRequestDataType](docs/RenewalsSearchRequestDataType.md)
- - [XiSdkResellers.RenewalsSearchRequestDataTypeEndDate](docs/RenewalsSearchRequestDataTypeEndDate.md)
- - [XiSdkResellers.RenewalsSearchRequestDataTypeExpirationDate](docs/RenewalsSearchRequestDataTypeExpirationDate.md)
- - [XiSdkResellers.RenewalsSearchRequestDataTypeInvoiceDate](docs/RenewalsSearchRequestDataTypeInvoiceDate.md)
- - [XiSdkResellers.RenewalsSearchRequestDataTypeStartDate](docs/RenewalsSearchRequestDataTypeStartDate.md)
+ - [XiSdkResellers.RenewalsSearchRequestDateType](docs/RenewalsSearchRequestDateType.md)
+ - [XiSdkResellers.RenewalsSearchRequestDateTypeEndDate](docs/RenewalsSearchRequestDateTypeEndDate.md)
+ - [XiSdkResellers.RenewalsSearchRequestDateTypeExpirationDate](docs/RenewalsSearchRequestDateTypeExpirationDate.md)
+ - [XiSdkResellers.RenewalsSearchRequestDateTypeInvoiceDate](docs/RenewalsSearchRequestDateTypeInvoiceDate.md)
+ - [XiSdkResellers.RenewalsSearchRequestDateTypeStartDate](docs/RenewalsSearchRequestDateTypeStartDate.md)
  - [XiSdkResellers.RenewalsSearchRequestStatus](docs/RenewalsSearchRequestStatus.md)
  - [XiSdkResellers.RenewalsSearchRequestStatusOpporutinyStatus](docs/RenewalsSearchRequestStatusOpporutinyStatus.md)
  - [XiSdkResellers.RenewalsSearchResponse](docs/RenewalsSearchResponse.md)
@@ -353,11 +353,3 @@ Authentication schemes defined for the API:
   - write: allows modifying resources
   - read: allows reading resources
 
-## Author
--[Ingram Micro Xvantage](https://github.com/ingrammicro-xvantage)
-
-## Contact
-
-For any inquiries or support, please feel free to contact us at:
-
-- Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)

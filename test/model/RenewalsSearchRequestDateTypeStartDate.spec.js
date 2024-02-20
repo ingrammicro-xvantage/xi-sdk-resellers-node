@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.RenewalsSearchRequestDataTypeExpirationDate();
+    instance = new XiSdkResellers.RenewalsSearchRequestDateTypeStartDate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,22 @@
       object[property] = value;
   }
 
-  describe('RenewalsSearchRequestDataTypeExpirationDate', function() {
-    it('should create an instance of RenewalsSearchRequestDataTypeExpirationDate', function() {
-      // uncomment below and update the code to test RenewalsSearchRequestDataTypeExpirationDate
-      //var instance = new XiSdkResellers.RenewalsSearchRequestDataTypeExpirationDate();
-      //expect(instance).to.be.a(XiSdkResellers.RenewalsSearchRequestDataTypeExpirationDate);
+  describe('RenewalsSearchRequestDateTypeStartDate', function() {
+    it('should create an instance of RenewalsSearchRequestDateTypeStartDate', function() {
+      // uncomment below and update the code to test RenewalsSearchRequestDateTypeStartDate
+      //var instance = new XiSdkResellers.RenewalsSearchRequestDateTypeStartDate();
+      //expect(instance).to.be.a(XiSdkResellers.RenewalsSearchRequestDateTypeStartDate);
     });
 
     it('should have the property customStartDate (base name: "customStartDate")', function() {
       // uncomment below and update the code to test the property customStartDate
-      //var instance = new XiSdkResellers.RenewalsSearchRequestDataTypeExpirationDate();
+      //var instance = new XiSdkResellers.RenewalsSearchRequestDateTypeStartDate();
       //expect(instance).to.be();
     });
 
     it('should have the property customEndDate (base name: "customEndDate")', function() {
       // uncomment below and update the code to test the property customEndDate
-      //var instance = new XiSdkResellers.RenewalsSearchRequestDataTypeExpirationDate();
+      //var instance = new XiSdkResellers.RenewalsSearchRequestDateTypeStartDate();
       //expect(instance).to.be();
     });
 

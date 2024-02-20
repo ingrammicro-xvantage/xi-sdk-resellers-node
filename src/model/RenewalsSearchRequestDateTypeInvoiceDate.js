@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The RenewalsSearchRequestDataTypeEndDate model module.
- * @module model/RenewalsSearchRequestDataTypeEndDate
+ * The RenewalsSearchRequestDateTypeInvoiceDate model module.
+ * @module model/RenewalsSearchRequestDateTypeInvoiceDate
  * @version 1.0.0
  */
-class RenewalsSearchRequestDataTypeEndDate {
+class RenewalsSearchRequestDateTypeInvoiceDate {
     /**
-     * Constructs a new <code>RenewalsSearchRequestDataTypeEndDate</code>.
-     * @alias module:model/RenewalsSearchRequestDataTypeEndDate
+     * Constructs a new <code>RenewalsSearchRequestDateTypeInvoiceDate</code>.
+     * @alias module:model/RenewalsSearchRequestDateTypeInvoiceDate
      */
     constructor() { 
         
-        RenewalsSearchRequestDataTypeEndDate.initialize(this);
+        RenewalsSearchRequestDateTypeInvoiceDate.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class RenewalsSearchRequestDataTypeEndDate {
     }
 
     /**
-     * Constructs a <code>RenewalsSearchRequestDataTypeEndDate</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>RenewalsSearchRequestDateTypeInvoiceDate</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/RenewalsSearchRequestDataTypeEndDate} obj Optional instance to populate.
-     * @return {module:model/RenewalsSearchRequestDataTypeEndDate} The populated <code>RenewalsSearchRequestDataTypeEndDate</code> instance.
+     * @param {module:model/RenewalsSearchRequestDateTypeInvoiceDate} obj Optional instance to populate.
+     * @return {module:model/RenewalsSearchRequestDateTypeInvoiceDate} The populated <code>RenewalsSearchRequestDateTypeInvoiceDate</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new RenewalsSearchRequestDataTypeEndDate();
+            obj = obj || new RenewalsSearchRequestDateTypeInvoiceDate();
 
             if (data.hasOwnProperty('customStartDate')) {
                 obj['customStartDate'] = ApiClient.convertToType(data['customStartDate'], 'String');
@@ -58,9 +58,9 @@ class RenewalsSearchRequestDataTypeEndDate {
     }
 
     /**
-     * Validates the JSON data with respect to <code>RenewalsSearchRequestDataTypeEndDate</code>.
+     * Validates the JSON data with respect to <code>RenewalsSearchRequestDateTypeInvoiceDate</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RenewalsSearchRequestDataTypeEndDate</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RenewalsSearchRequestDateTypeInvoiceDate</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -81,21 +81,21 @@ class RenewalsSearchRequestDataTypeEndDate {
 
 
 /**
- * Custom from date for Renewal end date.
+ * Custom start date for invoice date.
  * @member {String} customStartDate
  */
-RenewalsSearchRequestDataTypeEndDate.prototype['customStartDate'] = undefined;
+RenewalsSearchRequestDateTypeInvoiceDate.prototype['customStartDate'] = undefined;
 
 /**
- * Custom to date for Renewal end date.
+ * Custom end date for invoice date.
  * @member {String} customEndDate
  */
-RenewalsSearchRequestDataTypeEndDate.prototype['customEndDate'] = undefined;
+RenewalsSearchRequestDateTypeInvoiceDate.prototype['customEndDate'] = undefined;
 
 
 
 
 
 
-export default RenewalsSearchRequestDataTypeEndDate;
+export default RenewalsSearchRequestDateTypeInvoiceDate;
 

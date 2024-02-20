@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.RenewalsSearchRequestDataTypeInvoiceDate();
+    instance = new XiSdkResellers.RenewalsSearchRequestDateTypeExpirationDate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,22 @@
       object[property] = value;
   }
 
-  describe('RenewalsSearchRequestDataTypeInvoiceDate', function() {
-    it('should create an instance of RenewalsSearchRequestDataTypeInvoiceDate', function() {
-      // uncomment below and update the code to test RenewalsSearchRequestDataTypeInvoiceDate
-      //var instance = new XiSdkResellers.RenewalsSearchRequestDataTypeInvoiceDate();
-      //expect(instance).to.be.a(XiSdkResellers.RenewalsSearchRequestDataTypeInvoiceDate);
+  describe('RenewalsSearchRequestDateTypeExpirationDate', function() {
+    it('should create an instance of RenewalsSearchRequestDateTypeExpirationDate', function() {
+      // uncomment below and update the code to test RenewalsSearchRequestDateTypeExpirationDate
+      //var instance = new XiSdkResellers.RenewalsSearchRequestDateTypeExpirationDate();
+      //expect(instance).to.be.a(XiSdkResellers.RenewalsSearchRequestDateTypeExpirationDate);
     });
 
     it('should have the property customStartDate (base name: "customStartDate")', function() {
       // uncomment below and update the code to test the property customStartDate
-      //var instance = new XiSdkResellers.RenewalsSearchRequestDataTypeInvoiceDate();
+      //var instance = new XiSdkResellers.RenewalsSearchRequestDateTypeExpirationDate();
       //expect(instance).to.be();
     });
 
     it('should have the property customEndDate (base name: "customEndDate")', function() {
       // uncomment below and update the code to test the property customEndDate
-      //var instance = new XiSdkResellers.RenewalsSearchRequestDataTypeInvoiceDate();
+      //var instance = new XiSdkResellers.RenewalsSearchRequestDateTypeExpirationDate();
       //expect(instance).to.be();
     });
 

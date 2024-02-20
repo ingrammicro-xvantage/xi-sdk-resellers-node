@@ -165,7 +165,7 @@ export default class RenewalsApi {
         'IM-CountryCode': iMCountryCode,
         'IM-CorrelationID': iMCorrelationID,
         'IM-SenderID': opts['iMSenderID'],
-        'Content type': contentType
+        'Content Type': contentType
       };
       let formParams = {
       };

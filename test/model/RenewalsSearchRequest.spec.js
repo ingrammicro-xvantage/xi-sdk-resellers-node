@@ -60,8 +60,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property dataType (base name: "dataType")', function() {
-      // uncomment below and update the code to test the property dataType
+    it('should have the property dateType (base name: "dateType")', function() {
+      // uncomment below and update the code to test the property dateType
       //var instance = new XiSdkResellers.RenewalsSearchRequest();
       //expect(instance).to.be();
     });

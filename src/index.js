@@ -170,11 +170,11 @@ import RenewalsDetailsResponseEndUserInfoInner from './model/RenewalsDetailsResp
 import RenewalsDetailsResponseProductsInner from './model/RenewalsDetailsResponseProductsInner';
 import RenewalsDetailsResponseReferenceNumberInner from './model/RenewalsDetailsResponseReferenceNumberInner';
 import RenewalsSearchRequest from './model/RenewalsSearchRequest';
-import RenewalsSearchRequestDataType from './model/RenewalsSearchRequestDataType';
-import RenewalsSearchRequestDataTypeEndDate from './model/RenewalsSearchRequestDataTypeEndDate';
-import RenewalsSearchRequestDataTypeExpirationDate from './model/RenewalsSearchRequestDataTypeExpirationDate';
-import RenewalsSearchRequestDataTypeInvoiceDate from './model/RenewalsSearchRequestDataTypeInvoiceDate';
-import RenewalsSearchRequestDataTypeStartDate from './model/RenewalsSearchRequestDataTypeStartDate';
+import RenewalsSearchRequestDateType from './model/RenewalsSearchRequestDateType';
+import RenewalsSearchRequestDateTypeEndDate from './model/RenewalsSearchRequestDateTypeEndDate';
+import RenewalsSearchRequestDateTypeExpirationDate from './model/RenewalsSearchRequestDateTypeExpirationDate';
+import RenewalsSearchRequestDateTypeInvoiceDate from './model/RenewalsSearchRequestDateTypeInvoiceDate';
+import RenewalsSearchRequestDateTypeStartDate from './model/RenewalsSearchRequestDateTypeStartDate';
 import RenewalsSearchRequestStatus from './model/RenewalsSearchRequestStatus';
 import RenewalsSearchRequestStatusOpporutinyStatus from './model/RenewalsSearchRequestStatusOpporutinyStatus';
 import RenewalsSearchResponse from './model/RenewalsSearchResponse';
@@ -1187,34 +1187,34 @@ export {
     RenewalsSearchRequest,
 
     /**
-     * The RenewalsSearchRequestDataType model constructor.
-     * @property {module:model/RenewalsSearchRequestDataType}
+     * The RenewalsSearchRequestDateType model constructor.
+     * @property {module:model/RenewalsSearchRequestDateType}
      */
-    RenewalsSearchRequestDataType,
+    RenewalsSearchRequestDateType,
 
     /**
-     * The RenewalsSearchRequestDataTypeEndDate model constructor.
-     * @property {module:model/RenewalsSearchRequestDataTypeEndDate}
+     * The RenewalsSearchRequestDateTypeEndDate model constructor.
+     * @property {module:model/RenewalsSearchRequestDateTypeEndDate}
      */
-    RenewalsSearchRequestDataTypeEndDate,
+    RenewalsSearchRequestDateTypeEndDate,
 
     /**
-     * The RenewalsSearchRequestDataTypeExpirationDate model constructor.
-     * @property {module:model/RenewalsSearchRequestDataTypeExpirationDate}
+     * The RenewalsSearchRequestDateTypeExpirationDate model constructor.
+     * @property {module:model/RenewalsSearchRequestDateTypeExpirationDate}
      */
-    RenewalsSearchRequestDataTypeExpirationDate,
+    RenewalsSearchRequestDateTypeExpirationDate,
 
     /**
-     * The RenewalsSearchRequestDataTypeInvoiceDate model constructor.
-     * @property {module:model/RenewalsSearchRequestDataTypeInvoiceDate}
+     * The RenewalsSearchRequestDateTypeInvoiceDate model constructor.
+     * @property {module:model/RenewalsSearchRequestDateTypeInvoiceDate}
      */
-    RenewalsSearchRequestDataTypeInvoiceDate,
+    RenewalsSearchRequestDateTypeInvoiceDate,
 
     /**
-     * The RenewalsSearchRequestDataTypeStartDate model constructor.
-     * @property {module:model/RenewalsSearchRequestDataTypeStartDate}
+     * The RenewalsSearchRequestDateTypeStartDate model constructor.
+     * @property {module:model/RenewalsSearchRequestDateTypeStartDate}
      */
-    RenewalsSearchRequestDataTypeStartDate,
+    RenewalsSearchRequestDateTypeStartDate,
 
     /**
      * The RenewalsSearchRequestStatus model constructor.
