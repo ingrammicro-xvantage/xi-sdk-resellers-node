@@ -186,8 +186,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property backOrderETAData (base name: "backOrderETAData")', function() {
-      // uncomment below and update the code to test the property backOrderETAData
+    it('should have the property backOrderETADate (base name: "backOrderETADate")', function() {
+      // uncomment below and update the code to test the property backOrderETADate
       //var instance = new XiSdkResellers.OrderDetailB2BLinesInner();
       //expect(instance).to.be();
     });

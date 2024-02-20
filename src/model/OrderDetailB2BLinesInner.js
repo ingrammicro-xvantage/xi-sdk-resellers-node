@@ -120,8 +120,8 @@ class OrderDetailB2BLinesInner {
             if (data.hasOwnProperty('promisedDeliveryDate')) {
                 obj['promisedDeliveryDate'] = ApiClient.convertToType(data['promisedDeliveryDate'], 'String');
             }
-            if (data.hasOwnProperty('backOrderETAData')) {
-                obj['backOrderETAData'] = ApiClient.convertToType(data['backOrderETAData'], 'String');
+            if (data.hasOwnProperty('backOrderETADate')) {
+                obj['backOrderETADate'] = ApiClient.convertToType(data['backOrderETADate'], 'String');
             }
             if (data.hasOwnProperty('lineNotes')) {
                 obj['lineNotes'] = ApiClient.convertToType(data['lineNotes'], 'String');
@@ -218,8 +218,8 @@ class OrderDetailB2BLinesInner {
             throw new Error("Expected the field `promisedDeliveryDate` to be a primitive type in the JSON string but got " + data['promisedDeliveryDate']);
         }
         // ensure the json data is a string
-        if (data['backOrderETAData'] && !(typeof data['backOrderETAData'] === 'string' || data['backOrderETAData'] instanceof String)) {
-            throw new Error("Expected the field `backOrderETAData` to be a primitive type in the JSON string but got " + data['backOrderETAData']);
+        if (data['backOrderETADate'] && !(typeof data['backOrderETADate'] === 'string' || data['backOrderETADate'] instanceof String)) {
+            throw new Error("Expected the field `backOrderETADate` to be a primitive type in the JSON string but got " + data['backOrderETADate']);
         }
         // ensure the json data is a string
         if (data['lineNotes'] && !(typeof data['lineNotes'] === 'string' || data['lineNotes'] instanceof String)) {
@@ -432,9 +432,9 @@ OrderDetailB2BLinesInner.prototype['promisedDeliveryDate'] = undefined;
 
 /**
  * Backorder ETA date
- * @member {String} backOrderETAData
+ * @member {String} backOrderETADate
  */
-OrderDetailB2BLinesInner.prototype['backOrderETAData'] = undefined;
+OrderDetailB2BLinesInner.prototype['backOrderETADate'] = undefined;
 
 /**
  * Line-level notes for the order.
