@@ -102,20 +102,38 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property orderCreateDate (base name: "orderCreateDate")', function() {
-      // uncomment below and update the code to test the property orderCreateDate
-      //var instance = new XiSdkResellers.InvoiceSearchResponseInvoicesInner();
-      //expect(instance).to.be();
-    });
-
     it('should have the property endCustomerOrderNumber (base name: "endCustomerOrderNumber")', function() {
       // uncomment below and update the code to test the property endCustomerOrderNumber
       //var instance = new XiSdkResellers.InvoiceSearchResponseInvoicesInner();
       //expect(instance).to.be();
     });
 
+    it('should have the property orderCreateDate (base name: "orderCreateDate")', function() {
+      // uncomment below and update the code to test the property orderCreateDate
+      //var instance = new XiSdkResellers.InvoiceSearchResponseInvoicesInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property invoiceAmountInclTax (base name: "invoiceAmountInclTax")', function() {
       // uncomment below and update the code to test the property invoiceAmountInclTax
+      //var instance = new XiSdkResellers.InvoiceSearchResponseInvoicesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property forgntotalamount (base name: "forgntotalamount")', function() {
+      // uncomment below and update the code to test the property forgntotalamount
+      //var instance = new XiSdkResellers.InvoiceSearchResponseInvoicesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property gstInvoiceNumber (base name: "gstInvoiceNumber")', function() {
+      // uncomment below and update the code to test the property gstInvoiceNumber
+      //var instance = new XiSdkResellers.InvoiceSearchResponseInvoicesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isfeccenabled (base name: "isfeccenabled")', function() {
+      // uncomment below and update the code to test the property isfeccenabled
       //var instance = new XiSdkResellers.InvoiceSearchResponseInvoicesInner();
       //expect(instance).to.be();
     });

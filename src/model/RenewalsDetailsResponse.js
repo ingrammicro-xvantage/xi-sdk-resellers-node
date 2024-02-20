@@ -52,7 +52,7 @@ class RenewalsDetailsResponse {
             obj = obj || new RenewalsDetailsResponse();
 
             if (data.hasOwnProperty('renewalId')) {
-                obj['renewalId'] = ApiClient.convertToType(data['renewalId'], 'String');
+                obj['renewalId'] = ApiClient.convertToType(data['renewalId'], 'Number');
             }
             if (data.hasOwnProperty('ingramOrderNumber')) {
                 obj['ingramOrderNumber'] = ApiClient.convertToType(data['ingramOrderNumber'], 'String');
@@ -106,10 +106,6 @@ class RenewalsDetailsResponse {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RenewalsDetailsResponse</code>.
      */
     static validateJSON(data) {
-        // ensure the json data is a string
-        if (data['renewalId'] && !(typeof data['renewalId'] === 'string' || data['renewalId'] instanceof String)) {
-            throw new Error("Expected the field `renewalId` to be a primitive type in the JSON string but got " + data['renewalId']);
-        }
         // ensure the json data is a string
         if (data['ingramOrderNumber'] && !(typeof data['ingramOrderNumber'] === 'string' || data['ingramOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `ingramOrderNumber` to be a primitive type in the JSON string but got " + data['ingramOrderNumber']);
@@ -189,7 +185,7 @@ class RenewalsDetailsResponse {
 
 /**
  * Unique Ingram renewal ID.
- * @member {String} renewalId
+ * @member {Number} renewalId
  */
 RenewalsDetailsResponse.prototype['renewalId'] = undefined;
 
