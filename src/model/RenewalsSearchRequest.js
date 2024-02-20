@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import RenewalsSearchRequestDataType from './RenewalsSearchRequestDataType';
+import RenewalsSearchRequestDateType from './RenewalsSearchRequestDateType';
 import RenewalsSearchRequestStatus from './RenewalsSearchRequestStatus';
 
 /**
@@ -52,8 +52,8 @@ class RenewalsSearchRequest {
             if (data.hasOwnProperty('status')) {
                 obj['status'] = RenewalsSearchRequestStatus.constructFromObject(data['status']);
             }
-            if (data.hasOwnProperty('dataType')) {
-                obj['dataType'] = RenewalsSearchRequestDataType.constructFromObject(data['dataType']);
+            if (data.hasOwnProperty('dateType')) {
+                obj['dateType'] = RenewalsSearchRequestDateType.constructFromObject(data['dateType']);
             }
             if (data.hasOwnProperty('vendor')) {
                 obj['vendor'] = ApiClient.convertToType(data['vendor'], 'String');
@@ -75,9 +75,9 @@ class RenewalsSearchRequest {
         if (data['status']) { // data not null
           RenewalsSearchRequestStatus.validateJSON(data['status']);
         }
-        // validate the optional field `dataType`
-        if (data['dataType']) { // data not null
-          RenewalsSearchRequestDataType.validateJSON(data['dataType']);
+        // validate the optional field `dateType`
+        if (data['dateType']) { // data not null
+          RenewalsSearchRequestDateType.validateJSON(data['dateType']);
         }
         // ensure the json data is a string
         if (data['vendor'] && !(typeof data['vendor'] === 'string' || data['vendor'] instanceof String)) {
@@ -102,9 +102,9 @@ class RenewalsSearchRequest {
 RenewalsSearchRequest.prototype['status'] = undefined;
 
 /**
- * @member {module:model/RenewalsSearchRequestDataType} dataType
+ * @member {module:model/RenewalsSearchRequestDateType} dateType
  */
-RenewalsSearchRequest.prototype['dataType'] = undefined;
+RenewalsSearchRequest.prototype['dateType'] = undefined;
 
 /**
  * The name of the Vendor.

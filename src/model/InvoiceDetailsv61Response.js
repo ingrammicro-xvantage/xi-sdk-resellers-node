@@ -60,7 +60,7 @@ class InvoiceDetailsv61Response {
                 obj['invoiceStatus'] = ApiClient.convertToType(data['invoiceStatus'], 'String');
             }
             if (data.hasOwnProperty('invoiceDate')) {
-                obj['invoiceDate'] = ApiClient.convertToType(data['invoiceDate'], 'Date');
+                obj['invoiceDate'] = ApiClient.convertToType(data['invoiceDate'], 'String');
             }
             if (data.hasOwnProperty('customerOrderNumber')) {
                 obj['customerOrderNumber'] = ApiClient.convertToType(data['customerOrderNumber'], 'String');
@@ -72,7 +72,7 @@ class InvoiceDetailsv61Response {
                 obj['orderNumber'] = ApiClient.convertToType(data['orderNumber'], 'String');
             }
             if (data.hasOwnProperty('orderDate')) {
-                obj['orderDate'] = ApiClient.convertToType(data['orderDate'], 'Date');
+                obj['orderDate'] = ApiClient.convertToType(data['orderDate'], 'String');
             }
             if (data.hasOwnProperty('billToID')) {
                 obj['billToID'] = ApiClient.convertToType(data['billToID'], 'String');
@@ -132,6 +132,10 @@ class InvoiceDetailsv61Response {
             throw new Error("Expected the field `invoiceStatus` to be a primitive type in the JSON string but got " + data['invoiceStatus']);
         }
         // ensure the json data is a string
+        if (data['invoiceDate'] && !(typeof data['invoiceDate'] === 'string' || data['invoiceDate'] instanceof String)) {
+            throw new Error("Expected the field `invoiceDate` to be a primitive type in the JSON string but got " + data['invoiceDate']);
+        }
+        // ensure the json data is a string
         if (data['customerOrderNumber'] && !(typeof data['customerOrderNumber'] === 'string' || data['customerOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got " + data['customerOrderNumber']);
         }
@@ -142,6 +146,10 @@ class InvoiceDetailsv61Response {
         // ensure the json data is a string
         if (data['orderNumber'] && !(typeof data['orderNumber'] === 'string' || data['orderNumber'] instanceof String)) {
             throw new Error("Expected the field `orderNumber` to be a primitive type in the JSON string but got " + data['orderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['orderDate'] && !(typeof data['orderDate'] === 'string' || data['orderDate'] instanceof String)) {
+            throw new Error("Expected the field `orderDate` to be a primitive type in the JSON string but got " + data['orderDate']);
         }
         // ensure the json data is a string
         if (data['billToID'] && !(typeof data['billToID'] === 'string' || data['billToID'] instanceof String)) {
@@ -224,7 +232,7 @@ InvoiceDetailsv61Response.prototype['invoiceStatus'] = undefined;
 
 /**
  * Date of an Invoice.
- * @member {Date} invoiceDate
+ * @member {String} invoiceDate
  */
 InvoiceDetailsv61Response.prototype['invoiceDate'] = undefined;
 
@@ -248,7 +256,7 @@ InvoiceDetailsv61Response.prototype['orderNumber'] = undefined;
 
 /**
  * The date and time in UTC format that the order was created.
- * @member {Date} orderDate
+ * @member {String} orderDate
  */
 InvoiceDetailsv61Response.prototype['orderDate'] = undefined;
 

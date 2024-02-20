@@ -6,11 +6,11 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **invoiceNumber** | **String** | The Invoice number for the order. | [optional] 
 **invoiceStatus** | **String** | Status of the invoice. | [optional] 
-**invoiceDate** | **Date** | Date of an Invoice. | [optional] 
+**invoiceDate** | **String** | Date of an Invoice. | [optional] 
 **customerOrderNumber** | **String** | The reseller&#39;s order number for reference in their system. | [optional] 
 **endCustomerOrderNumber** | **String** | The end customer&#39;s order number for reference in their system. | [optional] 
 **orderNumber** | **String** | The end customer&#39;s order number for reference in their system. | [optional] 
-**orderDate** | **Date** | The date and time in UTC format that the order was created. | [optional] 
+**orderDate** | **String** | The date and time in UTC format that the order was created. | [optional] 
 **billToID** | **String** | Bill to party | [optional] 
 **invoiceType** | **String** | Type of the Invoice | [optional] 
 **invoiceDueDate** | **String** | Date when the invoice is due. | [optional] 

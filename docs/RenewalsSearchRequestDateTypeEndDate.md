@@ -1,4 +1,4 @@
-# XiSdkResellers.RenewalsSearchRequestDataTypeEndDate
+# XiSdkResellers.RenewalsSearchRequestDateTypeEndDate
 
 ## Properties
 
