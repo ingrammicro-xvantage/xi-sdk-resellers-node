@@ -93,6 +93,9 @@ class ProductDetailResponseIndicators {
             if (data.hasOwnProperty('hasStdWebDiscount')) {
                 obj['hasStdWebDiscount'] = ApiClient.convertToType(data['hasStdWebDiscount'], 'Boolean');
             }
+            if (data.hasOwnProperty('hasAcopWebDiscount')) {
+                obj['hasAcopWebDiscount'] = ApiClient.convertToType(data['hasAcopWebDiscount'], 'Boolean');
+            }
             if (data.hasOwnProperty('hasSpecialBid')) {
                 obj['hasSpecialBid'] = ApiClient.convertToType(data['hasSpecialBid'], 'Boolean');
             }
@@ -102,8 +105,8 @@ class ProductDetailResponseIndicators {
             if (data.hasOwnProperty('isDiscontinuedProduct')) {
                 obj['isDiscontinuedProduct'] = ApiClient.convertToType(data['isDiscontinuedProduct'], 'Boolean');
             }
-            if (data.hasOwnProperty('isRefurbishedProduct')) {
-                obj['isRefurbishedProduct'] = ApiClient.convertToType(data['isRefurbishedProduct'], 'Boolean');
+            if (data.hasOwnProperty('isRefurbished')) {
+                obj['isRefurbished'] = ApiClient.convertToType(data['isRefurbished'], 'Boolean');
             }
             if (data.hasOwnProperty('isReturnableProduct')) {
                 obj['isReturnableProduct'] = ApiClient.convertToType(data['isReturnableProduct'], 'Boolean');
@@ -261,6 +264,11 @@ ProductDetailResponseIndicators.prototype['hasAcopQuantityBreak'] = undefined;
 ProductDetailResponseIndicators.prototype['hasStdWebDiscount'] = undefined;
 
 /**
+ * @member {Boolean} hasAcopWebDiscount
+ */
+ProductDetailResponseIndicators.prototype['hasAcopWebDiscount'] = undefined;
+
+/**
  * Boolean that indicates whether product has any special bid.
  * @member {Boolean} hasSpecialBid
  */
@@ -280,9 +288,9 @@ ProductDetailResponseIndicators.prototype['isDiscontinuedProduct'] = undefined;
 
 /**
  * Boolean that indicates whether product is refurbished.
- * @member {Boolean} isRefurbishedProduct
+ * @member {Boolean} isRefurbished
  */
-ProductDetailResponseIndicators.prototype['isRefurbishedProduct'] = undefined;
+ProductDetailResponseIndicators.prototype['isRefurbished'] = undefined;
 
 /**
  * Boolean that indicates if the product can be returned.

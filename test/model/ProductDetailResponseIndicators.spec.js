@@ -144,6 +144,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property hasAcopWebDiscount (base name: "hasAcopWebDiscount")', function() {
+      // uncomment below and update the code to test the property hasAcopWebDiscount
+      //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
+      //expect(instance).to.be();
+    });
+
     it('should have the property hasSpecialBid (base name: "hasSpecialBid")', function() {
       // uncomment below and update the code to test the property hasSpecialBid
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
@@ -162,8 +168,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property isRefurbishedProduct (base name: "isRefurbishedProduct")', function() {
-      // uncomment below and update the code to test the property isRefurbishedProduct
+    it('should have the property isRefurbished (base name: "isRefurbished")', function() {
+      // uncomment below and update the code to test the property isRefurbished
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();
     });
