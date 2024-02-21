@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The RenewalsDetailsResponseReferenceNumberInner model module.
- * @module model/RenewalsDetailsResponseReferenceNumberInner
+ * The RenewalsDetailsResponseReferenceNumber model module.
+ * @module model/RenewalsDetailsResponseReferenceNumber
  * @version 1.0.0
  */
-class RenewalsDetailsResponseReferenceNumberInner {
+class RenewalsDetailsResponseReferenceNumber {
     /**
-     * Constructs a new <code>RenewalsDetailsResponseReferenceNumberInner</code>.
-     * @alias module:model/RenewalsDetailsResponseReferenceNumberInner
+     * Constructs a new <code>RenewalsDetailsResponseReferenceNumber</code>.
+     * @alias module:model/RenewalsDetailsResponseReferenceNumber
      */
     constructor() { 
         
-        RenewalsDetailsResponseReferenceNumberInner.initialize(this);
+        RenewalsDetailsResponseReferenceNumber.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class RenewalsDetailsResponseReferenceNumberInner {
     }
 
     /**
-     * Constructs a <code>RenewalsDetailsResponseReferenceNumberInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>RenewalsDetailsResponseReferenceNumber</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/RenewalsDetailsResponseReferenceNumberInner} obj Optional instance to populate.
-     * @return {module:model/RenewalsDetailsResponseReferenceNumberInner} The populated <code>RenewalsDetailsResponseReferenceNumberInner</code> instance.
+     * @param {module:model/RenewalsDetailsResponseReferenceNumber} obj Optional instance to populate.
+     * @return {module:model/RenewalsDetailsResponseReferenceNumber} The populated <code>RenewalsDetailsResponseReferenceNumber</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new RenewalsDetailsResponseReferenceNumberInner();
+            obj = obj || new RenewalsDetailsResponseReferenceNumber();
 
             if (data.hasOwnProperty('notificationId')) {
                 obj['notificationId'] = ApiClient.convertToType(data['notificationId'], 'String');
@@ -58,9 +58,9 @@ class RenewalsDetailsResponseReferenceNumberInner {
     }
 
     /**
-     * Validates the JSON data with respect to <code>RenewalsDetailsResponseReferenceNumberInner</code>.
+     * Validates the JSON data with respect to <code>RenewalsDetailsResponseReferenceNumber</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RenewalsDetailsResponseReferenceNumberInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RenewalsDetailsResponseReferenceNumber</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -84,18 +84,18 @@ class RenewalsDetailsResponseReferenceNumberInner {
  * Notification id of the communication sent from Ingram.
  * @member {String} notificationId
  */
-RenewalsDetailsResponseReferenceNumberInner.prototype['notificationId'] = undefined;
+RenewalsDetailsResponseReferenceNumber.prototype['notificationId'] = undefined;
 
 /**
  * Quote number for the renewal.
  * @member {String} quoteNumber
  */
-RenewalsDetailsResponseReferenceNumberInner.prototype['quoteNumber'] = undefined;
+RenewalsDetailsResponseReferenceNumber.prototype['quoteNumber'] = undefined;
 
 
 
 
 
 
-export default RenewalsDetailsResponseReferenceNumberInner;
+export default RenewalsDetailsResponseReferenceNumber;
 

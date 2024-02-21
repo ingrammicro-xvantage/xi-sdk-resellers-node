@@ -86,8 +86,8 @@ class InvoiceSearchResponseInvoicesInner {
             if (data.hasOwnProperty('gstInvoiceNumber')) {
                 obj['gstInvoiceNumber'] = ApiClient.convertToType(data['gstInvoiceNumber'], 'String');
             }
-            if (data.hasOwnProperty('isfeccenabled')) {
-                obj['isfeccenabled'] = ApiClient.convertToType(data['isfeccenabled'], 'Boolean');
+            if (data.hasOwnProperty('isfseccenabled')) {
+                obj['isfseccenabled'] = ApiClient.convertToType(data['isfseccenabled'], 'Boolean');
             }
         }
         return obj;
@@ -225,9 +225,9 @@ InvoiceSearchResponseInvoicesInner.prototype['forgntotalamount'] = undefined;
 InvoiceSearchResponseInvoicesInner.prototype['gstInvoiceNumber'] = undefined;
 
 /**
- * @member {Boolean} isfeccenabled
+ * @member {Boolean} isfseccenabled
  */
-InvoiceSearchResponseInvoicesInner.prototype['isfeccenabled'] = undefined;
+InvoiceSearchResponseInvoicesInner.prototype['isfseccenabled'] = undefined;
 
 
 

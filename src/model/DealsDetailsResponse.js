@@ -13,7 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import DealsDetailsResponseProductsInner from './DealsDetailsResponseProductsInner';
-import RenewalsDetailsResponseEndUserInfoInner from './RenewalsDetailsResponseEndUserInfoInner';
+import RenewalsDetailsResponseEndUserInfo from './RenewalsDetailsResponseEndUserInfo';
 
 /**
  * The DealsDetailsResponse model module.
@@ -77,7 +77,7 @@ class DealsDetailsResponse {
                 obj['currencyCode'] = ApiClient.convertToType(data['currencyCode'], 'String');
             }
             if (data.hasOwnProperty('endUserInfo')) {
-                obj['endUserInfo'] = RenewalsDetailsResponseEndUserInfoInner.constructFromObject(data['endUserInfo']);
+                obj['endUserInfo'] = RenewalsDetailsResponseEndUserInfo.constructFromObject(data['endUserInfo']);
             }
             if (data.hasOwnProperty('products')) {
                 obj['products'] = ApiClient.convertToType(data['products'], [DealsDetailsResponseProductsInner]);
@@ -126,7 +126,7 @@ class DealsDetailsResponse {
         }
         // validate the optional field `endUserInfo`
         if (data['endUserInfo']) { // data not null
-          RenewalsDetailsResponseEndUserInfoInner.validateJSON(data['endUserInfo']);
+          RenewalsDetailsResponseEndUserInfo.validateJSON(data['endUserInfo']);
         }
         if (data['products']) { // data not null
             // ensure the json data is an array
@@ -202,7 +202,7 @@ DealsDetailsResponse.prototype['priceProtectionEndDate'] = undefined;
 DealsDetailsResponse.prototype['currencyCode'] = undefined;
 
 /**
- * @member {module:model/RenewalsDetailsResponseEndUserInfoInner} endUserInfo
+ * @member {module:model/RenewalsDetailsResponseEndUserInfo} endUserInfo
  */
 DealsDetailsResponse.prototype['endUserInfo'] = undefined;
 

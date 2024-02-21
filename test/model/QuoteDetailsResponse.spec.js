@@ -174,6 +174,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property quoteSybType (base name: "quoteSybType")', function() {
+      // uncomment below and update the code to test the property quoteSybType
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property resellerInfo (base name: "resellerInfo")', function() {
       // uncomment below and update the code to test the property resellerInfo
       //var instance = new XiSdkResellers.QuoteDetailsResponse();

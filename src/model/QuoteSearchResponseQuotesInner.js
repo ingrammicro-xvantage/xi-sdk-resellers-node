@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import QuoteSearchResponseQuotesInnerLinksInner from './QuoteSearchResponseQuotesInnerLinksInner';
+import QuoteSearchResponseQuotesInnerLinks from './QuoteSearchResponseQuotesInnerLinks';
 
 /**
  * The QuoteSearchResponseQuotesInner model module.
@@ -94,7 +94,7 @@ class QuoteSearchResponseQuotesInner {
                 obj['quoteType'] = ApiClient.convertToType(data['quoteType'], 'String');
             }
             if (data.hasOwnProperty('links')) {
-                obj['links'] = ApiClient.convertToType(data['links'], [QuoteSearchResponseQuotesInnerLinksInner]);
+                obj['links'] = QuoteSearchResponseQuotesInnerLinks.constructFromObject(data['links']);
             }
         }
         return obj;
@@ -162,15 +162,9 @@ class QuoteSearchResponseQuotesInner {
         if (data['quoteType'] && !(typeof data['quoteType'] === 'string' || data['quoteType'] instanceof String)) {
             throw new Error("Expected the field `quoteType` to be a primitive type in the JSON string but got " + data['quoteType']);
         }
+        // validate the optional field `links`
         if (data['links']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['links'])) {
-                throw new Error("Expected the field `links` to be an array in the JSON data but got " + data['links']);
-            }
-            // validate the optional field `links` (array)
-            for (const item of data['links']) {
-                QuoteSearchResponseQuotesInnerLinksInner.validateJSON(item);
-            };
+          QuoteSearchResponseQuotesInnerLinks.validateJSON(data['links']);
         }
 
         return true;
@@ -271,7 +265,7 @@ QuoteSearchResponseQuotesInner.prototype['createdBy'] = undefined;
 QuoteSearchResponseQuotesInner.prototype['quoteType'] = undefined;
 
 /**
- * @member {Array.<module:model/QuoteSearchResponseQuotesInnerLinksInner>} links
+ * @member {module:model/QuoteSearchResponseQuotesInnerLinks} links
  */
 QuoteSearchResponseQuotesInner.prototype['links'] = undefined;
 

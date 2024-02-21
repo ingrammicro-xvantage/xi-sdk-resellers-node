@@ -54,8 +54,8 @@ class ProductDetailResponseIndicators {
             if (data.hasOwnProperty('isNewProduct')) {
                 obj['isNewProduct'] = ApiClient.convertToType(data['isNewProduct'], 'Boolean');
             }
-            if (data.hasOwnProperty('HasReturnLimits')) {
-                obj['HasReturnLimits'] = ApiClient.convertToType(data['HasReturnLimits'], 'Boolean');
+            if (data.hasOwnProperty('hasReturnLimits')) {
+                obj['hasReturnLimits'] = ApiClient.convertToType(data['hasReturnLimits'], 'Boolean');
             }
             if (data.hasOwnProperty('IsBackOrderAllowed')) {
                 obj['IsBackOrderAllowed'] = ApiClient.convertToType(data['IsBackOrderAllowed'], 'Boolean');
@@ -178,9 +178,9 @@ ProductDetailResponseIndicators.prototype['isNewProduct'] = undefined;
 
 /**
  * Boolean that indicates whether there is any limit to return the product.
- * @member {Boolean} HasReturnLimits
+ * @member {Boolean} hasReturnLimits
  */
-ProductDetailResponseIndicators.prototype['HasReturnLimits'] = undefined;
+ProductDetailResponseIndicators.prototype['hasReturnLimits'] = undefined;
 
 /**
  * Boolean that indicates whether back order is allowed for the product.

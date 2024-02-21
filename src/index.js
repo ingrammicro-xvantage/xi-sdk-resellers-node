@@ -155,7 +155,7 @@ import QuoteDetailsResponseProductsInnerPrice from './model/QuoteDetailsResponse
 import QuoteDetailsResponseResellerInfo from './model/QuoteDetailsResponseResellerInfo';
 import QuoteSearchResponse from './model/QuoteSearchResponse';
 import QuoteSearchResponseQuotesInner from './model/QuoteSearchResponseQuotesInner';
-import QuoteSearchResponseQuotesInnerLinksInner from './model/QuoteSearchResponseQuotesInnerLinksInner';
+import QuoteSearchResponseQuotesInnerLinks from './model/QuoteSearchResponseQuotesInnerLinks';
 import QuoteToOrderDetailsDTO from './model/QuoteToOrderDetailsDTO';
 import QuoteToOrderDetailsDTOAdditionalAttributesInner from './model/QuoteToOrderDetailsDTOAdditionalAttributesInner';
 import QuoteToOrderDetailsDTOEndUserInfoInner from './model/QuoteToOrderDetailsDTOEndUserInfoInner';
@@ -166,9 +166,9 @@ import QuoteToOrderDetailsDTOVmfadditionalAttributesInner from './model/QuoteToO
 import QuoteToOrderResponse from './model/QuoteToOrderResponse';
 import RenewalsDetailsResponse from './model/RenewalsDetailsResponse';
 import RenewalsDetailsResponseAdditionalAttributesInner from './model/RenewalsDetailsResponseAdditionalAttributesInner';
-import RenewalsDetailsResponseEndUserInfoInner from './model/RenewalsDetailsResponseEndUserInfoInner';
-import RenewalsDetailsResponseProductsInner from './model/RenewalsDetailsResponseProductsInner';
-import RenewalsDetailsResponseReferenceNumberInner from './model/RenewalsDetailsResponseReferenceNumberInner';
+import RenewalsDetailsResponseEndUserInfo from './model/RenewalsDetailsResponseEndUserInfo';
+import RenewalsDetailsResponseProducts from './model/RenewalsDetailsResponseProducts';
+import RenewalsDetailsResponseReferenceNumber from './model/RenewalsDetailsResponseReferenceNumber';
 import RenewalsSearchRequest from './model/RenewalsSearchRequest';
 import RenewalsSearchRequestDateType from './model/RenewalsSearchRequestDateType';
 import RenewalsSearchRequestDateTypeEndDate from './model/RenewalsSearchRequestDateTypeEndDate';
@@ -1097,10 +1097,10 @@ export {
     QuoteSearchResponseQuotesInner,
 
     /**
-     * The QuoteSearchResponseQuotesInnerLinksInner model constructor.
-     * @property {module:model/QuoteSearchResponseQuotesInnerLinksInner}
+     * The QuoteSearchResponseQuotesInnerLinks model constructor.
+     * @property {module:model/QuoteSearchResponseQuotesInnerLinks}
      */
-    QuoteSearchResponseQuotesInnerLinksInner,
+    QuoteSearchResponseQuotesInnerLinks,
 
     /**
      * The QuoteToOrderDetailsDTO model constructor.
@@ -1163,22 +1163,22 @@ export {
     RenewalsDetailsResponseAdditionalAttributesInner,
 
     /**
-     * The RenewalsDetailsResponseEndUserInfoInner model constructor.
-     * @property {module:model/RenewalsDetailsResponseEndUserInfoInner}
+     * The RenewalsDetailsResponseEndUserInfo model constructor.
+     * @property {module:model/RenewalsDetailsResponseEndUserInfo}
      */
-    RenewalsDetailsResponseEndUserInfoInner,
+    RenewalsDetailsResponseEndUserInfo,
 
     /**
-     * The RenewalsDetailsResponseProductsInner model constructor.
-     * @property {module:model/RenewalsDetailsResponseProductsInner}
+     * The RenewalsDetailsResponseProducts model constructor.
+     * @property {module:model/RenewalsDetailsResponseProducts}
      */
-    RenewalsDetailsResponseProductsInner,
+    RenewalsDetailsResponseProducts,
 
     /**
-     * The RenewalsDetailsResponseReferenceNumberInner model constructor.
-     * @property {module:model/RenewalsDetailsResponseReferenceNumberInner}
+     * The RenewalsDetailsResponseReferenceNumber model constructor.
+     * @property {module:model/RenewalsDetailsResponseReferenceNumber}
      */
-    RenewalsDetailsResponseReferenceNumberInner,
+    RenewalsDetailsResponseReferenceNumber,
 
     /**
      * The RenewalsSearchRequest model constructor.

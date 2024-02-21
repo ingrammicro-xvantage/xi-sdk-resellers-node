@@ -151,7 +151,7 @@ docs/QuoteDetailsResponseProductsInnerPrice.md
 docs/QuoteDetailsResponseResellerInfo.md
 docs/QuoteSearchResponse.md
 docs/QuoteSearchResponseQuotesInner.md
-docs/QuoteSearchResponseQuotesInnerLinksInner.md
+docs/QuoteSearchResponseQuotesInnerLinks.md
 docs/QuoteToOrderApi.md
 docs/QuoteToOrderDetailsDTO.md
 docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md
@@ -165,9 +165,9 @@ docs/QuotesApi.md
 docs/RenewalsApi.md
 docs/RenewalsDetailsResponse.md
 docs/RenewalsDetailsResponseAdditionalAttributesInner.md
-docs/RenewalsDetailsResponseEndUserInfoInner.md
-docs/RenewalsDetailsResponseProductsInner.md
-docs/RenewalsDetailsResponseReferenceNumberInner.md
+docs/RenewalsDetailsResponseEndUserInfo.md
+docs/RenewalsDetailsResponseProducts.md
+docs/RenewalsDetailsResponseReferenceNumber.md
 docs/RenewalsSearchRequest.md
 docs/RenewalsSearchRequestDateType.md
 docs/RenewalsSearchRequestDateTypeEndDate.md
@@ -352,7 +352,7 @@ src/model/QuoteDetailsResponseProductsInnerPrice.js
 src/model/QuoteDetailsResponseResellerInfo.js
 src/model/QuoteSearchResponse.js
 src/model/QuoteSearchResponseQuotesInner.js
-src/model/QuoteSearchResponseQuotesInnerLinksInner.js
+src/model/QuoteSearchResponseQuotesInnerLinks.js
 src/model/QuoteToOrderDetailsDTO.js
 src/model/QuoteToOrderDetailsDTOAdditionalAttributesInner.js
 src/model/QuoteToOrderDetailsDTOEndUserInfoInner.js
@@ -363,9 +363,9 @@ src/model/QuoteToOrderDetailsDTOVmfadditionalAttributesInner.js
 src/model/QuoteToOrderResponse.js
 src/model/RenewalsDetailsResponse.js
 src/model/RenewalsDetailsResponseAdditionalAttributesInner.js
-src/model/RenewalsDetailsResponseEndUserInfoInner.js
-src/model/RenewalsDetailsResponseProductsInner.js
-src/model/RenewalsDetailsResponseReferenceNumberInner.js
+src/model/RenewalsDetailsResponseEndUserInfo.js
+src/model/RenewalsDetailsResponseProducts.js
+src/model/RenewalsDetailsResponseReferenceNumber.js
 src/model/RenewalsSearchRequest.js
 src/model/RenewalsSearchRequestDateType.js
 src/model/RenewalsSearchRequestDateTypeEndDate.js
@@ -543,7 +543,7 @@ test/model/QuoteDetailsResponseProductsInnerPrice.spec.js
 test/model/QuoteDetailsResponseResellerInfo.spec.js
 test/model/QuoteSearchResponse.spec.js
 test/model/QuoteSearchResponseQuotesInner.spec.js
-test/model/QuoteSearchResponseQuotesInnerLinksInner.spec.js
+test/model/QuoteSearchResponseQuotesInnerLinks.spec.js
 test/model/QuoteToOrderDetailsDTO.spec.js
 test/model/QuoteToOrderDetailsDTOAdditionalAttributesInner.spec.js
 test/model/QuoteToOrderDetailsDTOEndUserInfoInner.spec.js
@@ -554,9 +554,9 @@ test/model/QuoteToOrderDetailsDTOVmfadditionalAttributesInner.spec.js
 test/model/QuoteToOrderResponse.spec.js
 test/model/RenewalsDetailsResponse.spec.js
 test/model/RenewalsDetailsResponseAdditionalAttributesInner.spec.js
-test/model/RenewalsDetailsResponseEndUserInfoInner.spec.js
-test/model/RenewalsDetailsResponseProductsInner.spec.js
-test/model/RenewalsDetailsResponseReferenceNumberInner.spec.js
+test/model/RenewalsDetailsResponseEndUserInfo.spec.js
+test/model/RenewalsDetailsResponseProducts.spec.js
+test/model/RenewalsDetailsResponseReferenceNumber.spec.js
 test/model/RenewalsSearchRequest.spec.js
 test/model/RenewalsSearchRequestDateType.spec.js
 test/model/RenewalsSearchRequestDateTypeEndDate.spec.js

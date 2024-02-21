@@ -66,7 +66,7 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property hasReturnLimits (base name: "HasReturnLimits")', function() {
+    it('should have the property hasReturnLimits (base name: "hasReturnLimits")', function() {
       // uncomment below and update the code to test the property hasReturnLimits
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();

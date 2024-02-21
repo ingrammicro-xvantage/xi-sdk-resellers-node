@@ -111,6 +111,9 @@ class QuoteDetailsResponse {
             if (data.hasOwnProperty('leasingInstructions')) {
                 obj['leasingInstructions'] = ApiClient.convertToType(data['leasingInstructions'], 'String');
             }
+            if (data.hasOwnProperty('quoteSybType')) {
+                obj['quoteSybType'] = ApiClient.convertToType(data['quoteSybType'], 'String');
+            }
             if (data.hasOwnProperty('resellerInfo')) {
                 obj['resellerInfo'] = QuoteDetailsResponseResellerInfo.constructFromObject(data['resellerInfo']);
             }
@@ -224,6 +227,10 @@ class QuoteDetailsResponse {
         // ensure the json data is a string
         if (data['leasingInstructions'] && !(typeof data['leasingInstructions'] === 'string' || data['leasingInstructions'] instanceof String)) {
             throw new Error("Expected the field `leasingInstructions` to be a primitive type in the JSON string but got " + data['leasingInstructions']);
+        }
+        // ensure the json data is a string
+        if (data['quoteSybType'] && !(typeof data['quoteSybType'] === 'string' || data['quoteSybType'] instanceof String)) {
+            throw new Error("Expected the field `quoteSybType` to be a primitive type in the JSON string but got " + data['quoteSybType']);
         }
         // validate the optional field `resellerInfo`
         if (data['resellerInfo']) { // data not null
@@ -380,6 +387,11 @@ QuoteDetailsResponse.prototype['leaseInfo'] = undefined;
  * @member {String} leasingInstructions
  */
 QuoteDetailsResponse.prototype['leasingInstructions'] = undefined;
+
+/**
+ * @member {String} quoteSybType
+ */
+QuoteDetailsResponse.prototype['quoteSybType'] = undefined;
 
 /**
  * @member {module:model/QuoteDetailsResponseResellerInfo} resellerInfo

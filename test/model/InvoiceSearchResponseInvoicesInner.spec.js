@@ -132,8 +132,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property isfeccenabled (base name: "isfeccenabled")', function() {
-      // uncomment below and update the code to test the property isfeccenabled
+    it('should have the property isfseccenabled (base name: "isfseccenabled")', function() {
+      // uncomment below and update the code to test the property isfseccenabled
       //var instance = new XiSdkResellers.InvoiceSearchResponseInvoicesInner();
       //expect(instance).to.be();
     });

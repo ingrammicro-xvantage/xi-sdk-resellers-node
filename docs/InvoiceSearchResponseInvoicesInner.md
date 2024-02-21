@@ -17,6 +17,6 @@ Name | Type | Description | Notes
 **invoiceAmountInclTax** | **Number** | Invoice Amount Inclusive of Taxes | [optional] 
 **forgntotalamount** | **Number** |  | [optional] 
 **gstInvoiceNumber** | **String** |  | [optional] 
-**isfeccenabled** | **Boolean** |  | [optional] 
+**isfseccenabled** | **Boolean** |  | [optional] 
 
 

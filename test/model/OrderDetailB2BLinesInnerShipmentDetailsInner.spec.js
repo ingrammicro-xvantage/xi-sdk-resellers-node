@@ -72,6 +72,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property shippedDate (base name: "shippedDate")', function() {
+      // uncomment below and update the code to test the property shippedDate
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property estimatedDeliveryDate (base name: "estimatedDeliveryDate")', function() {
+      // uncomment below and update the code to test the property estimatedDeliveryDate
+      //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property shipFromWarehouseId (base name: "shipFromWarehouseId")', function() {
       // uncomment below and update the code to test the property shipFromWarehouseId
       //var instance = new XiSdkResellers.OrderDetailB2BLinesInnerShipmentDetailsInner();
