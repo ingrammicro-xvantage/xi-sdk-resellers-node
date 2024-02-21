@@ -72,9 +72,6 @@ class QuoteDetailsResponse {
             if (data.hasOwnProperty('currencyCode')) {
                 obj['currencyCode'] = ApiClient.convertToType(data['currencyCode'], 'String');
             }
-            if (data.hasOwnProperty('closingReason')) {
-                obj['closingReason'] = ApiClient.convertToType(data['closingReason'], 'String');
-            }
             if (data.hasOwnProperty('specialBidId')) {
                 obj['specialBidId'] = ApiClient.convertToType(data['specialBidId'], 'String');
             }
@@ -86,6 +83,12 @@ class QuoteDetailsResponse {
             }
             if (data.hasOwnProperty('status')) {
                 obj['status'] = ApiClient.convertToType(data['status'], 'String');
+            }
+            if (data.hasOwnProperty('closingReason')) {
+                obj['closingReason'] = ApiClient.convertToType(data['closingReason'], 'String');
+            }
+            if (data.hasOwnProperty('dateClosed')) {
+                obj['dateClosed'] = ApiClient.convertToType(data['dateClosed'], 'String');
             }
             if (data.hasOwnProperty('customerNeed')) {
                 obj['customerNeed'] = ApiClient.convertToType(data['customerNeed'], 'String');
@@ -111,8 +114,8 @@ class QuoteDetailsResponse {
             if (data.hasOwnProperty('leasingInstructions')) {
                 obj['leasingInstructions'] = ApiClient.convertToType(data['leasingInstructions'], 'String');
             }
-            if (data.hasOwnProperty('quoteSybType')) {
-                obj['quoteSybType'] = ApiClient.convertToType(data['quoteSybType'], 'String');
+            if (data.hasOwnProperty('quoteSubType')) {
+                obj['quoteSubType'] = ApiClient.convertToType(data['quoteSubType'], 'String');
             }
             if (data.hasOwnProperty('resellerInfo')) {
                 obj['resellerInfo'] = QuoteDetailsResponseResellerInfo.constructFromObject(data['resellerInfo']);
@@ -177,10 +180,6 @@ class QuoteDetailsResponse {
             throw new Error("Expected the field `currencyCode` to be a primitive type in the JSON string but got " + data['currencyCode']);
         }
         // ensure the json data is a string
-        if (data['closingReason'] && !(typeof data['closingReason'] === 'string' || data['closingReason'] instanceof String)) {
-            throw new Error("Expected the field `closingReason` to be a primitive type in the JSON string but got " + data['closingReason']);
-        }
-        // ensure the json data is a string
         if (data['specialBidId'] && !(typeof data['specialBidId'] === 'string' || data['specialBidId'] instanceof String)) {
             throw new Error("Expected the field `specialBidId` to be a primitive type in the JSON string but got " + data['specialBidId']);
         }
@@ -195,6 +194,14 @@ class QuoteDetailsResponse {
         // ensure the json data is a string
         if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
             throw new Error("Expected the field `status` to be a primitive type in the JSON string but got " + data['status']);
+        }
+        // ensure the json data is a string
+        if (data['closingReason'] && !(typeof data['closingReason'] === 'string' || data['closingReason'] instanceof String)) {
+            throw new Error("Expected the field `closingReason` to be a primitive type in the JSON string but got " + data['closingReason']);
+        }
+        // ensure the json data is a string
+        if (data['dateClosed'] && !(typeof data['dateClosed'] === 'string' || data['dateClosed'] instanceof String)) {
+            throw new Error("Expected the field `dateClosed` to be a primitive type in the JSON string but got " + data['dateClosed']);
         }
         // ensure the json data is a string
         if (data['customerNeed'] && !(typeof data['customerNeed'] === 'string' || data['customerNeed'] instanceof String)) {
@@ -229,8 +236,8 @@ class QuoteDetailsResponse {
             throw new Error("Expected the field `leasingInstructions` to be a primitive type in the JSON string but got " + data['leasingInstructions']);
         }
         // ensure the json data is a string
-        if (data['quoteSybType'] && !(typeof data['quoteSybType'] === 'string' || data['quoteSybType'] instanceof String)) {
-            throw new Error("Expected the field `quoteSybType` to be a primitive type in the JSON string but got " + data['quoteSybType']);
+        if (data['quoteSubType'] && !(typeof data['quoteSubType'] === 'string' || data['quoteSubType'] instanceof String)) {
+            throw new Error("Expected the field `quoteSubType` to be a primitive type in the JSON string but got " + data['quoteSubType']);
         }
         // validate the optional field `resellerInfo`
         if (data['resellerInfo']) { // data not null
@@ -312,12 +319,6 @@ QuoteDetailsResponse.prototype['ingramQuoteExpiryDate'] = undefined;
 QuoteDetailsResponse.prototype['currencyCode'] = undefined;
 
 /**
- * Closing Reason for quote.
- * @member {String} closingReason
- */
-QuoteDetailsResponse.prototype['closingReason'] = undefined;
-
-/**
  * Price discount identifyer to specify  a pricing discount that has been applied to the quote. If present - the priceDeviationStartDate and priceDeviationExpiryDate must be presented. Cisco refers to this as a Dart
  * @member {String} specialBidId
  */
@@ -340,6 +341,17 @@ QuoteDetailsResponse.prototype['specialBidExpirationDate'] = undefined;
  * @member {String} status
  */
 QuoteDetailsResponse.prototype['status'] = undefined;
+
+/**
+ * Closing Reason for quote.
+ * @member {String} closingReason
+ */
+QuoteDetailsResponse.prototype['closingReason'] = undefined;
+
+/**
+ * @member {String} dateClosed
+ */
+QuoteDetailsResponse.prototype['dateClosed'] = undefined;
 
 /**
  * Details related to the customer's request for the quote entered by the sales representative or system generated.
@@ -389,9 +401,9 @@ QuoteDetailsResponse.prototype['leaseInfo'] = undefined;
 QuoteDetailsResponse.prototype['leasingInstructions'] = undefined;
 
 /**
- * @member {String} quoteSybType
+ * @member {String} quoteSubType
  */
-QuoteDetailsResponse.prototype['quoteSybType'] = undefined;
+QuoteDetailsResponse.prototype['quoteSubType'] = undefined;
 
 /**
  * @member {module:model/QuoteDetailsResponseResellerInfo} resellerInfo

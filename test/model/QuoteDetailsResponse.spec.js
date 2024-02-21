@@ -96,12 +96,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property closingReason (base name: "closingReason")', function() {
-      // uncomment below and update the code to test the property closingReason
-      //var instance = new XiSdkResellers.QuoteDetailsResponse();
-      //expect(instance).to.be();
-    });
-
     it('should have the property specialBidId (base name: "specialBidId")', function() {
       // uncomment below and update the code to test the property specialBidId
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
@@ -122,6 +116,18 @@
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property closingReason (base name: "closingReason")', function() {
+      // uncomment below and update the code to test the property closingReason
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property dateClosed (base name: "dateClosed")', function() {
+      // uncomment below and update the code to test the property dateClosed
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
       //expect(instance).to.be();
     });
@@ -174,8 +180,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property quoteSybType (base name: "quoteSybType")', function() {
-      // uncomment below and update the code to test the property quoteSybType
+    it('should have the property quoteSubType (base name: "quoteSubType")', function() {
+      // uncomment below and update the code to test the property quoteSubType
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
       //expect(instance).to.be();
     });

@@ -57,7 +57,7 @@ class RenewalsDetailsResponseAdditionalAttributesInner {
                 obj['startDate'] = ApiClient.convertToType(data['startDate'], 'Date');
             }
             if (data.hasOwnProperty('expirationDate')) {
-                obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'Date');
+                obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'String');
             }
             if (data.hasOwnProperty('isConsolidated')) {
                 obj['isConsolidated'] = ApiClient.convertToType(data['isConsolidated'], 'String');
@@ -79,6 +79,10 @@ class RenewalsDetailsResponseAdditionalAttributesInner {
         // ensure the json data is a string
         if (data['attributeValue'] && !(typeof data['attributeValue'] === 'string' || data['attributeValue'] instanceof String)) {
             throw new Error("Expected the field `attributeValue` to be a primitive type in the JSON string but got " + data['attributeValue']);
+        }
+        // ensure the json data is a string
+        if (data['expirationDate'] && !(typeof data['expirationDate'] === 'string' || data['expirationDate'] instanceof String)) {
+            throw new Error("Expected the field `expirationDate` to be a primitive type in the JSON string but got " + data['expirationDate']);
         }
         // ensure the json data is a string
         if (data['isConsolidated'] && !(typeof data['isConsolidated'] === 'string' || data['isConsolidated'] instanceof String)) {
@@ -113,7 +117,7 @@ RenewalsDetailsResponseAdditionalAttributesInner.prototype['startDate'] = undefi
 
 /**
  * The attribute expiration date.
- * @member {Date} expirationDate
+ * @member {String} expirationDate
  */
 RenewalsDetailsResponseAdditionalAttributesInner.prototype['expirationDate'] = undefined;
 
