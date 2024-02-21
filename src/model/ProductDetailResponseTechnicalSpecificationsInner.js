@@ -47,8 +47,8 @@ class ProductDetailResponseTechnicalSpecificationsInner {
         if (data) {
             obj = obj || new ProductDetailResponseTechnicalSpecificationsInner();
 
-            if (data.hasOwnProperty('headername')) {
-                obj['headername'] = ApiClient.convertToType(data['headername'], 'String');
+            if (data.hasOwnProperty('headerName')) {
+                obj['headerName'] = ApiClient.convertToType(data['headerName'], 'String');
             }
             if (data.hasOwnProperty('attributevalue')) {
                 obj['attributevalue'] = ApiClient.convertToType(data['attributevalue'], 'String');
@@ -70,8 +70,8 @@ class ProductDetailResponseTechnicalSpecificationsInner {
      */
     static validateJSON(data) {
         // ensure the json data is a string
-        if (data['headername'] && !(typeof data['headername'] === 'string' || data['headername'] instanceof String)) {
-            throw new Error("Expected the field `headername` to be a primitive type in the JSON string but got " + data['headername']);
+        if (data['headerName'] && !(typeof data['headerName'] === 'string' || data['headerName'] instanceof String)) {
+            throw new Error("Expected the field `headerName` to be a primitive type in the JSON string but got " + data['headerName']);
         }
         // ensure the json data is a string
         if (data['attributevalue'] && !(typeof data['attributevalue'] === 'string' || data['attributevalue'] instanceof String)) {
@@ -96,9 +96,9 @@ class ProductDetailResponseTechnicalSpecificationsInner {
 
 /**
  * Example : 'Basic'
- * @member {String} headername
+ * @member {String} headerName
  */
-ProductDetailResponseTechnicalSpecificationsInner.prototype['headername'] = undefined;
+ProductDetailResponseTechnicalSpecificationsInner.prototype['headerName'] = undefined;
 
 /**
  * Example : 'LCD Monitor'

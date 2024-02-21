@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(XiSdkResellers.ProductDetailResponseTechnicalSpecificationsInner);
     });
 
-    it('should have the property headername (base name: "headername")', function() {
-      // uncomment below and update the code to test the property headername
+    it('should have the property headerName (base name: "headerName")', function() {
+      // uncomment below and update the code to test the property headerName
       //var instance = new XiSdkResellers.ProductDetailResponseTechnicalSpecificationsInner();
       //expect(instance).to.be();
     });
