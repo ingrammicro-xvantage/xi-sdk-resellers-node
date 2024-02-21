@@ -90,6 +90,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property replacementType (base name: "replacementType")', function() {
+      // uncomment below and update the code to test the property replacementType
+      //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
+      //expect(instance).to.be();
+    });
+
     it('should have the property isDirectship (base name: "isDirectship")', function() {
       // uncomment below and update the code to test the property isDirectship
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();

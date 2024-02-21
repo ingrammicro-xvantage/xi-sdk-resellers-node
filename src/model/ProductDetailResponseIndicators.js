@@ -66,6 +66,9 @@ class ProductDetailResponseIndicators {
             if (data.hasOwnProperty('isReplacementProduct')) {
                 obj['isReplacementProduct'] = ApiClient.convertToType(data['isReplacementProduct'], 'Boolean');
             }
+            if (data.hasOwnProperty('replacementType')) {
+                obj['replacementType'] = ApiClient.convertToType(data['replacementType'], 'String');
+            }
             if (data.hasOwnProperty('isDirectship')) {
                 obj['isDirectship'] = ApiClient.convertToType(data['isDirectship'], 'Boolean');
             }
@@ -152,6 +155,10 @@ class ProductDetailResponseIndicators {
      */
     static validateJSON(data) {
         // ensure the json data is a string
+        if (data['replacementType'] && !(typeof data['replacementType'] === 'string' || data['replacementType'] instanceof String)) {
+            throw new Error("Expected the field `replacementType` to be a primitive type in the JSON string but got " + data['replacementType']);
+        }
+        // ensure the json data is a string
         if (data['skuType'] && !(typeof data['skuType'] === 'string' || data['skuType'] instanceof String)) {
             throw new Error("Expected the field `skuType` to be a primitive type in the JSON string but got " + data['skuType']);
         }
@@ -199,6 +206,11 @@ ProductDetailResponseIndicators.prototype['isShippedFromPartner'] = undefined;
  * @member {Boolean} isReplacementProduct
  */
 ProductDetailResponseIndicators.prototype['isReplacementProduct'] = undefined;
+
+/**
+ * @member {String} replacementType
+ */
+ProductDetailResponseIndicators.prototype['replacementType'] = undefined;
 
 /**
  * Boolean that indicates whether it’s a direct ship product.
