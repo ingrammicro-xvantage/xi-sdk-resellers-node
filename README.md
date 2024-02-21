@@ -311,7 +311,7 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.RenewalsDetailsResponse](docs/RenewalsDetailsResponse.md)
  - [XiSdkResellers.RenewalsDetailsResponseAdditionalAttributesInner](docs/RenewalsDetailsResponseAdditionalAttributesInner.md)
  - [XiSdkResellers.RenewalsDetailsResponseEndUserInfo](docs/RenewalsDetailsResponseEndUserInfo.md)
- - [XiSdkResellers.RenewalsDetailsResponseProducts](docs/RenewalsDetailsResponseProducts.md)
+ - [XiSdkResellers.RenewalsDetailsResponseProductsInner](docs/RenewalsDetailsResponseProductsInner.md)
  - [XiSdkResellers.RenewalsDetailsResponseReferenceNumber](docs/RenewalsDetailsResponseReferenceNumber.md)
  - [XiSdkResellers.RenewalsSearchRequest](docs/RenewalsSearchRequest.md)
  - [XiSdkResellers.RenewalsSearchRequestDateType](docs/RenewalsSearchRequestDateType.md)

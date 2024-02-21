@@ -14,7 +14,7 @@
 import ApiClient from '../ApiClient';
 import RenewalsDetailsResponseAdditionalAttributesInner from './RenewalsDetailsResponseAdditionalAttributesInner';
 import RenewalsDetailsResponseEndUserInfo from './RenewalsDetailsResponseEndUserInfo';
-import RenewalsDetailsResponseProducts from './RenewalsDetailsResponseProducts';
+import RenewalsDetailsResponseProductsInner from './RenewalsDetailsResponseProductsInner';
 import RenewalsDetailsResponseReferenceNumber from './RenewalsDetailsResponseReferenceNumber';
 
 /**
@@ -91,7 +91,7 @@ class RenewalsDetailsResponse {
                 obj['referenceNumber'] = RenewalsDetailsResponseReferenceNumber.constructFromObject(data['referenceNumber']);
             }
             if (data.hasOwnProperty('products')) {
-                obj['products'] = RenewalsDetailsResponseProducts.constructFromObject(data['products']);
+                obj['products'] = ApiClient.convertToType(data['products'], [RenewalsDetailsResponseProductsInner]);
             }
             if (data.hasOwnProperty('additionalAttributes')) {
                 obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [RenewalsDetailsResponseAdditionalAttributesInner]);
@@ -158,9 +158,15 @@ class RenewalsDetailsResponse {
         if (data['referenceNumber']) { // data not null
           RenewalsDetailsResponseReferenceNumber.validateJSON(data['referenceNumber']);
         }
-        // validate the optional field `products`
         if (data['products']) { // data not null
-          RenewalsDetailsResponseProducts.validateJSON(data['products']);
+            // ensure the json data is an array
+            if (!Array.isArray(data['products'])) {
+                throw new Error("Expected the field `products` to be an array in the JSON data but got " + data['products']);
+            }
+            // validate the optional field `products` (array)
+            for (const item of data['products']) {
+                RenewalsDetailsResponseProductsInner.validateJSON(item);
+            };
         }
         if (data['additionalAttributes']) { // data not null
             // ensure the json data is an array
@@ -258,7 +264,7 @@ RenewalsDetailsResponse.prototype['endUserInfo'] = undefined;
 RenewalsDetailsResponse.prototype['referenceNumber'] = undefined;
 
 /**
- * @member {module:model/RenewalsDetailsResponseProducts} products
+ * @member {Array.<module:model/RenewalsDetailsResponseProductsInner>} products
  */
 RenewalsDetailsResponse.prototype['products'] = undefined;
 

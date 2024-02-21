@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The RenewalsDetailsResponseProducts model module.
- * @module model/RenewalsDetailsResponseProducts
+ * The RenewalsDetailsResponseProductsInner model module.
+ * @module model/RenewalsDetailsResponseProductsInner
  * @version 1.0.0
  */
-class RenewalsDetailsResponseProducts {
+class RenewalsDetailsResponseProductsInner {
     /**
-     * Constructs a new <code>RenewalsDetailsResponseProducts</code>.
-     * @alias module:model/RenewalsDetailsResponseProducts
+     * Constructs a new <code>RenewalsDetailsResponseProductsInner</code>.
+     * @alias module:model/RenewalsDetailsResponseProductsInner
      */
     constructor() { 
         
-        RenewalsDetailsResponseProducts.initialize(this);
+        RenewalsDetailsResponseProductsInner.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class RenewalsDetailsResponseProducts {
     }
 
     /**
-     * Constructs a <code>RenewalsDetailsResponseProducts</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>RenewalsDetailsResponseProductsInner</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/RenewalsDetailsResponseProducts} obj Optional instance to populate.
-     * @return {module:model/RenewalsDetailsResponseProducts} The populated <code>RenewalsDetailsResponseProducts</code> instance.
+     * @param {module:model/RenewalsDetailsResponseProductsInner} obj Optional instance to populate.
+     * @return {module:model/RenewalsDetailsResponseProductsInner} The populated <code>RenewalsDetailsResponseProductsInner</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new RenewalsDetailsResponseProducts();
+            obj = obj || new RenewalsDetailsResponseProductsInner();
 
             if (data.hasOwnProperty('ingramLineNumber')) {
                 obj['ingramLineNumber'] = ApiClient.convertToType(data['ingramLineNumber'], 'String');
@@ -62,11 +62,11 @@ class RenewalsDetailsResponseProducts {
             if (data.hasOwnProperty('manufacturerPartNumber')) {
                 obj['manufacturerPartNumber'] = ApiClient.convertToType(data['manufacturerPartNumber'], 'String');
             }
+            if (data.hasOwnProperty('quantity')) {
+                obj['quantity'] = ApiClient.convertToType(data['quantity'], 'String');
+            }
             if (data.hasOwnProperty('unitPrice')) {
                 obj['unitPrice'] = ApiClient.convertToType(data['unitPrice'], 'Number');
-            }
-            if (data.hasOwnProperty('quantity')) {
-                obj['quantity'] = ApiClient.convertToType(data['quantity'], 'Number');
             }
             if (data.hasOwnProperty('isConsolidated')) {
                 obj['isConsolidated'] = ApiClient.convertToType(data['isConsolidated'], 'String');
@@ -76,9 +76,9 @@ class RenewalsDetailsResponseProducts {
     }
 
     /**
-     * Validates the JSON data with respect to <code>RenewalsDetailsResponseProducts</code>.
+     * Validates the JSON data with respect to <code>RenewalsDetailsResponseProductsInner</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RenewalsDetailsResponseProducts</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RenewalsDetailsResponseProductsInner</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -102,6 +102,10 @@ class RenewalsDetailsResponseProducts {
             throw new Error("Expected the field `manufacturerPartNumber` to be a primitive type in the JSON string but got " + data['manufacturerPartNumber']);
         }
         // ensure the json data is a string
+        if (data['quantity'] && !(typeof data['quantity'] === 'string' || data['quantity'] instanceof String)) {
+            throw new Error("Expected the field `quantity` to be a primitive type in the JSON string but got " + data['quantity']);
+        }
+        // ensure the json data is a string
         if (data['isConsolidated'] && !(typeof data['isConsolidated'] === 'string' || data['isConsolidated'] instanceof String)) {
             throw new Error("Expected the field `isConsolidated` to be a primitive type in the JSON string but got " + data['isConsolidated']);
         }
@@ -118,54 +122,54 @@ class RenewalsDetailsResponseProducts {
  * Unique Ingram Micro line number.
  * @member {String} ingramLineNumber
  */
-RenewalsDetailsResponseProducts.prototype['ingramLineNumber'] = undefined;
+RenewalsDetailsResponseProductsInner.prototype['ingramLineNumber'] = undefined;
 
 /**
  * The description of the product.
  * @member {String} productDescription
  */
-RenewalsDetailsResponseProducts.prototype['productDescription'] = undefined;
+RenewalsDetailsResponseProductsInner.prototype['productDescription'] = undefined;
 
 /**
  * The vendor's part number for the line item.
  * @member {String} vendorPartNumber
  */
-RenewalsDetailsResponseProducts.prototype['vendorPartNumber'] = undefined;
+RenewalsDetailsResponseProductsInner.prototype['vendorPartNumber'] = undefined;
 
 /**
  * Unique IngramMicro part number.
  * @member {String} ingramPartNumber
  */
-RenewalsDetailsResponseProducts.prototype['ingramPartNumber'] = undefined;
+RenewalsDetailsResponseProductsInner.prototype['ingramPartNumber'] = undefined;
 
 /**
  * The manufacturer's part number for the line item.
  * @member {String} manufacturerPartNumber
  */
-RenewalsDetailsResponseProducts.prototype['manufacturerPartNumber'] = undefined;
+RenewalsDetailsResponseProductsInner.prototype['manufacturerPartNumber'] = undefined;
+
+/**
+ * The quantity of the line item.
+ * @member {String} quantity
+ */
+RenewalsDetailsResponseProductsInner.prototype['quantity'] = undefined;
 
 /**
  * The unit price of the line item.
  * @member {Number} unitPrice
  */
-RenewalsDetailsResponseProducts.prototype['unitPrice'] = undefined;
-
-/**
- * The quantity of the line item.
- * @member {Number} quantity
- */
-RenewalsDetailsResponseProducts.prototype['quantity'] = undefined;
+RenewalsDetailsResponseProductsInner.prototype['unitPrice'] = undefined;
 
 /**
  * Is the line item consolidated? Yes or No.
  * @member {String} isConsolidated
  */
-RenewalsDetailsResponseProducts.prototype['isConsolidated'] = undefined;
+RenewalsDetailsResponseProductsInner.prototype['isConsolidated'] = undefined;
 
 
 
 
 
 
-export default RenewalsDetailsResponseProducts;
+export default RenewalsDetailsResponseProductsInner;
 

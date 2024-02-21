@@ -167,7 +167,7 @@ import QuoteToOrderResponse from './model/QuoteToOrderResponse';
 import RenewalsDetailsResponse from './model/RenewalsDetailsResponse';
 import RenewalsDetailsResponseAdditionalAttributesInner from './model/RenewalsDetailsResponseAdditionalAttributesInner';
 import RenewalsDetailsResponseEndUserInfo from './model/RenewalsDetailsResponseEndUserInfo';
-import RenewalsDetailsResponseProducts from './model/RenewalsDetailsResponseProducts';
+import RenewalsDetailsResponseProductsInner from './model/RenewalsDetailsResponseProductsInner';
 import RenewalsDetailsResponseReferenceNumber from './model/RenewalsDetailsResponseReferenceNumber';
 import RenewalsSearchRequest from './model/RenewalsSearchRequest';
 import RenewalsSearchRequestDateType from './model/RenewalsSearchRequestDateType';
@@ -1169,10 +1169,10 @@ export {
     RenewalsDetailsResponseEndUserInfo,
 
     /**
-     * The RenewalsDetailsResponseProducts model constructor.
-     * @property {module:model/RenewalsDetailsResponseProducts}
+     * The RenewalsDetailsResponseProductsInner model constructor.
+     * @property {module:model/RenewalsDetailsResponseProductsInner}
      */
-    RenewalsDetailsResponseProducts,
+    RenewalsDetailsResponseProductsInner,
 
     /**
      * The RenewalsDetailsResponseReferenceNumber model constructor.

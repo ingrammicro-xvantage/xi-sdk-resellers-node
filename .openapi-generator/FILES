@@ -166,7 +166,7 @@ docs/RenewalsApi.md
 docs/RenewalsDetailsResponse.md
 docs/RenewalsDetailsResponseAdditionalAttributesInner.md
 docs/RenewalsDetailsResponseEndUserInfo.md
-docs/RenewalsDetailsResponseProducts.md
+docs/RenewalsDetailsResponseProductsInner.md
 docs/RenewalsDetailsResponseReferenceNumber.md
 docs/RenewalsSearchRequest.md
 docs/RenewalsSearchRequestDateType.md
@@ -364,7 +364,7 @@ src/model/QuoteToOrderResponse.js
 src/model/RenewalsDetailsResponse.js
 src/model/RenewalsDetailsResponseAdditionalAttributesInner.js
 src/model/RenewalsDetailsResponseEndUserInfo.js
-src/model/RenewalsDetailsResponseProducts.js
+src/model/RenewalsDetailsResponseProductsInner.js
 src/model/RenewalsDetailsResponseReferenceNumber.js
 src/model/RenewalsSearchRequest.js
 src/model/RenewalsSearchRequestDateType.js
@@ -555,7 +555,7 @@ test/model/QuoteToOrderResponse.spec.js
 test/model/RenewalsDetailsResponse.spec.js
 test/model/RenewalsDetailsResponseAdditionalAttributesInner.spec.js
 test/model/RenewalsDetailsResponseEndUserInfo.spec.js
-test/model/RenewalsDetailsResponseProducts.spec.js
+test/model/RenewalsDetailsResponseProductsInner.spec.js
 test/model/RenewalsDetailsResponseReferenceNumber.spec.js
 test/model/RenewalsSearchRequest.spec.js
 test/model/RenewalsSearchRequestDateType.spec.js
