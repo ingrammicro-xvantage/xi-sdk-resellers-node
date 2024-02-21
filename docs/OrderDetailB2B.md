@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ingramOrderNumber** | **String** | The IngramMicro sales order number. | [optional] 
-**ingramOrderDate** | **Date** | The IngramMicro sales order date. | [optional] 
+**ingramOrderDate** | **String** | The IngramMicro sales order date. | [optional] 
 **orderType** | **String** | The IngramMicro sales order type. | [optional] 
 **customerOrderNumber** | **String** | The reseller&#39;s order number for reference in their system. | [optional] 
 **endCustomerOrderNumber** | **String** | The end customer&#39;s order number for reference in their system. | [optional] 
