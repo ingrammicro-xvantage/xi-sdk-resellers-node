@@ -57,8 +57,8 @@ class ProductDetailResponseIndicators {
             if (data.hasOwnProperty('hasReturnLimits')) {
                 obj['hasReturnLimits'] = ApiClient.convertToType(data['hasReturnLimits'], 'Boolean');
             }
-            if (data.hasOwnProperty('IsBackOrderAllowed')) {
-                obj['IsBackOrderAllowed'] = ApiClient.convertToType(data['IsBackOrderAllowed'], 'Boolean');
+            if (data.hasOwnProperty('isBackOrderAllowed')) {
+                obj['isBackOrderAllowed'] = ApiClient.convertToType(data['isBackOrderAllowed'], 'Boolean');
             }
             if (data.hasOwnProperty('isShippedFromPartner')) {
                 obj['isShippedFromPartner'] = ApiClient.convertToType(data['isShippedFromPartner'], 'Boolean');
@@ -184,9 +184,9 @@ ProductDetailResponseIndicators.prototype['hasReturnLimits'] = undefined;
 
 /**
  * Boolean that indicates whether back order is allowed for the product.
- * @member {Boolean} IsBackOrderAllowed
+ * @member {Boolean} isBackOrderAllowed
  */
-ProductDetailResponseIndicators.prototype['IsBackOrderAllowed'] = undefined;
+ProductDetailResponseIndicators.prototype['isBackOrderAllowed'] = undefined;
 
 /**
  * Boolean that indicates whether product is shipped from the partner.

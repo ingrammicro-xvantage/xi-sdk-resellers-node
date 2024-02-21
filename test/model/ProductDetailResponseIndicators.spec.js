@@ -72,7 +72,7 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property isBackOrderAllowed (base name: "IsBackOrderAllowed")', function() {
+    it('should have the property isBackOrderAllowed (base name: "isBackOrderAllowed")', function() {
       // uncomment below and update the code to test the property isBackOrderAllowed
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();
