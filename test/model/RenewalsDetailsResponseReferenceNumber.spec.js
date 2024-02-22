@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.RenewalsDetailsResponseReferenceNumberInner();
+    instance = new XiSdkResellers.RenewalsDetailsResponseReferenceNumber();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,22 @@
       object[property] = value;
   }
 
-  describe('RenewalsDetailsResponseReferenceNumberInner', function() {
-    it('should create an instance of RenewalsDetailsResponseReferenceNumberInner', function() {
-      // uncomment below and update the code to test RenewalsDetailsResponseReferenceNumberInner
-      //var instance = new XiSdkResellers.RenewalsDetailsResponseReferenceNumberInner();
-      //expect(instance).to.be.a(XiSdkResellers.RenewalsDetailsResponseReferenceNumberInner);
+  describe('RenewalsDetailsResponseReferenceNumber', function() {
+    it('should create an instance of RenewalsDetailsResponseReferenceNumber', function() {
+      // uncomment below and update the code to test RenewalsDetailsResponseReferenceNumber
+      //var instance = new XiSdkResellers.RenewalsDetailsResponseReferenceNumber();
+      //expect(instance).to.be.a(XiSdkResellers.RenewalsDetailsResponseReferenceNumber);
     });
 
     it('should have the property notificationId (base name: "notificationId")', function() {
       // uncomment below and update the code to test the property notificationId
-      //var instance = new XiSdkResellers.RenewalsDetailsResponseReferenceNumberInner();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponseReferenceNumber();
       //expect(instance).to.be();
     });
 
     it('should have the property quoteNumber (base name: "quoteNumber")', function() {
       // uncomment below and update the code to test the property quoteNumber
-      //var instance = new XiSdkResellers.RenewalsDetailsResponseReferenceNumberInner();
+      //var instance = new XiSdkResellers.RenewalsDetailsResponseReferenceNumber();
       //expect(instance).to.be();
     });
 

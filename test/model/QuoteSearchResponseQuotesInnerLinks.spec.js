@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.QuoteSearchResponseQuotesInnerLinksInner();
+    instance = new XiSdkResellers.QuoteSearchResponseQuotesInnerLinks();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,28 +47,28 @@
       object[property] = value;
   }
 
-  describe('QuoteSearchResponseQuotesInnerLinksInner', function() {
-    it('should create an instance of QuoteSearchResponseQuotesInnerLinksInner', function() {
-      // uncomment below and update the code to test QuoteSearchResponseQuotesInnerLinksInner
-      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInnerLinksInner();
-      //expect(instance).to.be.a(XiSdkResellers.QuoteSearchResponseQuotesInnerLinksInner);
+  describe('QuoteSearchResponseQuotesInnerLinks', function() {
+    it('should create an instance of QuoteSearchResponseQuotesInnerLinks', function() {
+      // uncomment below and update the code to test QuoteSearchResponseQuotesInnerLinks
+      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInnerLinks();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteSearchResponseQuotesInnerLinks);
     });
 
     it('should have the property topic (base name: "topic")', function() {
       // uncomment below and update the code to test the property topic
-      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInnerLinksInner();
+      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInnerLinks();
       //expect(instance).to.be();
     });
 
     it('should have the property href (base name: "href")', function() {
       // uncomment below and update the code to test the property href
-      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInnerLinksInner();
+      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInnerLinks();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInnerLinksInner();
+      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInnerLinks();
       //expect(instance).to.be();
     });
 

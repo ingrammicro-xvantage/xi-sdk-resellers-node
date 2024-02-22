@@ -13,9 +13,9 @@
 
 import ApiClient from '../ApiClient';
 import RenewalsDetailsResponseAdditionalAttributesInner from './RenewalsDetailsResponseAdditionalAttributesInner';
-import RenewalsDetailsResponseEndUserInfoInner from './RenewalsDetailsResponseEndUserInfoInner';
+import RenewalsDetailsResponseEndUserInfo from './RenewalsDetailsResponseEndUserInfo';
 import RenewalsDetailsResponseProductsInner from './RenewalsDetailsResponseProductsInner';
-import RenewalsDetailsResponseReferenceNumberInner from './RenewalsDetailsResponseReferenceNumberInner';
+import RenewalsDetailsResponseReferenceNumber from './RenewalsDetailsResponseReferenceNumber';
 
 /**
  * The RenewalsDetailsResponse model module.
@@ -58,10 +58,10 @@ class RenewalsDetailsResponse {
                 obj['ingramOrderNumber'] = ApiClient.convertToType(data['ingramOrderNumber'], 'String');
             }
             if (data.hasOwnProperty('ingramOrderDate')) {
-                obj['ingramOrderDate'] = ApiClient.convertToType(data['ingramOrderDate'], 'Date');
+                obj['ingramOrderDate'] = ApiClient.convertToType(data['ingramOrderDate'], 'String');
             }
             if (data.hasOwnProperty('expirationDate')) {
-                obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'Date');
+                obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'String');
             }
             if (data.hasOwnProperty('ingramPurchaseOrderNumber')) {
                 obj['ingramPurchaseOrderNumber'] = ApiClient.convertToType(data['ingramPurchaseOrderNumber'], 'String');
@@ -73,7 +73,7 @@ class RenewalsDetailsResponse {
                 obj['endCustomerOrderNumber'] = ApiClient.convertToType(data['endCustomerOrderNumber'], 'String');
             }
             if (data.hasOwnProperty('renewalValue')) {
-                obj['renewalValue'] = ApiClient.convertToType(data['renewalValue'], 'Number');
+                obj['renewalValue'] = ApiClient.convertToType(data['renewalValue'], 'String');
             }
             if (data.hasOwnProperty('endUser')) {
                 obj['endUser'] = ApiClient.convertToType(data['endUser'], 'String');
@@ -85,10 +85,10 @@ class RenewalsDetailsResponse {
                 obj['status'] = ApiClient.convertToType(data['status'], 'String');
             }
             if (data.hasOwnProperty('endUserInfo')) {
-                obj['endUserInfo'] = ApiClient.convertToType(data['endUserInfo'], [RenewalsDetailsResponseEndUserInfoInner]);
+                obj['endUserInfo'] = RenewalsDetailsResponseEndUserInfo.constructFromObject(data['endUserInfo']);
             }
             if (data.hasOwnProperty('referenceNumber')) {
-                obj['referenceNumber'] = ApiClient.convertToType(data['referenceNumber'], [RenewalsDetailsResponseReferenceNumberInner]);
+                obj['referenceNumber'] = RenewalsDetailsResponseReferenceNumber.constructFromObject(data['referenceNumber']);
             }
             if (data.hasOwnProperty('products')) {
                 obj['products'] = ApiClient.convertToType(data['products'], [RenewalsDetailsResponseProductsInner]);
@@ -115,6 +115,14 @@ class RenewalsDetailsResponse {
             throw new Error("Expected the field `ingramOrderNumber` to be a primitive type in the JSON string but got " + data['ingramOrderNumber']);
         }
         // ensure the json data is a string
+        if (data['ingramOrderDate'] && !(typeof data['ingramOrderDate'] === 'string' || data['ingramOrderDate'] instanceof String)) {
+            throw new Error("Expected the field `ingramOrderDate` to be a primitive type in the JSON string but got " + data['ingramOrderDate']);
+        }
+        // ensure the json data is a string
+        if (data['expirationDate'] && !(typeof data['expirationDate'] === 'string' || data['expirationDate'] instanceof String)) {
+            throw new Error("Expected the field `expirationDate` to be a primitive type in the JSON string but got " + data['expirationDate']);
+        }
+        // ensure the json data is a string
         if (data['ingramPurchaseOrderNumber'] && !(typeof data['ingramPurchaseOrderNumber'] === 'string' || data['ingramPurchaseOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `ingramPurchaseOrderNumber` to be a primitive type in the JSON string but got " + data['ingramPurchaseOrderNumber']);
         }
@@ -125,6 +133,10 @@ class RenewalsDetailsResponse {
         // ensure the json data is a string
         if (data['endCustomerOrderNumber'] && !(typeof data['endCustomerOrderNumber'] === 'string' || data['endCustomerOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got " + data['endCustomerOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['renewalValue'] && !(typeof data['renewalValue'] === 'string' || data['renewalValue'] instanceof String)) {
+            throw new Error("Expected the field `renewalValue` to be a primitive type in the JSON string but got " + data['renewalValue']);
         }
         // ensure the json data is a string
         if (data['endUser'] && !(typeof data['endUser'] === 'string' || data['endUser'] instanceof String)) {
@@ -138,25 +150,13 @@ class RenewalsDetailsResponse {
         if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
             throw new Error("Expected the field `status` to be a primitive type in the JSON string but got " + data['status']);
         }
+        // validate the optional field `endUserInfo`
         if (data['endUserInfo']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['endUserInfo'])) {
-                throw new Error("Expected the field `endUserInfo` to be an array in the JSON data but got " + data['endUserInfo']);
-            }
-            // validate the optional field `endUserInfo` (array)
-            for (const item of data['endUserInfo']) {
-                RenewalsDetailsResponseEndUserInfoInner.validateJSON(item);
-            };
+          RenewalsDetailsResponseEndUserInfo.validateJSON(data['endUserInfo']);
         }
+        // validate the optional field `referenceNumber`
         if (data['referenceNumber']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['referenceNumber'])) {
-                throw new Error("Expected the field `referenceNumber` to be an array in the JSON data but got " + data['referenceNumber']);
-            }
-            // validate the optional field `referenceNumber` (array)
-            for (const item of data['referenceNumber']) {
-                RenewalsDetailsResponseReferenceNumberInner.validateJSON(item);
-            };
+          RenewalsDetailsResponseReferenceNumber.validateJSON(data['referenceNumber']);
         }
         if (data['products']) { // data not null
             // ensure the json data is an array
@@ -201,13 +201,13 @@ RenewalsDetailsResponse.prototype['ingramOrderNumber'] = undefined;
 
 /**
  * The IngramMicro sales order date.
- * @member {Date} ingramOrderDate
+ * @member {String} ingramOrderDate
  */
 RenewalsDetailsResponse.prototype['ingramOrderDate'] = undefined;
 
 /**
  * Renewal expiration date.
- * @member {Date} expirationDate
+ * @member {String} expirationDate
  */
 RenewalsDetailsResponse.prototype['expirationDate'] = undefined;
 
@@ -231,7 +231,7 @@ RenewalsDetailsResponse.prototype['endCustomerOrderNumber'] = undefined;
 
 /**
  * The value of the renewal.
- * @member {Number} renewalValue
+ * @member {String} renewalValue
  */
 RenewalsDetailsResponse.prototype['renewalValue'] = undefined;
 
@@ -254,12 +254,12 @@ RenewalsDetailsResponse.prototype['vendor'] = undefined;
 RenewalsDetailsResponse.prototype['status'] = undefined;
 
 /**
- * @member {Array.<module:model/RenewalsDetailsResponseEndUserInfoInner>} endUserInfo
+ * @member {module:model/RenewalsDetailsResponseEndUserInfo} endUserInfo
  */
 RenewalsDetailsResponse.prototype['endUserInfo'] = undefined;
 
 /**
- * @member {Array.<module:model/RenewalsDetailsResponseReferenceNumberInner>} referenceNumber
+ * @member {module:model/RenewalsDetailsResponseReferenceNumber} referenceNumber
  */
 RenewalsDetailsResponse.prototype['referenceNumber'] = undefined;
 

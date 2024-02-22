@@ -49,7 +49,7 @@ class RenewalsSearchResponseRenewalsInner {
             obj = obj || new RenewalsSearchResponseRenewalsInner();
 
             if (data.hasOwnProperty('renewalId')) {
-                obj['renewalId'] = ApiClient.convertToType(data['renewalId'], 'String');
+                obj['renewalId'] = ApiClient.convertToType(data['renewalId'], 'Number');
             }
             if (data.hasOwnProperty('customerOrderNumber')) {
                 obj['customerOrderNumber'] = ApiClient.convertToType(data['customerOrderNumber'], 'String');
@@ -67,7 +67,7 @@ class RenewalsSearchResponseRenewalsInner {
                 obj['expirationDate'] = ApiClient.convertToType(data['expirationDate'], 'String');
             }
             if (data.hasOwnProperty('renewalValue')) {
-                obj['renewalValue'] = ApiClient.convertToType(data['renewalValue'], 'String');
+                obj['renewalValue'] = ApiClient.convertToType(data['renewalValue'], 'Number');
             }
             if (data.hasOwnProperty('status')) {
                 obj['status'] = ApiClient.convertToType(data['status'], 'String');
@@ -85,10 +85,6 @@ class RenewalsSearchResponseRenewalsInner {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RenewalsSearchResponseRenewalsInner</code>.
      */
     static validateJSON(data) {
-        // ensure the json data is a string
-        if (data['renewalId'] && !(typeof data['renewalId'] === 'string' || data['renewalId'] instanceof String)) {
-            throw new Error("Expected the field `renewalId` to be a primitive type in the JSON string but got " + data['renewalId']);
-        }
         // ensure the json data is a string
         if (data['customerOrderNumber'] && !(typeof data['customerOrderNumber'] === 'string' || data['customerOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got " + data['customerOrderNumber']);
@@ -108,10 +104,6 @@ class RenewalsSearchResponseRenewalsInner {
         // ensure the json data is a string
         if (data['expirationDate'] && !(typeof data['expirationDate'] === 'string' || data['expirationDate'] instanceof String)) {
             throw new Error("Expected the field `expirationDate` to be a primitive type in the JSON string but got " + data['expirationDate']);
-        }
-        // ensure the json data is a string
-        if (data['renewalValue'] && !(typeof data['renewalValue'] === 'string' || data['renewalValue'] instanceof String)) {
-            throw new Error("Expected the field `renewalValue` to be a primitive type in the JSON string but got " + data['renewalValue']);
         }
         // ensure the json data is a string
         if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
@@ -138,7 +130,7 @@ class RenewalsSearchResponseRenewalsInner {
 
 /**
  * Unique renewal ID.
- * @member {String} renewalId
+ * @member {Number} renewalId
  */
 RenewalsSearchResponseRenewalsInner.prototype['renewalId'] = undefined;
 
@@ -174,7 +166,7 @@ RenewalsSearchResponseRenewalsInner.prototype['expirationDate'] = undefined;
 
 /**
  * The value of the renewal.
- * @member {String} renewalValue
+ * @member {Number} renewalValue
  */
 RenewalsSearchResponseRenewalsInner.prototype['renewalValue'] = undefined;
 

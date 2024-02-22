@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ## postRenewalssearch
 
-> RenewalsSearchResponse postRenewalssearch(iMCustomerNumber, iMCountryCode, iMCorrelationID, contentType, opts)
+> RenewalsSearchResponse postRenewalssearch(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts)
 
 Renewals Search
 
@@ -89,7 +89,6 @@ let apiInstance = new XiSdkResellers.RenewalsApi();
 let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = US; // String | Two-character ISO country code.
 let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
-let contentType = application/json; // String | The media type for JSON Request.
 let opts = {
   'iMSenderID': MyCompany, // String | Unique value used to identify the sender of the transaction. Example: MyCompany
   'customerOrderNumber': "customerOrderNumber_example", // String | The reseller's unique PO/Order number.
@@ -100,7 +99,7 @@ let opts = {
   'sort': "sort_example", // String | Refers to the column selected to apply the sorting criteria.
   'renewalsSearchRequest': [{"status":{"OpporutinyStatus":{"value":"Closed","subStatus":"Renewal went direct"}},"dateType":{"startDate":{"customStartDate":"05/27/2023","customEndDate":"06/26/2023"},"endDate":{"customStartDate":"06/26/2023","customEndDate":"07/26/2023"},"invoiceDate":{"customStartDate":"05/27/2023","customEndDate":"06/26/2023"},"expirationDate":{"customStartDate":"06/26/2023","customEndDate":"07/26/2023"}},"vendor":"HP","endUser":"STARK"}] // RenewalsSearchRequest | 
 };
-apiInstance.postRenewalssearch(iMCustomerNumber, iMCountryCode, iMCorrelationID, contentType, opts, (error, data, response) => {
+apiInstance.postRenewalssearch(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -117,7 +116,6 @@ Name | Type | Description  | Notes
  **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number. | 
  **iMCountryCode** | **String**| Two-character ISO country code. | 
  **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | 
- **contentType** | **String**| The media type for JSON Request. | 
  **iMSenderID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | [optional] 
  **customerOrderNumber** | **String**| The reseller&#39;s unique PO/Order number. | [optional] 
  **ingramPurchaseOrderNumber** | **String**| Sales order number. | [optional] 

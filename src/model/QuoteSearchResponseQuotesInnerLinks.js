@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The QuoteSearchResponseQuotesInnerLinksInner model module.
- * @module model/QuoteSearchResponseQuotesInnerLinksInner
+ * The QuoteSearchResponseQuotesInnerLinks model module.
+ * @module model/QuoteSearchResponseQuotesInnerLinks
  * @version 1.0.0
  */
-class QuoteSearchResponseQuotesInnerLinksInner {
+class QuoteSearchResponseQuotesInnerLinks {
     /**
-     * Constructs a new <code>QuoteSearchResponseQuotesInnerLinksInner</code>.
-     * @alias module:model/QuoteSearchResponseQuotesInnerLinksInner
+     * Constructs a new <code>QuoteSearchResponseQuotesInnerLinks</code>.
+     * @alias module:model/QuoteSearchResponseQuotesInnerLinks
      */
     constructor() { 
         
-        QuoteSearchResponseQuotesInnerLinksInner.initialize(this);
+        QuoteSearchResponseQuotesInnerLinks.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class QuoteSearchResponseQuotesInnerLinksInner {
     }
 
     /**
-     * Constructs a <code>QuoteSearchResponseQuotesInnerLinksInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>QuoteSearchResponseQuotesInnerLinks</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/QuoteSearchResponseQuotesInnerLinksInner} obj Optional instance to populate.
-     * @return {module:model/QuoteSearchResponseQuotesInnerLinksInner} The populated <code>QuoteSearchResponseQuotesInnerLinksInner</code> instance.
+     * @param {module:model/QuoteSearchResponseQuotesInnerLinks} obj Optional instance to populate.
+     * @return {module:model/QuoteSearchResponseQuotesInnerLinks} The populated <code>QuoteSearchResponseQuotesInnerLinks</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new QuoteSearchResponseQuotesInnerLinksInner();
+            obj = obj || new QuoteSearchResponseQuotesInnerLinks();
 
             if (data.hasOwnProperty('topic')) {
                 obj['topic'] = ApiClient.convertToType(data['topic'], 'String');
@@ -61,9 +61,9 @@ class QuoteSearchResponseQuotesInnerLinksInner {
     }
 
     /**
-     * Validates the JSON data with respect to <code>QuoteSearchResponseQuotesInnerLinksInner</code>.
+     * Validates the JSON data with respect to <code>QuoteSearchResponseQuotesInnerLinks</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>QuoteSearchResponseQuotesInnerLinksInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>QuoteSearchResponseQuotesInnerLinks</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -90,22 +90,22 @@ class QuoteSearchResponseQuotesInnerLinksInner {
 /**
  * @member {String} topic
  */
-QuoteSearchResponseQuotesInnerLinksInner.prototype['topic'] = undefined;
+QuoteSearchResponseQuotesInnerLinks.prototype['topic'] = undefined;
 
 /**
  * @member {String} href
  */
-QuoteSearchResponseQuotesInnerLinksInner.prototype['href'] = undefined;
+QuoteSearchResponseQuotesInnerLinks.prototype['href'] = undefined;
 
 /**
  * @member {String} type
  */
-QuoteSearchResponseQuotesInnerLinksInner.prototype['type'] = undefined;
+QuoteSearchResponseQuotesInnerLinks.prototype['type'] = undefined;
 
 
 
 
 
 
-export default QuoteSearchResponseQuotesInnerLinksInner;
+export default QuoteSearchResponseQuotesInnerLinks;
 

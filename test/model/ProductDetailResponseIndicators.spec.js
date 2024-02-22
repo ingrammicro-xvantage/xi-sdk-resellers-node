@@ -66,13 +66,13 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property hasReturnLimits (base name: "HasReturnLimits")', function() {
+    it('should have the property hasReturnLimits (base name: "hasReturnLimits")', function() {
       // uncomment below and update the code to test the property hasReturnLimits
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();
     });
 
-    it('should have the property isBackOrderAllowed (base name: "IsBackOrderAllowed")', function() {
+    it('should have the property isBackOrderAllowed (base name: "isBackOrderAllowed")', function() {
       // uncomment below and update the code to test the property isBackOrderAllowed
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();
@@ -86,6 +86,12 @@
 
     it('should have the property isReplacementProduct (base name: "isReplacementProduct")', function() {
       // uncomment below and update the code to test the property isReplacementProduct
+      //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property replacementType (base name: "replacementType")', function() {
+      // uncomment below and update the code to test the property replacementType
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();
     });
@@ -138,6 +144,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property hasAcopWebDiscount (base name: "hasAcopWebDiscount")', function() {
+      // uncomment below and update the code to test the property hasAcopWebDiscount
+      //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
+      //expect(instance).to.be();
+    });
+
     it('should have the property hasSpecialBid (base name: "hasSpecialBid")', function() {
       // uncomment below and update the code to test the property hasSpecialBid
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
@@ -156,8 +168,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property isRefurbishedProduct (base name: "isRefurbishedProduct")', function() {
-      // uncomment below and update the code to test the property isRefurbishedProduct
+    it('should have the property isRefurbished (base name: "isRefurbished")', function() {
+      // uncomment below and update the code to test the property isRefurbished
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();
     });

@@ -75,8 +75,8 @@ class ProductDetailResponse {
             if (data.hasOwnProperty('productCategory')) {
                 obj['productCategory'] = ApiClient.convertToType(data['productCategory'], 'String');
             }
-            if (data.hasOwnProperty('productSubcategory')) {
-                obj['productSubcategory'] = ApiClient.convertToType(data['productSubcategory'], 'String');
+            if (data.hasOwnProperty('productSubCategory')) {
+                obj['productSubCategory'] = ApiClient.convertToType(data['productSubCategory'], 'String');
             }
             if (data.hasOwnProperty('vendorName')) {
                 obj['vendorName'] = ApiClient.convertToType(data['vendorName'], 'String');
@@ -148,8 +148,8 @@ class ProductDetailResponse {
             throw new Error("Expected the field `productCategory` to be a primitive type in the JSON string but got " + data['productCategory']);
         }
         // ensure the json data is a string
-        if (data['productSubcategory'] && !(typeof data['productSubcategory'] === 'string' || data['productSubcategory'] instanceof String)) {
-            throw new Error("Expected the field `productSubcategory` to be a primitive type in the JSON string but got " + data['productSubcategory']);
+        if (data['productSubCategory'] && !(typeof data['productSubCategory'] === 'string' || data['productSubCategory'] instanceof String)) {
+            throw new Error("Expected the field `productSubCategory` to be a primitive type in the JSON string but got " + data['productSubCategory']);
         }
         // ensure the json data is a string
         if (data['vendorName'] && !(typeof data['vendorName'] === 'string' || data['vendorName'] instanceof String)) {
@@ -252,9 +252,9 @@ ProductDetailResponse.prototype['productCategory'] = undefined;
 
 /**
  * The sub-category of the product.
- * @member {String} productSubcategory
+ * @member {String} productSubCategory
  */
-ProductDetailResponse.prototype['productSubcategory'] = undefined;
+ProductDetailResponse.prototype['productSubCategory'] = undefined;
 
 /**
  * Vendor name for the order.

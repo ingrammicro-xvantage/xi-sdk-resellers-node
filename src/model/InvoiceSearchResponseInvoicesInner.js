@@ -71,14 +71,23 @@ class InvoiceSearchResponseInvoicesInner {
             if (data.hasOwnProperty('customerOrderNumber')) {
                 obj['customerOrderNumber'] = ApiClient.convertToType(data['customerOrderNumber'], 'String');
             }
-            if (data.hasOwnProperty('orderCreateDate')) {
-                obj['orderCreateDate'] = ApiClient.convertToType(data['orderCreateDate'], 'String');
-            }
             if (data.hasOwnProperty('endCustomerOrderNumber')) {
                 obj['endCustomerOrderNumber'] = ApiClient.convertToType(data['endCustomerOrderNumber'], 'String');
             }
+            if (data.hasOwnProperty('orderCreateDate')) {
+                obj['orderCreateDate'] = ApiClient.convertToType(data['orderCreateDate'], 'String');
+            }
             if (data.hasOwnProperty('invoiceAmountInclTax')) {
                 obj['invoiceAmountInclTax'] = ApiClient.convertToType(data['invoiceAmountInclTax'], 'Number');
+            }
+            if (data.hasOwnProperty('forgntotalamount')) {
+                obj['forgntotalamount'] = ApiClient.convertToType(data['forgntotalamount'], 'Number');
+            }
+            if (data.hasOwnProperty('gstInvoiceNumber')) {
+                obj['gstInvoiceNumber'] = ApiClient.convertToType(data['gstInvoiceNumber'], 'String');
+            }
+            if (data.hasOwnProperty('isfseccenabled')) {
+                obj['isfseccenabled'] = ApiClient.convertToType(data['isfseccenabled'], 'Boolean');
             }
         }
         return obj;
@@ -119,12 +128,16 @@ class InvoiceSearchResponseInvoicesInner {
             throw new Error("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got " + data['customerOrderNumber']);
         }
         // ensure the json data is a string
+        if (data['endCustomerOrderNumber'] && !(typeof data['endCustomerOrderNumber'] === 'string' || data['endCustomerOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got " + data['endCustomerOrderNumber']);
+        }
+        // ensure the json data is a string
         if (data['orderCreateDate'] && !(typeof data['orderCreateDate'] === 'string' || data['orderCreateDate'] instanceof String)) {
             throw new Error("Expected the field `orderCreateDate` to be a primitive type in the JSON string but got " + data['orderCreateDate']);
         }
         // ensure the json data is a string
-        if (data['endCustomerOrderNumber'] && !(typeof data['endCustomerOrderNumber'] === 'string' || data['endCustomerOrderNumber'] instanceof String)) {
-            throw new Error("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got " + data['endCustomerOrderNumber']);
+        if (data['gstInvoiceNumber'] && !(typeof data['gstInvoiceNumber'] === 'string' || data['gstInvoiceNumber'] instanceof String)) {
+            throw new Error("Expected the field `gstInvoiceNumber` to be a primitive type in the JSON string but got " + data['gstInvoiceNumber']);
         }
 
         return true;
@@ -184,22 +197,37 @@ InvoiceSearchResponseInvoicesInner.prototype['invoicedAmountDue'] = undefined;
 InvoiceSearchResponseInvoicesInner.prototype['customerOrderNumber'] = undefined;
 
 /**
- * Order Create Date.
- * @member {String} orderCreateDate
- */
-InvoiceSearchResponseInvoicesInner.prototype['orderCreateDate'] = undefined;
-
-/**
  * End Customer Order number.
  * @member {String} endCustomerOrderNumber
  */
 InvoiceSearchResponseInvoicesInner.prototype['endCustomerOrderNumber'] = undefined;
 
 /**
+ * Order Create Date.
+ * @member {String} orderCreateDate
+ */
+InvoiceSearchResponseInvoicesInner.prototype['orderCreateDate'] = undefined;
+
+/**
  * Invoice Amount Inclusive of Taxes
  * @member {Number} invoiceAmountInclTax
  */
 InvoiceSearchResponseInvoicesInner.prototype['invoiceAmountInclTax'] = undefined;
+
+/**
+ * @member {Number} forgntotalamount
+ */
+InvoiceSearchResponseInvoicesInner.prototype['forgntotalamount'] = undefined;
+
+/**
+ * @member {String} gstInvoiceNumber
+ */
+InvoiceSearchResponseInvoicesInner.prototype['gstInvoiceNumber'] = undefined;
+
+/**
+ * @member {Boolean} isfseccenabled
+ */
+InvoiceSearchResponseInvoicesInner.prototype['isfseccenabled'] = undefined;
 
 
 

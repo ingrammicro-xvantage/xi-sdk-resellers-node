@@ -102,12 +102,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property requestDetails (base name: "requestDetails")', function() {
-      // uncomment below and update the code to test the property requestDetails
-      //var instance = new XiSdkResellers.ReturnsDetailsResponseProductsInner();
-      //expect(instance).to.be();
-    });
-
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
       //var instance = new XiSdkResellers.ReturnsDetailsResponseProductsInner();
@@ -140,6 +134,18 @@
 
     it('should have the property shipFromBranch (base name: "shipFromBranch")', function() {
       // uncomment below and update the code to test the property shipFromBranch
+      //var instance = new XiSdkResellers.ReturnsDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property requestDetails (base name: "requestDetails")', function() {
+      // uncomment below and update the code to test the property requestDetails
+      //var instance = new XiSdkResellers.ReturnsDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property additionalDetails (base name: "additionalDetails")', function() {
+      // uncomment below and update the code to test the property additionalDetails
       //var instance = new XiSdkResellers.ReturnsDetailsResponseProductsInner();
       //expect(instance).to.be();
     });

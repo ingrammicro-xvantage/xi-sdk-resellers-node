@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **productDetailDescription** | **String** | The detailed description given for the product. | [optional] 
 **upc** | **String** | The UPC code for the product. Consists of 12 numeric digits that are uniquely assigned to each trade item. | [optional] 
 **productCategory** | **String** | The category of the product. | [optional] 
-**productSubcategory** | **String** | The sub-category of the product. | [optional] 
+**productSubCategory** | **String** | The sub-category of the product. | [optional] 
 **vendorName** | **String** | Vendor name for the order. | [optional] 
 **vendorNumber** | **String** | Vendor number that identifies the product. | [optional] 
 **productStatusCode** | **String** | Status code of the product. | [optional] 

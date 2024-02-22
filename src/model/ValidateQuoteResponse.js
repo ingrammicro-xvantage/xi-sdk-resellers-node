@@ -61,6 +61,18 @@ class ValidateQuoteResponse {
             if (data.hasOwnProperty('lines')) {
                 obj['lines'] = ApiClient.convertToType(data['lines'], [ValidateQuoteResponseLinesInner]);
             }
+            if (data.hasOwnProperty('quoteType')) {
+                obj['quoteType'] = ApiClient.convertToType(data['quoteType'], 'Number');
+            }
+            if (data.hasOwnProperty('vendorGroupName')) {
+                obj['vendorGroupName'] = ApiClient.convertToType(data['vendorGroupName'], 'String');
+            }
+            if (data.hasOwnProperty('vendorQuoteNumber')) {
+                obj['vendorQuoteNumber'] = ApiClient.convertToType(data['vendorQuoteNumber'], 'String');
+            }
+            if (data.hasOwnProperty('vendorMasterNumber')) {
+                obj['vendorMasterNumber'] = ApiClient.convertToType(data['vendorMasterNumber'], 'String');
+            }
         }
         return obj;
     }
@@ -99,6 +111,18 @@ class ValidateQuoteResponse {
                 ValidateQuoteResponseLinesInner.validateJSON(item);
             };
         }
+        // ensure the json data is a string
+        if (data['vendorGroupName'] && !(typeof data['vendorGroupName'] === 'string' || data['vendorGroupName'] instanceof String)) {
+            throw new Error("Expected the field `vendorGroupName` to be a primitive type in the JSON string but got " + data['vendorGroupName']);
+        }
+        // ensure the json data is a string
+        if (data['vendorQuoteNumber'] && !(typeof data['vendorQuoteNumber'] === 'string' || data['vendorQuoteNumber'] instanceof String)) {
+            throw new Error("Expected the field `vendorQuoteNumber` to be a primitive type in the JSON string but got " + data['vendorQuoteNumber']);
+        }
+        // ensure the json data is a string
+        if (data['vendorMasterNumber'] && !(typeof data['vendorMasterNumber'] === 'string' || data['vendorMasterNumber'] instanceof String)) {
+            throw new Error("Expected the field `vendorMasterNumber` to be a primitive type in the JSON string but got " + data['vendorMasterNumber']);
+        }
 
         return true;
     }
@@ -131,6 +155,26 @@ ValidateQuoteResponse.prototype['vmfAdditionalAttributes'] = undefined;
  * @member {Array.<module:model/ValidateQuoteResponseLinesInner>} lines
  */
 ValidateQuoteResponse.prototype['lines'] = undefined;
+
+/**
+ * @member {Number} quoteType
+ */
+ValidateQuoteResponse.prototype['quoteType'] = undefined;
+
+/**
+ * @member {String} vendorGroupName
+ */
+ValidateQuoteResponse.prototype['vendorGroupName'] = undefined;
+
+/**
+ * @member {String} vendorQuoteNumber
+ */
+ValidateQuoteResponse.prototype['vendorQuoteNumber'] = undefined;
+
+/**
+ * @member {String} vendorMasterNumber
+ */
+ValidateQuoteResponse.prototype['vendorMasterNumber'] = undefined;
 
 
 

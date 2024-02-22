@@ -52,13 +52,13 @@ class OrderDetailB2BLinesInnerMultipleShipmentsInner {
                 obj['lineNumber'] = ApiClient.convertToType(data['lineNumber'], 'String');
             }
             if (data.hasOwnProperty('requestedQuantity')) {
-                obj['requestedQuantity'] = ApiClient.convertToType(data['requestedQuantity'], 'String');
+                obj['requestedQuantity'] = ApiClient.convertToType(data['requestedQuantity'], 'Number');
             }
             if (data.hasOwnProperty('confirmedQuantity')) {
-                obj['confirmedQuantity'] = ApiClient.convertToType(data['confirmedQuantity'], 'String');
+                obj['confirmedQuantity'] = ApiClient.convertToType(data['confirmedQuantity'], 'Number');
             }
-            if (data.hasOwnProperty('dataType')) {
-                obj['dataType'] = ApiClient.convertToType(data['dataType'], 'String');
+            if (data.hasOwnProperty('dateType')) {
+                obj['dateType'] = ApiClient.convertToType(data['dateType'], 'String');
             }
             if (data.hasOwnProperty('dateRange')) {
                 obj['dateRange'] = OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange.constructFromObject(data['dateRange']);
@@ -90,16 +90,8 @@ class OrderDetailB2BLinesInnerMultipleShipmentsInner {
             throw new Error("Expected the field `lineNumber` to be a primitive type in the JSON string but got " + data['lineNumber']);
         }
         // ensure the json data is a string
-        if (data['requestedQuantity'] && !(typeof data['requestedQuantity'] === 'string' || data['requestedQuantity'] instanceof String)) {
-            throw new Error("Expected the field `requestedQuantity` to be a primitive type in the JSON string but got " + data['requestedQuantity']);
-        }
-        // ensure the json data is a string
-        if (data['confirmedQuantity'] && !(typeof data['confirmedQuantity'] === 'string' || data['confirmedQuantity'] instanceof String)) {
-            throw new Error("Expected the field `confirmedQuantity` to be a primitive type in the JSON string but got " + data['confirmedQuantity']);
-        }
-        // ensure the json data is a string
-        if (data['dataType'] && !(typeof data['dataType'] === 'string' || data['dataType'] instanceof String)) {
-            throw new Error("Expected the field `dataType` to be a primitive type in the JSON string but got " + data['dataType']);
+        if (data['dateType'] && !(typeof data['dateType'] === 'string' || data['dateType'] instanceof String)) {
+            throw new Error("Expected the field `dateType` to be a primitive type in the JSON string but got " + data['dateType']);
         }
         // validate the optional field `dateRange`
         if (data['dateRange']) { // data not null
@@ -138,21 +130,21 @@ OrderDetailB2BLinesInnerMultipleShipmentsInner.prototype['lineNumber'] = undefin
 
 /**
  * Requested quantity.
- * @member {String} requestedQuantity
+ * @member {Number} requestedQuantity
  */
 OrderDetailB2BLinesInnerMultipleShipmentsInner.prototype['requestedQuantity'] = undefined;
 
 /**
  * Confirmed quantity.
- * @member {String} confirmedQuantity
+ * @member {Number} confirmedQuantity
  */
 OrderDetailB2BLinesInnerMultipleShipmentsInner.prototype['confirmedQuantity'] = undefined;
 
 /**
  * Date type. Example Single or multiple dates.
- * @member {String} dataType
+ * @member {String} dateType
  */
-OrderDetailB2BLinesInnerMultipleShipmentsInner.prototype['dataType'] = undefined;
+OrderDetailB2BLinesInnerMultipleShipmentsInner.prototype['dateType'] = undefined;
 
 /**
  * @member {module:model/OrderDetailB2BLinesInnerEstimatedDatesInnerShipShipDateRange} dateRange

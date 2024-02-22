@@ -1,4 +1,4 @@
-# XiSdkResellers.QuoteSearchResponseQuotesInnerLinksInner
+# XiSdkResellers.QuoteSearchResponseQuotesInnerLinks
 
 ## Properties
 

@@ -47,17 +47,17 @@ class ProductDetailResponseTechnicalSpecificationsInner {
         if (data) {
             obj = obj || new ProductDetailResponseTechnicalSpecificationsInner();
 
-            if (data.hasOwnProperty('headername')) {
-                obj['headername'] = ApiClient.convertToType(data['headername'], 'String');
+            if (data.hasOwnProperty('headerName')) {
+                obj['headerName'] = ApiClient.convertToType(data['headerName'], 'String');
             }
-            if (data.hasOwnProperty('attributevalue')) {
-                obj['attributevalue'] = ApiClient.convertToType(data['attributevalue'], 'String');
+            if (data.hasOwnProperty('attributeName')) {
+                obj['attributeName'] = ApiClient.convertToType(data['attributeName'], 'String');
             }
-            if (data.hasOwnProperty('attributedisplay')) {
-                obj['attributedisplay'] = ApiClient.convertToType(data['attributedisplay'], 'String');
+            if (data.hasOwnProperty('attributeDisplay')) {
+                obj['attributeDisplay'] = ApiClient.convertToType(data['attributeDisplay'], 'String');
             }
-            if (data.hasOwnProperty('attributename')) {
-                obj['attributename'] = ApiClient.convertToType(data['attributename'], 'String');
+            if (data.hasOwnProperty('attributeValue')) {
+                obj['attributeValue'] = ApiClient.convertToType(data['attributeValue'], 'String');
             }
         }
         return obj;
@@ -70,20 +70,20 @@ class ProductDetailResponseTechnicalSpecificationsInner {
      */
     static validateJSON(data) {
         // ensure the json data is a string
-        if (data['headername'] && !(typeof data['headername'] === 'string' || data['headername'] instanceof String)) {
-            throw new Error("Expected the field `headername` to be a primitive type in the JSON string but got " + data['headername']);
+        if (data['headerName'] && !(typeof data['headerName'] === 'string' || data['headerName'] instanceof String)) {
+            throw new Error("Expected the field `headerName` to be a primitive type in the JSON string but got " + data['headerName']);
         }
         // ensure the json data is a string
-        if (data['attributevalue'] && !(typeof data['attributevalue'] === 'string' || data['attributevalue'] instanceof String)) {
-            throw new Error("Expected the field `attributevalue` to be a primitive type in the JSON string but got " + data['attributevalue']);
+        if (data['attributeName'] && !(typeof data['attributeName'] === 'string' || data['attributeName'] instanceof String)) {
+            throw new Error("Expected the field `attributeName` to be a primitive type in the JSON string but got " + data['attributeName']);
         }
         // ensure the json data is a string
-        if (data['attributedisplay'] && !(typeof data['attributedisplay'] === 'string' || data['attributedisplay'] instanceof String)) {
-            throw new Error("Expected the field `attributedisplay` to be a primitive type in the JSON string but got " + data['attributedisplay']);
+        if (data['attributeDisplay'] && !(typeof data['attributeDisplay'] === 'string' || data['attributeDisplay'] instanceof String)) {
+            throw new Error("Expected the field `attributeDisplay` to be a primitive type in the JSON string but got " + data['attributeDisplay']);
         }
         // ensure the json data is a string
-        if (data['attributename'] && !(typeof data['attributename'] === 'string' || data['attributename'] instanceof String)) {
-            throw new Error("Expected the field `attributename` to be a primitive type in the JSON string but got " + data['attributename']);
+        if (data['attributeValue'] && !(typeof data['attributeValue'] === 'string' || data['attributeValue'] instanceof String)) {
+            throw new Error("Expected the field `attributeValue` to be a primitive type in the JSON string but got " + data['attributeValue']);
         }
 
         return true;
@@ -96,27 +96,27 @@ class ProductDetailResponseTechnicalSpecificationsInner {
 
 /**
  * Example : 'Basic'
- * @member {String} headername
+ * @member {String} headerName
  */
-ProductDetailResponseTechnicalSpecificationsInner.prototype['headername'] = undefined;
-
-/**
- * Example : 'LCD Monitor'
- * @member {String} attributevalue
- */
-ProductDetailResponseTechnicalSpecificationsInner.prototype['attributevalue'] = undefined;
-
-/**
- * Example : 'Basic|Product Type|LCD Monitor'
- * @member {String} attributedisplay
- */
-ProductDetailResponseTechnicalSpecificationsInner.prototype['attributedisplay'] = undefined;
+ProductDetailResponseTechnicalSpecificationsInner.prototype['headerName'] = undefined;
 
 /**
  * Example : 'Product Type'
- * @member {String} attributename
+ * @member {String} attributeName
  */
-ProductDetailResponseTechnicalSpecificationsInner.prototype['attributename'] = undefined;
+ProductDetailResponseTechnicalSpecificationsInner.prototype['attributeName'] = undefined;
+
+/**
+ * Example : 'Basic|Product Type|LCD Monitor'
+ * @member {String} attributeDisplay
+ */
+ProductDetailResponseTechnicalSpecificationsInner.prototype['attributeDisplay'] = undefined;
+
+/**
+ * Example : 'LCD Monitor'
+ * @member {String} attributeValue
+ */
+ProductDetailResponseTechnicalSpecificationsInner.prototype['attributeValue'] = undefined;
 
 
 

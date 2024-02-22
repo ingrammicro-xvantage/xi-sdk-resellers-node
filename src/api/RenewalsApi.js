@@ -117,7 +117,6 @@ export default class RenewalsApi {
      * @param {String} iMCustomerNumber Your unique Ingram Micro customer number.
      * @param {String} iMCountryCode Two-character ISO country code.
      * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems.
-     * @param {String} contentType The media type for JSON Request.
      * @param {Object} opts Optional parameters
      * @param {String} [iMSenderID] Unique value used to identify the sender of the transaction. Example: MyCompany
      * @param {String} [customerOrderNumber] The reseller's unique PO/Order number.
@@ -130,7 +129,7 @@ export default class RenewalsApi {
      * @param {module:api/RenewalsApi~postRenewalssearchCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/RenewalsSearchResponse}
      */
-    postRenewalssearch(iMCustomerNumber, iMCountryCode, iMCorrelationID, contentType, opts, callback) {
+    postRenewalssearch(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, callback) {
       opts = opts || {};
       let postBody = opts['renewalsSearchRequest'];
       // verify the required parameter 'iMCustomerNumber' is set
@@ -144,10 +143,6 @@ export default class RenewalsApi {
       // verify the required parameter 'iMCorrelationID' is set
       if (iMCorrelationID === undefined || iMCorrelationID === null) {
         throw new Error("Missing the required parameter 'iMCorrelationID' when calling postRenewalssearch");
-      }
-      // verify the required parameter 'contentType' is set
-      if (contentType === undefined || contentType === null) {
-        throw new Error("Missing the required parameter 'contentType' when calling postRenewalssearch");
       }
 
       let pathParams = {
@@ -164,8 +159,7 @@ export default class RenewalsApi {
         'IM-CustomerNumber': iMCustomerNumber,
         'IM-CountryCode': iMCountryCode,
         'IM-CorrelationID': iMCorrelationID,
-        'IM-SenderID': opts['iMSenderID'],
-        'Content Type': contentType
+        'IM-SenderID': opts['iMSenderID']
       };
       let formParams = {
       };

@@ -63,16 +63,13 @@ class ReturnsDetailsResponseProductsInner {
                 obj['upc'] = ApiClient.convertToType(data['upc'], 'String');
             }
             if (data.hasOwnProperty('invoiceDate')) {
-                obj['invoiceDate'] = ApiClient.convertToType(data['invoiceDate'], 'Date');
+                obj['invoiceDate'] = ApiClient.convertToType(data['invoiceDate'], 'String');
             }
             if (data.hasOwnProperty('invoiceNumber')) {
                 obj['invoiceNumber'] = ApiClient.convertToType(data['invoiceNumber'], 'String');
             }
             if (data.hasOwnProperty('customerOrderNumber')) {
                 obj['customerOrderNumber'] = ApiClient.convertToType(data['customerOrderNumber'], 'String');
-            }
-            if (data.hasOwnProperty('requestDetails')) {
-                obj['requestDetails'] = ApiClient.convertToType(data['requestDetails'], 'String');
             }
             if (data.hasOwnProperty('quantity')) {
                 obj['quantity'] = ApiClient.convertToType(data['quantity'], 'Number');
@@ -91,6 +88,12 @@ class ReturnsDetailsResponseProductsInner {
             }
             if (data.hasOwnProperty('shipFromBranch')) {
                 obj['shipFromBranch'] = ApiClient.convertToType(data['shipFromBranch'], 'String');
+            }
+            if (data.hasOwnProperty('requestDetails')) {
+                obj['requestDetails'] = ApiClient.convertToType(data['requestDetails'], 'String');
+            }
+            if (data.hasOwnProperty('additionalDetails')) {
+                obj['additionalDetails'] = ApiClient.convertToType(data['additionalDetails'], 'String');
             }
         }
         return obj;
@@ -119,16 +122,16 @@ class ReturnsDetailsResponseProductsInner {
             throw new Error("Expected the field `upc` to be a primitive type in the JSON string but got " + data['upc']);
         }
         // ensure the json data is a string
+        if (data['invoiceDate'] && !(typeof data['invoiceDate'] === 'string' || data['invoiceDate'] instanceof String)) {
+            throw new Error("Expected the field `invoiceDate` to be a primitive type in the JSON string but got " + data['invoiceDate']);
+        }
+        // ensure the json data is a string
         if (data['invoiceNumber'] && !(typeof data['invoiceNumber'] === 'string' || data['invoiceNumber'] instanceof String)) {
             throw new Error("Expected the field `invoiceNumber` to be a primitive type in the JSON string but got " + data['invoiceNumber']);
         }
         // ensure the json data is a string
         if (data['customerOrderNumber'] && !(typeof data['customerOrderNumber'] === 'string' || data['customerOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got " + data['customerOrderNumber']);
-        }
-        // ensure the json data is a string
-        if (data['requestDetails'] && !(typeof data['requestDetails'] === 'string' || data['requestDetails'] instanceof String)) {
-            throw new Error("Expected the field `requestDetails` to be a primitive type in the JSON string but got " + data['requestDetails']);
         }
         // ensure the json data is a string
         if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
@@ -141,6 +144,14 @@ class ReturnsDetailsResponseProductsInner {
         // ensure the json data is a string
         if (data['shipFromBranch'] && !(typeof data['shipFromBranch'] === 'string' || data['shipFromBranch'] instanceof String)) {
             throw new Error("Expected the field `shipFromBranch` to be a primitive type in the JSON string but got " + data['shipFromBranch']);
+        }
+        // ensure the json data is a string
+        if (data['requestDetails'] && !(typeof data['requestDetails'] === 'string' || data['requestDetails'] instanceof String)) {
+            throw new Error("Expected the field `requestDetails` to be a primitive type in the JSON string but got " + data['requestDetails']);
+        }
+        // ensure the json data is a string
+        if (data['additionalDetails'] && !(typeof data['additionalDetails'] === 'string' || data['additionalDetails'] instanceof String)) {
+            throw new Error("Expected the field `additionalDetails` to be a primitive type in the JSON string but got " + data['additionalDetails']);
         }
 
         return true;
@@ -183,7 +194,7 @@ ReturnsDetailsResponseProductsInner.prototype['upc'] = undefined;
 
 /**
  * The date of the invoice.
- * @member {Date} invoiceDate
+ * @member {String} invoiceDate
  */
 ReturnsDetailsResponseProductsInner.prototype['invoiceDate'] = undefined;
 
@@ -198,12 +209,6 @@ ReturnsDetailsResponseProductsInner.prototype['invoiceNumber'] = undefined;
  * @member {String} customerOrderNumber
  */
 ReturnsDetailsResponseProductsInner.prototype['customerOrderNumber'] = undefined;
-
-/**
- * Request details.
- * @member {String} requestDetails
- */
-ReturnsDetailsResponseProductsInner.prototype['requestDetails'] = undefined;
 
 /**
  * The quantity of the line item.
@@ -240,6 +245,17 @@ ReturnsDetailsResponseProductsInner.prototype['returnBranch'] = undefined;
  * @member {String} shipFromBranch
  */
 ReturnsDetailsResponseProductsInner.prototype['shipFromBranch'] = undefined;
+
+/**
+ * Request details.
+ * @member {String} requestDetails
+ */
+ReturnsDetailsResponseProductsInner.prototype['requestDetails'] = undefined;
+
+/**
+ * @member {String} additionalDetails
+ */
+ReturnsDetailsResponseProductsInner.prototype['additionalDetails'] = undefined;
 
 
 

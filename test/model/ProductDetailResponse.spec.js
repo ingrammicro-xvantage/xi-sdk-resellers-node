@@ -102,8 +102,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property productSubcategory (base name: "productSubcategory")', function() {
-      // uncomment below and update the code to test the property productSubcategory
+    it('should have the property productSubCategory (base name: "productSubCategory")', function() {
+      // uncomment below and update the code to test the property productSubCategory
       //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });

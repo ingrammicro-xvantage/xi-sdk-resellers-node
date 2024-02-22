@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The RenewalsDetailsResponseEndUserInfoInner model module.
- * @module model/RenewalsDetailsResponseEndUserInfoInner
+ * The RenewalsDetailsResponseEndUserInfo model module.
+ * @module model/RenewalsDetailsResponseEndUserInfo
  * @version 1.0.0
  */
-class RenewalsDetailsResponseEndUserInfoInner {
+class RenewalsDetailsResponseEndUserInfo {
     /**
-     * Constructs a new <code>RenewalsDetailsResponseEndUserInfoInner</code>.
-     * @alias module:model/RenewalsDetailsResponseEndUserInfoInner
+     * Constructs a new <code>RenewalsDetailsResponseEndUserInfo</code>.
+     * @alias module:model/RenewalsDetailsResponseEndUserInfo
      */
     constructor() { 
         
-        RenewalsDetailsResponseEndUserInfoInner.initialize(this);
+        RenewalsDetailsResponseEndUserInfo.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class RenewalsDetailsResponseEndUserInfoInner {
     }
 
     /**
-     * Constructs a <code>RenewalsDetailsResponseEndUserInfoInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>RenewalsDetailsResponseEndUserInfo</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/RenewalsDetailsResponseEndUserInfoInner} obj Optional instance to populate.
-     * @return {module:model/RenewalsDetailsResponseEndUserInfoInner} The populated <code>RenewalsDetailsResponseEndUserInfoInner</code> instance.
+     * @param {module:model/RenewalsDetailsResponseEndUserInfo} obj Optional instance to populate.
+     * @return {module:model/RenewalsDetailsResponseEndUserInfo} The populated <code>RenewalsDetailsResponseEndUserInfo</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new RenewalsDetailsResponseEndUserInfoInner();
+            obj = obj || new RenewalsDetailsResponseEndUserInfo();
 
             if (data.hasOwnProperty('contact')) {
                 obj['contact'] = ApiClient.convertToType(data['contact'], 'String');
@@ -94,9 +94,9 @@ class RenewalsDetailsResponseEndUserInfoInner {
     }
 
     /**
-     * Validates the JSON data with respect to <code>RenewalsDetailsResponseEndUserInfoInner</code>.
+     * Validates the JSON data with respect to <code>RenewalsDetailsResponseEndUserInfo</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RenewalsDetailsResponseEndUserInfoInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>RenewalsDetailsResponseEndUserInfo</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -168,90 +168,90 @@ class RenewalsDetailsResponseEndUserInfoInner {
  * The contact name for the end user/customer.
  * @member {String} contact
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['contact'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['contact'] = undefined;
 
 /**
  * The name1 for the end user/customer.
  * @member {String} name1
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['name1'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['name1'] = undefined;
 
 /**
  * The name2 for the end user/customer.
  * @member {String} name2
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['name2'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['name2'] = undefined;
 
 /**
  * The company name for the end user/customer.
  * @member {String} companyName
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['companyName'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['companyName'] = undefined;
 
 /**
  * The address line 1 for the end user/customer.
  * @member {String} addressLine1
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['addressLine1'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['addressLine1'] = undefined;
 
 /**
  * The address line 2 for the end user/customer.
  * @member {String} addressLine2
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['addressLine2'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['addressLine2'] = undefined;
 
 /**
  * The address line 3 for the end user/customer.
  * @member {String} addressLine3
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['addressLine3'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['addressLine3'] = undefined;
 
 /**
  * The address line 4 for the end user/customer.
  * @member {String} addressLine4
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['addressLine4'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['addressLine4'] = undefined;
 
 /**
  * The end user/customer's city.
  * @member {String} city
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['city'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['city'] = undefined;
 
 /**
  * The end user/customer's state.
  * @member {String} state
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['state'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['state'] = undefined;
 
 /**
  * The end user/customer's zip or postal code.
  * @member {String} postalCode
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['postalCode'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['postalCode'] = undefined;
 
 /**
  * The end user/customer's two character ISO country code.
  * @member {String} countryCode
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['countryCode'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['countryCode'] = undefined;
 
 /**
  * The end user/customer's phone number.
  * @member {String} phoneNumber
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['phoneNumber'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['phoneNumber'] = undefined;
 
 /**
  * The end user/customer's email.
  * @member {String} email
  */
-RenewalsDetailsResponseEndUserInfoInner.prototype['email'] = undefined;
+RenewalsDetailsResponseEndUserInfo.prototype['email'] = undefined;
 
 
 
 
 
 
-export default RenewalsDetailsResponseEndUserInfoInner;
+export default RenewalsDetailsResponseEndUserInfo;
 

@@ -57,7 +57,7 @@ class OrderDetailB2B {
                 obj['ingramOrderNumber'] = ApiClient.convertToType(data['ingramOrderNumber'], 'String');
             }
             if (data.hasOwnProperty('ingramOrderDate')) {
-                obj['ingramOrderDate'] = ApiClient.convertToType(data['ingramOrderDate'], 'Date');
+                obj['ingramOrderDate'] = ApiClient.convertToType(data['ingramOrderDate'], 'String');
             }
             if (data.hasOwnProperty('orderType')) {
                 obj['orderType'] = ApiClient.convertToType(data['orderType'], 'String');
@@ -138,6 +138,10 @@ class OrderDetailB2B {
         // ensure the json data is a string
         if (data['ingramOrderNumber'] && !(typeof data['ingramOrderNumber'] === 'string' || data['ingramOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `ingramOrderNumber` to be a primitive type in the JSON string but got " + data['ingramOrderNumber']);
+        }
+        // ensure the json data is a string
+        if (data['ingramOrderDate'] && !(typeof data['ingramOrderDate'] === 'string' || data['ingramOrderDate'] instanceof String)) {
+            throw new Error("Expected the field `ingramOrderDate` to be a primitive type in the JSON string but got " + data['ingramOrderDate']);
         }
         // ensure the json data is a string
         if (data['orderType'] && !(typeof data['orderType'] === 'string' || data['orderType'] instanceof String)) {
@@ -238,7 +242,7 @@ OrderDetailB2B.prototype['ingramOrderNumber'] = undefined;
 
 /**
  * The IngramMicro sales order date.
- * @member {Date} ingramOrderDate
+ * @member {String} ingramOrderDate
  */
 OrderDetailB2B.prototype['ingramOrderDate'] = undefined;
 

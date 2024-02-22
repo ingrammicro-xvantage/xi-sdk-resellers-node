@@ -12,8 +12,11 @@ Name | Type | Description | Notes
 **invoiceDueDate** | **String** | Invoice Due Date. | [optional] 
 **invoicedAmountDue** | **Number** | Invoice Amount. | [optional] 
 **customerOrderNumber** | **String** | Customer Order No. | [optional] 
-**orderCreateDate** | **String** | Order Create Date. | [optional] 
 **endCustomerOrderNumber** | **String** | End Customer Order number. | [optional] 
+**orderCreateDate** | **String** | Order Create Date. | [optional] 
 **invoiceAmountInclTax** | **Number** | Invoice Amount Inclusive of Taxes | [optional] 
+**forgntotalamount** | **Number** |  | [optional] 
+**gstInvoiceNumber** | **String** |  | [optional] 
+**isfseccenabled** | **Boolean** |  | [optional] 
 
 

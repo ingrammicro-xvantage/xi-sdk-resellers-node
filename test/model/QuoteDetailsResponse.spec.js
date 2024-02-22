@@ -96,12 +96,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property closingReason (base name: "closingReason")', function() {
-      // uncomment below and update the code to test the property closingReason
-      //var instance = new XiSdkResellers.QuoteDetailsResponse();
-      //expect(instance).to.be();
-    });
-
     it('should have the property specialBidId (base name: "specialBidId")', function() {
       // uncomment below and update the code to test the property specialBidId
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
@@ -122,6 +116,18 @@
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property closingReason (base name: "closingReason")', function() {
+      // uncomment below and update the code to test the property closingReason
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property dateClosed (base name: "dateClosed")', function() {
+      // uncomment below and update the code to test the property dateClosed
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
       //expect(instance).to.be();
     });
@@ -156,6 +162,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property quoteType (base name: "quoteType")', function() {
+      // uncomment below and update the code to test the property quoteType
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property leaseInfo (base name: "leaseInfo")', function() {
       // uncomment below and update the code to test the property leaseInfo
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
@@ -164,6 +176,12 @@
 
     it('should have the property leasingInstructions (base name: "leasingInstructions")', function() {
       // uncomment below and update the code to test the property leasingInstructions
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property quoteSubType (base name: "quoteSubType")', function() {
+      // uncomment below and update the code to test the property quoteSubType
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
       //expect(instance).to.be();
     });

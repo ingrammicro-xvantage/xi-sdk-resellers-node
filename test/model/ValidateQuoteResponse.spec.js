@@ -78,6 +78,30 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property quoteType (base name: "quoteType")', function() {
+      // uncomment below and update the code to test the property quoteType
+      //var instance = new XiSdkResellers.ValidateQuoteResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vendorGroupName (base name: "vendorGroupName")', function() {
+      // uncomment below and update the code to test the property vendorGroupName
+      //var instance = new XiSdkResellers.ValidateQuoteResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vendorQuoteNumber (base name: "vendorQuoteNumber")', function() {
+      // uncomment below and update the code to test the property vendorQuoteNumber
+      //var instance = new XiSdkResellers.ValidateQuoteResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vendorMasterNumber (base name: "vendorMasterNumber")', function() {
+      // uncomment below and update the code to test the property vendorMasterNumber
+      //var instance = new XiSdkResellers.ValidateQuoteResponse();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

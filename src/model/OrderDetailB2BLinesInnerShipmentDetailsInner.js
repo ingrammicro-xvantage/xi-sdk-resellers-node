@@ -57,6 +57,12 @@ class OrderDetailB2BLinesInnerShipmentDetailsInner {
             if (data.hasOwnProperty('estimatedShipDate')) {
                 obj['estimatedShipDate'] = ApiClient.convertToType(data['estimatedShipDate'], 'String');
             }
+            if (data.hasOwnProperty('shippedDate')) {
+                obj['shippedDate'] = ApiClient.convertToType(data['shippedDate'], 'String');
+            }
+            if (data.hasOwnProperty('estimatedDeliveryDate')) {
+                obj['estimatedDeliveryDate'] = ApiClient.convertToType(data['estimatedDeliveryDate'], 'String');
+            }
             if (data.hasOwnProperty('shipFromWarehouseId')) {
                 obj['shipFromWarehouseId'] = ApiClient.convertToType(data['shipFromWarehouseId'], 'String');
             }
@@ -89,6 +95,14 @@ class OrderDetailB2BLinesInnerShipmentDetailsInner {
         // ensure the json data is a string
         if (data['estimatedShipDate'] && !(typeof data['estimatedShipDate'] === 'string' || data['estimatedShipDate'] instanceof String)) {
             throw new Error("Expected the field `estimatedShipDate` to be a primitive type in the JSON string but got " + data['estimatedShipDate']);
+        }
+        // ensure the json data is a string
+        if (data['shippedDate'] && !(typeof data['shippedDate'] === 'string' || data['shippedDate'] instanceof String)) {
+            throw new Error("Expected the field `shippedDate` to be a primitive type in the JSON string but got " + data['shippedDate']);
+        }
+        // ensure the json data is a string
+        if (data['estimatedDeliveryDate'] && !(typeof data['estimatedDeliveryDate'] === 'string' || data['estimatedDeliveryDate'] instanceof String)) {
+            throw new Error("Expected the field `estimatedDeliveryDate` to be a primitive type in the JSON string but got " + data['estimatedDeliveryDate']);
         }
         // ensure the json data is a string
         if (data['shipFromWarehouseId'] && !(typeof data['shipFromWarehouseId'] === 'string' || data['shipFromWarehouseId'] instanceof String)) {
@@ -142,6 +156,16 @@ OrderDetailB2BLinesInnerShipmentDetailsInner.prototype['deliveryNumber'] = undef
  * @member {String} estimatedShipDate
  */
 OrderDetailB2BLinesInnerShipmentDetailsInner.prototype['estimatedShipDate'] = undefined;
+
+/**
+ * @member {String} shippedDate
+ */
+OrderDetailB2BLinesInnerShipmentDetailsInner.prototype['shippedDate'] = undefined;
+
+/**
+ * @member {String} estimatedDeliveryDate
+ */
+OrderDetailB2BLinesInnerShipmentDetailsInner.prototype['estimatedDeliveryDate'] = undefined;
 
 /**
  * The ID of the warehouse the product will ship from.

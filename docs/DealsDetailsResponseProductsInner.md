@@ -15,8 +15,8 @@ Name | Type | Description | Notes
 **remainingQuantity** | **Number** | The quantity remaining as part of the deal for the customer to order. | [optional] 
 **comments** | **String** | Comments of the deal. | [optional] 
 **specialConditions** | **String** | Special conditions of the deal. | [optional] 
-**startDate** | **Date** | Start Date. | [optional] 
-**expirationDate** | **Date** | Expiration date. | [optional] 
+**startDate** | **String** | Start Date. | [optional] 
+**expirationDate** | **String** | Expiration date. | [optional] 
 **daysRemaining** | **Number** | Number of days remaining before the deal expires. | [optional] 
 
 

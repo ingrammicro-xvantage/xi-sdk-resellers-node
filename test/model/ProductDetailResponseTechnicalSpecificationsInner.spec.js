@@ -54,26 +54,26 @@
       //expect(instance).to.be.a(XiSdkResellers.ProductDetailResponseTechnicalSpecificationsInner);
     });
 
-    it('should have the property headername (base name: "headername")', function() {
-      // uncomment below and update the code to test the property headername
+    it('should have the property headerName (base name: "headerName")', function() {
+      // uncomment below and update the code to test the property headerName
       //var instance = new XiSdkResellers.ProductDetailResponseTechnicalSpecificationsInner();
       //expect(instance).to.be();
     });
 
-    it('should have the property attributevalue (base name: "attributevalue")', function() {
-      // uncomment below and update the code to test the property attributevalue
+    it('should have the property attributeName (base name: "attributeName")', function() {
+      // uncomment below and update the code to test the property attributeName
       //var instance = new XiSdkResellers.ProductDetailResponseTechnicalSpecificationsInner();
       //expect(instance).to.be();
     });
 
-    it('should have the property attributedisplay (base name: "attributedisplay")', function() {
-      // uncomment below and update the code to test the property attributedisplay
+    it('should have the property attributeDisplay (base name: "attributeDisplay")', function() {
+      // uncomment below and update the code to test the property attributeDisplay
       //var instance = new XiSdkResellers.ProductDetailResponseTechnicalSpecificationsInner();
       //expect(instance).to.be();
     });
 
-    it('should have the property attributename (base name: "attributename")', function() {
-      // uncomment below and update the code to test the property attributename
+    it('should have the property attributeValue (base name: "attributeValue")', function() {
+      // uncomment below and update the code to test the property attributeValue
       //var instance = new XiSdkResellers.ProductDetailResponseTechnicalSpecificationsInner();
       //expect(instance).to.be();
     });
