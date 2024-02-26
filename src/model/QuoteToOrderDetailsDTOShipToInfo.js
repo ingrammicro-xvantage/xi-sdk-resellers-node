@@ -14,18 +14,19 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The QuoteToOrderDetailsDTOEndUserInfoInner model module.
- * @module model/QuoteToOrderDetailsDTOEndUserInfoInner
+ * The QuoteToOrderDetailsDTOShipToInfo model module.
+ * @module model/QuoteToOrderDetailsDTOShipToInfo
  * @version 1.0.0
  */
-class QuoteToOrderDetailsDTOEndUserInfoInner {
+class QuoteToOrderDetailsDTOShipToInfo {
     /**
-     * Constructs a new <code>QuoteToOrderDetailsDTOEndUserInfoInner</code>.
-     * @alias module:model/QuoteToOrderDetailsDTOEndUserInfoInner
+     * Constructs a new <code>QuoteToOrderDetailsDTOShipToInfo</code>.
+     * The shipping information provided by the reseller for order delivery.
+     * @alias module:model/QuoteToOrderDetailsDTOShipToInfo
      */
     constructor() { 
         
-        QuoteToOrderDetailsDTOEndUserInfoInner.initialize(this);
+        QuoteToOrderDetailsDTOShipToInfo.initialize(this);
     }
 
     /**
@@ -37,16 +38,19 @@ class QuoteToOrderDetailsDTOEndUserInfoInner {
     }
 
     /**
-     * Constructs a <code>QuoteToOrderDetailsDTOEndUserInfoInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>QuoteToOrderDetailsDTOShipToInfo</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/QuoteToOrderDetailsDTOEndUserInfoInner} obj Optional instance to populate.
-     * @return {module:model/QuoteToOrderDetailsDTOEndUserInfoInner} The populated <code>QuoteToOrderDetailsDTOEndUserInfoInner</code> instance.
+     * @param {module:model/QuoteToOrderDetailsDTOShipToInfo} obj Optional instance to populate.
+     * @return {module:model/QuoteToOrderDetailsDTOShipToInfo} The populated <code>QuoteToOrderDetailsDTOShipToInfo</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new QuoteToOrderDetailsDTOEndUserInfoInner();
+            obj = obj || new QuoteToOrderDetailsDTOShipToInfo();
 
+            if (data.hasOwnProperty('addressId')) {
+                obj['addressId'] = ApiClient.convertToType(data['addressId'], 'String');
+            }
             if (data.hasOwnProperty('companyName')) {
                 obj['companyName'] = ApiClient.convertToType(data['companyName'], 'String');
             }
@@ -77,19 +81,20 @@ class QuoteToOrderDetailsDTOEndUserInfoInner {
             if (data.hasOwnProperty('email')) {
                 obj['email'] = ApiClient.convertToType(data['email'], 'String');
             }
-            if (data.hasOwnProperty('phoneNumber')) {
-                obj['phoneNumber'] = ApiClient.convertToType(data['phoneNumber'], 'String');
-            }
         }
         return obj;
     }
 
     /**
-     * Validates the JSON data with respect to <code>QuoteToOrderDetailsDTOEndUserInfoInner</code>.
+     * Validates the JSON data with respect to <code>QuoteToOrderDetailsDTOShipToInfo</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>QuoteToOrderDetailsDTOEndUserInfoInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>QuoteToOrderDetailsDTOShipToInfo</code>.
      */
     static validateJSON(data) {
+        // ensure the json data is a string
+        if (data['addressId'] && !(typeof data['addressId'] === 'string' || data['addressId'] instanceof String)) {
+            throw new Error("Expected the field `addressId` to be a primitive type in the JSON string but got " + data['addressId']);
+        }
         // ensure the json data is a string
         if (data['companyName'] && !(typeof data['companyName'] === 'string' || data['companyName'] instanceof String)) {
             throw new Error("Expected the field `companyName` to be a primitive type in the JSON string but got " + data['companyName']);
@@ -130,10 +135,6 @@ class QuoteToOrderDetailsDTOEndUserInfoInner {
         if (data['email'] && !(typeof data['email'] === 'string' || data['email'] instanceof String)) {
             throw new Error("Expected the field `email` to be a primitive type in the JSON string but got " + data['email']);
         }
-        // ensure the json data is a string
-        if (data['phoneNumber'] && !(typeof data['phoneNumber'] === 'string' || data['phoneNumber'] instanceof String)) {
-            throw new Error("Expected the field `phoneNumber` to be a primitive type in the JSON string but got " + data['phoneNumber']);
-        }
 
         return true;
     }
@@ -144,75 +145,75 @@ class QuoteToOrderDetailsDTOEndUserInfoInner {
 
 
 /**
- * The company name for the end user/customer.
+ * The company contact provided by the reseller.
+ * @member {String} addressId
+ */
+QuoteToOrderDetailsDTOShipToInfo.prototype['addressId'] = undefined;
+
+/**
+ * The name of the company the order will be shipped to.
  * @member {String} companyName
  */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['companyName'] = undefined;
+QuoteToOrderDetailsDTOShipToInfo.prototype['companyName'] = undefined;
 
 /**
- * The contact name for the end user/customer.
+ * The contact name for the order will be shipped to.
  * @member {String} contact
  */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['contact'] = undefined;
+QuoteToOrderDetailsDTOShipToInfo.prototype['contact'] = undefined;
 
 /**
- * The address line 1 for the end user/customer.
+ * The address line 1 the order will be shipped to.
  * @member {String} addressLine1
  */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['addressLine1'] = undefined;
+QuoteToOrderDetailsDTOShipToInfo.prototype['addressLine1'] = undefined;
 
 /**
- * The address line 2 for the end user/customer.
+ * The address line 2 the order will be shipped to.
  * @member {String} addressLine2
  */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['addressLine2'] = undefined;
+QuoteToOrderDetailsDTOShipToInfo.prototype['addressLine2'] = undefined;
 
 /**
- * The address line 3 for the end user/customer.
+ * The address line 3 the order will be shipped to.
  * @member {String} addressLine3
  */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['addressLine3'] = undefined;
+QuoteToOrderDetailsDTOShipToInfo.prototype['addressLine3'] = undefined;
 
 /**
- * The end user/customer's city.
+ * The city the order will be shipped to.
  * @member {String} city
  */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['city'] = undefined;
+QuoteToOrderDetailsDTOShipToInfo.prototype['city'] = undefined;
 
 /**
- * The end user/customer's state.
+ * The state the order will be shipped to.
  * @member {String} state
  */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['state'] = undefined;
+QuoteToOrderDetailsDTOShipToInfo.prototype['state'] = undefined;
 
 /**
- * The end user/customer's zip or postal code.
+ * The zip or postal code the order will be shipped to.
  * @member {String} postalCode
  */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['postalCode'] = undefined;
+QuoteToOrderDetailsDTOShipToInfo.prototype['postalCode'] = undefined;
 
 /**
- * The end user/customer's two character ISO country code.
+ * The two-character ISO country code the order will be shipped to.
  * @member {String} countryCode
  */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['countryCode'] = undefined;
+QuoteToOrderDetailsDTOShipToInfo.prototype['countryCode'] = undefined;
 
 /**
- * The end user/customer's phone number.
+ * The company contact email address.
  * @member {String} email
  */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['email'] = undefined;
-
-/**
- * The end user/customer's phone number.
- * @member {String} phoneNumber
- */
-QuoteToOrderDetailsDTOEndUserInfoInner.prototype['phoneNumber'] = undefined;
+QuoteToOrderDetailsDTOShipToInfo.prototype['email'] = undefined;
 
 
 
 
 
 
-export default QuoteToOrderDetailsDTOEndUserInfoInner;
+export default QuoteToOrderDetailsDTOShipToInfo;
 

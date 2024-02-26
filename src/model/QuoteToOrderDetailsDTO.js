@@ -13,9 +13,9 @@
 
 import ApiClient from '../ApiClient';
 import QuoteToOrderDetailsDTOAdditionalAttributesInner from './QuoteToOrderDetailsDTOAdditionalAttributesInner';
-import QuoteToOrderDetailsDTOEndUserInfoInner from './QuoteToOrderDetailsDTOEndUserInfoInner';
+import QuoteToOrderDetailsDTOEndUserInfo from './QuoteToOrderDetailsDTOEndUserInfo';
 import QuoteToOrderDetailsDTOLinesInner from './QuoteToOrderDetailsDTOLinesInner';
-import QuoteToOrderDetailsDTOShipToInfoInner from './QuoteToOrderDetailsDTOShipToInfoInner';
+import QuoteToOrderDetailsDTOShipToInfo from './QuoteToOrderDetailsDTOShipToInfo';
 import QuoteToOrderDetailsDTOVmfadditionalAttributesInner from './QuoteToOrderDetailsDTOVmfadditionalAttributesInner';
 
 /**
@@ -65,10 +65,10 @@ class QuoteToOrderDetailsDTO {
                 obj['billToAddressId'] = ApiClient.convertToType(data['billToAddressId'], 'String');
             }
             if (data.hasOwnProperty('endUserInfo')) {
-                obj['endUserInfo'] = ApiClient.convertToType(data['endUserInfo'], [QuoteToOrderDetailsDTOEndUserInfoInner]);
+                obj['endUserInfo'] = QuoteToOrderDetailsDTOEndUserInfo.constructFromObject(data['endUserInfo']);
             }
             if (data.hasOwnProperty('shipToInfo')) {
-                obj['shipToInfo'] = ApiClient.convertToType(data['shipToInfo'], [QuoteToOrderDetailsDTOShipToInfoInner]);
+                obj['shipToInfo'] = QuoteToOrderDetailsDTOShipToInfo.constructFromObject(data['shipToInfo']);
             }
             if (data.hasOwnProperty('additionalAttributes')) {
                 obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [QuoteToOrderDetailsDTOAdditionalAttributesInner]);
@@ -105,25 +105,13 @@ class QuoteToOrderDetailsDTO {
         if (data['billToAddressId'] && !(typeof data['billToAddressId'] === 'string' || data['billToAddressId'] instanceof String)) {
             throw new Error("Expected the field `billToAddressId` to be a primitive type in the JSON string but got " + data['billToAddressId']);
         }
+        // validate the optional field `endUserInfo`
         if (data['endUserInfo']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['endUserInfo'])) {
-                throw new Error("Expected the field `endUserInfo` to be an array in the JSON data but got " + data['endUserInfo']);
-            }
-            // validate the optional field `endUserInfo` (array)
-            for (const item of data['endUserInfo']) {
-                QuoteToOrderDetailsDTOEndUserInfoInner.validateJSON(item);
-            };
+          QuoteToOrderDetailsDTOEndUserInfo.validateJSON(data['endUserInfo']);
         }
+        // validate the optional field `shipToInfo`
         if (data['shipToInfo']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['shipToInfo'])) {
-                throw new Error("Expected the field `shipToInfo` to be an array in the JSON data but got " + data['shipToInfo']);
-            }
-            // validate the optional field `shipToInfo` (array)
-            for (const item of data['shipToInfo']) {
-                QuoteToOrderDetailsDTOShipToInfoInner.validateJSON(item);
-            };
+          QuoteToOrderDetailsDTOShipToInfo.validateJSON(data['shipToInfo']);
         }
         if (data['additionalAttributes']) { // data not null
             // ensure the json data is an array
@@ -189,14 +177,12 @@ QuoteToOrderDetailsDTO.prototype['enduserOrderNumber'] = undefined;
 QuoteToOrderDetailsDTO.prototype['billToAddressId'] = undefined;
 
 /**
- * The contact information for the end user/customer provided by the reseller. Used to determine pricing and discounts.
- * @member {Array.<module:model/QuoteToOrderDetailsDTOEndUserInfoInner>} endUserInfo
+ * @member {module:model/QuoteToOrderDetailsDTOEndUserInfo} endUserInfo
  */
 QuoteToOrderDetailsDTO.prototype['endUserInfo'] = undefined;
 
 /**
- * The shipping information provided by the reseller for order delivery.
- * @member {Array.<module:model/QuoteToOrderDetailsDTOShipToInfoInner>} shipToInfo
+ * @member {module:model/QuoteToOrderDetailsDTOShipToInfo} shipToInfo
  */
 QuoteToOrderDetailsDTO.prototype['shipToInfo'] = undefined;
 

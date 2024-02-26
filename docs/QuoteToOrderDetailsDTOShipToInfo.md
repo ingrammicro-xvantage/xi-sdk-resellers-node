@@ -1,4 +1,4 @@
-# XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner
+# XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo
 
 ## Properties
 

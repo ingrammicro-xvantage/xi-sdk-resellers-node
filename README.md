@@ -56,11 +56,11 @@ npm run build
 
 #### git
 
-If the library is hosted at a git repository, e.g.https://github.com/ingrammicro-xvantage/xi-sdk-resellers-node
+If the library is hosted at a git repository, e.g.https://github.com/GIT_USER_ID/GIT_REPO_ID
 then install it via:
 
 ```shell
-    npm install ingrammicro-xvantage/xi-sdk-resellers-node
+    npm install GIT_USER_ID/GIT_REPO_ID --save
 ```
 
 ### For browser
@@ -302,10 +302,10 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.QuoteSearchResponseQuotesInnerLinks](docs/QuoteSearchResponseQuotesInnerLinks.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTO](docs/QuoteToOrderDetailsDTO.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOAdditionalAttributesInner](docs/QuoteToOrderDetailsDTOAdditionalAttributesInner.md)
- - [XiSdkResellers.QuoteToOrderDetailsDTOEndUserInfoInner](docs/QuoteToOrderDetailsDTOEndUserInfoInner.md)
+ - [XiSdkResellers.QuoteToOrderDetailsDTOEndUserInfo](docs/QuoteToOrderDetailsDTOEndUserInfo.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOLinesInner](docs/QuoteToOrderDetailsDTOLinesInner.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner](docs/QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.md)
- - [XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner](docs/QuoteToOrderDetailsDTOShipToInfoInner.md)
+ - [XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo](docs/QuoteToOrderDetailsDTOShipToInfo.md)
  - [XiSdkResellers.QuoteToOrderDetailsDTOVmfadditionalAttributesInner](docs/QuoteToOrderDetailsDTOVmfadditionalAttributesInner.md)
  - [XiSdkResellers.QuoteToOrderResponse](docs/QuoteToOrderResponse.md)
  - [XiSdkResellers.RenewalsDetailsResponse](docs/RenewalsDetailsResponse.md)
@@ -353,11 +353,3 @@ Authentication schemes defined for the API:
   - write: allows modifying resources
   - read: allows reading resources
 
-## Author
--[Ingram Micro Xvantage](https://github.com/ingrammicro-xvantage)
-
-## Contact
-
-For any inquiries or support, please feel free to contact us at:
-
-- Email: [xi_support@ingrammicro.com](xi_support@ingrammicro.com)

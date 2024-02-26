@@ -158,10 +158,10 @@ import QuoteSearchResponseQuotesInner from './model/QuoteSearchResponseQuotesInn
 import QuoteSearchResponseQuotesInnerLinks from './model/QuoteSearchResponseQuotesInnerLinks';
 import QuoteToOrderDetailsDTO from './model/QuoteToOrderDetailsDTO';
 import QuoteToOrderDetailsDTOAdditionalAttributesInner from './model/QuoteToOrderDetailsDTOAdditionalAttributesInner';
-import QuoteToOrderDetailsDTOEndUserInfoInner from './model/QuoteToOrderDetailsDTOEndUserInfoInner';
+import QuoteToOrderDetailsDTOEndUserInfo from './model/QuoteToOrderDetailsDTOEndUserInfo';
 import QuoteToOrderDetailsDTOLinesInner from './model/QuoteToOrderDetailsDTOLinesInner';
 import QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner from './model/QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner';
-import QuoteToOrderDetailsDTOShipToInfoInner from './model/QuoteToOrderDetailsDTOShipToInfoInner';
+import QuoteToOrderDetailsDTOShipToInfo from './model/QuoteToOrderDetailsDTOShipToInfo';
 import QuoteToOrderDetailsDTOVmfadditionalAttributesInner from './model/QuoteToOrderDetailsDTOVmfadditionalAttributesInner';
 import QuoteToOrderResponse from './model/QuoteToOrderResponse';
 import RenewalsDetailsResponse from './model/RenewalsDetailsResponse';
@@ -1115,10 +1115,10 @@ export {
     QuoteToOrderDetailsDTOAdditionalAttributesInner,
 
     /**
-     * The QuoteToOrderDetailsDTOEndUserInfoInner model constructor.
-     * @property {module:model/QuoteToOrderDetailsDTOEndUserInfoInner}
+     * The QuoteToOrderDetailsDTOEndUserInfo model constructor.
+     * @property {module:model/QuoteToOrderDetailsDTOEndUserInfo}
      */
-    QuoteToOrderDetailsDTOEndUserInfoInner,
+    QuoteToOrderDetailsDTOEndUserInfo,
 
     /**
      * The QuoteToOrderDetailsDTOLinesInner model constructor.
@@ -1133,10 +1133,10 @@ export {
     QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner,
 
     /**
-     * The QuoteToOrderDetailsDTOShipToInfoInner model constructor.
-     * @property {module:model/QuoteToOrderDetailsDTOShipToInfoInner}
+     * The QuoteToOrderDetailsDTOShipToInfo model constructor.
+     * @property {module:model/QuoteToOrderDetailsDTOShipToInfo}
      */
-    QuoteToOrderDetailsDTOShipToInfoInner,
+    QuoteToOrderDetailsDTOShipToInfo,
 
     /**
      * The QuoteToOrderDetailsDTOVmfadditionalAttributesInner model constructor.

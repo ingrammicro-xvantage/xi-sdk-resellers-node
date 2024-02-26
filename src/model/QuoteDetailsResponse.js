@@ -138,6 +138,9 @@ class QuoteDetailsResponse {
             if (data.hasOwnProperty('extendedQuotePriceTotal')) {
                 obj['extendedQuotePriceTotal'] = ApiClient.convertToType(data['extendedQuotePriceTotal'], 'Number');
             }
+            if (data.hasOwnProperty('totalQuoteAmount')) {
+                obj['totalQuoteAmount'] = ApiClient.convertToType(data['totalQuoteAmount'], 'String');
+            }
             if (data.hasOwnProperty('additionalAttributes')) {
                 obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [QuoteDetailsResponseAdditionalAttributesInner]);
             }
@@ -256,6 +259,10 @@ class QuoteDetailsResponse {
             for (const item of data['products']) {
                 QuoteDetailsResponseProductsInner.validateJSON(item);
             };
+        }
+        // ensure the json data is a string
+        if (data['totalQuoteAmount'] && !(typeof data['totalQuoteAmount'] === 'string' || data['totalQuoteAmount'] instanceof String)) {
+            throw new Error("Expected the field `totalQuoteAmount` to be a primitive type in the JSON string but got " + data['totalQuoteAmount']);
         }
         if (data['additionalAttributes']) { // data not null
             // ensure the json data is an array
@@ -443,6 +450,11 @@ QuoteDetailsResponse.prototype['quantityTotal'] = undefined;
  * @member {Number} extendedQuotePriceTotal
  */
 QuoteDetailsResponse.prototype['extendedQuotePriceTotal'] = undefined;
+
+/**
+ * @member {String} totalQuoteAmount
+ */
+QuoteDetailsResponse.prototype['totalQuoteAmount'] = undefined;
 
 /**
  * @member {Array.<module:model/QuoteDetailsResponseAdditionalAttributesInner>} additionalAttributes

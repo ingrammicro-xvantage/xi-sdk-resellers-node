@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+    instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,76 +47,76 @@
       object[property] = value;
   }
 
-  describe('QuoteToOrderDetailsDTOShipToInfoInner', function() {
-    it('should create an instance of QuoteToOrderDetailsDTOShipToInfoInner', function() {
-      // uncomment below and update the code to test QuoteToOrderDetailsDTOShipToInfoInner
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
-      //expect(instance).to.be.a(XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner);
+  describe('QuoteToOrderDetailsDTOShipToInfo', function() {
+    it('should create an instance of QuoteToOrderDetailsDTOShipToInfo', function() {
+      // uncomment below and update the code to test QuoteToOrderDetailsDTOShipToInfo
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo);
     });
 
     it('should have the property addressId (base name: "addressId")', function() {
       // uncomment below and update the code to test the property addressId
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property companyName (base name: "companyName")', function() {
       // uncomment below and update the code to test the property companyName
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property contact (base name: "contact")', function() {
       // uncomment below and update the code to test the property contact
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property addressLine1 (base name: "addressLine1")', function() {
       // uncomment below and update the code to test the property addressLine1
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property addressLine2 (base name: "addressLine2")', function() {
       // uncomment below and update the code to test the property addressLine2
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property addressLine3 (base name: "addressLine3")', function() {
       // uncomment below and update the code to test the property addressLine3
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property city (base name: "city")', function() {
       // uncomment below and update the code to test the property city
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property state (base name: "state")', function() {
       // uncomment below and update the code to test the property state
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property postalCode (base name: "postalCode")', function() {
       // uncomment below and update the code to test the property postalCode
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property countryCode (base name: "countryCode")', function() {
       // uncomment below and update the code to test the property countryCode
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property email (base name: "email")', function() {
       // uncomment below and update the code to test the property email
-      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfoInner();
+      //var instance = new XiSdkResellers.QuoteToOrderDetailsDTOShipToInfo();
       //expect(instance).to.be();
     });
 
