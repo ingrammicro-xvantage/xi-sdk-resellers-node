@@ -100,18 +100,11 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```javascript
 var XiSdkResellers = require('xi_sdk_resellers');
 
-var defaultClient = XiSdkResellers.ApiClient.instance;
-// Configure OAuth2 access token for authorization: application
-var application = defaultClient.authentications['application'];
-application.accessToken = "YOUR ACCESS TOKEN"
 
-var api = new XiSdkResellers.DealsApi()
-var iMCustomerNumber = 20-222222; // {String} Your unique Ingram Micro customer number.
-var iMCountryCode = US; // {String} Two-character ISO country code.
-var iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // {String} Unique transaction number to identify each transaction across all the systems.
-var iMApplicationId = MyCompany; // {String} Unique value used to identify the sender of the transaction. Example: MyCompany
-var iMEnvironment = prodChicago; // {String} Environment name.
-var dealId = 12345678; // {String} Unique deal ID.
+var api = new XiSdkResellers.AccesstokenApi()
+var grantType = client_credentials; // {String} Keep grant_type as client_credentials only.
+var clientId = "clientId_example"; // {String} 
+var clientSecret = "clientSecret_example"; // {String} 
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -119,7 +112,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, iMEnvironment, dealId, callback);
+api.getAccesstoken(grantType, clientId, clientSecret, callback);
 
 ```
 
@@ -129,6 +122,7 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*XiSdkResellers.AccesstokenApi* | [**getAccesstoken**](docs/AccesstokenApi.md#getAccesstoken) | **GET** /oauth/oauth20/token | Accesstoken
 *XiSdkResellers.DealsApi* | [**getResellersV6Dealsdetails**](docs/DealsApi.md#getResellersV6Dealsdetails) | **GET** /resellers/v6/deals/{dealId} | Deals Details
 *XiSdkResellers.DealsApi* | [**getResellersV6Dealssearch**](docs/DealsApi.md#getResellersV6Dealssearch) | **GET** /resellers/v6/deals/search | Deals Search
 *XiSdkResellers.FreightEstimateApi* | [**postFreightestimate**](docs/FreightEstimateApi.md#postFreightestimate) | **POST** /resellers/v6/freightestimate | Freight Estimate
@@ -157,6 +151,7 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [XiSdkResellers.AccesstokenResponse](docs/AccesstokenResponse.md)
  - [XiSdkResellers.AvailabilityAsyncNotificationRequest](docs/AvailabilityAsyncNotificationRequest.md)
  - [XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner](docs/AvailabilityAsyncNotificationRequestResourceInner.md)
  - [XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInnerLinksInner](docs/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.md)
@@ -178,6 +173,10 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInner](docs/FreightResponseFreightEstimateResponseDistributionInner.md)
  - [XiSdkResellers.FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner](docs/FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.md)
  - [XiSdkResellers.FreightResponseFreightEstimateResponseLinesInner](docs/FreightResponseFreightEstimateResponseLinesInner.md)
+ - [XiSdkResellers.GetAccesstoken400Response](docs/GetAccesstoken400Response.md)
+ - [XiSdkResellers.GetAccesstoken500Response](docs/GetAccesstoken500Response.md)
+ - [XiSdkResellers.GetAccesstoken500ResponseFault](docs/GetAccesstoken500ResponseFault.md)
+ - [XiSdkResellers.GetAccesstoken500ResponseFaultDetail](docs/GetAccesstoken500ResponseFaultDetail.md)
  - [XiSdkResellers.GetResellerV6ValidateQuote400Response](docs/GetResellerV6ValidateQuote400Response.md)
  - [XiSdkResellers.GetResellerV6ValidateQuote400ResponseFieldsInner](docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md)
  - [XiSdkResellers.GetResellerV6ValidateQuote500Response](docs/GetResellerV6ValidateQuote500Response.md)
@@ -352,4 +351,5 @@ Authentication schemes defined for the API:
 - **Scopes**: 
   - write: allows modifying resources
   - read: allows reading resources
+  - description: 
 

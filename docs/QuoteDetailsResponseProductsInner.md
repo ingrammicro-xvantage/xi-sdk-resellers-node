@@ -20,6 +20,8 @@ Name | Type | Description | Notes
 **quoteProductsSupplierPartAuxiliaryId** | **String** | Vendor product configuration ID specific to Cisco. | [optional] 
 **vendorName** | **String** | Vendor name of the product | [optional] 
 **terms** | **String** | Terms of the quote | [optional] 
+**isSubscription** | **Boolean** |  | [optional] 
+**resellerMargin** | **String** |  | [optional] 
 **price** | [**QuoteDetailsResponseProductsInnerPrice**](QuoteDetailsResponseProductsInnerPrice.md) |  | [optional] 
 
 

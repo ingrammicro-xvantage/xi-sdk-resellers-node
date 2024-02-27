@@ -150,6 +150,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property isSubscription (base name: "isSubscription")', function() {
+      // uncomment below and update the code to test the property isSubscription
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property resellerMargin (base name: "resellerMargin")', function() {
+      // uncomment below and update the code to test the property resellerMargin
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property price (base name: "price")', function() {
       // uncomment below and update the code to test the property price
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();

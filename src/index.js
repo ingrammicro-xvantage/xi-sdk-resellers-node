@@ -13,6 +13,7 @@
 
 
 import ApiClient from './ApiClient';
+import AccesstokenResponse from './model/AccesstokenResponse';
 import AvailabilityAsyncNotificationRequest from './model/AvailabilityAsyncNotificationRequest';
 import AvailabilityAsyncNotificationRequestResourceInner from './model/AvailabilityAsyncNotificationRequestResourceInner';
 import AvailabilityAsyncNotificationRequestResourceInnerLinksInner from './model/AvailabilityAsyncNotificationRequestResourceInnerLinksInner';
@@ -34,6 +35,10 @@ import FreightResponseFreightEstimateResponse from './model/FreightResponseFreig
 import FreightResponseFreightEstimateResponseDistributionInner from './model/FreightResponseFreightEstimateResponseDistributionInner';
 import FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner from './model/FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner';
 import FreightResponseFreightEstimateResponseLinesInner from './model/FreightResponseFreightEstimateResponseLinesInner';
+import GetAccesstoken400Response from './model/GetAccesstoken400Response';
+import GetAccesstoken500Response from './model/GetAccesstoken500Response';
+import GetAccesstoken500ResponseFault from './model/GetAccesstoken500ResponseFault';
+import GetAccesstoken500ResponseFaultDetail from './model/GetAccesstoken500ResponseFaultDetail';
 import GetResellerV6ValidateQuote400Response from './model/GetResellerV6ValidateQuote400Response';
 import GetResellerV6ValidateQuote400ResponseFieldsInner from './model/GetResellerV6ValidateQuote400ResponseFieldsInner';
 import GetResellerV6ValidateQuote500Response from './model/GetResellerV6ValidateQuote500Response';
@@ -193,6 +198,7 @@ import ReturnsSearchResponseReturnsClaimsInnerLinksInner from './model/ReturnsSe
 import ValidateQuoteResponse from './model/ValidateQuoteResponse';
 import ValidateQuoteResponseLinesInner from './model/ValidateQuoteResponseLinesInner';
 import ValidateQuoteResponseVmfAdditionalAttributesInner from './model/ValidateQuoteResponseVmfAdditionalAttributesInner';
+import AccesstokenApi from './api/AccesstokenApi';
 import DealsApi from './api/DealsApi';
 import FreightEstimateApi from './api/FreightEstimateApi';
 import InvoicesApi from './api/InvoicesApi';
@@ -243,6 +249,12 @@ export {
      * @property {module:ApiClient}
      */
     ApiClient,
+
+    /**
+     * The AccesstokenResponse model constructor.
+     * @property {module:model/AccesstokenResponse}
+     */
+    AccesstokenResponse,
 
     /**
      * The AvailabilityAsyncNotificationRequest model constructor.
@@ -369,6 +381,30 @@ export {
      * @property {module:model/FreightResponseFreightEstimateResponseLinesInner}
      */
     FreightResponseFreightEstimateResponseLinesInner,
+
+    /**
+     * The GetAccesstoken400Response model constructor.
+     * @property {module:model/GetAccesstoken400Response}
+     */
+    GetAccesstoken400Response,
+
+    /**
+     * The GetAccesstoken500Response model constructor.
+     * @property {module:model/GetAccesstoken500Response}
+     */
+    GetAccesstoken500Response,
+
+    /**
+     * The GetAccesstoken500ResponseFault model constructor.
+     * @property {module:model/GetAccesstoken500ResponseFault}
+     */
+    GetAccesstoken500ResponseFault,
+
+    /**
+     * The GetAccesstoken500ResponseFaultDetail model constructor.
+     * @property {module:model/GetAccesstoken500ResponseFaultDetail}
+     */
+    GetAccesstoken500ResponseFaultDetail,
 
     /**
      * The GetResellerV6ValidateQuote400Response model constructor.
@@ -1323,6 +1359,12 @@ export {
      * @property {module:model/ValidateQuoteResponseVmfAdditionalAttributesInner}
      */
     ValidateQuoteResponseVmfAdditionalAttributesInner,
+
+    /**
+    * The AccesstokenApi service constructor.
+    * @property {module:api/AccesstokenApi}
+    */
+    AccesstokenApi,
 
     /**
     * The DealsApi service constructor.

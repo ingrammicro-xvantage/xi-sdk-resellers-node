@@ -96,6 +96,12 @@ class QuoteDetailsResponseProductsInner {
             if (data.hasOwnProperty('terms')) {
                 obj['terms'] = ApiClient.convertToType(data['terms'], 'String');
             }
+            if (data.hasOwnProperty('isSubscription')) {
+                obj['isSubscription'] = ApiClient.convertToType(data['isSubscription'], 'Boolean');
+            }
+            if (data.hasOwnProperty('resellerMargin')) {
+                obj['resellerMargin'] = ApiClient.convertToType(data['resellerMargin'], 'String');
+            }
             if (data.hasOwnProperty('price')) {
                 obj['price'] = QuoteDetailsResponseProductsInnerPrice.constructFromObject(data['price']);
             }
@@ -160,6 +166,10 @@ class QuoteDetailsResponseProductsInner {
         // ensure the json data is a string
         if (data['terms'] && !(typeof data['terms'] === 'string' || data['terms'] instanceof String)) {
             throw new Error("Expected the field `terms` to be a primitive type in the JSON string but got " + data['terms']);
+        }
+        // ensure the json data is a string
+        if (data['resellerMargin'] && !(typeof data['resellerMargin'] === 'string' || data['resellerMargin'] instanceof String)) {
+            throw new Error("Expected the field `resellerMargin` to be a primitive type in the JSON string but got " + data['resellerMargin']);
         }
         // validate the optional field `price`
         if (data['price']) { // data not null
@@ -269,6 +279,16 @@ QuoteDetailsResponseProductsInner.prototype['vendorName'] = undefined;
  * @member {String} terms
  */
 QuoteDetailsResponseProductsInner.prototype['terms'] = undefined;
+
+/**
+ * @member {Boolean} isSubscription
+ */
+QuoteDetailsResponseProductsInner.prototype['isSubscription'] = undefined;
+
+/**
+ * @member {String} resellerMargin
+ */
+QuoteDetailsResponseProductsInner.prototype['resellerMargin'] = undefined;
 
 /**
  * @member {module:model/QuoteDetailsResponseProductsInnerPrice} price

@@ -3,6 +3,8 @@
 .openapi-generator-ignore
 .travis.yml
 README.md
+docs/AccesstokenApi.md
+docs/AccesstokenResponse.md
 docs/AvailabilityAsyncNotificationRequest.md
 docs/AvailabilityAsyncNotificationRequestResourceInner.md
 docs/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.md
@@ -26,6 +28,10 @@ docs/FreightResponseFreightEstimateResponse.md
 docs/FreightResponseFreightEstimateResponseDistributionInner.md
 docs/FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.md
 docs/FreightResponseFreightEstimateResponseLinesInner.md
+docs/GetAccesstoken400Response.md
+docs/GetAccesstoken500Response.md
+docs/GetAccesstoken500ResponseFault.md
+docs/GetAccesstoken500ResponseFaultDetail.md
 docs/GetResellerV6ValidateQuote400Response.md
 docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md
 docs/GetResellerV6ValidateQuote500Response.md
@@ -198,6 +204,7 @@ git_push.sh
 mocha.opts
 package.json
 src/ApiClient.js
+src/api/AccesstokenApi.js
 src/api/DealsApi.js
 src/api/FreightEstimateApi.js
 src/api/InvoicesApi.js
@@ -210,6 +217,7 @@ src/api/RenewalsApi.js
 src/api/ReturnsApi.js
 src/api/StockUpdateApi.js
 src/index.js
+src/model/AccesstokenResponse.js
 src/model/AvailabilityAsyncNotificationRequest.js
 src/model/AvailabilityAsyncNotificationRequestResourceInner.js
 src/model/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.js
@@ -231,6 +239,10 @@ src/model/FreightResponseFreightEstimateResponse.js
 src/model/FreightResponseFreightEstimateResponseDistributionInner.js
 src/model/FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.js
 src/model/FreightResponseFreightEstimateResponseLinesInner.js
+src/model/GetAccesstoken400Response.js
+src/model/GetAccesstoken500Response.js
+src/model/GetAccesstoken500ResponseFault.js
+src/model/GetAccesstoken500ResponseFaultDetail.js
 src/model/GetResellerV6ValidateQuote400Response.js
 src/model/GetResellerV6ValidateQuote400ResponseFieldsInner.js
 src/model/GetResellerV6ValidateQuote500Response.js
@@ -390,6 +402,7 @@ src/model/ReturnsSearchResponseReturnsClaimsInnerLinksInner.js
 src/model/ValidateQuoteResponse.js
 src/model/ValidateQuoteResponseLinesInner.js
 src/model/ValidateQuoteResponseVmfAdditionalAttributesInner.js
+test/api/AccesstokenApi.spec.js
 test/api/DealsApi.spec.js
 test/api/FreightEstimateApi.spec.js
 test/api/InvoicesApi.spec.js
@@ -401,6 +414,7 @@ test/api/QuotesApi.spec.js
 test/api/RenewalsApi.spec.js
 test/api/ReturnsApi.spec.js
 test/api/StockUpdateApi.spec.js
+test/model/AccesstokenResponse.spec.js
 test/model/AvailabilityAsyncNotificationRequest.spec.js
 test/model/AvailabilityAsyncNotificationRequestResourceInner.spec.js
 test/model/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.spec.js
@@ -422,6 +436,10 @@ test/model/FreightResponseFreightEstimateResponse.spec.js
 test/model/FreightResponseFreightEstimateResponseDistributionInner.spec.js
 test/model/FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.spec.js
 test/model/FreightResponseFreightEstimateResponseLinesInner.spec.js
+test/model/GetAccesstoken400Response.spec.js
+test/model/GetAccesstoken500Response.spec.js
+test/model/GetAccesstoken500ResponseFault.spec.js
+test/model/GetAccesstoken500ResponseFaultDetail.spec.js
 test/model/GetResellerV6ValidateQuote400Response.spec.js
 test/model/GetResellerV6ValidateQuote400ResponseFieldsInner.spec.js
 test/model/GetResellerV6ValidateQuote500Response.spec.js
