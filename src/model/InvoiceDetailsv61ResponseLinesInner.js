@@ -57,6 +57,9 @@ class InvoiceDetailsv61ResponseLinesInner {
             if (data.hasOwnProperty('ingramPartNumber')) {
                 obj['ingramPartNumber'] = ApiClient.convertToType(data['ingramPartNumber'], 'String');
             }
+            if (data.hasOwnProperty('upc')) {
+                obj['upc'] = ApiClient.convertToType(data['upc'], 'String');
+            }
             if (data.hasOwnProperty('vendorPartNumber')) {
                 obj['vendorPartNumber'] = ApiClient.convertToType(data['vendorPartNumber'], 'String');
             }
@@ -128,6 +131,10 @@ class InvoiceDetailsv61ResponseLinesInner {
             throw new Error("Expected the field `ingramPartNumber` to be a primitive type in the JSON string but got " + data['ingramPartNumber']);
         }
         // ensure the json data is a string
+        if (data['upc'] && !(typeof data['upc'] === 'string' || data['upc'] instanceof String)) {
+            throw new Error("Expected the field `upc` to be a primitive type in the JSON string but got " + data['upc']);
+        }
+        // ensure the json data is a string
         if (data['vendorPartNumber'] && !(typeof data['vendorPartNumber'] === 'string' || data['vendorPartNumber'] instanceof String)) {
             throw new Error("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got " + data['vendorPartNumber']);
         }
@@ -188,6 +195,11 @@ InvoiceDetailsv61ResponseLinesInner.prototype['customerLineNumber'] = '0';
  * @member {String} ingramPartNumber
  */
 InvoiceDetailsv61ResponseLinesInner.prototype['ingramPartNumber'] = undefined;
+
+/**
+ * @member {String} upc
+ */
+InvoiceDetailsv61ResponseLinesInner.prototype['upc'] = undefined;
 
 /**
  * Vendor Part Number.

@@ -59,8 +59,8 @@ class InvoiceDetailsv61ResponseSummaryTotals {
             if (data.hasOwnProperty('totalTaxAmount')) {
                 obj['totalTaxAmount'] = ApiClient.convertToType(data['totalTaxAmount'], 'Number');
             }
-            if (data.hasOwnProperty('invoicedAmountDue')) {
-                obj['invoicedAmountDue'] = ApiClient.convertToType(data['invoicedAmountDue'], 'Number');
+            if (data.hasOwnProperty('invoicesAmountDue')) {
+                obj['invoicesAmountDue'] = ApiClient.convertToType(data['invoicesAmountDue'], 'Number');
             }
             if (data.hasOwnProperty('freightAmount')) {
                 obj['freightAmount'] = ApiClient.convertToType(data['freightAmount'], 'Number');
@@ -114,9 +114,9 @@ InvoiceDetailsv61ResponseSummaryTotals.prototype['totalTaxAmount'] = undefined;
 
 /**
  * Total amount due for the invoice.
- * @member {Number} invoicedAmountDue
+ * @member {Number} invoicesAmountDue
  */
-InvoiceDetailsv61ResponseSummaryTotals.prototype['invoicedAmountDue'] = undefined;
+InvoiceDetailsv61ResponseSummaryTotals.prototype['invoicesAmountDue'] = undefined;
 
 /**
  * Freight amount

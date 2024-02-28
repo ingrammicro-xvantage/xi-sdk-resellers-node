@@ -78,14 +78,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property EAN (base name: "EAN")', function() {
-      // uncomment below and update the code to test the property EAN
+    it('should have the property ean (base name: "ean")', function() {
+      // uncomment below and update the code to test the property ean
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
       //expect(instance).to.be();
     });
 
-    it('should have the property coO (base name: "CoO")', function() {
-      // uncomment below and update the code to test the property coO
+    it('should have the property coo (base name: "coo")', function() {
+      // uncomment below and update the code to test the property coo
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
       //expect(instance).to.be();
     });
@@ -146,6 +146,18 @@
 
     it('should have the property terms (base name: "terms")', function() {
       // uncomment below and update the code to test the property terms
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isSubscription (base name: "isSubscription")', function() {
+      // uncomment below and update the code to test the property isSubscription
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property resellerMargin (base name: "resellerMargin")', function() {
+      // uncomment below and update the code to test the property resellerMargin
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
       //expect(instance).to.be();
     });

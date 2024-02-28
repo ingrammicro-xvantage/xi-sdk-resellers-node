@@ -228,6 +228,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property totalQuoteAmount (base name: "totalQuoteAmount")', function() {
+      // uncomment below and update the code to test the property totalQuoteAmount
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
       // uncomment below and update the code to test the property additionalAttributes
       //var instance = new XiSdkResellers.QuoteDetailsResponse();

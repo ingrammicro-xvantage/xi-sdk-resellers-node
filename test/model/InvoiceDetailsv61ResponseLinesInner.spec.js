@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property upc (base name: "upc")', function() {
+      // uncomment below and update the code to test the property upc
+      //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property vendorPartNumber (base name: "vendorPartNumber")', function() {
       // uncomment below and update the code to test the property vendorPartNumber
       //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseLinesInner();

@@ -60,7 +60,22 @@ class QuoteDetailsResponseProductsInnerPrice {
                 obj['extendedQuotePrice'] = ApiClient.convertToType(data['extendedQuotePrice'], 'Number');
             }
             if (data.hasOwnProperty('discountOffList')) {
-                obj['discountOffList'] = ApiClient.convertToType(data['discountOffList'], 'Number');
+                obj['discountOffList'] = ApiClient.convertToType(data['discountOffList'], 'String');
+            }
+            if (data.hasOwnProperty('vendorprice')) {
+                obj['vendorprice'] = ApiClient.convertToType(data['vendorprice'], 'Number');
+            }
+            if (data.hasOwnProperty('extendedvendorprice')) {
+                obj['extendedvendorprice'] = ApiClient.convertToType(data['extendedvendorprice'], 'Number');
+            }
+            if (data.hasOwnProperty('totalVisibleReserveQuantity')) {
+                obj['totalVisibleReserveQuantity'] = ApiClient.convertToType(data['totalVisibleReserveQuantity'], 'Number');
+            }
+            if (data.hasOwnProperty('type')) {
+                obj['type'] = ApiClient.convertToType(data['type'], 'String');
+            }
+            if (data.hasOwnProperty('recurringPriceModel')) {
+                obj['recurringPriceModel'] = ApiClient.convertToType(data['recurringPriceModel'], 'String');
             }
         }
         return obj;
@@ -72,6 +87,18 @@ class QuoteDetailsResponseProductsInnerPrice {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>QuoteDetailsResponseProductsInnerPrice</code>.
      */
     static validateJSON(data) {
+        // ensure the json data is a string
+        if (data['discountOffList'] && !(typeof data['discountOffList'] === 'string' || data['discountOffList'] instanceof String)) {
+            throw new Error("Expected the field `discountOffList` to be a primitive type in the JSON string but got " + data['discountOffList']);
+        }
+        // ensure the json data is a string
+        if (data['type'] && !(typeof data['type'] === 'string' || data['type'] instanceof String)) {
+            throw new Error("Expected the field `type` to be a primitive type in the JSON string but got " + data['type']);
+        }
+        // ensure the json data is a string
+        if (data['recurringPriceModel'] && !(typeof data['recurringPriceModel'] === 'string' || data['recurringPriceModel'] instanceof String)) {
+            throw new Error("Expected the field `recurringPriceModel` to be a primitive type in the JSON string but got " + data['recurringPriceModel']);
+        }
 
         return true;
     }
@@ -106,10 +133,35 @@ QuoteDetailsResponseProductsInnerPrice.prototype['extendedMsrp'] = undefined;
 QuoteDetailsResponseProductsInnerPrice.prototype['extendedQuotePrice'] = undefined;
 
 /**
- * Discount off list percentage
- * @member {Number} discountOffList
+ * Discount off list percentage extended
+ * @member {String} discountOffList
  */
 QuoteDetailsResponseProductsInnerPrice.prototype['discountOffList'] = undefined;
+
+/**
+ * @member {Number} vendorprice
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['vendorprice'] = undefined;
+
+/**
+ * @member {Number} extendedvendorprice
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['extendedvendorprice'] = undefined;
+
+/**
+ * @member {Number} totalVisibleReserveQuantity
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['totalVisibleReserveQuantity'] = undefined;
+
+/**
+ * @member {String} type
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['type'] = undefined;
+
+/**
+ * @member {String} recurringPriceModel
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['recurringPriceModel'] = undefined;
 
 
 

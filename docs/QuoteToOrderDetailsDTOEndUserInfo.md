@@ -1,4 +1,4 @@
-# XiSdkResellers.QuoteToOrderDetailsDTOEndUserInfoInner
+# XiSdkResellers.QuoteToOrderDetailsDTOEndUserInfo
 
 ## Properties
 

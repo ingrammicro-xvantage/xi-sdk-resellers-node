@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **ingramLineNumber** | **String** | Unique line number from Ingram. | [optional] 
 **customerLineNumber** | **String** | Line number passes by customer while creating an order. | [optional] [default to &#39;0&#39;]
 **ingramPartNumber** | **String** | Ingram Micro SKU (stock keeping unit). An identification, usually alphanumeric, of a particular product that allows it to be tracked for inventory purposes. | [optional] 
+**upc** | **String** |  | [optional] 
 **vendorPartNumber** | **String** | Vendor Part Number. | [optional] 
 **customerPartNumber** | **String** | Part number from customer&#39;s system. | [optional] 
 **vendorName** | **String** | Name of the vendor. | [optional] 

@@ -60,11 +60,11 @@ class QuoteDetailsResponseProductsInner {
             if (data.hasOwnProperty('notes')) {
                 obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
             }
-            if (data.hasOwnProperty('EAN')) {
-                obj['EAN'] = ApiClient.convertToType(data['EAN'], 'String');
+            if (data.hasOwnProperty('ean')) {
+                obj['ean'] = ApiClient.convertToType(data['ean'], 'String');
             }
-            if (data.hasOwnProperty('CoO')) {
-                obj['CoO'] = ApiClient.convertToType(data['CoO'], 'String');
+            if (data.hasOwnProperty('coo')) {
+                obj['coo'] = ApiClient.convertToType(data['coo'], 'String');
             }
             if (data.hasOwnProperty('ingramPartNumber')) {
                 obj['ingramPartNumber'] = ApiClient.convertToType(data['ingramPartNumber'], 'String');
@@ -96,6 +96,12 @@ class QuoteDetailsResponseProductsInner {
             if (data.hasOwnProperty('terms')) {
                 obj['terms'] = ApiClient.convertToType(data['terms'], 'String');
             }
+            if (data.hasOwnProperty('isSubscription')) {
+                obj['isSubscription'] = ApiClient.convertToType(data['isSubscription'], 'Boolean');
+            }
+            if (data.hasOwnProperty('resellerMargin')) {
+                obj['resellerMargin'] = ApiClient.convertToType(data['resellerMargin'], 'String');
+            }
             if (data.hasOwnProperty('price')) {
                 obj['price'] = QuoteDetailsResponseProductsInnerPrice.constructFromObject(data['price']);
             }
@@ -122,12 +128,12 @@ class QuoteDetailsResponseProductsInner {
             throw new Error("Expected the field `notes` to be a primitive type in the JSON string but got " + data['notes']);
         }
         // ensure the json data is a string
-        if (data['EAN'] && !(typeof data['EAN'] === 'string' || data['EAN'] instanceof String)) {
-            throw new Error("Expected the field `EAN` to be a primitive type in the JSON string but got " + data['EAN']);
+        if (data['ean'] && !(typeof data['ean'] === 'string' || data['ean'] instanceof String)) {
+            throw new Error("Expected the field `ean` to be a primitive type in the JSON string but got " + data['ean']);
         }
         // ensure the json data is a string
-        if (data['CoO'] && !(typeof data['CoO'] === 'string' || data['CoO'] instanceof String)) {
-            throw new Error("Expected the field `CoO` to be a primitive type in the JSON string but got " + data['CoO']);
+        if (data['coo'] && !(typeof data['coo'] === 'string' || data['coo'] instanceof String)) {
+            throw new Error("Expected the field `coo` to be a primitive type in the JSON string but got " + data['coo']);
         }
         // ensure the json data is a string
         if (data['ingramPartNumber'] && !(typeof data['ingramPartNumber'] === 'string' || data['ingramPartNumber'] instanceof String)) {
@@ -160,6 +166,10 @@ class QuoteDetailsResponseProductsInner {
         // ensure the json data is a string
         if (data['terms'] && !(typeof data['terms'] === 'string' || data['terms'] instanceof String)) {
             throw new Error("Expected the field `terms` to be a primitive type in the JSON string but got " + data['terms']);
+        }
+        // ensure the json data is a string
+        if (data['resellerMargin'] && !(typeof data['resellerMargin'] === 'string' || data['resellerMargin'] instanceof String)) {
+            throw new Error("Expected the field `resellerMargin` to be a primitive type in the JSON string but got " + data['resellerMargin']);
         }
         // validate the optional field `price`
         if (data['price']) { // data not null
@@ -200,15 +210,15 @@ QuoteDetailsResponseProductsInner.prototype['notes'] = undefined;
 
 /**
  * EANUPC
- * @member {String} EAN
+ * @member {String} ean
  */
-QuoteDetailsResponseProductsInner.prototype['EAN'] = undefined;
+QuoteDetailsResponseProductsInner.prototype['ean'] = undefined;
 
 /**
  * Country of Origin.
- * @member {String} CoO
+ * @member {String} coo
  */
-QuoteDetailsResponseProductsInner.prototype['CoO'] = undefined;
+QuoteDetailsResponseProductsInner.prototype['coo'] = undefined;
 
 /**
  * Ingram Micro SKU (stock keeping unit). An identification, usually alphanumeric, of a particular product that allows it to be tracked for inventory purposes
@@ -269,6 +279,16 @@ QuoteDetailsResponseProductsInner.prototype['vendorName'] = undefined;
  * @member {String} terms
  */
 QuoteDetailsResponseProductsInner.prototype['terms'] = undefined;
+
+/**
+ * @member {Boolean} isSubscription
+ */
+QuoteDetailsResponseProductsInner.prototype['isSubscription'] = undefined;
+
+/**
+ * @member {String} resellerMargin
+ */
+QuoteDetailsResponseProductsInner.prototype['resellerMargin'] = undefined;
 
 /**
  * @member {module:model/QuoteDetailsResponseProductsInnerPrice} price

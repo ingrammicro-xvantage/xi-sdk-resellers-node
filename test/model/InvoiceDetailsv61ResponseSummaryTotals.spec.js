@@ -78,8 +78,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property invoicedAmountDue (base name: "invoicedAmountDue")', function() {
-      // uncomment below and update the code to test the property invoicedAmountDue
+    it('should have the property invoicesAmountDue (base name: "invoicesAmountDue")', function() {
+      // uncomment below and update the code to test the property invoicesAmountDue
       //var instance = new XiSdkResellers.InvoiceDetailsv61ResponseSummaryTotals();
       //expect(instance).to.be();
     });
