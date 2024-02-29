@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -213,7 +213,7 @@ import StockUpdateApi from './api/StockUpdateApi';
 
 
 /**
-* For Resellers. Who are looking to Innovate with Ingram Micro&#39;s API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers..<br>
+* For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro&#39;s API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers..<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
