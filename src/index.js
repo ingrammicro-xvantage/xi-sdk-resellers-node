@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -14,6 +14,19 @@
 
 import ApiClient from './ApiClient';
 import AccesstokenResponse from './model/AccesstokenResponse';
+import AsyncOrderCreateDTO from './model/AsyncOrderCreateDTO';
+import AsyncOrderCreateDTOAdditionalAttributesInner from './model/AsyncOrderCreateDTOAdditionalAttributesInner';
+import AsyncOrderCreateDTOEndUserInfo from './model/AsyncOrderCreateDTOEndUserInfo';
+import AsyncOrderCreateDTOLinesInner from './model/AsyncOrderCreateDTOLinesInner';
+import AsyncOrderCreateDTOLinesInnerEndUserInfoInner from './model/AsyncOrderCreateDTOLinesInnerEndUserInfoInner';
+import AsyncOrderCreateDTOResellerInfo from './model/AsyncOrderCreateDTOResellerInfo';
+import AsyncOrderCreateDTOShipToInfo from './model/AsyncOrderCreateDTOShipToInfo';
+import AsyncOrderCreateDTOShipmentDetails from './model/AsyncOrderCreateDTOShipmentDetails';
+import AsyncOrderCreateDTOVmfadditionalAttributesInner from './model/AsyncOrderCreateDTOVmfadditionalAttributesInner';
+import AsyncOrderCreateDTOWarrantyInfoInner from './model/AsyncOrderCreateDTOWarrantyInfoInner';
+import AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner from './model/AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner';
+import AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner from './model/AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner';
+import AsyncOrderCreateResponse from './model/AsyncOrderCreateResponse';
 import AvailabilityAsyncNotificationRequest from './model/AvailabilityAsyncNotificationRequest';
 import AvailabilityAsyncNotificationRequestResourceInner from './model/AvailabilityAsyncNotificationRequestResourceInner';
 import AvailabilityAsyncNotificationRequestResourceInnerLinksInner from './model/AvailabilityAsyncNotificationRequestResourceInnerLinksInner';
@@ -125,8 +138,8 @@ import OrderStatusAsyncNotificationRequestResourceInnerLinesInnerSerialNumberDet
 import OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner from './model/OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner';
 import OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner from './model/OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner';
 import OrderStatusAsyncNotificationRequestResourceInnerLinksInner from './model/OrderStatusAsyncNotificationRequestResourceInnerLinksInner';
-import PostQuoteToOrderV6400Response from './model/PostQuoteToOrderV6400Response';
-import PostQuoteToOrderV6400ResponseFieldsInner from './model/PostQuoteToOrderV6400ResponseFieldsInner';
+import PostAsyncOrderCreateV7400Response from './model/PostAsyncOrderCreateV7400Response';
+import PostAsyncOrderCreateV7400ResponseFieldsInner from './model/PostAsyncOrderCreateV7400ResponseFieldsInner';
 import PostRenewalssearch400Response from './model/PostRenewalssearch400Response';
 import PriceAndAvailabilityRequest from './model/PriceAndAvailabilityRequest';
 import PriceAndAvailabilityRequestAdditionalAttributesInner from './model/PriceAndAvailabilityRequestAdditionalAttributesInner';
@@ -161,14 +174,6 @@ import QuoteDetailsResponseResellerInfo from './model/QuoteDetailsResponseResell
 import QuoteSearchResponse from './model/QuoteSearchResponse';
 import QuoteSearchResponseQuotesInner from './model/QuoteSearchResponseQuotesInner';
 import QuoteSearchResponseQuotesInnerLinks from './model/QuoteSearchResponseQuotesInnerLinks';
-import QuoteToOrderDetailsDTO from './model/QuoteToOrderDetailsDTO';
-import QuoteToOrderDetailsDTOAdditionalAttributesInner from './model/QuoteToOrderDetailsDTOAdditionalAttributesInner';
-import QuoteToOrderDetailsDTOEndUserInfo from './model/QuoteToOrderDetailsDTOEndUserInfo';
-import QuoteToOrderDetailsDTOLinesInner from './model/QuoteToOrderDetailsDTOLinesInner';
-import QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner from './model/QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner';
-import QuoteToOrderDetailsDTOShipToInfo from './model/QuoteToOrderDetailsDTOShipToInfo';
-import QuoteToOrderDetailsDTOVmfadditionalAttributesInner from './model/QuoteToOrderDetailsDTOVmfadditionalAttributesInner';
-import QuoteToOrderResponse from './model/QuoteToOrderResponse';
 import RenewalsDetailsResponse from './model/RenewalsDetailsResponse';
 import RenewalsDetailsResponseAdditionalAttributesInner from './model/RenewalsDetailsResponseAdditionalAttributesInner';
 import RenewalsDetailsResponseEndUserInfo from './model/RenewalsDetailsResponseEndUserInfo';
@@ -197,15 +202,16 @@ import ReturnsSearchResponseReturnsClaimsInner from './model/ReturnsSearchRespon
 import ReturnsSearchResponseReturnsClaimsInnerLinksInner from './model/ReturnsSearchResponseReturnsClaimsInnerLinksInner';
 import ValidateQuoteResponse from './model/ValidateQuoteResponse';
 import ValidateQuoteResponseLinesInner from './model/ValidateQuoteResponseLinesInner';
+import ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner from './model/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner';
 import ValidateQuoteResponseVmfAdditionalAttributesInner from './model/ValidateQuoteResponseVmfAdditionalAttributesInner';
 import AccesstokenApi from './api/AccesstokenApi';
+import AsyncOrderCreateApi from './api/AsyncOrderCreateApi';
 import DealsApi from './api/DealsApi';
 import FreightEstimateApi from './api/FreightEstimateApi';
 import InvoicesApi from './api/InvoicesApi';
 import OrderStatusApi from './api/OrderStatusApi';
 import OrdersApi from './api/OrdersApi';
 import ProductCatalogApi from './api/ProductCatalogApi';
-import QuoteToOrderApi from './api/QuoteToOrderApi';
 import QuotesApi from './api/QuotesApi';
 import RenewalsApi from './api/RenewalsApi';
 import ReturnsApi from './api/ReturnsApi';
@@ -213,7 +219,7 @@ import StockUpdateApi from './api/StockUpdateApi';
 
 
 /**
-* For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro&#39;s API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers..<br>
+* For resellers seeking to innovate with Ingram Micro&#39;s API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers..<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
@@ -255,6 +261,84 @@ export {
      * @property {module:model/AccesstokenResponse}
      */
     AccesstokenResponse,
+
+    /**
+     * The AsyncOrderCreateDTO model constructor.
+     * @property {module:model/AsyncOrderCreateDTO}
+     */
+    AsyncOrderCreateDTO,
+
+    /**
+     * The AsyncOrderCreateDTOAdditionalAttributesInner model constructor.
+     * @property {module:model/AsyncOrderCreateDTOAdditionalAttributesInner}
+     */
+    AsyncOrderCreateDTOAdditionalAttributesInner,
+
+    /**
+     * The AsyncOrderCreateDTOEndUserInfo model constructor.
+     * @property {module:model/AsyncOrderCreateDTOEndUserInfo}
+     */
+    AsyncOrderCreateDTOEndUserInfo,
+
+    /**
+     * The AsyncOrderCreateDTOLinesInner model constructor.
+     * @property {module:model/AsyncOrderCreateDTOLinesInner}
+     */
+    AsyncOrderCreateDTOLinesInner,
+
+    /**
+     * The AsyncOrderCreateDTOLinesInnerEndUserInfoInner model constructor.
+     * @property {module:model/AsyncOrderCreateDTOLinesInnerEndUserInfoInner}
+     */
+    AsyncOrderCreateDTOLinesInnerEndUserInfoInner,
+
+    /**
+     * The AsyncOrderCreateDTOResellerInfo model constructor.
+     * @property {module:model/AsyncOrderCreateDTOResellerInfo}
+     */
+    AsyncOrderCreateDTOResellerInfo,
+
+    /**
+     * The AsyncOrderCreateDTOShipToInfo model constructor.
+     * @property {module:model/AsyncOrderCreateDTOShipToInfo}
+     */
+    AsyncOrderCreateDTOShipToInfo,
+
+    /**
+     * The AsyncOrderCreateDTOShipmentDetails model constructor.
+     * @property {module:model/AsyncOrderCreateDTOShipmentDetails}
+     */
+    AsyncOrderCreateDTOShipmentDetails,
+
+    /**
+     * The AsyncOrderCreateDTOVmfadditionalAttributesInner model constructor.
+     * @property {module:model/AsyncOrderCreateDTOVmfadditionalAttributesInner}
+     */
+    AsyncOrderCreateDTOVmfadditionalAttributesInner,
+
+    /**
+     * The AsyncOrderCreateDTOWarrantyInfoInner model constructor.
+     * @property {module:model/AsyncOrderCreateDTOWarrantyInfoInner}
+     */
+    AsyncOrderCreateDTOWarrantyInfoInner,
+
+    /**
+     * The AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner model constructor.
+     * @property {module:model/AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner}
+     */
+    AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner,
+
+    /**
+     * The AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner model constructor.
+     * @property {module:model/AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner}
+     */
+    AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner,
+
+    /**
+     * The AsyncOrderCreateResponse model constructor.
+     * @property {module:model/AsyncOrderCreateResponse}
+     */
+    AsyncOrderCreateResponse,
 
     /**
      * The AvailabilityAsyncNotificationRequest model constructor.
@@ -923,16 +1007,16 @@ export {
     OrderStatusAsyncNotificationRequestResourceInnerLinksInner,
 
     /**
-     * The PostQuoteToOrderV6400Response model constructor.
-     * @property {module:model/PostQuoteToOrderV6400Response}
+     * The PostAsyncOrderCreateV7400Response model constructor.
+     * @property {module:model/PostAsyncOrderCreateV7400Response}
      */
-    PostQuoteToOrderV6400Response,
+    PostAsyncOrderCreateV7400Response,
 
     /**
-     * The PostQuoteToOrderV6400ResponseFieldsInner model constructor.
-     * @property {module:model/PostQuoteToOrderV6400ResponseFieldsInner}
+     * The PostAsyncOrderCreateV7400ResponseFieldsInner model constructor.
+     * @property {module:model/PostAsyncOrderCreateV7400ResponseFieldsInner}
      */
-    PostQuoteToOrderV6400ResponseFieldsInner,
+    PostAsyncOrderCreateV7400ResponseFieldsInner,
 
     /**
      * The PostRenewalssearch400Response model constructor.
@@ -1139,54 +1223,6 @@ export {
     QuoteSearchResponseQuotesInnerLinks,
 
     /**
-     * The QuoteToOrderDetailsDTO model constructor.
-     * @property {module:model/QuoteToOrderDetailsDTO}
-     */
-    QuoteToOrderDetailsDTO,
-
-    /**
-     * The QuoteToOrderDetailsDTOAdditionalAttributesInner model constructor.
-     * @property {module:model/QuoteToOrderDetailsDTOAdditionalAttributesInner}
-     */
-    QuoteToOrderDetailsDTOAdditionalAttributesInner,
-
-    /**
-     * The QuoteToOrderDetailsDTOEndUserInfo model constructor.
-     * @property {module:model/QuoteToOrderDetailsDTOEndUserInfo}
-     */
-    QuoteToOrderDetailsDTOEndUserInfo,
-
-    /**
-     * The QuoteToOrderDetailsDTOLinesInner model constructor.
-     * @property {module:model/QuoteToOrderDetailsDTOLinesInner}
-     */
-    QuoteToOrderDetailsDTOLinesInner,
-
-    /**
-     * The QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner model constructor.
-     * @property {module:model/QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner}
-     */
-    QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner,
-
-    /**
-     * The QuoteToOrderDetailsDTOShipToInfo model constructor.
-     * @property {module:model/QuoteToOrderDetailsDTOShipToInfo}
-     */
-    QuoteToOrderDetailsDTOShipToInfo,
-
-    /**
-     * The QuoteToOrderDetailsDTOVmfadditionalAttributesInner model constructor.
-     * @property {module:model/QuoteToOrderDetailsDTOVmfadditionalAttributesInner}
-     */
-    QuoteToOrderDetailsDTOVmfadditionalAttributesInner,
-
-    /**
-     * The QuoteToOrderResponse model constructor.
-     * @property {module:model/QuoteToOrderResponse}
-     */
-    QuoteToOrderResponse,
-
-    /**
      * The RenewalsDetailsResponse model constructor.
      * @property {module:model/RenewalsDetailsResponse}
      */
@@ -1355,6 +1391,12 @@ export {
     ValidateQuoteResponseLinesInner,
 
     /**
+     * The ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner model constructor.
+     * @property {module:model/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner}
+     */
+    ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner,
+
+    /**
      * The ValidateQuoteResponseVmfAdditionalAttributesInner model constructor.
      * @property {module:model/ValidateQuoteResponseVmfAdditionalAttributesInner}
      */
@@ -1365,6 +1407,12 @@ export {
     * @property {module:api/AccesstokenApi}
     */
     AccesstokenApi,
+
+    /**
+    * The AsyncOrderCreateApi service constructor.
+    * @property {module:api/AsyncOrderCreateApi}
+    */
+    AsyncOrderCreateApi,
 
     /**
     * The DealsApi service constructor.
@@ -1401,12 +1449,6 @@ export {
     * @property {module:api/ProductCatalogApi}
     */
     ProductCatalogApi,
-
-    /**
-    * The QuoteToOrderApi service constructor.
-    * @property {module:api/QuoteToOrderApi}
-    */
-    QuoteToOrderApi,
 
     /**
     * The QuotesApi service constructor.

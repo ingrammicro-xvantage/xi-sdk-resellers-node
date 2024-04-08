@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -59,8 +59,8 @@ class InvoiceDetailsv61ResponseSummaryTotals {
             if (data.hasOwnProperty('totalTaxAmount')) {
                 obj['totalTaxAmount'] = ApiClient.convertToType(data['totalTaxAmount'], 'Number');
             }
-            if (data.hasOwnProperty('invoicesAmountDue')) {
-                obj['invoicesAmountDue'] = ApiClient.convertToType(data['invoicesAmountDue'], 'Number');
+            if (data.hasOwnProperty('invoicedAmountDue')) {
+                obj['invoicedAmountDue'] = ApiClient.convertToType(data['invoicedAmountDue'], 'Number');
             }
             if (data.hasOwnProperty('freightAmount')) {
                 obj['freightAmount'] = ApiClient.convertToType(data['freightAmount'], 'Number');
@@ -114,9 +114,9 @@ InvoiceDetailsv61ResponseSummaryTotals.prototype['totalTaxAmount'] = undefined;
 
 /**
  * Total amount due for the invoice.
- * @member {Number} invoicesAmountDue
+ * @member {Number} invoicedAmountDue
  */
-InvoiceDetailsv61ResponseSummaryTotals.prototype['invoicesAmountDue'] = undefined;
+InvoiceDetailsv61ResponseSummaryTotals.prototype['invoicedAmountDue'] = undefined;
 
 /**
  * Freight amount

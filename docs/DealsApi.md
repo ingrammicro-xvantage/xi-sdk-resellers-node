@@ -93,7 +93,9 @@ let opts = {
   'iMSenderID': MyCompany, // String | Unique value used to identify the sender of the transaction. Example: MyCompany
   'endUser': EnduserCompany, // String | The end user/customer's name.
   'vendor': Cisco, // String | The vendor's name.
-  'dealId': 12345678 // String | Deal/Special bid number.
+  'dealId': 12345678, // String | Deal/Special bid number.
+  'size': 56, // Number | The number of records required in the call - max records 100 per page.
+  'page': 56 // Number | The page number reference.
 };
 apiInstance.getResellersV6Dealssearch(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
   if (error) {
@@ -116,6 +118,8 @@ Name | Type | Description  | Notes
  **endUser** | **String**| The end user/customer&#39;s name. | [optional] 
  **vendor** | **String**| The vendor&#39;s name. | [optional] 
  **dealId** | **String**| Deal/Special bid number. | [optional] 
+ **size** | **Number**| The number of records required in the call - max records 100 per page. | [optional] 
+ **page** | **Number**| The page number reference. | [optional] 
 
 ### Return type
 

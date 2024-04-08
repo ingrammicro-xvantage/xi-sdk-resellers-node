@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Ingram Micro Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of APIs and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -57,10 +57,10 @@ class FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner {
                 obj['carrierMode'] = ApiClient.convertToType(data['carrierMode'], 'String');
             }
             if (data.hasOwnProperty('estimatedFreightCharge')) {
-                obj['estimatedFreightCharge'] = ApiClient.convertToType(data['estimatedFreightCharge'], 'Number');
+                obj['estimatedFreightCharge'] = ApiClient.convertToType(data['estimatedFreightCharge'], 'String');
             }
             if (data.hasOwnProperty('daysInTransit')) {
-                obj['daysInTransit'] = ApiClient.convertToType(data['daysInTransit'], 'Number');
+                obj['daysInTransit'] = ApiClient.convertToType(data['daysInTransit'], 'String');
             }
         }
         return obj;
@@ -83,6 +83,14 @@ class FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner {
         // ensure the json data is a string
         if (data['carrierMode'] && !(typeof data['carrierMode'] === 'string' || data['carrierMode'] instanceof String)) {
             throw new Error("Expected the field `carrierMode` to be a primitive type in the JSON string but got " + data['carrierMode']);
+        }
+        // ensure the json data is a string
+        if (data['estimatedFreightCharge'] && !(typeof data['estimatedFreightCharge'] === 'string' || data['estimatedFreightCharge'] instanceof String)) {
+            throw new Error("Expected the field `estimatedFreightCharge` to be a primitive type in the JSON string but got " + data['estimatedFreightCharge']);
+        }
+        // ensure the json data is a string
+        if (data['daysInTransit'] && !(typeof data['daysInTransit'] === 'string' || data['daysInTransit'] instanceof String)) {
+            throw new Error("Expected the field `daysInTransit` to be a primitive type in the JSON string but got " + data['daysInTransit']);
         }
 
         return true;
@@ -113,13 +121,13 @@ FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.prototyp
 
 /**
  * Estimated freight charge.
- * @member {Number} estimatedFreightCharge
+ * @member {String} estimatedFreightCharge
  */
 FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.prototype['estimatedFreightCharge'] = undefined;
 
 /**
  * Number of transit days.
- * @member {Number} daysInTransit
+ * @member {String} daysInTransit
  */
 FreightResponseFreightEstimateResponseDistributionInnerCarrierListInner.prototype['daysInTransit'] = undefined;
 
