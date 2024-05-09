@@ -22,7 +22,7 @@ The Authentication endpoint will provide an access token to access the API.
 import XiSdkResellers from 'xi_sdk_resellers';
 
 let apiInstance = new XiSdkResellers.AccesstokenApi();
-let grantType = client_credentials; // String | Keep grant_type as client_credentials only.
+let grantType = "client_credentials"; // String | Keep grant_type as client_credentials only.
 let clientId = "clientId_example"; // String | 
 let clientSecret = "clientSecret_example"; // String | 
 apiInstance.getAccesstoken(grantType, clientId, clientSecret, (error, data, response) => {

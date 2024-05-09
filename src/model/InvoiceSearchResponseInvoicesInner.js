@@ -50,6 +50,9 @@ class InvoiceSearchResponseInvoicesInner {
             if (data.hasOwnProperty('paymentTermsDueDate')) {
                 obj['paymentTermsDueDate'] = ApiClient.convertToType(data['paymentTermsDueDate'], 'String');
             }
+            if (data.hasOwnProperty('specialBidNumbers')) {
+                obj['specialBidNumbers'] = ApiClient.convertToType(data['specialBidNumbers'], ['String']);
+            }
             if (data.hasOwnProperty('erpOrderNumber')) {
                 obj['erpOrderNumber'] = ApiClient.convertToType(data['erpOrderNumber'], 'String');
             }
@@ -103,6 +106,10 @@ class InvoiceSearchResponseInvoicesInner {
         if (data['paymentTermsDueDate'] && !(typeof data['paymentTermsDueDate'] === 'string' || data['paymentTermsDueDate'] instanceof String)) {
             throw new Error("Expected the field `paymentTermsDueDate` to be a primitive type in the JSON string but got " + data['paymentTermsDueDate']);
         }
+        // ensure the json data is an array
+        if (!Array.isArray(data['specialBidNumbers'])) {
+            throw new Error("Expected the field `specialBidNumbers` to be an array in the JSON data but got " + data['specialBidNumbers']);
+        }
         // ensure the json data is a string
         if (data['erpOrderNumber'] && !(typeof data['erpOrderNumber'] === 'string' || data['erpOrderNumber'] instanceof String)) {
             throw new Error("Expected the field `erpOrderNumber` to be a primitive type in the JSON string but got " + data['erpOrderNumber']);
@@ -153,6 +160,11 @@ class InvoiceSearchResponseInvoicesInner {
  * @member {String} paymentTermsDueDate
  */
 InvoiceSearchResponseInvoicesInner.prototype['paymentTermsDueDate'] = undefined;
+
+/**
+ * @member {Array.<String>} specialBidNumbers
+ */
+InvoiceSearchResponseInvoicesInner.prototype['specialBidNumbers'] = undefined;
 
 /**
  * Order number

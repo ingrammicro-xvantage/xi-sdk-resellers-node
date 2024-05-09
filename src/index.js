@@ -54,7 +54,6 @@ import GetAccesstoken500ResponseFault from './model/GetAccesstoken500ResponseFau
 import GetAccesstoken500ResponseFaultDetail from './model/GetAccesstoken500ResponseFaultDetail';
 import GetResellerV6ValidateQuote400Response from './model/GetResellerV6ValidateQuote400Response';
 import GetResellerV6ValidateQuote400ResponseFieldsInner from './model/GetResellerV6ValidateQuote400ResponseFieldsInner';
-import GetResellerV6ValidateQuote500Response from './model/GetResellerV6ValidateQuote500Response';
 import InvoiceDetailsv61Response from './model/InvoiceDetailsv61Response';
 import InvoiceDetailsv61ResponseBillToInfo from './model/InvoiceDetailsv61ResponseBillToInfo';
 import InvoiceDetailsv61ResponseFxRateInfo from './model/InvoiceDetailsv61ResponseFxRateInfo';
@@ -140,6 +139,7 @@ import OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetails
 import OrderStatusAsyncNotificationRequestResourceInnerLinksInner from './model/OrderStatusAsyncNotificationRequestResourceInnerLinksInner';
 import PostAsyncOrderCreateV7400Response from './model/PostAsyncOrderCreateV7400Response';
 import PostAsyncOrderCreateV7400ResponseFieldsInner from './model/PostAsyncOrderCreateV7400ResponseFieldsInner';
+import PostAsyncOrderCreateV7500Response from './model/PostAsyncOrderCreateV7500Response';
 import PostRenewalssearch400Response from './model/PostRenewalssearch400Response';
 import PriceAndAvailabilityRequest from './model/PriceAndAvailabilityRequest';
 import PriceAndAvailabilityRequestAdditionalAttributesInner from './model/PriceAndAvailabilityRequestAdditionalAttributesInner';
@@ -205,7 +205,6 @@ import ValidateQuoteResponseLinesInner from './model/ValidateQuoteResponseLinesI
 import ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner from './model/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner';
 import ValidateQuoteResponseVmfAdditionalAttributesInner from './model/ValidateQuoteResponseVmfAdditionalAttributesInner';
 import AccesstokenApi from './api/AccesstokenApi';
-import AsyncOrderCreateApi from './api/AsyncOrderCreateApi';
 import DealsApi from './api/DealsApi';
 import FreightEstimateApi from './api/FreightEstimateApi';
 import InvoicesApi from './api/InvoicesApi';
@@ -501,12 +500,6 @@ export {
      * @property {module:model/GetResellerV6ValidateQuote400ResponseFieldsInner}
      */
     GetResellerV6ValidateQuote400ResponseFieldsInner,
-
-    /**
-     * The GetResellerV6ValidateQuote500Response model constructor.
-     * @property {module:model/GetResellerV6ValidateQuote500Response}
-     */
-    GetResellerV6ValidateQuote500Response,
 
     /**
      * The InvoiceDetailsv61Response model constructor.
@@ -1019,6 +1012,12 @@ export {
     PostAsyncOrderCreateV7400ResponseFieldsInner,
 
     /**
+     * The PostAsyncOrderCreateV7500Response model constructor.
+     * @property {module:model/PostAsyncOrderCreateV7500Response}
+     */
+    PostAsyncOrderCreateV7500Response,
+
+    /**
      * The PostRenewalssearch400Response model constructor.
      * @property {module:model/PostRenewalssearch400Response}
      */
@@ -1407,12 +1406,6 @@ export {
     * @property {module:api/AccesstokenApi}
     */
     AccesstokenApi,
-
-    /**
-    * The AsyncOrderCreateApi service constructor.
-    * @property {module:api/AsyncOrderCreateApi}
-    */
-    AsyncOrderCreateApi,
 
     /**
     * The DealsApi service constructor.

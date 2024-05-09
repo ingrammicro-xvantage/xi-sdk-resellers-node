@@ -27,12 +27,12 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.DealsApi();
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
-let iMApplicationId = MyCompany; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
-let iMEnvironment = prodChicago; // String | Environment name.
-let dealId = 12345678; // String | Unique deal ID.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
+let iMApplicationId = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+let iMEnvironment = "prodChicago"; // String | Environment name.
+let dealId = "12345678"; // String | Unique deal ID.
 apiInstance.getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, iMEnvironment, dealId, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -86,14 +86,14 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.DealsApi();
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
 let opts = {
-  'iMSenderID': MyCompany, // String | Unique value used to identify the sender of the transaction. Example: MyCompany
-  'endUser': EnduserCompany, // String | The end user/customer's name.
-  'vendor': Cisco, // String | The vendor's name.
-  'dealId': 12345678, // String | Deal/Special bid number.
+  'iMSenderID': "MyCompany", // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'endUser': "EnduserCompany", // String | The end user/customer's name.
+  'vendor': "Cisco", // String | The vendor's name.
+  'dealId': "12345678", // String | Deal/Special bid number.
   'size': 56, // Number | The number of records required in the call - max records 100 per page.
   'page': 56 // Number | The page number reference.
 };

@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property specialBidNumbers (base name: "specialBidNumbers")', function() {
+      // uncomment below and update the code to test the property specialBidNumbers
+      //var instance = new XiSdkResellers.InvoiceSearchResponseInvoicesInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property erpOrderNumber (base name: "erpOrderNumber")', function() {
       // uncomment below and update the code to test the property erpOrderNumber
       //var instance = new XiSdkResellers.InvoiceSearchResponseInvoicesInner();

@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.GetResellerV6ValidateQuote500Response();
+    instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,34 @@
       object[property] = value;
   }
 
-  describe('GetResellerV6ValidateQuote500Response', function() {
-    it('should create an instance of GetResellerV6ValidateQuote500Response', function() {
-      // uncomment below and update the code to test GetResellerV6ValidateQuote500Response
-      //var instance = new XiSdkResellers.GetResellerV6ValidateQuote500Response();
-      //expect(instance).to.be.a(XiSdkResellers.GetResellerV6ValidateQuote500Response);
+  describe('PostAsyncOrderCreateV7500Response', function() {
+    it('should create an instance of PostAsyncOrderCreateV7500Response', function() {
+      // uncomment below and update the code to test PostAsyncOrderCreateV7500Response
+      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
+      //expect(instance).to.be.a(XiSdkResellers.PostAsyncOrderCreateV7500Response);
     });
 
     it('should have the property traceid (base name: "traceid")', function() {
       // uncomment below and update the code to test the property traceid
-      //var instance = new XiSdkResellers.GetResellerV6ValidateQuote500Response();
+      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new XiSdkResellers.GetResellerV6ValidateQuote500Response();
+      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new XiSdkResellers.GetResellerV6ValidateQuote500Response();
+      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
       //expect(instance).to.be();
     });
 
     it('should have the property fields (base name: "fields")', function() {
       // uncomment below and update the code to test the property fields
-      //var instance = new XiSdkResellers.GetResellerV6ValidateQuote500Response();
+      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
       //expect(instance).to.be();
     });
 

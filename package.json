@@ -1,6 +1,6 @@
 {
   "name": "xi_sdk_resellers",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "author": "Ingram Micro Xvantage Integration(XI)",
   "description": "Ingram Micro - Xvantage Integration (XI) Node.Js Server-side SDK.",
   "license": "MIT",

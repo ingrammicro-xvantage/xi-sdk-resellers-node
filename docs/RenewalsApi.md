@@ -27,12 +27,12 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.RenewalsApi();
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
-let renewalId = 123456; // String | Unique Ingram renewal ID.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
+let renewalId = "123456"; // String | Unique Ingram renewal ID.
 let opts = {
-  'iMSenderID': MyCompany // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'iMSenderID': "MyCompany" // String | Unique value used to identify the sender of the transaction. Example: MyCompany
 };
 apiInstance.getResellersV6Renewalsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, renewalId, opts, (error, data, response) => {
   if (error) {
@@ -86,11 +86,11 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.RenewalsApi();
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
 let opts = {
-  'iMSenderID': MyCompany, // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'iMSenderID': "MyCompany", // String | Unique value used to identify the sender of the transaction. Example: MyCompany
   'customerOrderNumber': "customerOrderNumber_example", // String | The reseller's unique PO/Order number.
   'ingramPurchaseOrderNumber': "ingramPurchaseOrderNumber_example", // String | Sales order number.
   'serialNumber': "serialNumber_example", // String | A serial number of the product.

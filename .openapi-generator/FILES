@@ -5,7 +5,6 @@
 README.md
 docs/AccesstokenApi.md
 docs/AccesstokenResponse.md
-docs/AsyncOrderCreateApi.md
 docs/AsyncOrderCreateDTO.md
 docs/AsyncOrderCreateDTOAdditionalAttributesInner.md
 docs/AsyncOrderCreateDTOEndUserInfo.md
@@ -48,7 +47,6 @@ docs/GetAccesstoken500ResponseFault.md
 docs/GetAccesstoken500ResponseFaultDetail.md
 docs/GetResellerV6ValidateQuote400Response.md
 docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md
-docs/GetResellerV6ValidateQuote500Response.md
 docs/InvoiceDetailsv61Response.md
 docs/InvoiceDetailsv61ResponseBillToInfo.md
 docs/InvoiceDetailsv61ResponseFxRateInfo.md
@@ -137,6 +135,7 @@ docs/OrderStatusAsyncNotificationRequestResourceInnerLinksInner.md
 docs/OrdersApi.md
 docs/PostAsyncOrderCreateV7400Response.md
 docs/PostAsyncOrderCreateV7400ResponseFieldsInner.md
+docs/PostAsyncOrderCreateV7500Response.md
 docs/PostRenewalssearch400Response.md
 docs/PriceAndAvailabilityRequest.md
 docs/PriceAndAvailabilityRequestAdditionalAttributesInner.md
@@ -211,7 +210,6 @@ mocha.opts
 package.json
 src/ApiClient.js
 src/api/AccesstokenApi.js
-src/api/AsyncOrderCreateApi.js
 src/api/DealsApi.js
 src/api/FreightEstimateApi.js
 src/api/InvoicesApi.js
@@ -264,7 +262,6 @@ src/model/GetAccesstoken500ResponseFault.js
 src/model/GetAccesstoken500ResponseFaultDetail.js
 src/model/GetResellerV6ValidateQuote400Response.js
 src/model/GetResellerV6ValidateQuote400ResponseFieldsInner.js
-src/model/GetResellerV6ValidateQuote500Response.js
 src/model/InvoiceDetailsv61Response.js
 src/model/InvoiceDetailsv61ResponseBillToInfo.js
 src/model/InvoiceDetailsv61ResponseFxRateInfo.js
@@ -350,6 +347,7 @@ src/model/OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDeta
 src/model/OrderStatusAsyncNotificationRequestResourceInnerLinksInner.js
 src/model/PostAsyncOrderCreateV7400Response.js
 src/model/PostAsyncOrderCreateV7400ResponseFieldsInner.js
+src/model/PostAsyncOrderCreateV7500Response.js
 src/model/PostRenewalssearch400Response.js
 src/model/PriceAndAvailabilityRequest.js
 src/model/PriceAndAvailabilityRequestAdditionalAttributesInner.js
@@ -415,7 +413,6 @@ src/model/ValidateQuoteResponseLinesInner.js
 src/model/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.js
 src/model/ValidateQuoteResponseVmfAdditionalAttributesInner.js
 test/api/AccesstokenApi.spec.js
-test/api/AsyncOrderCreateApi.spec.js
 test/api/DealsApi.spec.js
 test/api/FreightEstimateApi.spec.js
 test/api/InvoicesApi.spec.js
@@ -467,7 +464,6 @@ test/model/GetAccesstoken500ResponseFault.spec.js
 test/model/GetAccesstoken500ResponseFaultDetail.spec.js
 test/model/GetResellerV6ValidateQuote400Response.spec.js
 test/model/GetResellerV6ValidateQuote400ResponseFieldsInner.spec.js
-test/model/GetResellerV6ValidateQuote500Response.spec.js
 test/model/InvoiceDetailsv61Response.spec.js
 test/model/InvoiceDetailsv61ResponseBillToInfo.spec.js
 test/model/InvoiceDetailsv61ResponseFxRateInfo.spec.js
@@ -553,6 +549,7 @@ test/model/OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDet
 test/model/OrderStatusAsyncNotificationRequestResourceInnerLinksInner.spec.js
 test/model/PostAsyncOrderCreateV7400Response.spec.js
 test/model/PostAsyncOrderCreateV7400ResponseFieldsInner.spec.js
+test/model/PostAsyncOrderCreateV7500Response.spec.js
 test/model/PostRenewalssearch400Response.spec.js
 test/model/PriceAndAvailabilityRequest.spec.js
 test/model/PriceAndAvailabilityRequestAdditionalAttributesInner.spec.js

@@ -28,12 +28,12 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.ReturnsApi();
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
-let caseRequestNumber = 12345678; // String | A unique return request number.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
+let caseRequestNumber = "12345678"; // String | A unique return request number.
 let opts = {
-  'iMSenderID': MyCompany // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'iMSenderID': "MyCompany" // String | Unique value used to identify the sender of the transaction. Example: MyCompany
 };
 apiInstance.getResellersV6Returnsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, caseRequestNumber, opts, (error, data, response) => {
   if (error) {
@@ -87,11 +87,11 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.ReturnsApi();
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
 let opts = {
-  'iMSenderID': MyCompany, // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'iMSenderID': "MyCompany", // String | Unique value used to identify the sender of the transaction. Example: MyCompany
   'caseRequestNumber': "caseRequestNumber_example", // String | A unique return request number.
   'invoiceNumber': "invoiceNumber_example", // String | The Invoice number for the order.
   'returnClaimId': "returnClaimId_example", // String | A unique return claim Id.
@@ -174,11 +174,11 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.ReturnsApi();
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
 let opts = {
-  'iMSenderID': MyCompany, // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'iMSenderID': "MyCompany", // String | Unique value used to identify the sender of the transaction. Example: MyCompany
   'returnsCreateRequest': {"list":[{"invoiceNumber":"40-NFERG-11","invoiceDate":"2023-07-18","customerOrderNumber":"","ingramPartNumber":"164B2G","vendorPartNumber":"","serialNumber":"","quantity":"1","primaryReason":"I have not received part or all of my order","secondaryReason":"Received only partial shipment.","notes":"B2BCartCreation20","referenceNumber":"RefNum","billToAddressId":"000","shipFromInfo":{"companyName":"ABC TECH","contact":"STARK","addressLine1":"17501 W 98TH ST SPC 1833","addressLine2":"string","addressLine3":"string","city":"LENEXA","state":"KS","postalCode":"662191736","countryCode":"US","email":"stark@gmail.com","phoneNumber":""},"numberOfBoxes":"1"}]} // ReturnsCreateRequest | 
 };
 apiInstance.postReturnscreate(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {

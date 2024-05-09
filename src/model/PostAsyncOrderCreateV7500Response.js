@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The GetResellerV6ValidateQuote500Response model module.
- * @module model/GetResellerV6ValidateQuote500Response
+ * The PostAsyncOrderCreateV7500Response model module.
+ * @module model/PostAsyncOrderCreateV7500Response
  * @version 1.0.0
  */
-class GetResellerV6ValidateQuote500Response {
+class PostAsyncOrderCreateV7500Response {
     /**
-     * Constructs a new <code>GetResellerV6ValidateQuote500Response</code>.
-     * @alias module:model/GetResellerV6ValidateQuote500Response
+     * Constructs a new <code>PostAsyncOrderCreateV7500Response</code>.
+     * @alias module:model/PostAsyncOrderCreateV7500Response
      */
     constructor() { 
         
-        GetResellerV6ValidateQuote500Response.initialize(this);
+        PostAsyncOrderCreateV7500Response.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class GetResellerV6ValidateQuote500Response {
     }
 
     /**
-     * Constructs a <code>GetResellerV6ValidateQuote500Response</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>PostAsyncOrderCreateV7500Response</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/GetResellerV6ValidateQuote500Response} obj Optional instance to populate.
-     * @return {module:model/GetResellerV6ValidateQuote500Response} The populated <code>GetResellerV6ValidateQuote500Response</code> instance.
+     * @param {module:model/PostAsyncOrderCreateV7500Response} obj Optional instance to populate.
+     * @return {module:model/PostAsyncOrderCreateV7500Response} The populated <code>PostAsyncOrderCreateV7500Response</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new GetResellerV6ValidateQuote500Response();
+            obj = obj || new PostAsyncOrderCreateV7500Response();
 
             if (data.hasOwnProperty('traceid')) {
                 obj['traceid'] = ApiClient.convertToType(data['traceid'], 'String');
@@ -64,9 +64,9 @@ class GetResellerV6ValidateQuote500Response {
     }
 
     /**
-     * Validates the JSON data with respect to <code>GetResellerV6ValidateQuote500Response</code>.
+     * Validates the JSON data with respect to <code>PostAsyncOrderCreateV7500Response</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetResellerV6ValidateQuote500Response</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PostAsyncOrderCreateV7500Response</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -98,29 +98,29 @@ class GetResellerV6ValidateQuote500Response {
  * Unique Id to identify error.
  * @member {String} traceid
  */
-GetResellerV6ValidateQuote500Response.prototype['traceid'] = undefined;
+PostAsyncOrderCreateV7500Response.prototype['traceid'] = undefined;
 
 /**
  * Describes the type of the error.
  * @member {String} type
  */
-GetResellerV6ValidateQuote500Response.prototype['type'] = undefined;
+PostAsyncOrderCreateV7500Response.prototype['type'] = undefined;
 
 /**
  * Describes the error message.
  * @member {String} message
  */
-GetResellerV6ValidateQuote500Response.prototype['message'] = undefined;
+PostAsyncOrderCreateV7500Response.prototype['message'] = undefined;
 
 /**
  * @member {Array.<Object>} fields
  */
-GetResellerV6ValidateQuote500Response.prototype['fields'] = undefined;
+PostAsyncOrderCreateV7500Response.prototype['fields'] = undefined;
 
 
 
 
 
 
-export default GetResellerV6ValidateQuote500Response;
+export default PostAsyncOrderCreateV7500Response;
 
