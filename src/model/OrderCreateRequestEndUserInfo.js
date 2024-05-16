@@ -88,7 +88,7 @@ class OrderCreateRequestEndUserInfo {
                 obj['countryCode'] = ApiClient.convertToType(data['countryCode'], 'String');
             }
             if (data.hasOwnProperty('phoneNumber')) {
-                obj['phoneNumber'] = ApiClient.convertToType(data['phoneNumber'], 'Number');
+                obj['phoneNumber'] = ApiClient.convertToType(data['phoneNumber'], 'String');
             }
             if (data.hasOwnProperty('email')) {
                 obj['email'] = ApiClient.convertToType(data['email'], 'String');
@@ -154,6 +154,10 @@ class OrderCreateRequestEndUserInfo {
         // ensure the json data is a string
         if (data['countryCode'] && !(typeof data['countryCode'] === 'string' || data['countryCode'] instanceof String)) {
             throw new Error("Expected the field `countryCode` to be a primitive type in the JSON string but got " + data['countryCode']);
+        }
+        // ensure the json data is a string
+        if (data['phoneNumber'] && !(typeof data['phoneNumber'] === 'string' || data['phoneNumber'] instanceof String)) {
+            throw new Error("Expected the field `phoneNumber` to be a primitive type in the JSON string but got " + data['phoneNumber']);
         }
         // ensure the json data is a string
         if (data['email'] && !(typeof data['email'] === 'string' || data['email'] instanceof String)) {
@@ -248,7 +252,7 @@ OrderCreateRequestEndUserInfo.prototype['countryCode'] = undefined;
 
 /**
  * The end user/customer's phone number.
- * @member {Number} phoneNumber
+ * @member {String} phoneNumber
  */
 OrderCreateRequestEndUserInfo.prototype['phoneNumber'] = undefined;
 
