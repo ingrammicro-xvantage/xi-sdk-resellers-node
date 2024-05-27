@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **type** | **String** |  | [optional] 
 **recurringPriceModel** | **String** |  | [optional] 
 **unitOfMeasure** | **String** |  | [optional] 
-**tax** | **String** |  | [optional] 
+**tax** | **Number** |  | [optional] 
 **extrafees** | **Number** |  | [optional] 
 **extraFeesDetails** | [**[QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner]**](QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner.md) |  | [optional] 
 **discounts** | [**[QuoteDetailsResponseProductsInnerPriceDiscountsInner]**](QuoteDetailsResponseProductsInnerPriceDiscountsInner.md) |  | [optional] 

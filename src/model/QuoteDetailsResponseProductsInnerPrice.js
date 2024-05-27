@@ -74,7 +74,7 @@ class QuoteDetailsResponseProductsInnerPrice {
                 obj['unitOfMeasure'] = ApiClient.convertToType(data['unitOfMeasure'], 'String');
             }
             if (data.hasOwnProperty('tax')) {
-                obj['tax'] = ApiClient.convertToType(data['tax'], 'String');
+                obj['tax'] = ApiClient.convertToType(data['tax'], 'Number');
             }
             if (data.hasOwnProperty('extrafees')) {
                 obj['extrafees'] = ApiClient.convertToType(data['extrafees'], 'Number');
@@ -110,10 +110,6 @@ class QuoteDetailsResponseProductsInnerPrice {
         // ensure the json data is a string
         if (data['unitOfMeasure'] && !(typeof data['unitOfMeasure'] === 'string' || data['unitOfMeasure'] instanceof String)) {
             throw new Error("Expected the field `unitOfMeasure` to be a primitive type in the JSON string but got " + data['unitOfMeasure']);
-        }
-        // ensure the json data is a string
-        if (data['tax'] && !(typeof data['tax'] === 'string' || data['tax'] instanceof String)) {
-            throw new Error("Expected the field `tax` to be a primitive type in the JSON string but got " + data['tax']);
         }
         if (data['extraFeesDetails']) { // data not null
             // ensure the json data is an array
@@ -190,7 +186,7 @@ QuoteDetailsResponseProductsInnerPrice.prototype['recurringPriceModel'] = undefi
 QuoteDetailsResponseProductsInnerPrice.prototype['unitOfMeasure'] = undefined;
 
 /**
- * @member {String} tax
+ * @member {Number} tax
  */
 QuoteDetailsResponseProductsInnerPrice.prototype['tax'] = undefined;
 
