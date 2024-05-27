@@ -137,9 +137,9 @@ import OrderStatusAsyncNotificationRequestResourceInnerLinesInnerSerialNumberDet
 import OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner from './model/OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInner';
 import OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner from './model/OrderStatusAsyncNotificationRequestResourceInnerLinesInnerShipmentDetailsInnerPackageDetailsInner';
 import OrderStatusAsyncNotificationRequestResourceInnerLinksInner from './model/OrderStatusAsyncNotificationRequestResourceInnerLinksInner';
-import PostAsyncOrderCreateV7400Response from './model/PostAsyncOrderCreateV7400Response';
-import PostAsyncOrderCreateV7400ResponseFieldsInner from './model/PostAsyncOrderCreateV7400ResponseFieldsInner';
-import PostAsyncOrderCreateV7500Response from './model/PostAsyncOrderCreateV7500Response';
+import PostCreateorderV7400Response from './model/PostCreateorderV7400Response';
+import PostCreateorderV7400ResponseFieldsInner from './model/PostCreateorderV7400ResponseFieldsInner';
+import PostCreateorderV7500Response from './model/PostCreateorderV7500Response';
 import PostRenewalssearch400Response from './model/PostRenewalssearch400Response';
 import PriceAndAvailabilityRequest from './model/PriceAndAvailabilityRequest';
 import PriceAndAvailabilityRequestAdditionalAttributesInner from './model/PriceAndAvailabilityRequestAdditionalAttributesInner';
@@ -169,8 +169,12 @@ import QuoteDetailsResponse from './model/QuoteDetailsResponse';
 import QuoteDetailsResponseAdditionalAttributesInner from './model/QuoteDetailsResponseAdditionalAttributesInner';
 import QuoteDetailsResponseEndUserInfo from './model/QuoteDetailsResponseEndUserInfo';
 import QuoteDetailsResponseProductsInner from './model/QuoteDetailsResponseProductsInner';
+import QuoteDetailsResponseProductsInnerBillDetailsInner from './model/QuoteDetailsResponseProductsInnerBillDetailsInner';
 import QuoteDetailsResponseProductsInnerPrice from './model/QuoteDetailsResponseProductsInnerPrice';
+import QuoteDetailsResponseProductsInnerPriceDiscountsInner from './model/QuoteDetailsResponseProductsInnerPriceDiscountsInner';
+import QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner from './model/QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner';
 import QuoteDetailsResponseResellerInfo from './model/QuoteDetailsResponseResellerInfo';
+import QuoteDetailsResponseShippingInfo from './model/QuoteDetailsResponseShippingInfo';
 import QuoteSearchResponse from './model/QuoteSearchResponse';
 import QuoteSearchResponseQuotesInner from './model/QuoteSearchResponseQuotesInner';
 import QuoteSearchResponseQuotesInnerLinks from './model/QuoteSearchResponseQuotesInnerLinks';
@@ -1000,22 +1004,22 @@ export {
     OrderStatusAsyncNotificationRequestResourceInnerLinksInner,
 
     /**
-     * The PostAsyncOrderCreateV7400Response model constructor.
-     * @property {module:model/PostAsyncOrderCreateV7400Response}
+     * The PostCreateorderV7400Response model constructor.
+     * @property {module:model/PostCreateorderV7400Response}
      */
-    PostAsyncOrderCreateV7400Response,
+    PostCreateorderV7400Response,
 
     /**
-     * The PostAsyncOrderCreateV7400ResponseFieldsInner model constructor.
-     * @property {module:model/PostAsyncOrderCreateV7400ResponseFieldsInner}
+     * The PostCreateorderV7400ResponseFieldsInner model constructor.
+     * @property {module:model/PostCreateorderV7400ResponseFieldsInner}
      */
-    PostAsyncOrderCreateV7400ResponseFieldsInner,
+    PostCreateorderV7400ResponseFieldsInner,
 
     /**
-     * The PostAsyncOrderCreateV7500Response model constructor.
-     * @property {module:model/PostAsyncOrderCreateV7500Response}
+     * The PostCreateorderV7500Response model constructor.
+     * @property {module:model/PostCreateorderV7500Response}
      */
-    PostAsyncOrderCreateV7500Response,
+    PostCreateorderV7500Response,
 
     /**
      * The PostRenewalssearch400Response model constructor.
@@ -1192,16 +1196,40 @@ export {
     QuoteDetailsResponseProductsInner,
 
     /**
+     * The QuoteDetailsResponseProductsInnerBillDetailsInner model constructor.
+     * @property {module:model/QuoteDetailsResponseProductsInnerBillDetailsInner}
+     */
+    QuoteDetailsResponseProductsInnerBillDetailsInner,
+
+    /**
      * The QuoteDetailsResponseProductsInnerPrice model constructor.
      * @property {module:model/QuoteDetailsResponseProductsInnerPrice}
      */
     QuoteDetailsResponseProductsInnerPrice,
 
     /**
+     * The QuoteDetailsResponseProductsInnerPriceDiscountsInner model constructor.
+     * @property {module:model/QuoteDetailsResponseProductsInnerPriceDiscountsInner}
+     */
+    QuoteDetailsResponseProductsInnerPriceDiscountsInner,
+
+    /**
+     * The QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner model constructor.
+     * @property {module:model/QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner}
+     */
+    QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner,
+
+    /**
      * The QuoteDetailsResponseResellerInfo model constructor.
      * @property {module:model/QuoteDetailsResponseResellerInfo}
      */
     QuoteDetailsResponseResellerInfo,
+
+    /**
+     * The QuoteDetailsResponseShippingInfo model constructor.
+     * @property {module:model/QuoteDetailsResponseShippingInfo}
+     */
+    QuoteDetailsResponseShippingInfo,
 
     /**
      * The QuoteSearchResponse model constructor.

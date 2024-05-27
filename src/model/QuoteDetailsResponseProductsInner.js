@@ -12,6 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
+import QuoteDetailsResponseProductsInnerBillDetailsInner from './QuoteDetailsResponseProductsInnerBillDetailsInner';
 import QuoteDetailsResponseProductsInnerPrice from './QuoteDetailsResponseProductsInnerPrice';
 
 /**
@@ -96,14 +97,32 @@ class QuoteDetailsResponseProductsInner {
             if (data.hasOwnProperty('terms')) {
                 obj['terms'] = ApiClient.convertToType(data['terms'], 'String');
             }
+            if (data.hasOwnProperty('planDescription')) {
+                obj['planDescription'] = ApiClient.convertToType(data['planDescription'], 'String');
+            }
             if (data.hasOwnProperty('isSubscription')) {
                 obj['isSubscription'] = ApiClient.convertToType(data['isSubscription'], 'Boolean');
             }
             if (data.hasOwnProperty('resellerMargin')) {
                 obj['resellerMargin'] = ApiClient.convertToType(data['resellerMargin'], 'String');
             }
+            if (data.hasOwnProperty('requestedStartDate')) {
+                obj['requestedStartDate'] = ApiClient.convertToType(data['requestedStartDate'], 'String');
+            }
+            if (data.hasOwnProperty('startDate')) {
+                obj['startDate'] = ApiClient.convertToType(data['startDate'], 'String');
+            }
+            if (data.hasOwnProperty('endDate')) {
+                obj['endDate'] = ApiClient.convertToType(data['endDate'], 'String');
+            }
+            if (data.hasOwnProperty('serialNumber')) {
+                obj['serialNumber'] = ApiClient.convertToType(data['serialNumber'], 'String');
+            }
             if (data.hasOwnProperty('price')) {
                 obj['price'] = QuoteDetailsResponseProductsInnerPrice.constructFromObject(data['price']);
+            }
+            if (data.hasOwnProperty('billDetails')) {
+                obj['billDetails'] = ApiClient.convertToType(data['billDetails'], [QuoteDetailsResponseProductsInnerBillDetailsInner]);
             }
         }
         return obj;
@@ -168,12 +187,42 @@ class QuoteDetailsResponseProductsInner {
             throw new Error("Expected the field `terms` to be a primitive type in the JSON string but got " + data['terms']);
         }
         // ensure the json data is a string
+        if (data['planDescription'] && !(typeof data['planDescription'] === 'string' || data['planDescription'] instanceof String)) {
+            throw new Error("Expected the field `planDescription` to be a primitive type in the JSON string but got " + data['planDescription']);
+        }
+        // ensure the json data is a string
         if (data['resellerMargin'] && !(typeof data['resellerMargin'] === 'string' || data['resellerMargin'] instanceof String)) {
             throw new Error("Expected the field `resellerMargin` to be a primitive type in the JSON string but got " + data['resellerMargin']);
+        }
+        // ensure the json data is a string
+        if (data['requestedStartDate'] && !(typeof data['requestedStartDate'] === 'string' || data['requestedStartDate'] instanceof String)) {
+            throw new Error("Expected the field `requestedStartDate` to be a primitive type in the JSON string but got " + data['requestedStartDate']);
+        }
+        // ensure the json data is a string
+        if (data['startDate'] && !(typeof data['startDate'] === 'string' || data['startDate'] instanceof String)) {
+            throw new Error("Expected the field `startDate` to be a primitive type in the JSON string but got " + data['startDate']);
+        }
+        // ensure the json data is a string
+        if (data['endDate'] && !(typeof data['endDate'] === 'string' || data['endDate'] instanceof String)) {
+            throw new Error("Expected the field `endDate` to be a primitive type in the JSON string but got " + data['endDate']);
+        }
+        // ensure the json data is a string
+        if (data['serialNumber'] && !(typeof data['serialNumber'] === 'string' || data['serialNumber'] instanceof String)) {
+            throw new Error("Expected the field `serialNumber` to be a primitive type in the JSON string but got " + data['serialNumber']);
         }
         // validate the optional field `price`
         if (data['price']) { // data not null
           QuoteDetailsResponseProductsInnerPrice.validateJSON(data['price']);
+        }
+        if (data['billDetails']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['billDetails'])) {
+                throw new Error("Expected the field `billDetails` to be an array in the JSON data but got " + data['billDetails']);
+            }
+            // validate the optional field `billDetails` (array)
+            for (const item of data['billDetails']) {
+                QuoteDetailsResponseProductsInnerBillDetailsInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -281,6 +330,11 @@ QuoteDetailsResponseProductsInner.prototype['vendorName'] = undefined;
 QuoteDetailsResponseProductsInner.prototype['terms'] = undefined;
 
 /**
+ * @member {String} planDescription
+ */
+QuoteDetailsResponseProductsInner.prototype['planDescription'] = undefined;
+
+/**
  * @member {Boolean} isSubscription
  */
 QuoteDetailsResponseProductsInner.prototype['isSubscription'] = undefined;
@@ -291,9 +345,34 @@ QuoteDetailsResponseProductsInner.prototype['isSubscription'] = undefined;
 QuoteDetailsResponseProductsInner.prototype['resellerMargin'] = undefined;
 
 /**
+ * @member {String} requestedStartDate
+ */
+QuoteDetailsResponseProductsInner.prototype['requestedStartDate'] = undefined;
+
+/**
+ * @member {String} startDate
+ */
+QuoteDetailsResponseProductsInner.prototype['startDate'] = undefined;
+
+/**
+ * @member {String} endDate
+ */
+QuoteDetailsResponseProductsInner.prototype['endDate'] = undefined;
+
+/**
+ * @member {String} serialNumber
+ */
+QuoteDetailsResponseProductsInner.prototype['serialNumber'] = undefined;
+
+/**
  * @member {module:model/QuoteDetailsResponseProductsInnerPrice} price
  */
 QuoteDetailsResponseProductsInner.prototype['price'] = undefined;
+
+/**
+ * @member {Array.<module:model/QuoteDetailsResponseProductsInnerBillDetailsInner>} billDetails
+ */
+QuoteDetailsResponseProductsInner.prototype['billDetails'] = undefined;
 
 
 

@@ -61,8 +61,8 @@ class AsyncOrderCreateDTO {
             if (data.hasOwnProperty('customerOrderNumber')) {
                 obj['customerOrderNumber'] = ApiClient.convertToType(data['customerOrderNumber'], 'String');
             }
-            if (data.hasOwnProperty('endcustomerOrderNumber')) {
-                obj['endcustomerOrderNumber'] = ApiClient.convertToType(data['endcustomerOrderNumber'], 'String');
+            if (data.hasOwnProperty('endCustomerOrderNumber')) {
+                obj['endCustomerOrderNumber'] = ApiClient.convertToType(data['endCustomerOrderNumber'], 'String');
             }
             if (data.hasOwnProperty('notes')) {
                 obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
@@ -125,8 +125,8 @@ class AsyncOrderCreateDTO {
             throw new Error("Expected the field `customerOrderNumber` to be a primitive type in the JSON string but got " + data['customerOrderNumber']);
         }
         // ensure the json data is a string
-        if (data['endcustomerOrderNumber'] && !(typeof data['endcustomerOrderNumber'] === 'string' || data['endcustomerOrderNumber'] instanceof String)) {
-            throw new Error("Expected the field `endcustomerOrderNumber` to be a primitive type in the JSON string but got " + data['endcustomerOrderNumber']);
+        if (data['endCustomerOrderNumber'] && !(typeof data['endCustomerOrderNumber'] === 'string' || data['endCustomerOrderNumber'] instanceof String)) {
+            throw new Error("Expected the field `endCustomerOrderNumber` to be a primitive type in the JSON string but got " + data['endCustomerOrderNumber']);
         }
         // ensure the json data is a string
         if (data['notes'] && !(typeof data['notes'] === 'string' || data['notes'] instanceof String)) {
@@ -227,9 +227,9 @@ AsyncOrderCreateDTO.prototype['customerOrderNumber'] = undefined;
 
 /**
  * The end customer's order number for reference in their system.
- * @member {String} endcustomerOrderNumber
+ * @member {String} endCustomerOrderNumber
  */
-AsyncOrderCreateDTO.prototype['endcustomerOrderNumber'] = undefined;
+AsyncOrderCreateDTO.prototype['endCustomerOrderNumber'] = undefined;
 
 /**
  * Order header level notes.

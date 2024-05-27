@@ -23,8 +23,8 @@ import OrderDetailB2B from '../model/OrderDetailB2B';
 import OrderModifyRequest from '../model/OrderModifyRequest';
 import OrderModifyResponse from '../model/OrderModifyResponse';
 import OrderSearchResponse from '../model/OrderSearchResponse';
-import PostAsyncOrderCreateV7400Response from '../model/PostAsyncOrderCreateV7400Response';
-import PostAsyncOrderCreateV7500Response from '../model/PostAsyncOrderCreateV7500Response';
+import PostCreateorderV7400Response from '../model/PostCreateorderV7400Response';
+import PostCreateorderV7500Response from '../model/PostCreateorderV7500Response';
 
 /**
 * Orders service.
@@ -282,70 +282,6 @@ export default class OrdersApi {
     }
 
     /**
-     * Callback function to receive the result of the postAsyncOrderCreateV7 operation.
-     * @callback module:api/OrdersApi~postAsyncOrderCreateV7Callback
-     * @param {String} error Error message, if any.
-     * @param {module:model/AsyncOrderCreateResponse} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * Async Order Create
-     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
-     * @param {String} iMCustomerNumber Your unique Ingram Micro customer number.
-     * @param {String} iMCountryCode Two-character ISO country code.
-     * @param {String} iMCorrelationID Unique transaction number to identify each transaction accross all the systems.
-     * @param {module:model/AsyncOrderCreateDTO} asyncOrderCreateDTO 
-     * @param {Object} opts Optional parameters
-     * @param {String} [iMSenderID] Unique value used to identify the sender of the transaction.
-     * @param {module:api/OrdersApi~postAsyncOrderCreateV7Callback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/AsyncOrderCreateResponse}
-     */
-    postAsyncOrderCreateV7(iMCustomerNumber, iMCountryCode, iMCorrelationID, asyncOrderCreateDTO, opts, callback) {
-      opts = opts || {};
-      let postBody = asyncOrderCreateDTO;
-      // verify the required parameter 'iMCustomerNumber' is set
-      if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
-        throw new Error("Missing the required parameter 'iMCustomerNumber' when calling postAsyncOrderCreateV7");
-      }
-      // verify the required parameter 'iMCountryCode' is set
-      if (iMCountryCode === undefined || iMCountryCode === null) {
-        throw new Error("Missing the required parameter 'iMCountryCode' when calling postAsyncOrderCreateV7");
-      }
-      // verify the required parameter 'iMCorrelationID' is set
-      if (iMCorrelationID === undefined || iMCorrelationID === null) {
-        throw new Error("Missing the required parameter 'iMCorrelationID' when calling postAsyncOrderCreateV7");
-      }
-      // verify the required parameter 'asyncOrderCreateDTO' is set
-      if (asyncOrderCreateDTO === undefined || asyncOrderCreateDTO === null) {
-        throw new Error("Missing the required parameter 'asyncOrderCreateDTO' when calling postAsyncOrderCreateV7");
-      }
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-        'IM-CustomerNumber': iMCustomerNumber,
-        'IM-CountryCode': iMCountryCode,
-        'IM-SenderID': opts['iMSenderID'],
-        'IM-CorrelationID': iMCorrelationID
-      };
-      let formParams = {
-      };
-
-      let authNames = ['application'];
-      let contentTypes = ['application/json'];
-      let accepts = ['application/json'];
-      let returnType = AsyncOrderCreateResponse;
-      return this.apiClient.callApi(
-        '/resellers/v7/orders', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
      * Callback function to receive the result of the postCreateorderV6 operation.
      * @callback module:api/OrdersApi~postCreateorderV6Callback
      * @param {String} error Error message, if any.
@@ -404,6 +340,70 @@ export default class OrdersApi {
       let returnType = OrderCreateResponse;
       return this.apiClient.callApi(
         '/resellers/v6/orders', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the postCreateorderV7 operation.
+     * @callback module:api/OrdersApi~postCreateorderV7Callback
+     * @param {String} error Error message, if any.
+     * @param {module:model/AsyncOrderCreateResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Create your Order v7
+     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     * @param {String} iMCustomerNumber Your unique Ingram Micro customer number.
+     * @param {String} iMCountryCode Two-character ISO country code.
+     * @param {String} iMCorrelationID Unique transaction number to identify each transaction accross all the systems.
+     * @param {module:model/AsyncOrderCreateDTO} asyncOrderCreateDTO 
+     * @param {Object} opts Optional parameters
+     * @param {String} [iMSenderID] Unique value used to identify the sender of the transaction.
+     * @param {module:api/OrdersApi~postCreateorderV7Callback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/AsyncOrderCreateResponse}
+     */
+    postCreateorderV7(iMCustomerNumber, iMCountryCode, iMCorrelationID, asyncOrderCreateDTO, opts, callback) {
+      opts = opts || {};
+      let postBody = asyncOrderCreateDTO;
+      // verify the required parameter 'iMCustomerNumber' is set
+      if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
+        throw new Error("Missing the required parameter 'iMCustomerNumber' when calling postCreateorderV7");
+      }
+      // verify the required parameter 'iMCountryCode' is set
+      if (iMCountryCode === undefined || iMCountryCode === null) {
+        throw new Error("Missing the required parameter 'iMCountryCode' when calling postCreateorderV7");
+      }
+      // verify the required parameter 'iMCorrelationID' is set
+      if (iMCorrelationID === undefined || iMCorrelationID === null) {
+        throw new Error("Missing the required parameter 'iMCorrelationID' when calling postCreateorderV7");
+      }
+      // verify the required parameter 'asyncOrderCreateDTO' is set
+      if (asyncOrderCreateDTO === undefined || asyncOrderCreateDTO === null) {
+        throw new Error("Missing the required parameter 'asyncOrderCreateDTO' when calling postCreateorderV7");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+        'IM-CustomerNumber': iMCustomerNumber,
+        'IM-CountryCode': iMCountryCode,
+        'IM-SenderID': opts['iMSenderID'],
+        'IM-CorrelationID': iMCorrelationID
+      };
+      let formParams = {
+      };
+
+      let authNames = ['application'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = AsyncOrderCreateResponse;
+      return this.apiClient.callApi(
+        '/resellers/v7/orders', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

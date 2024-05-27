@@ -78,20 +78,20 @@
         done();
       });
     });
-    describe('postAsyncOrderCreateV7', function() {
-      it('should call postAsyncOrderCreateV7 successfully', function(done) {
-        //uncomment below and update the code to test postAsyncOrderCreateV7
-        //instance.postAsyncOrderCreateV7(function(error) {
+    describe('postCreateorderV6', function() {
+      it('should call postCreateorderV6 successfully', function(done) {
+        //uncomment below and update the code to test postCreateorderV6
+        //instance.postCreateorderV6(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('postCreateorderV6', function() {
-      it('should call postCreateorderV6 successfully', function(done) {
-        //uncomment below and update the code to test postCreateorderV6
-        //instance.postCreateorderV6(function(error) {
+    describe('postCreateorderV7', function() {
+      it('should call postCreateorderV7 successfully', function(done) {
+        //uncomment below and update the code to test postCreateorderV7
+        //instance.postCreateorderV7(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

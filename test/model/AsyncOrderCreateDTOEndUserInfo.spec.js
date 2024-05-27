@@ -84,12 +84,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property contactId (base name: "contactId")', function() {
-      // uncomment below and update the code to test the property contactId
-      //var instance = new XiSdkResellers.AsyncOrderCreateDTOEndUserInfo();
-      //expect(instance).to.be();
-    });
-
     it('should have the property addressLine1 (base name: "addressLine1")', function() {
       // uncomment below and update the code to test the property addressLine1
       //var instance = new XiSdkResellers.AsyncOrderCreateDTOEndUserInfo();
@@ -110,6 +104,12 @@
 
     it('should have the property contact (base name: "contact")', function() {
       // uncomment below and update the code to test the property contact
+      //var instance = new XiSdkResellers.AsyncOrderCreateDTOEndUserInfo();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property name3 (base name: "name3")', function() {
+      // uncomment below and update the code to test the property name3
       //var instance = new XiSdkResellers.AsyncOrderCreateDTOEndUserInfo();
       //expect(instance).to.be();
     });

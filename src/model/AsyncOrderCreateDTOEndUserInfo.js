@@ -63,9 +63,6 @@ class AsyncOrderCreateDTOEndUserInfo {
             if (data.hasOwnProperty('name2')) {
                 obj['name2'] = ApiClient.convertToType(data['name2'], 'String');
             }
-            if (data.hasOwnProperty('contactId')) {
-                obj['contactId'] = ApiClient.convertToType(data['contactId'], 'String');
-            }
             if (data.hasOwnProperty('addressLine1')) {
                 obj['addressLine1'] = ApiClient.convertToType(data['addressLine1'], 'String');
             }
@@ -77,6 +74,9 @@ class AsyncOrderCreateDTOEndUserInfo {
             }
             if (data.hasOwnProperty('contact')) {
                 obj['contact'] = ApiClient.convertToType(data['contact'], 'String');
+            }
+            if (data.hasOwnProperty('name3')) {
+                obj['name3'] = ApiClient.convertToType(data['name3'], 'String');
             }
             if (data.hasOwnProperty('city')) {
                 obj['city'] = ApiClient.convertToType(data['city'], 'String');
@@ -130,10 +130,6 @@ class AsyncOrderCreateDTOEndUserInfo {
             throw new Error("Expected the field `name2` to be a primitive type in the JSON string but got " + data['name2']);
         }
         // ensure the json data is a string
-        if (data['contactId'] && !(typeof data['contactId'] === 'string' || data['contactId'] instanceof String)) {
-            throw new Error("Expected the field `contactId` to be a primitive type in the JSON string but got " + data['contactId']);
-        }
-        // ensure the json data is a string
         if (data['addressLine1'] && !(typeof data['addressLine1'] === 'string' || data['addressLine1'] instanceof String)) {
             throw new Error("Expected the field `addressLine1` to be a primitive type in the JSON string but got " + data['addressLine1']);
         }
@@ -148,6 +144,10 @@ class AsyncOrderCreateDTOEndUserInfo {
         // ensure the json data is a string
         if (data['contact'] && !(typeof data['contact'] === 'string' || data['contact'] instanceof String)) {
             throw new Error("Expected the field `contact` to be a primitive type in the JSON string but got " + data['contact']);
+        }
+        // ensure the json data is a string
+        if (data['name3'] && !(typeof data['name3'] === 'string' || data['name3'] instanceof String)) {
+            throw new Error("Expected the field `name3` to be a primitive type in the JSON string but got " + data['name3']);
         }
         // ensure the json data is a string
         if (data['city'] && !(typeof data['city'] === 'string' || data['city'] instanceof String)) {
@@ -215,12 +215,6 @@ AsyncOrderCreateDTOEndUserInfo.prototype['name1'] = undefined;
 AsyncOrderCreateDTOEndUserInfo.prototype['name2'] = undefined;
 
 /**
- * The contact Id for the end user/customer.
- * @member {String} contactId
- */
-AsyncOrderCreateDTOEndUserInfo.prototype['contactId'] = undefined;
-
-/**
  * The address line 1 for the end user/customer.
  * @member {String} addressLine1
  */
@@ -243,6 +237,11 @@ AsyncOrderCreateDTOEndUserInfo.prototype['addressLine3'] = undefined;
  * @member {String} contact
  */
 AsyncOrderCreateDTOEndUserInfo.prototype['contact'] = undefined;
+
+/**
+ * @member {String} name3
+ */
+AsyncOrderCreateDTOEndUserInfo.prototype['name3'] = undefined;
 
 /**
  * The end user/customer's city.

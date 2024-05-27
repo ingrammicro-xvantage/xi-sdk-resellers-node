@@ -15,7 +15,7 @@
 import ApiClient from "../ApiClient";
 import FreightRequest from '../model/FreightRequest';
 import FreightResponse from '../model/FreightResponse';
-import PostAsyncOrderCreateV7500Response from '../model/PostAsyncOrderCreateV7500Response';
+import PostCreateorderV7500Response from '../model/PostCreateorderV7500Response';
 import PostRenewalssearch400Response from '../model/PostRenewalssearch400Response';
 
 /**

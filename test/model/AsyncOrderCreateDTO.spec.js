@@ -66,8 +66,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property endcustomerOrderNumber (base name: "endcustomerOrderNumber")', function() {
-      // uncomment below and update the code to test the property endcustomerOrderNumber
+    it('should have the property endCustomerOrderNumber (base name: "endCustomerOrderNumber")', function() {
+      // uncomment below and update the code to test the property endCustomerOrderNumber
       //var instance = new XiSdkResellers.AsyncOrderCreateDTO();
       //expect(instance).to.be();
     });

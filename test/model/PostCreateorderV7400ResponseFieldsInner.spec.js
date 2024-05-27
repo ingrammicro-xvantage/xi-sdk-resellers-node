@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.PostAsyncOrderCreateV7400Response();
+    instance = new XiSdkResellers.PostCreateorderV7400ResponseFieldsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,28 @@
       object[property] = value;
   }
 
-  describe('PostAsyncOrderCreateV7400Response', function() {
-    it('should create an instance of PostAsyncOrderCreateV7400Response', function() {
-      // uncomment below and update the code to test PostAsyncOrderCreateV7400Response
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7400Response();
-      //expect(instance).to.be.a(XiSdkResellers.PostAsyncOrderCreateV7400Response);
+  describe('PostCreateorderV7400ResponseFieldsInner', function() {
+    it('should create an instance of PostCreateorderV7400ResponseFieldsInner', function() {
+      // uncomment below and update the code to test PostCreateorderV7400ResponseFieldsInner
+      //var instance = new XiSdkResellers.PostCreateorderV7400ResponseFieldsInner();
+      //expect(instance).to.be.a(XiSdkResellers.PostCreateorderV7400ResponseFieldsInner);
     });
 
-    it('should have the property traceid (base name: "traceid")', function() {
-      // uncomment below and update the code to test the property traceid
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7400Response();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property type (base name: "type")', function() {
-      // uncomment below and update the code to test the property type
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7400Response();
+    it('should have the property field (base name: "field")', function() {
+      // uncomment below and update the code to test the property field
+      //var instance = new XiSdkResellers.PostCreateorderV7400ResponseFieldsInner();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7400Response();
+      //var instance = new XiSdkResellers.PostCreateorderV7400ResponseFieldsInner();
       //expect(instance).to.be();
     });
 
-    it('should have the property fields (base name: "fields")', function() {
-      // uncomment below and update the code to test the property fields
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7400Response();
+    it('should have the property value (base name: "value")', function() {
+      // uncomment below and update the code to test the property value
+      //var instance = new XiSdkResellers.PostCreateorderV7400ResponseFieldsInner();
       //expect(instance).to.be();
     });
 

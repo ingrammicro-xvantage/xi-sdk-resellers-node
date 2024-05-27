@@ -1,4 +1,4 @@
-# XiSdkResellers.PostAsyncOrderCreateV7400ResponseFieldsInner
+# XiSdkResellers.PostCreateorderV7400ResponseFieldsInner
 
 ## Properties
 

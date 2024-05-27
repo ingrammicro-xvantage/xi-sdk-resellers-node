@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.PostAsyncOrderCreateV7400ResponseFieldsInner();
+    instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,28 +47,22 @@
       object[property] = value;
   }
 
-  describe('PostAsyncOrderCreateV7400ResponseFieldsInner', function() {
-    it('should create an instance of PostAsyncOrderCreateV7400ResponseFieldsInner', function() {
-      // uncomment below and update the code to test PostAsyncOrderCreateV7400ResponseFieldsInner
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7400ResponseFieldsInner();
-      //expect(instance).to.be.a(XiSdkResellers.PostAsyncOrderCreateV7400ResponseFieldsInner);
+  describe('QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner', function() {
+    it('should create an instance of QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner', function() {
+      // uncomment below and update the code to test QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner);
     });
 
-    it('should have the property field (base name: "field")', function() {
-      // uncomment below and update the code to test the property field
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7400ResponseFieldsInner();
+    it('should have the property extraFeesDescription (base name: "extraFeesDescription")', function() {
+      // uncomment below and update the code to test the property extraFeesDescription
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner();
       //expect(instance).to.be();
     });
 
-    it('should have the property message (base name: "message")', function() {
-      // uncomment below and update the code to test the property message
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7400ResponseFieldsInner();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property value (base name: "value")', function() {
-      // uncomment below and update the code to test the property value
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7400ResponseFieldsInner();
+    it('should have the property extraFeesAmount (base name: "extraFeesAmount")', function() {
+      // uncomment below and update the code to test the property extraFeesAmount
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner();
       //expect(instance).to.be();
     });
 

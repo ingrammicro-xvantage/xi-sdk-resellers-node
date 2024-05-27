@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
+    instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerBillDetailsInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,34 @@
       object[property] = value;
   }
 
-  describe('PostAsyncOrderCreateV7500Response', function() {
-    it('should create an instance of PostAsyncOrderCreateV7500Response', function() {
-      // uncomment below and update the code to test PostAsyncOrderCreateV7500Response
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
-      //expect(instance).to.be.a(XiSdkResellers.PostAsyncOrderCreateV7500Response);
-    });
-
-    it('should have the property traceid (base name: "traceid")', function() {
-      // uncomment below and update the code to test the property traceid
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
-      //expect(instance).to.be();
+  describe('QuoteDetailsResponseProductsInnerBillDetailsInner', function() {
+    it('should create an instance of QuoteDetailsResponseProductsInnerBillDetailsInner', function() {
+      // uncomment below and update the code to test QuoteDetailsResponseProductsInnerBillDetailsInner
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerBillDetailsInner();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteDetailsResponseProductsInnerBillDetailsInner);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerBillDetailsInner();
       //expect(instance).to.be();
     });
 
-    it('should have the property message (base name: "message")', function() {
-      // uncomment below and update the code to test the property message
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
+    it('should have the property unit (base name: "unit")', function() {
+      // uncomment below and update the code to test the property unit
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerBillDetailsInner();
       //expect(instance).to.be();
     });
 
-    it('should have the property fields (base name: "fields")', function() {
-      // uncomment below and update the code to test the property fields
-      //var instance = new XiSdkResellers.PostAsyncOrderCreateV7500Response();
+    it('should have the property frequency (base name: "frequency")', function() {
+      // uncomment below and update the code to test the property frequency
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerBillDetailsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property unitValue (base name: "unitValue")', function() {
+      // uncomment below and update the code to test the property unitValue
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerBillDetailsInner();
       //expect(instance).to.be();
     });
 

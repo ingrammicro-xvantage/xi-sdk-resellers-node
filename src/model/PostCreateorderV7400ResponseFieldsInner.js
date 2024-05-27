@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The PostAsyncOrderCreateV7400ResponseFieldsInner model module.
- * @module model/PostAsyncOrderCreateV7400ResponseFieldsInner
+ * The PostCreateorderV7400ResponseFieldsInner model module.
+ * @module model/PostCreateorderV7400ResponseFieldsInner
  * @version 1.0.0
  */
-class PostAsyncOrderCreateV7400ResponseFieldsInner {
+class PostCreateorderV7400ResponseFieldsInner {
     /**
-     * Constructs a new <code>PostAsyncOrderCreateV7400ResponseFieldsInner</code>.
-     * @alias module:model/PostAsyncOrderCreateV7400ResponseFieldsInner
+     * Constructs a new <code>PostCreateorderV7400ResponseFieldsInner</code>.
+     * @alias module:model/PostCreateorderV7400ResponseFieldsInner
      */
     constructor() { 
         
-        PostAsyncOrderCreateV7400ResponseFieldsInner.initialize(this);
+        PostCreateorderV7400ResponseFieldsInner.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class PostAsyncOrderCreateV7400ResponseFieldsInner {
     }
 
     /**
-     * Constructs a <code>PostAsyncOrderCreateV7400ResponseFieldsInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>PostCreateorderV7400ResponseFieldsInner</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/PostAsyncOrderCreateV7400ResponseFieldsInner} obj Optional instance to populate.
-     * @return {module:model/PostAsyncOrderCreateV7400ResponseFieldsInner} The populated <code>PostAsyncOrderCreateV7400ResponseFieldsInner</code> instance.
+     * @param {module:model/PostCreateorderV7400ResponseFieldsInner} obj Optional instance to populate.
+     * @return {module:model/PostCreateorderV7400ResponseFieldsInner} The populated <code>PostCreateorderV7400ResponseFieldsInner</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new PostAsyncOrderCreateV7400ResponseFieldsInner();
+            obj = obj || new PostCreateorderV7400ResponseFieldsInner();
 
             if (data.hasOwnProperty('field')) {
                 obj['field'] = ApiClient.convertToType(data['field'], 'String');
@@ -61,9 +61,9 @@ class PostAsyncOrderCreateV7400ResponseFieldsInner {
     }
 
     /**
-     * Validates the JSON data with respect to <code>PostAsyncOrderCreateV7400ResponseFieldsInner</code>.
+     * Validates the JSON data with respect to <code>PostCreateorderV7400ResponseFieldsInner</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PostAsyncOrderCreateV7400ResponseFieldsInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PostCreateorderV7400ResponseFieldsInner</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -91,24 +91,24 @@ class PostAsyncOrderCreateV7400ResponseFieldsInner {
  * Name of the field.
  * @member {String} field
  */
-PostAsyncOrderCreateV7400ResponseFieldsInner.prototype['field'] = undefined;
+PostCreateorderV7400ResponseFieldsInner.prototype['field'] = undefined;
 
 /**
  * A filed level error message.
  * @member {String} message
  */
-PostAsyncOrderCreateV7400ResponseFieldsInner.prototype['message'] = undefined;
+PostCreateorderV7400ResponseFieldsInner.prototype['message'] = undefined;
 
 /**
  * Value of the message.
  * @member {String} value
  */
-PostAsyncOrderCreateV7400ResponseFieldsInner.prototype['value'] = undefined;
+PostCreateorderV7400ResponseFieldsInner.prototype['value'] = undefined;
 
 
 
 
 
 
-export default PostAsyncOrderCreateV7400ResponseFieldsInner;
+export default PostCreateorderV7400ResponseFieldsInner;
 

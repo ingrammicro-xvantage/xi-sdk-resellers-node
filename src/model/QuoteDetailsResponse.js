@@ -15,7 +15,9 @@ import ApiClient from '../ApiClient';
 import QuoteDetailsResponseAdditionalAttributesInner from './QuoteDetailsResponseAdditionalAttributesInner';
 import QuoteDetailsResponseEndUserInfo from './QuoteDetailsResponseEndUserInfo';
 import QuoteDetailsResponseProductsInner from './QuoteDetailsResponseProductsInner';
+import QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner from './QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner';
 import QuoteDetailsResponseResellerInfo from './QuoteDetailsResponseResellerInfo';
+import QuoteDetailsResponseShippingInfo from './QuoteDetailsResponseShippingInfo';
 
 /**
  * The QuoteDetailsResponse model module.
@@ -57,6 +59,9 @@ class QuoteDetailsResponse {
             if (data.hasOwnProperty('quoteNumber')) {
                 obj['quoteNumber'] = ApiClient.convertToType(data['quoteNumber'], 'String');
             }
+            if (data.hasOwnProperty('quoteGuid')) {
+                obj['quoteGuid'] = ApiClient.convertToType(data['quoteGuid'], 'String');
+            }
             if (data.hasOwnProperty('revision')) {
                 obj['revision'] = ApiClient.convertToType(data['revision'], 'String');
             }
@@ -81,8 +86,14 @@ class QuoteDetailsResponse {
             if (data.hasOwnProperty('specialBidExpirationDate')) {
                 obj['specialBidExpirationDate'] = ApiClient.convertToType(data['specialBidExpirationDate'], 'String');
             }
+            if (data.hasOwnProperty('vendorQuoteNumber')) {
+                obj['vendorQuoteNumber'] = ApiClient.convertToType(data['vendorQuoteNumber'], 'String');
+            }
             if (data.hasOwnProperty('status')) {
                 obj['status'] = ApiClient.convertToType(data['status'], 'String');
+            }
+            if (data.hasOwnProperty('statusReason')) {
+                obj['statusReason'] = ApiClient.convertToType(data['statusReason'], 'String');
             }
             if (data.hasOwnProperty('closingReason')) {
                 obj['closingReason'] = ApiClient.convertToType(data['closingReason'], 'String');
@@ -114,14 +125,23 @@ class QuoteDetailsResponse {
             if (data.hasOwnProperty('leasingInstructions')) {
                 obj['leasingInstructions'] = ApiClient.convertToType(data['leasingInstructions'], 'String');
             }
-            if (data.hasOwnProperty('quoteSubType')) {
-                obj['quoteSubType'] = ApiClient.convertToType(data['quoteSubType'], 'String');
+            if (data.hasOwnProperty('imWarehouse')) {
+                obj['imWarehouse'] = ApiClient.convertToType(data['imWarehouse'], 'String');
+            }
+            if (data.hasOwnProperty('imWarehouseGstNumber')) {
+                obj['imWarehouseGstNumber'] = ApiClient.convertToType(data['imWarehouseGstNumber'], 'String');
+            }
+            if (data.hasOwnProperty('paymentTermsName')) {
+                obj['paymentTermsName'] = ApiClient.convertToType(data['paymentTermsName'], 'String');
             }
             if (data.hasOwnProperty('resellerInfo')) {
                 obj['resellerInfo'] = QuoteDetailsResponseResellerInfo.constructFromObject(data['resellerInfo']);
             }
             if (data.hasOwnProperty('endUserInfo')) {
                 obj['endUserInfo'] = QuoteDetailsResponseEndUserInfo.constructFromObject(data['endUserInfo']);
+            }
+            if (data.hasOwnProperty('shippingInfo')) {
+                obj['shippingInfo'] = QuoteDetailsResponseShippingInfo.constructFromObject(data['shippingInfo']);
             }
             if (data.hasOwnProperty('products')) {
                 obj['products'] = ApiClient.convertToType(data['products'], [QuoteDetailsResponseProductsInner]);
@@ -135,8 +155,20 @@ class QuoteDetailsResponse {
             if (data.hasOwnProperty('quantityTotal')) {
                 obj['quantityTotal'] = ApiClient.convertToType(data['quantityTotal'], 'Number');
             }
+            if (data.hasOwnProperty('extraFeesTotal')) {
+                obj['extraFeesTotal'] = ApiClient.convertToType(data['extraFeesTotal'], 'Number');
+            }
+            if (data.hasOwnProperty('extraFeesTotalDetails')) {
+                obj['extraFeesTotalDetails'] = ApiClient.convertToType(data['extraFeesTotalDetails'], [QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner]);
+            }
+            if (data.hasOwnProperty('taxTotal')) {
+                obj['taxTotal'] = ApiClient.convertToType(data['taxTotal'], 'Number');
+            }
             if (data.hasOwnProperty('extendedQuotePriceTotal')) {
                 obj['extendedQuotePriceTotal'] = ApiClient.convertToType(data['extendedQuotePriceTotal'], 'Number');
+            }
+            if (data.hasOwnProperty('freightAmount')) {
+                obj['freightAmount'] = ApiClient.convertToType(data['freightAmount'], 'Number');
             }
             if (data.hasOwnProperty('totalQuoteAmount')) {
                 obj['totalQuoteAmount'] = ApiClient.convertToType(data['totalQuoteAmount'], 'String');
@@ -161,6 +193,10 @@ class QuoteDetailsResponse {
         // ensure the json data is a string
         if (data['quoteNumber'] && !(typeof data['quoteNumber'] === 'string' || data['quoteNumber'] instanceof String)) {
             throw new Error("Expected the field `quoteNumber` to be a primitive type in the JSON string but got " + data['quoteNumber']);
+        }
+        // ensure the json data is a string
+        if (data['quoteGuid'] && !(typeof data['quoteGuid'] === 'string' || data['quoteGuid'] instanceof String)) {
+            throw new Error("Expected the field `quoteGuid` to be a primitive type in the JSON string but got " + data['quoteGuid']);
         }
         // ensure the json data is a string
         if (data['revision'] && !(typeof data['revision'] === 'string' || data['revision'] instanceof String)) {
@@ -195,8 +231,16 @@ class QuoteDetailsResponse {
             throw new Error("Expected the field `specialBidExpirationDate` to be a primitive type in the JSON string but got " + data['specialBidExpirationDate']);
         }
         // ensure the json data is a string
+        if (data['vendorQuoteNumber'] && !(typeof data['vendorQuoteNumber'] === 'string' || data['vendorQuoteNumber'] instanceof String)) {
+            throw new Error("Expected the field `vendorQuoteNumber` to be a primitive type in the JSON string but got " + data['vendorQuoteNumber']);
+        }
+        // ensure the json data is a string
         if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
             throw new Error("Expected the field `status` to be a primitive type in the JSON string but got " + data['status']);
+        }
+        // ensure the json data is a string
+        if (data['statusReason'] && !(typeof data['statusReason'] === 'string' || data['statusReason'] instanceof String)) {
+            throw new Error("Expected the field `statusReason` to be a primitive type in the JSON string but got " + data['statusReason']);
         }
         // ensure the json data is a string
         if (data['closingReason'] && !(typeof data['closingReason'] === 'string' || data['closingReason'] instanceof String)) {
@@ -239,8 +283,16 @@ class QuoteDetailsResponse {
             throw new Error("Expected the field `leasingInstructions` to be a primitive type in the JSON string but got " + data['leasingInstructions']);
         }
         // ensure the json data is a string
-        if (data['quoteSubType'] && !(typeof data['quoteSubType'] === 'string' || data['quoteSubType'] instanceof String)) {
-            throw new Error("Expected the field `quoteSubType` to be a primitive type in the JSON string but got " + data['quoteSubType']);
+        if (data['imWarehouse'] && !(typeof data['imWarehouse'] === 'string' || data['imWarehouse'] instanceof String)) {
+            throw new Error("Expected the field `imWarehouse` to be a primitive type in the JSON string but got " + data['imWarehouse']);
+        }
+        // ensure the json data is a string
+        if (data['imWarehouseGstNumber'] && !(typeof data['imWarehouseGstNumber'] === 'string' || data['imWarehouseGstNumber'] instanceof String)) {
+            throw new Error("Expected the field `imWarehouseGstNumber` to be a primitive type in the JSON string but got " + data['imWarehouseGstNumber']);
+        }
+        // ensure the json data is a string
+        if (data['paymentTermsName'] && !(typeof data['paymentTermsName'] === 'string' || data['paymentTermsName'] instanceof String)) {
+            throw new Error("Expected the field `paymentTermsName` to be a primitive type in the JSON string but got " + data['paymentTermsName']);
         }
         // validate the optional field `resellerInfo`
         if (data['resellerInfo']) { // data not null
@@ -250,6 +302,10 @@ class QuoteDetailsResponse {
         if (data['endUserInfo']) { // data not null
           QuoteDetailsResponseEndUserInfo.validateJSON(data['endUserInfo']);
         }
+        // validate the optional field `shippingInfo`
+        if (data['shippingInfo']) { // data not null
+          QuoteDetailsResponseShippingInfo.validateJSON(data['shippingInfo']);
+        }
         if (data['products']) { // data not null
             // ensure the json data is an array
             if (!Array.isArray(data['products'])) {
@@ -258,6 +314,16 @@ class QuoteDetailsResponse {
             // validate the optional field `products` (array)
             for (const item of data['products']) {
                 QuoteDetailsResponseProductsInner.validateJSON(item);
+            };
+        }
+        if (data['extraFeesTotalDetails']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['extraFeesTotalDetails'])) {
+                throw new Error("Expected the field `extraFeesTotalDetails` to be an array in the JSON data but got " + data['extraFeesTotalDetails']);
+            }
+            // validate the optional field `extraFeesTotalDetails` (array)
+            for (const item of data['extraFeesTotalDetails']) {
+                QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner.validateJSON(item);
             };
         }
         // ensure the json data is a string
@@ -294,6 +360,11 @@ QuoteDetailsResponse.prototype['quoteName'] = undefined;
  * @member {String} quoteNumber
  */
 QuoteDetailsResponse.prototype['quoteNumber'] = undefined;
+
+/**
+ * @member {String} quoteGuid
+ */
+QuoteDetailsResponse.prototype['quoteGuid'] = undefined;
 
 /**
  * When a quote has been revised and updated, the quote number remains the same throughout the lifecycle of the quote, however, a Revision number is updated for each revision of the quote.  The revision numbers is associated with the Unique Quote Number.
@@ -344,10 +415,20 @@ QuoteDetailsResponse.prototype['specialBidEffectiveDate'] = undefined;
 QuoteDetailsResponse.prototype['specialBidExpirationDate'] = undefined;
 
 /**
+ * @member {String} vendorQuoteNumber
+ */
+QuoteDetailsResponse.prototype['vendorQuoteNumber'] = undefined;
+
+/**
  * This refers to the primary status of the quote.  API responses will return
  * @member {String} status
  */
 QuoteDetailsResponse.prototype['status'] = undefined;
+
+/**
+ * @member {String} statusReason
+ */
+QuoteDetailsResponse.prototype['statusReason'] = undefined;
 
 /**
  * Closing Reason for quote.
@@ -408,9 +489,21 @@ QuoteDetailsResponse.prototype['leaseInfo'] = undefined;
 QuoteDetailsResponse.prototype['leasingInstructions'] = undefined;
 
 /**
- * @member {String} quoteSubType
+ * Warehouse name and Address
+ * @member {String} imWarehouse
  */
-QuoteDetailsResponse.prototype['quoteSubType'] = undefined;
+QuoteDetailsResponse.prototype['imWarehouse'] = undefined;
+
+/**
+ * Warehouse GST Number
+ * @member {String} imWarehouseGstNumber
+ */
+QuoteDetailsResponse.prototype['imWarehouseGstNumber'] = undefined;
+
+/**
+ * @member {String} paymentTermsName
+ */
+QuoteDetailsResponse.prototype['paymentTermsName'] = undefined;
 
 /**
  * @member {module:model/QuoteDetailsResponseResellerInfo} resellerInfo
@@ -421,6 +514,11 @@ QuoteDetailsResponse.prototype['resellerInfo'] = undefined;
  * @member {module:model/QuoteDetailsResponseEndUserInfo} endUserInfo
  */
 QuoteDetailsResponse.prototype['endUserInfo'] = undefined;
+
+/**
+ * @member {module:model/QuoteDetailsResponseShippingInfo} shippingInfo
+ */
+QuoteDetailsResponse.prototype['shippingInfo'] = undefined;
 
 /**
  * @member {Array.<module:model/QuoteDetailsResponseProductsInner>} products
@@ -446,10 +544,30 @@ QuoteDetailsResponse.prototype['extendedMsrpTotal'] = undefined;
 QuoteDetailsResponse.prototype['quantityTotal'] = undefined;
 
 /**
+ * @member {Number} extraFeesTotal
+ */
+QuoteDetailsResponse.prototype['extraFeesTotal'] = undefined;
+
+/**
+ * @member {Array.<module:model/QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner>} extraFeesTotalDetails
+ */
+QuoteDetailsResponse.prototype['extraFeesTotalDetails'] = undefined;
+
+/**
+ * @member {Number} taxTotal
+ */
+QuoteDetailsResponse.prototype['taxTotal'] = undefined;
+
+/**
  * Total amount of quoted price for all products in the quote including both solution products and suggested products.
  * @member {Number} extendedQuotePriceTotal
  */
 QuoteDetailsResponse.prototype['extendedQuotePriceTotal'] = undefined;
+
+/**
+ * @member {Number} freightAmount
+ */
+QuoteDetailsResponse.prototype['freightAmount'] = undefined;
 
 /**
  * @member {String} totalQuoteAmount

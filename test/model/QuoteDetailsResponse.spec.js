@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property quoteGuid (base name: "quoteGuid")', function() {
+      // uncomment below and update the code to test the property quoteGuid
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property revision (base name: "revision")', function() {
       // uncomment below and update the code to test the property revision
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
@@ -114,8 +120,20 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property vendorQuoteNumber (base name: "vendorQuoteNumber")', function() {
+      // uncomment below and update the code to test the property vendorQuoteNumber
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property statusReason (base name: "statusReason")', function() {
+      // uncomment below and update the code to test the property statusReason
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
       //expect(instance).to.be();
     });
@@ -180,8 +198,20 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property quoteSubType (base name: "quoteSubType")', function() {
-      // uncomment below and update the code to test the property quoteSubType
+    it('should have the property imWarehouse (base name: "imWarehouse")', function() {
+      // uncomment below and update the code to test the property imWarehouse
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property imWarehouseGstNumber (base name: "imWarehouseGstNumber")', function() {
+      // uncomment below and update the code to test the property imWarehouseGstNumber
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property paymentTermsName (base name: "paymentTermsName")', function() {
+      // uncomment below and update the code to test the property paymentTermsName
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
       //expect(instance).to.be();
     });
@@ -194,6 +224,12 @@
 
     it('should have the property endUserInfo (base name: "endUserInfo")', function() {
       // uncomment below and update the code to test the property endUserInfo
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property shippingInfo (base name: "shippingInfo")', function() {
+      // uncomment below and update the code to test the property shippingInfo
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
       //expect(instance).to.be();
     });
@@ -222,8 +258,32 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property extraFeesTotal (base name: "extraFeesTotal")', function() {
+      // uncomment below and update the code to test the property extraFeesTotal
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property extraFeesTotalDetails (base name: "extraFeesTotalDetails")', function() {
+      // uncomment below and update the code to test the property extraFeesTotalDetails
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property taxTotal (base name: "taxTotal")', function() {
+      // uncomment below and update the code to test the property taxTotal
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property extendedQuotePriceTotal (base name: "extendedQuotePriceTotal")', function() {
       // uncomment below and update the code to test the property extendedQuotePriceTotal
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property freightAmount (base name: "freightAmount")', function() {
+      // uncomment below and update the code to test the property freightAmount
       //var instance = new XiSdkResellers.QuoteDetailsResponse();
       //expect(instance).to.be();
     });

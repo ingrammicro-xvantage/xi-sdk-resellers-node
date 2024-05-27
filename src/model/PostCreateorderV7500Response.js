@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The PostAsyncOrderCreateV7500Response model module.
- * @module model/PostAsyncOrderCreateV7500Response
+ * The PostCreateorderV7500Response model module.
+ * @module model/PostCreateorderV7500Response
  * @version 1.0.0
  */
-class PostAsyncOrderCreateV7500Response {
+class PostCreateorderV7500Response {
     /**
-     * Constructs a new <code>PostAsyncOrderCreateV7500Response</code>.
-     * @alias module:model/PostAsyncOrderCreateV7500Response
+     * Constructs a new <code>PostCreateorderV7500Response</code>.
+     * @alias module:model/PostCreateorderV7500Response
      */
     constructor() { 
         
-        PostAsyncOrderCreateV7500Response.initialize(this);
+        PostCreateorderV7500Response.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class PostAsyncOrderCreateV7500Response {
     }
 
     /**
-     * Constructs a <code>PostAsyncOrderCreateV7500Response</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>PostCreateorderV7500Response</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/PostAsyncOrderCreateV7500Response} obj Optional instance to populate.
-     * @return {module:model/PostAsyncOrderCreateV7500Response} The populated <code>PostAsyncOrderCreateV7500Response</code> instance.
+     * @param {module:model/PostCreateorderV7500Response} obj Optional instance to populate.
+     * @return {module:model/PostCreateorderV7500Response} The populated <code>PostCreateorderV7500Response</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new PostAsyncOrderCreateV7500Response();
+            obj = obj || new PostCreateorderV7500Response();
 
             if (data.hasOwnProperty('traceid')) {
                 obj['traceid'] = ApiClient.convertToType(data['traceid'], 'String');
@@ -64,9 +64,9 @@ class PostAsyncOrderCreateV7500Response {
     }
 
     /**
-     * Validates the JSON data with respect to <code>PostAsyncOrderCreateV7500Response</code>.
+     * Validates the JSON data with respect to <code>PostCreateorderV7500Response</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PostAsyncOrderCreateV7500Response</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PostCreateorderV7500Response</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -98,29 +98,29 @@ class PostAsyncOrderCreateV7500Response {
  * Unique Id to identify error.
  * @member {String} traceid
  */
-PostAsyncOrderCreateV7500Response.prototype['traceid'] = undefined;
+PostCreateorderV7500Response.prototype['traceid'] = undefined;
 
 /**
  * Describes the type of the error.
  * @member {String} type
  */
-PostAsyncOrderCreateV7500Response.prototype['type'] = undefined;
+PostCreateorderV7500Response.prototype['type'] = undefined;
 
 /**
  * Describes the error message.
  * @member {String} message
  */
-PostAsyncOrderCreateV7500Response.prototype['message'] = undefined;
+PostCreateorderV7500Response.prototype['message'] = undefined;
 
 /**
  * @member {Array.<Object>} fields
  */
-PostAsyncOrderCreateV7500Response.prototype['fields'] = undefined;
+PostCreateorderV7500Response.prototype['fields'] = undefined;
 
 
 
 
 
 
-export default PostAsyncOrderCreateV7500Response;
+export default PostCreateorderV7500Response;
 
