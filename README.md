@@ -90,7 +90,7 @@ module: {
 
 ## Getting Started
 
-Please follow the [installation](#installation) instruction and execute the following JS code:
+Quickstart on creating an application can be found [here](getting-started.md)
 
 ```javascript
 var XiSdkResellers = require('xi_sdk_resellers');
