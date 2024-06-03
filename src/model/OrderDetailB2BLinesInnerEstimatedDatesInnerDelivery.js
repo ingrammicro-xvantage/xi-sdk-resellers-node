@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -60,8 +60,8 @@ class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
             if (data.hasOwnProperty('deliveryDescription')) {
                 obj['deliveryDescription'] = ApiClient.convertToType(data['deliveryDescription'], 'String');
             }
-            if (data.hasOwnProperty('deliveredDate')) {
-                obj['deliveredDate'] = ApiClient.convertToType(data['deliveredDate'], 'String');
+            if (data.hasOwnProperty('deliveryDate')) {
+                obj['deliveryDate'] = ApiClient.convertToType(data['deliveryDate'], 'String');
             }
         }
         return obj;
@@ -90,8 +90,8 @@ class OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery {
             throw new Error("Expected the field `deliveryDescription` to be a primitive type in the JSON string but got " + data['deliveryDescription']);
         }
         // ensure the json data is a string
-        if (data['deliveredDate'] && !(typeof data['deliveredDate'] === 'string' || data['deliveredDate'] instanceof String)) {
-            throw new Error("Expected the field `deliveredDate` to be a primitive type in the JSON string but got " + data['deliveredDate']);
+        if (data['deliveryDate'] && !(typeof data['deliveryDate'] === 'string' || data['deliveryDate'] instanceof String)) {
+            throw new Error("Expected the field `deliveryDate` to be a primitive type in the JSON string but got " + data['deliveryDate']);
         }
 
         return true;
@@ -127,9 +127,9 @@ OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery.prototype['deliveryDescripti
 
 /**
  * Delivery date.
- * @member {String} deliveredDate
+ * @member {String} deliveryDate
  */
-OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery.prototype['deliveredDate'] = undefined;
+OrderDetailB2BLinesInnerEstimatedDatesInnerDelivery.prototype['deliveryDate'] = undefined;
 
 
 

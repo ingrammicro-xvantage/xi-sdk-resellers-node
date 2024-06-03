@@ -28,12 +28,12 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.ProductCatalogApi();
-let ingramPartNumber = 6YE881; // String | Ingram Micro unique part number for the product
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems
+let ingramPartNumber = "6YE881"; // String | Ingram Micro unique part number for the product
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction accross all the systems
 let opts = {
-  'iMSenderID': MyCompany // String | Sender Identification text
+  'iMSenderID': "MyCompany" // String | Sender Identification text
 };
 apiInstance.getResellerV6Productdetail(ingramPartNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
   if (error) {
@@ -87,22 +87,22 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.ProductCatalogApi();
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems
-let iMCountryCode = US; // String | Two-character ISO country code.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction accross all the systems
+let iMCountryCode = "US"; // String | Two-character ISO country code.
 let opts = {
   'pageNumber': 56, // Number | Current page number. Default is 1
   'pageSize': 56, // Number | Number of records required in the call - max records 100 per page
-  'iMSenderID': MyCompany, // String | Sender Identification text
+  'iMSenderID': "MyCompany", // String | Sender Identification text
   'type': "type_example", // String | The SKU type of product. One of Physical, Digital, or Any.
-  'hasDiscounts': true, // String | Specifies if there are discounts available for the product.
+  'hasDiscounts': "true", // String | Specifies if there are discounts available for the product.
   'vendor': ["null"], // [String] | The name of the vendor/manufacturer of the product.
   'vendorPartNumber': ["null"], // [String] | The vendors part number for the product.
   'acceptLanguage': "'en'", // String | Header to the API calls, the content will help us identify the response language.
   'vendorNumber': "vendorNumber_example", // String | Vendor number of the product
   'keyword': ["null"], // [String] | Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name.
-  'category': Accessories, // String | The category of the product. Example: Displays.
-  'skipAuthorisation': true // String | This parameter is True when you want Skip the authorization, so template will work like current B2b template.
+  'category': "Accessories", // String | The category of the product. Example: Displays.
+  'skipAuthorisation': "true" // String | This parameter is True when you want Skip the authorization, so template will work like current B2b template.
 };
 apiInstance.getResellerV6Productsearch(iMCustomerNumber, iMCorrelationID, iMCountryCode, opts, (error, data, response) => {
   if (error) {
@@ -168,13 +168,13 @@ application.accessToken = 'YOUR ACCESS TOKEN';
 let apiInstance = new XiSdkResellers.ProductCatalogApi();
 let includeAvailability = true; // Boolean | Pass boolean value as input, if true the response will contain warehouse availability details, if false the response will not hold warehouse availability details
 let includePricing = true; // Boolean | Pass boolean value as input, if true the response will contain Pricing details of the Product, if false the response will not hold Pricing details.
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
 let priceAndAvailabilityRequest = {"products":[{"ingramPartNumber":"123512"}]}; // PriceAndAvailabilityRequest | 
 let opts = {
   'includeProductAttributes': true, // Boolean | Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details.
-  'iMSenderID': MyCompany // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'iMSenderID': "MyCompany" // String | Unique value used to identify the sender of the transaction. Example: MyCompany
 };
 apiInstance.postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, priceAndAvailabilityRequest, opts, (error, data, response) => {
   if (error) {

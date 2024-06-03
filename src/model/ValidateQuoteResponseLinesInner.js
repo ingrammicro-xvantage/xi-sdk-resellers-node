@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner from './QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner';
+import ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner from './ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner';
 
 /**
  * The ValidateQuoteResponseLinesInner model module.
@@ -55,10 +55,10 @@ class ValidateQuoteResponseLinesInner {
                 obj['ingramPartNumber'] = ApiClient.convertToType(data['ingramPartNumber'], 'String');
             }
             if (data.hasOwnProperty('quantity')) {
-                obj['quantity'] = ApiClient.convertToType(data['quantity'], 'String');
+                obj['quantity'] = ApiClient.convertToType(data['quantity'], 'Number');
             }
             if (data.hasOwnProperty('vmfAdditionalAttributesLines')) {
-                obj['vmfAdditionalAttributesLines'] = ApiClient.convertToType(data['vmfAdditionalAttributesLines'], [QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner]);
+                obj['vmfAdditionalAttributesLines'] = ApiClient.convertToType(data['vmfAdditionalAttributesLines'], [ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner]);
             }
         }
         return obj;
@@ -78,10 +78,6 @@ class ValidateQuoteResponseLinesInner {
         if (data['ingramPartNumber'] && !(typeof data['ingramPartNumber'] === 'string' || data['ingramPartNumber'] instanceof String)) {
             throw new Error("Expected the field `ingramPartNumber` to be a primitive type in the JSON string but got " + data['ingramPartNumber']);
         }
-        // ensure the json data is a string
-        if (data['quantity'] && !(typeof data['quantity'] === 'string' || data['quantity'] instanceof String)) {
-            throw new Error("Expected the field `quantity` to be a primitive type in the JSON string but got " + data['quantity']);
-        }
         if (data['vmfAdditionalAttributesLines']) { // data not null
             // ensure the json data is an array
             if (!Array.isArray(data['vmfAdditionalAttributesLines'])) {
@@ -89,7 +85,7 @@ class ValidateQuoteResponseLinesInner {
             }
             // validate the optional field `vmfAdditionalAttributesLines` (array)
             for (const item of data['vmfAdditionalAttributesLines']) {
-                QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner.validateJSON(item);
+                ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.validateJSON(item);
             };
         }
 
@@ -115,13 +111,13 @@ ValidateQuoteResponseLinesInner.prototype['ingramPartNumber'] = undefined;
 
 /**
  * The quantity of the line item.
- * @member {String} quantity
+ * @member {Number} quantity
  */
 ValidateQuoteResponseLinesInner.prototype['quantity'] = undefined;
 
 /**
  * The object containing the list of fields required at a line level by the vendor.
- * @member {Array.<module:model/QuoteToOrderDetailsDTOLinesInnerVmfAdditionalAttributesLinesInner>} vmfAdditionalAttributesLines
+ * @member {Array.<module:model/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner>} vmfAdditionalAttributesLines
  */
 ValidateQuoteResponseLinesInner.prototype['vmfAdditionalAttributesLines'] = undefined;
 

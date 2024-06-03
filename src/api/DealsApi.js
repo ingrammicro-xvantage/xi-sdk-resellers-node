@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -15,7 +15,7 @@
 import ApiClient from "../ApiClient";
 import DealsDetailsResponse from '../model/DealsDetailsResponse';
 import DealsSearchResponse from '../model/DealsSearchResponse';
-import GetResellerV6ValidateQuote500Response from '../model/GetResellerV6ValidateQuote500Response';
+import PostCreateorderV7500Response from '../model/PostCreateorderV7500Response';
 import PostRenewalssearch400Response from '../model/PostRenewalssearch400Response';
 
 /**
@@ -129,6 +129,8 @@ export default class DealsApi {
      * @param {String} [endUser] The end user/customer's name.
      * @param {String} [vendor] The vendor's name.
      * @param {String} [dealId] Deal/Special bid number.
+     * @param {Number} [size] The number of records required in the call - max records 100 per page.
+     * @param {Number} [page] The page number reference.
      * @param {module:api/DealsApi~getResellersV6DealssearchCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/DealsSearchResponse}
      */
@@ -153,7 +155,9 @@ export default class DealsApi {
       let queryParams = {
         'endUser': opts['endUser'],
         'vendor': opts['vendor'],
-        'dealId': opts['dealId']
+        'dealId': opts['dealId'],
+        'Size': opts['size'],
+        'Page': opts['page']
       };
       let headerParams = {
         'IM-CustomerNumber': iMCustomerNumber,

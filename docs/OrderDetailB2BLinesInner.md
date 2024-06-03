@@ -35,5 +35,6 @@ Name | Type | Description | Notes
 **estimatedDates** | [**[OrderDetailB2BLinesInnerEstimatedDatesInner]**](OrderDetailB2BLinesInnerEstimatedDatesInner.md) |  | [optional] 
 **scheduleLines** | [**[OrderDetailB2BLinesInnerScheduleLinesInner]**](OrderDetailB2BLinesInnerScheduleLinesInner.md) |  | [optional] 
 **multipleShipments** | [**[OrderDetailB2BLinesInnerMultipleShipmentsInner]**](OrderDetailB2BLinesInnerMultipleShipmentsInner.md) |  | [optional] 
+**defaultCarrierName** | **String** |  | [optional] 
 
 

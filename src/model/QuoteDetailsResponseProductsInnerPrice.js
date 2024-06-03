@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -12,6 +12,8 @@
  */
 
 import ApiClient from '../ApiClient';
+import QuoteDetailsResponseProductsInnerPriceDiscountsInner from './QuoteDetailsResponseProductsInnerPriceDiscountsInner';
+import QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner from './QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner';
 
 /**
  * The QuoteDetailsResponseProductsInnerPrice model module.
@@ -62,20 +64,26 @@ class QuoteDetailsResponseProductsInnerPrice {
             if (data.hasOwnProperty('discountOffList')) {
                 obj['discountOffList'] = ApiClient.convertToType(data['discountOffList'], 'String');
             }
-            if (data.hasOwnProperty('vendorprice')) {
-                obj['vendorprice'] = ApiClient.convertToType(data['vendorprice'], 'Number');
-            }
-            if (data.hasOwnProperty('extendedvendorprice')) {
-                obj['extendedvendorprice'] = ApiClient.convertToType(data['extendedvendorprice'], 'Number');
-            }
-            if (data.hasOwnProperty('totalVisibleReserveQuantity')) {
-                obj['totalVisibleReserveQuantity'] = ApiClient.convertToType(data['totalVisibleReserveQuantity'], 'Number');
-            }
             if (data.hasOwnProperty('type')) {
                 obj['type'] = ApiClient.convertToType(data['type'], 'String');
             }
             if (data.hasOwnProperty('recurringPriceModel')) {
                 obj['recurringPriceModel'] = ApiClient.convertToType(data['recurringPriceModel'], 'String');
+            }
+            if (data.hasOwnProperty('unitOfMeasure')) {
+                obj['unitOfMeasure'] = ApiClient.convertToType(data['unitOfMeasure'], 'String');
+            }
+            if (data.hasOwnProperty('tax')) {
+                obj['tax'] = ApiClient.convertToType(data['tax'], 'Number');
+            }
+            if (data.hasOwnProperty('extrafees')) {
+                obj['extrafees'] = ApiClient.convertToType(data['extrafees'], 'Number');
+            }
+            if (data.hasOwnProperty('extraFeesDetails')) {
+                obj['extraFeesDetails'] = ApiClient.convertToType(data['extraFeesDetails'], [QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner]);
+            }
+            if (data.hasOwnProperty('discounts')) {
+                obj['discounts'] = ApiClient.convertToType(data['discounts'], [QuoteDetailsResponseProductsInnerPriceDiscountsInner]);
             }
         }
         return obj;
@@ -98,6 +106,30 @@ class QuoteDetailsResponseProductsInnerPrice {
         // ensure the json data is a string
         if (data['recurringPriceModel'] && !(typeof data['recurringPriceModel'] === 'string' || data['recurringPriceModel'] instanceof String)) {
             throw new Error("Expected the field `recurringPriceModel` to be a primitive type in the JSON string but got " + data['recurringPriceModel']);
+        }
+        // ensure the json data is a string
+        if (data['unitOfMeasure'] && !(typeof data['unitOfMeasure'] === 'string' || data['unitOfMeasure'] instanceof String)) {
+            throw new Error("Expected the field `unitOfMeasure` to be a primitive type in the JSON string but got " + data['unitOfMeasure']);
+        }
+        if (data['extraFeesDetails']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['extraFeesDetails'])) {
+                throw new Error("Expected the field `extraFeesDetails` to be an array in the JSON data but got " + data['extraFeesDetails']);
+            }
+            // validate the optional field `extraFeesDetails` (array)
+            for (const item of data['extraFeesDetails']) {
+                QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner.validateJSON(item);
+            };
+        }
+        if (data['discounts']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['discounts'])) {
+                throw new Error("Expected the field `discounts` to be an array in the JSON data but got " + data['discounts']);
+            }
+            // validate the optional field `discounts` (array)
+            for (const item of data['discounts']) {
+                QuoteDetailsResponseProductsInnerPriceDiscountsInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -139,21 +171,6 @@ QuoteDetailsResponseProductsInnerPrice.prototype['extendedQuotePrice'] = undefin
 QuoteDetailsResponseProductsInnerPrice.prototype['discountOffList'] = undefined;
 
 /**
- * @member {Number} vendorprice
- */
-QuoteDetailsResponseProductsInnerPrice.prototype['vendorprice'] = undefined;
-
-/**
- * @member {Number} extendedvendorprice
- */
-QuoteDetailsResponseProductsInnerPrice.prototype['extendedvendorprice'] = undefined;
-
-/**
- * @member {Number} totalVisibleReserveQuantity
- */
-QuoteDetailsResponseProductsInnerPrice.prototype['totalVisibleReserveQuantity'] = undefined;
-
-/**
  * @member {String} type
  */
 QuoteDetailsResponseProductsInnerPrice.prototype['type'] = undefined;
@@ -162,6 +179,31 @@ QuoteDetailsResponseProductsInnerPrice.prototype['type'] = undefined;
  * @member {String} recurringPriceModel
  */
 QuoteDetailsResponseProductsInnerPrice.prototype['recurringPriceModel'] = undefined;
+
+/**
+ * @member {String} unitOfMeasure
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['unitOfMeasure'] = undefined;
+
+/**
+ * @member {Number} tax
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['tax'] = undefined;
+
+/**
+ * @member {Number} extrafees
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['extrafees'] = undefined;
+
+/**
+ * @member {Array.<module:model/QuoteDetailsResponseProductsInnerPriceExtraFeesDetailsInner>} extraFeesDetails
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['extraFeesDetails'] = undefined;
+
+/**
+ * @member {Array.<module:model/QuoteDetailsResponseProductsInnerPriceDiscountsInner>} discounts
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['discounts'] = undefined;
 
 
 

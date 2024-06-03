@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**getOrderdetailsV61**](OrdersApi.md#getOrderdetailsV61) | **GET** /resellers/v6.1/orders/{ordernumber} | Get Order Details v6.1
 [**getResellersV6Ordersearch**](OrdersApi.md#getResellersV6Ordersearch) | **GET** /resellers/v6/orders/search | Search your Orders
 [**postCreateorderV6**](OrdersApi.md#postCreateorderV6) | **POST** /resellers/v6/orders | Create your Order
+[**postCreateorderV7**](OrdersApi.md#postCreateorderV7) | **POST** /resellers/v7/orders | Create your Order v7
 [**putOrdermodify**](OrdersApi.md#putOrdermodify) | **PUT** /resellers/v6/orders/{orderNumber} | Modify your Order
 
 
@@ -30,13 +31,13 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.OrdersApi();
-let orderNumber = 20-RD128; // String | Ingram Micro sales order number.
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems.
+let orderNumber = "20-RD128"; // String | Ingram Micro sales order number.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction accross all the systems.
 let opts = {
-  'regionCode': CS, // String | Region code for sandbox testing - Not for use in production.
-  'iMSenderID': MyCompany // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'regionCode': "CS", // String | Region code for sandbox testing - Not for use in production.
+  'iMSenderID': "MyCompany" // String | Unique value used to identify the sender of the transaction. Example: MyCompany
 };
 apiInstance.deleteOrdercancel(orderNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
   if (error) {
@@ -91,13 +92,13 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.OrdersApi();
-let ordernumber = 20-RD3QV; // String | The Ingram Micro sales order number.
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems.
+let ordernumber = "20-RD3QV"; // String | The Ingram Micro sales order number.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction accross all the systems.
 let opts = {
-  'iMSenderID': MyCompany, // String | Unique value used to identify the sender of the transaction. Example: MyCompany.
-  'ingramOrderDate': Wed May 13 00:00:00 UTC 2020, // Date | The date and time in UTC format that the order was created.
+  'iMSenderID': "MyCompany", // String | Unique value used to identify the sender of the transaction. Example: MyCompany.
+  'ingramOrderDate': new Date("Wed May 13 00:00:00 UTC 2020"), // Date | The date and time in UTC format that the order was created.
   'vendorNumber': "vendorNumber_example", // String | Vendor Number.
   'simulateStatus': "simulateStatus_example", // String | Order response for various order statuses. Not for use in production.
   'isIml': true, // Boolean | True/False only for IML customers.
@@ -160,16 +161,16 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.OrdersApi();
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction accross all the systems.
 let opts = {
   'ingramOrderNumber': "ingramOrderNumber_example", // String | The Ingram Micro order number.
   'orderStatus': "orderStatus_example", // String | Ingram Micro order status.
   'orderStatusIn': ["null"], // [String] | Ingram Micro order status(can use it for multiple entries).
-  'ingramOrderDate': 2021-04-23, // String | Search by Order date(yyyy-MM-dd).
+  'ingramOrderDate': "2021-04-23", // String | Search by Order date(yyyy-MM-dd).
   'ingramOrderDateBt': ["null"], // [String] | Search with the start and end date(only 2 entries allowed).
-  'iMSenderID': MyCompany, // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'iMSenderID': "MyCompany", // String | Unique value used to identify the sender of the transaction. Example: MyCompany
   'customerOrderNumber': "customerOrderNumber_example", // String | Search using your PO/Order number.
   'pageSize': 56, // Number | The number of records required in the call - max records 100 per page.
   'pageNumber': 56, // Number | The page number reference.
@@ -253,12 +254,12 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.OrdersApi();
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction accross all the systems.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction accross all the systems.
 let orderCreateRequest = {"customerOrderNumber":"SWAGGER-01","notes":"This is the field for comments","lines":[{"customerLineNumber":"1","ingramPartNumber":"DF4128","quantity":1}],"additionalAttributes":[{"attributeName":"allowDuplicateCustomerOrderNumber","attributeValue":"true"}]}; // OrderCreateRequest | 
 let opts = {
-  'iMSenderID': MyCompany // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'iMSenderID': "MyCompany" // String | Unique value used to identify the sender of the transaction. Example: MyCompany
 };
 apiInstance.postCreateorderV6(iMCustomerNumber, iMCountryCode, iMCorrelationID, orderCreateRequest, opts, (error, data, response) => {
   if (error) {
@@ -294,6 +295,65 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
+## postCreateorderV7
+
+> AsyncOrderCreateResponse postCreateorderV7(iMCustomerNumber, iMCountryCode, iMCorrelationID, asyncOrderCreateDTO, opts)
+
+Create your Order v7
+
+This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+
+### Example
+
+```javascript
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
+// Configure OAuth2 access token for authorization: application
+let application = defaultClient.authentications['application'];
+application.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new XiSdkResellers.OrdersApi();
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction accross all the systems.
+let asyncOrderCreateDTO = {"quoteNumber":"QUO-14551943-D2Y9L9","customerOrderNumber":"12345","enduserOrderNumber":"","billToAddressId":"XYZ","endUserInfo":{"companyName":"ABC TECH","contact":"44045678","addressLine1":"Texas","addressLine2":"4","addressLine3":"","city":"","state":"","postalCode":"","countryCode":"US","email":"abc@gmail.com","phoneNumber":"445678901"},"shipToInfo":{"addressId":"12345","companyName":"","contact":"","addressLine1":"Texas","addressLine2":"4","addressLine3":"","city":"","state":"","postalCode":"","countryCode":"US","email":"abc@gmail.com"},"additionalAttributes":[{"attributeName":"VEND_AUTH_NBR_FLG","attributeValue":"ABC1234"}],"vmfAdditionalAttributes":[{"attributeName":"","attributeValue":"","attributeDescription":""}],"lines":[{"customerLineNumber":"12","ingramPartNumber":"YN6231","quantity":"2","vmfAdditionalAttributesLines":[{"attributeName":"","attributeValue":"","attributeDescription":""}]}]}; // AsyncOrderCreateDTO | 
+let opts = {
+  'iMSenderID': "MyCompany" // String | Unique value used to identify the sender of the transaction.
+};
+apiInstance.postCreateorderV7(iMCustomerNumber, iMCountryCode, iMCorrelationID, asyncOrderCreateDTO, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number. | 
+ **iMCountryCode** | **String**| Two-character ISO country code. | 
+ **iMCorrelationID** | **String**| Unique transaction number to identify each transaction accross all the systems. | 
+ **asyncOrderCreateDTO** | [**AsyncOrderCreateDTO**](AsyncOrderCreateDTO.md)|  | 
+ **iMSenderID** | **String**| Unique value used to identify the sender of the transaction. | [optional] 
+
+### Return type
+
+[**AsyncOrderCreateResponse**](AsyncOrderCreateResponse.md)
+
+### Authorization
+
+[application](../README.md#application)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
 ## putOrdermodify
 
 > OrderModifyResponse putOrdermodify(orderNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, orderModifyRequest, opts)
@@ -312,15 +372,15 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.OrdersApi();
-let orderNumber = 20-RC1RD; // String | Ingram sales order number.
-let iMCustomerNumber = 20-222222; // String | Your unique Ingram Micro customer number.
-let iMCountryCode = US; // String | Two-character ISO country code.
-let iMCorrelationID = fbac82ba-cf0a-4bcf-fc03-0c5084; // String | Unique transaction number to identify each transaction across all the systems.
+let orderNumber = "20-RC1RD"; // String | Ingram sales order number.
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
 let orderModifyRequest = {"lines":[{"customerLineNumber":"002","ingramPartNumber":"2GZ200","addUpdateDeleteLine":"ADD","quantity":2}]}; // OrderModifyRequest | 
 let opts = {
-  'actionCode': release, // String | Action code to be used for order release.
-  'regionCode': CS, // String | Region code paramter to be used only for order release functionality.Region code is only for sandbox not for production
-  'iMSenderID': MyCompany // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'actionCode': "release", // String | Action code to be used for order release.
+  'regionCode': "CS", // String | Region code paramter to be used only for order release functionality.Region code is only for sandbox not for production
+  'iMSenderID': "MyCompany" // String | Unique value used to identify the sender of the transaction. Example: MyCompany
 };
 apiInstance.putOrdermodify(orderNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, orderModifyRequest, opts, (error, data, response) => {
   if (error) {

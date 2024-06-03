@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -150,6 +150,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property planDescription (base name: "planDescription")', function() {
+      // uncomment below and update the code to test the property planDescription
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property isSubscription (base name: "isSubscription")', function() {
       // uncomment below and update the code to test the property isSubscription
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
@@ -162,8 +168,38 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property requestedStartDate (base name: "requestedStartDate")', function() {
+      // uncomment below and update the code to test the property requestedStartDate
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property startDate (base name: "startDate")', function() {
+      // uncomment below and update the code to test the property startDate
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property endDate (base name: "endDate")', function() {
+      // uncomment below and update the code to test the property endDate
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property serialNumber (base name: "serialNumber")', function() {
+      // uncomment below and update the code to test the property serialNumber
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property price (base name: "price")', function() {
       // uncomment below and update the code to test the property price
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property billDetails (base name: "billDetails")', function() {
+      // uncomment below and update the code to test the property billDetails
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
       //expect(instance).to.be();
     });

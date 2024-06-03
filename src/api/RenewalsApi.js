@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -13,7 +13,7 @@
 
 
 import ApiClient from "../ApiClient";
-import GetResellerV6ValidateQuote500Response from '../model/GetResellerV6ValidateQuote500Response';
+import PostCreateorderV7500Response from '../model/PostCreateorderV7500Response';
 import PostRenewalssearch400Response from '../model/PostRenewalssearch400Response';
 import RenewalsDetailsResponse from '../model/RenewalsDetailsResponse';
 import RenewalsSearchRequest from '../model/RenewalsSearchRequest';

@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -147,6 +147,9 @@ class OrderDetailB2BLinesInner {
             if (data.hasOwnProperty('multipleShipments')) {
                 obj['multipleShipments'] = ApiClient.convertToType(data['multipleShipments'], [OrderDetailB2BLinesInnerMultipleShipmentsInner]);
             }
+            if (data.hasOwnProperty('defaultCarrierName')) {
+                obj['defaultCarrierName'] = ApiClient.convertToType(data['defaultCarrierName'], 'String');
+            }
         }
         return obj;
     }
@@ -288,6 +291,10 @@ class OrderDetailB2BLinesInner {
             for (const item of data['multipleShipments']) {
                 OrderDetailB2BLinesInnerMultipleShipmentsInner.validateJSON(item);
             };
+        }
+        // ensure the json data is a string
+        if (data['defaultCarrierName'] && !(typeof data['defaultCarrierName'] === 'string' || data['defaultCarrierName'] instanceof String)) {
+            throw new Error("Expected the field `defaultCarrierName` to be a primitive type in the JSON string but got " + data['defaultCarrierName']);
         }
 
         return true;
@@ -477,6 +484,11 @@ OrderDetailB2BLinesInner.prototype['scheduleLines'] = undefined;
  * @member {Array.<module:model/OrderDetailB2BLinesInnerMultipleShipmentsInner>} multipleShipments
  */
 OrderDetailB2BLinesInner.prototype['multipleShipments'] = undefined;
+
+/**
+ * @member {String} defaultCarrierName
+ */
+OrderDetailB2BLinesInner.prototype['defaultCarrierName'] = undefined;
 
 
 

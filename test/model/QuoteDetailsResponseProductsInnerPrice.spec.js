@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers. Who are looking to Innovate with Ingram Micro's API SolutionsAutomate your eCommerce with our offering of APIs and Webhooks to create a seamless experience for your customers.
+ * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -84,24 +84,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property vendorprice (base name: "vendorprice")', function() {
-      // uncomment below and update the code to test the property vendorprice
-      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property extendedvendorprice (base name: "extendedvendorprice")', function() {
-      // uncomment below and update the code to test the property extendedvendorprice
-      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property totalVisibleReserveQuantity (base name: "totalVisibleReserveQuantity")', function() {
-      // uncomment below and update the code to test the property totalVisibleReserveQuantity
-      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
-      //expect(instance).to.be();
-    });
-
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
@@ -110,6 +92,36 @@
 
     it('should have the property recurringPriceModel (base name: "recurringPriceModel")', function() {
       // uncomment below and update the code to test the property recurringPriceModel
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property unitOfMeasure (base name: "unitOfMeasure")', function() {
+      // uncomment below and update the code to test the property unitOfMeasure
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property tax (base name: "tax")', function() {
+      // uncomment below and update the code to test the property tax
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property extrafees (base name: "extrafees")', function() {
+      // uncomment below and update the code to test the property extrafees
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property extraFeesDetails (base name: "extraFeesDetails")', function() {
+      // uncomment below and update the code to test the property extraFeesDetails
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property discounts (base name: "discounts")', function() {
+      // uncomment below and update the code to test the property discounts
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
       //expect(instance).to.be();
     });

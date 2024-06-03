@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **discountAmount** | **Number** | Discount amount. | [optional] 
 **discountType** | **String** | Type of discount. | [optional] 
 **totalTaxAmount** | **Number** | Total Tax amount. | [optional] 
-**invoicesAmountDue** | **Number** | Total amount due for the invoice. | [optional] 
+**invoicedAmountDue** | **Number** | Total amount due for the invoice. | [optional] 
 **freightAmount** | **Number** | Freight amount | [optional] 
 
 
