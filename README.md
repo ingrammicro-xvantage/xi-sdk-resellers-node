@@ -1,7 +1,9 @@
 # xi_sdk_resellers
 
 XiSdkResellers - JavaScript client for xi_sdk_resellers
+
 For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+
 
 ## Installation
 
@@ -91,6 +93,7 @@ module: {
 ## Getting Started
 
 Quickstart on creating an application can be found [here](getting-started.md)
+
 
 ```javascript
 var XiSdkResellers = require('xi_sdk_resellers');
