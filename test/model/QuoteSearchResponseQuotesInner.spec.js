@@ -78,6 +78,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property currencyCode (base name: "currencyCode")', function() {
+      // uncomment below and update the code to test the property currencyCode
+      //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property endUserContact (base name: "endUserContact")', function() {
       // uncomment below and update the code to test the property endUserContact
       //var instance = new XiSdkResellers.QuoteSearchResponseQuotesInner();

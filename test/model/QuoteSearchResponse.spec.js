@@ -78,6 +78,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property nextPage (base name: "nextPage")', function() {
+      // uncomment below and update the code to test the property nextPage
+      //var instance = new XiSdkResellers.QuoteSearchResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property prevPage (base name: "prevPage")', function() {
+      // uncomment below and update the code to test the property prevPage
+      //var instance = new XiSdkResellers.QuoteSearchResponse();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));
