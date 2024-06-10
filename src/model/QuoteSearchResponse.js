@@ -60,6 +60,12 @@ class QuoteSearchResponse {
             if (data.hasOwnProperty('quotes')) {
                 obj['quotes'] = ApiClient.convertToType(data['quotes'], [QuoteSearchResponseQuotesInner]);
             }
+            if (data.hasOwnProperty('nextPage')) {
+                obj['nextPage'] = ApiClient.convertToType(data['nextPage'], 'String');
+            }
+            if (data.hasOwnProperty('prevPage')) {
+                obj['prevPage'] = ApiClient.convertToType(data['prevPage'], 'String');
+            }
         }
         return obj;
     }
@@ -79,6 +85,14 @@ class QuoteSearchResponse {
             for (const item of data['quotes']) {
                 QuoteSearchResponseQuotesInner.validateJSON(item);
             };
+        }
+        // ensure the json data is a string
+        if (data['nextPage'] && !(typeof data['nextPage'] === 'string' || data['nextPage'] instanceof String)) {
+            throw new Error("Expected the field `nextPage` to be a primitive type in the JSON string but got " + data['nextPage']);
+        }
+        // ensure the json data is a string
+        if (data['prevPage'] && !(typeof data['prevPage'] === 'string' || data['prevPage'] instanceof String)) {
+            throw new Error("Expected the field `prevPage` to be a primitive type in the JSON string but got " + data['prevPage']);
         }
 
         return true;
@@ -112,6 +126,16 @@ QuoteSearchResponse.prototype['pageNumber'] = undefined;
  * @member {Array.<module:model/QuoteSearchResponseQuotesInner>} quotes
  */
 QuoteSearchResponse.prototype['quotes'] = undefined;
+
+/**
+ * @member {String} nextPage
+ */
+QuoteSearchResponse.prototype['nextPage'] = undefined;
+
+/**
+ * @member {String} prevPage
+ */
+QuoteSearchResponse.prototype['prevPage'] = undefined;
 
 
 

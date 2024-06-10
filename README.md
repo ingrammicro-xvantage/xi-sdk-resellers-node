@@ -94,7 +94,6 @@ module: {
 
 Quickstart on creating an application can be found [here](getting-started.md)
 
-
 ```javascript
 var XiSdkResellers = require('xi_sdk_resellers');
 

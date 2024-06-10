@@ -60,6 +60,9 @@ class QuoteSearchResponseQuotesInner {
             if (data.hasOwnProperty('revision')) {
                 obj['revision'] = ApiClient.convertToType(data['revision'], 'String');
             }
+            if (data.hasOwnProperty('currencyCode')) {
+                obj['currencyCode'] = ApiClient.convertToType(data['currencyCode'], 'String');
+            }
             if (data.hasOwnProperty('endUserContact')) {
                 obj['endUserContact'] = ApiClient.convertToType(data['endUserContact'], 'String');
             }
@@ -121,6 +124,10 @@ class QuoteSearchResponseQuotesInner {
         // ensure the json data is a string
         if (data['revision'] && !(typeof data['revision'] === 'string' || data['revision'] instanceof String)) {
             throw new Error("Expected the field `revision` to be a primitive type in the JSON string but got " + data['revision']);
+        }
+        // ensure the json data is a string
+        if (data['currencyCode'] && !(typeof data['currencyCode'] === 'string' || data['currencyCode'] instanceof String)) {
+            throw new Error("Expected the field `currencyCode` to be a primitive type in the JSON string but got " + data['currencyCode']);
         }
         // ensure the json data is a string
         if (data['endUserContact'] && !(typeof data['endUserContact'] === 'string' || data['endUserContact'] instanceof String)) {
@@ -197,6 +204,12 @@ QuoteSearchResponseQuotesInner.prototype['quoteNumber'] = undefined;
  * @member {String} revision
  */
 QuoteSearchResponseQuotesInner.prototype['revision'] = undefined;
+
+/**
+ * The country-specific three digit ISO 4217 currency code for the order.
+ * @member {String} currencyCode
+ */
+QuoteSearchResponseQuotesInner.prototype['currencyCode'] = undefined;
 
 /**
  * End User Name is the end customer name that is associated with a quote in Ingram Micros CRM.
