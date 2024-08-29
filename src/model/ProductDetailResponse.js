@@ -15,7 +15,6 @@ import ApiClient from '../ApiClient';
 import ProductDetailResponseAdditionalInformation from './ProductDetailResponseAdditionalInformation';
 import ProductDetailResponseCiscoFields from './ProductDetailResponseCiscoFields';
 import ProductDetailResponseIndicators from './ProductDetailResponseIndicators';
-import ProductDetailResponseTechnicalSpecificationsInner from './ProductDetailResponseTechnicalSpecificationsInner';
 
 /**
  * The ProductDetailResponse model module.
@@ -66,9 +65,6 @@ class ProductDetailResponse {
             if (data.hasOwnProperty('description')) {
                 obj['description'] = ApiClient.convertToType(data['description'], 'String');
             }
-            if (data.hasOwnProperty('productDetailDescription')) {
-                obj['productDetailDescription'] = ApiClient.convertToType(data['productDetailDescription'], 'String');
-            }
             if (data.hasOwnProperty('upc')) {
                 obj['upc'] = ApiClient.convertToType(data['upc'], 'String');
             }
@@ -95,9 +91,6 @@ class ProductDetailResponse {
             }
             if (data.hasOwnProperty('ciscoFields')) {
                 obj['ciscoFields'] = ProductDetailResponseCiscoFields.constructFromObject(data['ciscoFields']);
-            }
-            if (data.hasOwnProperty('technicalSpecifications')) {
-                obj['technicalSpecifications'] = ApiClient.convertToType(data['technicalSpecifications'], [ProductDetailResponseTechnicalSpecificationsInner]);
             }
             if (data.hasOwnProperty('warrantyInformation')) {
                 obj['warrantyInformation'] = ApiClient.convertToType(data['warrantyInformation'], [Object]);
@@ -136,10 +129,6 @@ class ProductDetailResponse {
             throw new Error("Expected the field `description` to be a primitive type in the JSON string but got " + data['description']);
         }
         // ensure the json data is a string
-        if (data['productDetailDescription'] && !(typeof data['productDetailDescription'] === 'string' || data['productDetailDescription'] instanceof String)) {
-            throw new Error("Expected the field `productDetailDescription` to be a primitive type in the JSON string but got " + data['productDetailDescription']);
-        }
-        // ensure the json data is a string
         if (data['upc'] && !(typeof data['upc'] === 'string' || data['upc'] instanceof String)) {
             throw new Error("Expected the field `upc` to be a primitive type in the JSON string but got " + data['upc']);
         }
@@ -174,16 +163,6 @@ class ProductDetailResponse {
         // validate the optional field `ciscoFields`
         if (data['ciscoFields']) { // data not null
           ProductDetailResponseCiscoFields.validateJSON(data['ciscoFields']);
-        }
-        if (data['technicalSpecifications']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['technicalSpecifications'])) {
-                throw new Error("Expected the field `technicalSpecifications` to be an array in the JSON data but got " + data['technicalSpecifications']);
-            }
-            // validate the optional field `technicalSpecifications` (array)
-            for (const item of data['technicalSpecifications']) {
-                ProductDetailResponseTechnicalSpecificationsInner.validateJSON(item);
-            };
         }
         // ensure the json data is an array
         if (!Array.isArray(data['warrantyInformation'])) {
@@ -231,12 +210,6 @@ ProductDetailResponse.prototype['productAuthorized'] = undefined;
  * @member {String} description
  */
 ProductDetailResponse.prototype['description'] = undefined;
-
-/**
- * The detailed description given for the product.
- * @member {String} productDetailDescription
- */
-ProductDetailResponse.prototype['productDetailDescription'] = undefined;
 
 /**
  * The UPC code for the product. Consists of 12 numeric digits that are uniquely assigned to each trade item.
@@ -289,12 +262,6 @@ ProductDetailResponse.prototype['indicators'] = undefined;
  * @member {module:model/ProductDetailResponseCiscoFields} ciscoFields
  */
 ProductDetailResponse.prototype['ciscoFields'] = undefined;
-
-/**
- * Technical specifications of the product.
- * @member {Array.<module:model/ProductDetailResponseTechnicalSpecificationsInner>} technicalSpecifications
- */
-ProductDetailResponse.prototype['technicalSpecifications'] = undefined;
 
 /**
  * Warranty information related to the product.

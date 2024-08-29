@@ -161,7 +161,6 @@ import ProductDetailResponseAdditionalInformation from './model/ProductDetailRes
 import ProductDetailResponseAdditionalInformationProductWeightInner from './model/ProductDetailResponseAdditionalInformationProductWeightInner';
 import ProductDetailResponseCiscoFields from './model/ProductDetailResponseCiscoFields';
 import ProductDetailResponseIndicators from './model/ProductDetailResponseIndicators';
-import ProductDetailResponseTechnicalSpecificationsInner from './model/ProductDetailResponseTechnicalSpecificationsInner';
 import ProductSearchResponse from './model/ProductSearchResponse';
 import ProductSearchResponseCatalogInner from './model/ProductSearchResponseCatalogInner';
 import ProductSearchResponseCatalogInnerLinksInner from './model/ProductSearchResponseCatalogInnerLinksInner';
@@ -1146,12 +1145,6 @@ export {
      * @property {module:model/ProductDetailResponseIndicators}
      */
     ProductDetailResponseIndicators,
-
-    /**
-     * The ProductDetailResponseTechnicalSpecificationsInner model constructor.
-     * @property {module:model/ProductDetailResponseTechnicalSpecificationsInner}
-     */
-    ProductDetailResponseTechnicalSpecificationsInner,
 
     /**
      * The ProductSearchResponse model constructor.

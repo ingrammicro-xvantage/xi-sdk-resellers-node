@@ -158,7 +158,6 @@ docs/ProductDetailResponseAdditionalInformation.md
 docs/ProductDetailResponseAdditionalInformationProductWeightInner.md
 docs/ProductDetailResponseCiscoFields.md
 docs/ProductDetailResponseIndicators.md
-docs/ProductDetailResponseTechnicalSpecificationsInner.md
 docs/ProductSearchResponse.md
 docs/ProductSearchResponseCatalogInner.md
 docs/ProductSearchResponseCatalogInnerLinksInner.md
@@ -373,7 +372,6 @@ src/model/ProductDetailResponseAdditionalInformation.js
 src/model/ProductDetailResponseAdditionalInformationProductWeightInner.js
 src/model/ProductDetailResponseCiscoFields.js
 src/model/ProductDetailResponseIndicators.js
-src/model/ProductDetailResponseTechnicalSpecificationsInner.js
 src/model/ProductSearchResponse.js
 src/model/ProductSearchResponseCatalogInner.js
 src/model/ProductSearchResponseCatalogInnerLinksInner.js
@@ -579,7 +577,6 @@ test/model/ProductDetailResponseAdditionalInformation.spec.js
 test/model/ProductDetailResponseAdditionalInformationProductWeightInner.spec.js
 test/model/ProductDetailResponseCiscoFields.spec.js
 test/model/ProductDetailResponseIndicators.spec.js
-test/model/ProductDetailResponseTechnicalSpecificationsInner.spec.js
 test/model/ProductSearchResponse.spec.js
 test/model/ProductSearchResponseCatalogInner.spec.js
 test/model/ProductSearchResponseCatalogInnerLinksInner.spec.js

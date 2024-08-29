@@ -84,12 +84,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property productDetailDescription (base name: "productDetailDescription")', function() {
-      // uncomment below and update the code to test the property productDetailDescription
-      //var instance = new XiSdkResellers.ProductDetailResponse();
-      //expect(instance).to.be();
-    });
-
     it('should have the property upc (base name: "upc")', function() {
       // uncomment below and update the code to test the property upc
       //var instance = new XiSdkResellers.ProductDetailResponse();
@@ -140,12 +134,6 @@
 
     it('should have the property ciscoFields (base name: "ciscoFields")', function() {
       // uncomment below and update the code to test the property ciscoFields
-      //var instance = new XiSdkResellers.ProductDetailResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property technicalSpecifications (base name: "technicalSpecifications")', function() {
-      // uncomment below and update the code to test the property technicalSpecifications
       //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
