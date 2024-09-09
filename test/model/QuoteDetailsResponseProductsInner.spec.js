@@ -72,6 +72,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property remainingQuoteQty (base name: "remainingQuoteQty")', function() {
+      // uncomment below and update the code to test the property remainingQuoteQty
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property minimumOrderAllowedQty (base name: "minimumOrderAllowedQty")', function() {
+      // uncomment below and update the code to test the property minimumOrderAllowedQty
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property notes (base name: "notes")', function() {
       // uncomment below and update the code to test the property notes
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();

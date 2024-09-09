@@ -78,6 +78,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property remainingQuantityExtendedMsrp (base name: "remainingQuantityExtendedMsrp")', function() {
+      // uncomment below and update the code to test the property remainingQuantityExtendedMsrp
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property remainingQuantityExtendedQuotePrice (base name: "remainingQuantityExtendedQuotePrice")', function() {
+      // uncomment below and update the code to test the property remainingQuantityExtendedQuotePrice
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();
+      //expect(instance).to.be();
+    });
+
     it('should have the property discountOffList (base name: "discountOffList")', function() {
       // uncomment below and update the code to test the property discountOffList
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInnerPrice();

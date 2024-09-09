@@ -126,6 +126,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property isPartialOrderAllowed (base name: "isPartialOrderAllowed")', function() {
+      // uncomment below and update the code to test the property isPartialOrderAllowed
+      //var instance = new XiSdkResellers.QuoteDetailsResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
       //var instance = new XiSdkResellers.QuoteDetailsResponse();

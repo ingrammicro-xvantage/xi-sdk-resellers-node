@@ -58,6 +58,12 @@ class QuoteDetailsResponseProductsInner {
             if (data.hasOwnProperty('quantity')) {
                 obj['quantity'] = ApiClient.convertToType(data['quantity'], 'Number');
             }
+            if (data.hasOwnProperty('remainingQuoteQty')) {
+                obj['remainingQuoteQty'] = ApiClient.convertToType(data['remainingQuoteQty'], 'Number');
+            }
+            if (data.hasOwnProperty('minimumOrderAllowedQty')) {
+                obj['minimumOrderAllowedQty'] = ApiClient.convertToType(data['minimumOrderAllowedQty'], 'Number');
+            }
             if (data.hasOwnProperty('notes')) {
                 obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
             }
@@ -250,6 +256,16 @@ QuoteDetailsResponseProductsInner.prototype['lineNumber'] = undefined;
  * @member {Number} quantity
  */
 QuoteDetailsResponseProductsInner.prototype['quantity'] = undefined;
+
+/**
+ * @member {Number} remainingQuoteQty
+ */
+QuoteDetailsResponseProductsInner.prototype['remainingQuoteQty'] = undefined;
+
+/**
+ * @member {Number} minimumOrderAllowedQty
+ */
+QuoteDetailsResponseProductsInner.prototype['minimumOrderAllowedQty'] = undefined;
 
 /**
  * Product line item comments.
