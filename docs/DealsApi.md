@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## getResellersV6Dealsdetails
 
-> DealsDetailsResponse getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, iMEnvironment, dealId)
+> DealsDetailsResponse getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, dealId)
 
 Deals Details
 
@@ -31,9 +31,8 @@ let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro custome
 let iMCountryCode = "US"; // String | Two-character ISO country code.
 let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
 let iMApplicationId = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
-let iMEnvironment = "prodChicago"; // String | Environment name.
 let dealId = "12345678"; // String | Unique deal ID.
-apiInstance.getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, iMEnvironment, dealId, (error, data, response) => {
+apiInstance.getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, dealId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -51,7 +50,6 @@ Name | Type | Description  | Notes
  **iMCountryCode** | **String**| Two-character ISO country code. | 
  **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | 
  **iMApplicationId** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | 
- **iMEnvironment** | **String**| Environment name. | 
  **dealId** | **String**| Unique deal ID. | 
 
 ### Return type
