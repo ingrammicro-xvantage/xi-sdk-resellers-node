@@ -13,8 +13,9 @@
 
 import ApiClient from '../ApiClient';
 import ProductDetailResponseAdditionalInformation from './ProductDetailResponseAdditionalInformation';
-import ProductDetailResponseCiscoFields from './ProductDetailResponseCiscoFields';
-import ProductDetailResponseIndicators from './ProductDetailResponseIndicators';
+import ProductDetailResponseCiscoFieldsInner from './ProductDetailResponseCiscoFieldsInner';
+import ProductDetailResponseIndicatorsInner from './ProductDetailResponseIndicatorsInner';
+import ProductDetailResponseSubscriptionDetailsInner from './ProductDetailResponseSubscriptionDetailsInner';
 
 /**
  * The ProductDetailResponse model module.
@@ -56,11 +57,8 @@ class ProductDetailResponse {
             if (data.hasOwnProperty('vendorPartNumber')) {
                 obj['vendorPartNumber'] = ApiClient.convertToType(data['vendorPartNumber'], 'String');
             }
-            if (data.hasOwnProperty('customerPartNumber')) {
-                obj['customerPartNumber'] = ApiClient.convertToType(data['customerPartNumber'], 'String');
-            }
             if (data.hasOwnProperty('productAuthorized')) {
-                obj['productAuthorized'] = ApiClient.convertToType(data['productAuthorized'], 'String');
+                obj['productAuthorized'] = ApiClient.convertToType(data['productAuthorized'], 'Boolean');
             }
             if (data.hasOwnProperty('description')) {
                 obj['description'] = ApiClient.convertToType(data['description'], 'String');
@@ -71,8 +69,8 @@ class ProductDetailResponse {
             if (data.hasOwnProperty('productCategory')) {
                 obj['productCategory'] = ApiClient.convertToType(data['productCategory'], 'String');
             }
-            if (data.hasOwnProperty('productSubCategory')) {
-                obj['productSubCategory'] = ApiClient.convertToType(data['productSubCategory'], 'String');
+            if (data.hasOwnProperty('productSubcategory')) {
+                obj['productSubcategory'] = ApiClient.convertToType(data['productSubcategory'], 'String');
             }
             if (data.hasOwnProperty('vendorName')) {
                 obj['vendorName'] = ApiClient.convertToType(data['vendorName'], 'String');
@@ -86,17 +84,23 @@ class ProductDetailResponse {
             if (data.hasOwnProperty('productClass')) {
                 obj['productClass'] = ApiClient.convertToType(data['productClass'], 'String');
             }
+            if (data.hasOwnProperty('customerPartNumber')) {
+                obj['customerPartNumber'] = ApiClient.convertToType(data['customerPartNumber'], 'String');
+            }
             if (data.hasOwnProperty('indicators')) {
-                obj['indicators'] = ProductDetailResponseIndicators.constructFromObject(data['indicators']);
+                obj['indicators'] = ApiClient.convertToType(data['indicators'], [ProductDetailResponseIndicatorsInner]);
             }
             if (data.hasOwnProperty('ciscoFields')) {
-                obj['ciscoFields'] = ProductDetailResponseCiscoFields.constructFromObject(data['ciscoFields']);
+                obj['ciscoFields'] = ApiClient.convertToType(data['ciscoFields'], [ProductDetailResponseCiscoFieldsInner]);
             }
             if (data.hasOwnProperty('warrantyInformation')) {
                 obj['warrantyInformation'] = ApiClient.convertToType(data['warrantyInformation'], [Object]);
             }
             if (data.hasOwnProperty('additionalInformation')) {
                 obj['additionalInformation'] = ProductDetailResponseAdditionalInformation.constructFromObject(data['additionalInformation']);
+            }
+            if (data.hasOwnProperty('subscriptionDetails')) {
+                obj['subscriptionDetails'] = ApiClient.convertToType(data['subscriptionDetails'], [ProductDetailResponseSubscriptionDetailsInner]);
             }
         }
         return obj;
@@ -117,14 +121,6 @@ class ProductDetailResponse {
             throw new Error("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got " + data['vendorPartNumber']);
         }
         // ensure the json data is a string
-        if (data['customerPartNumber'] && !(typeof data['customerPartNumber'] === 'string' || data['customerPartNumber'] instanceof String)) {
-            throw new Error("Expected the field `customerPartNumber` to be a primitive type in the JSON string but got " + data['customerPartNumber']);
-        }
-        // ensure the json data is a string
-        if (data['productAuthorized'] && !(typeof data['productAuthorized'] === 'string' || data['productAuthorized'] instanceof String)) {
-            throw new Error("Expected the field `productAuthorized` to be a primitive type in the JSON string but got " + data['productAuthorized']);
-        }
-        // ensure the json data is a string
         if (data['description'] && !(typeof data['description'] === 'string' || data['description'] instanceof String)) {
             throw new Error("Expected the field `description` to be a primitive type in the JSON string but got " + data['description']);
         }
@@ -137,8 +133,8 @@ class ProductDetailResponse {
             throw new Error("Expected the field `productCategory` to be a primitive type in the JSON string but got " + data['productCategory']);
         }
         // ensure the json data is a string
-        if (data['productSubCategory'] && !(typeof data['productSubCategory'] === 'string' || data['productSubCategory'] instanceof String)) {
-            throw new Error("Expected the field `productSubCategory` to be a primitive type in the JSON string but got " + data['productSubCategory']);
+        if (data['productSubcategory'] && !(typeof data['productSubcategory'] === 'string' || data['productSubcategory'] instanceof String)) {
+            throw new Error("Expected the field `productSubcategory` to be a primitive type in the JSON string but got " + data['productSubcategory']);
         }
         // ensure the json data is a string
         if (data['vendorName'] && !(typeof data['vendorName'] === 'string' || data['vendorName'] instanceof String)) {
@@ -156,13 +152,29 @@ class ProductDetailResponse {
         if (data['productClass'] && !(typeof data['productClass'] === 'string' || data['productClass'] instanceof String)) {
             throw new Error("Expected the field `productClass` to be a primitive type in the JSON string but got " + data['productClass']);
         }
-        // validate the optional field `indicators`
-        if (data['indicators']) { // data not null
-          ProductDetailResponseIndicators.validateJSON(data['indicators']);
+        // ensure the json data is a string
+        if (data['customerPartNumber'] && !(typeof data['customerPartNumber'] === 'string' || data['customerPartNumber'] instanceof String)) {
+            throw new Error("Expected the field `customerPartNumber` to be a primitive type in the JSON string but got " + data['customerPartNumber']);
         }
-        // validate the optional field `ciscoFields`
+        if (data['indicators']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['indicators'])) {
+                throw new Error("Expected the field `indicators` to be an array in the JSON data but got " + data['indicators']);
+            }
+            // validate the optional field `indicators` (array)
+            for (const item of data['indicators']) {
+                ProductDetailResponseIndicatorsInner.validateJSON(item);
+            };
+        }
         if (data['ciscoFields']) { // data not null
-          ProductDetailResponseCiscoFields.validateJSON(data['ciscoFields']);
+            // ensure the json data is an array
+            if (!Array.isArray(data['ciscoFields'])) {
+                throw new Error("Expected the field `ciscoFields` to be an array in the JSON data but got " + data['ciscoFields']);
+            }
+            // validate the optional field `ciscoFields` (array)
+            for (const item of data['ciscoFields']) {
+                ProductDetailResponseCiscoFieldsInner.validateJSON(item);
+            };
         }
         // ensure the json data is an array
         if (!Array.isArray(data['warrantyInformation'])) {
@@ -171,6 +183,16 @@ class ProductDetailResponse {
         // validate the optional field `additionalInformation`
         if (data['additionalInformation']) { // data not null
           ProductDetailResponseAdditionalInformation.validateJSON(data['additionalInformation']);
+        }
+        if (data['subscriptionDetails']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['subscriptionDetails'])) {
+                throw new Error("Expected the field `subscriptionDetails` to be an array in the JSON data but got " + data['subscriptionDetails']);
+            }
+            // validate the optional field `subscriptionDetails` (array)
+            for (const item of data['subscriptionDetails']) {
+                ProductDetailResponseSubscriptionDetailsInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -194,14 +216,8 @@ ProductDetailResponse.prototype['ingramPartNumber'] = undefined;
 ProductDetailResponse.prototype['vendorPartNumber'] = undefined;
 
 /**
- * Reseller / end-user’s part number for the product.
- * @member {String} customerPartNumber
- */
-ProductDetailResponse.prototype['customerPartNumber'] = undefined;
-
-/**
  * Boolean that indicates whether a product is authorized.
- * @member {String} productAuthorized
+ * @member {Boolean} productAuthorized
  */
 ProductDetailResponse.prototype['productAuthorized'] = undefined;
 
@@ -225,9 +241,9 @@ ProductDetailResponse.prototype['productCategory'] = undefined;
 
 /**
  * The sub-category of the product.
- * @member {String} productSubCategory
+ * @member {String} productSubcategory
  */
-ProductDetailResponse.prototype['productSubCategory'] = undefined;
+ProductDetailResponse.prototype['productSubcategory'] = undefined;
 
 /**
  * Vendor name for the order.
@@ -254,12 +270,20 @@ ProductDetailResponse.prototype['productStatusCode'] = undefined;
 ProductDetailResponse.prototype['productClass'] = undefined;
 
 /**
- * @member {module:model/ProductDetailResponseIndicators} indicators
+ * Reseller / end-user’s part number for the product.
+ * @member {String} customerPartNumber
+ */
+ProductDetailResponse.prototype['customerPartNumber'] = undefined;
+
+/**
+ * Indicators of the Product
+ * @member {Array.<module:model/ProductDetailResponseIndicatorsInner>} indicators
  */
 ProductDetailResponse.prototype['indicators'] = undefined;
 
 /**
- * @member {module:model/ProductDetailResponseCiscoFields} ciscoFields
+ * Cisco product related information.
+ * @member {Array.<module:model/ProductDetailResponseCiscoFieldsInner>} ciscoFields
  */
 ProductDetailResponse.prototype['ciscoFields'] = undefined;
 
@@ -273,6 +297,12 @@ ProductDetailResponse.prototype['warrantyInformation'] = undefined;
  * @member {module:model/ProductDetailResponseAdditionalInformation} additionalInformation
  */
 ProductDetailResponse.prototype['additionalInformation'] = undefined;
+
+/**
+ * Subscription product Details
+ * @member {Array.<module:model/ProductDetailResponseSubscriptionDetailsInner>} subscriptionDetails
+ */
+ProductDetailResponse.prototype['subscriptionDetails'] = undefined;
 
 
 

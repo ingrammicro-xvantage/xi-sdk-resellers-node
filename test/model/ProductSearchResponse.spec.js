@@ -78,6 +78,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property subscriptionCatalog (base name: "subscriptionCatalog")', function() {
+      // uncomment below and update the code to test the property subscriptionCatalog
+      //var instance = new XiSdkResellers.ProductSearchResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property nextPage (base name: "nextPage")', function() {
       // uncomment below and update the code to test the property nextPage
       //var instance = new XiSdkResellers.ProductSearchResponse();

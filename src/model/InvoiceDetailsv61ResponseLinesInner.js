@@ -35,6 +35,7 @@ class InvoiceDetailsv61ResponseLinesInner {
      * Only for internal use.
      */
     static initialize(obj) { 
+        obj['customerLineNumber'] = '0';
     }
 
     /**

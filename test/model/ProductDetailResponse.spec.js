@@ -66,12 +66,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property customerPartNumber (base name: "customerPartNumber")', function() {
-      // uncomment below and update the code to test the property customerPartNumber
-      //var instance = new XiSdkResellers.ProductDetailResponse();
-      //expect(instance).to.be();
-    });
-
     it('should have the property productAuthorized (base name: "productAuthorized")', function() {
       // uncomment below and update the code to test the property productAuthorized
       //var instance = new XiSdkResellers.ProductDetailResponse();
@@ -96,8 +90,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property productSubCategory (base name: "productSubCategory")', function() {
-      // uncomment below and update the code to test the property productSubCategory
+    it('should have the property productSubcategory (base name: "productSubcategory")', function() {
+      // uncomment below and update the code to test the property productSubcategory
       //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
@@ -126,6 +120,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property customerPartNumber (base name: "customerPartNumber")', function() {
+      // uncomment below and update the code to test the property customerPartNumber
+      //var instance = new XiSdkResellers.ProductDetailResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property indicators (base name: "indicators")', function() {
       // uncomment below and update the code to test the property indicators
       //var instance = new XiSdkResellers.ProductDetailResponse();
@@ -146,6 +146,12 @@
 
     it('should have the property additionalInformation (base name: "additionalInformation")', function() {
       // uncomment below and update the code to test the property additionalInformation
+      //var instance = new XiSdkResellers.ProductDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property subscriptionDetails (base name: "subscriptionDetails")', function() {
+      // uncomment below and update the code to test the property subscriptionDetails
       //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });

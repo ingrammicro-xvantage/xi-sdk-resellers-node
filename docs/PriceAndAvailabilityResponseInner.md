@@ -31,5 +31,6 @@ Name | Type | Description | Notes
 **discounts** | [**[PriceAndAvailabilityResponseInnerDiscountsInner]**](PriceAndAvailabilityResponseInnerDiscountsInner.md) |  | [optional] 
 **bundlePartIndicator** | **Boolean** | True of false value to indicate whether it’s bundle part. *Currently, this feature is not available in these countries (Mexico, Turkey, New Zealand, Colombia, Chile, Brazil, Peru, Western Sahara). | [optional] 
 **serviceFees** | [**[PriceAndAvailabilityResponseInnerServiceFeesInner]**](PriceAndAvailabilityResponseInnerServiceFeesInner.md) | *Currently, this feature is not available in these countries (Mexico, Turkey, New Zealand, Colombia, Chile, Brazil, Peru, Western Sahara). | [optional] 
+**subscriptionPrice** | [**[PriceAndAvailabilityResponseInnerSubscriptionPriceInner]**](PriceAndAvailabilityResponseInnerSubscriptionPriceInner.md) |  | [optional] 
 
 

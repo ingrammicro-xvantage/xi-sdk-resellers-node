@@ -17,6 +17,7 @@ import PriceAndAvailabilityResponseInnerDiscountsInner from './PriceAndAvailabil
 import PriceAndAvailabilityResponseInnerPricing from './PriceAndAvailabilityResponseInnerPricing';
 import PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner from './PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner';
 import PriceAndAvailabilityResponseInnerServiceFeesInner from './PriceAndAvailabilityResponseInnerServiceFeesInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInner from './PriceAndAvailabilityResponseInnerSubscriptionPriceInner';
 
 /**
  * The PriceAndAvailabilityResponseInner model module.
@@ -133,6 +134,9 @@ class PriceAndAvailabilityResponseInner {
             if (data.hasOwnProperty('serviceFees')) {
                 obj['serviceFees'] = ApiClient.convertToType(data['serviceFees'], [PriceAndAvailabilityResponseInnerServiceFeesInner]);
             }
+            if (data.hasOwnProperty('subscriptionPrice')) {
+                obj['subscriptionPrice'] = ApiClient.convertToType(data['subscriptionPrice'], [PriceAndAvailabilityResponseInnerSubscriptionPriceInner]);
+            }
         }
         return obj;
     }
@@ -243,6 +247,16 @@ class PriceAndAvailabilityResponseInner {
             // validate the optional field `serviceFees` (array)
             for (const item of data['serviceFees']) {
                 PriceAndAvailabilityResponseInnerServiceFeesInner.validateJSON(item);
+            };
+        }
+        if (data['subscriptionPrice']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['subscriptionPrice'])) {
+                throw new Error("Expected the field `subscriptionPrice` to be an array in the JSON data but got " + data['subscriptionPrice']);
+            }
+            // validate the optional field `subscriptionPrice` (array)
+            for (const item of data['subscriptionPrice']) {
+                PriceAndAvailabilityResponseInnerSubscriptionPriceInner.validateJSON(item);
             };
         }
 
@@ -411,6 +425,11 @@ PriceAndAvailabilityResponseInner.prototype['bundlePartIndicator'] = undefined;
  * @member {Array.<module:model/PriceAndAvailabilityResponseInnerServiceFeesInner>} serviceFees
  */
 PriceAndAvailabilityResponseInner.prototype['serviceFees'] = undefined;
+
+/**
+ * @member {Array.<module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInner>} subscriptionPrice
+ */
+PriceAndAvailabilityResponseInner.prototype['subscriptionPrice'] = undefined;
 
 
 

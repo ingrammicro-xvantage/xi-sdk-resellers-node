@@ -84,6 +84,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property planID (base name: "planID")', function() {
+      // uncomment below and update the code to test the property planID
+      //var instance = new XiSdkResellers.PriceAndAvailabilityRequestProductsInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
       // uncomment below and update the code to test the property additionalAttributes
       //var instance = new XiSdkResellers.PriceAndAvailabilityRequestProductsInner();

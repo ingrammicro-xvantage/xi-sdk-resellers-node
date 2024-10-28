@@ -13,6 +13,8 @@
 
 import ApiClient from '../ApiClient';
 import PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner from './PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner';
+import PriceAndAvailabilityRequestProductsInnerPlanID from './PriceAndAvailabilityRequestProductsInnerPlanID';
+import PriceAndAvailabilityRequestProductsInnerQuantityRequested from './PriceAndAvailabilityRequestProductsInnerQuantityRequested';
 
 /**
  * The PriceAndAvailabilityRequestProductsInner model module.
@@ -61,7 +63,10 @@ class PriceAndAvailabilityRequestProductsInner {
                 obj['upc'] = ApiClient.convertToType(data['upc'], 'String');
             }
             if (data.hasOwnProperty('quantityRequested')) {
-                obj['quantityRequested'] = ApiClient.convertToType(data['quantityRequested'], 'String');
+                obj['quantityRequested'] = PriceAndAvailabilityRequestProductsInnerQuantityRequested.constructFromObject(data['quantityRequested']);
+            }
+            if (data.hasOwnProperty('planID')) {
+                obj['planID'] = PriceAndAvailabilityRequestProductsInnerPlanID.constructFromObject(data['planID']);
             }
             if (data.hasOwnProperty('additionalAttributes')) {
                 obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner]);
@@ -92,9 +97,13 @@ class PriceAndAvailabilityRequestProductsInner {
         if (data['upc'] && !(typeof data['upc'] === 'string' || data['upc'] instanceof String)) {
             throw new Error("Expected the field `upc` to be a primitive type in the JSON string but got " + data['upc']);
         }
-        // ensure the json data is a string
-        if (data['quantityRequested'] && !(typeof data['quantityRequested'] === 'string' || data['quantityRequested'] instanceof String)) {
-            throw new Error("Expected the field `quantityRequested` to be a primitive type in the JSON string but got " + data['quantityRequested']);
+        // validate the optional field `quantityRequested`
+        if (data['quantityRequested']) { // data not null
+          PriceAndAvailabilityRequestProductsInnerQuantityRequested.validateJSON(data['quantityRequested']);
+        }
+        // validate the optional field `planID`
+        if (data['planID']) { // data not null
+          PriceAndAvailabilityRequestProductsInnerPlanID.validateJSON(data['planID']);
         }
         if (data['additionalAttributes']) { // data not null
             // ensure the json data is an array
@@ -140,10 +149,14 @@ PriceAndAvailabilityRequestProductsInner.prototype['customerPartNumber'] = undef
 PriceAndAvailabilityRequestProductsInner.prototype['upc'] = undefined;
 
 /**
- * Number of quantity of the Product.
- * @member {String} quantityRequested
+ * @member {module:model/PriceAndAvailabilityRequestProductsInnerQuantityRequested} quantityRequested
  */
 PriceAndAvailabilityRequestProductsInner.prototype['quantityRequested'] = undefined;
+
+/**
+ * @member {module:model/PriceAndAvailabilityRequestProductsInnerPlanID} planID
+ */
+PriceAndAvailabilityRequestProductsInner.prototype['planID'] = undefined;
 
 /**
  * @member {Array.<module:model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner>} additionalAttributes

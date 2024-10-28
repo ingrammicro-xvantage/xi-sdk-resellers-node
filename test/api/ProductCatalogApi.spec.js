@@ -58,6 +58,16 @@
         done();
       });
     });
+    describe('getResellerV6ProductdetailCmp', function() {
+      it('should call getResellerV6ProductdetailCmp successfully', function(done) {
+        //uncomment below and update the code to test getResellerV6ProductdetailCmp
+        //instance.getResellerV6ProductdetailCmp(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getResellerV6Productsearch', function() {
       it('should call getResellerV6Productsearch successfully', function(done) {
         //uncomment below and update the code to test getResellerV6Productsearch

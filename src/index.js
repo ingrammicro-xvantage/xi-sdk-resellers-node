@@ -14,19 +14,6 @@
 
 import ApiClient from './ApiClient';
 import AccesstokenResponse from './model/AccesstokenResponse';
-import AsyncOrderCreateDTO from './model/AsyncOrderCreateDTO';
-import AsyncOrderCreateDTOAdditionalAttributesInner from './model/AsyncOrderCreateDTOAdditionalAttributesInner';
-import AsyncOrderCreateDTOEndUserInfo from './model/AsyncOrderCreateDTOEndUserInfo';
-import AsyncOrderCreateDTOLinesInner from './model/AsyncOrderCreateDTOLinesInner';
-import AsyncOrderCreateDTOLinesInnerEndUserInfoInner from './model/AsyncOrderCreateDTOLinesInnerEndUserInfoInner';
-import AsyncOrderCreateDTOResellerInfo from './model/AsyncOrderCreateDTOResellerInfo';
-import AsyncOrderCreateDTOShipToInfo from './model/AsyncOrderCreateDTOShipToInfo';
-import AsyncOrderCreateDTOShipmentDetails from './model/AsyncOrderCreateDTOShipmentDetails';
-import AsyncOrderCreateDTOVmfadditionalAttributesInner from './model/AsyncOrderCreateDTOVmfadditionalAttributesInner';
-import AsyncOrderCreateDTOWarrantyInfoInner from './model/AsyncOrderCreateDTOWarrantyInfoInner';
-import AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner from './model/AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner';
-import AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner from './model/AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner';
-import AsyncOrderCreateResponse from './model/AsyncOrderCreateResponse';
 import AvailabilityAsyncNotificationRequest from './model/AvailabilityAsyncNotificationRequest';
 import AvailabilityAsyncNotificationRequestResourceInner from './model/AvailabilityAsyncNotificationRequestResourceInner';
 import AvailabilityAsyncNotificationRequestResourceInnerLinksInner from './model/AvailabilityAsyncNotificationRequestResourceInnerLinksInner';
@@ -52,6 +39,7 @@ import GetAccesstoken400Response from './model/GetAccesstoken400Response';
 import GetAccesstoken500Response from './model/GetAccesstoken500Response';
 import GetAccesstoken500ResponseFault from './model/GetAccesstoken500ResponseFault';
 import GetAccesstoken500ResponseFaultDetail from './model/GetAccesstoken500ResponseFaultDetail';
+import GetResellerV6ProductsearchPlanIDParameter from './model/GetResellerV6ProductsearchPlanIDParameter';
 import GetResellerV6ValidateQuote400Response from './model/GetResellerV6ValidateQuote400Response';
 import GetResellerV6ValidateQuote400ResponseFieldsInner from './model/GetResellerV6ValidateQuote400ResponseFieldsInner';
 import InvoiceDetailsv61Response from './model/InvoiceDetailsv61Response';
@@ -91,6 +79,26 @@ import OrderCreateResponseOrdersInnerLinksInner from './model/OrderCreateRespons
 import OrderCreateResponseOrdersInnerMiscellaneousChargesInner from './model/OrderCreateResponseOrdersInnerMiscellaneousChargesInner';
 import OrderCreateResponseOrdersInnerRejectedLineItemsInner from './model/OrderCreateResponseOrdersInnerRejectedLineItemsInner';
 import OrderCreateResponseShipToInfo from './model/OrderCreateResponseShipToInfo';
+import OrderCreateV7Request from './model/OrderCreateV7Request';
+import OrderCreateV7RequestAdditionalAttributesInner from './model/OrderCreateV7RequestAdditionalAttributesInner';
+import OrderCreateV7RequestEndUserInfo from './model/OrderCreateV7RequestEndUserInfo';
+import OrderCreateV7RequestLinesInner from './model/OrderCreateV7RequestLinesInner';
+import OrderCreateV7RequestLinesInnerAdditionalAttributesInner from './model/OrderCreateV7RequestLinesInnerAdditionalAttributesInner';
+import OrderCreateV7RequestLinesInnerEndUserInfoInner from './model/OrderCreateV7RequestLinesInnerEndUserInfoInner';
+import OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner from './model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner';
+import OrderCreateV7RequestLinesInnerWarrantyInfoInner from './model/OrderCreateV7RequestLinesInnerWarrantyInfoInner';
+import OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner from './model/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner';
+import OrderCreateV7RequestResellerInfo from './model/OrderCreateV7RequestResellerInfo';
+import OrderCreateV7RequestShipToInfo from './model/OrderCreateV7RequestShipToInfo';
+import OrderCreateV7RequestShipmentDetails from './model/OrderCreateV7RequestShipmentDetails';
+import OrderCreateV7RequestVmfAdditionalAttributesInner from './model/OrderCreateV7RequestVmfAdditionalAttributesInner';
+import OrderCreateV7Response from './model/OrderCreateV7Response';
+import OrderCreateV7Response201 from './model/OrderCreateV7Response201';
+import OrderCreateV7ResponseResource from './model/OrderCreateV7ResponseResource';
+import OrderCreateV7ResponseResourceOrdersInner from './model/OrderCreateV7ResponseResourceOrdersInner';
+import OrderCreateV7ResponseResourceOrdersInnerLinesInner from './model/OrderCreateV7ResponseResourceOrdersInnerLinesInner';
+import OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner from './model/OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner';
+import OrderCreateV7ResponseResourceShipToInfo from './model/OrderCreateV7ResponseResourceShipToInfo';
 import OrderDetailB2B from './model/OrderDetailB2B';
 import OrderDetailB2BAdditionalAttributesInner from './model/OrderDetailB2BAdditionalAttributesInner';
 import OrderDetailB2BBillToInfo from './model/OrderDetailB2BBillToInfo';
@@ -144,8 +152,11 @@ import PostRenewalssearch400Response from './model/PostRenewalssearch400Response
 import PriceAndAvailabilityRequest from './model/PriceAndAvailabilityRequest';
 import PriceAndAvailabilityRequestAdditionalAttributesInner from './model/PriceAndAvailabilityRequestAdditionalAttributesInner';
 import PriceAndAvailabilityRequestAvailabilityByWarehouseInner from './model/PriceAndAvailabilityRequestAvailabilityByWarehouseInner';
+import PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId from './model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId';
 import PriceAndAvailabilityRequestProductsInner from './model/PriceAndAvailabilityRequestProductsInner';
 import PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner from './model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner';
+import PriceAndAvailabilityRequestProductsInnerPlanID from './model/PriceAndAvailabilityRequestProductsInnerPlanID';
+import PriceAndAvailabilityRequestProductsInnerQuantityRequested from './model/PriceAndAvailabilityRequestProductsInnerQuantityRequested';
 import PriceAndAvailabilityResponseInner from './model/PriceAndAvailabilityResponseInner';
 import PriceAndAvailabilityResponseInnerAvailability from './model/PriceAndAvailabilityResponseInnerAvailability';
 import PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner from './model/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner';
@@ -156,14 +167,33 @@ import PriceAndAvailabilityResponseInnerDiscountsInnerSpecialPricingInner from '
 import PriceAndAvailabilityResponseInnerPricing from './model/PriceAndAvailabilityResponseInnerPricing';
 import PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner from './model/PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner';
 import PriceAndAvailabilityResponseInnerServiceFeesInner from './model/PriceAndAvailabilityResponseInnerServiceFeesInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner';
 import ProductDetailResponse from './model/ProductDetailResponse';
 import ProductDetailResponseAdditionalInformation from './model/ProductDetailResponseAdditionalInformation';
 import ProductDetailResponseAdditionalInformationProductWeightInner from './model/ProductDetailResponseAdditionalInformationProductWeightInner';
-import ProductDetailResponseCiscoFields from './model/ProductDetailResponseCiscoFields';
-import ProductDetailResponseIndicators from './model/ProductDetailResponseIndicators';
+import ProductDetailResponseCiscoFieldsInner from './model/ProductDetailResponseCiscoFieldsInner';
+import ProductDetailResponseIndicatorsInner from './model/ProductDetailResponseIndicatorsInner';
+import ProductDetailResponseSubscriptionDetailsInner from './model/ProductDetailResponseSubscriptionDetailsInner';
+import ProductDetailResponseSubscriptionDetailsInnerBillingPeriod from './model/ProductDetailResponseSubscriptionDetailsInnerBillingPeriod';
+import ProductDetailResponseSubscriptionDetailsInnerGroupsInner from './model/ProductDetailResponseSubscriptionDetailsInnerGroupsInner';
+import ProductDetailResponseSubscriptionDetailsInnerOptionsInner from './model/ProductDetailResponseSubscriptionDetailsInnerOptionsInner';
+import ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner from './model/ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner';
 import ProductSearchResponse from './model/ProductSearchResponse';
 import ProductSearchResponseCatalogInner from './model/ProductSearchResponseCatalogInner';
 import ProductSearchResponseCatalogInnerLinksInner from './model/ProductSearchResponseCatalogInnerLinksInner';
+import ProductSearchResponseSubscriptionCatalogInner from './model/ProductSearchResponseSubscriptionCatalogInner';
+import ProductSearchResponseSubscriptionCatalogInnerPlansInner from './model/ProductSearchResponseSubscriptionCatalogInnerPlansInner';
+import ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner from './model/ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner';
+import ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner from './model/ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner';
 import QuoteDetailsResponse from './model/QuoteDetailsResponse';
 import QuoteDetailsResponseAdditionalAttributesInner from './model/QuoteDetailsResponseAdditionalAttributesInner';
 import QuoteDetailsResponseEndUserInfo from './model/QuoteDetailsResponseEndUserInfo';
@@ -263,84 +293,6 @@ export {
      * @property {module:model/AccesstokenResponse}
      */
     AccesstokenResponse,
-
-    /**
-     * The AsyncOrderCreateDTO model constructor.
-     * @property {module:model/AsyncOrderCreateDTO}
-     */
-    AsyncOrderCreateDTO,
-
-    /**
-     * The AsyncOrderCreateDTOAdditionalAttributesInner model constructor.
-     * @property {module:model/AsyncOrderCreateDTOAdditionalAttributesInner}
-     */
-    AsyncOrderCreateDTOAdditionalAttributesInner,
-
-    /**
-     * The AsyncOrderCreateDTOEndUserInfo model constructor.
-     * @property {module:model/AsyncOrderCreateDTOEndUserInfo}
-     */
-    AsyncOrderCreateDTOEndUserInfo,
-
-    /**
-     * The AsyncOrderCreateDTOLinesInner model constructor.
-     * @property {module:model/AsyncOrderCreateDTOLinesInner}
-     */
-    AsyncOrderCreateDTOLinesInner,
-
-    /**
-     * The AsyncOrderCreateDTOLinesInnerEndUserInfoInner model constructor.
-     * @property {module:model/AsyncOrderCreateDTOLinesInnerEndUserInfoInner}
-     */
-    AsyncOrderCreateDTOLinesInnerEndUserInfoInner,
-
-    /**
-     * The AsyncOrderCreateDTOResellerInfo model constructor.
-     * @property {module:model/AsyncOrderCreateDTOResellerInfo}
-     */
-    AsyncOrderCreateDTOResellerInfo,
-
-    /**
-     * The AsyncOrderCreateDTOShipToInfo model constructor.
-     * @property {module:model/AsyncOrderCreateDTOShipToInfo}
-     */
-    AsyncOrderCreateDTOShipToInfo,
-
-    /**
-     * The AsyncOrderCreateDTOShipmentDetails model constructor.
-     * @property {module:model/AsyncOrderCreateDTOShipmentDetails}
-     */
-    AsyncOrderCreateDTOShipmentDetails,
-
-    /**
-     * The AsyncOrderCreateDTOVmfadditionalAttributesInner model constructor.
-     * @property {module:model/AsyncOrderCreateDTOVmfadditionalAttributesInner}
-     */
-    AsyncOrderCreateDTOVmfadditionalAttributesInner,
-
-    /**
-     * The AsyncOrderCreateDTOWarrantyInfoInner model constructor.
-     * @property {module:model/AsyncOrderCreateDTOWarrantyInfoInner}
-     */
-    AsyncOrderCreateDTOWarrantyInfoInner,
-
-    /**
-     * The AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner model constructor.
-     * @property {module:model/AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner}
-     */
-    AsyncOrderCreateDTOWarrantyInfoInnerSerialInfoInner,
-
-    /**
-     * The AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner model constructor.
-     * @property {module:model/AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner}
-     */
-    AsyncOrderCreateDTOWarrantyInfoInnerVmfAdditionalAttributesLinesInner,
-
-    /**
-     * The AsyncOrderCreateResponse model constructor.
-     * @property {module:model/AsyncOrderCreateResponse}
-     */
-    AsyncOrderCreateResponse,
 
     /**
      * The AvailabilityAsyncNotificationRequest model constructor.
@@ -491,6 +443,12 @@ export {
      * @property {module:model/GetAccesstoken500ResponseFaultDetail}
      */
     GetAccesstoken500ResponseFaultDetail,
+
+    /**
+     * The GetResellerV6ProductsearchPlanIDParameter model constructor.
+     * @property {module:model/GetResellerV6ProductsearchPlanIDParameter}
+     */
+    GetResellerV6ProductsearchPlanIDParameter,
 
     /**
      * The GetResellerV6ValidateQuote400Response model constructor.
@@ -725,6 +683,126 @@ export {
      * @property {module:model/OrderCreateResponseShipToInfo}
      */
     OrderCreateResponseShipToInfo,
+
+    /**
+     * The OrderCreateV7Request model constructor.
+     * @property {module:model/OrderCreateV7Request}
+     */
+    OrderCreateV7Request,
+
+    /**
+     * The OrderCreateV7RequestAdditionalAttributesInner model constructor.
+     * @property {module:model/OrderCreateV7RequestAdditionalAttributesInner}
+     */
+    OrderCreateV7RequestAdditionalAttributesInner,
+
+    /**
+     * The OrderCreateV7RequestEndUserInfo model constructor.
+     * @property {module:model/OrderCreateV7RequestEndUserInfo}
+     */
+    OrderCreateV7RequestEndUserInfo,
+
+    /**
+     * The OrderCreateV7RequestLinesInner model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInner}
+     */
+    OrderCreateV7RequestLinesInner,
+
+    /**
+     * The OrderCreateV7RequestLinesInnerAdditionalAttributesInner model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerAdditionalAttributesInner}
+     */
+    OrderCreateV7RequestLinesInnerAdditionalAttributesInner,
+
+    /**
+     * The OrderCreateV7RequestLinesInnerEndUserInfoInner model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerEndUserInfoInner}
+     */
+    OrderCreateV7RequestLinesInnerEndUserInfoInner,
+
+    /**
+     * The OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner}
+     */
+    OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner,
+
+    /**
+     * The OrderCreateV7RequestLinesInnerWarrantyInfoInner model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerWarrantyInfoInner}
+     */
+    OrderCreateV7RequestLinesInnerWarrantyInfoInner,
+
+    /**
+     * The OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner}
+     */
+    OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner,
+
+    /**
+     * The OrderCreateV7RequestResellerInfo model constructor.
+     * @property {module:model/OrderCreateV7RequestResellerInfo}
+     */
+    OrderCreateV7RequestResellerInfo,
+
+    /**
+     * The OrderCreateV7RequestShipToInfo model constructor.
+     * @property {module:model/OrderCreateV7RequestShipToInfo}
+     */
+    OrderCreateV7RequestShipToInfo,
+
+    /**
+     * The OrderCreateV7RequestShipmentDetails model constructor.
+     * @property {module:model/OrderCreateV7RequestShipmentDetails}
+     */
+    OrderCreateV7RequestShipmentDetails,
+
+    /**
+     * The OrderCreateV7RequestVmfAdditionalAttributesInner model constructor.
+     * @property {module:model/OrderCreateV7RequestVmfAdditionalAttributesInner}
+     */
+    OrderCreateV7RequestVmfAdditionalAttributesInner,
+
+    /**
+     * The OrderCreateV7Response model constructor.
+     * @property {module:model/OrderCreateV7Response}
+     */
+    OrderCreateV7Response,
+
+    /**
+     * The OrderCreateV7Response201 model constructor.
+     * @property {module:model/OrderCreateV7Response201}
+     */
+    OrderCreateV7Response201,
+
+    /**
+     * The OrderCreateV7ResponseResource model constructor.
+     * @property {module:model/OrderCreateV7ResponseResource}
+     */
+    OrderCreateV7ResponseResource,
+
+    /**
+     * The OrderCreateV7ResponseResourceOrdersInner model constructor.
+     * @property {module:model/OrderCreateV7ResponseResourceOrdersInner}
+     */
+    OrderCreateV7ResponseResourceOrdersInner,
+
+    /**
+     * The OrderCreateV7ResponseResourceOrdersInnerLinesInner model constructor.
+     * @property {module:model/OrderCreateV7ResponseResourceOrdersInnerLinesInner}
+     */
+    OrderCreateV7ResponseResourceOrdersInnerLinesInner,
+
+    /**
+     * The OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner model constructor.
+     * @property {module:model/OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner}
+     */
+    OrderCreateV7ResponseResourceOrdersInnerLinesInnerShipmentDetailsInner,
+
+    /**
+     * The OrderCreateV7ResponseResourceShipToInfo model constructor.
+     * @property {module:model/OrderCreateV7ResponseResourceShipToInfo}
+     */
+    OrderCreateV7ResponseResourceShipToInfo,
 
     /**
      * The OrderDetailB2B model constructor.
@@ -1045,6 +1123,12 @@ export {
     PriceAndAvailabilityRequestAvailabilityByWarehouseInner,
 
     /**
+     * The PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId model constructor.
+     * @property {module:model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId}
+     */
+    PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId,
+
+    /**
      * The PriceAndAvailabilityRequestProductsInner model constructor.
      * @property {module:model/PriceAndAvailabilityRequestProductsInner}
      */
@@ -1055,6 +1139,18 @@ export {
      * @property {module:model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner}
      */
     PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner,
+
+    /**
+     * The PriceAndAvailabilityRequestProductsInnerPlanID model constructor.
+     * @property {module:model/PriceAndAvailabilityRequestProductsInnerPlanID}
+     */
+    PriceAndAvailabilityRequestProductsInnerPlanID,
+
+    /**
+     * The PriceAndAvailabilityRequestProductsInnerQuantityRequested model constructor.
+     * @property {module:model/PriceAndAvailabilityRequestProductsInnerQuantityRequested}
+     */
+    PriceAndAvailabilityRequestProductsInnerQuantityRequested,
 
     /**
      * The PriceAndAvailabilityResponseInner model constructor.
@@ -1117,6 +1213,66 @@ export {
     PriceAndAvailabilityResponseInnerServiceFeesInner,
 
     /**
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInner model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInner}
+     */
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInner,
+
+    /**
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner}
+     */
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner,
+
+    /**
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner}
+     */
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner,
+
+    /**
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner}
+     */
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner,
+
+    /**
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner}
+     */
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner,
+
+    /**
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner}
+     */
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerSpecialPricingInner,
+
+    /**
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner}
+     */
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInnerVolumeDiscountsInner,
+
+    /**
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner}
+     */
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner,
+
+    /**
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner}
+     */
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner,
+
+    /**
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner}
+     */
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner,
+
+    /**
      * The ProductDetailResponse model constructor.
      * @property {module:model/ProductDetailResponse}
      */
@@ -1135,16 +1291,46 @@ export {
     ProductDetailResponseAdditionalInformationProductWeightInner,
 
     /**
-     * The ProductDetailResponseCiscoFields model constructor.
-     * @property {module:model/ProductDetailResponseCiscoFields}
+     * The ProductDetailResponseCiscoFieldsInner model constructor.
+     * @property {module:model/ProductDetailResponseCiscoFieldsInner}
      */
-    ProductDetailResponseCiscoFields,
+    ProductDetailResponseCiscoFieldsInner,
 
     /**
-     * The ProductDetailResponseIndicators model constructor.
-     * @property {module:model/ProductDetailResponseIndicators}
+     * The ProductDetailResponseIndicatorsInner model constructor.
+     * @property {module:model/ProductDetailResponseIndicatorsInner}
      */
-    ProductDetailResponseIndicators,
+    ProductDetailResponseIndicatorsInner,
+
+    /**
+     * The ProductDetailResponseSubscriptionDetailsInner model constructor.
+     * @property {module:model/ProductDetailResponseSubscriptionDetailsInner}
+     */
+    ProductDetailResponseSubscriptionDetailsInner,
+
+    /**
+     * The ProductDetailResponseSubscriptionDetailsInnerBillingPeriod model constructor.
+     * @property {module:model/ProductDetailResponseSubscriptionDetailsInnerBillingPeriod}
+     */
+    ProductDetailResponseSubscriptionDetailsInnerBillingPeriod,
+
+    /**
+     * The ProductDetailResponseSubscriptionDetailsInnerGroupsInner model constructor.
+     * @property {module:model/ProductDetailResponseSubscriptionDetailsInnerGroupsInner}
+     */
+    ProductDetailResponseSubscriptionDetailsInnerGroupsInner,
+
+    /**
+     * The ProductDetailResponseSubscriptionDetailsInnerOptionsInner model constructor.
+     * @property {module:model/ProductDetailResponseSubscriptionDetailsInnerOptionsInner}
+     */
+    ProductDetailResponseSubscriptionDetailsInnerOptionsInner,
+
+    /**
+     * The ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner model constructor.
+     * @property {module:model/ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner}
+     */
+    ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner,
 
     /**
      * The ProductSearchResponse model constructor.
@@ -1163,6 +1349,30 @@ export {
      * @property {module:model/ProductSearchResponseCatalogInnerLinksInner}
      */
     ProductSearchResponseCatalogInnerLinksInner,
+
+    /**
+     * The ProductSearchResponseSubscriptionCatalogInner model constructor.
+     * @property {module:model/ProductSearchResponseSubscriptionCatalogInner}
+     */
+    ProductSearchResponseSubscriptionCatalogInner,
+
+    /**
+     * The ProductSearchResponseSubscriptionCatalogInnerPlansInner model constructor.
+     * @property {module:model/ProductSearchResponseSubscriptionCatalogInnerPlansInner}
+     */
+    ProductSearchResponseSubscriptionCatalogInnerPlansInner,
+
+    /**
+     * The ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner model constructor.
+     * @property {module:model/ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner}
+     */
+    ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner,
+
+    /**
+     * The ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner model constructor.
+     * @property {module:model/ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner}
+     */
+    ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner,
 
     /**
      * The QuoteDetailsResponse model constructor.

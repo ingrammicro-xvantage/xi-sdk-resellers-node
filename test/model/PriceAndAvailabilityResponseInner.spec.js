@@ -216,6 +216,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property subscriptionPrice (base name: "subscriptionPrice")', function() {
+      // uncomment below and update the code to test the property subscriptionPrice
+      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInner();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));
