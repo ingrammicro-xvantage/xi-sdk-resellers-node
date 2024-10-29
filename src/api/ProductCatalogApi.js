@@ -53,9 +53,12 @@ export default class ProductCatalogApi {
      * @param {String} ingramPartNumber Ingram Micro unique part number for the product
      * @param {String} iMCustomerNumber Your unique Ingram Micro customer number
      * @param {String} iMCountryCode Two-character ISO country code.
-     * @param {String} iMCorrelationID Unique transaction number to identify each transaction accross all the systems
+     * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems
      * @param {Object} opts Optional parameters
      * @param {String} [iMSenderID] Sender Identification text
+     * @param {String} [vendorPartNumber] Vendor’s part number for the product.
+     * @param {String} [planName] Name of the subscription plan
+     * @param {String} [planId] Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
      * @param {module:api/ProductCatalogApi~getResellerV6ProductdetailCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ProductDetailResponse}
      */
@@ -83,68 +86,6 @@ export default class ProductCatalogApi {
         'ingramPartNumber': ingramPartNumber
       };
       let queryParams = {
-      };
-      let headerParams = {
-        'IM-CustomerNumber': iMCustomerNumber,
-        'IM-CountryCode': iMCountryCode,
-        'IM-SenderID': opts['iMSenderID'],
-        'IM-CorrelationID': iMCorrelationID
-      };
-      let formParams = {
-      };
-
-      let authNames = ['application'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = ProductDetailResponse;
-      return this.apiClient.callApi(
-        '/resellers/v6/catalog/details/{ingramPartNumber}', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the getResellerV6ProductdetailCmp operation.
-     * @callback module:api/ProductCatalogApi~getResellerV6ProductdetailCmpCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/ProductDetailResponse} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * Product Details
-     * Search all the product-related details using a unique Ingram Part Number.
-     * @param {String} iMCustomerNumber Your unique Ingram Micro customer number
-     * @param {String} iMCountryCode Two-character ISO country code.
-     * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems
-     * @param {Object} opts Optional parameters
-     * @param {String} [iMSenderID] Sender Identification text
-     * @param {String} [vendorPartNumber] Vendor’s part number for the product.
-     * @param {String} [planName] Name of the subscription plan
-     * @param {String} [planId] Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
-     * @param {module:api/ProductCatalogApi~getResellerV6ProductdetailCmpCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/ProductDetailResponse}
-     */
-    getResellerV6ProductdetailCmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, callback) {
-      opts = opts || {};
-      let postBody = null;
-      // verify the required parameter 'iMCustomerNumber' is set
-      if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
-        throw new Error("Missing the required parameter 'iMCustomerNumber' when calling getResellerV6ProductdetailCmp");
-      }
-      // verify the required parameter 'iMCountryCode' is set
-      if (iMCountryCode === undefined || iMCountryCode === null) {
-        throw new Error("Missing the required parameter 'iMCountryCode' when calling getResellerV6ProductdetailCmp");
-      }
-      // verify the required parameter 'iMCorrelationID' is set
-      if (iMCorrelationID === undefined || iMCorrelationID === null) {
-        throw new Error("Missing the required parameter 'iMCorrelationID' when calling getResellerV6ProductdetailCmp");
-      }
-
-      let pathParams = {
-      };
-      let queryParams = {
         'vendorPartNumber': opts['vendorPartNumber'],
         'planName': opts['planName'],
         'planId': opts['planId']
@@ -163,7 +104,7 @@ export default class ProductCatalogApi {
       let accepts = ['application/json'];
       let returnType = ProductDetailResponse;
       return this.apiClient.callApi(
-        '/resellers/v6/catalog/details', 'GET',
+        '/resellers/v6/catalog/details/{ingramPartNumber}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

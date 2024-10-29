@@ -5,7 +5,6 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getResellerV6Productdetail**](ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details
-[**getResellerV6ProductdetailCmp**](ProductCatalogApi.md#getResellerV6ProductdetailCmp) | **GET** /resellers/v6/catalog/details | Product Details
 [**getResellerV6Productsearch**](ProductCatalogApi.md#getResellerV6Productsearch) | **GET** /resellers/v6/catalog | Search Products
 [**postPriceandavailability**](ProductCatalogApi.md#postPriceandavailability) | **POST** /resellers/v6/catalog/priceandavailability | Price and Availability
 
@@ -32,9 +31,12 @@ let apiInstance = new XiSdkResellers.ProductCatalogApi();
 let ingramPartNumber = "6YE881"; // String | Ingram Micro unique part number for the product
 let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number
 let iMCountryCode = "US"; // String | Two-character ISO country code.
-let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction accross all the systems
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems
 let opts = {
-  'iMSenderID': "MyCompany" // String | Sender Identification text
+  'iMSenderID': "MyCompany", // String | Sender Identification text
+  'vendorPartNumber': "vendorPartNumber_example", // String | Vendor’s part number for the product.
+  'planName': "planName_example", // String | Name of the subscription plan
+  'planId': "planId_example" // String | Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
 };
 apiInstance.getResellerV6Productdetail(ingramPartNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
   if (error) {
@@ -51,66 +53,6 @@ apiInstance.getResellerV6Productdetail(ingramPartNumber, iMCustomerNumber, iMCou
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ingramPartNumber** | **String**| Ingram Micro unique part number for the product | 
- **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number | 
- **iMCountryCode** | **String**| Two-character ISO country code. | 
- **iMCorrelationID** | **String**| Unique transaction number to identify each transaction accross all the systems | 
- **iMSenderID** | **String**| Sender Identification text | [optional] 
-
-### Return type
-
-[**ProductDetailResponse**](ProductDetailResponse.md)
-
-### Authorization
-
-[application](../README.md#application)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## getResellerV6ProductdetailCmp
-
-> ProductDetailResponse getResellerV6ProductdetailCmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts)
-
-Product Details
-
-Search all the product-related details using a unique Ingram Part Number.
-
-### Example
-
-```javascript
-import XiSdkResellers from 'xi_sdk_resellers';
-let defaultClient = XiSdkResellers.ApiClient.instance;
-// Configure OAuth2 access token for authorization: application
-let application = defaultClient.authentications['application'];
-application.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new XiSdkResellers.ProductCatalogApi();
-let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number
-let iMCountryCode = "US"; // String | Two-character ISO country code.
-let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems
-let opts = {
-  'iMSenderID': "MyCompany", // String | Sender Identification text
-  'vendorPartNumber': "vendorPartNumber_example", // String | Vendor’s part number for the product.
-  'planName': "planName_example", // String | Name of the subscription plan
-  'planId': "planId_example" // String | Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
-};
-apiInstance.getResellerV6ProductdetailCmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
  **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number | 
  **iMCountryCode** | **String**| Two-character ISO country code. | 
  **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems | 
