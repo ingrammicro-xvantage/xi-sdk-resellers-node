@@ -105,8 +105,8 @@ export default class ProductCatalogApi {
     }
 
     /**
-     * Callback function to receive the result of the getResellerV6ProductdetailCmp operation.
-     * @callback module:api/ProductCatalogApi~getResellerV6ProductdetailCmpCallback
+     * Callback function to receive the result of the getResellerV6Productdetailcmp operation.
+     * @callback module:api/ProductCatalogApi~getResellerV6ProductdetailcmpCallback
      * @param {String} error Error message, if any.
      * @param {module:model/ProductDetailResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -114,40 +114,40 @@ export default class ProductCatalogApi {
 
     /**
      * Product Details
-     * Search all the product-related details using a unique Ingram Part Number.
+     * Search all the product-related details.
      * @param {String} iMCustomerNumber Your unique Ingram Micro customer number
      * @param {String} iMCountryCode Two-character ISO country code.
      * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems
      * @param {Object} opts Optional parameters
      * @param {String} [iMSenderID] Sender Identification text
-     * @param {String} [vendorPartNumber] Vendor’s part number for the product.
      * @param {String} [planName] Name of the subscription plan
      * @param {String} [planId] Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
-     * @param {module:api/ProductCatalogApi~getResellerV6ProductdetailCmpCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {String} [vendorPartNumber] Vendor’s part number for the product.
+     * @param {module:api/ProductCatalogApi~getResellerV6ProductdetailcmpCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ProductDetailResponse}
      */
-    getResellerV6ProductdetailCmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, callback) {
+    getResellerV6Productdetailcmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, callback) {
       opts = opts || {};
       let postBody = null;
       // verify the required parameter 'iMCustomerNumber' is set
       if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
-        throw new Error("Missing the required parameter 'iMCustomerNumber' when calling getResellerV6ProductdetailCmp");
+        throw new Error("Missing the required parameter 'iMCustomerNumber' when calling getResellerV6Productdetailcmp");
       }
       // verify the required parameter 'iMCountryCode' is set
       if (iMCountryCode === undefined || iMCountryCode === null) {
-        throw new Error("Missing the required parameter 'iMCountryCode' when calling getResellerV6ProductdetailCmp");
+        throw new Error("Missing the required parameter 'iMCountryCode' when calling getResellerV6Productdetailcmp");
       }
       // verify the required parameter 'iMCorrelationID' is set
       if (iMCorrelationID === undefined || iMCorrelationID === null) {
-        throw new Error("Missing the required parameter 'iMCorrelationID' when calling getResellerV6ProductdetailCmp");
+        throw new Error("Missing the required parameter 'iMCorrelationID' when calling getResellerV6Productdetailcmp");
       }
 
       let pathParams = {
       };
       let queryParams = {
-        'vendorPartNumber': opts['vendorPartNumber'],
         'planName': opts['planName'],
-        'planId': opts['planId']
+        'planId': opts['planId'],
+        'vendorPartNumber': opts['vendorPartNumber']
       };
       let headerParams = {
         'IM-CustomerNumber': iMCustomerNumber,

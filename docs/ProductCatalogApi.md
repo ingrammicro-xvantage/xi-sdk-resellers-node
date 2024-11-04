@@ -5,7 +5,7 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getResellerV6Productdetail**](ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details
-[**getResellerV6ProductdetailCmp**](ProductCatalogApi.md#getResellerV6ProductdetailCmp) | **GET** /resellers/v6/catalog/details | Product Details
+[**getResellerV6Productdetailcmp**](ProductCatalogApi.md#getResellerV6Productdetailcmp) | **GET** /resellers/v6/catalog/details | Product Details
 [**getResellerV6Productsearch**](ProductCatalogApi.md#getResellerV6Productsearch) | **GET** /resellers/v6/catalog | Search Products
 [**postPriceandavailability**](ProductCatalogApi.md#postPriceandavailability) | **POST** /resellers/v6/catalog/priceandavailability | Price and Availability
 
@@ -70,13 +70,13 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## getResellerV6ProductdetailCmp
+## getResellerV6Productdetailcmp
 
-> ProductDetailResponse getResellerV6ProductdetailCmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts)
+> ProductDetailResponse getResellerV6Productdetailcmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts)
 
 Product Details
 
-Search all the product-related details using a unique Ingram Part Number.
+Search all the product-related details.
 
 ### Example
 
@@ -93,11 +93,11 @@ let iMCountryCode = "US"; // String | Two-character ISO country code.
 let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems
 let opts = {
   'iMSenderID': "MyCompany", // String | Sender Identification text
-  'vendorPartNumber': "vendorPartNumber_example", // String | Vendor’s part number for the product.
   'planName': "planName_example", // String | Name of the subscription plan
-  'planId': "planId_example" // String | Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
+  'planId': "planId_example", // String | Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
+  'vendorPartNumber': "vendorPartNumber_example" // String | Vendor’s part number for the product.
 };
-apiInstance.getResellerV6ProductdetailCmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
+apiInstance.getResellerV6Productdetailcmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -115,9 +115,9 @@ Name | Type | Description  | Notes
  **iMCountryCode** | **String**| Two-character ISO country code. | 
  **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems | 
  **iMSenderID** | **String**| Sender Identification text | [optional] 
- **vendorPartNumber** | **String**| Vendor’s part number for the product. | [optional] 
  **planName** | **String**| Name of the subscription plan | [optional] 
  **planId** | **String**| Id of the subscription plan.   &lt;span style&#x3D;&#39;color:red&#39;&gt;To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.&lt;/span&gt; | [optional] 
+ **vendorPartNumber** | **String**| Vendor’s part number for the product. | [optional] 
 
 ### Return type
 
