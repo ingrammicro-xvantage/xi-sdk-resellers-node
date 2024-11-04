@@ -1,4 +1,4 @@
-# XiSdkResellers.ProductDetailResponseCiscoFieldsInner
+# XiSdkResellers.ProductDetailResponseCiscoFields
 
 ## Properties
 

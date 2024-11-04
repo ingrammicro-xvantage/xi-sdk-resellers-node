@@ -1,4 +1,4 @@
-# XiSdkResellers.ProductDetailResponseIndicatorsInner
+# XiSdkResellers.ProductDetailResponseIndicators
 
 ## Properties
 

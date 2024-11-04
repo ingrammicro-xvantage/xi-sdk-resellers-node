@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The ProductDetailResponseIndicatorsInner model module.
- * @module model/ProductDetailResponseIndicatorsInner
+ * The ProductDetailResponseIndicators model module.
+ * @module model/ProductDetailResponseIndicators
  * @version 1.0.0
  */
-class ProductDetailResponseIndicatorsInner {
+class ProductDetailResponseIndicators {
     /**
-     * Constructs a new <code>ProductDetailResponseIndicatorsInner</code>.
-     * @alias module:model/ProductDetailResponseIndicatorsInner
+     * Constructs a new <code>ProductDetailResponseIndicators</code>.
+     * @alias module:model/ProductDetailResponseIndicators
      */
     constructor() { 
         
-        ProductDetailResponseIndicatorsInner.initialize(this);
+        ProductDetailResponseIndicators.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class ProductDetailResponseIndicatorsInner {
     }
 
     /**
-     * Constructs a <code>ProductDetailResponseIndicatorsInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>ProductDetailResponseIndicators</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/ProductDetailResponseIndicatorsInner} obj Optional instance to populate.
-     * @return {module:model/ProductDetailResponseIndicatorsInner} The populated <code>ProductDetailResponseIndicatorsInner</code> instance.
+     * @param {module:model/ProductDetailResponseIndicators} obj Optional instance to populate.
+     * @return {module:model/ProductDetailResponseIndicators} The populated <code>ProductDetailResponseIndicators</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new ProductDetailResponseIndicatorsInner();
+            obj = obj || new ProductDetailResponseIndicators();
 
             if (data.hasOwnProperty('hasWarranty')) {
                 obj['hasWarranty'] = ApiClient.convertToType(data['hasWarranty'], 'Boolean');
@@ -145,9 +145,9 @@ class ProductDetailResponseIndicatorsInner {
     }
 
     /**
-     * Validates the JSON data with respect to <code>ProductDetailResponseIndicatorsInner</code>.
+     * Validates the JSON data with respect to <code>ProductDetailResponseIndicators</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ProductDetailResponseIndicatorsInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ProductDetailResponseIndicators</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -167,192 +167,192 @@ class ProductDetailResponseIndicatorsInner {
  * Boolean that indicates whether product has a warranty.
  * @member {Boolean} hasWarranty
  */
-ProductDetailResponseIndicatorsInner.prototype['hasWarranty'] = undefined;
+ProductDetailResponseIndicators.prototype['hasWarranty'] = undefined;
 
 /**
  * Boolean that indicates whether it’s a new product. 
  * @member {Boolean} isNewProduct
  */
-ProductDetailResponseIndicatorsInner.prototype['isNewProduct'] = undefined;
+ProductDetailResponseIndicators.prototype['isNewProduct'] = undefined;
 
 /**
  * Boolean that indicates whether there is any limit to return the product.
  * @member {Boolean} HasReturnLimits
  */
-ProductDetailResponseIndicatorsInner.prototype['HasReturnLimits'] = undefined;
+ProductDetailResponseIndicators.prototype['HasReturnLimits'] = undefined;
 
 /**
  * Boolean that indicates whether back order is allowed for the product.
  * @member {Boolean} IsBackOrderAllowed
  */
-ProductDetailResponseIndicatorsInner.prototype['IsBackOrderAllowed'] = undefined;
+ProductDetailResponseIndicators.prototype['IsBackOrderAllowed'] = undefined;
 
 /**
  * Boolean that indicates whether product is shipped from the partner.
  * @member {Boolean} isShippedFromPartner
  */
-ProductDetailResponseIndicatorsInner.prototype['isShippedFromPartner'] = undefined;
+ProductDetailResponseIndicators.prototype['isShippedFromPartner'] = undefined;
 
 /**
  * Boolean that indicates whether product is a replacement product.
  * @member {Boolean} isReplacementProduct
  */
-ProductDetailResponseIndicatorsInner.prototype['isReplacementProduct'] = undefined;
+ProductDetailResponseIndicators.prototype['isReplacementProduct'] = undefined;
 
 /**
  * Boolean that indicates whether it’s a direct ship product.
  * @member {Boolean} isDirectship
  */
-ProductDetailResponseIndicatorsInner.prototype['isDirectship'] = undefined;
+ProductDetailResponseIndicators.prototype['isDirectship'] = undefined;
 
 /**
  * Boolean that indicates whether product is downloadable.
  * @member {Boolean} isDownloadable
  */
-ProductDetailResponseIndicatorsInner.prototype['isDownloadable'] = undefined;
+ProductDetailResponseIndicators.prototype['isDownloadable'] = undefined;
 
 /**
  * Boolean that indicates whether it’s a digital product. 
  * @member {Boolean} isDigitalType
  */
-ProductDetailResponseIndicatorsInner.prototype['isDigitalType'] = undefined;
+ProductDetailResponseIndicators.prototype['isDigitalType'] = undefined;
 
 /**
  * skutype
  * @member {String} skuType
  */
-ProductDetailResponseIndicatorsInner.prototype['skuType'] = undefined;
+ProductDetailResponseIndicators.prototype['skuType'] = undefined;
 
 /**
  * Boolean that indicates whether product has any standard special price.
  * @member {Boolean} hasStdSpecialPrice
  */
-ProductDetailResponseIndicatorsInner.prototype['hasStdSpecialPrice'] = undefined;
+ProductDetailResponseIndicators.prototype['hasStdSpecialPrice'] = undefined;
 
 /**
  * Boolean that indicates whether product has any ACOP special price.
  * @member {Boolean} hasAcopSpecialPrice
  */
-ProductDetailResponseIndicatorsInner.prototype['hasAcopSpecialPrice'] = undefined;
+ProductDetailResponseIndicators.prototype['hasAcopSpecialPrice'] = undefined;
 
 /**
  * Boolean that indicates whether product has any ACOP quantity break.
  * @member {Boolean} hasAcopQuantityBreak
  */
-ProductDetailResponseIndicatorsInner.prototype['hasAcopQuantityBreak'] = undefined;
+ProductDetailResponseIndicators.prototype['hasAcopQuantityBreak'] = undefined;
 
 /**
  * Boolean that indicates whether product has any standard web discount.
  * @member {Boolean} hasStdWebDiscount
  */
-ProductDetailResponseIndicatorsInner.prototype['hasStdWebDiscount'] = undefined;
+ProductDetailResponseIndicators.prototype['hasStdWebDiscount'] = undefined;
 
 /**
  * Boolean that indicates whether product has any special bid.
  * @member {Boolean} hasSpecialBid
  */
-ProductDetailResponseIndicatorsInner.prototype['hasSpecialBid'] = undefined;
+ProductDetailResponseIndicators.prototype['hasSpecialBid'] = undefined;
 
 /**
  * Boolean that indicates whether product is exportable.
  * @member {Boolean} isExportableToCountry
  */
-ProductDetailResponseIndicatorsInner.prototype['isExportableToCountry'] = undefined;
+ProductDetailResponseIndicators.prototype['isExportableToCountry'] = undefined;
 
 /**
  * Boolean that indicates whether it’s a discontinued product.
  * @member {Boolean} isDiscontinuedProduct
  */
-ProductDetailResponseIndicatorsInner.prototype['isDiscontinuedProduct'] = undefined;
+ProductDetailResponseIndicators.prototype['isDiscontinuedProduct'] = undefined;
 
 /**
  * Boolean that indicates whether product is refurbished.
  * @member {Boolean} isRefurbishedProduct
  */
-ProductDetailResponseIndicatorsInner.prototype['isRefurbishedProduct'] = undefined;
+ProductDetailResponseIndicators.prototype['isRefurbishedProduct'] = undefined;
 
 /**
  * Boolean that indicates if the product can be returned.
  * @member {Boolean} isReturnableProduct
  */
-ProductDetailResponseIndicatorsInner.prototype['isReturnableProduct'] = undefined;
+ProductDetailResponseIndicators.prototype['isReturnableProduct'] = undefined;
 
 /**
  * Boolean that indicates whether it’s a Ingram shipped product.
  * @member {Boolean} isIngramShip
  */
-ProductDetailResponseIndicatorsInner.prototype['isIngramShip'] = undefined;
+ProductDetailResponseIndicators.prototype['isIngramShip'] = undefined;
 
 /**
  * Do vendor requires Enduser name required to create an order.
  * @member {Boolean} isEnduserRequired
  */
-ProductDetailResponseIndicatorsInner.prototype['isEnduserRequired'] = undefined;
+ProductDetailResponseIndicators.prototype['isEnduserRequired'] = undefined;
 
 /**
  * Boolean that indicates whether it’s  heavy weight product.
  * @member {Boolean} isHeavyWeight
  */
-ProductDetailResponseIndicatorsInner.prototype['isHeavyWeight'] = undefined;
+ProductDetailResponseIndicators.prototype['isHeavyWeight'] = undefined;
 
 /**
  * Boolean that indicates whether it hasLtl or not.
  * @member {Boolean} hasLtl
  */
-ProductDetailResponseIndicatorsInner.prototype['hasLtl'] = undefined;
+ProductDetailResponseIndicators.prototype['hasLtl'] = undefined;
 
 /**
  * Boolean that indicates whether it’s clearnce product.
  * @member {Boolean} isClearanceProduct
  */
-ProductDetailResponseIndicatorsInner.prototype['isClearanceProduct'] = undefined;
+ProductDetailResponseIndicators.prototype['isClearanceProduct'] = undefined;
 
 /**
  * Boolean that indicates whether it’s a bundled product.
  * @member {Boolean} hasBundle
  */
-ProductDetailResponseIndicatorsInner.prototype['hasBundle'] = undefined;
+ProductDetailResponseIndicators.prototype['hasBundle'] = undefined;
 
 /**
  * Boolean that indicates whether it’s oversized product.
  * @member {Boolean} isOversizeProduct
  */
-ProductDetailResponseIndicatorsInner.prototype['isOversizeProduct'] = undefined;
+ProductDetailResponseIndicators.prototype['isOversizeProduct'] = undefined;
 
 /**
  * Boolean that indicates whether it’s a preorder product.
  * @member {Boolean} isPreorderProduct
  */
-ProductDetailResponseIndicatorsInner.prototype['isPreorderProduct'] = undefined;
+ProductDetailResponseIndicators.prototype['isPreorderProduct'] = undefined;
 
 /**
  * Boolean that indicates whether it’s a licened product.
  * @member {Boolean} isLicenseProduct
  */
-ProductDetailResponseIndicatorsInner.prototype['isLicenseProduct'] = undefined;
+ProductDetailResponseIndicators.prototype['isLicenseProduct'] = undefined;
 
 /**
  * Boolean that indicates whether product is directship orderable.
  * @member {Boolean} isDirectshipOrderable
  */
-ProductDetailResponseIndicatorsInner.prototype['isDirectshipOrderable'] = undefined;
+ProductDetailResponseIndicators.prototype['isDirectshipOrderable'] = undefined;
 
 /**
  * Boolean that indicates whether product is service SKU.
  * @member {Boolean} isServiceSku
  */
-ProductDetailResponseIndicatorsInner.prototype['isServiceSku'] = undefined;
+ProductDetailResponseIndicators.prototype['isServiceSku'] = undefined;
 
 /**
  * Boolean that indicates whether product is configurable.
  * @member {Boolean} isConfigurable
  */
-ProductDetailResponseIndicatorsInner.prototype['isConfigurable'] = undefined;
+ProductDetailResponseIndicators.prototype['isConfigurable'] = undefined;
 
 
 
 
 
 
-export default ProductDetailResponseIndicatorsInner;
+export default ProductDetailResponseIndicators;
 

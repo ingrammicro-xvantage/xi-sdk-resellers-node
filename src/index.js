@@ -180,8 +180,8 @@ import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriod
 import ProductDetailResponse from './model/ProductDetailResponse';
 import ProductDetailResponseAdditionalInformation from './model/ProductDetailResponseAdditionalInformation';
 import ProductDetailResponseAdditionalInformationProductWeightInner from './model/ProductDetailResponseAdditionalInformationProductWeightInner';
-import ProductDetailResponseCiscoFieldsInner from './model/ProductDetailResponseCiscoFieldsInner';
-import ProductDetailResponseIndicatorsInner from './model/ProductDetailResponseIndicatorsInner';
+import ProductDetailResponseCiscoFields from './model/ProductDetailResponseCiscoFields';
+import ProductDetailResponseIndicators from './model/ProductDetailResponseIndicators';
 import ProductDetailResponseSubscriptionDetailsInner from './model/ProductDetailResponseSubscriptionDetailsInner';
 import ProductDetailResponseSubscriptionDetailsInnerBillingPeriod from './model/ProductDetailResponseSubscriptionDetailsInnerBillingPeriod';
 import ProductDetailResponseSubscriptionDetailsInnerGroupsInner from './model/ProductDetailResponseSubscriptionDetailsInnerGroupsInner';
@@ -1291,16 +1291,16 @@ export {
     ProductDetailResponseAdditionalInformationProductWeightInner,
 
     /**
-     * The ProductDetailResponseCiscoFieldsInner model constructor.
-     * @property {module:model/ProductDetailResponseCiscoFieldsInner}
+     * The ProductDetailResponseCiscoFields model constructor.
+     * @property {module:model/ProductDetailResponseCiscoFields}
      */
-    ProductDetailResponseCiscoFieldsInner,
+    ProductDetailResponseCiscoFields,
 
     /**
-     * The ProductDetailResponseIndicatorsInner model constructor.
-     * @property {module:model/ProductDetailResponseIndicatorsInner}
+     * The ProductDetailResponseIndicators model constructor.
+     * @property {module:model/ProductDetailResponseIndicators}
      */
-    ProductDetailResponseIndicatorsInner,
+    ProductDetailResponseIndicators,
 
     /**
      * The ProductDetailResponseSubscriptionDetailsInner model constructor.

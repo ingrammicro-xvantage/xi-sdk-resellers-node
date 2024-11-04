@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+    instance = new XiSdkResellers.ProductDetailResponseCiscoFields();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,52 +47,52 @@
       object[property] = value;
   }
 
-  describe('ProductDetailResponseCiscoFieldsInner', function() {
-    it('should create an instance of ProductDetailResponseCiscoFieldsInner', function() {
-      // uncomment below and update the code to test ProductDetailResponseCiscoFieldsInner
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
-      //expect(instance).to.be.a(XiSdkResellers.ProductDetailResponseCiscoFieldsInner);
+  describe('ProductDetailResponseCiscoFields', function() {
+    it('should create an instance of ProductDetailResponseCiscoFields', function() {
+      // uncomment below and update the code to test ProductDetailResponseCiscoFields
+      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFields();
+      //expect(instance).to.be.a(XiSdkResellers.ProductDetailResponseCiscoFields);
     });
 
     it('should have the property productSubGroup (base name: "productSubGroup")', function() {
       // uncomment below and update the code to test the property productSubGroup
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFields();
       //expect(instance).to.be();
     });
 
     it('should have the property serviceProgramName (base name: "serviceProgramName")', function() {
       // uncomment below and update the code to test the property serviceProgramName
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFields();
       //expect(instance).to.be();
     });
 
     it('should have the property itemCatalogCategory (base name: "itemCatalogCategory")', function() {
       // uncomment below and update the code to test the property itemCatalogCategory
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFields();
       //expect(instance).to.be();
     });
 
     it('should have the property configurationIndicator (base name: "configurationIndicator")', function() {
       // uncomment below and update the code to test the property configurationIndicator
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFields();
       //expect(instance).to.be();
     });
 
     it('should have the property internalBusinessEntity (base name: "internalBusinessEntity")', function() {
       // uncomment below and update the code to test the property internalBusinessEntity
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFields();
       //expect(instance).to.be();
     });
 
     it('should have the property itemType (base name: "itemType")', function() {
       // uncomment below and update the code to test the property itemType
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFields();
       //expect(instance).to.be();
     });
 
     it('should have the property globalListPrice (base name: "globalListPrice")', function() {
       // uncomment below and update the code to test the property globalListPrice
-      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFieldsInner();
+      //var instance = new XiSdkResellers.ProductDetailResponseCiscoFields();
       //expect(instance).to.be();
     });
 

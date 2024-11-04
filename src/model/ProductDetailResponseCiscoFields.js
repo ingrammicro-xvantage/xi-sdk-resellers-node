@@ -14,18 +14,19 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The ProductDetailResponseCiscoFieldsInner model module.
- * @module model/ProductDetailResponseCiscoFieldsInner
+ * The ProductDetailResponseCiscoFields model module.
+ * @module model/ProductDetailResponseCiscoFields
  * @version 1.0.0
  */
-class ProductDetailResponseCiscoFieldsInner {
+class ProductDetailResponseCiscoFields {
     /**
-     * Constructs a new <code>ProductDetailResponseCiscoFieldsInner</code>.
-     * @alias module:model/ProductDetailResponseCiscoFieldsInner
+     * Constructs a new <code>ProductDetailResponseCiscoFields</code>.
+     * Cisco product related information.
+     * @alias module:model/ProductDetailResponseCiscoFields
      */
     constructor() { 
         
-        ProductDetailResponseCiscoFieldsInner.initialize(this);
+        ProductDetailResponseCiscoFields.initialize(this);
     }
 
     /**
@@ -37,15 +38,15 @@ class ProductDetailResponseCiscoFieldsInner {
     }
 
     /**
-     * Constructs a <code>ProductDetailResponseCiscoFieldsInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>ProductDetailResponseCiscoFields</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/ProductDetailResponseCiscoFieldsInner} obj Optional instance to populate.
-     * @return {module:model/ProductDetailResponseCiscoFieldsInner} The populated <code>ProductDetailResponseCiscoFieldsInner</code> instance.
+     * @param {module:model/ProductDetailResponseCiscoFields} obj Optional instance to populate.
+     * @return {module:model/ProductDetailResponseCiscoFields} The populated <code>ProductDetailResponseCiscoFields</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new ProductDetailResponseCiscoFieldsInner();
+            obj = obj || new ProductDetailResponseCiscoFields();
 
             if (data.hasOwnProperty('productSubGroup')) {
                 obj['productSubGroup'] = ApiClient.convertToType(data['productSubGroup'], 'String');
@@ -73,9 +74,9 @@ class ProductDetailResponseCiscoFieldsInner {
     }
 
     /**
-     * Validates the JSON data with respect to <code>ProductDetailResponseCiscoFieldsInner</code>.
+     * Validates the JSON data with respect to <code>ProductDetailResponseCiscoFields</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ProductDetailResponseCiscoFieldsInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ProductDetailResponseCiscoFields</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -119,48 +120,48 @@ class ProductDetailResponseCiscoFieldsInner {
  * Cisco product sub-group
  * @member {String} productSubGroup
  */
-ProductDetailResponseCiscoFieldsInner.prototype['productSubGroup'] = undefined;
+ProductDetailResponseCiscoFields.prototype['productSubGroup'] = undefined;
 
 /**
  * Cisco service program name
  * @member {String} serviceProgramName
  */
-ProductDetailResponseCiscoFieldsInner.prototype['serviceProgramName'] = undefined;
+ProductDetailResponseCiscoFields.prototype['serviceProgramName'] = undefined;
 
 /**
  * Cisco item catalog category
  * @member {String} itemCatalogCategory
  */
-ProductDetailResponseCiscoFieldsInner.prototype['itemCatalogCategory'] = undefined;
+ProductDetailResponseCiscoFields.prototype['itemCatalogCategory'] = undefined;
 
 /**
  * Cisco configuration indicator
  * @member {String} configurationIndicator
  */
-ProductDetailResponseCiscoFieldsInner.prototype['configurationIndicator'] = undefined;
+ProductDetailResponseCiscoFields.prototype['configurationIndicator'] = undefined;
 
 /**
  * Cisco internal business entity
  * @member {String} internalBusinessEntity
  */
-ProductDetailResponseCiscoFieldsInner.prototype['internalBusinessEntity'] = undefined;
+ProductDetailResponseCiscoFields.prototype['internalBusinessEntity'] = undefined;
 
 /**
  * Cisco item type
  * @member {String} itemType
  */
-ProductDetailResponseCiscoFieldsInner.prototype['itemType'] = undefined;
+ProductDetailResponseCiscoFields.prototype['itemType'] = undefined;
 
 /**
  * Cisco global list price
  * @member {String} globalListPrice
  */
-ProductDetailResponseCiscoFieldsInner.prototype['globalListPrice'] = undefined;
+ProductDetailResponseCiscoFields.prototype['globalListPrice'] = undefined;
 
 
 
 
 
 
-export default ProductDetailResponseCiscoFieldsInner;
+export default ProductDetailResponseCiscoFields;
 

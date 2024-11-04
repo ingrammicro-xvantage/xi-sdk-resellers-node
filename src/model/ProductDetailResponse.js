@@ -13,8 +13,8 @@
 
 import ApiClient from '../ApiClient';
 import ProductDetailResponseAdditionalInformation from './ProductDetailResponseAdditionalInformation';
-import ProductDetailResponseCiscoFieldsInner from './ProductDetailResponseCiscoFieldsInner';
-import ProductDetailResponseIndicatorsInner from './ProductDetailResponseIndicatorsInner';
+import ProductDetailResponseCiscoFields from './ProductDetailResponseCiscoFields';
+import ProductDetailResponseIndicators from './ProductDetailResponseIndicators';
 import ProductDetailResponseSubscriptionDetailsInner from './ProductDetailResponseSubscriptionDetailsInner';
 
 /**
@@ -88,10 +88,10 @@ class ProductDetailResponse {
                 obj['customerPartNumber'] = ApiClient.convertToType(data['customerPartNumber'], 'String');
             }
             if (data.hasOwnProperty('indicators')) {
-                obj['indicators'] = ApiClient.convertToType(data['indicators'], [ProductDetailResponseIndicatorsInner]);
+                obj['indicators'] = ProductDetailResponseIndicators.constructFromObject(data['indicators']);
             }
             if (data.hasOwnProperty('ciscoFields')) {
-                obj['ciscoFields'] = ApiClient.convertToType(data['ciscoFields'], [ProductDetailResponseCiscoFieldsInner]);
+                obj['ciscoFields'] = ProductDetailResponseCiscoFields.constructFromObject(data['ciscoFields']);
             }
             if (data.hasOwnProperty('warrantyInformation')) {
                 obj['warrantyInformation'] = ApiClient.convertToType(data['warrantyInformation'], [Object]);
@@ -156,25 +156,13 @@ class ProductDetailResponse {
         if (data['customerPartNumber'] && !(typeof data['customerPartNumber'] === 'string' || data['customerPartNumber'] instanceof String)) {
             throw new Error("Expected the field `customerPartNumber` to be a primitive type in the JSON string but got " + data['customerPartNumber']);
         }
+        // validate the optional field `indicators`
         if (data['indicators']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['indicators'])) {
-                throw new Error("Expected the field `indicators` to be an array in the JSON data but got " + data['indicators']);
-            }
-            // validate the optional field `indicators` (array)
-            for (const item of data['indicators']) {
-                ProductDetailResponseIndicatorsInner.validateJSON(item);
-            };
+          ProductDetailResponseIndicators.validateJSON(data['indicators']);
         }
+        // validate the optional field `ciscoFields`
         if (data['ciscoFields']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['ciscoFields'])) {
-                throw new Error("Expected the field `ciscoFields` to be an array in the JSON data but got " + data['ciscoFields']);
-            }
-            // validate the optional field `ciscoFields` (array)
-            for (const item of data['ciscoFields']) {
-                ProductDetailResponseCiscoFieldsInner.validateJSON(item);
-            };
+          ProductDetailResponseCiscoFields.validateJSON(data['ciscoFields']);
         }
         // ensure the json data is an array
         if (!Array.isArray(data['warrantyInformation'])) {
@@ -276,14 +264,12 @@ ProductDetailResponse.prototype['productClass'] = undefined;
 ProductDetailResponse.prototype['customerPartNumber'] = undefined;
 
 /**
- * Indicators of the Product
- * @member {Array.<module:model/ProductDetailResponseIndicatorsInner>} indicators
+ * @member {module:model/ProductDetailResponseIndicators} indicators
  */
 ProductDetailResponse.prototype['indicators'] = undefined;
 
 /**
- * Cisco product related information.
- * @member {Array.<module:model/ProductDetailResponseCiscoFieldsInner>} ciscoFields
+ * @member {module:model/ProductDetailResponseCiscoFields} ciscoFields
  */
 ProductDetailResponse.prototype['ciscoFields'] = undefined;
 
