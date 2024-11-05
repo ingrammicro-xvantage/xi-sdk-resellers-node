@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner model module.
- * @module model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
+ * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod model module.
+ * @module model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
  * @version 1.0.0
  */
-class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner {
+class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod {
     /**
-     * Constructs a new <code>PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner</code>.
-     * @alias module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
+     * Constructs a new <code>PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod</code>.
+     * @alias module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
      */
     constructor() { 
         
-        PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.initialize(this);
+        PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner 
     }
 
     /**
-     * Constructs a <code>PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner} obj Optional instance to populate.
-     * @return {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner} The populated <code>PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner</code> instance.
+     * @param {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod} obj Optional instance to populate.
+     * @return {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod} The populated <code>PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner();
+            obj = obj || new PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod();
 
             if (data.hasOwnProperty('billingPeriodUnit')) {
                 obj['billingPeriodUnit'] = ApiClient.convertToType(data['billingPeriodUnit'], 'String');
@@ -58,9 +58,9 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner 
     }
 
     /**
-     * Validates the JSON data with respect to <code>PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner</code>.
+     * Validates the JSON data with respect to <code>PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -80,18 +80,18 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner 
  * The unit of the billing period.
  * @member {String} billingPeriodUnit
  */
-PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.prototype['billingPeriodUnit'] = undefined;
+PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.prototype['billingPeriodUnit'] = undefined;
 
 /**
  * The billing period value.
  * @member {Number} billingPeriod
  */
-PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.prototype['billingPeriod'] = undefined;
+PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.prototype['billingPeriod'] = undefined;
 
 
 
 
 
 
-export default PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner;
+export default PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod;
 

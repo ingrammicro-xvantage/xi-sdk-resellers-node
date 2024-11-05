@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner from './PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod from './PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod';
 import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner from './PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner';
 import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner from './PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner';
 import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner from './PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner';
@@ -57,6 +57,9 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
             if (data.hasOwnProperty('planId')) {
                 obj['planId'] = ApiClient.convertToType(data['planId'], 'String');
             }
+            if (data.hasOwnProperty('planUId')) {
+                obj['planUId'] = ApiClient.convertToType(data['planUId'], 'String');
+            }
             if (data.hasOwnProperty('planName')) {
                 obj['planName'] = ApiClient.convertToType(data['planName'], 'String');
             }
@@ -67,7 +70,7 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
                 obj['groups'] = ApiClient.convertToType(data['groups'], [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner]);
             }
             if (data.hasOwnProperty('billingPeriod')) {
-                obj['billingPeriod'] = ApiClient.convertToType(data['billingPeriod'], [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner]);
+                obj['billingPeriod'] = PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.constructFromObject(data['billingPeriod']);
             }
             if (data.hasOwnProperty('subscriptionPeriod')) {
                 obj['subscriptionPeriod'] = ApiClient.convertToType(data['subscriptionPeriod'], [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner]);
@@ -90,6 +93,10 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
             throw new Error("Expected the field `planId` to be a primitive type in the JSON string but got " + data['planId']);
         }
         // ensure the json data is a string
+        if (data['planUId'] && !(typeof data['planUId'] === 'string' || data['planUId'] instanceof String)) {
+            throw new Error("Expected the field `planUId` to be a primitive type in the JSON string but got " + data['planUId']);
+        }
+        // ensure the json data is a string
         if (data['planName'] && !(typeof data['planName'] === 'string' || data['planName'] instanceof String)) {
             throw new Error("Expected the field `planName` to be a primitive type in the JSON string but got " + data['planName']);
         }
@@ -107,15 +114,9 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
                 PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner.validateJSON(item);
             };
         }
+        // validate the optional field `billingPeriod`
         if (data['billingPeriod']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['billingPeriod'])) {
-                throw new Error("Expected the field `billingPeriod` to be an array in the JSON data but got " + data['billingPeriod']);
-            }
-            // validate the optional field `billingPeriod` (array)
-            for (const item of data['billingPeriod']) {
-                PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.validateJSON(item);
-            };
+          PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod.validateJSON(data['billingPeriod']);
         }
         if (data['subscriptionPeriod']) { // data not null
             // ensure the json data is an array
@@ -158,6 +159,11 @@ PriceAndAvailabilityResponseInnerSubscriptionPriceInner.prototype['index'] = und
 PriceAndAvailabilityResponseInnerSubscriptionPriceInner.prototype['planId'] = undefined;
 
 /**
+ * @member {String} planUId
+ */
+PriceAndAvailabilityResponseInnerSubscriptionPriceInner.prototype['planUId'] = undefined;
+
+/**
  * Name of the plan.
  * @member {String} planName
  */
@@ -175,7 +181,7 @@ PriceAndAvailabilityResponseInnerSubscriptionPriceInner.prototype['planDescripti
 PriceAndAvailabilityResponseInnerSubscriptionPriceInner.prototype['groups'] = undefined;
 
 /**
- * @member {Array.<module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner>} billingPeriod
+ * @member {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod} billingPeriod
  */
 PriceAndAvailabilityResponseInnerSubscriptionPriceInner.prototype['billingPeriod'] = undefined;
 

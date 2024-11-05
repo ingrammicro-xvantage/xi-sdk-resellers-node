@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner();
+    instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,22 @@
       object[property] = value;
   }
 
-  describe('PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner', function() {
-    it('should create an instance of PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner', function() {
-      // uncomment below and update the code to test PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner();
-      //expect(instance).to.be.a(XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner);
+  describe('PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod', function() {
+    it('should create an instance of PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod', function() {
+      // uncomment below and update the code to test PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod
+      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod();
+      //expect(instance).to.be.a(XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod);
     });
 
     it('should have the property billingPeriodUnit (base name: "billingPeriodUnit")', function() {
       // uncomment below and update the code to test the property billingPeriodUnit
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner();
+      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod();
       //expect(instance).to.be();
     });
 
     it('should have the property billingPeriod (base name: "billingPeriod")', function() {
       // uncomment below and update the code to test the property billingPeriod
-      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner();
+      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod();
       //expect(instance).to.be();
     });
 

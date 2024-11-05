@@ -168,7 +168,7 @@ import PriceAndAvailabilityResponseInnerPricing from './model/PriceAndAvailabili
 import PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner from './model/PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner';
 import PriceAndAvailabilityResponseInnerServiceFeesInner from './model/PriceAndAvailabilityResponseInnerServiceFeesInner';
 import PriceAndAvailabilityResponseInnerSubscriptionPriceInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInner';
-import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod';
 import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner';
 import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner';
 import PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner from './model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerDiscountsInner';
@@ -1219,10 +1219,10 @@ export {
     PriceAndAvailabilityResponseInnerSubscriptionPriceInner,
 
     /**
-     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner model constructor.
-     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner}
+     * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod model constructor.
+     * @property {module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod}
      */
-    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner,
+    PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriod,
 
     /**
      * The PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner model constructor.

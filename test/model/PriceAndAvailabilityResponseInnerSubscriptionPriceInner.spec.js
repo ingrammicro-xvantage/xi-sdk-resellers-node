@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property planUId (base name: "planUId")', function() {
+      // uncomment below and update the code to test the property planUId
+      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property planName (base name: "planName")', function() {
       // uncomment below and update the code to test the property planName
       //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInner();
