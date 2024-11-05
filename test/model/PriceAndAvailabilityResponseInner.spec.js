@@ -54,6 +54,12 @@
       //expect(instance).to.be.a(XiSdkResellers.PriceAndAvailabilityResponseInner);
     });
 
+    it('should have the property index (base name: "index")', function() {
+      // uncomment below and update the code to test the property index
+      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property productStatusCode (base name: "productStatusCode")', function() {
       // uncomment below and update the code to test the property productStatusCode
       //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInner();

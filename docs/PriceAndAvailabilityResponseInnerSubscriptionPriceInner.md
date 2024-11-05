@@ -4,9 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**index** | **Number** |  | [optional] 
 **planId** | **String** | Id of the plan. | [optional] 
 **planName** | **String** | Name of the plan. | [optional] 
-**planDescription** | **Number** | The description of the plan. | [optional] 
+**planDescription** | **String** | The description of the plan. | [optional] 
 **groups** | [**[PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner]**](PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner.md) |  | [optional] 
 **billingPeriod** | [**[PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner]**](PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.md) |  | [optional] 
 **subscriptionPeriod** | [**[PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner]**](PriceAndAvailabilityResponseInnerSubscriptionPriceInnerSubscriptionPeriodInner.md) |  | [optional] 

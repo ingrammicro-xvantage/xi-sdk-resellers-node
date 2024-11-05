@@ -51,6 +51,9 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
         if (data) {
             obj = obj || new PriceAndAvailabilityResponseInnerSubscriptionPriceInner();
 
+            if (data.hasOwnProperty('index')) {
+                obj['index'] = ApiClient.convertToType(data['index'], 'Number');
+            }
             if (data.hasOwnProperty('planId')) {
                 obj['planId'] = ApiClient.convertToType(data['planId'], 'String');
             }
@@ -58,7 +61,7 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
                 obj['planName'] = ApiClient.convertToType(data['planName'], 'String');
             }
             if (data.hasOwnProperty('planDescription')) {
-                obj['planDescription'] = ApiClient.convertToType(data['planDescription'], 'Number');
+                obj['planDescription'] = ApiClient.convertToType(data['planDescription'], 'String');
             }
             if (data.hasOwnProperty('groups')) {
                 obj['groups'] = ApiClient.convertToType(data['groups'], [PriceAndAvailabilityResponseInnerSubscriptionPriceInnerGroupsInner]);
@@ -89,6 +92,10 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
         // ensure the json data is a string
         if (data['planName'] && !(typeof data['planName'] === 'string' || data['planName'] instanceof String)) {
             throw new Error("Expected the field `planName` to be a primitive type in the JSON string but got " + data['planName']);
+        }
+        // ensure the json data is a string
+        if (data['planDescription'] && !(typeof data['planDescription'] === 'string' || data['planDescription'] instanceof String)) {
+            throw new Error("Expected the field `planDescription` to be a primitive type in the JSON string but got " + data['planDescription']);
         }
         if (data['groups']) { // data not null
             // ensure the json data is an array
@@ -140,6 +147,11 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInner {
 
 
 /**
+ * @member {Number} index
+ */
+PriceAndAvailabilityResponseInnerSubscriptionPriceInner.prototype['index'] = undefined;
+
+/**
  * Id of the plan.
  * @member {String} planId
  */
@@ -153,7 +165,7 @@ PriceAndAvailabilityResponseInnerSubscriptionPriceInner.prototype['planName'] = 
 
 /**
  * The description of the plan.
- * @member {Number} planDescription
+ * @member {String} planDescription
  */
 PriceAndAvailabilityResponseInnerSubscriptionPriceInner.prototype['planDescription'] = undefined;
 

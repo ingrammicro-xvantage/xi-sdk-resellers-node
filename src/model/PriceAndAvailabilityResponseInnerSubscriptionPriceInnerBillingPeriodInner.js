@@ -51,7 +51,7 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner 
                 obj['billingPeriodUnit'] = ApiClient.convertToType(data['billingPeriodUnit'], 'String');
             }
             if (data.hasOwnProperty('billingPeriod')) {
-                obj['billingPeriod'] = ApiClient.convertToType(data['billingPeriod'], 'String');
+                obj['billingPeriod'] = ApiClient.convertToType(data['billingPeriod'], 'Number');
             }
         }
         return obj;
@@ -66,10 +66,6 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner 
         // ensure the json data is a string
         if (data['billingPeriodUnit'] && !(typeof data['billingPeriodUnit'] === 'string' || data['billingPeriodUnit'] instanceof String)) {
             throw new Error("Expected the field `billingPeriodUnit` to be a primitive type in the JSON string but got " + data['billingPeriodUnit']);
-        }
-        // ensure the json data is a string
-        if (data['billingPeriod'] && !(typeof data['billingPeriod'] === 'string' || data['billingPeriod'] instanceof String)) {
-            throw new Error("Expected the field `billingPeriod` to be a primitive type in the JSON string but got " + data['billingPeriod']);
         }
 
         return true;
@@ -88,7 +84,7 @@ PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.protot
 
 /**
  * The billing period value.
- * @member {String} billingPeriod
+ * @member {Number} billingPeriod
  */
 PriceAndAvailabilityResponseInnerSubscriptionPriceInnerBillingPeriodInner.prototype['billingPeriod'] = undefined;
 

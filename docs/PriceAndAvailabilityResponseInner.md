@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**index** | **Number** |  | [optional] 
 **productStatusCode** | **String** | Codes signifying whether the sku is active or not. | [optional] 
 **productStatusMessage** | **String** | Message returned saying whether sku is active. | [optional] 
 **ingramPartNumber** | **String** | Ingram Micro unique part number for the product. | [optional] 

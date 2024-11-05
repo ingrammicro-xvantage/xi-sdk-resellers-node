@@ -51,7 +51,7 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourc
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
             }
             if (data.hasOwnProperty('quantity')) {
-                obj['quantity'] = ApiClient.convertToType(data['quantity'], 'Number');
+                obj['quantity'] = ApiClient.convertToType(data['quantity'], 'String');
             }
             if (data.hasOwnProperty('msrp')) {
                 obj['msrp'] = ApiClient.convertToType(data['msrp'], 'Number');
@@ -83,6 +83,10 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourc
             throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
         }
         // ensure the json data is a string
+        if (data['quantity'] && !(typeof data['quantity'] === 'string' || data['quantity'] instanceof String)) {
+            throw new Error("Expected the field `quantity` to be a primitive type in the JSON string but got " + data['quantity']);
+        }
+        // ensure the json data is a string
         if (data['currencyCode'] && !(typeof data['currencyCode'] === 'string' || data['currencyCode'] instanceof String)) {
             throw new Error("Expected the field `currencyCode` to be a primitive type in the JSON string but got " + data['currencyCode']);
         }
@@ -107,7 +111,7 @@ PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePrici
 
 /**
  * Quantity of the line item.
- * @member {Number} quantity
+ * @member {String} quantity
  */
 PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerResourcePricingInner.prototype['quantity'] = undefined;
 

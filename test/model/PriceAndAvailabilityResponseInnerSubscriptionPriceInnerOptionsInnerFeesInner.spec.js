@@ -66,6 +66,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property msrp (base name: "msrp")', function() {
+      // uncomment below and update the code to test the property msrp
+      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property code (base name: "code")', function() {
+      // uncomment below and update the code to test the property code
+      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

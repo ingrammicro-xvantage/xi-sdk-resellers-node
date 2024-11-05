@@ -53,6 +53,12 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInn
             if (data.hasOwnProperty('type')) {
                 obj['type'] = ApiClient.convertToType(data['type'], 'String');
             }
+            if (data.hasOwnProperty('msrp')) {
+                obj['msrp'] = ApiClient.convertToType(data['msrp'], 'Number');
+            }
+            if (data.hasOwnProperty('code')) {
+                obj['code'] = ApiClient.convertToType(data['code'], 'String');
+            }
         }
         return obj;
     }
@@ -66,6 +72,10 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInn
         // ensure the json data is a string
         if (data['type'] && !(typeof data['type'] === 'string' || data['type'] instanceof String)) {
             throw new Error("Expected the field `type` to be a primitive type in the JSON string but got " + data['type']);
+        }
+        // ensure the json data is a string
+        if (data['code'] && !(typeof data['code'] === 'string' || data['code'] instanceof String)) {
+            throw new Error("Expected the field `code` to be a primitive type in the JSON string but got " + data['code']);
         }
 
         return true;
@@ -87,6 +97,16 @@ PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner.pro
  * @member {String} type
  */
 PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner.prototype['type'] = undefined;
+
+/**
+ * @member {Number} msrp
+ */
+PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner.prototype['msrp'] = undefined;
+
+/**
+ * @member {String} code
+ */
+PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInnerFeesInner.prototype['code'] = undefined;
 
 
 

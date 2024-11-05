@@ -53,6 +53,9 @@ class PriceAndAvailabilityResponseInner {
         if (data) {
             obj = obj || new PriceAndAvailabilityResponseInner();
 
+            if (data.hasOwnProperty('index')) {
+                obj['index'] = ApiClient.convertToType(data['index'], 'Number');
+            }
             if (data.hasOwnProperty('productStatusCode')) {
                 obj['productStatusCode'] = ApiClient.convertToType(data['productStatusCode'], 'String');
             }
@@ -267,6 +270,11 @@ class PriceAndAvailabilityResponseInner {
 }
 
 
+
+/**
+ * @member {Number} index
+ */
+PriceAndAvailabilityResponseInner.prototype['index'] = undefined;
 
 /**
  * Codes signifying whether the sku is active or not.

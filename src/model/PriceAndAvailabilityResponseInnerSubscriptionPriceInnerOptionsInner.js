@@ -53,6 +53,9 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner {
             if (data.hasOwnProperty('resourceId')) {
                 obj['resourceId'] = ApiClient.convertToType(data['resourceId'], 'String');
             }
+            if (data.hasOwnProperty('resourceUId')) {
+                obj['resourceUId'] = ApiClient.convertToType(data['resourceUId'], 'String');
+            }
             if (data.hasOwnProperty('resourceName')) {
                 obj['resourceName'] = ApiClient.convertToType(data['resourceName'], 'String');
             }
@@ -60,10 +63,10 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner {
                 obj['vendorPartNumber'] = ApiClient.convertToType(data['vendorPartNumber'], 'String');
             }
             if (data.hasOwnProperty('minUnits')) {
-                obj['minUnits'] = ApiClient.convertToType(data['minUnits'], 'String');
+                obj['minUnits'] = ApiClient.convertToType(data['minUnits'], 'Number');
             }
             if (data.hasOwnProperty('maxUnits')) {
-                obj['maxUnits'] = ApiClient.convertToType(data['maxUnits'], 'String');
+                obj['maxUnits'] = ApiClient.convertToType(data['maxUnits'], 'Number');
             }
             if (data.hasOwnProperty('recurringpricemodel')) {
                 obj['recurringpricemodel'] = ApiClient.convertToType(data['recurringpricemodel'], 'String');
@@ -95,20 +98,16 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner {
             throw new Error("Expected the field `resourceId` to be a primitive type in the JSON string but got " + data['resourceId']);
         }
         // ensure the json data is a string
+        if (data['resourceUId'] && !(typeof data['resourceUId'] === 'string' || data['resourceUId'] instanceof String)) {
+            throw new Error("Expected the field `resourceUId` to be a primitive type in the JSON string but got " + data['resourceUId']);
+        }
+        // ensure the json data is a string
         if (data['resourceName'] && !(typeof data['resourceName'] === 'string' || data['resourceName'] instanceof String)) {
             throw new Error("Expected the field `resourceName` to be a primitive type in the JSON string but got " + data['resourceName']);
         }
         // ensure the json data is a string
         if (data['vendorPartNumber'] && !(typeof data['vendorPartNumber'] === 'string' || data['vendorPartNumber'] instanceof String)) {
             throw new Error("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got " + data['vendorPartNumber']);
-        }
-        // ensure the json data is a string
-        if (data['minUnits'] && !(typeof data['minUnits'] === 'string' || data['minUnits'] instanceof String)) {
-            throw new Error("Expected the field `minUnits` to be a primitive type in the JSON string but got " + data['minUnits']);
-        }
-        // ensure the json data is a string
-        if (data['maxUnits'] && !(typeof data['maxUnits'] === 'string' || data['maxUnits'] instanceof String)) {
-            throw new Error("Expected the field `maxUnits` to be a primitive type in the JSON string but got " + data['maxUnits']);
         }
         // ensure the json data is a string
         if (data['recurringpricemodel'] && !(typeof data['recurringpricemodel'] === 'string' || data['recurringpricemodel'] instanceof String)) {
@@ -158,10 +157,15 @@ class PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner {
 
 
 /**
- * The resource id of the subscription product.
  * @member {String} resourceId
  */
 PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.prototype['resourceId'] = undefined;
+
+/**
+ * The resource id of the subscription product.
+ * @member {String} resourceUId
+ */
+PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.prototype['resourceUId'] = undefined;
 
 /**
  * The name of the resource of the subscription product.
@@ -177,13 +181,13 @@ PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.prototype['v
 
 /**
  * Minimum unit needs to purchased.
- * @member {String} minUnits
+ * @member {Number} minUnits
  */
 PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.prototype['minUnits'] = undefined;
 
 /**
  * Maximum unit available for a purchase.
- * @member {String} maxUnits
+ * @member {Number} maxUnits
  */
 PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner.prototype['maxUnits'] = undefined;
 

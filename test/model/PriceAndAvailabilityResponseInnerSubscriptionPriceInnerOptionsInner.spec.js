@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property resourceUId (base name: "resourceUId")', function() {
+      // uncomment below and update the code to test the property resourceUId
+      //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property resourceName (base name: "resourceName")', function() {
       // uncomment below and update the code to test the property resourceName
       //var instance = new XiSdkResellers.PriceAndAvailabilityResponseInnerSubscriptionPriceInnerOptionsInner();
