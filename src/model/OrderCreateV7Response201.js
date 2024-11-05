@@ -51,7 +51,7 @@ class OrderCreateV7Response201 {
                 obj['quoteNumber'] = ApiClient.convertToType(data['quoteNumber'], 'String');
             }
             if (data.hasOwnProperty('confirmationNumber')) {
-                obj['confirmationNumber'] = ApiClient.convertToType(data['confirmationNumber'], 'Number');
+                obj['confirmationNumber'] = ApiClient.convertToType(data['confirmationNumber'], 'String');
             }
             if (data.hasOwnProperty('message')) {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
@@ -69,6 +69,10 @@ class OrderCreateV7Response201 {
         // ensure the json data is a string
         if (data['quoteNumber'] && !(typeof data['quoteNumber'] === 'string' || data['quoteNumber'] instanceof String)) {
             throw new Error("Expected the field `quoteNumber` to be a primitive type in the JSON string but got " + data['quoteNumber']);
+        }
+        // ensure the json data is a string
+        if (data['confirmationNumber'] && !(typeof data['confirmationNumber'] === 'string' || data['confirmationNumber'] instanceof String)) {
+            throw new Error("Expected the field `confirmationNumber` to be a primitive type in the JSON string but got " + data['confirmationNumber']);
         }
         // ensure the json data is a string
         if (data['message'] && !(typeof data['message'] === 'string' || data['message'] instanceof String)) {
@@ -91,7 +95,7 @@ OrderCreateV7Response201.prototype['quoteNumber'] = undefined;
 
 /**
  * A unique confirmation number for tracking purposes.
- * @member {Number} confirmationNumber
+ * @member {String} confirmationNumber
  */
 OrderCreateV7Response201.prototype['confirmationNumber'] = undefined;
 
