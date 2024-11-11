@@ -32,7 +32,6 @@ docs/GetAccesstoken400Response.md
 docs/GetAccesstoken500Response.md
 docs/GetAccesstoken500ResponseFault.md
 docs/GetAccesstoken500ResponseFaultDetail.md
-docs/GetResellerV6ProductsearchPlanIDParameter.md
 docs/GetResellerV6ValidateQuote400Response.md
 docs/GetResellerV6ValidateQuote400ResponseFieldsInner.md
 docs/InvoiceDetailsv61Response.md
@@ -148,11 +147,8 @@ docs/PostRenewalssearch400Response.md
 docs/PriceAndAvailabilityRequest.md
 docs/PriceAndAvailabilityRequestAdditionalAttributesInner.md
 docs/PriceAndAvailabilityRequestAvailabilityByWarehouseInner.md
-docs/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.md
 docs/PriceAndAvailabilityRequestProductsInner.md
 docs/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner.md
-docs/PriceAndAvailabilityRequestProductsInnerPlanID.md
-docs/PriceAndAvailabilityRequestProductsInnerQuantityRequested.md
 docs/PriceAndAvailabilityResponseInner.md
 docs/PriceAndAvailabilityResponseInnerAvailability.md
 docs/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.md
@@ -280,7 +276,6 @@ src/model/GetAccesstoken400Response.js
 src/model/GetAccesstoken500Response.js
 src/model/GetAccesstoken500ResponseFault.js
 src/model/GetAccesstoken500ResponseFaultDetail.js
-src/model/GetResellerV6ProductsearchPlanIDParameter.js
 src/model/GetResellerV6ValidateQuote400Response.js
 src/model/GetResellerV6ValidateQuote400ResponseFieldsInner.js
 src/model/InvoiceDetailsv61Response.js
@@ -393,11 +388,8 @@ src/model/PostRenewalssearch400Response.js
 src/model/PriceAndAvailabilityRequest.js
 src/model/PriceAndAvailabilityRequestAdditionalAttributesInner.js
 src/model/PriceAndAvailabilityRequestAvailabilityByWarehouseInner.js
-src/model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.js
 src/model/PriceAndAvailabilityRequestProductsInner.js
 src/model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner.js
-src/model/PriceAndAvailabilityRequestProductsInnerPlanID.js
-src/model/PriceAndAvailabilityRequestProductsInnerQuantityRequested.js
 src/model/PriceAndAvailabilityResponseInner.js
 src/model/PriceAndAvailabilityResponseInnerAvailability.js
 src/model/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.js
@@ -515,7 +507,6 @@ test/model/GetAccesstoken400Response.spec.js
 test/model/GetAccesstoken500Response.spec.js
 test/model/GetAccesstoken500ResponseFault.spec.js
 test/model/GetAccesstoken500ResponseFaultDetail.spec.js
-test/model/GetResellerV6ProductsearchPlanIDParameter.spec.js
 test/model/GetResellerV6ValidateQuote400Response.spec.js
 test/model/GetResellerV6ValidateQuote400ResponseFieldsInner.spec.js
 test/model/InvoiceDetailsv61Response.spec.js
@@ -628,11 +619,8 @@ test/model/PostRenewalssearch400Response.spec.js
 test/model/PriceAndAvailabilityRequest.spec.js
 test/model/PriceAndAvailabilityRequestAdditionalAttributesInner.spec.js
 test/model/PriceAndAvailabilityRequestAvailabilityByWarehouseInner.spec.js
-test/model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.spec.js
 test/model/PriceAndAvailabilityRequestProductsInner.spec.js
 test/model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner.spec.js
-test/model/PriceAndAvailabilityRequestProductsInnerPlanID.spec.js
-test/model/PriceAndAvailabilityRequestProductsInnerQuantityRequested.spec.js
 test/model/PriceAndAvailabilityResponseInner.spec.js
 test/model/PriceAndAvailabilityResponseInnerAvailability.spec.js
 test/model/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner.spec.js

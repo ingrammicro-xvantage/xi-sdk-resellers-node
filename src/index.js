@@ -39,7 +39,6 @@ import GetAccesstoken400Response from './model/GetAccesstoken400Response';
 import GetAccesstoken500Response from './model/GetAccesstoken500Response';
 import GetAccesstoken500ResponseFault from './model/GetAccesstoken500ResponseFault';
 import GetAccesstoken500ResponseFaultDetail from './model/GetAccesstoken500ResponseFaultDetail';
-import GetResellerV6ProductsearchPlanIDParameter from './model/GetResellerV6ProductsearchPlanIDParameter';
 import GetResellerV6ValidateQuote400Response from './model/GetResellerV6ValidateQuote400Response';
 import GetResellerV6ValidateQuote400ResponseFieldsInner from './model/GetResellerV6ValidateQuote400ResponseFieldsInner';
 import InvoiceDetailsv61Response from './model/InvoiceDetailsv61Response';
@@ -152,11 +151,8 @@ import PostRenewalssearch400Response from './model/PostRenewalssearch400Response
 import PriceAndAvailabilityRequest from './model/PriceAndAvailabilityRequest';
 import PriceAndAvailabilityRequestAdditionalAttributesInner from './model/PriceAndAvailabilityRequestAdditionalAttributesInner';
 import PriceAndAvailabilityRequestAvailabilityByWarehouseInner from './model/PriceAndAvailabilityRequestAvailabilityByWarehouseInner';
-import PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId from './model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId';
 import PriceAndAvailabilityRequestProductsInner from './model/PriceAndAvailabilityRequestProductsInner';
 import PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner from './model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner';
-import PriceAndAvailabilityRequestProductsInnerPlanID from './model/PriceAndAvailabilityRequestProductsInnerPlanID';
-import PriceAndAvailabilityRequestProductsInnerQuantityRequested from './model/PriceAndAvailabilityRequestProductsInnerQuantityRequested';
 import PriceAndAvailabilityResponseInner from './model/PriceAndAvailabilityResponseInner';
 import PriceAndAvailabilityResponseInnerAvailability from './model/PriceAndAvailabilityResponseInnerAvailability';
 import PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner from './model/PriceAndAvailabilityResponseInnerAvailabilityAvailabilityByWarehouseInner';
@@ -443,12 +439,6 @@ export {
      * @property {module:model/GetAccesstoken500ResponseFaultDetail}
      */
     GetAccesstoken500ResponseFaultDetail,
-
-    /**
-     * The GetResellerV6ProductsearchPlanIDParameter model constructor.
-     * @property {module:model/GetResellerV6ProductsearchPlanIDParameter}
-     */
-    GetResellerV6ProductsearchPlanIDParameter,
 
     /**
      * The GetResellerV6ValidateQuote400Response model constructor.
@@ -1123,12 +1113,6 @@ export {
     PriceAndAvailabilityRequestAvailabilityByWarehouseInner,
 
     /**
-     * The PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId model constructor.
-     * @property {module:model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId}
-     */
-    PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId,
-
-    /**
      * The PriceAndAvailabilityRequestProductsInner model constructor.
      * @property {module:model/PriceAndAvailabilityRequestProductsInner}
      */
@@ -1139,18 +1123,6 @@ export {
      * @property {module:model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner}
      */
     PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner,
-
-    /**
-     * The PriceAndAvailabilityRequestProductsInnerPlanID model constructor.
-     * @property {module:model/PriceAndAvailabilityRequestProductsInnerPlanID}
-     */
-    PriceAndAvailabilityRequestProductsInnerPlanID,
-
-    /**
-     * The PriceAndAvailabilityRequestProductsInnerQuantityRequested model constructor.
-     * @property {module:model/PriceAndAvailabilityRequestProductsInnerQuantityRequested}
-     */
-    PriceAndAvailabilityRequestProductsInnerQuantityRequested,
 
     /**
      * The PriceAndAvailabilityResponseInner model constructor.

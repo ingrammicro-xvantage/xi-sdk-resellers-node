@@ -13,8 +13,6 @@
 
 import ApiClient from '../ApiClient';
 import PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner from './PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner';
-import PriceAndAvailabilityRequestProductsInnerPlanID from './PriceAndAvailabilityRequestProductsInnerPlanID';
-import PriceAndAvailabilityRequestProductsInnerQuantityRequested from './PriceAndAvailabilityRequestProductsInnerQuantityRequested';
 
 /**
  * The PriceAndAvailabilityRequestProductsInner model module.
@@ -63,10 +61,10 @@ class PriceAndAvailabilityRequestProductsInner {
                 obj['upc'] = ApiClient.convertToType(data['upc'], 'String');
             }
             if (data.hasOwnProperty('quantityRequested')) {
-                obj['quantityRequested'] = PriceAndAvailabilityRequestProductsInnerQuantityRequested.constructFromObject(data['quantityRequested']);
+                obj['quantityRequested'] = ApiClient.convertToType(data['quantityRequested'], 'String');
             }
             if (data.hasOwnProperty('planID')) {
-                obj['planID'] = PriceAndAvailabilityRequestProductsInnerPlanID.constructFromObject(data['planID']);
+                obj['planID'] = ApiClient.convertToType(data['planID'], 'String');
             }
             if (data.hasOwnProperty('additionalAttributes')) {
                 obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner]);
@@ -97,13 +95,13 @@ class PriceAndAvailabilityRequestProductsInner {
         if (data['upc'] && !(typeof data['upc'] === 'string' || data['upc'] instanceof String)) {
             throw new Error("Expected the field `upc` to be a primitive type in the JSON string but got " + data['upc']);
         }
-        // validate the optional field `quantityRequested`
-        if (data['quantityRequested']) { // data not null
-          PriceAndAvailabilityRequestProductsInnerQuantityRequested.validateJSON(data['quantityRequested']);
+        // ensure the json data is a string
+        if (data['quantityRequested'] && !(typeof data['quantityRequested'] === 'string' || data['quantityRequested'] instanceof String)) {
+            throw new Error("Expected the field `quantityRequested` to be a primitive type in the JSON string but got " + data['quantityRequested']);
         }
-        // validate the optional field `planID`
-        if (data['planID']) { // data not null
-          PriceAndAvailabilityRequestProductsInnerPlanID.validateJSON(data['planID']);
+        // ensure the json data is a string
+        if (data['planID'] && !(typeof data['planID'] === 'string' || data['planID'] instanceof String)) {
+            throw new Error("Expected the field `planID` to be a primitive type in the JSON string but got " + data['planID']);
         }
         if (data['additionalAttributes']) { // data not null
             // ensure the json data is an array
@@ -149,12 +147,14 @@ PriceAndAvailabilityRequestProductsInner.prototype['customerPartNumber'] = undef
 PriceAndAvailabilityRequestProductsInner.prototype['upc'] = undefined;
 
 /**
- * @member {module:model/PriceAndAvailabilityRequestProductsInnerQuantityRequested} quantityRequested
+ * Number of quantity of the Product.
+ * @member {String} quantityRequested
  */
 PriceAndAvailabilityRequestProductsInner.prototype['quantityRequested'] = undefined;
 
 /**
- * @member {module:model/PriceAndAvailabilityRequestProductsInnerPlanID} planID
+ * Id of the plan
+ * @member {String} planID
  */
 PriceAndAvailabilityRequestProductsInner.prototype['planID'] = undefined;
 

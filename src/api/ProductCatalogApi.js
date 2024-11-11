@@ -14,7 +14,6 @@
 
 import ApiClient from "../ApiClient";
 import ErrorResponse from '../model/ErrorResponse';
-import GetResellerV6ProductsearchPlanIDParameter from '../model/GetResellerV6ProductsearchPlanIDParameter';
 import PriceAndAvailabilityRequest from '../model/PriceAndAvailabilityRequest';
 import PriceAndAvailabilityResponseInner from '../model/PriceAndAvailabilityResponseInner';
 import ProductDetailResponse from '../model/ProductDetailResponse';
@@ -197,7 +196,7 @@ export default class ProductCatalogApi {
      * @param {String} [category] The category of the product. Example: Displays.
      * @param {String} [skipAuthorisation] This parameter is True when you want Skip the authorization, so template will work like current B2b template.
      * @param {String} [groupName] Name of the Product Group
-     * @param {module:model/GetResellerV6ProductsearchPlanIDParameter} [planID] ID of the plan
+     * @param {String} [planID] ID of the plan
      * @param {Boolean} [showGroupInfo] In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group.
      * @param {module:api/ProductCatalogApi~getResellerV6ProductsearchCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ProductSearchResponse}

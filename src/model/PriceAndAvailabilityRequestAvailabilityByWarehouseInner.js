@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId from './PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId';
 
 /**
  * The PriceAndAvailabilityRequestAvailabilityByWarehouseInner model module.
@@ -49,7 +48,7 @@ class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
             obj = obj || new PriceAndAvailabilityRequestAvailabilityByWarehouseInner();
 
             if (data.hasOwnProperty('availabilityByWarehouseId')) {
-                obj['availabilityByWarehouseId'] = PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.constructFromObject(data['availabilityByWarehouseId']);
+                obj['availabilityByWarehouseId'] = ApiClient.convertToType(data['availabilityByWarehouseId'], 'String');
             }
             if (data.hasOwnProperty('availabilityForAllLocation')) {
                 obj['availabilityForAllLocation'] = ApiClient.convertToType(data['availabilityForAllLocation'], 'Boolean');
@@ -64,9 +63,9 @@ class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PriceAndAvailabilityRequestAvailabilityByWarehouseInner</code>.
      */
     static validateJSON(data) {
-        // validate the optional field `availabilityByWarehouseId`
-        if (data['availabilityByWarehouseId']) { // data not null
-          PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId.validateJSON(data['availabilityByWarehouseId']);
+        // ensure the json data is a string
+        if (data['availabilityByWarehouseId'] && !(typeof data['availabilityByWarehouseId'] === 'string' || data['availabilityByWarehouseId'] instanceof String)) {
+            throw new Error("Expected the field `availabilityByWarehouseId` to be a primitive type in the JSON string but got " + data['availabilityByWarehouseId']);
         }
 
         return true;
@@ -78,7 +77,8 @@ class PriceAndAvailabilityRequestAvailabilityByWarehouseInner {
 
 
 /**
- * @member {module:model/PriceAndAvailabilityRequestAvailabilityByWarehouseInnerAvailabilityByWarehouseId} availabilityByWarehouseId
+ * Plant/warehouse Id of a particular location in order to get just the inventory of that location.
+ * @member {String} availabilityByWarehouseId
  */
 PriceAndAvailabilityRequestAvailabilityByWarehouseInner.prototype['availabilityByWarehouseId'] = undefined;
 

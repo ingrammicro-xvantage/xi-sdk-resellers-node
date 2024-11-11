@@ -168,7 +168,7 @@ let opts = {
   'category': "Accessories", // String | The category of the product. Example: Displays.
   'skipAuthorisation': "true", // String | This parameter is True when you want Skip the authorization, so template will work like current B2b template.
   'groupName': "Microsoft Defender for Endpoint P2 (NCE COM MTH)", // String | Name of the Product Group
-  'planID': new XiSdkResellers.GetResellerV6ProductsearchPlanIDParameter(), // GetResellerV6ProductsearchPlanIDParameter | ID of the plan
+  'planID': "471490", // String | ID of the plan
   'showGroupInfo': true // Boolean | In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group.
 };
 apiInstance.getResellerV6Productsearch(iMCustomerNumber, iMCorrelationID, iMCountryCode, opts, (error, data, response) => {
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
  **category** | **String**| The category of the product. Example: Displays. | [optional] 
  **skipAuthorisation** | **String**| This parameter is True when you want Skip the authorization, so template will work like current B2b template. | [optional] 
  **groupName** | **String**| Name of the Product Group | [optional] 
- **planID** | [**GetResellerV6ProductsearchPlanIDParameter**](.md)| ID of the plan | [optional] 
+ **planID** | **String**| ID of the plan | [optional] 
  **showGroupInfo** | **Boolean**| In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group. | [optional] 
 
 ### Return type
