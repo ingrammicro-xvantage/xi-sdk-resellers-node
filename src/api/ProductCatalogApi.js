@@ -271,16 +271,16 @@ export default class ProductCatalogApi {
      * @param {String} iMCustomerNumber Your unique Ingram Micro customer number.
      * @param {String} iMCountryCode Two-character ISO country code.
      * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems.
-     * @param {module:model/PriceAndAvailabilityRequest} priceAndAvailabilityRequest 
      * @param {Object} opts Optional parameters
      * @param {Boolean} [includeProductAttributes] Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details.
      * @param {String} [iMSenderID] Unique value used to identify the sender of the transaction. Example: MyCompany
+     * @param {module:model/PriceAndAvailabilityRequest} [priceAndAvailabilityRequest] 
      * @param {module:api/ProductCatalogApi~postPriceandavailabilityCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/PriceAndAvailabilityResponseInner>}
      */
-    postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, priceAndAvailabilityRequest, opts, callback) {
+    postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, callback) {
       opts = opts || {};
-      let postBody = priceAndAvailabilityRequest;
+      let postBody = opts['priceAndAvailabilityRequest'];
       // verify the required parameter 'includeAvailability' is set
       if (includeAvailability === undefined || includeAvailability === null) {
         throw new Error("Missing the required parameter 'includeAvailability' when calling postPriceandavailability");
@@ -300,10 +300,6 @@ export default class ProductCatalogApi {
       // verify the required parameter 'iMCorrelationID' is set
       if (iMCorrelationID === undefined || iMCorrelationID === null) {
         throw new Error("Missing the required parameter 'iMCorrelationID' when calling postPriceandavailability");
-      }
-      // verify the required parameter 'priceAndAvailabilityRequest' is set
-      if (priceAndAvailabilityRequest === undefined || priceAndAvailabilityRequest === null) {
-        throw new Error("Missing the required parameter 'priceAndAvailabilityRequest' when calling postPriceandavailability");
       }
 
       let pathParams = {

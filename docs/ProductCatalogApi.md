@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 
 ## postPriceandavailability
 
-> [PriceAndAvailabilityResponseInner] postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, priceAndAvailabilityRequest, opts)
+> [PriceAndAvailabilityResponseInner] postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts)
 
 Price and Availability
 
@@ -241,12 +241,12 @@ let includePricing = true; // Boolean | Pass boolean value as input, if true the
 let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = "US"; // String | Two-character ISO country code.
 let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
-let priceAndAvailabilityRequest = {"products":[{"ingramPartNumber":"123512"}]}; // PriceAndAvailabilityRequest | 
 let opts = {
   'includeProductAttributes': true, // Boolean | Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details.
-  'iMSenderID': "MyCompany" // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'iMSenderID': "MyCompany", // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'priceAndAvailabilityRequest': {"products":[{"ingramPartNumber":"123512"}]} // PriceAndAvailabilityRequest | 
 };
-apiInstance.postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, priceAndAvailabilityRequest, opts, (error, data, response) => {
+apiInstance.postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -265,9 +265,9 @@ Name | Type | Description  | Notes
  **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number. | 
  **iMCountryCode** | **String**| Two-character ISO country code. | 
  **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | 
- **priceAndAvailabilityRequest** | [**PriceAndAvailabilityRequest**](PriceAndAvailabilityRequest.md)|  | 
  **includeProductAttributes** | **Boolean**| Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details. | [optional] 
  **iMSenderID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | [optional] 
+ **priceAndAvailabilityRequest** | [**PriceAndAvailabilityRequest**](PriceAndAvailabilityRequest.md)|  | [optional] 
 
 ### Return type
 
