@@ -114,12 +114,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property warrantyInfo (base name: "warrantyInfo")', function() {
-      // uncomment below and update the code to test the property warrantyInfo
-      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
-      //expect(instance).to.be();
-    });
-
     it('should have the property vmfAdditionalAttributesLines (base name: "vmfAdditionalAttributesLines")', function() {
       // uncomment below and update the code to test the property vmfAdditionalAttributesLines
       //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();

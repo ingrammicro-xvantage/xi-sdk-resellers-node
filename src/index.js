@@ -85,8 +85,6 @@ import OrderCreateV7RequestLinesInner from './model/OrderCreateV7RequestLinesInn
 import OrderCreateV7RequestLinesInnerAdditionalAttributesInner from './model/OrderCreateV7RequestLinesInnerAdditionalAttributesInner';
 import OrderCreateV7RequestLinesInnerEndUserInfoInner from './model/OrderCreateV7RequestLinesInnerEndUserInfoInner';
 import OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner from './model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner';
-import OrderCreateV7RequestLinesInnerWarrantyInfoInner from './model/OrderCreateV7RequestLinesInnerWarrantyInfoInner';
-import OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner from './model/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner';
 import OrderCreateV7RequestResellerInfo from './model/OrderCreateV7RequestResellerInfo';
 import OrderCreateV7RequestShipToInfo from './model/OrderCreateV7RequestShipToInfo';
 import OrderCreateV7RequestShipmentDetails from './model/OrderCreateV7RequestShipmentDetails';
@@ -715,18 +713,6 @@ export {
      * @property {module:model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner}
      */
     OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner,
-
-    /**
-     * The OrderCreateV7RequestLinesInnerWarrantyInfoInner model constructor.
-     * @property {module:model/OrderCreateV7RequestLinesInnerWarrantyInfoInner}
-     */
-    OrderCreateV7RequestLinesInnerWarrantyInfoInner,
-
-    /**
-     * The OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner model constructor.
-     * @property {module:model/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner}
-     */
-    OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner,
 
     /**
      * The OrderCreateV7RequestResellerInfo model constructor.

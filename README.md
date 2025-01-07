@@ -225,8 +225,6 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.OrderCreateV7RequestLinesInnerAdditionalAttributesInner](docs/OrderCreateV7RequestLinesInnerAdditionalAttributesInner.md)
  - [XiSdkResellers.OrderCreateV7RequestLinesInnerEndUserInfoInner](docs/OrderCreateV7RequestLinesInnerEndUserInfoInner.md)
  - [XiSdkResellers.OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner](docs/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.md)
- - [XiSdkResellers.OrderCreateV7RequestLinesInnerWarrantyInfoInner](docs/OrderCreateV7RequestLinesInnerWarrantyInfoInner.md)
- - [XiSdkResellers.OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner](docs/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner.md)
  - [XiSdkResellers.OrderCreateV7RequestResellerInfo](docs/OrderCreateV7RequestResellerInfo.md)
  - [XiSdkResellers.OrderCreateV7RequestShipToInfo](docs/OrderCreateV7RequestShipToInfo.md)
  - [XiSdkResellers.OrderCreateV7RequestShipmentDetails](docs/OrderCreateV7RequestShipmentDetails.md)

@@ -79,8 +79,6 @@ docs/OrderCreateV7RequestLinesInner.md
 docs/OrderCreateV7RequestLinesInnerAdditionalAttributesInner.md
 docs/OrderCreateV7RequestLinesInnerEndUserInfoInner.md
 docs/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.md
-docs/OrderCreateV7RequestLinesInnerWarrantyInfoInner.md
-docs/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner.md
 docs/OrderCreateV7RequestResellerInfo.md
 docs/OrderCreateV7RequestShipToInfo.md
 docs/OrderCreateV7RequestShipmentDetails.md
@@ -322,8 +320,6 @@ src/model/OrderCreateV7RequestLinesInner.js
 src/model/OrderCreateV7RequestLinesInnerAdditionalAttributesInner.js
 src/model/OrderCreateV7RequestLinesInnerEndUserInfoInner.js
 src/model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.js
-src/model/OrderCreateV7RequestLinesInnerWarrantyInfoInner.js
-src/model/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner.js
 src/model/OrderCreateV7RequestResellerInfo.js
 src/model/OrderCreateV7RequestShipToInfo.js
 src/model/OrderCreateV7RequestShipmentDetails.js
@@ -553,8 +549,6 @@ test/model/OrderCreateV7RequestLinesInner.spec.js
 test/model/OrderCreateV7RequestLinesInnerAdditionalAttributesInner.spec.js
 test/model/OrderCreateV7RequestLinesInnerEndUserInfoInner.spec.js
 test/model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.spec.js
-test/model/OrderCreateV7RequestLinesInnerWarrantyInfoInner.spec.js
-test/model/OrderCreateV7RequestLinesInnerWarrantyInfoInnerSerialInfoInner.spec.js
 test/model/OrderCreateV7RequestResellerInfo.spec.js
 test/model/OrderCreateV7RequestShipToInfo.spec.js
 test/model/OrderCreateV7RequestShipmentDetails.spec.js

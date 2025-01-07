@@ -15,7 +15,6 @@ import ApiClient from '../ApiClient';
 import OrderCreateV7RequestLinesInnerAdditionalAttributesInner from './OrderCreateV7RequestLinesInnerAdditionalAttributesInner';
 import OrderCreateV7RequestLinesInnerEndUserInfoInner from './OrderCreateV7RequestLinesInnerEndUserInfoInner';
 import OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner from './OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner';
-import OrderCreateV7RequestLinesInnerWarrantyInfoInner from './OrderCreateV7RequestLinesInnerWarrantyInfoInner';
 
 /**
  * The OrderCreateV7RequestLinesInner model module.
@@ -81,9 +80,6 @@ class OrderCreateV7RequestLinesInner {
             if (data.hasOwnProperty('additionalAttributes')) {
                 obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [OrderCreateV7RequestLinesInnerAdditionalAttributesInner]);
             }
-            if (data.hasOwnProperty('warrantyInfo')) {
-                obj['warrantyInfo'] = ApiClient.convertToType(data['warrantyInfo'], [OrderCreateV7RequestLinesInnerWarrantyInfoInner]);
-            }
             if (data.hasOwnProperty('vmfAdditionalAttributesLines')) {
                 obj['vmfAdditionalAttributesLines'] = ApiClient.convertToType(data['vmfAdditionalAttributesLines'], [OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner]);
             }
@@ -135,16 +131,6 @@ class OrderCreateV7RequestLinesInner {
             // validate the optional field `additionalAttributes` (array)
             for (const item of data['additionalAttributes']) {
                 OrderCreateV7RequestLinesInnerAdditionalAttributesInner.validateJSON(item);
-            };
-        }
-        if (data['warrantyInfo']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['warrantyInfo'])) {
-                throw new Error("Expected the field `warrantyInfo` to be an array in the JSON data but got " + data['warrantyInfo']);
-            }
-            // validate the optional field `warrantyInfo` (array)
-            for (const item of data['warrantyInfo']) {
-                OrderCreateV7RequestLinesInnerWarrantyInfoInner.validateJSON(item);
             };
         }
         if (data['vmfAdditionalAttributesLines']) { // data not null
@@ -223,11 +209,6 @@ OrderCreateV7RequestLinesInner.prototype['endUserInfo'] = undefined;
  * @member {Array.<module:model/OrderCreateV7RequestLinesInnerAdditionalAttributesInner>} additionalAttributes
  */
 OrderCreateV7RequestLinesInner.prototype['additionalAttributes'] = undefined;
-
-/**
- * @member {Array.<module:model/OrderCreateV7RequestLinesInnerWarrantyInfoInner>} warrantyInfo
- */
-OrderCreateV7RequestLinesInner.prototype['warrantyInfo'] = undefined;
 
 /**
  * @member {Array.<module:model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner>} vmfAdditionalAttributesLines
