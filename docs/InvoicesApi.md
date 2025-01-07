@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## getInvoicedetailsV61
 
-> InvoiceDetailsv61Response getInvoicedetailsV61(invoiceNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts)
+> InvoiceDetailsv61Response getInvoicedetailsV61(invoiceNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationID, opts)
 
 Get Invoice Details v6.1
 
@@ -31,12 +31,12 @@ let invoiceNumber = "335238411"; // String | The Ingram Micro invoice number.
 let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = "US"; // String | Two-character ISO country code.
 let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
+let iMApplicationID = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany.
 let opts = {
-  'iMApplicationID': "MyCompany", // String | Unique value used to identify the sender of the transaction. Example: MyCompany.
   'customerType': "invoice", // String | it should be invoice or order
   'includeSerialNumbers': false // Boolean | if serial in the response send as true or else false
 };
-apiInstance.getInvoicedetailsV61(invoiceNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
+apiInstance.getInvoicedetailsV61(invoiceNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationID, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
  **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number. | 
  **iMCountryCode** | **String**| Two-character ISO country code. | 
  **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | 
- **iMApplicationID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany. | [optional] 
+ **iMApplicationID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany. | 
  **customerType** | **String**| it should be invoice or order | [optional] 
  **includeSerialNumbers** | **Boolean**| if serial in the response send as true or else false | [optional] 
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 ## getResellersV6Invoicesearch
 
-> InvoiceSearchResponse getResellersV6Invoicesearch(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts)
+> InvoiceSearchResponse getResellersV6Invoicesearch(iMApplicationID, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts)
 
 Search your invoice
 
@@ -90,11 +90,11 @@ let application = defaultClient.authentications['application'];
 application.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new XiSdkResellers.InvoicesApi();
+let iMApplicationID = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
 let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = "US"; // String | Two-character ISO country code.
 let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
 let opts = {
-  'iMApplicationID': "MyCompany", // String | Unique value used to identify the sender of the transaction. Example: MyCompany
   'paymentTermsNetDate': "2021-04-23", // String | Search by payment terms net date(yyyy-MM-dd).
   'invoiceDate': "2021-04-23", // String | Search by invoice date(yyyy-MM-dd).
   'invoiceDueDate': "2021-04-23", // String | Search by invoice date from(yyyy-MM-dd).
@@ -119,7 +119,7 @@ let opts = {
   'direction': "desc", // String | asc or desc , along with orderby column result set will be sorted.
   'serialNumber': "serialNumber_example" // String | Serial number of the product.
 };
-apiInstance.getResellersV6Invoicesearch(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
+apiInstance.getResellersV6Invoicesearch(iMApplicationID, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -133,10 +133,10 @@ apiInstance.getResellersV6Invoicesearch(iMCustomerNumber, iMCountryCode, iMCorre
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **iMApplicationID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | 
  **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number. | 
  **iMCountryCode** | **String**| Two-character ISO country code. | 
  **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | 
- **iMApplicationID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | [optional] 
  **paymentTermsNetDate** | **String**| Search by payment terms net date(yyyy-MM-dd). | [optional] 
  **invoiceDate** | **String**| Search by invoice date(yyyy-MM-dd). | [optional] 
  **invoiceDueDate** | **String**| Search by invoice date from(yyyy-MM-dd). | [optional] 
