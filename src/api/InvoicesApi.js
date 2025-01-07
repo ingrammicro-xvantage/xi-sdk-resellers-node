@@ -51,14 +51,14 @@ export default class InvoicesApi {
      * @param {String} iMCustomerNumber Your unique Ingram Micro customer number.
      * @param {String} iMCountryCode Two-character ISO country code.
      * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems.
-     * @param {String} iMApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany.
      * @param {Object} opts Optional parameters
+     * @param {String} [iMApplicationID] Unique value used to identify the sender of the transaction. Example: MyCompany.
      * @param {String} [customerType] it should be invoice or order
      * @param {Boolean} [includeSerialNumbers] if serial in the response send as true or else false
      * @param {module:api/InvoicesApi~getInvoicedetailsV61Callback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/InvoiceDetailsv61Response}
      */
-    getInvoicedetailsV61(invoiceNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationID, opts, callback) {
+    getInvoicedetailsV61(invoiceNumber, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, callback) {
       opts = opts || {};
       let postBody = null;
       // verify the required parameter 'invoiceNumber' is set
@@ -77,10 +77,6 @@ export default class InvoicesApi {
       if (iMCorrelationID === undefined || iMCorrelationID === null) {
         throw new Error("Missing the required parameter 'iMCorrelationID' when calling getInvoicedetailsV61");
       }
-      // verify the required parameter 'iMApplicationID' is set
-      if (iMApplicationID === undefined || iMApplicationID === null) {
-        throw new Error("Missing the required parameter 'iMApplicationID' when calling getInvoicedetailsV61");
-      }
 
       let pathParams = {
         'invoiceNumber': invoiceNumber
@@ -93,7 +89,7 @@ export default class InvoicesApi {
         'IM-CustomerNumber': iMCustomerNumber,
         'IM-CountryCode': iMCountryCode,
         'IM-CorrelationID': iMCorrelationID,
-        'IM-ApplicationID': iMApplicationID
+        'IM-ApplicationID': opts['iMApplicationID']
       };
       let formParams = {
       };
@@ -120,11 +116,11 @@ export default class InvoicesApi {
     /**
      * Search your invoice
      * Search your Ingram Micro invoices. This endpoint searches by multiple invoice parameters and supports pagination of results.
-     * @param {String} iMApplicationID Unique value used to identify the sender of the transaction. Example: MyCompany
      * @param {String} iMCustomerNumber Your unique Ingram Micro customer number.
      * @param {String} iMCountryCode Two-character ISO country code.
      * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems.
      * @param {Object} opts Optional parameters
+     * @param {String} [iMApplicationID] Unique value used to identify the sender of the transaction. Example: MyCompany
      * @param {String} [paymentTermsNetDate] Search by payment terms net date(yyyy-MM-dd).
      * @param {String} [invoiceDate] Search by invoice date(yyyy-MM-dd).
      * @param {String} [invoiceDueDate] Search by invoice date from(yyyy-MM-dd).
@@ -151,13 +147,9 @@ export default class InvoicesApi {
      * @param {module:api/InvoicesApi~getResellersV6InvoicesearchCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/InvoiceSearchResponse}
      */
-    getResellersV6Invoicesearch(iMApplicationID, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, callback) {
+    getResellersV6Invoicesearch(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, callback) {
       opts = opts || {};
       let postBody = null;
-      // verify the required parameter 'iMApplicationID' is set
-      if (iMApplicationID === undefined || iMApplicationID === null) {
-        throw new Error("Missing the required parameter 'iMApplicationID' when calling getResellersV6Invoicesearch");
-      }
       // verify the required parameter 'iMCustomerNumber' is set
       if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
         throw new Error("Missing the required parameter 'iMCustomerNumber' when calling getResellersV6Invoicesearch");
@@ -199,7 +191,7 @@ export default class InvoicesApi {
         'serialNumber': opts['serialNumber']
       };
       let headerParams = {
-        'IM-ApplicationID': iMApplicationID,
+        'IM-ApplicationID': opts['iMApplicationID'],
         'IM-CustomerNumber': iMCustomerNumber,
         'IM-CountryCode': iMCountryCode,
         'IM-CorrelationID': iMCorrelationID
