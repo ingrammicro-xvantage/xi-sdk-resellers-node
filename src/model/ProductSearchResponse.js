@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -13,6 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import ProductSearchResponseCatalogInner from './ProductSearchResponseCatalogInner';
+import ProductSearchResponseSubscriptionCatalogInner from './ProductSearchResponseSubscriptionCatalogInner';
 
 /**
  * The ProductSearchResponse model module.
@@ -60,6 +61,9 @@ class ProductSearchResponse {
             if (data.hasOwnProperty('catalog')) {
                 obj['catalog'] = ApiClient.convertToType(data['catalog'], [ProductSearchResponseCatalogInner]);
             }
+            if (data.hasOwnProperty('subscriptionCatalog')) {
+                obj['subscriptionCatalog'] = ApiClient.convertToType(data['subscriptionCatalog'], [ProductSearchResponseSubscriptionCatalogInner]);
+            }
             if (data.hasOwnProperty('nextPage')) {
                 obj['nextPage'] = ApiClient.convertToType(data['nextPage'], 'String');
             }
@@ -84,6 +88,16 @@ class ProductSearchResponse {
             // validate the optional field `catalog` (array)
             for (const item of data['catalog']) {
                 ProductSearchResponseCatalogInner.validateJSON(item);
+            };
+        }
+        if (data['subscriptionCatalog']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['subscriptionCatalog'])) {
+                throw new Error("Expected the field `subscriptionCatalog` to be an array in the JSON data but got " + data['subscriptionCatalog']);
+            }
+            // validate the optional field `subscriptionCatalog` (array)
+            for (const item of data['subscriptionCatalog']) {
+                ProductSearchResponseSubscriptionCatalogInner.validateJSON(item);
             };
         }
         // ensure the json data is a string
@@ -125,6 +139,11 @@ ProductSearchResponse.prototype['pageNumber'] = undefined;
  * @member {Array.<module:model/ProductSearchResponseCatalogInner>} catalog
  */
 ProductSearchResponse.prototype['catalog'] = undefined;
+
+/**
+ * @member {Array.<module:model/ProductSearchResponseSubscriptionCatalogInner>} subscriptionCatalog
+ */
+ProductSearchResponse.prototype['subscriptionCatalog'] = undefined;
 
 /**
  * link/URL for accessing next page.

@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -66,13 +66,13 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property hasReturnLimits (base name: "hasReturnLimits")', function() {
+    it('should have the property hasReturnLimits (base name: "HasReturnLimits")', function() {
       // uncomment below and update the code to test the property hasReturnLimits
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();
     });
 
-    it('should have the property isBackOrderAllowed (base name: "isBackOrderAllowed")', function() {
+    it('should have the property isBackOrderAllowed (base name: "IsBackOrderAllowed")', function() {
       // uncomment below and update the code to test the property isBackOrderAllowed
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();
@@ -86,12 +86,6 @@
 
     it('should have the property isReplacementProduct (base name: "isReplacementProduct")', function() {
       // uncomment below and update the code to test the property isReplacementProduct
-      //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property replacementType (base name: "replacementType")', function() {
-      // uncomment below and update the code to test the property replacementType
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();
     });
@@ -144,12 +138,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property hasAcopWebDiscount (base name: "hasAcopWebDiscount")', function() {
-      // uncomment below and update the code to test the property hasAcopWebDiscount
-      //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
-      //expect(instance).to.be();
-    });
-
     it('should have the property hasSpecialBid (base name: "hasSpecialBid")', function() {
       // uncomment below and update the code to test the property hasSpecialBid
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
@@ -168,8 +156,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property isRefurbished (base name: "isRefurbished")', function() {
-      // uncomment below and update the code to test the property isRefurbished
+    it('should have the property isRefurbishedProduct (base name: "isRefurbishedProduct")', function() {
+      // uncomment below and update the code to test the property isRefurbishedProduct
       //var instance = new XiSdkResellers.ProductDetailResponseIndicators();
       //expect(instance).to.be();
     });

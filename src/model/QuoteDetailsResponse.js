@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -88,6 +88,9 @@ class QuoteDetailsResponse {
             }
             if (data.hasOwnProperty('vendorQuoteNumber')) {
                 obj['vendorQuoteNumber'] = ApiClient.convertToType(data['vendorQuoteNumber'], 'String');
+            }
+            if (data.hasOwnProperty('isPartialOrderAllowed')) {
+                obj['isPartialOrderAllowed'] = ApiClient.convertToType(data['isPartialOrderAllowed'], 'Boolean');
             }
             if (data.hasOwnProperty('status')) {
                 obj['status'] = ApiClient.convertToType(data['status'], 'String');
@@ -418,6 +421,11 @@ QuoteDetailsResponse.prototype['specialBidExpirationDate'] = undefined;
  * @member {String} vendorQuoteNumber
  */
 QuoteDetailsResponse.prototype['vendorQuoteNumber'] = undefined;
+
+/**
+ * @member {Boolean} isPartialOrderAllowed
+ */
+QuoteDetailsResponse.prototype['isPartialOrderAllowed'] = undefined;
 
 /**
  * This refers to the primary status of the quote.  API responses will return

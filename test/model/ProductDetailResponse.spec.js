@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -66,12 +66,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property customerPartNumber (base name: "customerPartNumber")', function() {
-      // uncomment below and update the code to test the property customerPartNumber
-      //var instance = new XiSdkResellers.ProductDetailResponse();
-      //expect(instance).to.be();
-    });
-
     it('should have the property productAuthorized (base name: "productAuthorized")', function() {
       // uncomment below and update the code to test the property productAuthorized
       //var instance = new XiSdkResellers.ProductDetailResponse();
@@ -80,12 +74,6 @@
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instance = new XiSdkResellers.ProductDetailResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property productDetailDescription (base name: "productDetailDescription")', function() {
-      // uncomment below and update the code to test the property productDetailDescription
       //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
@@ -102,8 +90,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property productSubCategory (base name: "productSubCategory")', function() {
-      // uncomment below and update the code to test the property productSubCategory
+    it('should have the property productSubcategory (base name: "productSubcategory")', function() {
+      // uncomment below and update the code to test the property productSubcategory
       //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });
@@ -132,6 +120,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property customerPartNumber (base name: "customerPartNumber")', function() {
+      // uncomment below and update the code to test the property customerPartNumber
+      //var instance = new XiSdkResellers.ProductDetailResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property indicators (base name: "indicators")', function() {
       // uncomment below and update the code to test the property indicators
       //var instance = new XiSdkResellers.ProductDetailResponse();
@@ -144,12 +138,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property technicalSpecifications (base name: "technicalSpecifications")', function() {
-      // uncomment below and update the code to test the property technicalSpecifications
-      //var instance = new XiSdkResellers.ProductDetailResponse();
-      //expect(instance).to.be();
-    });
-
     it('should have the property warrantyInformation (base name: "warrantyInformation")', function() {
       // uncomment below and update the code to test the property warrantyInformation
       //var instance = new XiSdkResellers.ProductDetailResponse();
@@ -158,6 +146,12 @@
 
     it('should have the property additionalInformation (base name: "additionalInformation")', function() {
       // uncomment below and update the code to test the property additionalInformation
+      //var instance = new XiSdkResellers.ProductDetailResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property subscriptionDetails (base name: "subscriptionDetails")', function() {
+      // uncomment below and update the code to test the property subscriptionDetails
       //var instance = new XiSdkResellers.ProductDetailResponse();
       //expect(instance).to.be();
     });

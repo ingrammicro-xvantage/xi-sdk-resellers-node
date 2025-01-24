@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -52,6 +52,16 @@
       it('should call getResellerV6Productdetail successfully', function(done) {
         //uncomment below and update the code to test getResellerV6Productdetail
         //instance.getResellerV6Productdetail(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getResellerV6Productdetailcmp', function() {
+      it('should call getResellerV6Productdetailcmp successfully', function(done) {
+        //uncomment below and update the code to test getResellerV6Productdetailcmp
+        //instance.getResellerV6Productdetailcmp(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

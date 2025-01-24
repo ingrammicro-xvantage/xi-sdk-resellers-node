@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -21,7 +21,6 @@ import ApiClient from '../ApiClient';
 class ProductDetailResponseIndicators {
     /**
      * Constructs a new <code>ProductDetailResponseIndicators</code>.
-     * Indicators of the Product
      * @alias module:model/ProductDetailResponseIndicators
      */
     constructor() { 
@@ -54,20 +53,17 @@ class ProductDetailResponseIndicators {
             if (data.hasOwnProperty('isNewProduct')) {
                 obj['isNewProduct'] = ApiClient.convertToType(data['isNewProduct'], 'Boolean');
             }
-            if (data.hasOwnProperty('hasReturnLimits')) {
-                obj['hasReturnLimits'] = ApiClient.convertToType(data['hasReturnLimits'], 'Boolean');
+            if (data.hasOwnProperty('HasReturnLimits')) {
+                obj['HasReturnLimits'] = ApiClient.convertToType(data['HasReturnLimits'], 'Boolean');
             }
-            if (data.hasOwnProperty('isBackOrderAllowed')) {
-                obj['isBackOrderAllowed'] = ApiClient.convertToType(data['isBackOrderAllowed'], 'Boolean');
+            if (data.hasOwnProperty('IsBackOrderAllowed')) {
+                obj['IsBackOrderAllowed'] = ApiClient.convertToType(data['IsBackOrderAllowed'], 'Boolean');
             }
             if (data.hasOwnProperty('isShippedFromPartner')) {
                 obj['isShippedFromPartner'] = ApiClient.convertToType(data['isShippedFromPartner'], 'Boolean');
             }
             if (data.hasOwnProperty('isReplacementProduct')) {
                 obj['isReplacementProduct'] = ApiClient.convertToType(data['isReplacementProduct'], 'Boolean');
-            }
-            if (data.hasOwnProperty('replacementType')) {
-                obj['replacementType'] = ApiClient.convertToType(data['replacementType'], 'String');
             }
             if (data.hasOwnProperty('isDirectship')) {
                 obj['isDirectship'] = ApiClient.convertToType(data['isDirectship'], 'Boolean');
@@ -93,9 +89,6 @@ class ProductDetailResponseIndicators {
             if (data.hasOwnProperty('hasStdWebDiscount')) {
                 obj['hasStdWebDiscount'] = ApiClient.convertToType(data['hasStdWebDiscount'], 'Boolean');
             }
-            if (data.hasOwnProperty('hasAcopWebDiscount')) {
-                obj['hasAcopWebDiscount'] = ApiClient.convertToType(data['hasAcopWebDiscount'], 'Boolean');
-            }
             if (data.hasOwnProperty('hasSpecialBid')) {
                 obj['hasSpecialBid'] = ApiClient.convertToType(data['hasSpecialBid'], 'Boolean');
             }
@@ -105,8 +98,8 @@ class ProductDetailResponseIndicators {
             if (data.hasOwnProperty('isDiscontinuedProduct')) {
                 obj['isDiscontinuedProduct'] = ApiClient.convertToType(data['isDiscontinuedProduct'], 'Boolean');
             }
-            if (data.hasOwnProperty('isRefurbished')) {
-                obj['isRefurbished'] = ApiClient.convertToType(data['isRefurbished'], 'Boolean');
+            if (data.hasOwnProperty('isRefurbishedProduct')) {
+                obj['isRefurbishedProduct'] = ApiClient.convertToType(data['isRefurbishedProduct'], 'Boolean');
             }
             if (data.hasOwnProperty('isReturnableProduct')) {
                 obj['isReturnableProduct'] = ApiClient.convertToType(data['isReturnableProduct'], 'Boolean');
@@ -158,10 +151,6 @@ class ProductDetailResponseIndicators {
      */
     static validateJSON(data) {
         // ensure the json data is a string
-        if (data['replacementType'] && !(typeof data['replacementType'] === 'string' || data['replacementType'] instanceof String)) {
-            throw new Error("Expected the field `replacementType` to be a primitive type in the JSON string but got " + data['replacementType']);
-        }
-        // ensure the json data is a string
         if (data['skuType'] && !(typeof data['skuType'] === 'string' || data['skuType'] instanceof String)) {
             throw new Error("Expected the field `skuType` to be a primitive type in the JSON string but got " + data['skuType']);
         }
@@ -188,15 +177,15 @@ ProductDetailResponseIndicators.prototype['isNewProduct'] = undefined;
 
 /**
  * Boolean that indicates whether there is any limit to return the product.
- * @member {Boolean} hasReturnLimits
+ * @member {Boolean} HasReturnLimits
  */
-ProductDetailResponseIndicators.prototype['hasReturnLimits'] = undefined;
+ProductDetailResponseIndicators.prototype['HasReturnLimits'] = undefined;
 
 /**
  * Boolean that indicates whether back order is allowed for the product.
- * @member {Boolean} isBackOrderAllowed
+ * @member {Boolean} IsBackOrderAllowed
  */
-ProductDetailResponseIndicators.prototype['isBackOrderAllowed'] = undefined;
+ProductDetailResponseIndicators.prototype['IsBackOrderAllowed'] = undefined;
 
 /**
  * Boolean that indicates whether product is shipped from the partner.
@@ -209,11 +198,6 @@ ProductDetailResponseIndicators.prototype['isShippedFromPartner'] = undefined;
  * @member {Boolean} isReplacementProduct
  */
 ProductDetailResponseIndicators.prototype['isReplacementProduct'] = undefined;
-
-/**
- * @member {String} replacementType
- */
-ProductDetailResponseIndicators.prototype['replacementType'] = undefined;
 
 /**
  * Boolean that indicates whether it’s a direct ship product.
@@ -264,11 +248,6 @@ ProductDetailResponseIndicators.prototype['hasAcopQuantityBreak'] = undefined;
 ProductDetailResponseIndicators.prototype['hasStdWebDiscount'] = undefined;
 
 /**
- * @member {Boolean} hasAcopWebDiscount
- */
-ProductDetailResponseIndicators.prototype['hasAcopWebDiscount'] = undefined;
-
-/**
  * Boolean that indicates whether product has any special bid.
  * @member {Boolean} hasSpecialBid
  */
@@ -288,9 +267,9 @@ ProductDetailResponseIndicators.prototype['isDiscontinuedProduct'] = undefined;
 
 /**
  * Boolean that indicates whether product is refurbished.
- * @member {Boolean} isRefurbished
+ * @member {Boolean} isRefurbishedProduct
  */
-ProductDetailResponseIndicators.prototype['isRefurbished'] = undefined;
+ProductDetailResponseIndicators.prototype['isRefurbishedProduct'] = undefined;
 
 /**
  * Boolean that indicates if the product can be returned.

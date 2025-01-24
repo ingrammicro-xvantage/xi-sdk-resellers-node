@@ -5,6 +5,7 @@ All URIs are relative to *https://api.ingrammicro.com:443*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getResellerV6Productdetail**](ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details
+[**getResellerV6Productdetailcmp**](ProductCatalogApi.md#getResellerV6Productdetailcmp) | **GET** /resellers/v6/catalog/details | Product Details
 [**getResellerV6Productsearch**](ProductCatalogApi.md#getResellerV6Productsearch) | **GET** /resellers/v6/catalog | Search Products
 [**postPriceandavailability**](ProductCatalogApi.md#postPriceandavailability) | **POST** /resellers/v6/catalog/priceandavailability | Price and Availability
 
@@ -69,6 +70,69 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
+## getResellerV6Productdetailcmp
+
+> ProductDetailResponse getResellerV6Productdetailcmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts)
+
+Product Details
+
+Search all the product-related details.
+
+### Example
+
+```javascript
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
+// Configure OAuth2 access token for authorization: application
+let application = defaultClient.authentications['application'];
+application.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new XiSdkResellers.ProductCatalogApi();
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems
+let opts = {
+  'iMSenderID': "MyCompany", // String | Sender Identification text
+  'planName': "planName_example", // String | Name of the subscription plan
+  'planId': "planId_example", // String | Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
+  'vendorPartNumber': "vendorPartNumber_example" // String | Vendor’s part number for the product.
+};
+apiInstance.getResellerV6Productdetailcmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number | 
+ **iMCountryCode** | **String**| Two-character ISO country code. | 
+ **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems | 
+ **iMSenderID** | **String**| Sender Identification text | [optional] 
+ **planName** | **String**| Name of the subscription plan | [optional] 
+ **planId** | **String**| Id of the subscription plan.   &lt;span style&#x3D;&#39;color:red&#39;&gt;To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.&lt;/span&gt; | [optional] 
+ **vendorPartNumber** | **String**| Vendor’s part number for the product. | [optional] 
+
+### Return type
+
+[**ProductDetailResponse**](ProductDetailResponse.md)
+
+### Authorization
+
+[application](../README.md#application)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
 ## getResellerV6Productsearch
 
 > ProductSearchResponse getResellerV6Productsearch(iMCustomerNumber, iMCorrelationID, iMCountryCode, opts)
@@ -102,7 +166,10 @@ let opts = {
   'vendorNumber': "vendorNumber_example", // String | Vendor number of the product
   'keyword': ["null"], // [String] | Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name.
   'category': "Accessories", // String | The category of the product. Example: Displays.
-  'skipAuthorisation': "true" // String | This parameter is True when you want Skip the authorization, so template will work like current B2b template.
+  'skipAuthorisation': "true", // String | This parameter is True when you want Skip the authorization, so template will work like current B2b template.
+  'groupName': "Microsoft Defender for Endpoint P2 (NCE COM MTH)", // String | Name of the Product Group
+  'planID': "471490", // String | ID of the plan
+  'showGroupInfo': true // Boolean | In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group.
 };
 apiInstance.getResellerV6Productsearch(iMCustomerNumber, iMCorrelationID, iMCountryCode, opts, (error, data, response) => {
   if (error) {
@@ -133,6 +200,9 @@ Name | Type | Description  | Notes
  **keyword** | [**[String]**](String.md)| Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name. | [optional] 
  **category** | **String**| The category of the product. Example: Displays. | [optional] 
  **skipAuthorisation** | **String**| This parameter is True when you want Skip the authorization, so template will work like current B2b template. | [optional] 
+ **groupName** | **String**| Name of the Product Group | [optional] 
+ **planID** | **String**| ID of the plan | [optional] 
+ **showGroupInfo** | **Boolean**| In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group. | [optional] 
 
 ### Return type
 
@@ -150,7 +220,7 @@ Name | Type | Description  | Notes
 
 ## postPriceandavailability
 
-> [PriceAndAvailabilityResponseInner] postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, priceAndAvailabilityRequest, opts)
+> [PriceAndAvailabilityResponseInner] postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts)
 
 Price and Availability
 
@@ -171,12 +241,12 @@ let includePricing = true; // Boolean | Pass boolean value as input, if true the
 let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
 let iMCountryCode = "US"; // String | Two-character ISO country code.
 let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
-let priceAndAvailabilityRequest = {"products":[{"ingramPartNumber":"123512"}]}; // PriceAndAvailabilityRequest | 
 let opts = {
   'includeProductAttributes': true, // Boolean | Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details.
-  'iMSenderID': "MyCompany" // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'iMSenderID': "MyCompany", // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+  'priceAndAvailabilityRequest': {"products":[{"ingramPartNumber":"123512"}]} // PriceAndAvailabilityRequest | 
 };
-apiInstance.postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, priceAndAvailabilityRequest, opts, (error, data, response) => {
+apiInstance.postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -195,9 +265,9 @@ Name | Type | Description  | Notes
  **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number. | 
  **iMCountryCode** | **String**| Two-character ISO country code. | 
  **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | 
- **priceAndAvailabilityRequest** | [**PriceAndAvailabilityRequest**](PriceAndAvailabilityRequest.md)|  | 
  **includeProductAttributes** | **Boolean**| Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details. | [optional] 
  **iMSenderID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | [optional] 
+ **priceAndAvailabilityRequest** | [**PriceAndAvailabilityRequest**](PriceAndAvailabilityRequest.md)|  | [optional] 
 
 ### Return type
 

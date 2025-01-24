@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -13,12 +13,13 @@
 
 
 import ApiClient from "../ApiClient";
-import AsyncOrderCreateDTO from '../model/AsyncOrderCreateDTO';
-import AsyncOrderCreateResponse from '../model/AsyncOrderCreateResponse';
 import ErrorResponse from '../model/ErrorResponse';
 import ErrorResponseDTO from '../model/ErrorResponseDTO';
 import OrderCreateRequest from '../model/OrderCreateRequest';
 import OrderCreateResponse from '../model/OrderCreateResponse';
+import OrderCreateV7Request from '../model/OrderCreateV7Request';
+import OrderCreateV7Response from '../model/OrderCreateV7Response';
+import OrderCreateV7Response201 from '../model/OrderCreateV7Response201';
 import OrderDetailB2B from '../model/OrderDetailB2B';
 import OrderModifyRequest from '../model/OrderModifyRequest';
 import OrderModifyResponse from '../model/OrderModifyResponse';
@@ -349,25 +350,25 @@ export default class OrdersApi {
      * Callback function to receive the result of the postCreateorderV7 operation.
      * @callback module:api/OrdersApi~postCreateorderV7Callback
      * @param {String} error Error message, if any.
-     * @param {module:model/AsyncOrderCreateResponse} data The data returned by the service call.
+     * @param {module:model/OrderCreateV7Response201} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create your Order v7
-     * This API will allow customers to perform both standard ordering and quote to order functionality via a single API enabling them to have a single endpoint to cater to all types of orders.  This approach will standardize the ordering flow for customers where they will get the response for all orders on to their webhooks.  It provides the much-awaited async ordering flow for Reseller API where large orders can also be placed via a single API with guaranteed delivery. 
+     * The Order Create v7 allows our customers to create orders asynchronously. The customer can create either standard orders using stocked SKUs and/or create a “Quote to Order” using the existing quote which is in “Ready to Order” status, or the customer can create an order using the “Configure to order” (CTO) quote. Upon successful submission of the order create request, a confirmation message will be returned as an API response. <br > <br > Once the order is processed, Ingram Micro will notify customers via webhook using a pre-defined callback URL as an HTTP post regarding the updates related to the order. Upon successful order creation, a notification will be sent via webhook regarding the order details, in the event of any error occurring during the order creation process, an error message will be delivered via webhook. Nightly system unavailability will delay response Async response. <br > <br > The key differentiator between standard ordering and “Quote To Order” is the optional input field in the request body which is “quoteNumber”. If a customer passes the quote number in the request body, the order will be processed as a “Quote To Order” using the details from the quote. Any SKUs, quantity, or price information that are passed in the lines object within the request will be ignored in the case of “Quote To Order”.<br > <br > **Prerequisite:** Pre-defined callback URL <br > <br > **Standard ordering::**<br><br>Ingram Micro recommends that you provide the ingramPartNumber for each SKU contained in each order. NOTE: You must have net terms to use the Ingram Micro Order Create API. Ingram Micro offers trade credit when using our APIs, and repayment is based on net terms. For example, if your net terms agreement is net 30, you will have 30 days to make a full payment. Ingram Micro does not allow credit card transactions for API ordering. <br><br>[**Key differences between v6 and v7 Migration**](https://developer.ingrammicro.com/reseller/page/v6-and-v7-migration) <br><br> <br><br>**Quote to Order / Configure to Order:**<br><br>If customers are planning to use Quote to Order or Configure to Order Quotes, it’s recommended to validate the quote using the “Validate Quote” endpoint before creating an order using the quote. Validate Quote endpoint will not only validate the quote but also outline all the mandatory fields required by the vendor at a header level and at the line level which a customer needs to pass to the Quote to Order endpoint request. For a detailed understanding of the “Validate Quote” endpoint, review the “Validate Quote” endpoint documentation. <br><br> **How it works:**<br><br>- The customer validates the quote with a quote number from the Validate Quote endpoint.<br>- The customer copies all the mandatory fields required by the vendor and adds them to the QTO request body.<br>- The customer provides all the values for Vendor mandatory fields along with other required information for QTO to create an order.<br>- After the order creation request receipt acknowledgment from the QTO endpoint, all further order creation updates will be provided via webhook push notification.
      * @param {String} iMCustomerNumber Your unique Ingram Micro customer number.
      * @param {String} iMCountryCode Two-character ISO country code.
-     * @param {String} iMCorrelationID Unique transaction number to identify each transaction accross all the systems.
-     * @param {module:model/AsyncOrderCreateDTO} asyncOrderCreateDTO 
+     * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems.
+     * @param {module:model/OrderCreateV7Request} orderCreateV7Request 
      * @param {Object} opts Optional parameters
-     * @param {String} [iMSenderID] Unique value used to identify the sender of the transaction.
+     * @param {String} [iMSenderID] Unique value used to identify the sender of the transaction. Example: MyCompany
      * @param {module:api/OrdersApi~postCreateorderV7Callback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/AsyncOrderCreateResponse}
+     * data is of type: {@link module:model/OrderCreateV7Response201}
      */
-    postCreateorderV7(iMCustomerNumber, iMCountryCode, iMCorrelationID, asyncOrderCreateDTO, opts, callback) {
+    postCreateorderV7(iMCustomerNumber, iMCountryCode, iMCorrelationID, orderCreateV7Request, opts, callback) {
       opts = opts || {};
-      let postBody = asyncOrderCreateDTO;
+      let postBody = orderCreateV7Request;
       // verify the required parameter 'iMCustomerNumber' is set
       if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
         throw new Error("Missing the required parameter 'iMCustomerNumber' when calling postCreateorderV7");
@@ -380,9 +381,9 @@ export default class OrdersApi {
       if (iMCorrelationID === undefined || iMCorrelationID === null) {
         throw new Error("Missing the required parameter 'iMCorrelationID' when calling postCreateorderV7");
       }
-      // verify the required parameter 'asyncOrderCreateDTO' is set
-      if (asyncOrderCreateDTO === undefined || asyncOrderCreateDTO === null) {
-        throw new Error("Missing the required parameter 'asyncOrderCreateDTO' when calling postCreateorderV7");
+      // verify the required parameter 'orderCreateV7Request' is set
+      if (orderCreateV7Request === undefined || orderCreateV7Request === null) {
+        throw new Error("Missing the required parameter 'orderCreateV7Request' when calling postCreateorderV7");
       }
 
       let pathParams = {
@@ -401,7 +402,7 @@ export default class OrdersApi {
       let authNames = ['application'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = AsyncOrderCreateResponse;
+      let returnType = OrderCreateV7Response201;
       return this.apiClient.callApi(
         '/resellers/v7/orders', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,

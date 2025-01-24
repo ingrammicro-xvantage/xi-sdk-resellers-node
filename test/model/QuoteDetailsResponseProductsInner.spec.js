@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -68,6 +68,18 @@
 
     it('should have the property quantity (base name: "quantity")', function() {
       // uncomment below and update the code to test the property quantity
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property remainingQuoteQty (base name: "remainingQuoteQty")', function() {
+      // uncomment below and update the code to test the property remainingQuoteQty
+      //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property minimumOrderAllowedQty (base name: "minimumOrderAllowedQty")', function() {
+      // uncomment below and update the code to test the property minimumOrderAllowedQty
       //var instance = new XiSdkResellers.QuoteDetailsResponseProductsInner();
       //expect(instance).to.be();
     });

@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -63,6 +63,9 @@ class PriceAndAvailabilityRequestProductsInner {
             if (data.hasOwnProperty('quantityRequested')) {
                 obj['quantityRequested'] = ApiClient.convertToType(data['quantityRequested'], 'String');
             }
+            if (data.hasOwnProperty('planID')) {
+                obj['planID'] = ApiClient.convertToType(data['planID'], 'String');
+            }
             if (data.hasOwnProperty('additionalAttributes')) {
                 obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner]);
             }
@@ -95,6 +98,10 @@ class PriceAndAvailabilityRequestProductsInner {
         // ensure the json data is a string
         if (data['quantityRequested'] && !(typeof data['quantityRequested'] === 'string' || data['quantityRequested'] instanceof String)) {
             throw new Error("Expected the field `quantityRequested` to be a primitive type in the JSON string but got " + data['quantityRequested']);
+        }
+        // ensure the json data is a string
+        if (data['planID'] && !(typeof data['planID'] === 'string' || data['planID'] instanceof String)) {
+            throw new Error("Expected the field `planID` to be a primitive type in the JSON string but got " + data['planID']);
         }
         if (data['additionalAttributes']) { // data not null
             // ensure the json data is an array
@@ -144,6 +151,12 @@ PriceAndAvailabilityRequestProductsInner.prototype['upc'] = undefined;
  * @member {String} quantityRequested
  */
 PriceAndAvailabilityRequestProductsInner.prototype['quantityRequested'] = undefined;
+
+/**
+ * Id of the plan
+ * @member {String} planID
+ */
+PriceAndAvailabilityRequestProductsInner.prototype['planID'] = undefined;
 
 /**
  * @member {Array.<module:model/PriceAndAvailabilityRequestProductsInnerAdditionalAttributesInner>} additionalAttributes

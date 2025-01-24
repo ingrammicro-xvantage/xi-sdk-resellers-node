@@ -135,4 +135,4 @@ defaultClient.basePath = 'https://api.ingrammicro.com:443/sandbox';
 
 If Everything is correct you will get a response something like this:
 
-![quickstart-code-run-success-1](assets/images/quickstart-code-run-success-1.png)
+![quickstart-code-run-success-1](assets/images/quickstart-code-run-success.png)

@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -17,6 +17,7 @@ import PriceAndAvailabilityResponseInnerDiscountsInner from './PriceAndAvailabil
 import PriceAndAvailabilityResponseInnerPricing from './PriceAndAvailabilityResponseInnerPricing';
 import PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner from './PriceAndAvailabilityResponseInnerReserveInventoryDetailsInner';
 import PriceAndAvailabilityResponseInnerServiceFeesInner from './PriceAndAvailabilityResponseInnerServiceFeesInner';
+import PriceAndAvailabilityResponseInnerSubscriptionPriceInner from './PriceAndAvailabilityResponseInnerSubscriptionPriceInner';
 
 /**
  * The PriceAndAvailabilityResponseInner model module.
@@ -52,6 +53,9 @@ class PriceAndAvailabilityResponseInner {
         if (data) {
             obj = obj || new PriceAndAvailabilityResponseInner();
 
+            if (data.hasOwnProperty('index')) {
+                obj['index'] = ApiClient.convertToType(data['index'], 'Number');
+            }
             if (data.hasOwnProperty('productStatusCode')) {
                 obj['productStatusCode'] = ApiClient.convertToType(data['productStatusCode'], 'String');
             }
@@ -132,6 +136,9 @@ class PriceAndAvailabilityResponseInner {
             }
             if (data.hasOwnProperty('serviceFees')) {
                 obj['serviceFees'] = ApiClient.convertToType(data['serviceFees'], [PriceAndAvailabilityResponseInnerServiceFeesInner]);
+            }
+            if (data.hasOwnProperty('subscriptionPrice')) {
+                obj['subscriptionPrice'] = ApiClient.convertToType(data['subscriptionPrice'], [PriceAndAvailabilityResponseInnerSubscriptionPriceInner]);
             }
         }
         return obj;
@@ -245,6 +252,16 @@ class PriceAndAvailabilityResponseInner {
                 PriceAndAvailabilityResponseInnerServiceFeesInner.validateJSON(item);
             };
         }
+        if (data['subscriptionPrice']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['subscriptionPrice'])) {
+                throw new Error("Expected the field `subscriptionPrice` to be an array in the JSON data but got " + data['subscriptionPrice']);
+            }
+            // validate the optional field `subscriptionPrice` (array)
+            for (const item of data['subscriptionPrice']) {
+                PriceAndAvailabilityResponseInnerSubscriptionPriceInner.validateJSON(item);
+            };
+        }
 
         return true;
     }
@@ -253,6 +270,11 @@ class PriceAndAvailabilityResponseInner {
 }
 
 
+
+/**
+ * @member {Number} index
+ */
+PriceAndAvailabilityResponseInner.prototype['index'] = undefined;
 
 /**
  * Codes signifying whether the sku is active or not.
@@ -411,6 +433,11 @@ PriceAndAvailabilityResponseInner.prototype['bundlePartIndicator'] = undefined;
  * @member {Array.<module:model/PriceAndAvailabilityResponseInnerServiceFeesInner>} serviceFees
  */
 PriceAndAvailabilityResponseInner.prototype['serviceFees'] = undefined;
+
+/**
+ * @member {Array.<module:model/PriceAndAvailabilityResponseInnerSubscriptionPriceInner>} subscriptionPrice
+ */
+PriceAndAvailabilityResponseInner.prototype['subscriptionPrice'] = undefined;
 
 
 

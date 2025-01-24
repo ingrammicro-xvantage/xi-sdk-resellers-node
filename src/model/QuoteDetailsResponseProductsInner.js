@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -57,6 +57,12 @@ class QuoteDetailsResponseProductsInner {
             }
             if (data.hasOwnProperty('quantity')) {
                 obj['quantity'] = ApiClient.convertToType(data['quantity'], 'Number');
+            }
+            if (data.hasOwnProperty('remainingQuoteQty')) {
+                obj['remainingQuoteQty'] = ApiClient.convertToType(data['remainingQuoteQty'], 'Number');
+            }
+            if (data.hasOwnProperty('minimumOrderAllowedQty')) {
+                obj['minimumOrderAllowedQty'] = ApiClient.convertToType(data['minimumOrderAllowedQty'], 'Number');
             }
             if (data.hasOwnProperty('notes')) {
                 obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
@@ -250,6 +256,16 @@ QuoteDetailsResponseProductsInner.prototype['lineNumber'] = undefined;
  * @member {Number} quantity
  */
 QuoteDetailsResponseProductsInner.prototype['quantity'] = undefined;
+
+/**
+ * @member {Number} remainingQuoteQty
+ */
+QuoteDetailsResponseProductsInner.prototype['remainingQuoteQty'] = undefined;
+
+/**
+ * @member {Number} minimumOrderAllowedQty
+ */
+QuoteDetailsResponseProductsInner.prototype['minimumOrderAllowedQty'] = undefined;
 
 /**
  * Product line item comments.

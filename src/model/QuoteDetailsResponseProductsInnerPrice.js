@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -60,6 +60,12 @@ class QuoteDetailsResponseProductsInnerPrice {
             }
             if (data.hasOwnProperty('extendedQuotePrice')) {
                 obj['extendedQuotePrice'] = ApiClient.convertToType(data['extendedQuotePrice'], 'Number');
+            }
+            if (data.hasOwnProperty('remainingQuantityExtendedMsrp')) {
+                obj['remainingQuantityExtendedMsrp'] = ApiClient.convertToType(data['remainingQuantityExtendedMsrp'], 'Number');
+            }
+            if (data.hasOwnProperty('remainingQuantityExtendedQuotePrice')) {
+                obj['remainingQuantityExtendedQuotePrice'] = ApiClient.convertToType(data['remainingQuantityExtendedQuotePrice'], 'Number');
             }
             if (data.hasOwnProperty('discountOffList')) {
                 obj['discountOffList'] = ApiClient.convertToType(data['discountOffList'], 'String');
@@ -163,6 +169,16 @@ QuoteDetailsResponseProductsInnerPrice.prototype['extendedMsrp'] = undefined;
  * @member {Number} extendedQuotePrice
  */
 QuoteDetailsResponseProductsInnerPrice.prototype['extendedQuotePrice'] = undefined;
+
+/**
+ * @member {Number} remainingQuantityExtendedMsrp
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['remainingQuantityExtendedMsrp'] = undefined;
+
+/**
+ * @member {Number} remainingQuantityExtendedQuotePrice
+ */
+QuoteDetailsResponseProductsInnerPrice.prototype['remainingQuantityExtendedQuotePrice'] = undefined;
 
 /**
  * Discount off list percentage extended

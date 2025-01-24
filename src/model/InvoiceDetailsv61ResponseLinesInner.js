@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -35,6 +35,7 @@ class InvoiceDetailsv61ResponseLinesInner {
      * Only for internal use.
      */
     static initialize(obj) { 
+        obj['customerLineNumber'] = '0';
     }
 
     /**

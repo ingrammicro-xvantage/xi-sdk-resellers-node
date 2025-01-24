@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -52,12 +52,11 @@ export default class DealsApi {
      * @param {String} iMCountryCode Two-character ISO country code.
      * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems.
      * @param {String} iMApplicationId Unique value used to identify the sender of the transaction. Example: MyCompany
-     * @param {String} iMEnvironment Environment name.
      * @param {String} dealId Unique deal ID.
      * @param {module:api/DealsApi~getResellersV6DealsdetailsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/DealsDetailsResponse}
      */
-    getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, iMEnvironment, dealId, callback) {
+    getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, dealId, callback) {
       let postBody = null;
       // verify the required parameter 'iMCustomerNumber' is set
       if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
@@ -75,10 +74,6 @@ export default class DealsApi {
       if (iMApplicationId === undefined || iMApplicationId === null) {
         throw new Error("Missing the required parameter 'iMApplicationId' when calling getResellersV6Dealsdetails");
       }
-      // verify the required parameter 'iMEnvironment' is set
-      if (iMEnvironment === undefined || iMEnvironment === null) {
-        throw new Error("Missing the required parameter 'iMEnvironment' when calling getResellersV6Dealsdetails");
-      }
       // verify the required parameter 'dealId' is set
       if (dealId === undefined || dealId === null) {
         throw new Error("Missing the required parameter 'dealId' when calling getResellersV6Dealsdetails");
@@ -93,8 +88,7 @@ export default class DealsApi {
         'IM-CustomerNumber': iMCustomerNumber,
         'IM-CountryCode': iMCountryCode,
         'IM-CorrelationID': iMCorrelationID,
-        'IM-ApplicationId': iMApplicationId,
-        'IM-Environment': iMEnvironment
+        'IM-ApplicationId': iMApplicationId
       };
       let formParams = {
       };

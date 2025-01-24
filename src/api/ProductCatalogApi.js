@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -104,6 +104,71 @@ export default class ProductCatalogApi {
     }
 
     /**
+     * Callback function to receive the result of the getResellerV6Productdetailcmp operation.
+     * @callback module:api/ProductCatalogApi~getResellerV6ProductdetailcmpCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ProductDetailResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Product Details
+     * Search all the product-related details.
+     * @param {String} iMCustomerNumber Your unique Ingram Micro customer number
+     * @param {String} iMCountryCode Two-character ISO country code.
+     * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems
+     * @param {Object} opts Optional parameters
+     * @param {String} [iMSenderID] Sender Identification text
+     * @param {String} [planName] Name of the subscription plan
+     * @param {String} [planId] Id of the subscription plan.   <span style='color:red'>To search for details of subscription products, customer must pass either vendorPartNumber, planName or planId.</span>
+     * @param {String} [vendorPartNumber] Vendor’s part number for the product.
+     * @param {module:api/ProductCatalogApi~getResellerV6ProductdetailcmpCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/ProductDetailResponse}
+     */
+    getResellerV6Productdetailcmp(iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'iMCustomerNumber' is set
+      if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
+        throw new Error("Missing the required parameter 'iMCustomerNumber' when calling getResellerV6Productdetailcmp");
+      }
+      // verify the required parameter 'iMCountryCode' is set
+      if (iMCountryCode === undefined || iMCountryCode === null) {
+        throw new Error("Missing the required parameter 'iMCountryCode' when calling getResellerV6Productdetailcmp");
+      }
+      // verify the required parameter 'iMCorrelationID' is set
+      if (iMCorrelationID === undefined || iMCorrelationID === null) {
+        throw new Error("Missing the required parameter 'iMCorrelationID' when calling getResellerV6Productdetailcmp");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'planName': opts['planName'],
+        'planId': opts['planId'],
+        'vendorPartNumber': opts['vendorPartNumber']
+      };
+      let headerParams = {
+        'IM-CustomerNumber': iMCustomerNumber,
+        'IM-CountryCode': iMCountryCode,
+        'IM-SenderID': opts['iMSenderID'],
+        'IM-CorrelationID': iMCorrelationID
+      };
+      let formParams = {
+      };
+
+      let authNames = ['application'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ProductDetailResponse;
+      return this.apiClient.callApi(
+        '/resellers/v6/catalog/details', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the getResellerV6Productsearch operation.
      * @callback module:api/ProductCatalogApi~getResellerV6ProductsearchCallback
      * @param {String} error Error message, if any.
@@ -130,6 +195,9 @@ export default class ProductCatalogApi {
      * @param {Array.<String>} [keyword] Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name.
      * @param {String} [category] The category of the product. Example: Displays.
      * @param {String} [skipAuthorisation] This parameter is True when you want Skip the authorization, so template will work like current B2b template.
+     * @param {String} [groupName] Name of the Product Group
+     * @param {String} [planID] ID of the plan
+     * @param {Boolean} [showGroupInfo] In case of value true, below Group related information will displayed without the plan info. Group Name, Group Description, Number of plans, link in the group. A link will be provided if customer want to see all the plans in that group.
      * @param {module:api/ProductCatalogApi~getResellerV6ProductsearchCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ProductSearchResponse}
      */
@@ -161,7 +229,10 @@ export default class ProductCatalogApi {
         'vendorNumber': opts['vendorNumber'],
         'keyword': this.apiClient.buildCollectionParam(opts['keyword'], 'multi'),
         'category': opts['category'],
-        'skipAuthorisation': opts['skipAuthorisation']
+        'skipAuthorisation': opts['skipAuthorisation'],
+        'groupName': opts['groupName'],
+        'planID': opts['planID'],
+        'showGroupInfo': opts['showGroupInfo']
       };
       let headerParams = {
         'IM-CustomerNumber': iMCustomerNumber,
@@ -200,16 +271,16 @@ export default class ProductCatalogApi {
      * @param {String} iMCustomerNumber Your unique Ingram Micro customer number.
      * @param {String} iMCountryCode Two-character ISO country code.
      * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems.
-     * @param {module:model/PriceAndAvailabilityRequest} priceAndAvailabilityRequest 
      * @param {Object} opts Optional parameters
      * @param {Boolean} [includeProductAttributes] Pass boolean value as input, if true the response will contain detailed attributes related to the Product, if false or not sent the response will contain very few Product details.
      * @param {String} [iMSenderID] Unique value used to identify the sender of the transaction. Example: MyCompany
+     * @param {module:model/PriceAndAvailabilityRequest} [priceAndAvailabilityRequest] 
      * @param {module:api/ProductCatalogApi~postPriceandavailabilityCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link Array.<module:model/PriceAndAvailabilityResponseInner>}
      */
-    postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, priceAndAvailabilityRequest, opts, callback) {
+    postPriceandavailability(includeAvailability, includePricing, iMCustomerNumber, iMCountryCode, iMCorrelationID, opts, callback) {
       opts = opts || {};
-      let postBody = priceAndAvailabilityRequest;
+      let postBody = opts['priceAndAvailabilityRequest'];
       // verify the required parameter 'includeAvailability' is set
       if (includeAvailability === undefined || includeAvailability === null) {
         throw new Error("Missing the required parameter 'includeAvailability' when calling postPriceandavailability");
@@ -229,10 +300,6 @@ export default class ProductCatalogApi {
       // verify the required parameter 'iMCorrelationID' is set
       if (iMCorrelationID === undefined || iMCorrelationID === null) {
         throw new Error("Missing the required parameter 'iMCorrelationID' when calling postPriceandavailability");
-      }
-      // verify the required parameter 'priceAndAvailabilityRequest' is set
-      if (priceAndAvailabilityRequest === undefined || priceAndAvailabilityRequest === null) {
-        throw new Error("Missing the required parameter 'priceAndAvailabilityRequest' when calling postPriceandavailability");
       }
 
       let pathParams = {
