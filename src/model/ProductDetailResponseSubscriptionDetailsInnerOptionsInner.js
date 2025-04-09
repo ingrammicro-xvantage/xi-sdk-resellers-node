@@ -57,10 +57,10 @@ class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
                 obj['vendorPartNumber'] = ApiClient.convertToType(data['vendorPartNumber'], 'String');
             }
             if (data.hasOwnProperty('minUnits')) {
-                obj['minUnits'] = ApiClient.convertToType(data['minUnits'], 'Number');
+                obj['minUnits'] = ApiClient.convertToType(data['minUnits'], 'String');
             }
             if (data.hasOwnProperty('maxUnits')) {
-                obj['maxUnits'] = ApiClient.convertToType(data['maxUnits'], 'Number');
+                obj['maxUnits'] = ApiClient.convertToType(data['maxUnits'], 'String');
             }
             if (data.hasOwnProperty('dependsOn')) {
                 obj['dependsOn'] = ApiClient.convertToType(data['dependsOn'], 'String');
@@ -86,6 +86,14 @@ class ProductDetailResponseSubscriptionDetailsInnerOptionsInner {
         // ensure the json data is a string
         if (data['vendorPartNumber'] && !(typeof data['vendorPartNumber'] === 'string' || data['vendorPartNumber'] instanceof String)) {
             throw new Error("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got " + data['vendorPartNumber']);
+        }
+        // ensure the json data is a string
+        if (data['minUnits'] && !(typeof data['minUnits'] === 'string' || data['minUnits'] instanceof String)) {
+            throw new Error("Expected the field `minUnits` to be a primitive type in the JSON string but got " + data['minUnits']);
+        }
+        // ensure the json data is a string
+        if (data['maxUnits'] && !(typeof data['maxUnits'] === 'string' || data['maxUnits'] instanceof String)) {
+            throw new Error("Expected the field `maxUnits` to be a primitive type in the JSON string but got " + data['maxUnits']);
         }
         // ensure the json data is a string
         if (data['dependsOn'] && !(typeof data['dependsOn'] === 'string' || data['dependsOn'] instanceof String)) {
@@ -120,13 +128,13 @@ ProductDetailResponseSubscriptionDetailsInnerOptionsInner.prototype['vendorPartN
 
 /**
  * Minimum units must be purchased.
- * @member {Number} minUnits
+ * @member {String} minUnits
  */
 ProductDetailResponseSubscriptionDetailsInnerOptionsInner.prototype['minUnits'] = undefined;
 
 /**
  * Maximum units are available for purchase.
- * @member {Number} maxUnits
+ * @member {String} maxUnits
  */
 ProductDetailResponseSubscriptionDetailsInnerOptionsInner.prototype['maxUnits'] = undefined;
 

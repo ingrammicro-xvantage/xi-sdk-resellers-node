@@ -51,7 +51,7 @@ class ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner {
                 obj['subscriptionPeriodUnit'] = ApiClient.convertToType(data['subscriptionPeriodUnit'], 'String');
             }
             if (data.hasOwnProperty('subscriptionPeriod')) {
-                obj['subscriptionPeriod'] = ApiClient.convertToType(data['subscriptionPeriod'], 'Number');
+                obj['subscriptionPeriod'] = ApiClient.convertToType(data['subscriptionPeriod'], 'String');
             }
         }
         return obj;
@@ -66,6 +66,10 @@ class ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner {
         // ensure the json data is a string
         if (data['subscriptionPeriodUnit'] && !(typeof data['subscriptionPeriodUnit'] === 'string' || data['subscriptionPeriodUnit'] instanceof String)) {
             throw new Error("Expected the field `subscriptionPeriodUnit` to be a primitive type in the JSON string but got " + data['subscriptionPeriodUnit']);
+        }
+        // ensure the json data is a string
+        if (data['subscriptionPeriod'] && !(typeof data['subscriptionPeriod'] === 'string' || data['subscriptionPeriod'] instanceof String)) {
+            throw new Error("Expected the field `subscriptionPeriod` to be a primitive type in the JSON string but got " + data['subscriptionPeriod']);
         }
 
         return true;
@@ -84,7 +88,7 @@ ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner.prototype['
 
 /**
  * Length of the subscription. Example 1, 3
- * @member {Number} subscriptionPeriod
+ * @member {String} subscriptionPeriod
  */
 ProductDetailResponseSubscriptionDetailsInnerSubscriptionPeriodInner.prototype['subscriptionPeriod'] = undefined;
 

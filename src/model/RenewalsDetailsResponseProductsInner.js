@@ -63,7 +63,7 @@ class RenewalsDetailsResponseProductsInner {
                 obj['manufacturerPartNumber'] = ApiClient.convertToType(data['manufacturerPartNumber'], 'String');
             }
             if (data.hasOwnProperty('quantity')) {
-                obj['quantity'] = ApiClient.convertToType(data['quantity'], 'String');
+                obj['quantity'] = ApiClient.convertToType(data['quantity'], 'Number');
             }
             if (data.hasOwnProperty('unitPrice')) {
                 obj['unitPrice'] = ApiClient.convertToType(data['unitPrice'], 'Number');
@@ -100,10 +100,6 @@ class RenewalsDetailsResponseProductsInner {
         // ensure the json data is a string
         if (data['manufacturerPartNumber'] && !(typeof data['manufacturerPartNumber'] === 'string' || data['manufacturerPartNumber'] instanceof String)) {
             throw new Error("Expected the field `manufacturerPartNumber` to be a primitive type in the JSON string but got " + data['manufacturerPartNumber']);
-        }
-        // ensure the json data is a string
-        if (data['quantity'] && !(typeof data['quantity'] === 'string' || data['quantity'] instanceof String)) {
-            throw new Error("Expected the field `quantity` to be a primitive type in the JSON string but got " + data['quantity']);
         }
         // ensure the json data is a string
         if (data['isConsolidated'] && !(typeof data['isConsolidated'] === 'string' || data['isConsolidated'] instanceof String)) {
@@ -150,7 +146,7 @@ RenewalsDetailsResponseProductsInner.prototype['manufacturerPartNumber'] = undef
 
 /**
  * The quantity of the line item.
- * @member {String} quantity
+ * @member {Number} quantity
  */
 RenewalsDetailsResponseProductsInner.prototype['quantity'] = undefined;
 

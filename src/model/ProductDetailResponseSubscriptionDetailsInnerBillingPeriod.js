@@ -52,7 +52,7 @@ class ProductDetailResponseSubscriptionDetailsInnerBillingPeriod {
                 obj['billingPeriodUnit'] = ApiClient.convertToType(data['billingPeriodUnit'], 'String');
             }
             if (data.hasOwnProperty('billingPeriod')) {
-                obj['billingPeriod'] = ApiClient.convertToType(data['billingPeriod'], 'Number');
+                obj['billingPeriod'] = ApiClient.convertToType(data['billingPeriod'], 'String');
             }
         }
         return obj;
@@ -67,6 +67,10 @@ class ProductDetailResponseSubscriptionDetailsInnerBillingPeriod {
         // ensure the json data is a string
         if (data['billingPeriodUnit'] && !(typeof data['billingPeriodUnit'] === 'string' || data['billingPeriodUnit'] instanceof String)) {
             throw new Error("Expected the field `billingPeriodUnit` to be a primitive type in the JSON string but got " + data['billingPeriodUnit']);
+        }
+        // ensure the json data is a string
+        if (data['billingPeriod'] && !(typeof data['billingPeriod'] === 'string' || data['billingPeriod'] instanceof String)) {
+            throw new Error("Expected the field `billingPeriod` to be a primitive type in the JSON string but got " + data['billingPeriod']);
         }
 
         return true;
@@ -85,7 +89,7 @@ ProductDetailResponseSubscriptionDetailsInnerBillingPeriod.prototype['billingPer
 
 /**
  * Billing period of the subscription. Example 1, 3
- * @member {Number} billingPeriod
+ * @member {String} billingPeriod
  */
 ProductDetailResponseSubscriptionDetailsInnerBillingPeriod.prototype['billingPeriod'] = undefined;
 

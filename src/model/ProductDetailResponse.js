@@ -58,7 +58,7 @@ class ProductDetailResponse {
                 obj['vendorPartNumber'] = ApiClient.convertToType(data['vendorPartNumber'], 'String');
             }
             if (data.hasOwnProperty('productAuthorized')) {
-                obj['productAuthorized'] = ApiClient.convertToType(data['productAuthorized'], 'Boolean');
+                obj['productAuthorized'] = ApiClient.convertToType(data['productAuthorized'], 'String');
             }
             if (data.hasOwnProperty('description')) {
                 obj['description'] = ApiClient.convertToType(data['description'], 'String');
@@ -119,6 +119,10 @@ class ProductDetailResponse {
         // ensure the json data is a string
         if (data['vendorPartNumber'] && !(typeof data['vendorPartNumber'] === 'string' || data['vendorPartNumber'] instanceof String)) {
             throw new Error("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got " + data['vendorPartNumber']);
+        }
+        // ensure the json data is a string
+        if (data['productAuthorized'] && !(typeof data['productAuthorized'] === 'string' || data['productAuthorized'] instanceof String)) {
+            throw new Error("Expected the field `productAuthorized` to be a primitive type in the JSON string but got " + data['productAuthorized']);
         }
         // ensure the json data is a string
         if (data['description'] && !(typeof data['description'] === 'string' || data['description'] instanceof String)) {
@@ -205,7 +209,7 @@ ProductDetailResponse.prototype['vendorPartNumber'] = undefined;
 
 /**
  * Boolean that indicates whether a product is authorized.
- * @member {Boolean} productAuthorized
+ * @member {String} productAuthorized
  */
 ProductDetailResponse.prototype['productAuthorized'] = undefined;
 
