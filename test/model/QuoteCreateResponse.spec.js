@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.QuotesApi();
+    instance = new XiSdkResellers.QuoteCreateResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,47 +47,25 @@
       object[property] = value;
   }
 
-  describe('QuotesApi', function() {
-    describe('getQuotessearchV6', function() {
-      it('should call getQuotessearchV6 successfully', function(done) {
-        //uncomment below and update the code to test getQuotessearchV6
-        //instance.getQuotessearchV6(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('QuoteCreateResponse', function() {
+    it('should create an instance of QuoteCreateResponse', function() {
+      // uncomment below and update the code to test QuoteCreateResponse
+      //var instance = new XiSdkResellers.QuoteCreateResponse();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteCreateResponse);
     });
-    describe('getResellerV6ValidateQuote', function() {
-      it('should call getResellerV6ValidateQuote successfully', function(done) {
-        //uncomment below and update the code to test getResellerV6ValidateQuote
-        //instance.getResellerV6ValidateQuote(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property quoteNumber (base name: "quoteNumber")', function() {
+      // uncomment below and update the code to test the property quoteNumber
+      //var instance = new XiSdkResellers.QuoteCreateResponse();
+      //expect(instance).to.be();
     });
-    describe('getResellersV6Quotes', function() {
-      it('should call getResellersV6Quotes successfully', function(done) {
-        //uncomment below and update the code to test getResellersV6Quotes
-        //instance.getResellersV6Quotes(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property message (base name: "message")', function() {
+      // uncomment below and update the code to test the property message
+      //var instance = new XiSdkResellers.QuoteCreateResponse();
+      //expect(instance).to.be();
     });
-    describe('quoteCreate', function() {
-      it('should call quoteCreate successfully', function(done) {
-        //uncomment below and update the code to test quoteCreate
-        //instance.quoteCreate(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
+
   });
 
 }));

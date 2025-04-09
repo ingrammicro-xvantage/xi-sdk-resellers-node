@@ -143,6 +143,7 @@ Class | Method | HTTP request | Description
 *XiSdkResellers.QuotesApi* | [**getQuotessearchV6**](docs/QuotesApi.md#getQuotessearchV6) | **GET** /resellers/v6/quotes/search | Quote Search
 *XiSdkResellers.QuotesApi* | [**getResellerV6ValidateQuote**](docs/QuotesApi.md#getResellerV6ValidateQuote) | **GET** /resellers/v6/q2o/validatequote | Validate Quote
 *XiSdkResellers.QuotesApi* | [**getResellersV6Quotes**](docs/QuotesApi.md#getResellersV6Quotes) | **GET** /resellers/v6/quotes/{quoteNumber} | Get Quote Details
+*XiSdkResellers.QuotesApi* | [**quoteCreate**](docs/QuotesApi.md#quoteCreate) | **POST** /resellers/v6/quotes/create | Quote Create
 *XiSdkResellers.RenewalsApi* | [**getResellersV6Renewalsdetails**](docs/RenewalsApi.md#getResellersV6Renewalsdetails) | **GET** /resellers/v6/renewals/{renewalId} | Renewals Details
 *XiSdkResellers.RenewalsApi* | [**postRenewalssearch**](docs/RenewalsApi.md#postRenewalssearch) | **POST** /resellers/v6/renewals/search | Renewals Search
 *XiSdkResellers.ReturnsApi* | [**getResellersV6Returnsdetails**](docs/ReturnsApi.md#getResellersV6Returnsdetails) | **GET** /resellers/v6/returns/{caseRequestNumber} | Returns Details
@@ -328,6 +329,15 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.ProductSearchResponseSubscriptionCatalogInnerPlansInner](docs/ProductSearchResponseSubscriptionCatalogInnerPlansInner.md)
  - [XiSdkResellers.ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner](docs/ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner.md)
  - [XiSdkResellers.ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner](docs/ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner.md)
+ - [XiSdkResellers.QuoteCreateRequest](docs/QuoteCreateRequest.md)
+ - [XiSdkResellers.QuoteCreateRequestEndUserInfo](docs/QuoteCreateRequestEndUserInfo.md)
+ - [XiSdkResellers.QuoteCreateRequestProductsInner](docs/QuoteCreateRequestProductsInner.md)
+ - [XiSdkResellers.QuoteCreateResponse](docs/QuoteCreateResponse.md)
+ - [XiSdkResellers.QuoteCreateWebhookResponse](docs/QuoteCreateWebhookResponse.md)
+ - [XiSdkResellers.QuoteCreateWebhookResponseResource](docs/QuoteCreateWebhookResponseResource.md)
+ - [XiSdkResellers.QuoteCreateWebhookResponseResourceAdditionalAttributesInner](docs/QuoteCreateWebhookResponseResourceAdditionalAttributesInner.md)
+ - [XiSdkResellers.QuoteCreateWebhookResponseResourceProductsInner](docs/QuoteCreateWebhookResponseResourceProductsInner.md)
+ - [XiSdkResellers.QuoteCreateWebhookResponseResourceProductsInnerPrice](docs/QuoteCreateWebhookResponseResourceProductsInnerPrice.md)
  - [XiSdkResellers.QuoteDetailsResponse](docs/QuoteDetailsResponse.md)
  - [XiSdkResellers.QuoteDetailsResponseAdditionalAttributesInner](docs/QuoteDetailsResponseAdditionalAttributesInner.md)
  - [XiSdkResellers.QuoteDetailsResponseEndUserInfo](docs/QuoteDetailsResponseEndUserInfo.md)

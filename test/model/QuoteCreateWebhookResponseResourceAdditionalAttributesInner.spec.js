@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.QuotesApi();
+    instance = new XiSdkResellers.QuoteCreateWebhookResponseResourceAdditionalAttributesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,47 +47,25 @@
       object[property] = value;
   }
 
-  describe('QuotesApi', function() {
-    describe('getQuotessearchV6', function() {
-      it('should call getQuotessearchV6 successfully', function(done) {
-        //uncomment below and update the code to test getQuotessearchV6
-        //instance.getQuotessearchV6(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('QuoteCreateWebhookResponseResourceAdditionalAttributesInner', function() {
+    it('should create an instance of QuoteCreateWebhookResponseResourceAdditionalAttributesInner', function() {
+      // uncomment below and update the code to test QuoteCreateWebhookResponseResourceAdditionalAttributesInner
+      //var instance = new XiSdkResellers.QuoteCreateWebhookResponseResourceAdditionalAttributesInner();
+      //expect(instance).to.be.a(XiSdkResellers.QuoteCreateWebhookResponseResourceAdditionalAttributesInner);
     });
-    describe('getResellerV6ValidateQuote', function() {
-      it('should call getResellerV6ValidateQuote successfully', function(done) {
-        //uncomment below and update the code to test getResellerV6ValidateQuote
-        //instance.getResellerV6ValidateQuote(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property attributeName (base name: "attributeName")', function() {
+      // uncomment below and update the code to test the property attributeName
+      //var instance = new XiSdkResellers.QuoteCreateWebhookResponseResourceAdditionalAttributesInner();
+      //expect(instance).to.be();
     });
-    describe('getResellersV6Quotes', function() {
-      it('should call getResellersV6Quotes successfully', function(done) {
-        //uncomment below and update the code to test getResellersV6Quotes
-        //instance.getResellersV6Quotes(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property attributeValue (base name: "attributeValue")', function() {
+      // uncomment below and update the code to test the property attributeValue
+      //var instance = new XiSdkResellers.QuoteCreateWebhookResponseResourceAdditionalAttributesInner();
+      //expect(instance).to.be();
     });
-    describe('quoteCreate', function() {
-      it('should call quoteCreate successfully', function(done) {
-        //uncomment below and update the code to test quoteCreate
-        //instance.quoteCreate(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
+
   });
 
 }));

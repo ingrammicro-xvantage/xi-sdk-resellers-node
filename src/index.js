@@ -188,6 +188,15 @@ import ProductSearchResponseSubscriptionCatalogInner from './model/ProductSearch
 import ProductSearchResponseSubscriptionCatalogInnerPlansInner from './model/ProductSearchResponseSubscriptionCatalogInnerPlansInner';
 import ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner from './model/ProductSearchResponseSubscriptionCatalogInnerPlansInnerLinksInner';
 import ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner from './model/ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner';
+import QuoteCreateRequest from './model/QuoteCreateRequest';
+import QuoteCreateRequestEndUserInfo from './model/QuoteCreateRequestEndUserInfo';
+import QuoteCreateRequestProductsInner from './model/QuoteCreateRequestProductsInner';
+import QuoteCreateResponse from './model/QuoteCreateResponse';
+import QuoteCreateWebhookResponse from './model/QuoteCreateWebhookResponse';
+import QuoteCreateWebhookResponseResource from './model/QuoteCreateWebhookResponseResource';
+import QuoteCreateWebhookResponseResourceAdditionalAttributesInner from './model/QuoteCreateWebhookResponseResourceAdditionalAttributesInner';
+import QuoteCreateWebhookResponseResourceProductsInner from './model/QuoteCreateWebhookResponseResourceProductsInner';
+import QuoteCreateWebhookResponseResourceProductsInnerPrice from './model/QuoteCreateWebhookResponseResourceProductsInnerPrice';
 import QuoteDetailsResponse from './model/QuoteDetailsResponse';
 import QuoteDetailsResponseAdditionalAttributesInner from './model/QuoteDetailsResponseAdditionalAttributesInner';
 import QuoteDetailsResponseEndUserInfo from './model/QuoteDetailsResponseEndUserInfo';
@@ -1331,6 +1340,60 @@ export {
      * @property {module:model/ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner}
      */
     ProductSearchResponseSubscriptionCatalogInnerPlansInnerSubscriptionPeriodSummaryInner,
+
+    /**
+     * The QuoteCreateRequest model constructor.
+     * @property {module:model/QuoteCreateRequest}
+     */
+    QuoteCreateRequest,
+
+    /**
+     * The QuoteCreateRequestEndUserInfo model constructor.
+     * @property {module:model/QuoteCreateRequestEndUserInfo}
+     */
+    QuoteCreateRequestEndUserInfo,
+
+    /**
+     * The QuoteCreateRequestProductsInner model constructor.
+     * @property {module:model/QuoteCreateRequestProductsInner}
+     */
+    QuoteCreateRequestProductsInner,
+
+    /**
+     * The QuoteCreateResponse model constructor.
+     * @property {module:model/QuoteCreateResponse}
+     */
+    QuoteCreateResponse,
+
+    /**
+     * The QuoteCreateWebhookResponse model constructor.
+     * @property {module:model/QuoteCreateWebhookResponse}
+     */
+    QuoteCreateWebhookResponse,
+
+    /**
+     * The QuoteCreateWebhookResponseResource model constructor.
+     * @property {module:model/QuoteCreateWebhookResponseResource}
+     */
+    QuoteCreateWebhookResponseResource,
+
+    /**
+     * The QuoteCreateWebhookResponseResourceAdditionalAttributesInner model constructor.
+     * @property {module:model/QuoteCreateWebhookResponseResourceAdditionalAttributesInner}
+     */
+    QuoteCreateWebhookResponseResourceAdditionalAttributesInner,
+
+    /**
+     * The QuoteCreateWebhookResponseResourceProductsInner model constructor.
+     * @property {module:model/QuoteCreateWebhookResponseResourceProductsInner}
+     */
+    QuoteCreateWebhookResponseResourceProductsInner,
+
+    /**
+     * The QuoteCreateWebhookResponseResourceProductsInnerPrice model constructor.
+     * @property {module:model/QuoteCreateWebhookResponseResourceProductsInnerPrice}
+     */
+    QuoteCreateWebhookResponseResourceProductsInnerPrice,
 
     /**
      * The QuoteDetailsResponse model constructor.

@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**getQuotessearchV6**](QuotesApi.md#getQuotessearchV6) | **GET** /resellers/v6/quotes/search | Quote Search
 [**getResellerV6ValidateQuote**](QuotesApi.md#getResellerV6ValidateQuote) | **GET** /resellers/v6/q2o/validatequote | Validate Quote
 [**getResellersV6Quotes**](QuotesApi.md#getResellersV6Quotes) | **GET** /resellers/v6/quotes/{quoteNumber} | Get Quote Details
+[**quoteCreate**](QuotesApi.md#quoteCreate) | **POST** /resellers/v6/quotes/create | Quote Create
 
 
 
@@ -208,5 +209,64 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## quoteCreate
+
+> QuoteCreateResponse quoteCreate(iMCustomerNumber, iMCountryCode, iMCorrelationID, quoteCreateRequest, opts)
+
+Quote Create
+
+The quote create endpoint will allow customers to create a quote using the Ingram Micro part number or Vendor Part number.  The customer can also create Configure to Order (CTO) quotes using the Special Bid number (Deal ID).  Upon successfully creating the quote with the product lines, the quote will be activated and placed in a &#39;Ready To Order&#39; status.&lt;ul&gt;&lt;li&gt;For CTO quote creation, we only support Cisco as a vendor at the moment.&lt;/li&gt;&lt;/ul&gt;   Once the quote is created and activated, you will receive an immediate &#39;confirmation&#39;.  A webhook will be sent with the details of the quote.  In the event, we have an error creating a quote, an error message will be notified via webhook as well. The quote create webhook will send the notifications for all the quotes created via the Xvantage platform, APIs, associates, etc.
+
+### Example
+
+```javascript
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
+// Configure OAuth2 access token for authorization: application
+let application = defaultClient.authentications['application'];
+application.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new XiSdkResellers.QuotesApi();
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
+let quoteCreateRequest = {"quoteName":"QuoteTest","quoteExpiryDate":"04/30/2024","customerNeed":"notes","firstName":"User1","lastName":"User name","pricingType":"","sendQuoteCopy":"","customercontact":"kalimuthu.im@com","dealId":"7499800","endUserInfo":{"companyName":"Ingram Micro","contact":"Test contact","addressLine1":"Ratibor street","addressLine2":"","addressLine3":"","city":"Ratibor","state":"MI","postalCode":"48502","countryCode":"US","email":"testcontact6@im.com","phoneNumber":"64328753"},"products":[]}; // QuoteCreateRequest | 
+let opts = {
+  'iMSenderID': "MyCompany" // String | Unique value used to identify the sender of the transaction. Example: MyCompany
+};
+apiInstance.quoteCreate(iMCustomerNumber, iMCountryCode, iMCorrelationID, quoteCreateRequest, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number. | 
+ **iMCountryCode** | **String**| Two-character ISO country code. | 
+ **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | 
+ **quoteCreateRequest** | [**QuoteCreateRequest**](QuoteCreateRequest.md)|  | 
+ **iMSenderID** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | [optional] 
+
+### Return type
+
+[**QuoteCreateResponse**](QuoteCreateResponse.md)
+
+### Authorization
+
+[application](../README.md#application)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
 - **Accept**: application/json
 
