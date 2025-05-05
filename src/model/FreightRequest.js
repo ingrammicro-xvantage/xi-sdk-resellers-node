@@ -13,7 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import FreightRequestLinesInner from './FreightRequestLinesInner';
-import FreightRequestShipToAddressInner from './FreightRequestShipToAddressInner';
+import FreightRequestShipToAddress from './FreightRequestShipToAddress';
 
 /**
  * The FreightRequest model module.
@@ -50,13 +50,13 @@ class FreightRequest {
             obj = obj || new FreightRequest();
 
             if (data.hasOwnProperty('billToAddressId')) {
-                obj['billToAddressId'] = ApiClient.convertToType(data['billToAddressId'], 'String');
+                obj['billToAddressId'] = ApiClient.convertToType(data['billToAddressId'], Object);
             }
             if (data.hasOwnProperty('shipToAddressId')) {
                 obj['shipToAddressId'] = ApiClient.convertToType(data['shipToAddressId'], 'String');
             }
             if (data.hasOwnProperty('shipToAddress')) {
-                obj['shipToAddress'] = ApiClient.convertToType(data['shipToAddress'], [FreightRequestShipToAddressInner]);
+                obj['shipToAddress'] = FreightRequestShipToAddress.constructFromObject(data['shipToAddress']);
             }
             if (data.hasOwnProperty('lines')) {
                 obj['lines'] = ApiClient.convertToType(data['lines'], [FreightRequestLinesInner]);
@@ -72,22 +72,12 @@ class FreightRequest {
      */
     static validateJSON(data) {
         // ensure the json data is a string
-        if (data['billToAddressId'] && !(typeof data['billToAddressId'] === 'string' || data['billToAddressId'] instanceof String)) {
-            throw new Error("Expected the field `billToAddressId` to be a primitive type in the JSON string but got " + data['billToAddressId']);
-        }
-        // ensure the json data is a string
         if (data['shipToAddressId'] && !(typeof data['shipToAddressId'] === 'string' || data['shipToAddressId'] instanceof String)) {
             throw new Error("Expected the field `shipToAddressId` to be a primitive type in the JSON string but got " + data['shipToAddressId']);
         }
+        // validate the optional field `shipToAddress`
         if (data['shipToAddress']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['shipToAddress'])) {
-                throw new Error("Expected the field `shipToAddress` to be an array in the JSON data but got " + data['shipToAddress']);
-            }
-            // validate the optional field `shipToAddress` (array)
-            for (const item of data['shipToAddress']) {
-                FreightRequestShipToAddressInner.validateJSON(item);
-            };
+          FreightRequestShipToAddress.validateJSON(data['shipToAddress']);
         }
         if (data['lines']) { // data not null
             // ensure the json data is an array
@@ -110,7 +100,7 @@ class FreightRequest {
 
 /**
  * Suffix used to identify billing address. Created during onboarding. Resellers are provided with one or more address IDs depending on how many bill to addresses they need for various flooring companies they are using for credit.
- * @member {String} billToAddressId
+ * @member {Object} billToAddressId
  */
 FreightRequest.prototype['billToAddressId'] = undefined;
 
@@ -121,8 +111,7 @@ FreightRequest.prototype['billToAddressId'] = undefined;
 FreightRequest.prototype['shipToAddressId'] = undefined;
 
 /**
- * The shipping information.
- * @member {Array.<module:model/FreightRequestShipToAddressInner>} shipToAddress
+ * @member {module:model/FreightRequestShipToAddress} shipToAddress
  */
 FreightRequest.prototype['shipToAddress'] = undefined;
 

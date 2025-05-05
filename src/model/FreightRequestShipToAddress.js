@@ -14,18 +14,19 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The FreightRequestShipToAddressInner model module.
- * @module model/FreightRequestShipToAddressInner
+ * The FreightRequestShipToAddress model module.
+ * @module model/FreightRequestShipToAddress
  * @version 1.0.0
  */
-class FreightRequestShipToAddressInner {
+class FreightRequestShipToAddress {
     /**
-     * Constructs a new <code>FreightRequestShipToAddressInner</code>.
-     * @alias module:model/FreightRequestShipToAddressInner
+     * Constructs a new <code>FreightRequestShipToAddress</code>.
+     * The shipping information.
+     * @alias module:model/FreightRequestShipToAddress
      */
     constructor() { 
         
-        FreightRequestShipToAddressInner.initialize(this);
+        FreightRequestShipToAddress.initialize(this);
     }
 
     /**
@@ -37,15 +38,15 @@ class FreightRequestShipToAddressInner {
     }
 
     /**
-     * Constructs a <code>FreightRequestShipToAddressInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>FreightRequestShipToAddress</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/FreightRequestShipToAddressInner} obj Optional instance to populate.
-     * @return {module:model/FreightRequestShipToAddressInner} The populated <code>FreightRequestShipToAddressInner</code> instance.
+     * @param {module:model/FreightRequestShipToAddress} obj Optional instance to populate.
+     * @return {module:model/FreightRequestShipToAddress} The populated <code>FreightRequestShipToAddress</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new FreightRequestShipToAddressInner();
+            obj = obj || new FreightRequestShipToAddress();
 
             if (data.hasOwnProperty('companyName')) {
                 obj['companyName'] = ApiClient.convertToType(data['companyName'], 'String');
@@ -76,9 +77,9 @@ class FreightRequestShipToAddressInner {
     }
 
     /**
-     * Validates the JSON data with respect to <code>FreightRequestShipToAddressInner</code>.
+     * Validates the JSON data with respect to <code>FreightRequestShipToAddress</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>FreightRequestShipToAddressInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>FreightRequestShipToAddress</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -126,54 +127,54 @@ class FreightRequestShipToAddressInner {
  * The name of the company the order will be shipped to.
  * @member {String} companyName
  */
-FreightRequestShipToAddressInner.prototype['companyName'] = undefined;
+FreightRequestShipToAddress.prototype['companyName'] = undefined;
 
 /**
  * Line 1 of the address the order will be shipped to.
  * @member {String} addressLine1
  */
-FreightRequestShipToAddressInner.prototype['addressLine1'] = undefined;
+FreightRequestShipToAddress.prototype['addressLine1'] = undefined;
 
 /**
  * Line 2 of the address the order will be shipped to.
  * @member {String} addressLine2
  */
-FreightRequestShipToAddressInner.prototype['addressLine2'] = undefined;
+FreightRequestShipToAddress.prototype['addressLine2'] = undefined;
 
 /**
  * Line 3 of the address the order will be shipped to.
  * @member {String} addressLine3
  */
-FreightRequestShipToAddressInner.prototype['addressLine3'] = undefined;
+FreightRequestShipToAddress.prototype['addressLine3'] = undefined;
 
 /**
  * The city the order will be shipped to.
  * @member {String} city
  */
-FreightRequestShipToAddressInner.prototype['city'] = undefined;
+FreightRequestShipToAddress.prototype['city'] = undefined;
 
 /**
  * The state the order will be shipped to.
  * @member {String} state
  */
-FreightRequestShipToAddressInner.prototype['state'] = undefined;
+FreightRequestShipToAddress.prototype['state'] = undefined;
 
 /**
  * The zip or postal code the order will be shipped to.
  * @member {String} postalCode
  */
-FreightRequestShipToAddressInner.prototype['postalCode'] = undefined;
+FreightRequestShipToAddress.prototype['postalCode'] = undefined;
 
 /**
  * The two-character ISO country code the order will be shipped to.
  * @member {String} countryCode
  */
-FreightRequestShipToAddressInner.prototype['countryCode'] = undefined;
+FreightRequestShipToAddress.prototype['countryCode'] = undefined;
 
 
 
 
 
 
-export default FreightRequestShipToAddressInner;
+export default FreightRequestShipToAddress;
 

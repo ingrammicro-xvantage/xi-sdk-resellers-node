@@ -16,9 +16,6 @@ import ApiClient from "../ApiClient";
 import ErrorResponse from '../model/ErrorResponse';
 import GetResellerV6ValidateQuote400Response from '../model/GetResellerV6ValidateQuote400Response';
 import PostCreateorderV7500Response from '../model/PostCreateorderV7500Response';
-import QuoteCreateRequest from '../model/QuoteCreateRequest';
-import QuoteCreateResponse from '../model/QuoteCreateResponse';
-import QuoteCreateWebhookResponse from '../model/QuoteCreateWebhookResponse';
 import QuoteDetailsResponse from '../model/QuoteDetailsResponse';
 import QuoteSearchResponse from '../model/QuoteSearchResponse';
 import ValidateQuoteResponse from '../model/ValidateQuoteResponse';
@@ -256,70 +253,6 @@ export default class QuotesApi {
       let returnType = QuoteDetailsResponse;
       return this.apiClient.callApi(
         '/resellers/v6/quotes/{quoteNumber}', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the quoteCreate operation.
-     * @callback module:api/QuotesApi~quoteCreateCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/QuoteCreateResponse} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * Quote Create
-     * The quote create endpoint will allow customers to create a quote using the Ingram Micro part number or Vendor Part number.  The customer can also create Configure to Order (CTO) quotes using the Special Bid number (Deal ID).  Upon successfully creating the quote with the product lines, the quote will be activated and placed in a 'Ready To Order' status.<ul><li>For CTO quote creation, we only support Cisco as a vendor at the moment.</li></ul>   Once the quote is created and activated, you will receive an immediate 'confirmation'.  A webhook will be sent with the details of the quote.  In the event, we have an error creating a quote, an error message will be notified via webhook as well. The quote create webhook will send the notifications for all the quotes created via the Xvantage platform, APIs, associates, etc.
-     * @param {String} iMCustomerNumber Your unique Ingram Micro customer number.
-     * @param {String} iMCountryCode Two-character ISO country code.
-     * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems.
-     * @param {module:model/QuoteCreateRequest} quoteCreateRequest 
-     * @param {Object} opts Optional parameters
-     * @param {String} [iMSenderID] Unique value used to identify the sender of the transaction. Example: MyCompany
-     * @param {module:api/QuotesApi~quoteCreateCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/QuoteCreateResponse}
-     */
-    quoteCreate(iMCustomerNumber, iMCountryCode, iMCorrelationID, quoteCreateRequest, opts, callback) {
-      opts = opts || {};
-      let postBody = quoteCreateRequest;
-      // verify the required parameter 'iMCustomerNumber' is set
-      if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
-        throw new Error("Missing the required parameter 'iMCustomerNumber' when calling quoteCreate");
-      }
-      // verify the required parameter 'iMCountryCode' is set
-      if (iMCountryCode === undefined || iMCountryCode === null) {
-        throw new Error("Missing the required parameter 'iMCountryCode' when calling quoteCreate");
-      }
-      // verify the required parameter 'iMCorrelationID' is set
-      if (iMCorrelationID === undefined || iMCorrelationID === null) {
-        throw new Error("Missing the required parameter 'iMCorrelationID' when calling quoteCreate");
-      }
-      // verify the required parameter 'quoteCreateRequest' is set
-      if (quoteCreateRequest === undefined || quoteCreateRequest === null) {
-        throw new Error("Missing the required parameter 'quoteCreateRequest' when calling quoteCreate");
-      }
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-        'IM-CustomerNumber': iMCustomerNumber,
-        'IM-CountryCode': iMCountryCode,
-        'IM-CorrelationID': iMCorrelationID,
-        'IM-SenderID': opts['iMSenderID']
-      };
-      let formParams = {
-      };
-
-      let authNames = ['application'];
-      let contentTypes = ['application/json'];
-      let accepts = ['application/json'];
-      let returnType = QuoteCreateResponse;
-      return this.apiClient.callApi(
-        '/resellers/v6/quotes/create', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

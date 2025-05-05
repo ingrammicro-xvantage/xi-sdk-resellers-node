@@ -78,16 +78,6 @@
         done();
       });
     });
-    describe('quoteCreate', function() {
-      it('should call quoteCreate successfully', function(done) {
-        //uncomment below and update the code to test quoteCreate
-        //instance.quoteCreate(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
   });
 
 }));
