@@ -53,10 +53,11 @@ export default class DealsApi {
      * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems.
      * @param {String} iMApplicationId Unique value used to identify the sender of the transaction. Example: MyCompany
      * @param {String} dealId Unique deal ID.
+     * @param {String} vendorName Vendor for that bid
      * @param {module:api/DealsApi~getResellersV6DealsdetailsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/DealsDetailsResponse}
      */
-    getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, dealId, callback) {
+    getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, dealId, vendorName, callback) {
       let postBody = null;
       // verify the required parameter 'iMCustomerNumber' is set
       if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
@@ -78,11 +79,16 @@ export default class DealsApi {
       if (dealId === undefined || dealId === null) {
         throw new Error("Missing the required parameter 'dealId' when calling getResellersV6Dealsdetails");
       }
+      // verify the required parameter 'vendorName' is set
+      if (vendorName === undefined || vendorName === null) {
+        throw new Error("Missing the required parameter 'vendorName' when calling getResellersV6Dealsdetails");
+      }
 
       let pathParams = {
         'dealId': dealId
       };
       let queryParams = {
+        'vendorName': vendorName
       };
       let headerParams = {
         'IM-CustomerNumber': iMCustomerNumber,

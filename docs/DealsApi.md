@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## getResellersV6Dealsdetails
 
-> DealsDetailsResponse getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, dealId)
+> DealsDetailsResponse getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, dealId, vendorName)
 
 Deals Details
 
@@ -32,7 +32,8 @@ let iMCountryCode = "US"; // String | Two-character ISO country code.
 let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
 let iMApplicationId = "MyCompany"; // String | Unique value used to identify the sender of the transaction. Example: MyCompany
 let dealId = "12345678"; // String | Unique deal ID.
-apiInstance.getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, dealId, (error, data, response) => {
+let vendorName = "Cisco"; // String | Vendor for that bid
+apiInstance.getResellersV6Dealsdetails(iMCustomerNumber, iMCountryCode, iMCorrelationID, iMApplicationId, dealId, vendorName, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -51,6 +52,7 @@ Name | Type | Description  | Notes
  **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | 
  **iMApplicationId** | **String**| Unique value used to identify the sender of the transaction. Example: MyCompany | 
  **dealId** | **String**| Unique deal ID. | 
+ **vendorName** | **String**| Vendor for that bid | 
 
 ### Return type
 
