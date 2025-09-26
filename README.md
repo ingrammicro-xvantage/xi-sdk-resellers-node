@@ -136,6 +136,7 @@ Class | Method | HTTP request | Description
 *XiSdkResellers.OrdersApi* | [**postCreateorderV6**](docs/OrdersApi.md#postCreateorderV6) | **POST** /resellers/v6/orders | Create your Order
 *XiSdkResellers.OrdersApi* | [**postCreateorderV7**](docs/OrdersApi.md#postCreateorderV7) | **POST** /resellers/v7/orders | Create your Order v7
 *XiSdkResellers.OrdersApi* | [**putOrdermodify**](docs/OrdersApi.md#putOrdermodify) | **PUT** /resellers/v6/orders/{orderNumber} | Modify your Order
+*XiSdkResellers.OrdersApi* | [**vendorRequiredInfo**](docs/OrdersApi.md#vendorRequiredInfo) | **POST** /resellers/v7/vendorrequiredinfo | Vendor Required Info
 *XiSdkResellers.ProductCatalogApi* | [**getResellerV6Productdetail**](docs/ProductCatalogApi.md#getResellerV6Productdetail) | **GET** /resellers/v6/catalog/details/{ingramPartNumber} | Product Details
 *XiSdkResellers.ProductCatalogApi* | [**getResellerV6Productdetailcmp**](docs/ProductCatalogApi.md#getResellerV6Productdetailcmp) | **GET** /resellers/v6/catalog/details | Product Details
 *XiSdkResellers.ProductCatalogApi* | [**getResellerV6Productsearch**](docs/ProductCatalogApi.md#getResellerV6Productsearch) | **GET** /resellers/v6/catalog | Search Products
@@ -371,6 +372,13 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.ValidateQuoteResponseLinesInner](docs/ValidateQuoteResponseLinesInner.md)
  - [XiSdkResellers.ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner](docs/ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner.md)
  - [XiSdkResellers.ValidateQuoteResponseVmfAdditionalAttributesInner](docs/ValidateQuoteResponseVmfAdditionalAttributesInner.md)
+ - [XiSdkResellers.VendorRequiredInfoRequest](docs/VendorRequiredInfoRequest.md)
+ - [XiSdkResellers.VendorRequiredInfoRequestProductsInner](docs/VendorRequiredInfoRequestProductsInner.md)
+ - [XiSdkResellers.VendorRequiredInforesponse](docs/VendorRequiredInforesponse.md)
+ - [XiSdkResellers.VendorRequiredInforesponseResponseMessagesInner](docs/VendorRequiredInforesponseResponseMessagesInner.md)
+ - [XiSdkResellers.VendorRequiredInforesponseVmfAdditionalAttributesInner](docs/VendorRequiredInforesponseVmfAdditionalAttributesInner.md)
+ - [XiSdkResellers.VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner](docs/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner.md)
+ - [XiSdkResellers.VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner](docs/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.md)
 
 
 ## Documentation for Authorization

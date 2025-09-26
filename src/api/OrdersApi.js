@@ -26,6 +26,8 @@ import OrderModifyResponse from '../model/OrderModifyResponse';
 import OrderSearchResponse from '../model/OrderSearchResponse';
 import PostCreateorderV7400Response from '../model/PostCreateorderV7400Response';
 import PostCreateorderV7500Response from '../model/PostCreateorderV7500Response';
+import VendorRequiredInfoRequest from '../model/VendorRequiredInfoRequest';
+import VendorRequiredInforesponse from '../model/VendorRequiredInforesponse';
 
 /**
 * Orders service.
@@ -479,6 +481,70 @@ export default class OrdersApi {
       let returnType = OrderModifyResponse;
       return this.apiClient.callApi(
         '/resellers/v6/orders/{orderNumber}', 'PUT',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the vendorRequiredInfo operation.
+     * @callback module:api/OrdersApi~vendorRequiredInfoCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/VendorRequiredInforesponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Vendor Required Info
+     * <p>The vendor required info API allows customers to identify all the mandatory fields that will be required to create an order before placing an order. These fields are required by the vendor to process orders. The customers can identify Vendor Required Information, aka Vendor Mandatory Fields or VMFs, using any of the following.</p><ul><li>Ingram Part Number</li><li>Vendor Part Number</li><li>Plan ID</li><li>Ingram Quote Number</li></ul><p>For the non-cloud Technology Solutions products, such as Hardware, Software, or Warranty, the VMFs will be returned in the “vmfAdditionalAttributes” object in the response, whereas for the cloud subscriptions products, the VMFs will be returned in the “vriAdditionalAttributes” object in the response.</p><p>While creating an Order Create request for the non-cloud products, such as Hardware, Software, or Warranty, pass “vmfAdditionalAttributes” object with the necessary response in the “attributeValue” field.</p><p>While creating an Order Create request, for Subscription products, pass “vriAdditionalAttributes” object with the necessary response in the “attributeValue” field and any other applicable subcomponents to create an order. </p>
+     * @param {String} iMCustomerNumber Your unique Ingram Micro customer number.
+     * @param {String} iMCorrelationID Unique transaction number to identify each transaction across all the systems.
+     * @param {String} iMCountryCode Two-character ISO country code.
+     * @param {String} iMSenderID Unique value used to identify the sender of the transaction. 
+     * @param {Object} opts Optional parameters
+     * @param {module:model/VendorRequiredInfoRequest} [vendorRequiredInfoRequest] 
+     * @param {module:api/OrdersApi~vendorRequiredInfoCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/VendorRequiredInforesponse}
+     */
+    vendorRequiredInfo(iMCustomerNumber, iMCorrelationID, iMCountryCode, iMSenderID, opts, callback) {
+      opts = opts || {};
+      let postBody = opts['vendorRequiredInfoRequest'];
+      // verify the required parameter 'iMCustomerNumber' is set
+      if (iMCustomerNumber === undefined || iMCustomerNumber === null) {
+        throw new Error("Missing the required parameter 'iMCustomerNumber' when calling vendorRequiredInfo");
+      }
+      // verify the required parameter 'iMCorrelationID' is set
+      if (iMCorrelationID === undefined || iMCorrelationID === null) {
+        throw new Error("Missing the required parameter 'iMCorrelationID' when calling vendorRequiredInfo");
+      }
+      // verify the required parameter 'iMCountryCode' is set
+      if (iMCountryCode === undefined || iMCountryCode === null) {
+        throw new Error("Missing the required parameter 'iMCountryCode' when calling vendorRequiredInfo");
+      }
+      // verify the required parameter 'iMSenderID' is set
+      if (iMSenderID === undefined || iMSenderID === null) {
+        throw new Error("Missing the required parameter 'iMSenderID' when calling vendorRequiredInfo");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+        'IM-CustomerNumber': iMCustomerNumber,
+        'IM-CorrelationID': iMCorrelationID,
+        'IM-CountryCode': iMCountryCode,
+        'IM-SenderID': iMSenderID
+      };
+      let formParams = {
+      };
+
+      let authNames = ['application'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = VendorRequiredInforesponse;
+      return this.apiClient.callApi(
+        '/resellers/v7/vendorrequiredinfo', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

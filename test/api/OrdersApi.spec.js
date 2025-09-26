@@ -108,6 +108,16 @@
         done();
       });
     });
+    describe('vendorRequiredInfo', function() {
+      it('should call vendorRequiredInfo successfully', function(done) {
+        //uncomment below and update the code to test vendorRequiredInfo
+        //instance.vendorRequiredInfo(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
   });
 
 }));

@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**postCreateorderV6**](OrdersApi.md#postCreateorderV6) | **POST** /resellers/v6/orders | Create your Order
 [**postCreateorderV7**](OrdersApi.md#postCreateorderV7) | **POST** /resellers/v7/orders | Create your Order v7
 [**putOrdermodify**](OrdersApi.md#putOrdermodify) | **PUT** /resellers/v6/orders/{orderNumber} | Modify your Order
+[**vendorRequiredInfo**](OrdersApi.md#vendorRequiredInfo) | **POST** /resellers/v7/vendorrequiredinfo | Vendor Required Info
 
 
 
@@ -408,6 +409,65 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**OrderModifyResponse**](OrderModifyResponse.md)
+
+### Authorization
+
+[application](../README.md#application)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## vendorRequiredInfo
+
+> VendorRequiredInforesponse vendorRequiredInfo(iMCustomerNumber, iMCorrelationID, iMCountryCode, iMSenderID, opts)
+
+Vendor Required Info
+
+&lt;p&gt;The vendor required info API allows customers to identify all the mandatory fields that will be required to create an order before placing an order. These fields are required by the vendor to process orders. The customers can identify Vendor Required Information, aka Vendor Mandatory Fields or VMFs, using any of the following.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ingram Part Number&lt;/li&gt;&lt;li&gt;Vendor Part Number&lt;/li&gt;&lt;li&gt;Plan ID&lt;/li&gt;&lt;li&gt;Ingram Quote Number&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;For the non-cloud Technology Solutions products, such as Hardware, Software, or Warranty, the VMFs will be returned in the “vmfAdditionalAttributes” object in the response, whereas for the cloud subscriptions products, the VMFs will be returned in the “vriAdditionalAttributes” object in the response.&lt;/p&gt;&lt;p&gt;While creating an Order Create request for the non-cloud products, such as Hardware, Software, or Warranty, pass “vmfAdditionalAttributes” object with the necessary response in the “attributeValue” field.&lt;/p&gt;&lt;p&gt;While creating an Order Create request, for Subscription products, pass “vriAdditionalAttributes” object with the necessary response in the “attributeValue” field and any other applicable subcomponents to create an order. &lt;/p&gt;
+
+### Example
+
+```javascript
+import XiSdkResellers from 'xi_sdk_resellers';
+let defaultClient = XiSdkResellers.ApiClient.instance;
+// Configure OAuth2 access token for authorization: application
+let application = defaultClient.authentications['application'];
+application.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new XiSdkResellers.OrdersApi();
+let iMCustomerNumber = "20-222222"; // String | Your unique Ingram Micro customer number.
+let iMCorrelationID = "fbac82ba-cf0a-4bcf-fc03-0c5084"; // String | Unique transaction number to identify each transaction across all the systems.
+let iMCountryCode = "US"; // String | Two-character ISO country code.
+let iMSenderID = "MyCompany"; // String | Unique value used to identify the sender of the transaction. 
+let opts = {
+  'vendorRequiredInfoRequest': new XiSdkResellers.VendorRequiredInfoRequest() // VendorRequiredInfoRequest | 
+};
+apiInstance.vendorRequiredInfo(iMCustomerNumber, iMCorrelationID, iMCountryCode, iMSenderID, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **iMCustomerNumber** | **String**| Your unique Ingram Micro customer number. | 
+ **iMCorrelationID** | **String**| Unique transaction number to identify each transaction across all the systems. | 
+ **iMCountryCode** | **String**| Two-character ISO country code. | 
+ **iMSenderID** | **String**| Unique value used to identify the sender of the transaction.  | 
+ **vendorRequiredInfoRequest** | [**VendorRequiredInfoRequest**](VendorRequiredInfoRequest.md)|  | [optional] 
+
+### Return type
+
+[**VendorRequiredInforesponse**](VendorRequiredInforesponse.md)
 
 ### Authorization
 
