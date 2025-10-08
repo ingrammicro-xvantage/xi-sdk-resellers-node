@@ -94,7 +94,7 @@ class ProductDetailResponse {
                 obj['ciscoFields'] = ProductDetailResponseCiscoFields.constructFromObject(data['ciscoFields']);
             }
             if (data.hasOwnProperty('warrantyInformation')) {
-                obj['warrantyInformation'] = ApiClient.convertToType(data['warrantyInformation'], [Object]);
+                obj['warrantyInformation'] = ApiClient.convertToType(data['warrantyInformation'], ['String']);
             }
             if (data.hasOwnProperty('additionalInformation')) {
                 obj['additionalInformation'] = ProductDetailResponseAdditionalInformation.constructFromObject(data['additionalInformation']);
@@ -278,8 +278,8 @@ ProductDetailResponse.prototype['indicators'] = undefined;
 ProductDetailResponse.prototype['ciscoFields'] = undefined;
 
 /**
- * Warranty information related to the product.
- * @member {Array.<Object>} warrantyInformation
+ * Warranty codes related to the product.
+ * @member {Array.<String>} warrantyInformation
  */
 ProductDetailResponse.prototype['warrantyInformation'] = undefined;
 
