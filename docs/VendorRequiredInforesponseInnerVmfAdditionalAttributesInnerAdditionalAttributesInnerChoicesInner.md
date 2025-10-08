@@ -1,4 +1,4 @@
-# XiSdkResellers.VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner
+# XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner
 
 ## Properties
 

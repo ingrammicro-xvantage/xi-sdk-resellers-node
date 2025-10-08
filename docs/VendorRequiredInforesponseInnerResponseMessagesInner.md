@@ -1,4 +1,4 @@
-# XiSdkResellers.VendorRequiredInforesponseResponseMessagesInner
+# XiSdkResellers.VendorRequiredInforesponseInnerResponseMessagesInner
 
 ## Properties
 

@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner();
+    instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,16 +47,16 @@
       object[property] = value;
   }
 
-  describe('VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner', function() {
-    it('should create an instance of VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner', function() {
-      // uncomment below and update the code to test VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner();
-      //expect(instance).to.be.a(XiSdkResellers.VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner);
+  describe('VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner', function() {
+    it('should create an instance of VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner', function() {
+      // uncomment below and update the code to test VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner();
+      //expect(instance).to.be.a(XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner);
     });
 
     it('should have the property string (base name: "string")', function() {
       // uncomment below and update the code to test the property string
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner();
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner();
       //expect(instance).to.be();
     });
 

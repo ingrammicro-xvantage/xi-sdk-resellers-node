@@ -233,11 +233,11 @@ import ValidateQuoteResponseLinesInnerVmfAdditionalAttributesLinesInner from './
 import ValidateQuoteResponseVmfAdditionalAttributesInner from './model/ValidateQuoteResponseVmfAdditionalAttributesInner';
 import VendorRequiredInfoRequest from './model/VendorRequiredInfoRequest';
 import VendorRequiredInfoRequestProductsInner from './model/VendorRequiredInfoRequestProductsInner';
-import VendorRequiredInforesponse from './model/VendorRequiredInforesponse';
-import VendorRequiredInforesponseResponseMessagesInner from './model/VendorRequiredInforesponseResponseMessagesInner';
-import VendorRequiredInforesponseVmfAdditionalAttributesInner from './model/VendorRequiredInforesponseVmfAdditionalAttributesInner';
-import VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner from './model/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner';
-import VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner from './model/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner';
+import VendorRequiredInforesponseInner from './model/VendorRequiredInforesponseInner';
+import VendorRequiredInforesponseInnerResponseMessagesInner from './model/VendorRequiredInforesponseInnerResponseMessagesInner';
+import VendorRequiredInforesponseInnerVmfAdditionalAttributesInner from './model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner';
+import VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner from './model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner';
+import VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner from './model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner';
 import AccesstokenApi from './api/AccesstokenApi';
 import DealsApi from './api/DealsApi';
 import FreightEstimateApi from './api/FreightEstimateApi';
@@ -1610,34 +1610,34 @@ export {
     VendorRequiredInfoRequestProductsInner,
 
     /**
-     * The VendorRequiredInforesponse model constructor.
-     * @property {module:model/VendorRequiredInforesponse}
+     * The VendorRequiredInforesponseInner model constructor.
+     * @property {module:model/VendorRequiredInforesponseInner}
      */
-    VendorRequiredInforesponse,
+    VendorRequiredInforesponseInner,
 
     /**
-     * The VendorRequiredInforesponseResponseMessagesInner model constructor.
-     * @property {module:model/VendorRequiredInforesponseResponseMessagesInner}
+     * The VendorRequiredInforesponseInnerResponseMessagesInner model constructor.
+     * @property {module:model/VendorRequiredInforesponseInnerResponseMessagesInner}
      */
-    VendorRequiredInforesponseResponseMessagesInner,
+    VendorRequiredInforesponseInnerResponseMessagesInner,
 
     /**
-     * The VendorRequiredInforesponseVmfAdditionalAttributesInner model constructor.
-     * @property {module:model/VendorRequiredInforesponseVmfAdditionalAttributesInner}
+     * The VendorRequiredInforesponseInnerVmfAdditionalAttributesInner model constructor.
+     * @property {module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner}
      */
-    VendorRequiredInforesponseVmfAdditionalAttributesInner,
+    VendorRequiredInforesponseInnerVmfAdditionalAttributesInner,
 
     /**
-     * The VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner model constructor.
-     * @property {module:model/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner}
+     * The VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner model constructor.
+     * @property {module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner}
      */
-    VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner,
+    VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner,
 
     /**
-     * The VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner model constructor.
-     * @property {module:model/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner}
+     * The VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner model constructor.
+     * @property {module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner}
      */
-    VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner,
+    VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner,
 
     /**
     * The AccesstokenApi service constructor.

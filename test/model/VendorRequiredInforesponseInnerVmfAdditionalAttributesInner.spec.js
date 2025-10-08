@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.VendorRequiredInforesponseResponseMessagesInner();
+    instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,34 +47,28 @@
       object[property] = value;
   }
 
-  describe('VendorRequiredInforesponseResponseMessagesInner', function() {
-    it('should create an instance of VendorRequiredInforesponseResponseMessagesInner', function() {
-      // uncomment below and update the code to test VendorRequiredInforesponseResponseMessagesInner
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseResponseMessagesInner();
-      //expect(instance).to.be.a(XiSdkResellers.VendorRequiredInforesponseResponseMessagesInner);
+  describe('VendorRequiredInforesponseInnerVmfAdditionalAttributesInner', function() {
+    it('should create an instance of VendorRequiredInforesponseInnerVmfAdditionalAttributesInner', function() {
+      // uncomment below and update the code to test VendorRequiredInforesponseInnerVmfAdditionalAttributesInner
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner();
+      //expect(instance).to.be.a(XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner);
     });
 
-    it('should have the property id (base name: "id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseResponseMessagesInner();
+    it('should have the property vendorName (base name: "vendorName")', function() {
+      // uncomment below and update the code to test the property vendorName
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner();
       //expect(instance).to.be();
     });
 
-    it('should have the property traceId (base name: "traceId")', function() {
-      // uncomment below and update the code to test the property traceId
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseResponseMessagesInner();
+    it('should have the property productId (base name: "productId")', function() {
+      // uncomment below and update the code to test the property productId
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner();
       //expect(instance).to.be();
     });
 
-    it('should have the property type (base name: "type")', function() {
-      // uncomment below and update the code to test the property type
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseResponseMessagesInner();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property message (base name: "message")', function() {
-      // uncomment below and update the code to test the property message
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseResponseMessagesInner();
+    it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
+      // uncomment below and update the code to test the property additionalAttributes
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner();
       //expect(instance).to.be();
     });
 

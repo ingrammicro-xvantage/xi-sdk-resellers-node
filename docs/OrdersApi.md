@@ -422,7 +422,7 @@ Name | Type | Description  | Notes
 
 ## vendorRequiredInfo
 
-> VendorRequiredInforesponse vendorRequiredInfo(iMCustomerNumber, iMCorrelationID, iMCountryCode, iMSenderID, opts)
+> [VendorRequiredInforesponseInner] vendorRequiredInfo(iMCustomerNumber, iMCorrelationID, iMCountryCode, iMSenderID, opts)
 
 Vendor Required Info
 
@@ -467,7 +467,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**VendorRequiredInforesponse**](VendorRequiredInforesponse.md)
+[**[VendorRequiredInforesponseInner]**](VendorRequiredInforesponseInner.md)
 
 ### Authorization
 

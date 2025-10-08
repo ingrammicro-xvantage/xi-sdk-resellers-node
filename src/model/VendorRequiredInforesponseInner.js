@@ -12,23 +12,23 @@
  */
 
 import ApiClient from '../ApiClient';
-import VendorRequiredInforesponseResponseMessagesInner from './VendorRequiredInforesponseResponseMessagesInner';
-import VendorRequiredInforesponseVmfAdditionalAttributesInner from './VendorRequiredInforesponseVmfAdditionalAttributesInner';
-import VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner from './VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner';
+import VendorRequiredInforesponseInnerResponseMessagesInner from './VendorRequiredInforesponseInnerResponseMessagesInner';
+import VendorRequiredInforesponseInnerVmfAdditionalAttributesInner from './VendorRequiredInforesponseInnerVmfAdditionalAttributesInner';
+import VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner from './VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner';
 
 /**
- * The VendorRequiredInforesponse model module.
- * @module model/VendorRequiredInforesponse
+ * The VendorRequiredInforesponseInner model module.
+ * @module model/VendorRequiredInforesponseInner
  * @version 1.0.0
  */
-class VendorRequiredInforesponse {
+class VendorRequiredInforesponseInner {
     /**
-     * Constructs a new <code>VendorRequiredInforesponse</code>.
-     * @alias module:model/VendorRequiredInforesponse
+     * Constructs a new <code>VendorRequiredInforesponseInner</code>.
+     * @alias module:model/VendorRequiredInforesponseInner
      */
     constructor() { 
         
-        VendorRequiredInforesponse.initialize(this);
+        VendorRequiredInforesponseInner.initialize(this);
     }
 
     /**
@@ -40,15 +40,15 @@ class VendorRequiredInforesponse {
     }
 
     /**
-     * Constructs a <code>VendorRequiredInforesponse</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>VendorRequiredInforesponseInner</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/VendorRequiredInforesponse} obj Optional instance to populate.
-     * @return {module:model/VendorRequiredInforesponse} The populated <code>VendorRequiredInforesponse</code> instance.
+     * @param {module:model/VendorRequiredInforesponseInner} obj Optional instance to populate.
+     * @return {module:model/VendorRequiredInforesponseInner} The populated <code>VendorRequiredInforesponseInner</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new VendorRequiredInforesponse();
+            obj = obj || new VendorRequiredInforesponseInner();
 
             if (data.hasOwnProperty('quoteNumber')) {
                 obj['quoteNumber'] = ApiClient.convertToType(data['quoteNumber'], 'String');
@@ -66,22 +66,22 @@ class VendorRequiredInforesponse {
                 obj['planName'] = ApiClient.convertToType(data['planName'], 'String');
             }
             if (data.hasOwnProperty('responseMessages')) {
-                obj['responseMessages'] = ApiClient.convertToType(data['responseMessages'], [VendorRequiredInforesponseResponseMessagesInner]);
+                obj['responseMessages'] = ApiClient.convertToType(data['responseMessages'], [VendorRequiredInforesponseInnerResponseMessagesInner]);
             }
             if (data.hasOwnProperty('vmfAdditionalAttributes')) {
-                obj['vmfAdditionalAttributes'] = ApiClient.convertToType(data['vmfAdditionalAttributes'], [VendorRequiredInforesponseVmfAdditionalAttributesInner]);
+                obj['vmfAdditionalAttributes'] = ApiClient.convertToType(data['vmfAdditionalAttributes'], [VendorRequiredInforesponseInnerVmfAdditionalAttributesInner]);
             }
             if (data.hasOwnProperty('vriAdditionalAttributes')) {
-                obj['vriAdditionalAttributes'] = ApiClient.convertToType(data['vriAdditionalAttributes'], [VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner]);
+                obj['vriAdditionalAttributes'] = ApiClient.convertToType(data['vriAdditionalAttributes'], [VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner]);
             }
         }
         return obj;
     }
 
     /**
-     * Validates the JSON data with respect to <code>VendorRequiredInforesponse</code>.
+     * Validates the JSON data with respect to <code>VendorRequiredInforesponseInner</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>VendorRequiredInforesponse</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>VendorRequiredInforesponseInner</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -111,7 +111,7 @@ class VendorRequiredInforesponse {
             }
             // validate the optional field `responseMessages` (array)
             for (const item of data['responseMessages']) {
-                VendorRequiredInforesponseResponseMessagesInner.validateJSON(item);
+                VendorRequiredInforesponseInnerResponseMessagesInner.validateJSON(item);
             };
         }
         if (data['vmfAdditionalAttributes']) { // data not null
@@ -121,7 +121,7 @@ class VendorRequiredInforesponse {
             }
             // validate the optional field `vmfAdditionalAttributes` (array)
             for (const item of data['vmfAdditionalAttributes']) {
-                VendorRequiredInforesponseVmfAdditionalAttributesInner.validateJSON(item);
+                VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.validateJSON(item);
             };
         }
         if (data['vriAdditionalAttributes']) { // data not null
@@ -131,7 +131,7 @@ class VendorRequiredInforesponse {
             }
             // validate the optional field `vriAdditionalAttributes` (array)
             for (const item of data['vriAdditionalAttributes']) {
-                VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner.validateJSON(item);
+                VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.validateJSON(item);
             };
         }
 
@@ -147,51 +147,51 @@ class VendorRequiredInforesponse {
  * A unique identifier generated by Ingram Micro's CRM specific to each quote.
  * @member {String} quoteNumber
  */
-VendorRequiredInforesponse.prototype['quoteNumber'] = undefined;
+VendorRequiredInforesponseInner.prototype['quoteNumber'] = undefined;
 
 /**
  * The unique IngramMicro part number.
  * @member {String} ingramPartNumber
  */
-VendorRequiredInforesponse.prototype['ingramPartNumber'] = undefined;
+VendorRequiredInforesponseInner.prototype['ingramPartNumber'] = undefined;
 
 /**
  * The vendor's part number for the line item.
  * @member {String} vendorPartNumber
  */
-VendorRequiredInforesponse.prototype['vendorPartNumber'] = undefined;
+VendorRequiredInforesponseInner.prototype['vendorPartNumber'] = undefined;
 
 /**
  * ID of the subscription plan
  * @member {String} planId
  */
-VendorRequiredInforesponse.prototype['planId'] = undefined;
+VendorRequiredInforesponseInner.prototype['planId'] = undefined;
 
 /**
  * Name of the subscription plan
  * @member {String} planName
  */
-VendorRequiredInforesponse.prototype['planName'] = undefined;
+VendorRequiredInforesponseInner.prototype['planName'] = undefined;
 
 /**
- * @member {Array.<module:model/VendorRequiredInforesponseResponseMessagesInner>} responseMessages
+ * @member {Array.<module:model/VendorRequiredInforesponseInnerResponseMessagesInner>} responseMessages
  */
-VendorRequiredInforesponse.prototype['responseMessages'] = undefined;
+VendorRequiredInforesponseInner.prototype['responseMessages'] = undefined;
 
 /**
- * @member {Array.<module:model/VendorRequiredInforesponseVmfAdditionalAttributesInner>} vmfAdditionalAttributes
+ * @member {Array.<module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner>} vmfAdditionalAttributes
  */
-VendorRequiredInforesponse.prototype['vmfAdditionalAttributes'] = undefined;
+VendorRequiredInforesponseInner.prototype['vmfAdditionalAttributes'] = undefined;
 
 /**
- * @member {Array.<module:model/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner>} vriAdditionalAttributes
+ * @member {Array.<module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner>} vriAdditionalAttributes
  */
-VendorRequiredInforesponse.prototype['vriAdditionalAttributes'] = undefined;
+VendorRequiredInforesponseInner.prototype['vriAdditionalAttributes'] = undefined;
 
 
 
 
 
 
-export default VendorRequiredInforesponse;
+export default VendorRequiredInforesponseInner;
 

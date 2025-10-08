@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.VendorRequiredInforesponse();
+    instance = new XiSdkResellers.VendorRequiredInforesponseInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,58 +47,58 @@
       object[property] = value;
   }
 
-  describe('VendorRequiredInforesponse', function() {
-    it('should create an instance of VendorRequiredInforesponse', function() {
-      // uncomment below and update the code to test VendorRequiredInforesponse
-      //var instance = new XiSdkResellers.VendorRequiredInforesponse();
-      //expect(instance).to.be.a(XiSdkResellers.VendorRequiredInforesponse);
+  describe('VendorRequiredInforesponseInner', function() {
+    it('should create an instance of VendorRequiredInforesponseInner', function() {
+      // uncomment below and update the code to test VendorRequiredInforesponseInner
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInner();
+      //expect(instance).to.be.a(XiSdkResellers.VendorRequiredInforesponseInner);
     });
 
     it('should have the property quoteNumber (base name: "quoteNumber")', function() {
       // uncomment below and update the code to test the property quoteNumber
-      //var instance = new XiSdkResellers.VendorRequiredInforesponse();
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property ingramPartNumber (base name: "ingramPartNumber")', function() {
       // uncomment below and update the code to test the property ingramPartNumber
-      //var instance = new XiSdkResellers.VendorRequiredInforesponse();
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vendorPartNumber (base name: "vendorPartNumber")', function() {
       // uncomment below and update the code to test the property vendorPartNumber
-      //var instance = new XiSdkResellers.VendorRequiredInforesponse();
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property planId (base name: "planId")', function() {
       // uncomment below and update the code to test the property planId
-      //var instance = new XiSdkResellers.VendorRequiredInforesponse();
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property planName (base name: "planName")', function() {
       // uncomment below and update the code to test the property planName
-      //var instance = new XiSdkResellers.VendorRequiredInforesponse();
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property responseMessages (base name: "responseMessages")', function() {
       // uncomment below and update the code to test the property responseMessages
-      //var instance = new XiSdkResellers.VendorRequiredInforesponse();
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vmfAdditionalAttributes (base name: "vmfAdditionalAttributes")', function() {
       // uncomment below and update the code to test the property vmfAdditionalAttributes
-      //var instance = new XiSdkResellers.VendorRequiredInforesponse();
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInner();
       //expect(instance).to.be();
     });
 
     it('should have the property vriAdditionalAttributes (base name: "vriAdditionalAttributes")', function() {
       // uncomment below and update the code to test the property vriAdditionalAttributes
-      //var instance = new XiSdkResellers.VendorRequiredInforesponse();
+      //var instance = new XiSdkResellers.VendorRequiredInforesponseInner();
       //expect(instance).to.be();
     });
 

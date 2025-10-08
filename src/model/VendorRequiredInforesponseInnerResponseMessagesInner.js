@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The VendorRequiredInforesponseResponseMessagesInner model module.
- * @module model/VendorRequiredInforesponseResponseMessagesInner
+ * The VendorRequiredInforesponseInnerResponseMessagesInner model module.
+ * @module model/VendorRequiredInforesponseInnerResponseMessagesInner
  * @version 1.0.0
  */
-class VendorRequiredInforesponseResponseMessagesInner {
+class VendorRequiredInforesponseInnerResponseMessagesInner {
     /**
-     * Constructs a new <code>VendorRequiredInforesponseResponseMessagesInner</code>.
-     * @alias module:model/VendorRequiredInforesponseResponseMessagesInner
+     * Constructs a new <code>VendorRequiredInforesponseInnerResponseMessagesInner</code>.
+     * @alias module:model/VendorRequiredInforesponseInnerResponseMessagesInner
      */
     constructor() { 
         
-        VendorRequiredInforesponseResponseMessagesInner.initialize(this);
+        VendorRequiredInforesponseInnerResponseMessagesInner.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class VendorRequiredInforesponseResponseMessagesInner {
     }
 
     /**
-     * Constructs a <code>VendorRequiredInforesponseResponseMessagesInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>VendorRequiredInforesponseInnerResponseMessagesInner</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/VendorRequiredInforesponseResponseMessagesInner} obj Optional instance to populate.
-     * @return {module:model/VendorRequiredInforesponseResponseMessagesInner} The populated <code>VendorRequiredInforesponseResponseMessagesInner</code> instance.
+     * @param {module:model/VendorRequiredInforesponseInnerResponseMessagesInner} obj Optional instance to populate.
+     * @return {module:model/VendorRequiredInforesponseInnerResponseMessagesInner} The populated <code>VendorRequiredInforesponseInnerResponseMessagesInner</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new VendorRequiredInforesponseResponseMessagesInner();
+            obj = obj || new VendorRequiredInforesponseInnerResponseMessagesInner();
 
             if (data.hasOwnProperty('id')) {
                 obj['id'] = ApiClient.convertToType(data['id'], 'String');
@@ -64,9 +64,9 @@ class VendorRequiredInforesponseResponseMessagesInner {
     }
 
     /**
-     * Validates the JSON data with respect to <code>VendorRequiredInforesponseResponseMessagesInner</code>.
+     * Validates the JSON data with respect to <code>VendorRequiredInforesponseInnerResponseMessagesInner</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>VendorRequiredInforesponseResponseMessagesInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>VendorRequiredInforesponseInnerResponseMessagesInner</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -98,30 +98,30 @@ class VendorRequiredInforesponseResponseMessagesInner {
  * Unique ID to identify the error.
  * @member {String} id
  */
-VendorRequiredInforesponseResponseMessagesInner.prototype['id'] = undefined;
+VendorRequiredInforesponseInnerResponseMessagesInner.prototype['id'] = undefined;
 
 /**
  * A unique trace id to identify the issue.
  * @member {String} traceId
  */
-VendorRequiredInforesponseResponseMessagesInner.prototype['traceId'] = undefined;
+VendorRequiredInforesponseInnerResponseMessagesInner.prototype['traceId'] = undefined;
 
 /**
  * Type of the error message.
  * @member {String} type
  */
-VendorRequiredInforesponseResponseMessagesInner.prototype['type'] = undefined;
+VendorRequiredInforesponseInnerResponseMessagesInner.prototype['type'] = undefined;
 
 /**
  * A detailed error message.
  * @member {String} message
  */
-VendorRequiredInforesponseResponseMessagesInner.prototype['message'] = undefined;
+VendorRequiredInforesponseInnerResponseMessagesInner.prototype['message'] = undefined;
 
 
 
 
 
 
-export default VendorRequiredInforesponseResponseMessagesInner;
+export default VendorRequiredInforesponseInnerResponseMessagesInner;
 

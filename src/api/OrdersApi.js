@@ -27,7 +27,7 @@ import OrderSearchResponse from '../model/OrderSearchResponse';
 import PostCreateorderV7400Response from '../model/PostCreateorderV7400Response';
 import PostCreateorderV7500Response from '../model/PostCreateorderV7500Response';
 import VendorRequiredInfoRequest from '../model/VendorRequiredInfoRequest';
-import VendorRequiredInforesponse from '../model/VendorRequiredInforesponse';
+import VendorRequiredInforesponseInner from '../model/VendorRequiredInforesponseInner';
 
 /**
 * Orders service.
@@ -490,7 +490,7 @@ export default class OrdersApi {
      * Callback function to receive the result of the vendorRequiredInfo operation.
      * @callback module:api/OrdersApi~vendorRequiredInfoCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/VendorRequiredInforesponse} data The data returned by the service call.
+     * @param {Array.<module:model/VendorRequiredInforesponseInner>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -504,7 +504,7 @@ export default class OrdersApi {
      * @param {Object} opts Optional parameters
      * @param {module:model/VendorRequiredInfoRequest} [vendorRequiredInfoRequest] 
      * @param {module:api/OrdersApi~vendorRequiredInfoCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/VendorRequiredInforesponse}
+     * data is of type: {@link Array.<module:model/VendorRequiredInforesponseInner>}
      */
     vendorRequiredInfo(iMCustomerNumber, iMCorrelationID, iMCountryCode, iMSenderID, opts, callback) {
       opts = opts || {};
@@ -542,7 +542,7 @@ export default class OrdersApi {
       let authNames = ['application'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = VendorRequiredInforesponse;
+      let returnType = [VendorRequiredInforesponseInner];
       return this.apiClient.callApi(
         '/resellers/v7/vendorrequiredinfo', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,

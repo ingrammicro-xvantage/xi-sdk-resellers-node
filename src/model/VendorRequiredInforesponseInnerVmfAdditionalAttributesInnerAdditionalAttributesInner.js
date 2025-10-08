@@ -12,21 +12,21 @@
  */
 
 import ApiClient from '../ApiClient';
-import VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner from './VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner';
+import VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner from './VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner';
 
 /**
- * The VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner model module.
- * @module model/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner
+ * The VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner model module.
+ * @module model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
  * @version 1.0.0
  */
-class VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner {
+class VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner {
     /**
-     * Constructs a new <code>VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner</code>.
-     * @alias module:model/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner
+     * Constructs a new <code>VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner</code>.
+     * @alias module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
      */
     constructor() { 
         
-        VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner.initialize(this);
+        VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.initialize(this);
     }
 
     /**
@@ -38,15 +38,15 @@ class VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributes
     }
 
     /**
-     * Constructs a <code>VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner} obj Optional instance to populate.
-     * @return {module:model/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner} The populated <code>VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner</code> instance.
+     * @param {module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner} obj Optional instance to populate.
+     * @return {module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner} The populated <code>VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner();
+            obj = obj || new VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner();
 
             if (data.hasOwnProperty('attributeName')) {
                 obj['attributeName'] = ApiClient.convertToType(data['attributeName'], 'String');
@@ -61,16 +61,16 @@ class VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributes
                 obj['attributeHint'] = ApiClient.convertToType(data['attributeHint'], 'String');
             }
             if (data.hasOwnProperty('choices')) {
-                obj['choices'] = ApiClient.convertToType(data['choices'], [VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner]);
+                obj['choices'] = ApiClient.convertToType(data['choices'], [VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner]);
             }
         }
         return obj;
     }
 
     /**
-     * Validates the JSON data with respect to <code>VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner</code>.
+     * Validates the JSON data with respect to <code>VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -96,7 +96,7 @@ class VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributes
             }
             // validate the optional field `choices` (array)
             for (const item of data['choices']) {
-                VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.validateJSON(item);
+                VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.validateJSON(item);
             };
         }
 
@@ -112,35 +112,35 @@ class VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributes
  * The name of the vendor mandatory field.
  * @member {String} attributeName
  */
-VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner.prototype['attributeName'] = undefined;
+VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.prototype['attributeName'] = undefined;
 
 /**
  * The value of the vendor mandatory field.
  * @member {String} attributeValue
  */
-VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner.prototype['attributeValue'] = undefined;
+VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.prototype['attributeValue'] = undefined;
 
 /**
  * The description of the vendor mandatory field.
  * @member {String} attributeDescription
  */
-VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner.prototype['attributeDescription'] = undefined;
+VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.prototype['attributeDescription'] = undefined;
 
 /**
  * The hint of the vendor mandatory field.
  * @member {String} attributeHint
  */
-VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner.prototype['attributeHint'] = undefined;
+VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.prototype['attributeHint'] = undefined;
 
 /**
- * @member {Array.<module:model/VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner>} choices
+ * @member {Array.<module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner>} choices
  */
-VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner.prototype['choices'] = undefined;
+VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.prototype['choices'] = undefined;
 
 
 
 
 
 
-export default VendorRequiredInforesponseVmfAdditionalAttributesInnerAdditionalAttributesInner;
+export default VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner;
 
