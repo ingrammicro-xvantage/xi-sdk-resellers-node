@@ -60,7 +60,7 @@ class VendorRequiredInforesponse {
                 obj['vendorPartNumber'] = ApiClient.convertToType(data['vendorPartNumber'], 'String');
             }
             if (data.hasOwnProperty('planId')) {
-                obj['planId'] = ApiClient.convertToType(data['planId'], 'Number');
+                obj['planId'] = ApiClient.convertToType(data['planId'], 'String');
             }
             if (data.hasOwnProperty('planName')) {
                 obj['planName'] = ApiClient.convertToType(data['planName'], 'String');
@@ -95,6 +95,10 @@ class VendorRequiredInforesponse {
         // ensure the json data is a string
         if (data['vendorPartNumber'] && !(typeof data['vendorPartNumber'] === 'string' || data['vendorPartNumber'] instanceof String)) {
             throw new Error("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got " + data['vendorPartNumber']);
+        }
+        // ensure the json data is a string
+        if (data['planId'] && !(typeof data['planId'] === 'string' || data['planId'] instanceof String)) {
+            throw new Error("Expected the field `planId` to be a primitive type in the JSON string but got " + data['planId']);
         }
         // ensure the json data is a string
         if (data['planName'] && !(typeof data['planName'] === 'string' || data['planName'] instanceof String)) {
@@ -159,7 +163,7 @@ VendorRequiredInforesponse.prototype['vendorPartNumber'] = undefined;
 
 /**
  * ID of the subscription plan
- * @member {Number} planId
+ * @member {String} planId
  */
 VendorRequiredInforesponse.prototype['planId'] = undefined;
 

@@ -54,7 +54,7 @@ class VendorRequiredInfoRequestProductsInner {
                 obj['vendorPartNumber'] = ApiClient.convertToType(data['vendorPartNumber'], 'String');
             }
             if (data.hasOwnProperty('planID')) {
-                obj['planID'] = ApiClient.convertToType(data['planID'], 'Number');
+                obj['planID'] = ApiClient.convertToType(data['planID'], 'String');
             }
         }
         return obj;
@@ -73,6 +73,10 @@ class VendorRequiredInfoRequestProductsInner {
         // ensure the json data is a string
         if (data['vendorPartNumber'] && !(typeof data['vendorPartNumber'] === 'string' || data['vendorPartNumber'] instanceof String)) {
             throw new Error("Expected the field `vendorPartNumber` to be a primitive type in the JSON string but got " + data['vendorPartNumber']);
+        }
+        // ensure the json data is a string
+        if (data['planID'] && !(typeof data['planID'] === 'string' || data['planID'] instanceof String)) {
+            throw new Error("Expected the field `planID` to be a primitive type in the JSON string but got " + data['planID']);
         }
 
         return true;
@@ -97,7 +101,7 @@ VendorRequiredInfoRequestProductsInner.prototype['vendorPartNumber'] = undefined
 
 /**
  * The ID of the subscription plan.
- * @member {Number} planID
+ * @member {String} planID
  */
 VendorRequiredInfoRequestProductsInner.prototype['planID'] = undefined;
 
