@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -13,8 +13,12 @@
 
 import ApiClient from '../ApiClient';
 import OrderCreateV7RequestLinesInnerAdditionalAttributesInner from './OrderCreateV7RequestLinesInnerAdditionalAttributesInner';
+import OrderCreateV7RequestLinesInnerBillingPeriodInner from './OrderCreateV7RequestLinesInnerBillingPeriodInner';
 import OrderCreateV7RequestLinesInnerEndUserInfoInner from './OrderCreateV7RequestLinesInnerEndUserInfoInner';
+import OrderCreateV7RequestLinesInnerSubscriptionPeriodInner from './OrderCreateV7RequestLinesInnerSubscriptionPeriodInner';
 import OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner from './OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner';
+import OrderCreateV7RequestLinesInnerWarrantyInfo from './OrderCreateV7RequestLinesInnerWarrantyInfo';
+import OrderCreateV7RequestVmfVendorAdditionalAttributesInner from './OrderCreateV7RequestVmfVendorAdditionalAttributesInner';
 
 /**
  * The OrderCreateV7RequestLinesInner model module.
@@ -74,11 +78,35 @@ class OrderCreateV7RequestLinesInner {
             if (data.hasOwnProperty('notes')) {
                 obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
             }
+            if (data.hasOwnProperty('resourceId')) {
+                obj['resourceId'] = ApiClient.convertToType(data['resourceId'], 'String');
+            }
+            if (data.hasOwnProperty('planid')) {
+                obj['planid'] = ApiClient.convertToType(data['planid'], 'String');
+            }
+            if (data.hasOwnProperty('subscriptionPeriod')) {
+                obj['subscriptionPeriod'] = ApiClient.convertToType(data['subscriptionPeriod'], [OrderCreateV7RequestLinesInnerSubscriptionPeriodInner]);
+            }
+            if (data.hasOwnProperty('billingPeriod')) {
+                obj['billingPeriod'] = ApiClient.convertToType(data['billingPeriod'], [OrderCreateV7RequestLinesInnerBillingPeriodInner]);
+            }
+            if (data.hasOwnProperty('margin')) {
+                obj['margin'] = ApiClient.convertToType(data['margin'], 'Number');
+            }
+            if (data.hasOwnProperty('endCustomerPrice')) {
+                obj['endCustomerPrice'] = ApiClient.convertToType(data['endCustomerPrice'], 'Number');
+            }
+            if (data.hasOwnProperty('vriAdditionalAttributes')) {
+                obj['vriAdditionalAttributes'] = ApiClient.convertToType(data['vriAdditionalAttributes'], [OrderCreateV7RequestVmfVendorAdditionalAttributesInner]);
+            }
             if (data.hasOwnProperty('endUserInfo')) {
                 obj['endUserInfo'] = ApiClient.convertToType(data['endUserInfo'], [OrderCreateV7RequestLinesInnerEndUserInfoInner]);
             }
             if (data.hasOwnProperty('additionalAttributes')) {
                 obj['additionalAttributes'] = ApiClient.convertToType(data['additionalAttributes'], [OrderCreateV7RequestLinesInnerAdditionalAttributesInner]);
+            }
+            if (data.hasOwnProperty('warrantyInfo')) {
+                obj['warrantyInfo'] = OrderCreateV7RequestLinesInnerWarrantyInfo.constructFromObject(data['warrantyInfo']);
             }
             if (data.hasOwnProperty('vmfAdditionalAttributesLines')) {
                 obj['vmfAdditionalAttributesLines'] = ApiClient.convertToType(data['vmfAdditionalAttributesLines'], [OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner]);
@@ -113,6 +141,44 @@ class OrderCreateV7RequestLinesInner {
         if (data['notes'] && !(typeof data['notes'] === 'string' || data['notes'] instanceof String)) {
             throw new Error("Expected the field `notes` to be a primitive type in the JSON string but got " + data['notes']);
         }
+        // ensure the json data is a string
+        if (data['resourceId'] && !(typeof data['resourceId'] === 'string' || data['resourceId'] instanceof String)) {
+            throw new Error("Expected the field `resourceId` to be a primitive type in the JSON string but got " + data['resourceId']);
+        }
+        // ensure the json data is a string
+        if (data['planid'] && !(typeof data['planid'] === 'string' || data['planid'] instanceof String)) {
+            throw new Error("Expected the field `planid` to be a primitive type in the JSON string but got " + data['planid']);
+        }
+        if (data['subscriptionPeriod']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['subscriptionPeriod'])) {
+                throw new Error("Expected the field `subscriptionPeriod` to be an array in the JSON data but got " + data['subscriptionPeriod']);
+            }
+            // validate the optional field `subscriptionPeriod` (array)
+            for (const item of data['subscriptionPeriod']) {
+                OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.validateJSON(item);
+            };
+        }
+        if (data['billingPeriod']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['billingPeriod'])) {
+                throw new Error("Expected the field `billingPeriod` to be an array in the JSON data but got " + data['billingPeriod']);
+            }
+            // validate the optional field `billingPeriod` (array)
+            for (const item of data['billingPeriod']) {
+                OrderCreateV7RequestLinesInnerBillingPeriodInner.validateJSON(item);
+            };
+        }
+        if (data['vriAdditionalAttributes']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['vriAdditionalAttributes'])) {
+                throw new Error("Expected the field `vriAdditionalAttributes` to be an array in the JSON data but got " + data['vriAdditionalAttributes']);
+            }
+            // validate the optional field `vriAdditionalAttributes` (array)
+            for (const item of data['vriAdditionalAttributes']) {
+                OrderCreateV7RequestVmfVendorAdditionalAttributesInner.validateJSON(item);
+            };
+        }
         if (data['endUserInfo']) { // data not null
             // ensure the json data is an array
             if (!Array.isArray(data['endUserInfo'])) {
@@ -132,6 +198,10 @@ class OrderCreateV7RequestLinesInner {
             for (const item of data['additionalAttributes']) {
                 OrderCreateV7RequestLinesInnerAdditionalAttributesInner.validateJSON(item);
             };
+        }
+        // validate the optional field `warrantyInfo`
+        if (data['warrantyInfo']) { // data not null
+          OrderCreateV7RequestLinesInnerWarrantyInfo.validateJSON(data['warrantyInfo']);
         }
         if (data['vmfAdditionalAttributesLines']) { // data not null
             // ensure the json data is an array
@@ -201,6 +271,48 @@ OrderCreateV7RequestLinesInner.prototype['endUserPrice'] = undefined;
 OrderCreateV7RequestLinesInner.prototype['notes'] = undefined;
 
 /**
+ * The resource id of the subscription
+ * @member {String} resourceId
+ */
+OrderCreateV7RequestLinesInner.prototype['resourceId'] = undefined;
+
+/**
+ * ID of the subscription plan
+ * @member {String} planid
+ */
+OrderCreateV7RequestLinesInner.prototype['planid'] = undefined;
+
+/**
+ * The object containing the list of options related to the subscription period.
+ * @member {Array.<module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner>} subscriptionPeriod
+ */
+OrderCreateV7RequestLinesInner.prototype['subscriptionPeriod'] = undefined;
+
+/**
+ * The object containing the list of options related to the billing period.
+ * @member {Array.<module:model/OrderCreateV7RequestLinesInnerBillingPeriodInner>} billingPeriod
+ */
+OrderCreateV7RequestLinesInner.prototype['billingPeriod'] = undefined;
+
+/**
+ * Line-level margin requested by customer
+ * @member {Number} margin
+ */
+OrderCreateV7RequestLinesInner.prototype['margin'] = undefined;
+
+/**
+ * Line-level end-customer price requsted by customer
+ * @member {Number} endCustomerPrice
+ */
+OrderCreateV7RequestLinesInner.prototype['endCustomerPrice'] = undefined;
+
+/**
+ * The object containing the list of Vendor Mandatory Fields required by the vendor for the subscription products.
+ * @member {Array.<module:model/OrderCreateV7RequestVmfVendorAdditionalAttributesInner>} vriAdditionalAttributes
+ */
+OrderCreateV7RequestLinesInner.prototype['vriAdditionalAttributes'] = undefined;
+
+/**
  * @member {Array.<module:model/OrderCreateV7RequestLinesInnerEndUserInfoInner>} endUserInfo
  */
 OrderCreateV7RequestLinesInner.prototype['endUserInfo'] = undefined;
@@ -211,6 +323,12 @@ OrderCreateV7RequestLinesInner.prototype['endUserInfo'] = undefined;
 OrderCreateV7RequestLinesInner.prototype['additionalAttributes'] = undefined;
 
 /**
+ * @member {module:model/OrderCreateV7RequestLinesInnerWarrantyInfo} warrantyInfo
+ */
+OrderCreateV7RequestLinesInner.prototype['warrantyInfo'] = undefined;
+
+/**
+ * The object containing the list of fields required at a line level by the vendor.<br> This a <code>Deprecated</code> object. Kindly use <b>vmfVendorAdditionalAttributes</b> object
  * @member {Array.<module:model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner>} vmfAdditionalAttributesLines
  */
 OrderCreateV7RequestLinesInner.prototype['vmfAdditionalAttributesLines'] = undefined;

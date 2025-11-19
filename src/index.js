@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -83,12 +83,20 @@ import OrderCreateV7RequestAdditionalAttributesInner from './model/OrderCreateV7
 import OrderCreateV7RequestEndUserInfo from './model/OrderCreateV7RequestEndUserInfo';
 import OrderCreateV7RequestLinesInner from './model/OrderCreateV7RequestLinesInner';
 import OrderCreateV7RequestLinesInnerAdditionalAttributesInner from './model/OrderCreateV7RequestLinesInnerAdditionalAttributesInner';
+import OrderCreateV7RequestLinesInnerBillingPeriodInner from './model/OrderCreateV7RequestLinesInnerBillingPeriodInner';
 import OrderCreateV7RequestLinesInnerEndUserInfoInner from './model/OrderCreateV7RequestLinesInnerEndUserInfoInner';
+import OrderCreateV7RequestLinesInnerSubscriptionPeriodInner from './model/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner';
 import OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner from './model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner';
+import OrderCreateV7RequestLinesInnerWarrantyInfo from './model/OrderCreateV7RequestLinesInnerWarrantyInfo';
+import OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner from './model/OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner';
 import OrderCreateV7RequestResellerInfo from './model/OrderCreateV7RequestResellerInfo';
 import OrderCreateV7RequestShipToInfo from './model/OrderCreateV7RequestShipToInfo';
 import OrderCreateV7RequestShipmentDetails from './model/OrderCreateV7RequestShipmentDetails';
 import OrderCreateV7RequestVmfAdditionalAttributesInner from './model/OrderCreateV7RequestVmfAdditionalAttributesInner';
+import OrderCreateV7RequestVmfVendorAdditionalAttributesInner from './model/OrderCreateV7RequestVmfVendorAdditionalAttributesInner';
+import OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInner from './model/OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInner';
+import OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner from './model/OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner';
+import OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInnerChoicesInner from './model/OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInnerChoicesInner';
 import OrderCreateV7Response from './model/OrderCreateV7Response';
 import OrderCreateV7Response201 from './model/OrderCreateV7Response201';
 import OrderCreateV7ResponseResource from './model/OrderCreateV7ResponseResource';
@@ -252,7 +260,7 @@ import StockUpdateApi from './api/StockUpdateApi';
 
 
 /**
-* For Resellers seeking to innovate with Ingram Micro&#39;s API solutions, automate your eCommerce experience with our array of API&#39;s and webhooks to craft a seamless journey for your customers..<br>
+* For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API&#39;s and webhooks to craft a seamless journey for your customers..<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
@@ -710,16 +718,40 @@ export {
     OrderCreateV7RequestLinesInnerAdditionalAttributesInner,
 
     /**
+     * The OrderCreateV7RequestLinesInnerBillingPeriodInner model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerBillingPeriodInner}
+     */
+    OrderCreateV7RequestLinesInnerBillingPeriodInner,
+
+    /**
      * The OrderCreateV7RequestLinesInnerEndUserInfoInner model constructor.
      * @property {module:model/OrderCreateV7RequestLinesInnerEndUserInfoInner}
      */
     OrderCreateV7RequestLinesInnerEndUserInfoInner,
 
     /**
+     * The OrderCreateV7RequestLinesInnerSubscriptionPeriodInner model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner}
+     */
+    OrderCreateV7RequestLinesInnerSubscriptionPeriodInner,
+
+    /**
      * The OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner model constructor.
      * @property {module:model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner}
      */
     OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner,
+
+    /**
+     * The OrderCreateV7RequestLinesInnerWarrantyInfo model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerWarrantyInfo}
+     */
+    OrderCreateV7RequestLinesInnerWarrantyInfo,
+
+    /**
+     * The OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner}
+     */
+    OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner,
 
     /**
      * The OrderCreateV7RequestResellerInfo model constructor.
@@ -744,6 +776,30 @@ export {
      * @property {module:model/OrderCreateV7RequestVmfAdditionalAttributesInner}
      */
     OrderCreateV7RequestVmfAdditionalAttributesInner,
+
+    /**
+     * The OrderCreateV7RequestVmfVendorAdditionalAttributesInner model constructor.
+     * @property {module:model/OrderCreateV7RequestVmfVendorAdditionalAttributesInner}
+     */
+    OrderCreateV7RequestVmfVendorAdditionalAttributesInner,
+
+    /**
+     * The OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInner model constructor.
+     * @property {module:model/OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInner}
+     */
+    OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInner,
+
+    /**
+     * The OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner model constructor.
+     * @property {module:model/OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner}
+     */
+    OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner,
+
+    /**
+     * The OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInnerChoicesInner model constructor.
+     * @property {module:model/OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInnerChoicesInner}
+     */
+    OrderCreateV7RequestVmfVendorAdditionalAttributesInnerAdditionalAttributesInnerChoicesInnerChoicesInner,
 
     /**
      * The OrderCreateV7Response model constructor.

@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -21,7 +21,6 @@ import ApiClient from '../ApiClient';
 class OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner {
     /**
      * Constructs a new <code>OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner</code>.
-     * The object containing the list of fields required at a line level by the vendor.
      * @alias module:model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner
      */
     constructor() { 

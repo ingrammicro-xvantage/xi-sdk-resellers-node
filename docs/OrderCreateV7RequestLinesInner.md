@@ -12,8 +12,16 @@ Name | Type | Description | Notes
 **specialBidNumber** | **String** | The line-level bid number provided to the reseller by the vendor for special pricing and discounts. Used to track the bid number in the case of split orders or where different line items have different bid numbers. Line-level bid number take precedence over header-level bid numbers. | [optional] 
 **endUserPrice** | **Number** | The end-user price. Required for Export Orders. | [optional] 
 **notes** | **String** | The attribute field data. | [optional] 
+**resourceId** | **String** | The resource id of the subscription | [optional] 
+**planid** | **String** | ID of the subscription plan | [optional] 
+**subscriptionPeriod** | [**[OrderCreateV7RequestLinesInnerSubscriptionPeriodInner]**](OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.md) | The object containing the list of options related to the subscription period. | [optional] 
+**billingPeriod** | [**[OrderCreateV7RequestLinesInnerBillingPeriodInner]**](OrderCreateV7RequestLinesInnerBillingPeriodInner.md) | The object containing the list of options related to the billing period. | [optional] 
+**margin** | **Number** | Line-level margin requested by customer | [optional] 
+**endCustomerPrice** | **Number** | Line-level end-customer price requsted by customer | [optional] 
+**vriAdditionalAttributes** | [**[OrderCreateV7RequestVmfVendorAdditionalAttributesInner]**](OrderCreateV7RequestVmfVendorAdditionalAttributesInner.md) | The object containing the list of Vendor Mandatory Fields required by the vendor for the subscription products. | [optional] 
 **endUserInfo** | [**[OrderCreateV7RequestLinesInnerEndUserInfoInner]**](OrderCreateV7RequestLinesInnerEndUserInfoInner.md) |  | [optional] 
 **additionalAttributes** | [**[OrderCreateV7RequestLinesInnerAdditionalAttributesInner]**](OrderCreateV7RequestLinesInnerAdditionalAttributesInner.md) |  | [optional] 
-**vmfAdditionalAttributesLines** | [**[OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner]**](OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.md) |  | [optional] 
+**warrantyInfo** | [**OrderCreateV7RequestLinesInnerWarrantyInfo**](OrderCreateV7RequestLinesInnerWarrantyInfo.md) |  | [optional] 
+**vmfAdditionalAttributesLines** | [**[OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner]**](OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner.md) | The object containing the list of fields required at a line level by the vendor.&lt;br&gt; This a &lt;code&gt;Deprecated&lt;/code&gt; object. Kindly use &lt;b&gt;vmfVendorAdditionalAttributes&lt;/b&gt; object | [optional] 
 
 

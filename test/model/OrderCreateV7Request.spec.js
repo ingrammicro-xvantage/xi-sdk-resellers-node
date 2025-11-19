@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -134,6 +134,18 @@
 
     it('should have the property vmfAdditionalAttributes (base name: "vmfAdditionalAttributes")', function() {
       // uncomment below and update the code to test the property vmfAdditionalAttributes
+      //var instance = new XiSdkResellers.OrderCreateV7Request();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vmfVendorAdditionalAttributes (base name: "vmfVendorAdditionalAttributes")', function() {
+      // uncomment below and update the code to test the property vmfVendorAdditionalAttributes
+      //var instance = new XiSdkResellers.OrderCreateV7Request();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vriAdditionalAttributes (base name: "vriAdditionalAttributes")', function() {
+      // uncomment below and update the code to test the property vriAdditionalAttributes
       //var instance = new XiSdkResellers.OrderCreateV7Request();
       //expect(instance).to.be();
     });

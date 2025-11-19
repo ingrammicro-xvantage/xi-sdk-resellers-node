@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -19,6 +19,7 @@ import OrderCreateV7RequestResellerInfo from './OrderCreateV7RequestResellerInfo
 import OrderCreateV7RequestShipToInfo from './OrderCreateV7RequestShipToInfo';
 import OrderCreateV7RequestShipmentDetails from './OrderCreateV7RequestShipmentDetails';
 import OrderCreateV7RequestVmfAdditionalAttributesInner from './OrderCreateV7RequestVmfAdditionalAttributesInner';
+import OrderCreateV7RequestVmfVendorAdditionalAttributesInner from './OrderCreateV7RequestVmfVendorAdditionalAttributesInner';
 
 /**
  * The OrderCreateV7Request model module.
@@ -96,6 +97,12 @@ class OrderCreateV7Request {
             if (data.hasOwnProperty('vmfAdditionalAttributes')) {
                 obj['vmfAdditionalAttributes'] = ApiClient.convertToType(data['vmfAdditionalAttributes'], [OrderCreateV7RequestVmfAdditionalAttributesInner]);
             }
+            if (data.hasOwnProperty('vmfVendorAdditionalAttributes')) {
+                obj['vmfVendorAdditionalAttributes'] = ApiClient.convertToType(data['vmfVendorAdditionalAttributes'], [OrderCreateV7RequestVmfVendorAdditionalAttributesInner]);
+            }
+            if (data.hasOwnProperty('vriAdditionalAttributes')) {
+                obj['vriAdditionalAttributes'] = ApiClient.convertToType(data['vriAdditionalAttributes'], [OrderCreateV7RequestVmfVendorAdditionalAttributesInner]);
+            }
             if (data.hasOwnProperty('lines')) {
                 obj['lines'] = ApiClient.convertToType(data['lines'], [OrderCreateV7RequestLinesInner]);
             }
@@ -171,6 +178,26 @@ class OrderCreateV7Request {
             // validate the optional field `vmfAdditionalAttributes` (array)
             for (const item of data['vmfAdditionalAttributes']) {
                 OrderCreateV7RequestVmfAdditionalAttributesInner.validateJSON(item);
+            };
+        }
+        if (data['vmfVendorAdditionalAttributes']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['vmfVendorAdditionalAttributes'])) {
+                throw new Error("Expected the field `vmfVendorAdditionalAttributes` to be an array in the JSON data but got " + data['vmfVendorAdditionalAttributes']);
+            }
+            // validate the optional field `vmfVendorAdditionalAttributes` (array)
+            for (const item of data['vmfVendorAdditionalAttributes']) {
+                OrderCreateV7RequestVmfVendorAdditionalAttributesInner.validateJSON(item);
+            };
+        }
+        if (data['vriAdditionalAttributes']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['vriAdditionalAttributes'])) {
+                throw new Error("Expected the field `vriAdditionalAttributes` to be an array in the JSON data but got " + data['vriAdditionalAttributes']);
+            }
+            // validate the optional field `vriAdditionalAttributes` (array)
+            for (const item of data['vriAdditionalAttributes']) {
+                OrderCreateV7RequestVmfVendorAdditionalAttributesInner.validateJSON(item);
             };
         }
         if (data['lines']) { // data not null
@@ -267,10 +294,22 @@ OrderCreateV7Request.prototype['shipmentDetails'] = undefined;
 OrderCreateV7Request.prototype['additionalAttributes'] = undefined;
 
 /**
- * The object containing the list of fields required at a header level by the vendor.
+ * The object containing the list of fields required at a header level by the vendor.<br> This a <code>Deprecated</code> object. Kindly use <b>vmfVendorAdditionalAttributes</b> object
  * @member {Array.<module:model/OrderCreateV7RequestVmfAdditionalAttributesInner>} vmfAdditionalAttributes
  */
 OrderCreateV7Request.prototype['vmfAdditionalAttributes'] = undefined;
+
+/**
+ * The object containing the list of Vendor Mandatory Fields required by the vendor for the Hardware products.
+ * @member {Array.<module:model/OrderCreateV7RequestVmfVendorAdditionalAttributesInner>} vmfVendorAdditionalAttributes
+ */
+OrderCreateV7Request.prototype['vmfVendorAdditionalAttributes'] = undefined;
+
+/**
+ * The object containing the list of Vendor Mandatory Fields required by the vendor for the subscription products.<br> Use this object ONLY when using a full quote ordering for a subsciption product. For line-level ordering use <b>vriAdditionalAttributes</b> object inside the line object. 
+ * @member {Array.<module:model/OrderCreateV7RequestVmfVendorAdditionalAttributesInner>} vriAdditionalAttributes
+ */
+OrderCreateV7Request.prototype['vriAdditionalAttributes'] = undefined;
 
 /**
  * @member {Array.<module:model/OrderCreateV7RequestLinesInner>} lines

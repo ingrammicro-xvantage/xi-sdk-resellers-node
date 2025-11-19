@@ -1,6 +1,6 @@
 /**
  * XI Sdk Resellers
- * For Resellers seeking to innovate with Ingram Micro's API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
+ * For Resellers seeking to innovate with Ingram Micro API solutions, automate your eCommerce experience with our array of API's and webhooks to craft a seamless journey for your customers.
  *
  * The version of the OpenAPI document: 1.0.0
  * 
@@ -102,6 +102,48 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property resourceId (base name: "resourceId")', function() {
+      // uncomment below and update the code to test the property resourceId
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property planid (base name: "planid")', function() {
+      // uncomment below and update the code to test the property planid
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property subscriptionPeriod (base name: "subscriptionPeriod")', function() {
+      // uncomment below and update the code to test the property subscriptionPeriod
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property billingPeriod (base name: "billingPeriod")', function() {
+      // uncomment below and update the code to test the property billingPeriod
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property margin (base name: "margin")', function() {
+      // uncomment below and update the code to test the property margin
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property endCustomerPrice (base name: "endCustomerPrice")', function() {
+      // uncomment below and update the code to test the property endCustomerPrice
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vriAdditionalAttributes (base name: "vriAdditionalAttributes")', function() {
+      // uncomment below and update the code to test the property vriAdditionalAttributes
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
+      //expect(instance).to.be();
+    });
+
     it('should have the property endUserInfo (base name: "endUserInfo")', function() {
       // uncomment below and update the code to test the property endUserInfo
       //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
@@ -110,6 +152,12 @@
 
     it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
       // uncomment below and update the code to test the property additionalAttributes
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property warrantyInfo (base name: "warrantyInfo")', function() {
+      // uncomment below and update the code to test the property warrantyInfo
       //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInner();
       //expect(instance).to.be();
     });
