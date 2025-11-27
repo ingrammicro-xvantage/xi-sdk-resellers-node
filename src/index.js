@@ -14,6 +14,7 @@
 
 import ApiClient from './ApiClient';
 import AccesstokenResponse from './model/AccesstokenResponse';
+import AdditionalAttribute from './model/AdditionalAttribute';
 import AvailabilityAsyncNotificationRequest from './model/AvailabilityAsyncNotificationRequest';
 import AvailabilityAsyncNotificationRequestResourceInner from './model/AvailabilityAsyncNotificationRequestResourceInner';
 import AvailabilityAsyncNotificationRequestResourceInnerLinksInner from './model/AvailabilityAsyncNotificationRequestResourceInnerLinksInner';
@@ -243,9 +244,7 @@ import VendorRequiredInfoRequest from './model/VendorRequiredInfoRequest';
 import VendorRequiredInfoRequestProductsInner from './model/VendorRequiredInfoRequestProductsInner';
 import VendorRequiredInforesponseInner from './model/VendorRequiredInforesponseInner';
 import VendorRequiredInforesponseInnerResponseMessagesInner from './model/VendorRequiredInforesponseInnerResponseMessagesInner';
-import VendorRequiredInforesponseInnerVmfAdditionalAttributesInner from './model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner';
-import VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner from './model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner';
-import VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner from './model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner';
+import VmfVriAdditionalAttributeContainer from './model/VmfVriAdditionalAttributeContainer';
 import AccesstokenApi from './api/AccesstokenApi';
 import DealsApi from './api/DealsApi';
 import FreightEstimateApi from './api/FreightEstimateApi';
@@ -302,6 +301,12 @@ export {
      * @property {module:model/AccesstokenResponse}
      */
     AccesstokenResponse,
+
+    /**
+     * The AdditionalAttribute model constructor.
+     * @property {module:model/AdditionalAttribute}
+     */
+    AdditionalAttribute,
 
     /**
      * The AvailabilityAsyncNotificationRequest model constructor.
@@ -1678,22 +1683,10 @@ export {
     VendorRequiredInforesponseInnerResponseMessagesInner,
 
     /**
-     * The VendorRequiredInforesponseInnerVmfAdditionalAttributesInner model constructor.
-     * @property {module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner}
+     * The VmfVriAdditionalAttributeContainer model constructor.
+     * @property {module:model/VmfVriAdditionalAttributeContainer}
      */
-    VendorRequiredInforesponseInnerVmfAdditionalAttributesInner,
-
-    /**
-     * The VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner model constructor.
-     * @property {module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner}
-     */
-    VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner,
-
-    /**
-     * The VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner model constructor.
-     * @property {module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner}
-     */
-    VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner,
+    VmfVriAdditionalAttributeContainer,
 
     /**
     * The AccesstokenApi service constructor.

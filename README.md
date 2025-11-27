@@ -155,6 +155,7 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [XiSdkResellers.AccesstokenResponse](docs/AccesstokenResponse.md)
+ - [XiSdkResellers.AdditionalAttribute](docs/AdditionalAttribute.md)
  - [XiSdkResellers.AvailabilityAsyncNotificationRequest](docs/AvailabilityAsyncNotificationRequest.md)
  - [XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInner](docs/AvailabilityAsyncNotificationRequestResourceInner.md)
  - [XiSdkResellers.AvailabilityAsyncNotificationRequestResourceInnerLinksInner](docs/AvailabilityAsyncNotificationRequestResourceInnerLinksInner.md)
@@ -384,9 +385,7 @@ Class | Method | HTTP request | Description
  - [XiSdkResellers.VendorRequiredInfoRequestProductsInner](docs/VendorRequiredInfoRequestProductsInner.md)
  - [XiSdkResellers.VendorRequiredInforesponseInner](docs/VendorRequiredInforesponseInner.md)
  - [XiSdkResellers.VendorRequiredInforesponseInnerResponseMessagesInner](docs/VendorRequiredInforesponseInnerResponseMessagesInner.md)
- - [XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInner](docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.md)
- - [XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner](docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.md)
- - [XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner](docs/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner.md)
+ - [XiSdkResellers.VmfVriAdditionalAttributeContainer](docs/VmfVriAdditionalAttributeContainer.md)
 
 
 ## Documentation for Authorization

@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner();
+    instance = new XiSdkResellers.VmfVriAdditionalAttributeContainer();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,16 +47,28 @@
       object[property] = value;
   }
 
-  describe('VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner', function() {
-    it('should create an instance of VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner', function() {
-      // uncomment below and update the code to test VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner();
-      //expect(instance).to.be.a(XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner);
+  describe('VmfVriAdditionalAttributeContainer', function() {
+    it('should create an instance of VmfVriAdditionalAttributeContainer', function() {
+      // uncomment below and update the code to test VmfVriAdditionalAttributeContainer
+      //var instance = new XiSdkResellers.VmfVriAdditionalAttributeContainer();
+      //expect(instance).to.be.a(XiSdkResellers.VmfVriAdditionalAttributeContainer);
     });
 
-    it('should have the property string (base name: "string")', function() {
-      // uncomment below and update the code to test the property string
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInnerChoicesInner();
+    it('should have the property vendorName (base name: "vendorName")', function() {
+      // uncomment below and update the code to test the property vendorName
+      //var instance = new XiSdkResellers.VmfVriAdditionalAttributeContainer();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property productId (base name: "productId")', function() {
+      // uncomment below and update the code to test the property productId
+      //var instance = new XiSdkResellers.VmfVriAdditionalAttributeContainer();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property additionalAttributes (base name: "additionalAttributes")', function() {
+      // uncomment below and update the code to test the property additionalAttributes
+      //var instance = new XiSdkResellers.VmfVriAdditionalAttributeContainer();
       //expect(instance).to.be();
     });
 

@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner();
+    instance = new XiSdkResellers.AdditionalAttribute();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,40 +47,46 @@
       object[property] = value;
   }
 
-  describe('VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner', function() {
-    it('should create an instance of VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner', function() {
-      // uncomment below and update the code to test VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner();
-      //expect(instance).to.be.a(XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner);
+  describe('AdditionalAttribute', function() {
+    it('should create an instance of AdditionalAttribute', function() {
+      // uncomment below and update the code to test AdditionalAttribute
+      //var instance = new XiSdkResellers.AdditionalAttribute();
+      //expect(instance).to.be.a(XiSdkResellers.AdditionalAttribute);
     });
 
     it('should have the property attributeName (base name: "attributeName")', function() {
       // uncomment below and update the code to test the property attributeName
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner();
+      //var instance = new XiSdkResellers.AdditionalAttribute();
       //expect(instance).to.be();
     });
 
     it('should have the property attributeValue (base name: "attributeValue")', function() {
       // uncomment below and update the code to test the property attributeValue
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner();
+      //var instance = new XiSdkResellers.AdditionalAttribute();
       //expect(instance).to.be();
     });
 
     it('should have the property attributeDescription (base name: "attributeDescription")', function() {
       // uncomment below and update the code to test the property attributeDescription
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner();
+      //var instance = new XiSdkResellers.AdditionalAttribute();
       //expect(instance).to.be();
     });
 
     it('should have the property attributeHint (base name: "attributeHint")', function() {
       // uncomment below and update the code to test the property attributeHint
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner();
+      //var instance = new XiSdkResellers.AdditionalAttribute();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property attributeRequired (base name: "attributeRequired")', function() {
+      // uncomment below and update the code to test the property attributeRequired
+      //var instance = new XiSdkResellers.AdditionalAttribute();
       //expect(instance).to.be();
     });
 
     it('should have the property choices (base name: "choices")', function() {
       // uncomment below and update the code to test the property choices
-      //var instance = new XiSdkResellers.VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner();
+      //var instance = new XiSdkResellers.AdditionalAttribute();
       //expect(instance).to.be();
     });
 

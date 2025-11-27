@@ -13,8 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import VendorRequiredInforesponseInnerResponseMessagesInner from './VendorRequiredInforesponseInnerResponseMessagesInner';
-import VendorRequiredInforesponseInnerVmfAdditionalAttributesInner from './VendorRequiredInforesponseInnerVmfAdditionalAttributesInner';
-import VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner from './VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner';
+import VmfVriAdditionalAttributeContainer from './VmfVriAdditionalAttributeContainer';
 
 /**
  * The VendorRequiredInforesponseInner model module.
@@ -69,10 +68,10 @@ class VendorRequiredInforesponseInner {
                 obj['responseMessages'] = ApiClient.convertToType(data['responseMessages'], [VendorRequiredInforesponseInnerResponseMessagesInner]);
             }
             if (data.hasOwnProperty('vmfAdditionalAttributes')) {
-                obj['vmfAdditionalAttributes'] = ApiClient.convertToType(data['vmfAdditionalAttributes'], [VendorRequiredInforesponseInnerVmfAdditionalAttributesInner]);
+                obj['vmfAdditionalAttributes'] = ApiClient.convertToType(data['vmfAdditionalAttributes'], [VmfVriAdditionalAttributeContainer]);
             }
             if (data.hasOwnProperty('vriAdditionalAttributes')) {
-                obj['vriAdditionalAttributes'] = ApiClient.convertToType(data['vriAdditionalAttributes'], [VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner]);
+                obj['vriAdditionalAttributes'] = ApiClient.convertToType(data['vriAdditionalAttributes'], [VmfVriAdditionalAttributeContainer]);
             }
         }
         return obj;
@@ -121,7 +120,7 @@ class VendorRequiredInforesponseInner {
             }
             // validate the optional field `vmfAdditionalAttributes` (array)
             for (const item of data['vmfAdditionalAttributes']) {
-                VendorRequiredInforesponseInnerVmfAdditionalAttributesInner.validateJSON(item);
+                VmfVriAdditionalAttributeContainer.validateJSON(item);
             };
         }
         if (data['vriAdditionalAttributes']) { // data not null
@@ -131,7 +130,7 @@ class VendorRequiredInforesponseInner {
             }
             // validate the optional field `vriAdditionalAttributes` (array)
             for (const item of data['vriAdditionalAttributes']) {
-                VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner.validateJSON(item);
+                VmfVriAdditionalAttributeContainer.validateJSON(item);
             };
         }
 
@@ -179,12 +178,12 @@ VendorRequiredInforesponseInner.prototype['planName'] = undefined;
 VendorRequiredInforesponseInner.prototype['responseMessages'] = undefined;
 
 /**
- * @member {Array.<module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInner>} vmfAdditionalAttributes
+ * @member {Array.<module:model/VmfVriAdditionalAttributeContainer>} vmfAdditionalAttributes
  */
 VendorRequiredInforesponseInner.prototype['vmfAdditionalAttributes'] = undefined;
 
 /**
- * @member {Array.<module:model/VendorRequiredInforesponseInnerVmfAdditionalAttributesInnerAdditionalAttributesInner>} vriAdditionalAttributes
+ * @member {Array.<module:model/VmfVriAdditionalAttributeContainer>} vriAdditionalAttributes
  */
 VendorRequiredInforesponseInner.prototype['vriAdditionalAttributes'] = undefined;
 
