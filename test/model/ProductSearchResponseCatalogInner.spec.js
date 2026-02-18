@@ -144,12 +144,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property links (base name: "links")', function() {
-      // uncomment below and update the code to test the property links
-      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
-      //expect(instance).to.be();
-    });
-
     it('should have the property extraDescription (base name: "extraDescription")', function() {
       // uncomment below and update the code to test the property extraDescription
       //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
@@ -164,6 +158,66 @@
 
     it('should have the property authorizedToPurchase (base name: "authorizedToPurchase")', function() {
       // uncomment below and update the code to test the property authorizedToPurchase
+      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isMsrpVisible (base name: "isMsrpVisible")', function() {
+      // uncomment below and update the code to test the property isMsrpVisible
+      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isPriceVisible (base name: "isPriceVisible")', function() {
+      // uncomment below and update the code to test the property isPriceVisible
+      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property customerAuthorization (base name: "customerAuthorization")', function() {
+      // uncomment below and update the code to test the property customerAuthorization
+      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property skuAvailableInFeed (base name: "skuAvailableInFeed")', function() {
+      // uncomment below and update the code to test the property skuAvailableInFeed
+      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property msrpvisibleorg (base name: "msrpvisibleorg")', function() {
+      // uncomment below and update the code to test the property msrpvisibleorg
+      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property pricevisibleorg (base name: "pricevisibleorg")', function() {
+      // uncomment below and update the code to test the property pricevisibleorg
+      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property intorderableorg (base name: "intorderableorg")', function() {
+      // uncomment below and update the code to test the property intorderableorg
+      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property nonintorderableorg (base name: "nonintorderableorg")', function() {
+      // uncomment below and update the code to test the property nonintorderableorg
+      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property webvisibleorg (base name: "webvisibleorg")', function() {
+      // uncomment below and update the code to test the property webvisibleorg
+      //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property links (base name: "links")', function() {
+      // uncomment below and update the code to test the property links
       //var instance = new XiSdkResellers.ProductSearchResponseCatalogInner();
       //expect(instance).to.be();
     });

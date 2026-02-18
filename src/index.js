@@ -84,9 +84,9 @@ import OrderCreateV7RequestAdditionalAttributesInner from './model/OrderCreateV7
 import OrderCreateV7RequestEndUserInfo from './model/OrderCreateV7RequestEndUserInfo';
 import OrderCreateV7RequestLinesInner from './model/OrderCreateV7RequestLinesInner';
 import OrderCreateV7RequestLinesInnerAdditionalAttributesInner from './model/OrderCreateV7RequestLinesInnerAdditionalAttributesInner';
-import OrderCreateV7RequestLinesInnerBillingPeriodInner from './model/OrderCreateV7RequestLinesInnerBillingPeriodInner';
+import OrderCreateV7RequestLinesInnerBillingPeriod from './model/OrderCreateV7RequestLinesInnerBillingPeriod';
 import OrderCreateV7RequestLinesInnerEndUserInfoInner from './model/OrderCreateV7RequestLinesInnerEndUserInfoInner';
-import OrderCreateV7RequestLinesInnerSubscriptionPeriodInner from './model/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner';
+import OrderCreateV7RequestLinesInnerSubscriptionPeriod from './model/OrderCreateV7RequestLinesInnerSubscriptionPeriod';
 import OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner from './model/OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner';
 import OrderCreateV7RequestLinesInnerWarrantyInfo from './model/OrderCreateV7RequestLinesInnerWarrantyInfo';
 import OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner from './model/OrderCreateV7RequestLinesInnerWarrantyInfoSerialInfoInner';
@@ -723,10 +723,10 @@ export {
     OrderCreateV7RequestLinesInnerAdditionalAttributesInner,
 
     /**
-     * The OrderCreateV7RequestLinesInnerBillingPeriodInner model constructor.
-     * @property {module:model/OrderCreateV7RequestLinesInnerBillingPeriodInner}
+     * The OrderCreateV7RequestLinesInnerBillingPeriod model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerBillingPeriod}
      */
-    OrderCreateV7RequestLinesInnerBillingPeriodInner,
+    OrderCreateV7RequestLinesInnerBillingPeriod,
 
     /**
      * The OrderCreateV7RequestLinesInnerEndUserInfoInner model constructor.
@@ -735,10 +735,10 @@ export {
     OrderCreateV7RequestLinesInnerEndUserInfoInner,
 
     /**
-     * The OrderCreateV7RequestLinesInnerSubscriptionPeriodInner model constructor.
-     * @property {module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner}
+     * The OrderCreateV7RequestLinesInnerSubscriptionPeriod model constructor.
+     * @property {module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriod}
      */
-    OrderCreateV7RequestLinesInnerSubscriptionPeriodInner,
+    OrderCreateV7RequestLinesInnerSubscriptionPeriod,
 
     /**
      * The OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner model constructor.

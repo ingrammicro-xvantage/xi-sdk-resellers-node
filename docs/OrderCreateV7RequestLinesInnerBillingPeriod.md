@@ -1,4 +1,4 @@
-# XiSdkResellers.OrderCreateV7RequestLinesInnerBillingPeriodInner
+# XiSdkResellers.OrderCreateV7RequestLinesInnerBillingPeriod
 
 ## Properties
 

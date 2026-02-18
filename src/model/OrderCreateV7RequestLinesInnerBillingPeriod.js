@@ -14,18 +14,19 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The OrderCreateV7RequestLinesInnerBillingPeriodInner model module.
- * @module model/OrderCreateV7RequestLinesInnerBillingPeriodInner
+ * The OrderCreateV7RequestLinesInnerBillingPeriod model module.
+ * @module model/OrderCreateV7RequestLinesInnerBillingPeriod
  * @version 1.0.0
  */
-class OrderCreateV7RequestLinesInnerBillingPeriodInner {
+class OrderCreateV7RequestLinesInnerBillingPeriod {
     /**
-     * Constructs a new <code>OrderCreateV7RequestLinesInnerBillingPeriodInner</code>.
-     * @alias module:model/OrderCreateV7RequestLinesInnerBillingPeriodInner
+     * Constructs a new <code>OrderCreateV7RequestLinesInnerBillingPeriod</code>.
+     * The object containing the list of options related to the billing period.
+     * @alias module:model/OrderCreateV7RequestLinesInnerBillingPeriod
      */
     constructor() { 
         
-        OrderCreateV7RequestLinesInnerBillingPeriodInner.initialize(this);
+        OrderCreateV7RequestLinesInnerBillingPeriod.initialize(this);
     }
 
     /**
@@ -37,15 +38,15 @@ class OrderCreateV7RequestLinesInnerBillingPeriodInner {
     }
 
     /**
-     * Constructs a <code>OrderCreateV7RequestLinesInnerBillingPeriodInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>OrderCreateV7RequestLinesInnerBillingPeriod</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/OrderCreateV7RequestLinesInnerBillingPeriodInner} obj Optional instance to populate.
-     * @return {module:model/OrderCreateV7RequestLinesInnerBillingPeriodInner} The populated <code>OrderCreateV7RequestLinesInnerBillingPeriodInner</code> instance.
+     * @param {module:model/OrderCreateV7RequestLinesInnerBillingPeriod} obj Optional instance to populate.
+     * @return {module:model/OrderCreateV7RequestLinesInnerBillingPeriod} The populated <code>OrderCreateV7RequestLinesInnerBillingPeriod</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new OrderCreateV7RequestLinesInnerBillingPeriodInner();
+            obj = obj || new OrderCreateV7RequestLinesInnerBillingPeriod();
 
             if (data.hasOwnProperty('type')) {
                 obj['type'] = ApiClient.convertToType(data['type'], 'String');
@@ -58,9 +59,9 @@ class OrderCreateV7RequestLinesInnerBillingPeriodInner {
     }
 
     /**
-     * Validates the JSON data with respect to <code>OrderCreateV7RequestLinesInnerBillingPeriodInner</code>.
+     * Validates the JSON data with respect to <code>OrderCreateV7RequestLinesInnerBillingPeriod</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>OrderCreateV7RequestLinesInnerBillingPeriodInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>OrderCreateV7RequestLinesInnerBillingPeriod</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -80,18 +81,18 @@ class OrderCreateV7RequestLinesInnerBillingPeriodInner {
  * Billing period of the subscription. Example, Years, Months
  * @member {String} type
  */
-OrderCreateV7RequestLinesInnerBillingPeriodInner.prototype['type'] = undefined;
+OrderCreateV7RequestLinesInnerBillingPeriod.prototype['type'] = undefined;
 
 /**
  * Length of the billing period. Example 1, 3
  * @member {Number} duration
  */
-OrderCreateV7RequestLinesInnerBillingPeriodInner.prototype['duration'] = undefined;
+OrderCreateV7RequestLinesInnerBillingPeriod.prototype['duration'] = undefined;
 
 
 
 
 
 
-export default OrderCreateV7RequestLinesInnerBillingPeriodInner;
+export default OrderCreateV7RequestLinesInnerBillingPeriod;
 

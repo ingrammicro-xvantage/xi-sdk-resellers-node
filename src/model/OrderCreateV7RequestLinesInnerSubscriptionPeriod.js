@@ -14,18 +14,19 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The OrderCreateV7RequestLinesInnerSubscriptionPeriodInner model module.
- * @module model/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner
+ * The OrderCreateV7RequestLinesInnerSubscriptionPeriod model module.
+ * @module model/OrderCreateV7RequestLinesInnerSubscriptionPeriod
  * @version 1.0.0
  */
-class OrderCreateV7RequestLinesInnerSubscriptionPeriodInner {
+class OrderCreateV7RequestLinesInnerSubscriptionPeriod {
     /**
-     * Constructs a new <code>OrderCreateV7RequestLinesInnerSubscriptionPeriodInner</code>.
-     * @alias module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner
+     * Constructs a new <code>OrderCreateV7RequestLinesInnerSubscriptionPeriod</code>.
+     * The object containing the list of options related to the subscription period.
+     * @alias module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriod
      */
     constructor() { 
         
-        OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.initialize(this);
+        OrderCreateV7RequestLinesInnerSubscriptionPeriod.initialize(this);
     }
 
     /**
@@ -37,15 +38,15 @@ class OrderCreateV7RequestLinesInnerSubscriptionPeriodInner {
     }
 
     /**
-     * Constructs a <code>OrderCreateV7RequestLinesInnerSubscriptionPeriodInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>OrderCreateV7RequestLinesInnerSubscriptionPeriod</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner} obj Optional instance to populate.
-     * @return {module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner} The populated <code>OrderCreateV7RequestLinesInnerSubscriptionPeriodInner</code> instance.
+     * @param {module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriod} obj Optional instance to populate.
+     * @return {module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriod} The populated <code>OrderCreateV7RequestLinesInnerSubscriptionPeriod</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new OrderCreateV7RequestLinesInnerSubscriptionPeriodInner();
+            obj = obj || new OrderCreateV7RequestLinesInnerSubscriptionPeriod();
 
             if (data.hasOwnProperty('type')) {
                 obj['type'] = ApiClient.convertToType(data['type'], 'String');
@@ -67,9 +68,9 @@ class OrderCreateV7RequestLinesInnerSubscriptionPeriodInner {
     }
 
     /**
-     * Validates the JSON data with respect to <code>OrderCreateV7RequestLinesInnerSubscriptionPeriodInner</code>.
+     * Validates the JSON data with respect to <code>OrderCreateV7RequestLinesInnerSubscriptionPeriod</code>.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>OrderCreateV7RequestLinesInnerSubscriptionPeriodInner</code>.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>OrderCreateV7RequestLinesInnerSubscriptionPeriod</code>.
      */
     static validateJSON(data) {
         // ensure the json data is a string
@@ -101,36 +102,36 @@ class OrderCreateV7RequestLinesInnerSubscriptionPeriodInner {
  * Unit period of the subscription. Example, Years, Months
  * @member {String} type
  */
-OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.prototype['type'] = undefined;
+OrderCreateV7RequestLinesInnerSubscriptionPeriod.prototype['type'] = undefined;
 
 /**
  * Length of the subscription. Example 1, 3
  * @member {Number} duration
  */
-OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.prototype['duration'] = undefined;
+OrderCreateV7RequestLinesInnerSubscriptionPeriod.prototype['duration'] = undefined;
 
 /**
  * The date on which subscription will start.
  * @member {String} startDate
  */
-OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.prototype['startDate'] = undefined;
+OrderCreateV7RequestLinesInnerSubscriptionPeriod.prototype['startDate'] = undefined;
 
 /**
  * Subscription period end date alignment. ENUM -- 'MATCH_END_OF_CALENDAR_MONTH', 'CO_TERM_ON_SUBSCRIPTION'
  * @member {String} endDateAlignmentType
  */
-OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.prototype['endDateAlignmentType'] = undefined;
+OrderCreateV7RequestLinesInnerSubscriptionPeriod.prototype['endDateAlignmentType'] = undefined;
 
 /**
  * The ID of an existing active subscription.
  * @member {String} subscriptionId
  */
-OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.prototype['subscriptionId'] = undefined;
+OrderCreateV7RequestLinesInnerSubscriptionPeriod.prototype['subscriptionId'] = undefined;
 
 
 
 
 
 
-export default OrderCreateV7RequestLinesInnerSubscriptionPeriodInner;
+export default OrderCreateV7RequestLinesInnerSubscriptionPeriod;
 

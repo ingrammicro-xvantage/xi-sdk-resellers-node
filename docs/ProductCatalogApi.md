@@ -164,7 +164,7 @@ let opts = {
   'vendorPartNumber': ["null"], // [String] | The vendors part number for the product.
   'acceptLanguage': "'en'", // String | Header to the API calls, the content will help us identify the response language.
   'vendorNumber': "vendorNumber_example", // String | Vendor number of the product
-  'keyword': ["null"], // [String] | Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name.
+  'keyword': "keyword_example", // String | Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name.
   'category': "Accessories", // String | The category of the product. Example: Displays.
   'skipAuthorisation': "true", // String | This parameter is True when you want Skip the authorization, so template will work like current B2b template.
   'groupName': "Microsoft Defender for Endpoint P2 (NCE COM MTH)", // String | Name of the Product Group
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
  **vendorPartNumber** | [**[String]**](String.md)| The vendors part number for the product. | [optional] 
  **acceptLanguage** | **String**| Header to the API calls, the content will help us identify the response language. | [optional] [default to &#39;en&#39;]
  **vendorNumber** | **String**| Vendor number of the product | [optional] 
- **keyword** | [**[String]**](String.md)| Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name. | [optional] 
+ **keyword** | **String**| Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name. | [optional] 
  **category** | **String**| The category of the product. Example: Displays. | [optional] 
  **skipAuthorisation** | **String**| This parameter is True when you want Skip the authorization, so template will work like current B2b template. | [optional] 
  **groupName** | **String**| Name of the Product Group | [optional] 

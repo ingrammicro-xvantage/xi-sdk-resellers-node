@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerBillingPeriodInner();
+    instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerSubscriptionPeriod();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,22 +47,40 @@
       object[property] = value;
   }
 
-  describe('OrderCreateV7RequestLinesInnerBillingPeriodInner', function() {
-    it('should create an instance of OrderCreateV7RequestLinesInnerBillingPeriodInner', function() {
-      // uncomment below and update the code to test OrderCreateV7RequestLinesInnerBillingPeriodInner
-      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerBillingPeriodInner();
-      //expect(instance).to.be.a(XiSdkResellers.OrderCreateV7RequestLinesInnerBillingPeriodInner);
+  describe('OrderCreateV7RequestLinesInnerSubscriptionPeriod', function() {
+    it('should create an instance of OrderCreateV7RequestLinesInnerSubscriptionPeriod', function() {
+      // uncomment below and update the code to test OrderCreateV7RequestLinesInnerSubscriptionPeriod
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerSubscriptionPeriod();
+      //expect(instance).to.be.a(XiSdkResellers.OrderCreateV7RequestLinesInnerSubscriptionPeriod);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerBillingPeriodInner();
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerSubscriptionPeriod();
       //expect(instance).to.be();
     });
 
     it('should have the property duration (base name: "duration")', function() {
       // uncomment below and update the code to test the property duration
-      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerBillingPeriodInner();
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerSubscriptionPeriod();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property startDate (base name: "startDate")', function() {
+      // uncomment below and update the code to test the property startDate
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerSubscriptionPeriod();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property endDateAlignmentType (base name: "endDateAlignmentType")', function() {
+      // uncomment below and update the code to test the property endDateAlignmentType
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerSubscriptionPeriod();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property subscriptionId (base name: "subscriptionId")', function() {
+      // uncomment below and update the code to test the property subscriptionId
+      //var instance = new XiSdkResellers.OrderCreateV7RequestLinesInnerSubscriptionPeriod();
       //expect(instance).to.be();
     });
 

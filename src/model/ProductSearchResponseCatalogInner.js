@@ -93,9 +93,6 @@ class ProductSearchResponseCatalogInner {
             if (data.hasOwnProperty('hasWarranty')) {
                 obj['hasWarranty'] = ApiClient.convertToType(data['hasWarranty'], 'String');
             }
-            if (data.hasOwnProperty('links')) {
-                obj['links'] = ApiClient.convertToType(data['links'], [ProductSearchResponseCatalogInnerLinksInner]);
-            }
             if (data.hasOwnProperty('extraDescription')) {
                 obj['extraDescription'] = ApiClient.convertToType(data['extraDescription'], 'String');
             }
@@ -104,6 +101,36 @@ class ProductSearchResponseCatalogInner {
             }
             if (data.hasOwnProperty('authorizedToPurchase')) {
                 obj['authorizedToPurchase'] = ApiClient.convertToType(data['authorizedToPurchase'], 'String');
+            }
+            if (data.hasOwnProperty('isMsrpVisible')) {
+                obj['isMsrpVisible'] = ApiClient.convertToType(data['isMsrpVisible'], 'Boolean');
+            }
+            if (data.hasOwnProperty('isPriceVisible')) {
+                obj['isPriceVisible'] = ApiClient.convertToType(data['isPriceVisible'], 'Boolean');
+            }
+            if (data.hasOwnProperty('customerAuthorization')) {
+                obj['customerAuthorization'] = ApiClient.convertToType(data['customerAuthorization'], 'Boolean');
+            }
+            if (data.hasOwnProperty('skuAvailableInFeed')) {
+                obj['skuAvailableInFeed'] = ApiClient.convertToType(data['skuAvailableInFeed'], 'Boolean');
+            }
+            if (data.hasOwnProperty('msrpvisibleorg')) {
+                obj['msrpvisibleorg'] = ApiClient.convertToType(data['msrpvisibleorg'], 'String');
+            }
+            if (data.hasOwnProperty('pricevisibleorg')) {
+                obj['pricevisibleorg'] = ApiClient.convertToType(data['pricevisibleorg'], 'String');
+            }
+            if (data.hasOwnProperty('intorderableorg')) {
+                obj['intorderableorg'] = ApiClient.convertToType(data['intorderableorg'], 'String');
+            }
+            if (data.hasOwnProperty('nonintorderableorg')) {
+                obj['nonintorderableorg'] = ApiClient.convertToType(data['nonintorderableorg'], 'String');
+            }
+            if (data.hasOwnProperty('webvisibleorg')) {
+                obj['webvisibleorg'] = ApiClient.convertToType(data['webvisibleorg'], 'String');
+            }
+            if (data.hasOwnProperty('links')) {
+                obj['links'] = ApiClient.convertToType(data['links'], [ProductSearchResponseCatalogInnerLinksInner]);
             }
         }
         return obj;
@@ -175,16 +202,6 @@ class ProductSearchResponseCatalogInner {
         if (data['hasWarranty'] && !(typeof data['hasWarranty'] === 'string' || data['hasWarranty'] instanceof String)) {
             throw new Error("Expected the field `hasWarranty` to be a primitive type in the JSON string but got " + data['hasWarranty']);
         }
-        if (data['links']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['links'])) {
-                throw new Error("Expected the field `links` to be an array in the JSON data but got " + data['links']);
-            }
-            // validate the optional field `links` (array)
-            for (const item of data['links']) {
-                ProductSearchResponseCatalogInnerLinksInner.validateJSON(item);
-            };
-        }
         // ensure the json data is a string
         if (data['extraDescription'] && !(typeof data['extraDescription'] === 'string' || data['extraDescription'] instanceof String)) {
             throw new Error("Expected the field `extraDescription` to be a primitive type in the JSON string but got " + data['extraDescription']);
@@ -196,6 +213,36 @@ class ProductSearchResponseCatalogInner {
         // ensure the json data is a string
         if (data['authorizedToPurchase'] && !(typeof data['authorizedToPurchase'] === 'string' || data['authorizedToPurchase'] instanceof String)) {
             throw new Error("Expected the field `authorizedToPurchase` to be a primitive type in the JSON string but got " + data['authorizedToPurchase']);
+        }
+        // ensure the json data is a string
+        if (data['msrpvisibleorg'] && !(typeof data['msrpvisibleorg'] === 'string' || data['msrpvisibleorg'] instanceof String)) {
+            throw new Error("Expected the field `msrpvisibleorg` to be a primitive type in the JSON string but got " + data['msrpvisibleorg']);
+        }
+        // ensure the json data is a string
+        if (data['pricevisibleorg'] && !(typeof data['pricevisibleorg'] === 'string' || data['pricevisibleorg'] instanceof String)) {
+            throw new Error("Expected the field `pricevisibleorg` to be a primitive type in the JSON string but got " + data['pricevisibleorg']);
+        }
+        // ensure the json data is a string
+        if (data['intorderableorg'] && !(typeof data['intorderableorg'] === 'string' || data['intorderableorg'] instanceof String)) {
+            throw new Error("Expected the field `intorderableorg` to be a primitive type in the JSON string but got " + data['intorderableorg']);
+        }
+        // ensure the json data is a string
+        if (data['nonintorderableorg'] && !(typeof data['nonintorderableorg'] === 'string' || data['nonintorderableorg'] instanceof String)) {
+            throw new Error("Expected the field `nonintorderableorg` to be a primitive type in the JSON string but got " + data['nonintorderableorg']);
+        }
+        // ensure the json data is a string
+        if (data['webvisibleorg'] && !(typeof data['webvisibleorg'] === 'string' || data['webvisibleorg'] instanceof String)) {
+            throw new Error("Expected the field `webvisibleorg` to be a primitive type in the JSON string but got " + data['webvisibleorg']);
+        }
+        if (data['links']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['links'])) {
+                throw new Error("Expected the field `links` to be an array in the JSON data but got " + data['links']);
+            }
+            // validate the optional field `links` (array)
+            for (const item of data['links']) {
+                ProductSearchResponseCatalogInnerLinksInner.validateJSON(item);
+            };
         }
 
         return true;
@@ -297,11 +344,6 @@ ProductSearchResponseCatalogInner.prototype['directShip'] = undefined;
 ProductSearchResponseCatalogInner.prototype['hasWarranty'] = undefined;
 
 /**
- * @member {Array.<module:model/ProductSearchResponseCatalogInnerLinksInner>} links
- */
-ProductSearchResponseCatalogInner.prototype['links'] = undefined;
-
-/**
  * The extended description of the product.
  * @member {String} extraDescription
  */
@@ -318,6 +360,56 @@ ProductSearchResponseCatalogInner.prototype['replacementSku'] = undefined;
  * @member {String} authorizedToPurchase
  */
 ProductSearchResponseCatalogInner.prototype['authorizedToPurchase'] = undefined;
+
+/**
+ * @member {Boolean} isMsrpVisible
+ */
+ProductSearchResponseCatalogInner.prototype['isMsrpVisible'] = undefined;
+
+/**
+ * @member {Boolean} isPriceVisible
+ */
+ProductSearchResponseCatalogInner.prototype['isPriceVisible'] = undefined;
+
+/**
+ * @member {Boolean} customerAuthorization
+ */
+ProductSearchResponseCatalogInner.prototype['customerAuthorization'] = undefined;
+
+/**
+ * @member {Boolean} skuAvailableInFeed
+ */
+ProductSearchResponseCatalogInner.prototype['skuAvailableInFeed'] = undefined;
+
+/**
+ * @member {String} msrpvisibleorg
+ */
+ProductSearchResponseCatalogInner.prototype['msrpvisibleorg'] = undefined;
+
+/**
+ * @member {String} pricevisibleorg
+ */
+ProductSearchResponseCatalogInner.prototype['pricevisibleorg'] = undefined;
+
+/**
+ * @member {String} intorderableorg
+ */
+ProductSearchResponseCatalogInner.prototype['intorderableorg'] = undefined;
+
+/**
+ * @member {String} nonintorderableorg
+ */
+ProductSearchResponseCatalogInner.prototype['nonintorderableorg'] = undefined;
+
+/**
+ * @member {String} webvisibleorg
+ */
+ProductSearchResponseCatalogInner.prototype['webvisibleorg'] = undefined;
+
+/**
+ * @member {Array.<module:model/ProductSearchResponseCatalogInnerLinksInner>} links
+ */
+ProductSearchResponseCatalogInner.prototype['links'] = undefined;
 
 
 

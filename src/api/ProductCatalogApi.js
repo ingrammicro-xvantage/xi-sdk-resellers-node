@@ -192,7 +192,7 @@ export default class ProductCatalogApi {
      * @param {Array.<String>} [vendorPartNumber] The vendors part number for the product.
      * @param {String} [acceptLanguage = 'en')] Header to the API calls, the content will help us identify the response language.
      * @param {String} [vendorNumber] Vendor number of the product
-     * @param {Array.<String>} [keyword] Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name.
+     * @param {String} [keyword] Keyword search,can be ingram part number or vendor part number or product title or vendor nameKeyword search. Can be Ingram Micro part number, vender part number, product title, or vendor name.
      * @param {String} [category] The category of the product. Example: Displays.
      * @param {String} [skipAuthorisation] This parameter is True when you want Skip the authorization, so template will work like current B2b template.
      * @param {String} [groupName] Name of the Product Group
@@ -227,7 +227,7 @@ export default class ProductCatalogApi {
         'vendor': this.apiClient.buildCollectionParam(opts['vendor'], 'multi'),
         'vendorPartNumber': this.apiClient.buildCollectionParam(opts['vendorPartNumber'], 'multi'),
         'vendorNumber': opts['vendorNumber'],
-        'keyword': this.apiClient.buildCollectionParam(opts['keyword'], 'multi'),
+        'keyword': opts['keyword'],
         'category': opts['category'],
         'skipAuthorisation': opts['skipAuthorisation'],
         'groupName': opts['groupName'],

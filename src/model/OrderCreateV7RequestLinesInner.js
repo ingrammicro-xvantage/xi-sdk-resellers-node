@@ -13,9 +13,9 @@
 
 import ApiClient from '../ApiClient';
 import OrderCreateV7RequestLinesInnerAdditionalAttributesInner from './OrderCreateV7RequestLinesInnerAdditionalAttributesInner';
-import OrderCreateV7RequestLinesInnerBillingPeriodInner from './OrderCreateV7RequestLinesInnerBillingPeriodInner';
+import OrderCreateV7RequestLinesInnerBillingPeriod from './OrderCreateV7RequestLinesInnerBillingPeriod';
 import OrderCreateV7RequestLinesInnerEndUserInfoInner from './OrderCreateV7RequestLinesInnerEndUserInfoInner';
-import OrderCreateV7RequestLinesInnerSubscriptionPeriodInner from './OrderCreateV7RequestLinesInnerSubscriptionPeriodInner';
+import OrderCreateV7RequestLinesInnerSubscriptionPeriod from './OrderCreateV7RequestLinesInnerSubscriptionPeriod';
 import OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner from './OrderCreateV7RequestLinesInnerVmfAdditionalAttributesLinesInner';
 import OrderCreateV7RequestLinesInnerWarrantyInfo from './OrderCreateV7RequestLinesInnerWarrantyInfo';
 import OrderCreateV7RequestVmfVendorAdditionalAttributesInner from './OrderCreateV7RequestVmfVendorAdditionalAttributesInner';
@@ -85,10 +85,10 @@ class OrderCreateV7RequestLinesInner {
                 obj['planid'] = ApiClient.convertToType(data['planid'], 'String');
             }
             if (data.hasOwnProperty('subscriptionPeriod')) {
-                obj['subscriptionPeriod'] = ApiClient.convertToType(data['subscriptionPeriod'], [OrderCreateV7RequestLinesInnerSubscriptionPeriodInner]);
+                obj['subscriptionPeriod'] = OrderCreateV7RequestLinesInnerSubscriptionPeriod.constructFromObject(data['subscriptionPeriod']);
             }
             if (data.hasOwnProperty('billingPeriod')) {
-                obj['billingPeriod'] = ApiClient.convertToType(data['billingPeriod'], [OrderCreateV7RequestLinesInnerBillingPeriodInner]);
+                obj['billingPeriod'] = OrderCreateV7RequestLinesInnerBillingPeriod.constructFromObject(data['billingPeriod']);
             }
             if (data.hasOwnProperty('margin')) {
                 obj['margin'] = ApiClient.convertToType(data['margin'], 'Number');
@@ -149,25 +149,13 @@ class OrderCreateV7RequestLinesInner {
         if (data['planid'] && !(typeof data['planid'] === 'string' || data['planid'] instanceof String)) {
             throw new Error("Expected the field `planid` to be a primitive type in the JSON string but got " + data['planid']);
         }
+        // validate the optional field `subscriptionPeriod`
         if (data['subscriptionPeriod']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['subscriptionPeriod'])) {
-                throw new Error("Expected the field `subscriptionPeriod` to be an array in the JSON data but got " + data['subscriptionPeriod']);
-            }
-            // validate the optional field `subscriptionPeriod` (array)
-            for (const item of data['subscriptionPeriod']) {
-                OrderCreateV7RequestLinesInnerSubscriptionPeriodInner.validateJSON(item);
-            };
+          OrderCreateV7RequestLinesInnerSubscriptionPeriod.validateJSON(data['subscriptionPeriod']);
         }
+        // validate the optional field `billingPeriod`
         if (data['billingPeriod']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['billingPeriod'])) {
-                throw new Error("Expected the field `billingPeriod` to be an array in the JSON data but got " + data['billingPeriod']);
-            }
-            // validate the optional field `billingPeriod` (array)
-            for (const item of data['billingPeriod']) {
-                OrderCreateV7RequestLinesInnerBillingPeriodInner.validateJSON(item);
-            };
+          OrderCreateV7RequestLinesInnerBillingPeriod.validateJSON(data['billingPeriod']);
         }
         if (data['vriAdditionalAttributes']) { // data not null
             // ensure the json data is an array
@@ -283,14 +271,12 @@ OrderCreateV7RequestLinesInner.prototype['resourceId'] = undefined;
 OrderCreateV7RequestLinesInner.prototype['planid'] = undefined;
 
 /**
- * The object containing the list of options related to the subscription period.
- * @member {Array.<module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriodInner>} subscriptionPeriod
+ * @member {module:model/OrderCreateV7RequestLinesInnerSubscriptionPeriod} subscriptionPeriod
  */
 OrderCreateV7RequestLinesInner.prototype['subscriptionPeriod'] = undefined;
 
 /**
- * The object containing the list of options related to the billing period.
- * @member {Array.<module:model/OrderCreateV7RequestLinesInnerBillingPeriodInner>} billingPeriod
+ * @member {module:model/OrderCreateV7RequestLinesInnerBillingPeriod} billingPeriod
  */
 OrderCreateV7RequestLinesInner.prototype['billingPeriod'] = undefined;
 
